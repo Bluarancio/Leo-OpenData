@@ -1,4 +1,4 @@
-# Repository Github del Progetto LEO - open data
+# Progetto LEO - open data
 
 Questo è il repository ufficiale degli open data del progetto LEO. In questo repository pubblico potete trovare tutte le ontologie, e le relative versioni, che sono state sviluppate nel progetto, nonché altro materiale prodotto a supporto della componente open data.
 
