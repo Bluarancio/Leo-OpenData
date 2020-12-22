@@ -1,0 +1,434 @@
+@prefix : <https://w3id.org/leo/onto/ale/> .
+@prefix co: <https://w3id.org/leo/onto/co/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix leo: <https://w3id.org/leo/onto/leo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@base <https://w3id.org/leo/onto/ale> .
+
+<https://w3id.org/leo/onto/ale> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://w3id.org/leo/onto/ale/0.1> ;
+                                 owl:imports <https://w3id.org/italia/onto/TI> ,
+                                             <https://w3id.org/italia/onto/l0> ;
+                                 dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                 dct:creator <ttps://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:description "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"@it ,
+                                                 "This is the ontology of the farm animals life events"@en ;
+                                 dct:issued "2018-06-18"^^xsd:date ;
+                                 dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                              <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                 dct:modified "2018-11-25"^^xsd:date ;
+                                 dct:publisher <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:subject <http://eurovoc.europa.eu/100254> ;
+                                 dct:title "Animal Life Event Ontology"@en ,
+                                           "Ontologia degli eventi della vita degli animali di allevamento"@it ;
+                                 rdfs:comment "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"@it ,
+                                              "This is the ontology of the farm animals life events"@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/leo> ;
+                                 rdfs:label "Animal Life Event Ontology"@en ,
+                                            "Ontologia degli eventi della vita degli animali di allevamentoa"@it ;
+                                 owl:versionInfo "Version 0.1 - 2018 - Creation of the first version of the ontology"@en ,
+                                                 "Versione 0.1 - 2018 - Creazione della prima versione dell'ontologia"@it ;
+                                 dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia> ;
+                                 dcat:keyword "Animali d'allevamento"@it ,
+                                              "Bovine"@en ,
+                                              "Bovini"@it ,
+                                              "Eventi della vita"@it ,
+                                              "Farm Animal"@en ,
+                                              "Life events"@en ;
+                                 dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
+                                 admsapit:acronym "ALE" ;
+                                 admsapit:hasContributor <https://w3id.org/leo/data/private-organization/06695411006> ;
+                                 admsapit:hasFormalityLevel admsapit:Formal ;
+                                 admsapit:hasKeyClass :AnimalLifeEvent ;
+                                 admsapit:hasOntologyLanguage admsapit:OWL ;
+                                 admsapit:hasSemanticAssetDistribution <https://w3id.org/leo/data/distribution/ALE-JSON-LD> ,
+                                                                       <https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE> ,
+                                                                       <https://w3id.org/leo/data/distribution/ALE-RDF-XML> ;
+                                 admsapit:hasTask admsapit:AnnotationTask ,
+                                                  admsapit:QueryFormulationTask ,
+                                                  admsapit:SearchTask ;
+                                 admsapit:officialURI "https://w3id.org/leo/onto/ale"^^xsd:anyURI ;
+                                 admsapit:prefix "ale" ;
+                                 admsapit:semanticAssetInUse <https://w3id.org/leo/data/project/LEO> ;
+                                 admsapit:status "initial draft" ;
+                                 admsapit:target "Imprese" ,
+                                                 "Pubbliche Amministrazioni" ;
+                                 admsapit:type admsapit:DomainOntology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+dct:format rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+dct:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+dcat:downloadURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+prov:wasInfluencedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/acronym
+admsapit:acronym rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasContributor
+admsapit:hasContributor rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
+admsapit:hasFormalityLevel rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasKeyClass
+admsapit:hasKeyClass rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasOntologyLanguage
+admsapit:hasOntologyLanguage rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution
+admsapit:hasSemanticAssetDistribution rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasTask
+admsapit:hasTask rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/officialURI
+admsapit:officialURI rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/prefix
+admsapit:prefix rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/semanticAssetInUse
+admsapit:semanticAssetInUse rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/status
+admsapit:status rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/target
+admsapit:target rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/type
+admsapit:type rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/controlledVocabulary
+l0:controlledVocabulary rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/name
+l0:name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/leo/onto/ale/happensIn
+:happensIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :AnimalLifeEvent ;
+           rdfs:range co:RuralSite ;
+           rdfs:label "avviene in"@it ,
+                      "happens in"@en .
+
+
+###  https://w3id.org/leo/onto/ale/hasAnimalLifeEvent
+:hasAnimalLifeEvent rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :involvesFarmAnimal ;
+                    rdfs:domain leo:FarmAnimal ;
+                    rdfs:range :AnimalLifeEvent ;
+                    rdfs:label "ha evento della vita dell'animale"@it ,
+                               "has animal life event"@en .
+
+
+###  https://w3id.org/leo/onto/ale/involvesCompany
+:involvesCompany rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isInvolvedInEvent ;
+                 rdfs:domain :AnimalLifeEvent ;
+                 rdfs:range co:Company ;
+                 rdfs:label "coinvolge azienda"@it ,
+                            "involves company"@en .
+
+
+###  https://w3id.org/leo/onto/ale/involvesFarmAnimal
+:involvesFarmAnimal rdf:type owl:ObjectProperty ;
+                    rdfs:domain :AnimalLifeEvent ;
+                    rdfs:range leo:FarmAnimal ;
+                    rdfs:label "coinvolge animale di allevamento"@it ,
+                               "involves farm animal"@en .
+
+
+###  https://w3id.org/leo/onto/ale/isInvolvedInEvent
+:isInvolvedInEvent rdf:type owl:ObjectProperty ;
+                   rdfs:domain co:Company ;
+                   rdfs:range :AnimalLifeEvent ;
+                   rdfs:label "is involved in event"@en ,
+                              "è coinvolta in evento"@it .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/leo/onto/ale/detectionDate
+:detectionDate rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf ti:date ;
+               rdfs:domain :AnimalLifeEvent ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:unionOf ( xsd:date
+                                          xsd:dateTime
+                                        )
+                          ] ;
+               rdfs:comment "data di rilevazione"@it ,
+                            "detection date"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/leo/onto/ale/Abort
+:Abort rdf:type owl:Class ;
+       rdfs:subClassOf :AnimalLifeEvent ;
+       rdfs:label "Abort"@en ,
+                  "Aborto"@it .
+
+
+###  https://w3id.org/leo/onto/ale/AnalysisCollection
+:AnalysisCollection rdf:type owl:Class ;
+                    rdfs:subClassOf :AnimalLifeEvent ;
+                    rdfs:label "Analysis Collection"@en ,
+                               "Raccolta Analisi"@it .
+
+
+###  https://w3id.org/leo/onto/ale/AnimalLifeEvent
+:AnimalLifeEvent rdf:type owl:Class ;
+                 rdfs:subClassOf ti:TimeIndexedEvent ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :detectionDate ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                     owl:unionOf ( xsd:date
+                                                                   xsd:dateTime
+                                                                 )
+                                                   ]
+                                 ] ;
+                 rdfs:label "Animal Life Event"@en ,
+                            "Evento della Vita Animale di Allevamento"@it .
+
+
+###  https://w3id.org/leo/onto/ale/Birth
+:Birth rdf:type owl:Class ;
+       rdfs:subClassOf :AnimalLifeEvent ;
+       rdfs:label "Birth"@en ,
+                  "Nascita"@it .
+
+
+###  https://w3id.org/leo/onto/ale/Diagnosis
+:Diagnosis rdf:type owl:Class ;
+           rdfs:subClassOf :AnimalLifeEvent ;
+           rdfs:label "Diagnosi"@it ,
+                      "Diagnosis"@en .
+
+
+###  https://w3id.org/leo/onto/ale/DisplacementInEntry
+:DisplacementInEntry rdf:type owl:Class ;
+                     rdfs:subClassOf :AnimalLifeEvent ;
+                     rdfs:label "Displacement in Entry"@en ,
+                                "Spostamento in Entrata"@it .
+
+
+###  https://w3id.org/leo/onto/ale/DisplacementInExit
+:DisplacementInExit rdf:type owl:Class ;
+                    rdfs:subClassOf :AnimalLifeEvent ;
+                    rdfs:label "Displacement in Exit"@en ,
+                               "Spostamento in Uscita"@it .
+
+
+###  https://w3id.org/leo/onto/ale/Dry
+:Dry rdf:type owl:Class ;
+     rdfs:subClassOf :AnimalLifeEvent ;
+     rdfs:label "Asciutta"@it ,
+                "Dry"@en .
+
+
+###  https://w3id.org/leo/onto/ale/EmbryonicReabsorption
+:EmbryonicReabsorption rdf:type owl:Class ;
+                       rdfs:subClassOf :AnimalLifeEvent ;
+                       rdfs:label "Embryonic Reabsorption"@en ,
+                                  "Riassorbimento Embrionale"@it .
+
+
+###  https://w3id.org/leo/onto/ale/Fertilization
+:Fertilization rdf:type owl:Class ;
+               rdfs:subClassOf :AnimalLifeEvent ;
+               rdfs:label "Fecondazione"@it ,
+                          "Fertilization"@en .
+
+
+###  https://w3id.org/leo/onto/ale/Identification
+:Identification rdf:type owl:Class ;
+                rdfs:subClassOf :AnimalLifeEvent ;
+                rdfs:label "Identification"@en ,
+                           "Identificazione"@it .
+
+
+###  https://w3id.org/leo/onto/ale/Parturition
+:Parturition rdf:type owl:Class ;
+             rdfs:subClassOf :AnimalLifeEvent ;
+             rdfs:label "Parto"@it ,
+                        "Parturition"@en .
+
+
+###  https://w3id.org/leo/onto/ale/Reproduction
+:Reproduction rdf:type owl:Class ;
+              rdfs:subClassOf :AnimalLifeEvent ;
+              rdfs:label "Reproduction"@en ,
+                         "Riproduzione"@it .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/leo/data/contact-point/onto-aia
+<https://w3id.org/leo/data/contact-point/onto-aia> rdf:type owl:NamedIndividual ,
+                                                            <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                            vcard:Kind ,
+                                                            vcard:Organization ;
+                                                   vcard:fn "Sistemi informativi" ;
+                                                   vcard:hasEmail <mailto:affarigenerali@pec.aia.it> .
+
+
+###  https://w3id.org/leo/data/distribution/ALE-JSON-LD
+<https://w3id.org/leo/data/distribution/ALE-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                              admsapit:SemanticAssetDistribution ;
+                                                     dct:description "Questa è la distribuzione JSON-LD dell'ontologia sugli eventi della vita degli animali da allevamento"@it ,
+                                                                     "This is the distribution in JSON-LD of Animal Life Events ontology"@en ;
+                                                     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                     dct:license <https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                     dct:title "Distribuzione JSON-LD ontologia ALE"@it ,
+                                                               "JSON-LD distribution of ALE Ontology"@en ;
+                                                     dcat:accessURL <https://www.leo-project.it/Ontologie/ale/latest> ;
+                                                     dcat:downloadURL <https://www.leo-project.it/Ontologie/ale/latest/ale.jsonld> .
+
+
+###  https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE
+<https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                 admsapit:SemanticAssetDistribution ;
+                                                        dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia sugli eventi della vita degli animali da allevamento"@it ,
+                                                                        "This is the distribution in RDF/Turtle of Animal Life Events ontology"@en ;
+                                                        dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                        dct:license <https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                        dct:title "Distribuzione RDF/Turtle ontologia ALE"@it ,
+                                                                  "RDF/Turtle distribution of ALE Ontology"@en ;
+                                                        dcat:accessURL <https://www.leo-project.it/Ontologie/ale/latest> ;
+                                                        dcat:downloadURL <https://www.leo-project.it/Ontologie/ale/latest/ale.ttl> .
+
+
+###  https://w3id.org/leo/data/distribution/ALE-RDF-XML
+<https://w3id.org/leo/data/distribution/ALE-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                              admsapit:SemanticAssetDistribution ;
+                                                     dct:description "Questa è la distribuzione RDF/XML dell'ontologia sugli eventi della vita degli animali da allevamento"@it ,
+                                                                     "This is the distribution in RDF/XML of Animal Life Events ontology"@en ;
+                                                     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                     dct:license <https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                     dct:title "Distribuzione RDF/XML ontologia ALE"@it ,
+                                                               "RDF/XML distribution of ALE Ontology"@en ;
+                                                     dcat:accessURL <https://www.leo-project.it/Ontologie/ale/latest> ;
+                                                     dcat:downloadURL <https://www.leo-project.it/Ontologie/ale/latest/ale.rdf> .
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "00944701002" ;
+                                                             foaf:name "Associazione Italiana Allevatori"@it ,
+                                                                       "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "06695411006" ;
+                                                             foaf:name "Bluarancio"@en ,
+                                                                       "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 admsapit:Project ;
+                                        l0:name "LEO - Livestok Environment Open Data"@it .
+
+
+###  https://w3id.org/leo/onto/ale
+<https://w3id.org/leo/onto/ale> rdf:type owl:NamedIndividual ,
+                                         admsapit:SemanticAsset .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

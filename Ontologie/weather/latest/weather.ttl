@@ -1,0 +1,417 @@
+@prefix : <https://w3id.org/leo/onto/weather/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iot: <https://w3id.org/italia/onto/IoT/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@base <https://w3id.org/leo/onto/weather> .
+
+<https://w3id.org/leo/onto/weather> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://w3id.org/leo/onto/weather/0.1> ;
+                                     owl:imports <https://w3id.org/italia/onto/IoT> ,
+                                                 <https://w3id.org/italia/onto/l0> ;
+                                     dc:description <https://www.dropbox.com/s/9lv2de2ywgfkset/WeatherModule.png?raw=1> ;
+                                     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                     dct:creator <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                     dct:description "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo."@it ,
+                                                     "This is the ontology used to model the data called ClimData in the LEO project, i.e. the collected climate data intended to be observations captured by weather stations."@en ;
+                                     dct:issued "2019-11-20"^^xsd:date ;
+                                     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                  <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                     dct:modified "2019-11-30"^^xsd:date ;
+                                     dct:publisher <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                     dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                     dct:subject <http://eurovoc.europa.eu/1892> ;
+                                     dct:title "Ontologia dei dati meteo - ClimData"@it ,
+                                               "Weather Ontology"@en ;
+                                     rdfs:comment "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo."@it ,
+                                                  "This is the ontology used to model the data called ClimData in the LEO project, i.e. the collected climate data intended to be observations captured by weather stations."@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+                                     rdfs:label "Ontologia dei dati meteo - ClimData"@it ,
+                                                "Weather Ontology"@en ;
+                                     owl:versionInfo "Version 0.1 - 2019 - Creation of the first version of the ontology"@en ,
+                                                     "Versione 0.1 - 2019 - Creazione della prima versione dell'ontologia."@it ;
+                                     dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia> ;
+                                     dcat:keyword "Meteo"@it ,
+                                                  "Ventosìtà"@en ,
+                                                  "precipitazioni"@it ;
+                                     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+                                     admsapit:acronym "WT" ;
+                                     admsapit:hasContributor <https://w3id.org/leo/data/private-organization/06695411006> ;
+                                     admsapit:hasFormalityLevel admsapit:Formal ;
+                                     admsapit:hasKeyClass :Weather ,
+                                                          :WeatherStation ;
+                                     admsapit:hasOntologyLanguage admsapit:OWL ;
+                                     admsapit:hasSemanticAssetDistribution <https://w3id.org/leo/data/distribution/WT-JSON-LD> ,
+                                                                           <https://w3id.org/leo/data/distribution/WT-RDF-TURTLE> ,
+                                                                           <https://w3id.org/leo/data/distribution/WT-RDF-XML> ;
+                                     admsapit:hasTask admsapit:AnnotationTask ,
+                                                      admsapit:QueryFormulationTask ,
+                                                      admsapit:SearchTask ;
+                                     admsapit:officialURI "https://w3id.org/leo/onto/weather"^^xsd:anyURI ;
+                                     admsapit:prefix "wt" ;
+                                     admsapit:semanticAssetInUse <https://w3id.org/leo/data/project/LEO> ;
+                                     admsapit:status "initial draft" ;
+                                     admsapit:target "Imprese" ,
+                                                     "Pubbliche Amministrazioni" ;
+                                     admsapit:type admsapit:DomainOntology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+dct:format rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/label
+dct:label rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+dct:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+dcat:downloadURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+prov:wasInfluencedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/acronym
+admsapit:acronym rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasContributor
+admsapit:hasContributor rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
+admsapit:hasFormalityLevel rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasKeyClass
+admsapit:hasKeyClass rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasOntologyLanguage
+admsapit:hasOntologyLanguage rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution
+admsapit:hasSemanticAssetDistribution rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasTask
+admsapit:hasTask rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/officialURI
+admsapit:officialURI rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/prefix
+admsapit:prefix rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/semanticAssetInUse
+admsapit:semanticAssetInUse rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/status
+admsapit:status rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/target
+admsapit:target rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/type
+admsapit:type rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/controlledVocabulary
+l0:controlledVocabulary rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/name
+l0:name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/leo/onto/weather/managedBy
+:managedBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :managesWeatherStation ;
+           rdfs:domain :WeatherStation ;
+           rdfs:range cov:Organization ;
+           rdfs:comment "Property that links the weather station to the organization it manages it"@en ,
+                        "Proprietà che collega la stazione meteo all'organizzazione che la gestisce."@it ;
+           rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+           rdfs:label "gestita da"@it ,
+                      "managed by"@en ;
+           owl:versionInfo "stabile"@it ,
+                           "stable"@en .
+
+
+###  https://w3id.org/leo/onto/weather/managesWeatherStation
+:managesWeatherStation rdf:type owl:ObjectProperty ;
+                       rdfs:domain cov:Organization ;
+                       rdfs:range :WeatherStation ;
+                       rdfs:comment "Inverse property of \"managed by\" that links an organization to the weather station it manages."@en ,
+                                    "Proprietà inversa di \"gestita da\" che collega l'organizzazione alla stazione meteo che essa gestisce."@it ;
+                       rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+                       rdfs:label "gestisce stazione meteo"@it ,
+                                  "manages weather station"@en ;
+                       owl:versionInfo "stabile"@it ,
+                                       "stable"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/leo/onto/weather/Air
+:Air rdf:type owl:Class ;
+     rdfs:subClassOf iot:FeatureOfInterest ;
+     rdfs:comment "Questa classe rappresenta la caratteristica aria. Se l'ontologia è utilizzata per rilevare eventi IoT nel contesto meteo questa classe è rilevante e connota l'elemento aria dell'osservazione."@it ,
+                  "This class represents the characteristic air. If the ontology is used to detect IoT events in the weather context this class is relevant and characterizes the air element of the observation."@en ;
+     rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+     rdfs:label "Air"@en ,
+                "Aria"@it ;
+     owl:versionInfo "stabile"@it ,
+                     "stable"@en .
+
+
+###  https://w3id.org/leo/onto/weather/GroundLevelSoil
+:GroundLevelSoil rdf:type owl:Class ;
+                 rdfs:subClassOf iot:FeatureOfInterest ;
+                 rdfs:comment "Questa classe rappresenta la caratteristica suolo. Se l'ontologia è utilizzata per modellare eventi IoT nel contesto di dati meteo, questa classe è rilevante in quanto connota la caratteristica suolo dell'osservazione."@it ,
+                              "This class represents the characteristic ground level soil. If the ontology is used to model IoT events in the context of weather data, this class is relevant because it represents the soil characteristic of the observation."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+                 rdfs:label "Ground Level Soil"@en ,
+                            "Suolo"@it ;
+                 owl:versionInfo "stabile"@it ,
+                                 "stable"@en .
+
+
+###  https://w3id.org/leo/onto/weather/Rainfall
+:Rainfall rdf:type owl:Class ;
+          rdfs:subClassOf iot:FeatureOfInterest ;
+          rdfs:comment "Questa classe rappresenta la pioggia. Se l'ontologia è usata per modellare eventi IoT nel contesto di dati meteo, questa classe è rilevante in quanto connota la caratteristica pioggia dell'osservazione."@it ,
+                       "This class represents rain. If the ontology is used to model IoT events in the context of weather data, this class is relevant because it represents the rain characteristic of the observation."@en ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+          rdfs:label "Pioggia"@it ,
+                     "Rainfall"@en ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
+
+
+###  https://w3id.org/leo/onto/weather/Weather
+:Weather rdf:type owl:Class ;
+         rdfs:subClassOf iot:Observation ;
+         rdfs:comment "Questa classe rappresenta un'osservazione di tipo meteo."@it ,
+                      "This class represents a specific observation of Meteo type"@en ;
+         rdfs:label <https://w3id.org/leo/onto/weather> ,
+                    "Meteo"@it ,
+                    "Weather"@en ;
+         owl:versionInfo "stabile"@it ,
+                         "stable"@en .
+
+
+###  https://w3id.org/leo/onto/weather/WeatherStation
+:WeatherStation rdf:type owl:Class ;
+                rdfs:subClassOf iot:Platform ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/italia/onto/CLV/hasSpatialCoverage> ;
+                                  owl:someValuesFrom <https://w3id.org/italia/onto/CLV/Feature>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/italia/onto/CLV/hasGeometry> ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <https://w3id.org/italia/onto/CLV/Geometry>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :managedBy ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass cov:Organization
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty l0:name ;
+                                  owl:someValuesFrom rdfs:Literal
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty l0:identifier ;
+                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                ] ;
+                rdfs:comment "Questa classe rappresenta la stazione meteo. La stazione è identificata univocamente da un identificativo, è gestita da un'organizzazione ed ha una geometria (tipicamente un punto) associata."@it ,
+                             "This class represents the weather station. The station is uniquely identified by an identifier, is managed by an organization and has a geometry (usually a point) associated with it."@en ;
+                rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+                rdfs:label "Stazione Meteo"@it ,
+                           "Weather Station"@en ;
+                owl:versionInfo "stabile"@it ,
+                                "stable"@en .
+
+
+###  https://w3id.org/leo/onto/weather/Wind
+:Wind rdf:type owl:Class ;
+      rdfs:subClassOf iot:FeatureOfInterest ;
+      rdfs:comment "Questa classe rappresenta la caratteristica vento. Se l'ontologia è utilizzata per modellare gli eventi IoT nel contesto del meteo, questa classe è rilevante in quanto rappresenta la caratteristica  vento dell'osservazione"@it ,
+                   "This class represents the feature wind. If the ontology is used to model IoT events in the context of meteo, this class is relevant since it represents the wind feature of the observation"@en ;
+      rdfs:isDefinedBy <https://w3id.org/leo/onto/weather> ;
+      rdfs:label "Vento"@it ,
+                 "Wind"@en ;
+      owl:versionInfo "stabile"@it ,
+                      "stable"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/leo/data/contact-point/onto-aia
+<https://w3id.org/leo/data/contact-point/onto-aia> rdf:type owl:NamedIndividual ,
+                                                            <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                            vcard:Kind ,
+                                                            vcard:Organization ;
+                                                   rdfs:label "Sistemi informativi"@it ;
+                                                   vcard:fn "Sistemi informativi"@it ;
+                                                   vcard:hasEmail <mailto:affarigenerali@pec.aia.it> .
+
+
+###  https://w3id.org/leo/data/distribution/WT-JSON-LD
+<https://w3id.org/leo/data/distribution/WT-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                             admsapit:SemanticAssetDistribution ;
+                                                    dct:description "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"@it ,
+                                                                    "This is the distribution in JSON-LD of weather ontology"@en ;
+                                                    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                    dct:label "Distribuzione JSON-LD ontologia Weather"@it ,
+                                                              "JSON-LD distribution of Weather Ontology"@en ;
+                                                    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                    dct:title "Distribuzione JSON-LD ontologia Weather"@it ,
+                                                              "JSON-LD distribution of Weather Ontology"@en ;
+                                                    rdfs:comment "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"@it ,
+                                                                 "This is the distribution in JSON-LD of weather ontology"@en ;
+                                                    dcat:accessURL <https://www.leo-project.it/Ontologie/weather/latest> ;
+                                                    dcat:downloadURL <https://www.leo-project.it/Ontologie/weathr/latest/weather.jsonld> .
+
+
+###  https://w3id.org/leo/data/distribution/WT-RDF-TURTLE
+<https://w3id.org/leo/data/distribution/WT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                admsapit:SemanticAssetDistribution ;
+                                                       dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia sul meteo"@it ,
+                                                                       "This is the distribution in RDF/Turtle of Weather ontology"@en ;
+                                                       dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                       dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                       dct:title "Distribuzione RDF/Turtle ontologia Weather"@it ,
+                                                                 "RDF/Turtle distribution of Weather Ontology"@en ;
+                                                       rdfs:comment "Questa è la distribuzione RDF/Turtle dell'ontologia sul meteo"@it ,
+                                                                    "This is the distribution in RDF/Turtle of Weather ontology"@en ;
+                                                       rdfs:label "Distribuzione RDF/Turtle ontologia Weather"@it ,
+                                                                  "RDF/Turtle distribution of Weather Ontology"@en ;
+                                                       dcat:accessURL <https://www.leo-project.it/Ontologie/weather/latest> ;
+                                                       dcat:downloadURL <https://www.leo-project.it/Ontologie/weather/latest/weather.ttl> .
+
+
+###  https://w3id.org/leo/data/distribution/WT-RDF-XML
+<https://w3id.org/leo/data/distribution/WT-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                             admsapit:SemanticAssetDistribution ;
+                                                    dct:description "Questa è la distribuzione RDF/XML dell'ontologia sul meteo"@it ,
+                                                                    "This is the distribution in RDF/XML of Weather ontology"@en ;
+                                                    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                    dct:title "Distribuzione RDF/XML ontologia Weather"@it ,
+                                                              "RDF/XML distribution of Weather Ontology"@en ;
+                                                    rdfs:comment "Questa è la distribuzione RDF/XML dell'ontologia sul meteo"@it ,
+                                                                 "This is the distribution in RDF/XML of Weather ontology"@en ;
+                                                    rdfs:label "Distribuzione RDF/XML ontologia Weather"@it ,
+                                                               "RDF/XML distribution of Weather Ontology"@en ;
+                                                    dcat:accessURL <https://www.leo-project.it/Ontologie/weather/latest> ;
+                                                    dcat:downloadURL <https://www.leo-project.it/Ontologie/weather/latest/weather.rdf> .
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "00944701002" ;
+                                                             foaf:name "Associazione Italiana Allevatori"@it ,
+                                                                       "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "06695411006" ;
+                                                             foaf:name "Bluarancio"@en ,
+                                                                       "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 admsapit:Project ;
+                                        rdfs:label "LEO - Livestok Environment Open Data"@it ;
+                                        l0:name "LEO - Livestok Environment Open Data"@it .
+
+
+###  https://w3id.org/leo/onto/weather
+<https://w3id.org/leo/onto/weather> rdf:type owl:NamedIndividual ,
+                                             admsapit:SemanticAsset .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,1406 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "clv": "https://w3id.org/italia/onto/CLV/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "leo": "https://w3id.org/leo/onto/leo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ti": "https://w3id.org/italia/onto/TI/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "leo:FarmAnimal",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL490C28",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isOwnedByCompany"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      }
+    },
+    {
+      "@id": "_:ub2bL456C32",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "ti:TimeInterval"
+      },
+      "owl:onProperty": {
+        "@id": "ti:atTime"
+      }
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL465C32",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/directlyPrecedesCompany"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/hasRuralSiteCharacteristic",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/isRuralSiteCharacteristicOf"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has rural site characteristic"
+        },
+        {
+          "@language": "it",
+          "@value": "ha caratteristica ambiente rurale"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteCharacteristic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/withCompanyType",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "with company type"
+        },
+        {
+          "@language": "it",
+          "@value": "con tipo azienda"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyType"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isCompanyInTimeOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is company in time of"
+        },
+        {
+          "@language": "it",
+          "@value": "è azienda nel tempo di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/Company",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Azienda"
+        },
+        {
+          "@language": "en",
+          "@value": "Company"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL415C26"
+        },
+        {
+          "@id": "l0:Agent"
+        },
+        {
+          "@id": "_:ub2bL432C26"
+        },
+        {
+          "@id": "_:ub2bL427C26"
+        },
+        {
+          "@id": "_:ub2bL419C26"
+        },
+        {
+          "@id": "_:ub2bL423C26"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isBirthFarmingCompanyOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is birth farming company of"
+        },
+        {
+          "@language": "it",
+          "@value": "è azienda di allevamento di nascita di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/hasCompanyInTime",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/isCompanyInTimeOf"
+      },
+      "rdfs:domain": {
+        "@id": "leo:FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has company in time"
+        },
+        {
+          "@language": "it",
+          "@value": "ha azienda nel tempo"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      }
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL494C28",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "clv:Feature"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/locatedIn"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/directlyPrecedesCompany",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "directly precedes company"
+        },
+        {
+          "@language": "it",
+          "@value": "precede direttamente azienda"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:directlyPrecedes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/forCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/isCompanyOf"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "for company"
+        },
+        {
+          "@language": "it",
+          "@value": "per azienda"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/CO-RDF-TURTLE",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/co/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/co/latest/co.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sulle aziende degli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Companies of the Farm Animals ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia CO (Company)"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of CO (Company) Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/ownsRuralSite",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "owns rural site"
+        },
+        {
+          "@language": "it",
+          "@value": "possiede un ambiente rurale"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      }
+    },
+    {
+      "@id": "_:ub2bL427C26",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isCompanyOf"
+      }
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "foaf:Agent",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/RuralSiteCharacteristic",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Caratteristica Ambiente Rurale"
+        },
+        {
+          "@language": "en",
+          "@value": "Rural iSite Characteristic"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL511C42"
+        },
+        {
+          "@id": "l0:Characteristic"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/hasBirthFarmingCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/isBirthFarmingCompanyOf"
+      },
+      "rdfs:domain": {
+        "@id": "leo:FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha azienda d'allevamento di nascita"
+        },
+        {
+          "@language": "en",
+          "@value": "has birth farming company"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      }
+    },
+    {
+      "@id": "_:ub2bL523C39",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteCharacteristic"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/hasRuralSiteCharacteristic"
+      }
+    },
+    {
+      "@id": "_:ub2bL419C26",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isCurrentOwnerFarmingCompanyOf"
+      },
+      "owl:someValuesFrom": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/CompanyInTime",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Comapny in Time"
+        },
+        {
+          "@language": "it",
+          "@value": "Azienda nel tempo"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL444C32"
+        },
+        {
+          "@id": "_:ub2bL460C32"
+        },
+        {
+          "@id": "_:ub2bL452C32"
+        },
+        {
+          "@id": "_:ub2bL465C32"
+        },
+        {
+          "@id": "l0:EventOrSituation"
+        },
+        {
+          "@id": "_:ub2bL448C32"
+        },
+        {
+          "@id": "_:ub2bL456C32"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isCompanyTypeOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/withCompanyType"
+      },
+      "rdfs:domanin": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyType"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is company type of"
+        },
+        {
+          "@language": "it",
+          "@value": "è tipo azienda di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      }
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/CompanyType",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Tipo Azienda"
+        },
+        {
+          "@language": "en",
+          "@value": "Company Type"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Object"
+        },
+        {
+          "@id": "_:ub2bL478C30"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isCurrentOwnerFarmingCompanyOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is current owner farming company of"
+        },
+        {
+          "@language": "it",
+          "@value": "è l'attuale azienda di allevamento proprietaria di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/hasRuralSiteDescription",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/isRuralSiteDescriptionOf"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has rural site description"
+        },
+        {
+          "@language": "it",
+          "@value": "ha descrizione ambiente rurale"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:hasDescription"
+      }
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL452C32",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/withCompanyType"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyType"
+      }
+    },
+    {
+      "@id": "_:ub2bL423C26",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/ownsRuralSite"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/SlaughterhouseCompany",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/co/CompanyType"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Azienda di macello"
+        },
+        {
+          "@language": "en",
+          "@value": "Slaughterhouse Company"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isOwnedByCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/ownsRuralSite"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is owned by company"
+        },
+        {
+          "@language": "it",
+          "@value": "è di proprietà di una azienda"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      }
+    },
+    {
+      "@id": "_:ub2bL527C39",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isRuralSiteDescriptionOf"
+      }
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL460C32",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/directlyFollowsCompany"
+      }
+    },
+    {
+      "@id": "_:ub2bL478C30",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isCompanyTypeOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isCompanyOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is company of"
+        },
+        {
+          "@language": "it",
+          "@value": "è azienda di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/CO-JSON-LD",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/co/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/co/latest/co.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Companies of the Farm Animals ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sulle aziende degli animali da allevamento"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia CO (Company)"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of CO (Company) Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isLocationOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/locatedIn"
+      },
+      "rdfs:domain": {
+        "@id": "clv:Feature"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è luogo di"
+        },
+        {
+          "@language": "en",
+          "@value": "is location of"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "clv:isSpatialCoverageOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "admsapit:Project",
+        "owl:NamedIndividual"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/RuralSite",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Rural Site"
+        },
+        {
+          "@language": "it",
+          "@value": "Ambiente Rurale"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL498C28"
+        },
+        {
+          "@id": "_:ub2bL490C28"
+        },
+        {
+          "@id": "_:ub2bL494C28"
+        },
+        {
+          "@id": "l0:Location"
+        }
+      ]
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Descrizione Ambiente Rurale"
+        },
+        {
+          "@language": "en",
+          "@value": "Rural Site Description"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL523C39"
+        },
+        {
+          "@id": "l0:Description"
+        },
+        {
+          "@id": "_:ub2bL527C39"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/hasCurrentOwnerFarmingCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/co/isCurrentOwnerFarmingCompanyOf"
+      },
+      "rdfs:domain": {
+        "@id": "leo:FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha attuale azienda d'allevamento proprietaria"
+        },
+        {
+          "@language": "en",
+          "@value": "has current owner farming company"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      }
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL498C28",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/hasRuralSiteDescription"
+      }
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isRuralSiteDescriptionOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è descrizione ambiente rurale di"
+        },
+        {
+          "@language": "en",
+          "@value": "is rural site description of"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:isDescriptionOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "admsapit:SemanticAsset"
+      ],
+      "admsapit:acronym": "CO",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": [
+        {
+          "@id": "https://w3id.org/leo/onto/co/Company"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/co/RuralSite"
+        }
+      ],
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/CO-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/CO-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/CO-RDF-XML"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:SearchTask"
+        },
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/co"
+      },
+      "admsapit:prefix": "co",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "initial draft",
+      "admsapit:target": [
+        "Pubbliche Amministrazioni",
+        "Imprese"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:ServiceOntology"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Ambiente Rurale"
+        },
+        {
+          "@language": "en",
+          "@value": "Aziende"
+        },
+        {
+          "@language": "it",
+          "@value": "Animali d'allevamento"
+        },
+        {
+          "@language": "it",
+          "@value": "Ubicazione"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "ttps://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia dell'ubicazione e quindi delle aziende degli animali di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the companies of the farm animals"
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2018-06-20"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2018-11-27"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/100254"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Ontologia delle aziende degli animali di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "Company of Farm Animals Ontology"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/CLV"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/co/0.1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2018 - Creazione della prima versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "Version 0.1 - 2018 - Creation of the first version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the companies of the farm animals"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia dell'ubicazione e quindi delle aziende degli animali di allevamento"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/co"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Company of Farm Animals Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia delle aziende degli animali di allevamento"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/BirthFarmingCompany",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/co/CompanyType"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Azienda d'allevamento di nascita"
+        },
+        {
+          "@language": "en",
+          "@value": "Birth Farming Company"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/companyCode",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "codice azienda"
+        },
+        {
+          "@language": "en",
+          "@value": "code company"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL432C26",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/companyCode"
+      }
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/CO-RDF-XML",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/co/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/co/latest/co.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Companies of the Farm Animals ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sulle aziende degli animali da allevamento"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of CO (Company) Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia CO (Company)"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/directlyFollowsCompany",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "segue direttamente azienda"
+        },
+        {
+          "@language": "en",
+          "@value": "directly follows company"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/CompanyInTime"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:directlyFollows"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/locatedIn",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSite"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "located in"
+        },
+        {
+          "@language": "it",
+          "@value": "localizzato in"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "clv:Feature"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "clv:hasSpatialCoverage"
+      }
+    },
+    {
+      "@id": "_:ub2bL444C32",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/forCompany"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/Company"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "vcard:Kind",
+        "vcard:Organization",
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "owl:NamedIndividual"
+      ],
+      "vcard:fn": "Sistemi informativi",
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/GeneticFarmingCompany",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/co/CompanyType"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Azienda d'allevamento per la genetica"
+        },
+        {
+          "@language": "en",
+          "@value": "Genetica Farming Company"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/OwnerFarmingCompany",
+      "@type": [
+        "https://w3id.org/leo/onto/co/CompanyType",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Owner Farming Company"
+        },
+        {
+          "@language": "it",
+          "@value": "Azienda d'allevamento proprietaria"
+        }
+      ]
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL448C32",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isCompanyInTimeOf"
+      },
+      "owl:someValuesFrom": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent",
+        "owl:NamedIndividual"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL415C26",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isBirthFarmingCompanyOf"
+      },
+      "owl:someValuesFrom": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/isRuralSiteCharacteristicOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteCharacteristic"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is rural site characteristic of"
+        },
+        {
+          "@language": "it",
+          "@value": "è caratteristica ambiente rurale di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription"
+      }
+    },
+    {
+      "@id": "_:ub2bL511C42",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/RuralSiteDescription"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/co/isRuralSiteCharacteristicOf"
+      }
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    }
+  ]
+}

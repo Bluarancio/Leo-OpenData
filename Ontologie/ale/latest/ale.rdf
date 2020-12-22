@@ -1,0 +1,2318 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/ale/"
+     xml:base="https://w3id.org/leo/onto/ale"
+     xmlns:co="https://w3id.org/leo/onto/co/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ti="https://w3id.org/italia/onto/TI/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:animal="https://w3id.org/leo/onto/animal/"
+     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/ale">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/ale/0.2"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+        <dc:description rdf:resource="https://www.dropbox.com/s/8l2oyx7gneo5feh/AleModule_v2.png?raw=1"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="ttps://w3id.org/leo/data/private-organization/00944701002"/>
+        <dct:description xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento,</dct:description>
+        <dct:description xml:lang="en">This is the ontology of the farm animals life events</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-18</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-03</dct:modified>
+        <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <dct:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <dct:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
+        <dct:title xml:lang="en">Animal Life Event Ontology</dct:title>
+        <dct:title xml:lang="it">Ontologia degli eventi della vita degli animali di allevamento</dct:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento,</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology of the farm animals life events</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+        <rdfs:label xml:lang="en">Animal Life Event Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia degli eventi della vita degli animali di allevamentoa</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.1 - 2018 - Creation of the first version of the ontology</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.1 - 2018 - Creazione della prima versione dell&apos;ontologia</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">Animali d&apos;allevamento</dcat:keyword>
+        <dcat:keyword xml:lang="en">Bovine</dcat:keyword>
+        <dcat:keyword xml:lang="it">Bovini</dcat:keyword>
+        <dcat:keyword xml:lang="it">Eventi della vita</dcat:keyword>
+        <dcat:keyword xml:lang="en">Farm Animal</dcat:keyword>
+        <dcat:keyword xml:lang="en">Life events</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+        <admsapit:acronym>ALE</admsapit:acronym>
+        <admsapit:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/ALE-JSON-LD"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/ALE-RDF-XML"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/ale</admsapit:officialURI>
+        <admsapit:prefix>ale</admsapit:prefix>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <admsapit:status>draft</admsapit:status>
+        <admsapit:target>Imprese</admsapit:target>
+        <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
+        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/name -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/happensIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/happensIn">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/co/RuralSite"/>
+        <rdfs:comment xml:lang="en">Property that links the animal life event to the rural site where the event occured.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega l&apos;evento della vita dell&apos;animale con l&apos;ambiente rurale dove l&apos;evento è avvenuto.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">avviene in</rdfs:label>
+        <rdfs:label xml:lang="en">happens in</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasAnimalLifeEvent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasAnimalLifeEvent">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/ale/involvesFarmAnimal"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:comment xml:lang="en">Property that links the farm animal to the animal life events.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega l&apos;animale  agli eventi della vita che gli possono accadere.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha evento della vita dell&apos;animale</rdfs:label>
+        <rdfs:label xml:lang="en">has animal life event</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasDisposalReason -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasDisposalReason">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Disposal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:comment xml:lang="en">Property that links the event of disposal of the animal to the reason for the disposal.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;evento dell&apos;eliminazione dell&apos;animale alla ragione per l&apos;eliminazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha motivazione eliminazione</rdfs:label>
+        <rdfs:label xml:lang="en">has disposal reason</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasFertilizationType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasFertilizationType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Fertilization"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/FertilizationType"/>
+        <rdfs:comment xml:lang="en">Property that links the event Fertilization to the tyoe of fertilization that is carried out in the event</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega l&apos;evento della fecondazione/inseminazione al tipo di inseminazione/fecondazione svolta nell&apos;evento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">ha fertilization type</rdfs:label>
+        <rdfs:label xml:lang="it">ha tipo inseminazione/fecondazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasPregnancyResult -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasPregnancyResult">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/PregnancyDiagnosis"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/PregnancyResult"/>
+        <rdfs:comment xml:lang="en">Property that links the specific pregnancy diagnosis event to the obtained results.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega lo specifico evento di diagnosi gravidanza ai risultati ottenuti.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha esito della diagnosi di gravidanza</rdfs:label>
+        <rdfs:label xml:lang="en">has pregnancy result</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/involvesCompany -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/involvesCompany">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/ale/isInvolvedInEvent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/co/Company"/>
+        <rdfs:comment xml:lang="en">Property that links the animal life event to the company in which it occurs.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;evento della vita dell&apos;animale all&apos;azienda in cui avviene.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">coinvolge azienda</rdfs:label>
+        <rdfs:label xml:lang="en">involves company</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/involvesFarmAnimal -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/involvesFarmAnimal">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has animal life event&quot; that links the animal life event to the animal itself.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha evento della vita dell&apos;animale&quot; che collega l&apos;evento della vita dell&apos;animale all&apos;animale stesso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">coinvolge animale di allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">involves farm animal</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/isInvolvedInEvent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/isInvolvedInEvent">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/co/Company"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;involces company&quot; that links the company with the animal life event.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;coinvolge azienda&quot; che lega l&apos;azienda all&apos;evento della vita dell&apos;animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">is involved in event</rdfs:label>
+        <rdfs:label xml:lang="it">è coinvolta in evento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/milkingTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/milkingTime">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Milking"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:comment xml:lang="en">Property that links the milking event to the time interval at which it occures (with start date/time and end date/time).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;evento della mungitura all&apos;intervallo di tempo in cui avviene (con data e ora di inizio e data e ora di fine).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">milking time</rdfs:label>
+        <rdfs:label xml:lang="it">mungitura al tempo</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/reportsBreederBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/reportsBreederBreed">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Fertilization"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Implantation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="en">Property that links the fertilisation or implantation events to the breed of the breeder that is reported in the events. The breed of the breeder is the breed of the male used for the fertilization</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega gli eventi di fecondazione o impianto alla razza del riproduttore che viene riportata negli eventi. La razza del riproduttore è la  razza del maschio utilizzato per la fecondazione</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">reports breeder breed</rdfs:label>
+        <rdfs:label xml:lang="it">riporta razza riproduttore</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/reportsEaseOfParturition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/reportsEaseOfParturition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Parturition"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+        <rdfs:comment xml:lang="en">Property that links the birth event to the reported ease of parturition, i.e. links the birth to the subjective assessment of the breeder or technician by which it is indicated whether the female gave birth without problems or needed assistance.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;evento del parto alla facilità di parto riportata, ovvero collega il parto  alla valutazione soggettiva dell’allevatore o del tecnico attraverso la quale viene indicato se la femmina ha partorito senza problemi o ha avuto bisogno di assistenza.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">reports ease of parturition</rdfs:label>
+        <rdfs:label xml:lang="it">riporta facilità parto</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/reportsFatherBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/reportsFatherBreed">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DisplacementInEntry"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="en">Property that links the events birth, identification and displacement in entry that report the breed of the animal&apos;s father.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega gli eventi di nascita, identificazione e spostamento in entrata che riportano la razza del padre dell&apos;animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">reports father breed</rdfs:label>
+        <rdfs:label xml:lang="it">riporta la razza padre</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DisplacementInEntry"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="en">Property that links the events birth, identification and displacement in entry that report the breed of the animal&apos;s genetic mother.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega gli eventi di nascita, identificazione e spostamento in entrata che riportano la razza della madre che apporta il patrimonio genetico.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">reports genetic mother breed</rdfs:label>
+        <rdfs:label xml:lang="it">riporta razza madre genetica</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/reportsMilkingVelocity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/reportsMilkingVelocity">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Milking"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:comment xml:lang="en">Property that links the miliking events to the muliking velocity it reports.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;evento della mungitura con la velocità di mungitura che esso riporta.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">reports milking velocity</rdfs:label>
+        <rdfs:label xml:lang="it">riporta velocità di mungitura</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasBreed"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasDestination -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasDestination"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasProductionTarget -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasProductionTarget"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasSex -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasSex"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasWeight -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasWeight"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/abortionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/abortionDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Abortion"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data di aborto dell’animale gravido. E&apos; rlevata nell&apos;evento della vita aborto</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date of the abort of the pregnant animal. It is detected in the abort life event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">abortion date</rdfs:label>
+        <rdfs:label xml:lang="it">data aborto</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/birthDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/birthDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DisplacementInEntry"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data nella quale è nato l’animale</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date on which the animal was born</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">birth date</rdfs:label>
+        <rdfs:label xml:lang="it">data di nascita</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/codeBornCompany -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/codeBornCompany">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Il codice dell’azienda italiana, associato agli eventi nascita e identificazione, nella quale è nato l’animale. È il codice che il ministero della sanità ha assegnato all’azienda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The code of the Italian company, associated with the birth and identification events, in which the animal was born. It is the code that the Ministry of Health has assigned to the holding.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">code born company</rdfs:label>
+        <rdfs:label xml:lang="it">codice azienda nascita</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/codeOwnerCompany -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/codeOwnerCompany">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DisplacementInEntry"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Il codice dell’azienda italiana, associato agli eventi nascita, identificazione e entrata in allevamento, nella quale è transitato fisicamente l’animale. È il codice che il ministero della sanità ha assegnato all’azienda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The code of the Italian company, associated with the birth, identification and displacement in entry events, into which the animal physically passed. It is the code that the Ministry of Health has assigned to the company.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">code owner company</rdfs:label>
+        <rdfs:label xml:lang="it">codice azienda proprietaria</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/detectionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/detectionDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La data di rilevazione dell&apos;evento della vita dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date of detection of the life event of the animal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data di rilevazione</rdfs:label>
+        <rdfs:label xml:lang="en">detection date</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/diagnosisDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/diagnosisDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Diagnosis"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data nella quale vengono fatte delle diagnosi sull&apos;animale. Nel caso di diagnosi di gravidanza, rappresenta la data nella quale attraverso visite ginecologiche o analisi di laboratorio viene determinato se la femmina è gravida.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date on which diagnoses are made on the animal. In the case of a diagnosis of pregnancy, it is the date on which gynaecological examinations or laboratory tests determine whether the female is pregnant.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data diagnosi</rdfs:label>
+        <rdfs:label xml:lang="en">diagnosis date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/disposalDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/disposalDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Disposal"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data nella quale l’animale esce dall’allevamento e la sua destinazione NON è un altro allevamento nel quale verrà allevato</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date on which the animal leaves the farm and its destination is NOT another farm on which it will be bred</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data di eliminazione</rdfs:label>
+        <rdfs:label xml:lang="en">disposal date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/dryDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/dryDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Dry"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La data nella quale l’allevatore dopo aver ridotto volontariamente la mungitura della femmina la sospende.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date on which the farmer, after voluntarily reducing the milking of the female, stops milking her.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data asciutta</rdfs:label>
+        <rdfs:label xml:lang="en">dry date</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/embryonicResorptionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/embryonicResorptionDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/EmbryonicResorption"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data del riassorbimento embrionale dell’animale gravido (aborto molto precoci)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date of embryonic resorption of the pregnant animal (very early abortion)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data riassorbimento embrionale</rdfs:label>
+        <rdfs:label xml:lang="en">embryonic resorption date</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/entryInFarmDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/entryInFarmDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DisplacementInEntry"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data nella quale l’animale è entrato in allevamento, potrebbe coincidere con la data di nascita se rappresenta un ingresso di un nato in stalla.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date on which the animal entered the herd, it could coincide with the date of birth if it represents an entry of a stable born.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data entrata in allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">entry in farm date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/exitFromFarmDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/exitFromFarmDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/DisplacementInExit"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data nella quale l’animale esce dall’allevamento se la sua destinazione è un altro allevamento nel quale verrà allevato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date on which the animal leaves the farm if its destination is another farm on which it will be reared.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data uscita dall&apos;allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">exit from farm date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/fertilizationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/fertilizationDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Fertilization"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La data nella quale la vacca viene fecondata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date on which the cow is fertilized.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data di fecondazione</rdfs:label>
+        <rdfs:label xml:lang="en">fertilization date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/implantationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/implantationDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Implantation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La data nella quale viene introdotto un embrione nella vacca ricevente.</rdfs:comment>
+        <rdfs:comment xml:lang="it">The date on which an embryo is introduced into the receiving cow.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data impianto</rdfs:label>
+        <rdfs:label xml:lang="en">implantation date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/numberOfBornAliveFemales -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfBornAliveFemales">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Parturition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Il numero di femmine nate vive dal parto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The number of females born alive in the parturition event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">number of born alive females</rdfs:label>
+        <rdfs:label xml:lang="it">numero di femmine nate vive</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/numberOfBornAliveMales -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfBornAliveMales">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Parturition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Il numero di maschi nati vivi dal parto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The number of males born alive in the parturition event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">number of born alive males</rdfs:label>
+        <rdfs:label xml:lang="it">numero di maschi nati vivi</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/numberOfBornDeadFemales -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfBornDeadFemales">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Abortion"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Parturition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Number of females born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Numero di femmine nate morte originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">number of born dead females</rdfs:label>
+        <rdfs:label xml:lang="it">numero di femmine nate morte</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/numberOfBornDeadMales -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfBornDeadMales">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Abortion"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Parturition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Number of males born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Numero di maschi nati morti originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">number of born dead males</rdfs:label>
+        <rdfs:label xml:lang="it">numero di maschi nati morti</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/parturitionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/parturitionDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Parturition"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data del parto dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date of the parturition of the animal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data parto</rdfs:label>
+        <rdfs:label xml:lang="en">parturition date</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/registrationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/registrationDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Data nella quale viene applicata la marca auricolare all’animale</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date on which the eartag is applied to the animal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data di immatricolazione</rdfs:label>
+        <rdfs:label xml:lang="en">registration date</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/uniqueAnimalNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Abortion -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Abortion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/abortionDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornDeadFemales"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornDeadMales"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/9yuu46iio4xlip5/Ale_Abort.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento di aborto dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The abort event of the animal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Abortion</rdfs:label>
+        <rdfs:label xml:lang="it">Aborto</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/AnimalLifeEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/AnimalLifeEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/detectionDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita per un animale. Esso può un aborto, la nascita, la fecondazione, la riproduzione, la mungitura per alcuni tipi di specie, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The life event of an animal. It may be abortion, birth, fertilization, reproduction, milking for certain types of species, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Animal Life Event</rdfs:label>
+        <rdfs:label xml:lang="it">Evento della Vita Animale di Allevamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Birth -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Birth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsFatherBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasDestination"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasSex"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasWeight"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/birthDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/codeBornCompany"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/codeOwnerCompany"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/entryInFarmDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">L&apos;evento di nascita dell&apos;animale</rdfs:comment>
+        <rdfs:comment xml:lang="en">The birth event of the animal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Birth</rdfs:label>
+        <rdfs:label xml:lang="it">Nascita</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Diagnosis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Diagnosis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/diagnosisDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/txb9w5pwko4p4su/Ale_Diagnosis.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della diagnosi di qualsiasi tipo. Include la diagnosi della gravidanza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The event of diagnosis including the pregnancy diagnosis</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Diagnosi</rdfs:label>
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/DisplacementInEntry -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/DisplacementInEntry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasProductionTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/ProductionTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsFatherBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasDestination"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasSex"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/codeOwnerCompany"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/entryInFarmDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/birthDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/k9l9ow6x7rnknf6/Ale_DisplacementEntry.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale che rappresenta l&apos;entrata dell&apos;animale in azienda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The event in the animal&apos;s life that represents the animal&apos;s entry into the farm (company).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Displacement in Entry</rdfs:label>
+        <rdfs:label xml:lang="it">Spostamento in Entrata</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/DisplacementInExit -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/DisplacementInExit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/exitFromFarmDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/ntd69bzkxqed4v6/Ale_DisplacementExit.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento di uscita dall&apos;animale dall&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">The event of displacement in exit of the animal from the farm</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Displacement in Exit</rdfs:label>
+        <rdfs:label xml:lang="it">Spostamento in Uscita</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Disposal -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Disposal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasDisposalReason"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/disposalDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/1gahruugwfdw9og/Ale_Disposal.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale dell&apos;eliminazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The animal&apos;s life event of the disposal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Disposal</rdfs:label>
+        <rdfs:label xml:lang="it">Eliminazione</rdfs:label>
+        <owl:versionInfo xml:lang="en">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added  in the second version of the ontology</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/DisposalReason -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/DisposalReason">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DeathPasture"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/DeathStable"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/SelfConsumptionSlaughtering"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/SlaughterHealth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/SlaughterWellness"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Slaughterhouse"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/UrgentSlaughterStable"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="en">Information that specifies the cause of the animal disposal</rdfs:comment>
+        <rdfs:comment xml:lang="it">Informazione che specifica la causa di eliminazione dell’animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Disposal Reason</rdfs:label>
+        <rdfs:label xml:lang="it">Motivazione Eliminazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Dry -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Dry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/dryDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/inl9lqpquqdai5x/Ale_Dry.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento dell&apos;asciutta, ovvero l&apos;evento svolto per finalità sanitarie che consente di sospendere la mungitura dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The dry event, i.e. the event carried out for health purposes that stops the milking of the animal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Asciutta</rdfs:label>
+        <rdfs:label xml:lang="en">Dry</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/EaseOfParturition -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/EaseOfParturition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Assistant"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/CaesareanSection"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Difficult"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Easy"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Embryotomy"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="en">Subjective assessment of the breeder or technician to indicate whether the female has given birth without problems or needs assistance. The instances of the class can assume one of these values: &quot;Easy&quot;, &quot;Assistant, no tools&quot;, &quot;Cesarean Section&quot;, &quot;Difficult, with multiple assistants&quot;, &quot;Embryotomy&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Valutazione soggettiva dell’allevatore o del tecnico attraverso la quale viene indicato se la femmina ha partorito senza problemi o ha avuto bisogno di assistenza. Le istanze della classe possono assumere uno tra questi valori: &quot;Facile&quot;, &quot;Assistente, no strumenti&quot;, &quot;Taglio Cesareo&quot;, &quot;Difficile, con più assitenti&quot;, &quot;Embriotomia&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Ease of Parturition</rdfs:label>
+        <rdfs:label xml:lang="it">Facilità di Parto</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/EmbryonicResorption -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/EmbryonicResorption">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/embryonicResorptionDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/r0qzhbry5hmklmu/Ale_EmbryonicResorption.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale di riassorbimento embrionale avvenuto in azienda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The animal&apos;s life event of embryonic resorption occurred in the farm (company).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Embryonic Resorption</rdfs:label>
+        <rdfs:label xml:lang="it">Riassorbimento Embrionale</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Fertilization -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Fertilization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasFertilizationType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/ale/FertilizationType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsBreederBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/fertilizationDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/kp2bp6z3x00n1nh/Ale_Fertilization.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento di fecondazione dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The fertilization of the animal event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Fecondazione</rdfs:label>
+        <rdfs:label xml:lang="en">Fertilization</rdfs:label>
+        <rdfs:label xml:lang="en">Insemination</rdfs:label>
+        <rdfs:label xml:lang="it">Inseminazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/FertilizationType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/FertilizationType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/FA"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/FG"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/FN"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/IE"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Indica se la fecondazione subita dalla femmina è stata effettuata attraverso una monta naturale o attraverso l’intervento strumentale o attraverso un impianto di embrioni</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates whether the fertilization suffered by the female was carried out through a natural mount or through instrumental intervention or through an embryo implantation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Fertilization Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Fecondazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Identification -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Identification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsFatherBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasDestination"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasSex"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/codeBornCompany"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/codeOwnerCompany"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/registrationDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/birthDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/entryInFarmDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/rjdyv8xzy3capx4/Ale_Identification.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale che consente la sua identificazione in azienda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The animal&apos;s life event that allows one to identify it in a farm.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Identification</rdfs:label>
+        <rdfs:label xml:lang="it">Identificazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Implantation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Implantation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsBreederBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/implantationDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/zb624ebyr4jzc6i/Ale_Implantation.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale dell&apos;impianto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The animal&apos;s life event of the implantation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Impianto</rdfs:label>
+        <rdfs:label xml:lang="en">Implantation</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Milking -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Milking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/milkingTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsMilkingVelocity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/19m2oe3qz14s2zo/Milking.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale della mungitura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The animal&apos;s life event of the milking.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Milking</rdfs:label>
+        <rdfs:label xml:lang="it">Mungitura</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Parturition -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Parturition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/reportsEaseOfParturition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/parturitionDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornAliveFemales"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornAliveMales"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornDeadFemales"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornDeadMales"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://www.dropbox.com/s/45pkcyczelak1ye/Ale_Parturition.png?raw=1"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale del parto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The animal&apos;s life event parturition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Parto</rdfs:label>
+        <rdfs:label xml:lang="en">Parturition</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/PregnancyDiagnosis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/PregnancyDiagnosis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/Diagnosis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasPregnancyResult"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/ale/PregnancyResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La specifica diagnosi della gravidanza dell&apos;animale</rdfs:comment>
+        <rdfs:comment xml:lang="en">The specific diagnosis of the pregnancy of the animal</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Diagnosi Gravidanza</rdfs:label>
+        <rdfs:label xml:lang="en">Pragnacy Diagnosis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/PregnancyResult -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/PregnancyResult">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Negative"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Positive"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Revisable"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Esito della visite ginecologiche o dell’analisi di laboratorio che determina se la femmina è gravida.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Results of gynaecological examinations or laboratory analysis determining whether the female is pregnant.</rdfs:comment>
+        <rdfs:label xml:lang="it">Esito Diagnosi Gravidanza</rdfs:label>
+        <rdfs:label xml:lang="en">Pregnancy Result</rdfs:label>
+        <owl:priorVersion rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/Breed -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Breed"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimalDestination -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/ProductionTarget -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/ProductionTarget"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/Sex -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Sex"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/Weight -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Weight"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/co/Company -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/Company"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/co/RuralSite -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/RuralSite"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/contact-point/onto-aia">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdfs:label xml:lang="en">Infomation systems</rdfs:label>
+        <rdfs:label xml:lang="it">Sistemi informativi</rdfs:label>
+        <vcard:fn>Sistemi informativi</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/distribution/ALE-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/ALE-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sugli eventi della vita degli animali da allevamento</dct:description>
+        <dct:description xml:lang="en">This is the distribution in JSON-LD of Animal Life Events ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione JSON-LD ontologia ALE</dct:title>
+        <dct:title xml:lang="en">JSON-LD distribution of ALE Ontology</dct:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sugli eventi della vita degli animali da allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Animal Life Events ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia ALE</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of ALE Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest/ale.jsonld"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sugli eventi della vita degli animali da allevamento</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/Turtle of Animal Life Events ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia ALE</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of ALE Ontology</dct:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sugli eventi della vita degli animali da allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Animal Life Events ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia ALE</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of ALE Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest/ale.ttl"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/distribution/ALE-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/ALE-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sugli eventi della vita degli animali da allevamento</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/XML of Animal Life Events ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia ALE</dct:title>
+        <dct:title xml:lang="en">RDF/XML distribution of ALE Ontology</dct:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sugli eventi della vita degli animali da allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Animal Life Events ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia ALE</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of ALE Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest/ale.rdf"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>00944701002</dct:identifier>
+        <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+        <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>06695411006</dct:identifier>
+        <foaf:name xml:lang="en">Bluarancio</foaf:name>
+        <foaf:name xml:lang="it">Bluarancio</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/project/LEO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+        <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
+        <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
+        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Assistant -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Assistant">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">An assistant, no tools</rdfs:label>
+        <rdfs:label xml:lang="it">Un assistente, senza strumenti</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/CaesareanSection -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/CaesareanSection">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Caesarean Section</rdfs:label>
+        <rdfs:label xml:lang="it">Taglio Cesareo</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/DeathPasture -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/DeathPasture">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Death in the pasture</rdfs:label>
+        <rdfs:label xml:lang="it">Morte al Pascolo</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/DeathStable -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/DeathStable">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Death in Stable</rdfs:label>
+        <rdfs:label xml:lang="it">Morte in Stalla</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Difficult -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Difficult">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Difficile, con più assistenti</rdfs:label>
+        <rdfs:label xml:lang="en">Difficult, with multiple assistants</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Easy -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Easy">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Easy</rdfs:label>
+        <rdfs:label xml:lang="it">Facile</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Embryotomy -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Embryotomy">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/EaseOfParturition"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Embriotomia</rdfs:label>
+        <rdfs:label xml:lang="en">Embryotomy</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nelal seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/FA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/FA">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FertilizationType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Artificial Fertilization</rdfs:label>
+        <rdfs:label xml:lang="it">Fecondazione Artificiale</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/FG -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/FG">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FertilizationType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Fecondazione in Gruppo</rdfs:label>
+        <rdfs:label xml:lang="en">Group Fertilization</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/FN -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/FN">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FertilizationType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Fecondazione Naturale</rdfs:label>
+        <rdfs:label xml:lang="en">Natural Fertilization</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/IE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/IE">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FertilizationType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Embryonic Fertilization</rdfs:label>
+        <rdfs:label xml:lang="it">Impianto Embrionale</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Negative -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Negative">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/PregnancyResult"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Negativa</rdfs:label>
+        <rdfs:label xml:lang="en">Negative</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Positive -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Positive">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/PregnancyResult"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Positiva</rdfs:label>
+        <rdfs:label xml:lang="en">Positive</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Revisable -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Revisable">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/PregnancyResult"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Revisable</rdfs:label>
+        <rdfs:label xml:lang="it">Rivedibile</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/SelfConsumptionSlaughtering -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/SelfConsumptionSlaughtering">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Macellazione per Autoconsumo</rdfs:label>
+        <rdfs:label xml:lang="en">Self Consumption Slaughtering</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/SlaughterHealth -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/SlaughterHealth">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Abbattimento Prov.Sanitario</rdfs:label>
+        <rdfs:label xml:lang="en">Slaughter for Health reasons</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/SlaughterWellness -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/SlaughterWellness">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Abbattimento motivi di benessere</rdfs:label>
+        <rdfs:label xml:lang="en">Slaughter for wellness reasons</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/Slaughterhouse -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Slaughterhouse">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Macello</rdfs:label>
+        <rdfs:label xml:lang="en">Slaughterhouse</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/ale/UrgentSlaughterStable -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/UrgentSlaughterStable">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/DisposalReason"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Macellazione Urgente in Stalla</rdfs:label>
+        <rdfs:label xml:lang="en">Urgent Slaughter in Stable</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

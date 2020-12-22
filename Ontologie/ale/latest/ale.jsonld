@@ -1,0 +1,5151 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "animal": "https://w3id.org/leo/onto/animal/",
+    "co": "https://w3id.org/leo/onto/co/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ti": "https://w3id.org/italia/onto/TI/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "animal:FarmAnimalDestination",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL548C31",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Birth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/PregnancyResult",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub2bL1540C38"
+      },
+      "owl:priorVersion": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Results of gynaecological examinations or laboratory analysis determining whether the female is pregnant."
+        },
+        {
+          "@language": "it",
+          "@value": "Esito della visite ginecologiche o dell’analisi di laboratorio che determina se la femmina è gravida."
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Pregnancy Result"
+        },
+        {
+          "@language": "it",
+          "@value": "Esito Diagnosi Gravidanza"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "l0:Characteristic"
+      }
+    },
+    {
+      "@id": "_:ub2bL799C38",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Abortion"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Parturition"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/detectionDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La data di rilevazione dell'evento della vita dell'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "The date of detection of the life event of the animal."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "detection date"
+        },
+        {
+          "@language": "it",
+          "@value": "data di rilevazione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL571C27"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "_:ub2bL659C37",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Abortion",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/9yuu46iio4xlip5/Ale_Abort.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento di aborto dell'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "The abort event of the animal."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Abortion"
+        },
+        {
+          "@language": "it",
+          "@value": "Aborto"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL903C27"
+        },
+        {
+          "@id": "_:ub2bL894C27"
+        },
+        {
+          "@id": "_:ub2bL908C27"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/SlaughterWellness",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/DisposalReason"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Abbattimento motivi di benessere"
+        },
+        {
+          "@language": "en",
+          "@value": "Slaughter for wellness reasons"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/codeOwnerCompany",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il codice dell’azienda italiana, associato agli eventi nascita, identificazione e entrata in allevamento, nella quale è transitato fisicamente l’animale. È il codice che il ministero della sanità ha assegnato all’azienda."
+        },
+        {
+          "@language": "en",
+          "@value": "The code of the Italian company, associated with the birth, identification and displacement in entry events, into which the animal physically passed. It is the code that the Ministry of Health has assigned to the company."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL548C31"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "codice azienda proprietaria"
+        },
+        {
+          "@language": "en",
+          "@value": "code owner company"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "_:ub2bL968C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:FarmAnimalDestination"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasDestination"
+      }
+    },
+    {
+      "@id": "_:ub2bL986C42",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1007C42",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/hasDisposalReason",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the event of disposal of the animal to the reason for the disposal."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'evento dell'eliminazione dell'animale alla ragione per l'eliminazione."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Disposal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha motivazione eliminazione"
+        },
+        {
+          "@language": "en",
+          "@value": "has disposal reason"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/DisposalReason"
+      }
+    },
+    {
+      "@id": "_:ub2bL685C29",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1476C30",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1479C48"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/parturitionDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL1479C48",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/FertilizationType",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub2bL1312C40"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Indica se la fecondazione subita dalla femmina è stata effettuata attraverso una monta naturale o attraverso l’intervento strumentale o attraverso un impianto di embrioni"
+        },
+        {
+          "@language": "en",
+          "@value": "Indicates whether the fertilization suffered by the female was carried out through a natural mount or through instrumental intervention or through an embryo implantation"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Fertilization Type"
+        },
+        {
+          "@language": "it",
+          "@value": "Tipo Fecondazione"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "l0:Characteristic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Identification",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/rjdyv8xzy3capx4/Ale_Identification.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The animal's life event that allows one to identify it in a farm."
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale che consente la sua identificazione in azienda."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Identificazione"
+        },
+        {
+          "@language": "en",
+          "@value": "Identification"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1350C33"
+        },
+        {
+          "@id": "_:ub2bL1368C33"
+        },
+        {
+          "@id": "_:ub2bL1377C33"
+        },
+        {
+          "@id": "_:ub2bL1364C33"
+        },
+        {
+          "@id": "_:ub2bL1360C33"
+        },
+        {
+          "@id": "_:ub2bL1335C33"
+        },
+        {
+          "@id": "_:ub2bL1390C33"
+        },
+        {
+          "@id": "_:ub2bL1345C33"
+        },
+        {
+          "@id": "_:ub2bL1340C33"
+        },
+        {
+          "@id": "_:ub2bL1381C33"
+        },
+        {
+          "@id": "_:ub2bL1355C33"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale",
+      "@type": [
+        "owl:Ontology",
+        "admsapit:SemanticAsset",
+        "owl:NamedIndividual"
+      ],
+      "admsapit:acronym": "ALE",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-XML"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/ALE-JSON-LD"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        },
+        {
+          "@id": "admsapit:SearchTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/ale"
+      },
+      "admsapit:prefix": "ale",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "draft",
+      "admsapit:target": [
+        "Imprese",
+        "Pubbliche Amministrazioni"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:DomainOntology"
+      },
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/8l2oyx7gneo5feh/AleModule_v2.png?raw=1"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Eventi della vita"
+        },
+        {
+          "@language": "en",
+          "@value": "Farm Animal"
+        },
+        {
+          "@language": "en",
+          "@value": "Bovine"
+        },
+        {
+          "@language": "en",
+          "@value": "Life events"
+        },
+        {
+          "@language": "it",
+          "@value": "Bovini"
+        },
+        {
+          "@language": "it",
+          "@value": "Animali d'allevamento"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "ttps://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the farm animals life events"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2018-06-18"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2019-12-03"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/100254"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Animal Life Event Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia degli eventi della vita degli animali di allevamento"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/italia/onto/TI"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/ale/0.2"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2018 - Creazione della prima versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "Version 0.1 - 2018 - Creation of the first version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the farm animals life events"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "animal:Sex"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Ontologia degli eventi della vita degli animali di allevamentoa"
+        },
+        {
+          "@language": "en",
+          "@value": "Animal Life Event Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL929C34",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL932C52"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/detectionDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL861C31",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          },
+          {
+            "@id": "animal:FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/k9l9ow6x7rnknf6/Ale_DisplacementEntry.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale che rappresenta l'entrata dell'animale in azienda."
+        },
+        {
+          "@language": "en",
+          "@value": "The event in the animal's life that represents the animal's entry into the farm (company)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Spostamento in Entrata"
+        },
+        {
+          "@language": "en",
+          "@value": "Displacement in Entry"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1100C38"
+        },
+        {
+          "@id": "_:ub2bL1063C38"
+        },
+        {
+          "@id": "_:ub2bL1068C38"
+        },
+        {
+          "@id": "_:ub2bL1078C38"
+        },
+        {
+          "@id": "_:ub2bL1053C38"
+        },
+        {
+          "@id": "_:ub2bL1073C38"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL1083C38"
+        },
+        {
+          "@id": "_:ub2bL1087C38"
+        },
+        {
+          "@id": "_:ub2bL1058C38"
+        },
+        {
+          "@id": "_:ub2bL1096C38"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1279C32",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsBreederBreed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DisplacementInExit",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/ntd69bzkxqed4v6/Ale_DisplacementExit.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The event of displacement in exit of the animal from the farm"
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento di uscita dall'animale dall'allevamento"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Spostamento in Uscita"
+        },
+        {
+          "@language": "en",
+          "@value": "Displacement in Exit"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1125C37"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        }
+      ]
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1540C38",
+      "@type": "owl:Class",
+      "owl:oneOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Negative"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Positive"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Revisable"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Difficult",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/EaseOfParturition",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Difficult, with multiple assistants"
+        },
+        {
+          "@language": "it",
+          "@value": "Difficile, con più assistenti"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/birthDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Data nella quale è nato l’animale"
+        },
+        {
+          "@language": "en",
+          "@value": "Date on which the animal was born"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL498C24"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data di nascita"
+        },
+        {
+          "@language": "en",
+          "@value": "birth date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL505C23"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1471C30",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/ale/EaseOfParturition"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsEaseOfParturition"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento della vita per un animale. Esso può un aborto, la nascita, la fecondazione, la riproduzione, la mungitura per alcuni tipi di specie, ecc."
+        },
+        {
+          "@language": "en",
+          "@value": "The life event of an animal. It may be abortion, birth, fertilization, reproduction, milking for certain types of species, etc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Animal Life Event"
+        },
+        {
+          "@language": "it",
+          "@value": "Evento della Vita Animale di Allevamento"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL929C34"
+        },
+        {
+          "@id": "ti:TimeIndexedEvent"
+        }
+      ]
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1364C33",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/codeOwnerCompany"
+      }
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "animal:hasDestination",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "_:ub2bL908C27",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/numberOfBornDeadMales"
+      }
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/PregnancyDiagnosis",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The specific diagnosis of the pregnancy of the animal"
+        },
+        {
+          "@language": "it",
+          "@value": "La specifica diagnosi della gravidanza dell'animale"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Diagnosi Gravidanza"
+        },
+        {
+          "@language": "en",
+          "@value": "Pragnacy Diagnosis"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/ale/Diagnosis"
+        },
+        {
+          "@id": "_:ub2bL1521C37"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/ALE-JSON-LD",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest/ale.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Animal Life Events ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli eventi della vita degli animali da allevamento"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia ALE"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of ALE Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli eventi della vita degli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Animal Life Events ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia ALE"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of ALE Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL973C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Sex"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasSex"
+      }
+    },
+    {
+      "@id": "animal:Breed",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL1151C27",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1154C45"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/disposalDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL706C30",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1287C50",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Positive",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/PregnancyResult",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Positive"
+        },
+        {
+          "@language": "it",
+          "@value": "Positiva"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/involvesFarmAnimal",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha evento della vita dell'animale\" che collega l'evento della vita dell'animale all'animale stesso."
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"has animal life event\" that links the animal life event to the animal itself."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "coinvolge animale di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "involves farm animal"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "animal:FarmAnimal"
+      }
+    },
+    {
+      "@id": "_:ub2bL978C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Weight"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasWeight"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/dryDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La data nella quale l’allevatore dopo aver ridotto volontariamente la mungitura della femmina la sospende."
+        },
+        {
+          "@language": "en",
+          "@value": "The date on which the farmer, after voluntarily reducing the milking of the female, stops milking her."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Dry"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data asciutta"
+        },
+        {
+          "@language": "en",
+          "@value": "dry date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL638C21"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "_:ub2bL1335C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsFatherBreed"
+      }
+    },
+    {
+      "@id": "_:ub2bL1087C38",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1090C56"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/entryInFarmDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL679C30",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Birth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1031C46",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1377C33",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "animal:uniqueAnimalNumber"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/SelfConsumptionSlaughtering",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/DisposalReason",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Self Consumption Slaughtering"
+        },
+        {
+          "@language": "it",
+          "@value": "Macellazione per Autoconsumo"
+        }
+      ]
+    },
+    {
+      "@id": "animal:Sex",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/registrationDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Date on which the eartag is applied to the animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Data nella quale viene applicata la marca auricolare all’animale"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL861C31"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data di immatricolazione"
+        },
+        {
+          "@language": "en",
+          "@value": "registration date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL866C30"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DeathStable",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/DisposalReason"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Death in Stable"
+        },
+        {
+          "@language": "it",
+          "@value": "Morte in Stalla"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1063C38",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/IE",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/FertilizationType",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Embryonic Fertilization"
+        },
+        {
+          "@language": "it",
+          "@value": "Impianto Embrionale"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1004C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1007C42"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/entryInFarmDate"
+      }
+    },
+    {
+      "@id": "_:ub2bL571C27",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL478C26",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/numberOfBornDeadFemales",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Number of females born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion)."
+        },
+        {
+          "@language": "it",
+          "@value": "Numero di femmine nate morte originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL799C38"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "numero di femmine nate morte"
+        },
+        {
+          "@language": "en",
+          "@value": "number of born dead females"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DeathPasture",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/DisposalReason",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Death in the pasture"
+        },
+        {
+          "@language": "it",
+          "@value": "Morte al Pascolo"
+        }
+      ]
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "owl:NamedIndividual",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Negative",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/PregnancyResult",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Negative"
+        },
+        {
+          "@language": "it",
+          "@value": "Negativa"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL727C31",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest/ale.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli eventi della vita degli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Animal Life Events ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia ALE"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of ALE Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Animal Life Events ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli eventi della vita degli animali da allevamento"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of ALE Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia ALE"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/UrgentSlaughterStable",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/DisposalReason",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Urgent Slaughter in Stable"
+        },
+        {
+          "@language": "it",
+          "@value": "Macellazione Urgente in Stalla"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL526C30",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Birth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1445C26",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "ti:TimeInterval"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/milkingTime"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL638C21",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1393C51",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/EmbryonicResorption",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/r0qzhbry5hmklmu/Ale_EmbryonicResorption.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisoria"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale di riassorbimento embrionale avvenuto in azienda."
+        },
+        {
+          "@language": "en",
+          "@value": "The animal's life event of embryonic resorption occurred in the farm (company)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Riassorbimento Embrionale"
+        },
+        {
+          "@language": "en",
+          "@value": "Embryonic Resorption"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL1249C38"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1350C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:FarmAnimalDestination"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasDestination"
+      }
+    },
+    {
+      "@id": "_:ub2bL1495C30",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/numberOfBornDeadFemales"
+      }
+    },
+    {
+      "@id": "_:ub2bL1355C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Sex"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasSex"
+      }
+    },
+    {
+      "@id": "_:ub2bL1390C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1393C51"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/entryInFarmDate"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/embryonicResorptionDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Data del riassorbimento embrionale dell’animale gravido (aborto molto precoci)"
+        },
+        {
+          "@language": "en",
+          "@value": "Date of embryonic resorption of the pregnant animal (very early abortion)"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/EmbryonicResorption"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data riassorbimento embrionale"
+        },
+        {
+          "@language": "en",
+          "@value": "embryonic resorption date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL659C37"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "_:ub2bL1381C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1384C51"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/birthDate"
+      }
+    },
+    {
+      "@id": "_:ub2bL903C27",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/numberOfBornDeadFemales"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/reportsMilkingVelocity",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'evento della mungitura con la velocità di mungitura che esso riporta."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the miliking events to the muliking velocity it reports."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Milking"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "reports milking velocity"
+        },
+        {
+          "@language": "it",
+          "@value": "riporta velocità di mungitura"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/italia/onto/MU/Value"
+      }
+    },
+    {
+      "@id": "_:ub2bL1225C40",
+      "@type": "owl:Class",
+      "owl:oneOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Assistant"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/CaesareanSection"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Difficult"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Easy"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Embryotomy"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1103C56",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Birth",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The birth event of the animal"
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento di nascita dell'animale"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Nascita"
+        },
+        {
+          "@language": "en",
+          "@value": "Birth"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL958C24"
+        },
+        {
+          "@id": "_:ub2bL983C24"
+        },
+        {
+          "@id": "_:ub2bL992C24"
+        },
+        {
+          "@id": "_:ub2bL996C24"
+        },
+        {
+          "@id": "_:ub2bL978C24"
+        },
+        {
+          "@id": "_:ub2bL1000C24"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL968C24"
+        },
+        {
+          "@id": "_:ub2bL963C24"
+        },
+        {
+          "@id": "_:ub2bL1004C24"
+        },
+        {
+          "@id": "_:ub2bL973C24"
+        },
+        {
+          "@id": "_:ub2bL953C24"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1125C37",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "xsd:date"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/exitFromFarmDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/isInvolvedInEvent",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"involces company\" that links the company with the animal life event."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"coinvolge azienda\" che lega l'azienda all'evento della vita dell'animale."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "co:Company"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is involved in event"
+        },
+        {
+          "@language": "it",
+          "@value": "è coinvolta in evento"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/numberOfBornAliveMales",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The number of males born alive in the parturition event."
+        },
+        {
+          "@language": "it",
+          "@value": "Il numero di maschi nati vivi dal parto."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Parturition"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "numero di maschi nati vivi"
+        },
+        {
+          "@language": "en",
+          "@value": "number of born alive males"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "_:ub2bL1274C32",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/ale/FertilizationType"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/hasFertilizationType"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "animal:Weight",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/happensIn",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the animal life event to the rural site where the event occured."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega l'evento della vita dell'animale con l'ambiente rurale dove l'evento è avvenuto."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "happens in"
+        },
+        {
+          "@language": "it",
+          "@value": "avviene in"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "co:RuralSite"
+      }
+    },
+    {
+      "@id": "_:ub2bL1058C38",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsFatherBreed"
+      }
+    },
+    {
+      "@id": "_:ub2bL958C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed"
+      }
+    },
+    {
+      "@id": "_:ub2bL415C40",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Birth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Slaughterhouse",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/DisposalReason"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Slaughterhouse"
+        },
+        {
+          "@language": "it",
+          "@value": "Macello"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/parturitionDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Data del parto dell'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "Date of the parturition of the animal."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Parturition"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data parto"
+        },
+        {
+          "@language": "en",
+          "@value": "parturition date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL841C29"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Implantation",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/zb624ebyr4jzc6i/Ale_Implantation.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The animal's life event of the implantation."
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale dell'impianto."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Impianto"
+        },
+        {
+          "@language": "en",
+          "@value": "Implantation"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1415C31"
+        },
+        {
+          "@id": "_:ub2bL1420C31"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/SlaughterHealth",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/DisposalReason",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Abbattimento Prov.Sanitario"
+        },
+        {
+          "@language": "en",
+          "@value": "Slaughter for Health reasons"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/reportsBreederBreed",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega gli eventi di fecondazione o impianto alla razza del riproduttore che viene riportata negli eventi. La razza del riproduttore è la  razza del maschio utilizzato per la fecondazione"
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the fertilisation or implantation events to the breed of the breeder that is reported in the events. The breed of the breeder is the breed of the male used for the fertilization"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL357C34"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "reports breeder breed"
+        },
+        {
+          "@language": "it",
+          "@value": "riporta razza riproduttore"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "animal:Breed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Fertilization",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/kp2bp6z3x00n1nh/Ale_Fertilization.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The fertilization of the animal event."
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento di fecondazione dell'animale."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Inseminazione"
+        },
+        {
+          "@language": "it",
+          "@value": "Fecondazione"
+        },
+        {
+          "@language": "en",
+          "@value": "Insemination"
+        },
+        {
+          "@language": "en",
+          "@value": "Fertilization"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1274C32"
+        },
+        {
+          "@id": "_:ub2bL1279C32"
+        },
+        {
+          "@id": "_:ub2bL1284C32"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1500C30",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/numberOfBornDeadMales"
+      }
+    },
+    {
+      "@id": "_:ub2bL1068C38",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasBreed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Parturition",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/45pkcyczelak1ye/Ale_Parturition.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale del parto."
+        },
+        {
+          "@language": "en",
+          "@value": "The animal's life event parturition"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Parturition"
+        },
+        {
+          "@language": "it",
+          "@value": "Parto"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1471C30"
+        },
+        {
+          "@id": "_:ub2bL1485C30"
+        },
+        {
+          "@id": "_:ub2bL1476C30"
+        },
+        {
+          "@id": "_:ub2bL1495C30"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL1500C30"
+        },
+        {
+          "@id": "_:ub2bL1490C30"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1490C30",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/numberOfBornAliveMales"
+      }
+    },
+    {
+      "@id": "_:ub2bL1073C38",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:FarmAnimalDestination"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasDestination"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the events birth, identification and displacement in entry that report the breed of the animal's genetic mother."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega gli eventi di nascita, identificazione e spostamento in entrata che riportano la razza della madre che apporta il patrimonio genetico."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL415C40"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "reports genetic mother breed"
+        },
+        {
+          "@language": "it",
+          "@value": "riporta razza madre genetica"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "animal:Breed"
+      }
+    },
+    {
+      "@id": "_:ub2bL617C26",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "animal:hasBreed",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "_:ub2bL963C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasBreed"
+      }
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "foaf:Agent",
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1000C24",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "animal:uniqueAnimalNumber"
+      }
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-XML",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest/ale.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli eventi della vita degli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Animal Life Events ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia ALE"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of ALE Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Animal Life Events ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli eventi della vita degli animali da allevamento"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia ALE"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of ALE Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL866C30",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL498C24",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Birth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          },
+          {
+            "@id": "animal:FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1371C51",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Disposal",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/1gahruugwfdw9og/Ale_Disposal.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added  in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The animal's life event of the disposal."
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale dell'eliminazione."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Disposal"
+        },
+        {
+          "@language": "it",
+          "@value": "Eliminazione"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1146C27"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL1151C27"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL894C27",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL897C45"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/abortionDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Easy",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/EaseOfParturition"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Facile"
+        },
+        {
+          "@language": "en",
+          "@value": "Easy"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/milkingTime",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the milking event to the time interval at which it occures (with start date/time and end date/time)."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'evento della mungitura all'intervallo di tempo in cui avviene (con data e ora di inizio e data e ora di fine)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Milking"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "milking time"
+        },
+        {
+          "@language": "it",
+          "@value": "mungitura al tempo"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "ti:TimeInterval"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:atTime"
+      }
+    },
+    {
+      "@id": "_:ub2bL996C24",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/codeOwnerCompany"
+      }
+    },
+    {
+      "@id": "_:ub2bL1423C49",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL932C52",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/reportsEaseOfParturition",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the birth event to the reported ease of parturition, i.e. links the birth to the subjective assessment of the breeder or technician by which it is indicated whether the female gave birth without problems or needed assistance."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'evento del parto alla facilità di parto riportata, ovvero collega il parto  alla valutazione soggettiva dell’allevatore o del tecnico attraverso la quale viene indicato se la femmina ha partorito senza problemi o ha avuto bisogno di assistenza."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Parturition"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "riporta facilità parto"
+        },
+        {
+          "@language": "en",
+          "@value": "reports ease of parturition"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/EaseOfParturition"
+      }
+    },
+    {
+      "@id": "animal:ProductionTarget",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "vcard:Organization",
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "vcard:Kind",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Infomation systems"
+        },
+        {
+          "@language": "it",
+          "@value": "Sistemi informativi"
+        }
+      ],
+      "vcard:fn": "Sistemi informativi",
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Embryotomy",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/EaseOfParturition"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nelal seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Embryotomy"
+        },
+        {
+          "@language": "it",
+          "@value": "Embriotomia"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Revisable",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/PregnancyResult"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Revisable"
+        },
+        {
+          "@language": "it",
+          "@value": "Rivedibile"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/fertilizationDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La data nella quale la vacca viene fecondata."
+        },
+        {
+          "@language": "en",
+          "@value": "The date on which the cow is fertilized."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Fertilization"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data di fecondazione"
+        },
+        {
+          "@language": "en",
+          "@value": "fertilization date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL727C31"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "_:ub2bL592C27",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Milking",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/19m2oe3qz14s2zo/Milking.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento della vita dell'animale della mungitura."
+        },
+        {
+          "@language": "en",
+          "@value": "The animal's life event of the milking."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Milking"
+        },
+        {
+          "@language": "it",
+          "@value": "Mungitura"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1450C26"
+        },
+        {
+          "@id": "_:ub2bL1445C26"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1345C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasBreed"
+      }
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL357C34",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Fertilization"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Implantation"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "animal:hasProductionTarget",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "_:ub2bL1201C22",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1204C40"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/dryDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL394C33",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Birth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Identification"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "co:Company",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL1100C38",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1103C56"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/birthDate"
+      }
+    },
+    {
+      "@id": "_:ub2bL1368C33",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1371C51"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/registrationDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL1420C31",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1423C49"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/implantationDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL1028C28",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1031C46"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/diagnosisDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL1053C38",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "animal:ProductionTarget"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasProductionTarget"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/disposalDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Data nella quale l’animale esce dall’allevamento e la sua destinazione NON è un altro allevamento nel quale verrà allevato"
+        },
+        {
+          "@language": "en",
+          "@value": "Date on which the animal leaves the farm and its destination is NOT another farm on which it will be bred"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL612C27"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "disposal date"
+        },
+        {
+          "@language": "it",
+          "@value": "data di eliminazione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL617C26"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/codeBornCompany",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The code of the Italian company, associated with the birth and identification events, in which the animal was born. It is the code that the Ministry of Health has assigned to the holding."
+        },
+        {
+          "@language": "it",
+          "@value": "Il codice dell’azienda italiana, associato agli eventi nascita e identificazione, nella quale è nato l’animale. È il codice che il ministero della sanità ha assegnato all’azienda."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL526C30"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "code born company"
+        },
+        {
+          "@language": "it",
+          "@value": "codice azienda nascita"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/hasPregnancyResult",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega lo specifico evento di diagnosi gravidanza ai risultati ottenuti."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the specific pregnancy diagnosis event to the obtained results."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/PregnancyDiagnosis"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has pregnancy result"
+        },
+        {
+          "@language": "it",
+          "@value": "ha esito della diagnosi di gravidanza"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/PregnancyResult"
+      }
+    },
+    {
+      "@id": "_:ub2bL841C29",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1384C51",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1175C37",
+      "@type": "owl:Class",
+      "owl:oneOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DeathPasture"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/DeathStable"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/SelfConsumptionSlaughtering"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/SlaughterHealth"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/SlaughterWellness"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Slaughterhouse"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/UrgentSlaughterStable"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL612C27",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Disposal"
+          },
+          {
+            "@id": "animal:FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/diagnosisDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Date on which diagnoses are made on the animal. In the case of a diagnosis of pregnancy, it is the date on which gynaecological examinations or laboratory tests determine whether the female is pregnant."
+        },
+        {
+          "@language": "it",
+          "@value": "Data nella quale vengono fatte delle diagnosi sull'animale. Nel caso di diagnosi di gravidanza, rappresenta la data nella quale attraverso visite ginecologiche o analisi di laboratorio viene determinato se la femmina è gravida."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Diagnosis"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data diagnosi"
+        },
+        {
+          "@language": "en",
+          "@value": "diagnosis date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL592C27"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/CaesareanSection",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/EaseOfParturition",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Taglio Cesareo"
+        },
+        {
+          "@language": "en",
+          "@value": "Caesarean Section"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1485C30",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/numberOfBornAliveFemales"
+      }
+    },
+    {
+      "@id": "_:ub2bL1340C33",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsGeneticMotherBreed"
+      }
+    },
+    {
+      "@id": "animal:hasWeight",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "animal:FarmAnimal",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL748C30",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1083C38",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/codeOwnerCompany"
+      }
+    },
+    {
+      "@id": "_:ub2bL1415C31",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsBreederBreed"
+      }
+    },
+    {
+      "@id": "_:ub2bL983C24",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL986C42"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/birthDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "co:RuralSite",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL1252C56",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1154C45",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/numberOfBornAliveFemales",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The number of females born alive in the parturition event."
+        },
+        {
+          "@language": "it",
+          "@value": "Il numero di femmine nate vive dal parto."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Parturition"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "numero di femmine nate vive"
+        },
+        {
+          "@language": "en",
+          "@value": "number of born alive females"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/abortionDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Date of the abort of the pregnant animal. It is detected in the abort life event."
+        },
+        {
+          "@language": "it",
+          "@value": "Data di aborto dell’animale gravido. E' rlevata nell'evento della vita aborto"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Abortion"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "abortion date"
+        },
+        {
+          "@language": "it",
+          "@value": "data aborto"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL478C26"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "dc:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL819C36",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Abortion"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/Parturition"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/involvesCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/ale/isInvolvedInEvent"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'evento della vita dell'animale all'azienda in cui avviene."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the animal life event to the company in which it occurs."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "coinvolge azienda"
+        },
+        {
+          "@language": "en",
+          "@value": "involves company"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "co:Company"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/EaseOfParturition",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub2bL1225C40"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Subjective assessment of the breeder or technician to indicate whether the female has given birth without problems or needs assistance. The instances of the class can assume one of these values: \"Easy\", \"Assistant, no tools\", \"Cesarean Section\", \"Difficult, with multiple assistants\", \"Embryotomy\"."
+        },
+        {
+          "@language": "it",
+          "@value": "Valutazione soggettiva dell’allevatore o del tecnico attraverso la quale viene indicato se la femmina ha partorito senza problemi o ha avuto bisogno di assistenza. Le istanze della classe possono assumere uno tra questi valori: \"Facile\", \"Assistente, no strumenti\", \"Taglio Cesareo\", \"Difficile, con più assitenti\", \"Embriotomia\"."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Facilità di Parto"
+        },
+        {
+          "@language": "en",
+          "@value": "Ease of Parturition"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "l0:Characteristic"
+      }
+    },
+    {
+      "@id": "_:ub2bL1284C32",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1287C50"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/fertilizationDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/exitFromFarmDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Date on which the animal leaves the farm if its destination is another farm on which it will be reared."
+        },
+        {
+          "@language": "it",
+          "@value": "Data nella quale l’animale esce dall’allevamento se la sua destinazione è un altro allevamento nel quale verrà allevato."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/DisplacementInExit"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data uscita dall'allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "exit from farm date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL706C30"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL505C23",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1078C38",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Sex"
+      },
+      "owl:onProperty": {
+        "@id": "animal:hasSex"
+      }
+    },
+    {
+      "@id": "animal:uniqueAnimalNumber",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "_:ub2bL1249C38",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1252C56"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/embryonicResorptionDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:Project"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il progetto LEO dove viene usata l'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "LEO project where the ontology is used"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "LEO - Livestok Environment Open Data"
+        },
+        {
+          "@language": "it",
+          "@value": "LEO - Livestok Environment Open Data"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL897C45",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1450C26",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/italia/onto/MU/Value"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsMilkingVelocity"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DisposalReason",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub2bL1175C37"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Information that specifies the cause of the animal disposal"
+        },
+        {
+          "@language": "it",
+          "@value": "Informazione che specifica la causa di eliminazione dell’animale."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Disposal Reason"
+        },
+        {
+          "@language": "it",
+          "@value": "Motivazione Eliminazione"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "l0:Characteristic"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/numberOfBornDeadMales",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Number of males born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion)."
+        },
+        {
+          "@language": "it",
+          "@value": "Numero di maschi nati morti originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL819C36"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "number of born dead males"
+        },
+        {
+          "@language": "it",
+          "@value": "numero di maschi nati morti"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "_:ub2bL953C24",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "animal:Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/reportsFatherBreed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/reportsFatherBreed",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega gli eventi di nascita, identificazione e spostamento in entrata che riportano la razza del padre dell'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the events birth, identification and displacement in entry that report the breed of the animal's father."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL394C33"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "reports father breed"
+        },
+        {
+          "@language": "it",
+          "@value": "riporta la razza padre"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "animal:Breed"
+      }
+    },
+    {
+      "@id": "animal:hasSex",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "_:ub2bL1096C38",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "animal:uniqueAnimalNumber"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Diagnosis",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/txb9w5pwko4p4su/Ale_Diagnosis.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'evento della diagnosi di qualsiasi tipo. Include la diagnosi della gravidanza."
+        },
+        {
+          "@language": "en",
+          "@value": "The event of diagnosis including the pregnancy diagnosis"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Diagnosis"
+        },
+        {
+          "@language": "it",
+          "@value": "Diagnosi"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1028C28"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1521C37",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/ale/PregnancyResult"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/hasPregnancyResult"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/hasAnimalLifeEvent",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/ale/involvesFarmAnimal"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega l'animale  agli eventi della vita che gli possono accadere."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the farm animal to the animal life events."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "animal:FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha evento della vita dell'animale"
+        },
+        {
+          "@language": "en",
+          "@value": "has animal life event"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/FN",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/FertilizationType"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Fecondazione Naturale"
+        },
+        {
+          "@language": "en",
+          "@value": "Natural Fertilization"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Assistant",
+      "@type": [
+        "https://w3id.org/leo/onto/ale/EaseOfParturition",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Un assistente, senza strumenti"
+        },
+        {
+          "@language": "en",
+          "@value": "An assistant, no tools"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/implantationDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "The date on which an embryo is introduced into the receiving cow."
+        },
+        {
+          "@language": "it",
+          "@value": "La data nella quale viene introdotto un embrione nella vacca ricevente."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Implantation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data impianto"
+        },
+        {
+          "@language": "en",
+          "@value": "implantation date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL748C30"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "_:ub2bL1312C40",
+      "@type": "owl:Class",
+      "owl:oneOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/ale/FA"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/FG"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/FN"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/ale/IE"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/FA",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/FertilizationType"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Artificial Fertilization"
+        },
+        {
+          "@language": "it",
+          "@value": "Fecondazione Artificiale"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL992C24",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/codeBornCompany"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Dry",
+      "@type": "owl:Class",
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/inl9lqpquqdai5x/Ale_Dry.png?raw=1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The dry event, i.e. the event carried out for health purposes that stops the milking of the animal."
+        },
+        {
+          "@language": "it",
+          "@value": "L'evento dell'asciutta, ovvero l'evento svolto per finalità sanitarie che consente di sospendere la mungitura dell'animale."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Asciutta"
+        },
+        {
+          "@language": "en",
+          "@value": "Dry"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+        },
+        {
+          "@id": "_:ub2bL1201C22"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/FG",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/ale/FertilizationType"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Group Fertilization"
+        },
+        {
+          "@language": "it",
+          "@value": "Fecondazione in Gruppo"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/entryInFarmDate",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Date on which the animal entered the herd, it could coincide with the date of birth if it represents an entry of a stable born."
+        },
+        {
+          "@language": "it",
+          "@value": "Data nella quale l’animale è entrato in allevamento, potrebbe coincidere con la data di nascita se rappresenta un ingresso di un nato in stalla."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL679C30"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "entry in farm date"
+        },
+        {
+          "@language": "it",
+          "@value": "data entrata in allevamento"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL685C29"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "_:ub2bL1090C56",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1360C33",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/codeBornCompany"
+      }
+    },
+    {
+      "@id": "_:ub2bL1204C40",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/hasFertilizationType",
+      "@type": [
+        "owl:ObjectProperty",
+        "owl:FunctionalProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega l'evento della fecondazione/inseminazione al tipo di inseminazione/fecondazione svolta nell'evento."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the event Fertilization to the tyoe of fertilization that is carried out in the event"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/Fertilization"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/ale"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "ha fertilization type"
+        },
+        {
+          "@language": "it",
+          "@value": "ha tipo inseminazione/fecondazione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/FertilizationType"
+      }
+    },
+    {
+      "@id": "_:ub2bL1146C27",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/ale/DisposalReason"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/hasDisposalReason"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    }
+  ]
+}

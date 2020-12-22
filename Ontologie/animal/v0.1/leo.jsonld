@@ -1,0 +1,1202 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/leo/onto/leo/M",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/leo/Sex"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Male"
+        },
+        {
+          "@language": "it",
+          "@value": "Maschio"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub24bL414C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/hasFather"
+      }
+    },
+    {
+      "@id": "_:ub24bL419C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/hasGeneticMother"
+      }
+    },
+    {
+      "@id": "_:ub24bL409C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimalDestination"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/hasDestination"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/isDestinationOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimalDestination"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is destination of"
+        },
+        {
+          "@language": "it",
+          "@value": "è destinazione di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      }
+    },
+    {
+      "@id": "http://dati.gov.it/onto/dcatapit#Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub24bL379C24",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/isBreedOfFarmAnimal"
+      }
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/Species",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Specie"
+        },
+        {
+          "@language": "en",
+          "@value": "Species"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub24bL469C26"
+        },
+        {
+          "@id": "_:ub24bL465C26"
+        },
+        {
+          "@id": "l0:Characteristic"
+        }
+      ]
+    },
+    {
+      "@id": "vcard:Kind",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub24bL404C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/leo/Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/belongsTo"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-JSON-LD",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Farm animals ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli animali da allevamento"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of LEO Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-XML",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Farm animals ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli animali da allevamento"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of LEO Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/belongsTo",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/leo/isBreedOfFarmAnimal"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "appartiene a"
+        },
+        {
+          "@language": "en",
+          "@value": "belongs to"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/Breed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "vcard:Kind",
+        "owl:NamedIndividual",
+        "vcard:Organization"
+      ],
+      "vcard:fn": "Sistemi informativi",
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "_:ub24bL383C24",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/breedName"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "xsd:dateTime",
+      "@type": "rdfs:Datatype"
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/F",
+      "@type": [
+        "https://w3id.org/leo/onto/leo/Sex",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Female"
+        },
+        {
+          "@language": "it",
+          "@value": "Femmina"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub24bL429C29",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/uniqueNumber"
+      }
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/isOfSpecies",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/leo/isSpeciesOf"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is of species"
+        },
+        {
+          "@language": "it",
+          "@value": "è di specie"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/Species"
+      }
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/AIABreedCode",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/Breed"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "AIA breed code"
+        },
+        {
+          "@language": "it",
+          "@value": "codice razza AIA"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "_:ub24bL469C26",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "l0:name"
+      }
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub24bL441C40",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/isDestinationOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/isSexOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/Sex"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è sesso di"
+        },
+        {
+          "@language": "en",
+          "@value": "is sex of"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      }
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo",
+      "@type": [
+        "owl:NamedIndividual",
+        "owl:Ontology",
+        "admsapit:SemanticAsset"
+      ],
+      "admsapit:acronym": "LEO",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-XML"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:AnnotationTask"
+        },
+        {
+          "@id": "admsapit:SearchTask"
+        },
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/leo"
+      },
+      "admsapit:prefix": "leo",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "initial draft",
+      "admsapit:target": [
+        "Imprese",
+        "Pubbliche Amministrazioni"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:CoreOntology"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "Bovine"
+        },
+        {
+          "@language": "it",
+          "@value": "Bovini"
+        },
+        {
+          "@language": "it",
+          "@value": "Animali d'allevamento"
+        },
+        "Farm Animal"
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "ttps://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the main ontology of the Farm Animals"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2018-06-18"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2018-11-25"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/100254"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Farm Animals Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia degli animali di allevamento"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/leo/onto/ale"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/co"
+        },
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/leo/0.1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2018 - Creazione della prima versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "Version 0.1 - 2018 - Creation of the first version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the main ontology for farm animals developed in the context of the LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia principale, il punto di accesso alla rete di ontologie per l'ambiente zootecnico italiano"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/leo"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Livestok Environment Main Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia principale del progetto LEO: Livestock Environment in Open Data"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/Sex",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Sesso"
+        },
+        {
+          "@language": "en",
+          "@value": "Sex"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub24bL453C22"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/breedName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/Breed"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "breed name"
+        },
+        {
+          "@language": "it",
+          "@value": "nome razza"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:name"
+      }
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/hasGeneticMother",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha madre genetica"
+        },
+        {
+          "@language": "en",
+          "@value": "has genetic mother"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      }
+    },
+    {
+      "@id": "admsapit:SemanticAssetDistribution",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:SemanticAsset",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub24bL399C29",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/leo/Sex"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/hasSex"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub24bL465C26",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/isSpeciesOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/uniqueNumber",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "numero univoco"
+        },
+        {
+          "@language": "en",
+          "@value": "unique number"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "http://dati.gov.it/onto/dcatapit#Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/hasDestination",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/leo/isDestinationOf"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has destination"
+        },
+        {
+          "@language": "it",
+          "@value": "ha destinazione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimalDestination"
+      }
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "foaf:Agent",
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/Life",
+      "@type": [
+        "https://w3id.org/leo/onto/leo/FarmAnimalDestination",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Life"
+        },
+        {
+          "@language": "it",
+          "@value": "Vita"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Farm animals ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia LEO"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/Slaughterhouse",
+      "@type": [
+        "https://w3id.org/leo/onto/leo/FarmAnimalDestination",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Slaughterhouse"
+        },
+        {
+          "@language": "it",
+          "@value": "Macello"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub24bL387C24",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/AIABreedCode"
+      }
+    },
+    {
+      "@id": "vcard:Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub24bL453C22",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/isSexOf"
+      }
+    },
+    {
+      "@id": "_:ub24bL424C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/leo/Species"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/leo/isOfSpecies"
+      }
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:Project",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/isSpeciesOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/Species"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is species of"
+        },
+        {
+          "@language": "en",
+          "@value": "è specie di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      }
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/hasSex",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/leo/isSexOf"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has sex"
+        },
+        {
+          "@language": "it",
+          "@value": "ha sesso"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/Sex"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/FarmAnimalDestination",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Farm Animal Destination"
+        },
+        {
+          "@language": "it",
+          "@value": "Destinazione dell'Animale di Allevamento"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub24bL441C40"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/FarmAnimal",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Farm Animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Animale di Allevamento"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub24bL419C29"
+        },
+        {
+          "@id": "_:ub24bL404C29"
+        },
+        {
+          "@id": "_:ub24bL409C29"
+        },
+        {
+          "@id": "l0:Agent"
+        },
+        {
+          "@id": "_:ub24bL399C29"
+        },
+        {
+          "@id": "_:ub24bL429C29"
+        },
+        {
+          "@id": "_:ub24bL414C29"
+        },
+        {
+          "@id": "_:ub24bL424C29"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "admsapit:Project",
+        "owl:NamedIndividual"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "foaf:Agent",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/hasFather",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha padre"
+        },
+        {
+          "@language": "en",
+          "@value": "has father"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/isBreedOfFarmAnimal",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/Breed"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è razza animale di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "is breed of farm animal"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/isWithin",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/leo/Breed"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is within"
+        },
+        {
+          "@language": "it",
+          "@value": "rientra in"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/leo/Species"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo/Breed",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Razza"
+        },
+        {
+          "@language": "en",
+          "@value": "Breed"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub24bL379C24"
+        },
+        {
+          "@id": "_:ub24bL383C24"
+        },
+        {
+          "@id": "_:ub24bL387C24"
+        },
+        {
+          "@id": "l0:Characteristic"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    }
+  ]
+}

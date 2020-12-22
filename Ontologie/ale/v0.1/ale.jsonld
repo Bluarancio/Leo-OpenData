@@ -1,0 +1,895 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "co": "https://w3id.org/leo/onto/co/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "leo": "https://w3id.org/leo/onto/leo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ti": "https://w3id.org/italia/onto/TI/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest/ale.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli eventi della vita degli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Animal Life Events ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia ALE"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of ALE Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/involvesCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/ale/isInvolvedInEvent"
+      },
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "coinvolge azienda"
+        },
+        {
+          "@language": "en",
+          "@value": "involves company"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "co:Company"
+      }
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "admsapit:Project",
+        "owl:NamedIndividual"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      }
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "vcard:Kind",
+        "vcard:Organization",
+        "owl:NamedIndividual"
+      ],
+      "vcard:fn": "Sistemi informativi",
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Reproduction",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Reproduction"
+        },
+        {
+          "@language": "it",
+          "@value": "Riproduzione"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/ALE-JSON-LD",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest/ale.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli eventi della vita degli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Animal Life Events ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of ALE Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia ALE"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Birth",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Nascita"
+        },
+        {
+          "@language": "en",
+          "@value": "Birth"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/isInvolvedInEvent",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "co:Company"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is involved in event"
+        },
+        {
+          "@language": "it",
+          "@value": "è coinvolta in evento"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/involvesFarmAnimal",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "coinvolge animale di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "involves farm animal"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "leo:FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/hasAnimalLifeEvent",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/ale/involvesFarmAnimal"
+      },
+      "rdfs:domain": {
+        "@id": "leo:FarmAnimal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha evento della vita dell'animale"
+        },
+        {
+          "@language": "en",
+          "@value": "has animal life event"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Diagnosis",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Diagnosis"
+        },
+        {
+          "@language": "it",
+          "@value": "Diagnosi"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "_:ub22bL255C27",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/AnalysisCollection",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Analysis Collection"
+        },
+        {
+          "@language": "it",
+          "@value": "Raccolta Analisi"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Abort",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Aborto"
+        },
+        {
+          "@language": "en",
+          "@value": "Abort"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Dry",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Asciutta"
+        },
+        {
+          "@language": "en",
+          "@value": "Dry"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Fertilization",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Fecondazione"
+        },
+        {
+          "@language": "en",
+          "@value": "Fertilization"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/detectionDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "detection date"
+        },
+        {
+          "@language": "it",
+          "@value": "data di rilevazione"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:range": {
+        "@id": "_:ub22bL255C27"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ti:date"
+      }
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/EmbryonicReabsorption",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Embryonic Reabsorption"
+        },
+        {
+          "@language": "it",
+          "@value": "Riassorbimento Embrionale"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "_:ub22bL291C52",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Parturition",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Parto"
+        },
+        {
+          "@language": "en",
+          "@value": "Parturition"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Animal Life Event"
+        },
+        {
+          "@language": "it",
+          "@value": "Evento della Vita Animale di Allevamento"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "ti:TimeIndexedEvent"
+        },
+        {
+          "@id": "_:ub22bL288C34"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/Identification",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Identification"
+        },
+        {
+          "@language": "it",
+          "@value": "Identificazione"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "_:ub22bL288C34",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub22bL291C52"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/ale/detectionDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale",
+      "@type": [
+        "owl:Ontology",
+        "admsapit:SemanticAsset",
+        "owl:NamedIndividual"
+      ],
+      "admsapit:acronym": "ALE",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-XML"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/ALE-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:SearchTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        },
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/ale"
+      },
+      "admsapit:prefix": "ale",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "initial draft",
+      "admsapit:target": [
+        "Pubbliche Amministrazioni",
+        "Imprese"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:DomainOntology"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "Life events"
+        },
+        {
+          "@language": "en",
+          "@value": "Farm Animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Eventi della vita"
+        },
+        {
+          "@language": "it",
+          "@value": "Bovini"
+        },
+        {
+          "@language": "en",
+          "@value": "Bovine"
+        },
+        {
+          "@language": "it",
+          "@value": "Animali d'allevamento"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "ttps://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the farm animals life events"
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2018-06-18"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2018-11-25"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/100254"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Animal Life Event Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia degli eventi della vita degli animali di allevamento"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/TI"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/ale/0.1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2018 - Creazione della prima versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "Version 0.1 - 2018 - Creation of the first version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the ontology of the farm animals life events"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/leo"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Ontologia degli eventi della vita degli animali di allevamentoa"
+        },
+        {
+          "@language": "en",
+          "@value": "Animal Life Event Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/happensIn",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "avviene in"
+        },
+        {
+          "@language": "en",
+          "@value": "happens in"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "co:RuralSite"
+      }
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/ALE-RDF-XML",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/ale/latest/ale.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Animal Life Events ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli eventi della vita degli animali da allevamento"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of ALE Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia ALE"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent",
+        "owl:NamedIndividual"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        },
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DisplacementInExit",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Displacement in Exit"
+        },
+        {
+          "@language": "it",
+          "@value": "Spostamento in Uscita"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/ale/DisplacementInEntry",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Displacement in Entry"
+        },
+        {
+          "@language": "it",
+          "@value": "Spostamento in Entrata"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "owl:NamedIndividual",
+        "foaf:Agent",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    }
+  ]
+}

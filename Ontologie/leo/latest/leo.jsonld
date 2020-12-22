@@ -1,0 +1,651 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "ale": "https://w3id.org/leo/onto/ale/",
+    "co": "https://w3id.org/leo/onto/co/",
+    "cov": "https://w3id.org/italia/onto/COV/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "dcat:contactPoint",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/leo",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "admsapit:SemanticAsset"
+      ],
+      "admsapit:acronym": "LEO",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-XML"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:SearchTask"
+        },
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/leo"
+      },
+      "admsapit:prefix": "leo",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "draft",
+      "admsapit:target": [
+        "Imprese",
+        "Pubbliche Amministrazioni"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:CoreOntology"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Indicatori"
+        },
+        {
+          "@language": "it",
+          "@value": "Aziende d'allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "Farm Animal"
+        },
+        {
+          "@language": "en",
+          "@value": "Bovine"
+        },
+        {
+          "@language": "it",
+          "@value": "Eventi della vita degli animali"
+        },
+        {
+          "@language": "it",
+          "@value": "Bovini"
+        },
+        {
+          "@language": "it",
+          "@value": "Animali d'allevamento"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the main ontology, the unique acess point to all the network of ontologies developed in the context of LEO project."
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2018-06-18"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2019-12-12"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/100254"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Access point Ontology to all the network of Ontologies for LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Punto di accesso unico alla rete di ontologie del progetto LEO"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/leo/onto/analysis"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/ale"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/co"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/weather"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/indicator"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/animal"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/leo/0.2"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "Version 0.2 - 2019 - Creation of the second version of the ontology. New elements are specified in their respective versionInfo annotation properties"
+        },
+        {
+          "@language": "it",
+          "@value": "Versione 0.2 - 2019 - Creazione della seconda versione dell'ontologia. I nuovi elementi sono specificati nelle rispettive proprietà di annotazione versionInfo"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the main ontology, the unique acess point to all the network of ontologies developed in the context of LEO project."
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/leo"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Access point Ontology to all the network of Ontologies for LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Punto di accesso unico alla rete di ontologie del progetto LEO"
+        }
+      ]
+    },
+    {
+      "@id": "vcard:Kind",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:language",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:rightsHolder",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sull'accesso alla rete del progetto LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle the access point ontology for the network of ontologies of LEO project"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of LEO Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of the access point ontology for the network of ontologies of LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sull'accesso alla rete del progetto LEO"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia LEO"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:publisher",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:theme",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:Concept",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dc:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:SemanticAssetDistribution",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:SemanticAsset",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "vcard:Organization",
+        "vcard:Kind",
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Sistemi informativi"
+      },
+      "vcard:fn": {
+        "@language": "it",
+        "@value": "Sistemi informativi"
+      },
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-XML",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sull'accesso alla rete del progetto LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of the access point ontology for the network of ontologies of LEO project"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia LEO"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of the access point ontology for the network of ontologies of LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sull'accesso alla rete del progetto LEO"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia LEO"
+        }
+      ]
+    },
+    {
+      "@id": "http://dati.gov.it/onto/dcatapit#Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-JSON-LD",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sull'accesso alla rete del progetto LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of the access point ontology for the network of ontologies of LEO project"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia LEO"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of the access point ontology for the network of ontologies of LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sull'accesso alla rete del progetto LEO"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of LEO Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://dati.gov.it/onto/dcatapit#Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "vcard:Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcat:keyword",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:accrualPeriodicity",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:Project",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "foaf:Agent",
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "admsapit:Project",
+        "owl:NamedIndividual"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      },
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      }
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    }
+  ]
+}

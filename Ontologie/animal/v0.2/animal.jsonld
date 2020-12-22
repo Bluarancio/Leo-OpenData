@@ -1,0 +1,3184 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "ale": "https://w3id.org/leo/onto/ale/",
+    "co": "https://w3id.org/leo/onto/co/",
+    "cov": "https://w3id.org/italia/onto/COV/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/leo/onto/animal/AIAPOCode",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "AIA code that identifies the productive orientation"
+        },
+        {
+          "@language": "it",
+          "@value": "Codice AIA che identifica l'orientamento produttivo"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/ProductiveOrientation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "codice  AIA orientamento produttivo"
+        },
+        {
+          "@language": "en",
+          "@value": "AIA productive orientation code"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "http://dati.gov.it/onto/dcatapit#Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL456C33",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1082C40",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/AIAPOCode"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isProductionTargetOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha indirizzo produttivo\" che lega l'indirizzo produttivo all'animale o alla specie zootecnica"
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"has production target\" that links the production target to the farm animal or livestock species."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/ProductionTarget"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è indirizzo produttivo di"
+        },
+        {
+          "@language": "en",
+          "@value": "is production target of"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL517C34"
+      }
+    },
+    {
+      "@id": "_:ub2bL912C29",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/Sex"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasSex"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/shortAnimalName",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Nome utilizzato commercialmente per riconoscere l’animale (usato soprattutto per i maschi)"
+        },
+        {
+          "@language": "en",
+          "@value": "Name used commercially to recognise the animal (mainly used for males)"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "short animal name"
+        },
+        {
+          "@language": "it",
+          "@value": "nome corto animale"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:name"
+      }
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:theme",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1125C43",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/uniqueAnimalNumber"
+      }
+    },
+    {
+      "@id": "_:ub2bL1101C22",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/isSexOf"
+      }
+    },
+    {
+      "@id": "_:ub2bL917C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasBreed"
+      }
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1014C35",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
+      }
+    },
+    {
+      "@id": "_:ub2bL1046C35",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isSexOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha sesso\" che lega il sesso all'animale da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"has sex\" that links the sex to the farm animal"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/Sex"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is sex of"
+        },
+        {
+          "@language": "it",
+          "@value": "è sesso di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL553C21"
+      }
+    },
+    {
+      "@id": "_:ub2bL942C29",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "xsd:date"
+      },
+      "owl:onProperty": {
+        "@id": "ale:birthDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "vcard:Organization",
+        "owl:NamedIndividual",
+        "vcard:Kind",
+        "http://dati.gov.it/onto/dcatapit#Organization"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Sistemi informativi"
+      },
+      "vcard:fn": {
+        "@language": "it",
+        "@value": "Sistemi informativi"
+      },
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "admsapit:SemanticAssetDistribution",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/DeadWeight",
+      "@type": "owl:Class",
+      "owl:disjointWith": {
+        "@id": "https://w3id.org/leo/onto/animal/LiveWeight"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The deadweight of the farm animal or the weight after the date of slaughter."
+        },
+        {
+          "@language": "it",
+          "@value": "Il peso morto dell'animale d'allevamento ovvero il peso dopo la data di macellazione."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Peso Morto"
+        },
+        {
+          "@language": "en",
+          "@value": "Deadweight"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/animal/Weight"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "foaf:Agent",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "owl:NamedIndividual"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL362C34",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL908C29",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasUniqueAnimalNumberInTime"
+      }
+    },
+    {
+      "@id": "vcard:Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcat:keyword",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/FarmAnimal",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Rappresenta il soggetto o l'animale da allevamento."
+        },
+        {
+          "@language": "en",
+          "@value": "It represents the farm animal."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Farm Animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Animale di Allevamento"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL932C29"
+        },
+        {
+          "@id": "_:ub2bL927C29"
+        },
+        {
+          "@id": "_:ub2bL952C29"
+        },
+        {
+          "@id": "_:ub2bL917C29"
+        },
+        {
+          "@id": "_:ub2bL960C29"
+        },
+        {
+          "@id": "_:ub2bL942C29"
+        },
+        {
+          "@id": "_:ub2bL956C29"
+        },
+        {
+          "@id": "_:ub2bL908C29"
+        },
+        {
+          "@id": "l0:Agent"
+        },
+        {
+          "@id": "_:ub2bL937C29"
+        },
+        {
+          "@id": "_:ub2bL922C29"
+        },
+        {
+          "@id": "_:ub2bL947C29"
+        },
+        {
+          "@id": "_:ub2bL904C29"
+        },
+        {
+          "@id": "_:ub2bL912C29"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:accrualPeriodicity",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL904C29",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
+      }
+    },
+    {
+      "@id": "_:ub2bL1022C35",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "l0:name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:ub2bL869C24",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/AIABreedCode"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/Breed",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It represents the breed of the farm animal."
+        },
+        {
+          "@language": "it",
+          "@value": "Rappresenta la razza dell'animale allevato"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Breed"
+        },
+        {
+          "@language": "it",
+          "@value": "Razza"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL865C24"
+        },
+        {
+          "@id": "_:ub2bL861C24"
+        },
+        {
+          "@id": "l0:Concept"
+        },
+        {
+          "@id": "_:ub2bL869C24"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/methodWeightDetection",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the weight to the method used to estimate it."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega il peso dell'animale al metodo usato per stimarlo."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/Weight"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "method weight detection"
+        },
+        {
+          "@language": "it",
+          "@value": "metodo di rilevazione peso"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:description"
+      }
+    },
+    {
+      "@id": "_:ub2bL842C40",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "_:ub2bL307C29",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isOfSpecies",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/animal/isSpeciesOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di collegare l'animale alla sua specie zootecnica"
+        },
+        {
+          "@language": "en",
+          "@value": "Property that allows one to link the farm animal to its livestock species."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è di specie"
+        },
+        {
+          "@language": "en",
+          "@value": "is of species"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+      }
+    },
+    {
+      "@id": "vcard:Kind",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "admsapit:SemanticAsset"
+      ],
+      "admsapit:acronym": "animal",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": [
+        {
+          "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/animal/Breed"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+        }
+      ],
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-XML"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        },
+        {
+          "@id": "admsapit:SearchTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/animal"
+      },
+      "admsapit:prefix": "animal",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "draft",
+      "admsapit:target": [
+        "Pubbliche Amministrazioni",
+        "Imprese"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:CoreOntology"
+      },
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/lkjd2ixnkd39jlu/LEOModule_v2.png?raw=1"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Animali d'allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "Bovine"
+        },
+        {
+          "@language": "en",
+          "@value": "Farm Animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Bovini"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the main ontology of the Farm Animals"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2018-06-18"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2019-12-12"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/100254"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Ontologia degli animali di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "Farm Animals Ontology"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/leo/onto/ale"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/animal/0.2"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "Versione 0.2 - 2019 - Creazione della seconda versione dell'ontologia. I nuovi elementi sono specificati nelle rispettive proprietà di annotazione versionInfo"
+        },
+        {
+          "@language": "en",
+          "@value": "Version 0.2 - 2019 - Creation of the second version of the ontology. New elements are specified in their respective versionInfo annotation properties"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the main ontology for farm animals developed in the context of the LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia principale, il punto di accesso alla rete di ontologie per l'ambiente zootecnico italiano"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Livestok Environment Main Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia principale del progetto LEO: Livestock Environment in Open Data"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:rightsHolder",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/FarmAnimalDestination",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It represents the managerial decision which the breeder makes when the animal is born about his willingness to raise the animal for breeding or slaughter."
+        },
+        {
+          "@language": "it",
+          "@value": "Rappresenta la decisione manageriale che l’allevatore prende al momento della nascita dell’animale circa la sua volontà di allevare l’animale da riproduzione o destinarlo alla macellazione."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Destinazione dell'Animale di Allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "Farm Animal Destination"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub2bL980C40"
+        }
+      ]
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL478C29",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL1026C35",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/AIASpeciesCode"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - inserito nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - included in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Alternative identifier used for livestock species, productive orientation, production target code lists when other organizations assign a code which is different from the AIA one."
+        },
+        {
+          "@language": "it",
+          "@value": "Identificativo alternativo utilizzato per alcune code list del dominio zootecnico dove per la specie, per l'indirizzo produttivo e per l'orientamento produttivo, altre organizzazioni assegnano codici identificativi a questi concetti diversi dal codice AIA"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Identificativo Alternativo"
+        },
+        {
+          "@language": "en",
+          "@value": "Alternative Identifier"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL837C40"
+        },
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub2bL842C40"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL980C40",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/isDestinationOf"
+      }
+    },
+    {
+      "@id": "_:ub2bL1078C40",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "l0:name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasWeight",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nela seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the farm animal to its weight."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega l'animale al suo peso."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has weight"
+        },
+        {
+          "@language": "it",
+          "@value": "ha peso"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/Weight"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:Project"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      },
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      }
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasFather",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di specificare il padre dell'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that allows one to specify the father of the farm animal."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha padre"
+        },
+        {
+          "@language": "en",
+          "@value": "has father"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      }
+    },
+    {
+      "@id": "foaf:Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/Life",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/animal/FarmAnimalDestination"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Vita"
+        },
+        {
+          "@language": "en",
+          "@value": "Life"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasGeneticMother",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that allows one to specify the mother who brings in the genetic inheritance"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di specificare la madre che apporta il patrimonio genetico"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has genetic mother"
+        },
+        {
+          "@language": "it",
+          "@value": "ha madre genetica"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/assignedBy",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - included in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - introdotto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di collegare il codice alternativo all'organizzazione che lo assegna."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the alternative identifier to the organization responsable for assigning it."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "assigned by"
+        },
+        {
+          "@language": "it",
+          "@value": "assegnato da"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "cov:Organization"
+      }
+    },
+    {
+      "@id": "dcat:contactPoint",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasProductionTarget",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/animal/isProductionTargetOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'animale (e quindi l'evento di spostamento dell'animale in entrata all'allevamento) o la specie zootecnica all'indirizzo produttivo di riferimento."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the farm animal (and thus the event of displacement in entry) and the livestock species to their production target"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL362C34"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has production target"
+        },
+        {
+          "@language": "it",
+          "@value": "ha indirizzo produttivo"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/ProductionTarget"
+      }
+    },
+    {
+      "@id": "_:ub2bL517C34",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "ale:detectionDate",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "ale:birthDate",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasSex",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/animal/isSexOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'animale al suo sesso (femmina, maschio)"
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the farm animal with its sex."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL401C21"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has sex"
+        },
+        {
+          "@language": "it",
+          "@value": "ha sesso"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/Sex"
+      }
+    },
+    {
+      "@id": "l0:identifier",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione delle ontologie"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa classe rappresenta la situazione del numero unico degli animali d'allevamento che cambiano nel tempo. La situazione è abbastanza rara poiché l'animale che perde il suo numero unico (matricola) può ri-acquisirlo. Tuttavia, vi è un 10% di casi in cui il numero unico può cambiare nel tempo. Questa classe permette di tenere traccia di questi cambiamenti, compresa la relazione con il numero unico precedente."
+        },
+        {
+          "@language": "en",
+          "@value": "This class represents the situation of the unique animal number that changes over time. The situation is quite rare since the animal that looses its unique number can re-acquire it. However, there are a 10% of cases in which the unique number may change over time. This class allows one to keep track of these changes including the relation with the previous unique number."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Numero Unico Animale nel Tempo"
+        },
+        {
+          "@language": "en",
+          "@value": "Unique Animal Number in Time"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/TI/TimeIndexedEvent"
+        },
+        {
+          "@id": "_:ub2bL1125C43"
+        },
+        {
+          "@id": "_:ub2bL1120C43"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/ProductionTarget",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Production target for which the animal is farmed. It is indicated during the displacement in entry of the animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Indirizzo Produttivo per il quale l’animale viene allevato. E’ indicato all’ingresso dell’animale nell’allevamento"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Production Target"
+        },
+        {
+          "@language": "it",
+          "@value": "Indirizzo Produttivo"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1050C35"
+        },
+        {
+          "@id": "l0:Concept"
+        },
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub2bL1054C35"
+        },
+        {
+          "@id": "_:ub2bL1046C35"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/TI/date",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL284C23",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Farm animals ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of LEO Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Farm animals ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli animali da allevamento"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of LEO Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/LiveWeight",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il peso vivo dell'animale d'allevamento."
+        },
+        {
+          "@language": "en",
+          "@value": "The live weight of the farm animal."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Live Weight"
+        },
+        {
+          "@language": "it",
+          "@value": "Peso Vivo"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/animal/Weight"
+      }
+    },
+    {
+      "@id": "_:ub2bL757C33",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/AIASpeciesCode",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Codice AIA che identifica le specie zootecniche"
+        },
+        {
+          "@language": "en",
+          "@value": "AIA code identifying the livestock species"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "AIA livestock species code"
+        },
+        {
+          "@language": "it",
+          "@value": "codice AIA specie zootecniche"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "ale:Birth",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isSpeciesOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"è di specie\" che consente di collegare la specie zootecnica all'animale"
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"is of species\" that links the livestock species to the farm animal."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is species of"
+        },
+        {
+          "@language": "en",
+          "@value": "è specie di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      }
+    },
+    {
+      "@id": "dcterms:publisher",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL861C24",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal"
+      }
+    },
+    {
+      "@id": "_:ub2bL837C40",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "cov:Organization"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/assignedBy"
+      }
+    },
+    {
+      "@id": "_:ub2bL956C29",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/uniqueAnimalNumber"
+      }
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL261C39",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/ProductionTarget"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/ProductiveOrientation"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/uniqueAnimalNumber",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Codice identificativo univoco dell'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "Unique code that identifies the farm animal."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL757C33"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "unique animal number"
+        },
+        {
+          "@language": "it",
+          "@value": "numero univoco animale"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/Slaughterhouse",
+      "@type": [
+        "https://w3id.org/leo/onto/animal/FarmAnimalDestination",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Slaughterhouse"
+        },
+        {
+          "@language": "it",
+          "@value": "Macello"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:Concept",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isDestinationOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha destinazione\" che collega la destinazione con l'animale."
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"has destination\" that links a destination to the farm animal"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimalDestination"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è destinazione di"
+        },
+        {
+          "@language": "en",
+          "@value": "is destination of"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL478C29"
+      }
+    },
+    {
+      "@id": "admsapit:SemanticAsset",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1018C35",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/isSpeciesOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/Weight",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Peso dell'animale"
+        },
+        {
+          "@language": "en",
+          "@value": "Weight of the farm animal"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Peso"
+        },
+        {
+          "@language": "en",
+          "@value": "Weight"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1148C25"
+        },
+        {
+          "@id": "_:ub2bL1144C25"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/MU/Value"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1148C25",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub2bL1151C43"
+      },
+      "owl:onProperty": {
+        "@id": "ale:detectionDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:Project",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL937C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/isOfSpecies"
+      }
+    },
+    {
+      "@id": "_:ub2bL865C24",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "l0:name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasBreed",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "en",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that represents the belonging relationship between a farm animal and its breed."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che rappresenta la relazione di appartenenza dell'animale alla sua razza."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL284C23"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "belongs to"
+        },
+        {
+          "@language": "it",
+          "@value": "appartiene a"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/AIABreedCode",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "AIA code identifying the breed"
+        },
+        {
+          "@language": "it",
+          "@value": "Codice AIA che identifica la razza"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "codice AIA razza"
+        },
+        {
+          "@language": "en",
+          "@value": "AIA breed code"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "_:ub2bL553C21",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL932C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasGeneticMother"
+      }
+    },
+    {
+      "@id": "_:ub2bL1144C25",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "rdfs:Literal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/methodWeightDetection"
+      }
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL1050C35",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "l0:name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "ale:Identification",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che permette di tenere traccia del precedente numero unico di un animale da allevamento nella situazione in cui il numero unico può cambiare nel tempo."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that allows one to keep track of the previous unique number of a farm animal in the situation in which the unique number may change over time."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "previous unique animal number"
+        },
+        {
+          "@language": "it",
+          "@value": "precedente numero unico animale"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isProductiveOrientationOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"has productive orientation\" that links the productive orientation to the breed"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha orientamento produttivo\" che lega l'orientamento produttivo alla razza"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/ProductiveOrientation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is productive orientation of"
+        },
+        {
+          "@language": "it",
+          "@value": "è orientamento produttivo di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      }
+    },
+    {
+      "@id": "ale:DisplacementInEntry",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiornata nella seconda versione da Specie a Specie Zootecnica"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - update from Species to Livestock Species"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It represents the zootechnical species. By species it means: cattle, buffaloes, goats, sheep, pigs. The scientific names of the species are not used."
+        },
+        {
+          "@language": "it",
+          "@value": "Rappresenta la specie zootecnica. Per specie si intende: bovini, bufali, capre, ovini, suini. Non vengono usati i nomi scientifici delle specie."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Specie Zootecnica"
+        },
+        {
+          "@language": "en",
+          "@value": "Livestock Species"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1018C35"
+        },
+        {
+          "@id": "_:ub2bL1014C35"
+        },
+        {
+          "@id": "_:ub2bL1022C35"
+        },
+        {
+          "@id": "l0:Concept"
+        },
+        {
+          "@id": "_:ub2bL1026C35"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:language",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "xsd:dateTime",
+      "@type": "rdfs:Datatype"
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of belongs to that links a breed to the farm animal"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"appartiene a\" che collega la razza all'animale."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è razza animale di allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "is breed of farm animal"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub2bL456C33"
+      }
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/Sex",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Rappresenta il sesso dell'animale e può assumere solo due valori F: Femmina e M:Maschio"
+        },
+        {
+          "@language": "en",
+          "@value": "It represents the sex of the farm animal. Its values are F:female and M:Male"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Sesso"
+        },
+        {
+          "@language": "en",
+          "@value": "Sex"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub2bL1101C22"
+        }
+      ]
+    },
+    {
+      "@id": "ale:registrationDate",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "http://dati.gov.it/onto/dcatapit#Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-RDF-XML",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Farm animals ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia LEO"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of LEO Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Farm animals ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia LEO"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/LEO-JSON-LD",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/leo/latest/leo.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Farm animals ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia LEO"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli animali da allevamento"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of Farm animals ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of LEO Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia LEO"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1151C43",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasProductiveOrientation",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/animal/isProductiveOrientationOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the breed to its productive orientation"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega la razza al proprio orientamento produttivo"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha orientamento produttivo"
+        },
+        {
+          "@language": "en",
+          "@value": "has productive orientation"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/ProductiveOrientation"
+      }
+    },
+    {
+      "@id": "cov:Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub2bL1074C40",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
+      }
+    },
+    {
+      "@id": "ale:disposalDate",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "dc:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub2bL927C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasFather"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/ProductiveOrientation",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The productive orientation of the breed."
+        },
+        {
+          "@language": "it",
+          "@value": "Orientamento Produttivo della Razza"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Productive Orientation"
+        },
+        {
+          "@language": "it",
+          "@value": "Orientamento Produttivo"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub2bL1082C40"
+        },
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub2bL1074C40"
+        },
+        {
+          "@id": "_:ub2bL1078C40"
+        },
+        {
+          "@id": "l0:Concept"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/isWithin",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega la razza alla specie zootecnica"
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the breed to the livestock species"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/Breed"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "rientra in"
+        },
+        {
+          "@language": "en",
+          "@value": "is within"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "foaf:Agent",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "owl:NamedIndividual"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        },
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub2bL1054C35",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/AIAPTCode"
+      }
+    },
+    {
+      "@id": "_:ub2bL960C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:date"
+      },
+      "owl:onProperty": {
+        "@id": "ale:disposalDate"
+      }
+    },
+    {
+      "@id": "_:ub2bL922C29",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimalDestination"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/hasDestination"
+      }
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that allows one to specify an alternative identifier for the livestock species, productive orientation, farm animal and production target."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di specificare un codice alternato alle specie zootecniche, all'orientamento produttivo, agli animali d'allevamento e all'indirizzo produttivo."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL261C39"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha identificativo alternativo"
+        },
+        {
+          "@language": "en",
+          "@value": "has alternative identifier"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/AlternativeIdentifier"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasDestination",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/animal/isDestinationOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'animale alla sua destinazione (vita, macello)"
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the farm animal to its destination (life or slaughterhouse)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub2bL307C29"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has destination"
+        },
+        {
+          "@language": "it",
+          "@value": "ha destinazione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimalDestination"
+      }
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/hasUniqueAnimalNumberInTime",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio - aggiunto nella seconda versione dell'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable - added in the second version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che lega l'animale d'allevamento alla situazione in cui il numero unico ad esso associato può variare nel tempo."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the farm animal to the situation where the unique number associated with it may change over time."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "has unique animal number in time"
+        },
+        {
+          "@language": "it",
+          "@value": "ha numero unico animale nel tempo"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"
+      }
+    },
+    {
+      "@id": "_:ub2bL401C21",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "ale:Birth"
+          },
+          {
+            "@id": "ale:DisplacementInEntry"
+          },
+          {
+            "@id": "ale:Identification"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub2bL947C29",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "xsd:date"
+      },
+      "owl:onProperty": {
+        "@id": "ale:registrationDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub2bL1120C43",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber"
+      }
+    },
+    {
+      "@id": "xsd:date",
+      "@type": "rdfs:Datatype"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/F",
+      "@type": [
+        "https://w3id.org/leo/onto/animal/Sex",
+        "owl:NamedIndividual"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Femmina"
+        },
+        {
+          "@language": "en",
+          "@value": "Female"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/M",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/animal/Sex"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Maschio"
+        },
+        {
+          "@language": "en",
+          "@value": "Male"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/AIAPTCode",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable - added in the second version of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile - aggiunto nella seconda versione dell'ontologia"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Codice AIA che identifica l'indirizzo produttivo"
+        },
+        {
+          "@language": "en",
+          "@value": "AIA code that identifies the production target"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/animal/ProductionTarget"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/animal"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "AIA production target code"
+        },
+        {
+          "@language": "it",
+          "@value": "codice AIA indirizzo produttivo"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "l0:identifier"
+      }
+    },
+    {
+      "@id": "_:ub2bL952C29",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/animal/shortAnimalName"
+      }
+    }
+  ]
+}

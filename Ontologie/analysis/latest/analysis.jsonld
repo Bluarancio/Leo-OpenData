@@ -1,0 +1,3253 @@
+{
+  "@context": {
+    "admsapit": "https://w3id.org/italia/onto/ADMS/",
+    "animal": "https://w3id.org/leo/onto/animal/",
+    "co": "https://w3id.org/leo/onto/co/",
+    "cov": "https://w3id.org/italia/onto/COV/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "iot": "https://w3id.org/italia/onto/IoT/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "mu": "https://w3id.org/italia/onto/MU/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/PAGValue",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub4bL772C31"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The value of the observation property PAG. It assumes one of the following values \"Positive\", \"Negative\", \"Revisable\""
+        },
+        {
+          "@language": "it",
+          "@value": "Il valore della proprietà dell'osservazione PAG. Esso assume uno fra i seguenti valori \"Positiva\", \"Negativa\", \"Rivedibile\"."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "PAG Value"
+        },
+        {
+          "@language": "it",
+          "@value": "Valore PAG"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/CategoryValue"
+      }
+    },
+    {
+      "@id": "_:ub4bL600C78",
+      "@type": "owl:Restriction",
+      "owl:hasValue": {
+        "@id": "https://w3id.org/leo/onto/analysis/IBR"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasObservableProperty"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/ObservationValue",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "prov:wasDerivedFrom": {
+        "@id": "http://www.w3.org/ns/sosa/Result"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "E' il valore/risultato dell'osservazione.  Il valore di un'osservazione può essere di diversi tipo. Per esempio, il valore categoria è un valore preso da un vocabolario controllato, il valore derivante da un conteggio può essere un semplice valore intero, ecc."
+        },
+        {
+          "@language": "en",
+          "@value": "It's the value/result of the observation.  The value of an observation can be of different types. For example, the category value is a value taken from a controlled vocabulary, the value derived from a count can be a simple integer value, etc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Valore dell'Osservazione"
+        },
+        {
+          "@language": "en",
+          "@value": "Observation Value"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:ObservationValue"
+        },
+        {
+          "@id": "l0:Characteristic"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/isAnalysisObservationOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'analisi di laboratorio alle varie osservazioni. Ci deve essere almeno un'osservazione per descrivere le analisi di laboratorio"
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links the laboratory analysis to the various observations. There must be at least one observation to describe the laboratory analysis"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "consiste di osservazioni dell'analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "consists of analysis observation"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/MassMilkAnalysis",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It's the milk mass analysis. It is done on a certain date (data milk mass  analysis) and on a sample uniquely identified by a number (milk mass sample number - Identification number of the tube containing the milk sample related to the milking carried out on the whole herd)."
+        },
+        {
+          "@language": "it",
+          "@value": "E' l'analisi latte del campione di massa. E' fatta in una certa data (data analisi campione) e su un campione identificato univocamente da un numero (numero coampione di massa - Numero identificativo della provetta che contiene il campione di latte relativo alla mungitura effettuata su tutta la mandria.)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Milk Mass Analysis"
+        },
+        {
+          "@language": "it",
+          "@value": "Analisi di Campione di Massa"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "owl:NamedIndividual",
+        "vcard:Organization",
+        "vcard:Kind"
+      ],
+      "vcard:fn": "Sistemi informativi",
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "_:ub4bL341C33",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/IBRAnalysis"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/PAGAnalysis"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/SimpleAnimalAnalysis"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub4bL742C78",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/PAGValue"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasResult"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub4bL663C37",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:ub4bL665C58"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Casein",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The casein in the milk sample"
+        },
+        {
+          "@language": "it",
+          "@value": "La caseina nel campione di latte"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Caseina"
+        },
+        {
+          "@language": "en",
+          "@value": "Casein"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/PAG",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The Pregnancy-Associated Glycoproteins (PAG)"
+        },
+        {
+          "@language": "it",
+          "@value": "Progesterone che determina la possibile gravidanza dell’animale."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "PAG"
+        },
+        {
+          "@language": "it",
+          "@value": "PAG"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/isAnalysisObservationOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"consists of analysis observation\" that links the analysis observation to the laboratory analysis"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"consiste di osservazioni dell'analisi\" che consente di collegare l'osservazione dell'analisi all'analisi di laboratorio"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is analysis observation of"
+        },
+        {
+          "@language": "it",
+          "@value": "è osservazione dell'analisi di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+      }
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/CountObservation",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "prov:wasDerivedFrom": {
+        "@id": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#CountObservation"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe delle osservazioni di tipo conteggio ovvero osservazioni i cui valori (risultati) sono valori semplici interi. Questa definizione deriva dallo standard ISO 19156 (Modello Osservazionel)"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of observations of count type i.e. observations whose values (results) are count value, meaning integer. This definition is derived from ISO 19156 (Observation Model)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Osservazione di tipo Conteggio"
+        },
+        {
+          "@language": "en",
+          "@value": "Count Observation"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      }
+    },
+    {
+      "@id": "l0:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/CategoryValue",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is a value of the result of the observation that is generally derived from a controlled vocabulary (or taxonomy). For example, a category value can be \"good\", \"excellent\", \"sufficient\", \"insufficient\" or \"positve\", \"negative\", \"doubtful\" etc. In the context of the present ontology we distinguish between IBRValue and PAGValue that are all coming from distinct controlled vocabularies"
+        },
+        {
+          "@language": "it",
+          "@value": "E' un valore del risultato dell'osservazione che deriva in generale da un vocabolario controllato (o tassonomia). Per esempio, un valore di categoria può essere \"buono\", \"ottimo\", \"sufficiente\", \"insufficiente\" oppure \"positvo\", \"negativo\", \"dubbio\" ecc. Nel contesto della presente ontologia distinguiamo tra valori di tipo categoria che sono valori IBR e valori PAG tutti provenienti da vocabolari controllati distinti molto semplici"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Valore di tipo Categoria"
+        },
+        {
+          "@language": "en",
+          "@value": "Category Value"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/ObservationValue"
+      }
+    },
+    {
+      "@id": "admsapit:hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL658C37",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/carriedOutOn"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/TotalSaturatedFattyAcids",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Total saturated fatty acids in the milk sample"
+        },
+        {
+          "@language": "it",
+          "@value": "Acidi Grassi Saturi Totali presenti nel campione di latte"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Totale Acidi Grassi Saturi"
+        },
+        {
+          "@language": "en",
+          "@value": "Total Saturated Fatty Acids"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL361C32",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/IBRAnalysis"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/PAGAnalysis"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/SimpleAnimalAnalysis"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL665C58",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub4bL484C38",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/carriedOutOn"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:ub4bL486C59"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Doubtful",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/IBRValue"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Doubtful"
+        },
+        {
+          "@language": "it",
+          "@value": "Dubbio"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/SimpleAnimalAnalysis",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "E' l'analisi eseguita su un singolo soggetto. E' fatta in una data (data analysis) e su un certo campione identificato univocamente da un numero (numero campione)"
+        },
+        {
+          "@language": "en",
+          "@value": "It's the analysis performed on a single subject. It is made in a date (analysis date) and on a certain sample uniquely identified by a number (sample number)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Single Animal Analysis"
+        },
+        {
+          "@language": "it",
+          "@value": "Analisi sul Singolo Animale"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/AN-RDF-TURTLE",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/analysis/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/analysis/latest/analysis.ttl"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Analysis ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sulle analisi"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Analysis Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Analisi"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Analysis ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sulle analisi"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Analysis Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL506C38",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:ub4bL509C56"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/resultTime"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "admsapit:prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL492C38",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/isAnalysisObservationOf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/IAC",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Cheese Aptitude Index (CAI)"
+        },
+        {
+          "@language": "it",
+          "@value": "Indice Attitudine Casearia (IAC)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "IAC"
+        },
+        {
+          "@language": "it",
+          "@value": "IAC"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL814C26",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/idSeedPailleteLot"
+      }
+    },
+    {
+      "@id": "_:ub4bL632C31",
+      "@type": "owl:Class",
+      "owl:oneOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Doubtful"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Negative"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Positive"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The class of laboratory analysis, i.e. the set of observations of specific analysis properties. Laboratory analyses are carried out on a certain date (date of analysis) and on a sample (e.g. in the case of cattle on milk samples).\nLaboratory analyses always refer to a company and can be carried out on a single animal or not. In particular, IBR analyses, PAG analyses and individual animal analyses are carried out on a specific farm animal. The date of the analysis in the case of IBR analysis becomes the date of IBR analysis, the date of the analysis in the case of PAG analysis becomes the date of PAG analysis, etc."
+        },
+        {
+          "@language": "it",
+          "@value": "La classe delle analisi di laboratorio, ovvero dell'insieme di osservazioni di specifiche proprietà di analisi. Le analisi di laboratorio vengono effettuate in una certa data (data analisi) e su un campione (per esempio nel caso della specie zootecnica dei bovini su campioni di latte).\nLe analisi di laboratorio si riferiscono sempre a un'azienda e possono essere eseguite su un singolo animale o meno. In particolare, Le analisi IBR, analisi PAG e analisi su singolo animale si eseguono su uno specifico animale d'allevamento individuato. La data analisi nel caso dell'analisi IBR diventa la data di analisi IBR, la data analisi nel caso dell'analisi PAG diventa la data di analisi PAG, ecc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Laboratory Analysis"
+        },
+        {
+          "@language": "it",
+          "@value": "Analisi di Laboratorio"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub4bL654C37"
+        },
+        {
+          "@id": "l0:Collection"
+        },
+        {
+          "@id": "_:ub4bL663C37"
+        },
+        {
+          "@id": "_:ub4bL658C37"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/refersToCompany",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the laboratory analyses to the company. All types of laboratory analysis are always related to the company."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega le analisi di laboratorio all'azienda. Tutti i tipi di analisi di laboratorio sono sempre riferiti all'azienda."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "refers to company"
+        },
+        {
+          "@language": "it",
+          "@value": "si riferisce all'azienda"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "co:Company"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Acetone",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'acetone presente nel campione di latte"
+        },
+        {
+          "@language": "en",
+          "@value": "The acetone in the milk sample"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Acetone"
+        },
+        {
+          "@language": "it",
+          "@value": "Acetone"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL604C78",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/IBRValue"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasResult"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:ub4bL736C34",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:ub4bL738C55"
+      }
+    },
+    {
+      "@id": "admsapit:target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL752C30",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/analysis/CategoryObservation"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/AN-JSON-LD",
+      "@type": [
+        "admsapit:SemanticAssetDistribution",
+        "owl:NamedIndividual"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/analysis/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/weathr/latest/analysis.jsonld"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of analysis ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sulle analisi"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Analysis Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sulle analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of analysis ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Analysis Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/A30",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Identifica la caratteristica d’idoneità del campione del latte alla caseificazione; in particolare consiste nella misurazione della consistenza del coagulo (misurata in millimetri)."
+        },
+        {
+          "@language": "en",
+          "@value": "It identifies the suitability feature of interest of the milk sample for cheesemaking; in particular, it consists of measuring the consistency of the clot (measured in millimetres)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "A30"
+        },
+        {
+          "@language": "en",
+          "@value": "A30"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "prov:wasDerivedFrom": [
+        {
+          "@id": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#Observation"
+        },
+        {
+          "@id": "http://www.w3.org/ns/sosa/Observation"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe dell'osservazione nelle analisi. Un osservazione è un atto associato a un tempo (istante o periodo temporale). Essa  coinvolge l'applicazione di una determinata procedura che porta a produrre un risultato relativo a una qualche proprietà di una caratteristica di interesse. Nel contesto di questa ontologia. l'osservazione dell'analisi di laboratorio viene svolta su un insieme di proprietà per le quali si produce un risultato (in una certa data - per esempio la data dell'analisi dell'integrità di membrana è la data in cui si sono conclusi i processi di analisi dell'integrità di membrana); il risultato può essere quantitativo e qualitativo. Per esempio, l'osservazione sulla misurazione del livello dell'Urea presente nel campione di latte o la misurazione d’idoneità del campione del latte alla caseificazione (A30);"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of observation in analysis. An observation is an act associated with a time (instant or time period). It involves the application of a certain procedure that leads to a result related to some property of a feature of interest. In the context of this ontology. the observation of laboratory analysis is carried out on a set of properties for which a result is produced (on a certain date - e.g. the date of the membrane integrity analysis is the date on which the membrane integrity analysis processes were completed and a result is obtained); the result can be quantitative and qualitative. For example, the observation of the measurement of the level of Urea present in the milk sample or the measurement of the suitability of the milk sample for cheesemaking (A30);"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Osservazione dell'Analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "Analysis Observation"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub4bL484C38"
+        },
+        {
+          "@id": "iot:Observation"
+        },
+        {
+          "@id": "_:ub4bL501C38"
+        },
+        {
+          "@id": "_:ub4bL506C38"
+        },
+        {
+          "@id": "_:ub4bL492C38"
+        },
+        {
+          "@id": "_:ub4bL496C38"
+        },
+        {
+          "@id": "l0:Activity"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Conductivity",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La conducibilità presente nel campione di latte"
+        },
+        {
+          "@language": "en",
+          "@value": "The conducitvity in the milk sample"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Conducibilità"
+        },
+        {
+          "@language": "en",
+          "@value": "Conductivity"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/IBR",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The infectious bovine rhinotracheitis (IBR)"
+        },
+        {
+          "@language": "it",
+          "@value": "La rinotracheite infettiva bovina (IBR)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "IBR"
+        },
+        {
+          "@language": "it",
+          "@value": "IBR"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/carriedOutOn",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/isAnalyzedIn"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the analysis observation or the laboratory analysis to the sample on which the observation, and in general the analysis, is carried out."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'osservazione dell'analisi o l'analisi di laboratorio al campione su cui viene effettuata l'osservazione, e in generale l'analisi."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub4bL217C27"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "carried out on"
+        },
+        {
+          "@language": "it",
+          "@value": "eseguita su"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/DSCC",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The somatic cells in the milk sample"
+        },
+        {
+          "@language": "it",
+          "@value": "Le cellule somatiche presenti nel latte"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Differential Somatic Cell Count (DSCC)"
+        },
+        {
+          "@language": "it",
+          "@value": "Differenziale delle cellule somatiche (DSCC)"
+        }
+      ]
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        },
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/isResultOf",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"has result\" that links the observation value to the analysis observation"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"ha risultato\" che collega un valore dell'osservazione all'osservazione dell'analisi"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/ObservationValue"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è risultato di"
+        },
+        {
+          "@language": "en",
+          "@value": "is result of"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      }
+    },
+    {
+      "@id": "iot:ObservationValue",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub4bL430C24",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Sample",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is the sample (for example, the tube containing the milk sample for a single animal/subject on which the laboratory analysis will be carried out) on which individual observations and laboratory analysis in general are carried out. It is uniquely identified by a sample number."
+        },
+        {
+          "@language": "it",
+          "@value": "E' il campione (per esempio la provetta che contiene il campione di latte per un singolo animale/soggetto sul quale verranno fatte le analisi di laboratorio) su cui si eseguono singole osservazioni e in generale analisi di laboratorio. E' identificato univocamente da un numero di campione."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Sample"
+        },
+        {
+          "@language": "it",
+          "@value": "Campione"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "_:ub4bL794C25"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL501C38",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/ObservationValue"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasResult"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/TotalUnsaturatedFattyAcids",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Acidi Grassi Insaturi Totali presenti nel campione di latte"
+        },
+        {
+          "@language": "en",
+          "@value": "Total unsaturated fatty acids in the milk samle"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Totale Acidi Grassi Insaturi"
+        },
+        {
+          "@language": "en",
+          "@value": "Total Unsatured Fatty Acids"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/hasObservableProperty",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the observation of the analysis with its observable properties (with properties such as IBR, PAG, Urea, Lactose, etc.)."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega l'osservazione dell'analisi con le sue proprietà osservabili (con proprietà quali IBR, PAG, Urea, Lattosio, ecc.)"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha proprietà osservabile"
+        },
+        {
+          "@language": "en",
+          "@value": "has observable property"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Negative",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/IBRValue",
+        "https://w3id.org/leo/onto/analysis/PAGValue",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Negativo/a"
+        },
+        {
+          "@language": "en",
+          "@value": "Negative"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL598C34",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:ub4bL600C55"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/CategoryObservation",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "prov:wasDerivedFrom": {
+        "@id": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#CategoryObservation"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe delle osservazioni di tipo categoria ovvero osservazioni i cui valori (risultati) sono valore di categoria ossia valori di un vocbaolario controllato o di una tassonomia. Questa definizione deriva dallo standard ISO 19156 (Modello Osservazionel)"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of observations of category type i.e. observations whose values (results) are category value, meaning values of a controlled vocabulary or taxonomy. This definition is derived from ISO 19156 (Observation Model)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Osservazione di tipo Categoria"
+        },
+        {
+          "@language": "en",
+          "@value": "Category Observation"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      }
+    },
+    {
+      "@id": "iot:ObservationParameter",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:ub4bL614C30",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/analysis/CategoryObservation"
+      }
+    },
+    {
+      "@id": "_:ub4bL738C55",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:ub4bL738C78"
+          },
+          {
+            "@id": "_:ub4bL742C78"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub4bL794C25",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "xsd:int"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/sampleNumber"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/performedOnAnimal",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega alcune analisi di laboratorio all'animale. In particolare, le analisi IBR, PAG e su singolo animale si riferiscono a un animale e questa proprietà è utilizzata a tale scopo."
+        },
+        {
+          "@language": "en",
+          "@value": "Property that links some laboratory analyses to the animal. In particular, IBR, PAG and single animal analyses refer to an animal and this property is used for this purpose."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "_:ub4bL361C32"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "eseguita su animale"
+        },
+        {
+          "@language": "en",
+          "@value": "performed on animal"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "animal:FarmAnimal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/BackFatThickness",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The thickness of back fat measured in mm"
+        },
+        {
+          "@language": "it",
+          "@value": "Lo spessore del lardo dorsale misurato in mm"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "BackFat Thickness"
+        },
+        {
+          "@language": "it",
+          "@value": "Spessore Lardo Dorsale"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL580C29",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/countObservationValue"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/isSubjectOfAnalysis",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/performedOnAnimal"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"eseguita su animale\" che collega l'animale alle specifiche analisi di laboratorio che coinvolgono l'animale ovvero l'analisi IBR, l'analisi PAG e l'analisi su singolo animale."
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"performed on animal\" that links the animal to the specific types of laboratory analyses that involve the analimal; that is, IBR analysis, PAG analysis and single animal analysis"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "animal:FarmAnimal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è soggetto di analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "is subject of analysis"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub4bL341C33"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/BHB",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Beta-idrossibutirrato"
+        },
+        {
+          "@language": "en",
+          "@value": "Beta-hydroxybutyrate"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "BHB"
+        },
+        {
+          "@language": "it",
+          "@value": "BHB"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/resultTime",
+      "@type": "owl:DatatypeProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The result time is the instant of time when the observation activity was completed. For instance the result time of the observation of the membrane integrity is the date in which the analysis processes of membrane integrity are concluded."
+        },
+        {
+          "@language": "it",
+          "@value": "Il tempo di risultato è l'istante di tempo in cui l'attività di osservazione è stata completata. Per esempio, il tempo di risultato dell'osservazione dell'integrità della membrana è la data in cui si concludono i processi di analisi dell'integrità della membrana."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "result time"
+        },
+        {
+          "@language": "it",
+          "@value": "tempo del risultato"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub4bL430C24"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      }
+    },
+    {
+      "@id": "_:ub4bL217C27",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL304C26",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/countObservationValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/CountValue"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "mu:value"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "foaf:Agent",
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/IBRValue",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub4bL632C31"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The IBR value for the observation property IBR. It assumes one of the following values: \"Positive\", \"Negative\" , \"Doubtful\""
+        },
+        {
+          "@language": "it",
+          "@value": "Il valore IBR della proprietà dell'osservazione IBR. Assume uno dei seguenti valori \"Positivo\", \"Negativo\", \"Dubbio\"."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "IBR Value"
+        },
+        {
+          "@language": "it",
+          "@value": "Valore IBR"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/CategoryValue"
+      }
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Urea",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provissorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Urea in the milk sample"
+        },
+        {
+          "@language": "it",
+          "@value": "Urea presente nel campione di latte"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Urea"
+        },
+        {
+          "@language": "en",
+          "@value": "Urea"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/SeedLot",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Per lotto o partita si intende l'insieme di una serie di paillettes che provengono dal congelamento di un eiaculato prodotto da un singolo toro in una determinata giornata. E' identificato univocamente da un codice lotto"
+        },
+        {
+          "@language": "en",
+          "@value": "A seed lot is a set of a series of sequins originating from the freezing of an ejaculate produced by a single bull on a given day. It is uniquely identified by a lot code"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Lotto relativo alla paillete di Seme"
+        },
+        {
+          "@language": "en",
+          "@value": "Seed Lot"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/Sample"
+        },
+        {
+          "@id": "_:ub4bL814C26"
+        }
+      ]
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/ObservableProperty",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "prov:wasDerivedFrom": {
+        "@id": "http://www.w3.org/ns/sosa/ObservableProperty"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Una proprietà/parametro osservabile di una caratteristica di interesse. Nel contesto di questa ontologia non sono tracciate le caratteristiche di interesse ma solo le proprietà specifiche di un'osservazione dell'analisi che assumono specifici valori con le relative unità di misura. Il concetto di proprietà dell'osservazione è incluso nel modello INSPIRE su Osservazioni e Misurazioni. Nel contesto della presente ontologia, le proprietà sono state identificate esplicitamente e sono tutte quelle proprietà per le analisi IBR, PAG, sui singoli animali/soggetti e sui campioni di massa. Esempi includono: la proprietà IBR, la proprietà PAG, la proprietà Urea, la proprietà Totale Acidi Grassi Saturi, ecc."
+        },
+        {
+          "@language": "en",
+          "@value": "An observable property/parameter of a feature of interest. In the context of this ontology the featues of interest are not modelled yet; the ontology models only the specific properties of an observation of the analysis that can assume specific values with the relative units of measurement. The concept of observation properties is included in the INSPIRE model on Observations and Measurements. In the context of this ontology, the properties have been explicitly identified and are all those properties for IBR, PAG, on single animal/subject and on milk mass analyses. Examples include: the IBR property, the PAG property, the Urea property, the Total Saturated Fatty Acids property, etc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Observable Property"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà Osservabile"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "l0:Characteristic"
+        },
+        {
+          "@id": "iot:ObservationParameter"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Cryoscopy",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La crioscopia nel campione di latte"
+        },
+        {
+          "@language": "en",
+          "@value": "The cryoscopy in the milk sample"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Crioscopia"
+        },
+        {
+          "@language": "en",
+          "@value": "Cryoscopy"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/MembraneIntegrity",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The membrane integrity is expressed in % and is determined by Nucleocounter SP100 using the protocol provided by the manufacturer that declares an accuracy expressed as CV% < 8 ."
+        },
+        {
+          "@language": "it",
+          "@value": "L'integrità di membrana è espressa in % ed è determinata tramite Nucleocounter SP100 utilizzando il protocollo previsto dalla ditta produttrice che  dichiara una precisione espressa come CV% < 8 ."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Integrità di Membrana"
+        },
+        {
+          "@language": "en",
+          "@value": "Membrane Integrity"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/BacterialLoad",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La carica batterica presente nel campione di latte"
+        },
+        {
+          "@language": "en",
+          "@value": "The bacterial load in the milk sample"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Carica Batterica"
+        },
+        {
+          "@language": "en",
+          "@value": "Bacterial Load"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/CoagulationTime",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It identifies the suitability of the milk sample for cheesemaking; in particular, it consists of measuring the time elapsing from the addition of rennet until the start of the coagulation process."
+        },
+        {
+          "@language": "it",
+          "@value": "Identifica la caratteristica d’idoneità del campione del latte alla caseificazione; in particolare consiste nella misurazione del tempo che intercorre dall’aggiunta del caglio fino all’inizio del processo di coagulazione"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Lactodynamographic profile: coagulation time (R)"
+        },
+        {
+          "@language": "it",
+          "@value": "Profilo Lattodinamografico - Tempo di Coagulazione (R)"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/hasResult",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/isResultOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is the property that determines the result of the observation, i.e. it is the property that links the observation to its result (observation value)."
+        },
+        {
+          "@language": "it",
+          "@value": "E' la proprietà che determina il risultato dell'osservazione ovvero che lega l'osservazione al suo risultato (valore dell'osservazione)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha risultato"
+        },
+        {
+          "@language": "en",
+          "@value": "has result"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/ObservationValue"
+      }
+    },
+    {
+      "@id": "co:Company",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "admsapit:semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "_:ub4bL496C38",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasObservableProperty"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Positive",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/PAGValue",
+        "https://w3id.org/leo/onto/analysis/IBRValue"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stable"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Positive"
+        },
+        {
+          "@language": "it",
+          "@value": "Positivo/a"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/AN-RDF-XML",
+      "@type": [
+        "owl:NamedIndividual",
+        "admsapit:SemanticAssetDistribution"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://www.leo-project.it/Ontologie/analysis/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://www.leo-project.it/Ontologie/analysis/latest/analysis.rdf"
+      },
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Analysis ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sulle analisi"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Analysis Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Analisi"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Analysis ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sulle analisi"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Analysis Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/PAGAnalysis",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub4bL736C34"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "E' l’analisi del campione di latte che determinerà la quantità di progesterone per determinare la gravidanza.. E' eseguita in una data (data analisi PAG ) su un campione di latte identificato univocamente da un numero (numero campione PAG)."
+        },
+        {
+          "@language": "en",
+          "@value": "It is the analysis of the milk sample that will determine the amount of progesterone to determine pregnancy. It is performed on a date (date of PAG analysis) on a milk sample uniquely identified by a number (PAG sample number)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "PAG Analysis"
+        },
+        {
+          "@language": "it",
+          "@value": "Analisi PAG"
+        },
+        {
+          "@language": "en",
+          "@value": "Pregnancy-Associated Glycoproteins Analysis"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+        },
+        {
+          "@id": "_:ub4bL752C30"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "animal:FarmAnimal",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "iot:Observation",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "l0:controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/CountValue",
+      "@type": "owl:Class",
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is a countable value (a simple integer for instance)."
+        },
+        {
+          "@language": "it",
+          "@value": "Si tratta di un valore conteggiabile (un semplice numero intero per esempio)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Count Value"
+        },
+        {
+          "@language": "it",
+          "@value": "Valore di tipo Conteggio"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "mu:Value"
+        },
+        {
+          "@id": "_:ub4bL580C29"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/ObservationValue"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Lactose",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/ObservableProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Lattosio nel campione di latte"
+        },
+        {
+          "@language": "en",
+          "@value": "Lactose in the milk sample"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Lattosio"
+        },
+        {
+          "@language": "en",
+          "@value": "Lactose"
+        }
+      ]
+    },
+    {
+      "@id": "dc:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Revisable",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/analysis/PAGValue"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Revisable"
+        },
+        {
+          "@language": "it",
+          "@value": "Rivedibile"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL738C78",
+      "@type": "owl:Restriction",
+      "owl:hasValue": {
+        "@id": "https://w3id.org/leo/onto/analysis/PAG"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasObservableProperty"
+      }
+    },
+    {
+      "@id": "_:ub4bL654C37",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+      }
+    },
+    {
+      "@id": "rdfs:commnet",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/K20",
+      "@type": [
+        "https://w3id.org/leo/onto/analysis/ObservableProperty",
+        "owl:NamedIndividual"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It identifies the suitability feature of interest of the milk sample for cheesemaking; in particular, it consists of the speed of clot formation, i.e. the time that elapses from the start of the coagulation process until the curd reaches a standard consistency"
+        },
+        {
+          "@language": "it",
+          "@value": "Identifica la caratteristica d’idoneità del campione del latte alla caseificazione; in particolare consiste nella velocità di formazione del coagulo cioè il tempo che intercorre dall’inizio del processo di coagulazione fino al momento in cui la cagliata raggiunge una consistenza standard"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "K20"
+        },
+        {
+          "@language": "en",
+          "@value": "K20"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/sampleNumber",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Identifica il codice a barre della provetta o sua numerazione ."
+        },
+        {
+          "@language": "en",
+          "@value": "It identifies the barcode of the tube or its numbering ."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "numero campione"
+        },
+        {
+          "@language": "en",
+          "@value": "sample number"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "admsapit:Project",
+        "owl:NamedIndividual"
+      ],
+      "l0:name": {
+        "@language": "it",
+        "@value": "LEO - Livestok Environment Open Data"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "LEO project where the ontology is used"
+        },
+        {
+          "@language": "it",
+          "@value": "Il progetto LEO dove viene usata l'ontologia"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "LEO - Livestok Environment Open Data"
+        },
+        {
+          "@language": "en",
+          "@value": "LEO - Livestok Environment Open Data"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/isAnalyzedIn",
+      "@type": "owl:ObjectProperty",
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"eseguita su\" che collega un campione all'analisi di laboratorio o all'osservazione dell'analisi"
+        },
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"carried out on\" that links the sample to the laboratory analysis or analysis observation"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "è analizzato in"
+        },
+        {
+          "@language": "en",
+          "@value": "is analyzed in"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:ub4bL304C26"
+      }
+    },
+    {
+      "@id": "_:ub4bL600C55",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:ub4bL600C78"
+          },
+          {
+            "@id": "_:ub4bL604C78"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "admsapit:SemanticAsset"
+      ],
+      "admsapit:acronym": "AN",
+      "admsapit:hasContributor": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "admsapit:hasFormalityLevel": {
+        "@id": "admsapit:Formal"
+      },
+      "admsapit:hasKeyClass": [
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/IBRAnalysis"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/PAGAnalysis"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/MilkMassAnalysis"
+        }
+      ],
+      "admsapit:hasOntologyLanguage": {
+        "@id": "admsapit:OWL"
+      },
+      "admsapit:hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/AN-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/AN-RDF-XML"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/AN-JSON-LD"
+        }
+      ],
+      "admsapit:hasTask": [
+        {
+          "@id": "admsapit:SearchTask"
+        },
+        {
+          "@id": "admsapit:QueryFormulationTask"
+        },
+        {
+          "@id": "admsapit:AnnotationTask"
+        }
+      ],
+      "admsapit:officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/analysis"
+      },
+      "admsapit:prefix": "an",
+      "admsapit:semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "admsapit:status": "initial draft",
+      "admsapit:target": [
+        "Pubbliche Amministrazioni",
+        "Imprese"
+      ],
+      "admsapit:type": {
+        "@id": "admsapit:DomainOntology"
+      },
+      "dc:description": {
+        "@id": "https://www.dropbox.com/s/6ay18sqrkjkfsuf/Analysis.png?raw=1"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Analisi di laboratorio"
+        },
+        {
+          "@language": "it",
+          "@value": "Analisi campione di massa"
+        },
+        {
+          "@language": "it",
+          "@value": "IBR"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/TECH"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia usata per modellare i dati LabData e in certi casi i HealthData nel progetto LEO ovvero i dati raccolti sanitari e di tipo laboratorio, intesi come osservazioni di proprietà con determinati valori"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model the LabData  and in some cases the HealthData of the LEO project, i.e. the collected health and laboratory data, understood as observations with properties with certain values."
+        }
+      ],
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2019-03-14"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2019-10-28"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": [
+        {
+          "@id": "http://eurovoc.europa.eu/6271"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/6272"
+        }
+      ],
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Ontologia delle Analisi - LabData e HealthData"
+        },
+        {
+          "@language": "en",
+          "@value": "Analysis Ontology - LabData and HeathData"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/leo/onto/co"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/animal"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/TI"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/MU"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/analysis/0.1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2019 - Creazione della prima versione dell'ontologia."
+        },
+        {
+          "@language": "en",
+          "@value": "Version 0.1 - 2019 - Creation of the first version of the ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia usata per modellare i dati LabData e in certi casi gli HealthData nel progetto LEO ovvero i dati raccolti sanitari e di tipo laboratorio, intesi come osservazioni di proprietà con determinati valori"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model the LabData  and in some cases the HealthData of the LEO project, i.e. the collected health and laboratory data, understood as observations with properties with certain values."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Ontologia delle Analisi - LabData e HealthData"
+        },
+        {
+          "@language": "en",
+          "@value": "Analysis Ontology - LabData and HealthData"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub4bL486C59",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Sample"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/SeedLot"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:ub4bL509C56",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/idSeedPailleteLot",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        },
+        {
+          "@language": "en",
+          "@value": "unstable"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il codice lotto ovvero il codice dell'insieme di una serie di paillettes che provengono dal congelamento di un eiaculato prodotto da un singolo toro in una determinata giornata. Il codice lotto viene espresso sotto forma di data (formato italiano  o americano) oppure come giorno progressivo dell'anno ( es  il 01.01.2020 sarà 1.20 il 02.01.2020 sarà 2.20 ecc)."
+        },
+        {
+          "@language": "en",
+          "@value": "The lot id, i.e. the code of a set of sequins that come from the freezing of an ejaculate produced by a single bull on a given day. The lot code is expressed as a date (Italian or American format) or as a progressive day of the year (e.g. 01.01.2020 will be 1.20, 02.01.2020 will be 2.20 etc.)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/analysis/SeedLot"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "codice lotto relativo alla paillete di seme"
+        },
+        {
+          "@language": "en",
+          "@value": "id seed paillete lot"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/leo/onto/analysis/sampleNumber"
+      }
+    },
+    {
+      "@id": "_:ub4bL772C31",
+      "@type": "owl:Class",
+      "owl:oneOf": {
+        "@list": [
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Negative"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Positive"
+          },
+          {
+            "@id": "https://w3id.org/leo/onto/analysis/Revisable"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/IBRAnalysis",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:ub4bL598C34"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "unstable"
+        },
+        {
+          "@language": "it",
+          "@value": "provvisorio"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It is the IBR analysis, i.e. the analysis of the milk sample that will determine the risk of the presence of infectious rhinotracheitis in the animal. It is quivalent to say that it is a set of category type observations where the property observed is IBR which has as a result of the observation one of the IBR values. It is carried out on a certain data IBR analysis and done on a specific sample IBR identified by a number."
+        },
+        {
+          "@language": "it",
+          "@value": "E' l'analisi IBR, ovvero l’analisi del campione di latte che determinerà il rischio di presenza di rinotracheite infettiva nell’ animale. Essa è quivalente a dire che è un insieme di osservazioni di tipo categoria dove la proprietà osservata è IBR che ha come risultato dell'osservazione uno dei valori IBR. E' eseguita in una certa data (data analisi IBR) su un campione (campione IBR) identificato univocamente da un numero (Numero campione IBR)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/analysis"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Analisi IBR"
+        },
+        {
+          "@language": "en",
+          "@value": "IBR Analysis"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+        },
+        {
+          "@id": "_:ub4bL614C30"
+        }
+      ]
+    },
+    {
+      "@id": "admsapit:hasContributor",
+      "@type": "owl:AnnotationProperty"
+    }
+  ]
+}
