@@ -1,8 +1,8 @@
-# Progetto LEO - open data
+# Repository Github del Progetto LEO - open data
 
-Questo è il repository ufficiale degli open data del progetto LEO. In questo repository pubblico potete trovare tutte le ontologie, e le relative versioni, che sono state sviluppate nel progetto, nonché altro materiale prodotto a supporto della componente open data.
+Questo è il repository ufficiale degli open data del progetto LEO. In questo repository pubblico potete trovare tutte le ontologie e vocabolari controllati, e le relative versioni, che sono state sviluppate nel progetto, nonché altro materiale prodotto a supporto della componente open data.
 
-Le ontologie, da riternersi ancora in versione **INSTABILE** e quindi preliminare, sono organizzate in una rete interconnessa, seguendo lo stesso approccio metodologico della [rete nazionale di ontologie OntoPiA](ttps://github.com/italia/daf-ontologie-vocabolari-controllati). Le ontologie del progetto LEO riusano poi direttamente alcune ontologie di OntoPiA, in particolare [l'ontologia fondazionale di OntoPiA L0](https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/l0/latest).
+Le ontologie e i vocabolari controllati, da riternersi ancora in versione **INSTABILE** e quindi preliminare, sono organizzate in una rete interconnessa, seguendo lo stesso approccio metodologico della [rete nazionale di ontologie OntoPiA](ttps://github.com/italia/daf-ontologie-vocabolari-controllati). Le ontologie del progetto LEO riusano poi direttamente alcune ontologie di OntoPiA, in particolare [l'ontologia fondazionale di OntoPiA L0](https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/l0/latest).
 
 Al momento la rete si compone dei seguenti moduli:
 
@@ -13,3 +13,9 @@ Al momento la rete si compone dei seguenti moduli:
 5.	**Il modulo company (co)** – è il modulo ontologico utilizzato per modellare tutte le informazioni sull’ubicazione in aziende, di tipo diverso, dell’animale d’allevamento. Il modulo modella inoltre informazioni sull’ubicazione fisica degli animali (caratteristiche dell’ambiente o fabbricato rurale), nonché la loro localizzazione geografica (in quest'ultimo caso riutilizzando direttamente [l'ontologia dei luoghi di OntoPiA](https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/CLV/latest);
 6.	**Il modulo indicator** – questo modulo consente di gestire tutta una serie di indicatori dell’ambiente zootecnico. In particolare, il modulo ontologico include la modellazione dell’indicatore di benessere animale, calcolato sulla base di misurazioni periodiche svolte nell’ambiente rurale, e l’indicatore genetico associato all’animale;
 7.	**Il modulo weather** – è il modulo ontologico utilizzato per rappresentare i dati sulle rilevazioni meteo fatti da stazioni meteo. Il modulo, di fatto, specializza [l’ontologia della rete nazionale OntoPIA IoT](https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/IoT/latest), modellando solo gli aspetti specifici relativi alle rilevazioni meteo e lasciando ogni altro elemento di modellazione all’ontologia nazionale, quest’ultima già allineata a diversi standard internazionali.
+
+
+Oltre alle ontologie, il presente repository include inoltre una serie di vocabolari controllati:
+
+1. **Razze (breed)**: è il vocabolario controllato delle razze degli animali dell'ambiente zootecnico. Il vocabolario include collegamenti a dataset esterni disponibili come Linked Open Data (e.g., wikidata);
+2. **Specie zootecniche (livestock-species)**: è il vocabolario controllato delle specie zootecniche. Il vocabolario include collegamenti a dataset esterni disponibili come Linked Open Data (e.g., Agrovoc, Eurovoc).
