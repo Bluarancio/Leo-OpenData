@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:adms="http://www.w3.org/ns/adms#"
+   xmlns:analysis="https://w3id.org/leo/onto/analysis/"
+   xmlns:dcat="http://www.w3.org/ns/dcat#"
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:l0="https://w3id.org/italia/onto/l0/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/18">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25343"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/MTK"/>
+    <l0:name xml:lang="it">Metro quadrato</l0:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="it">Metro quadrato</rdfs:label>
+    <l0:identifier>18</l0:identifier>
+    <analysis:unitSymbol>m2</analysis:unitSymbol>
+    <skos:notation>18</skos:notation>
+    <skos:prefLabel xml:lang="it">Metro quadrato</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/22">
+    <l0:name xml:lang="it">Millimole/Litro</l0:name>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q55435387"/>
+    <skos:notation>22</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Millimole/Litro</skos:prefLabel>
+    <analysis:unitSymbol>mmol/L</analysis:unitSymbol>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdfs:label xml:lang="it">Millimole/Litro</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <l0:identifier>22</l0:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/21">
+    <l0:identifier>21</l0:identifier>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <analysis:unitSymbol>mm</analysis:unitSymbol>
+    <l0:name xml:lang="it">Millimetro</l0:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Millimetro</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/MMT"/>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdfs:label xml:lang="it">Millimetro</rdfs:label>
+    <skos:notation>21</skos:notation>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q174789"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit">
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-22</dct:modified>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/30"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/26"/>
+    <rdfs:label>Controlled Vocabulary on the measurement unit of LEO project</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/mu-JSON-LD"/>
+    <dct:description xml:lang="it">Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data</dct:description>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+    <dcat:keyword xml:lang="en">measurement unit</dcat:keyword>
+    <rdfs:comment xml:lang="it">Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data</rdfs:comment>
+    <dct:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/25"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/5"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/18"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/13"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/20"/>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+    <dct:description xml:lang="en">This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data</dct:description>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dct:title>Controlled Vocabulary on the measurement unit of LEO project</dct:title>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/2"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+    <rdfs:label xml:lang="it">Vocabolario controllato delle unità di misura del progetto LEO</rdfs:label>
+    <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/6"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/11"/>
+    <rdfs:comment xml:lang="en">This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data</rdfs:comment>
+    <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+    <owl:versionInfo xml:lang="it">Versione 0.1</owl:versionInfo>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/17"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/1"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/4"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/12"/>
+    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/mu-RDF-XML"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/22"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/3"/>
+    <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/27"/>
+    <dct:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/10"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/0"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/14"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/15"/>
+    <dct:identifier>https://w3id.org/leo/controlled-vocabulary/measurement-unit</dct:identifier>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/9"/>
+    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/mu-RDF-TURTLE"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/8"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/24"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-22</dct:issued>
+    <dcat:keyword xml:lang="it">unità di misura</dcat:keyword>
+    <dct:title xml:lang="it">Vocabolario controllato delle unità di misura del progetto LEO</dct:title>
+    <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/measurement-unit/7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/1">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdfs:label xml:lang="it">Chilogrammo</rdfs:label>
+    <skos:prefLabel xml:lang="it">Chilogrammo</skos:prefLabel>
+    <l0:identifier>1</l0:identifier>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/KGM"/>
+    <l0:name xml:lang="it">Chilogrammo</l0:name>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q11570"/>
+    <skos:notation>1</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <analysis:unitSymbol>kg</analysis:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/17">
+    <skos:prefLabel xml:lang="it">Metro</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <analysis:unitSymbol>m</analysis:unitSymbol>
+    <skos:notation>17</skos:notation>
+    <rdfs:label xml:lang="it">Metro</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/MTR"/>
+    <l0:name xml:lang="it">Metro</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:identifier>17</l0:identifier>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q11573"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/mu-JSON-LD">
+    <dct:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the measurement units</dct:title>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+    <dct:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulle unità di misura</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measureement-unit/measurement-unit.jsonld"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit"/>
+    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/25">
+    <rdfs:label xml:lang="it">Unità Formanti Colonia/Millilitro</rdfs:label>
+    <skos:notation>25</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:name xml:lang="it">Unità Formanti Colonia/Millilitro</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:identifier>25</l0:identifier>
+    <skos:prefLabel xml:lang="it">Unità Formanti Colonia/Millilitro</skos:prefLabel>
+    <analysis:unitSymbol>UFC/ml</analysis:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/8">
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3241121"/>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/MGM"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <analysis:unitSymbol>mg</analysis:unitSymbol>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>8</skos:notation>
+    <rdfs:label xml:lang="it">Milligrammo</rdfs:label>
+    <l0:identifier>8</l0:identifier>
+    <skos:prefLabel xml:lang="it">Milligrammo</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:name xml:lang="it">Milligrammo</l0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/6">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>6</skos:notation>
+    <l0:name xml:lang="it">Mese</l0:name>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q5151"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdfs:label xml:lang="it">Mese</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:identifier>6</l0:identifier>
+    <skos:prefLabel xml:lang="it">Mese</skos:prefLabel>
+    <analysis:unitSymbol>mm</analysis:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/5">
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q573"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <skos:prefLabel xml:lang="it">Giorno</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:name xml:lang="it">Giorno</l0:name>
+    <analysis:unitSymbol>gg</analysis:unitSymbol>
+    <l0:identifier>5</l0:identifier>
+    <skos:notation>5</skos:notation>
+    <rdfs:label xml:lang="it">Giorno</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q35852"/>
+    <l0:identifier>3</l0:identifier>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <l0:name xml:lang="it">Ettaro</l0:name>
+    <rdfs:label xml:lang="it">Ettaro</rdfs:label>
+    <skos:notation>3</skos:notation>
+    <analysis:unitSymbol>ha</analysis:unitSymbol>
+    <skos:prefLabel xml:lang="it">Ettaro</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/HAR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/0">
+    <skos:notation>0</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:name xml:lang="it">Unità uno</l0:name>
+    <rdfs:label xml:lang="it">Unità uno</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Unità uno</skos:prefLabel>
+    <l0:identifier>0</l0:identifier>
+    <l0:description xml:lang="it">Si applica alle misure adimensionali</l0:description>
+    <skos:definition xml:lang="it">Si applica alle misure adimensionali</skos:definition>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/14">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <skos:notation>14</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q6517513"/>
+    <analysis:unitSymbol>dag</analysis:unitSymbol>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:name xml:lang="it">Decagrammo</l0:name>
+    <skos:prefLabel xml:lang="it">Decagrammo</skos:prefLabel>
+    <l0:identifier>14</l0:identifier>
+    <rdfs:label xml:lang="it">Decagrammo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/26">
+    <l0:name xml:lang="it">Milligrammo/Decilitro</l0:name>
+    <l0:identifier>26</l0:identifier>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <analysis:unitSymbol>mg/dl</analysis:unitSymbol>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q55435156"/>
+    <rdfs:label xml:lang="it">Milligrammo/Decilitro</rdfs:label>
+    <skos:prefLabel xml:lang="it">Milligrammo/Decilitro</skos:prefLabel>
+    <skos:notation>26</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/20">
+    <skos:prefLabel xml:lang="it">Metro cubo</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <analysis:unitSymbol>m3</analysis:unitSymbol>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:name xml:lang="it">Metro cubo</l0:name>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25517"/>
+    <l0:identifier>20</l0:identifier>
+    <skos:notation>20</skos:notation>
+    <rdfs:label xml:lang="it">Metro cubo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/13">
+    <skos:prefLabel xml:lang="it">Unità internazionale</skos:prefLabel>
+    <analysis:unitSymbol>UI</analysis:unitSymbol>
+    <skos:notation>13</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:name xml:lang="it">Unità internazionale</l0:name>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q835916"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:identifier>13</l0:identifier>
+    <rdfs:label xml:lang="it">Unità internazionale</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/2">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <skos:prefLabel xml:lang="it">Litro</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/LTR"/>
+    <rdfs:label xml:lang="it">Litro</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q11582"/>
+    <skos:notation>2</skos:notation>
+    <l0:name xml:lang="it">Litro</l0:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <analysis:unitSymbol>L</analysis:unitSymbol>
+    <l0:identifier>2</l0:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/mu-RDF-XML">
+    <dct:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulle unità di misura</dct:title>
+    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.rdf"/>
+    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+    <dct:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the measurement units</dct:title>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit"/>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/15">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdfs:label xml:lang="it">Centilitro</rdfs:label>
+    <analysis:unitSymbol>cl</analysis:unitSymbol>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>15</skos:notation>
+    <l0:identifier>15</l0:identifier>
+    <l0:name xml:lang="it">Centilitro</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <skos:prefLabel xml:lang="it">Centilitro</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q1815100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/4">
+    <rdfs:label xml:lang="it">Centimetro</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <analysis:unitSymbol>cm</analysis:unitSymbol>
+    <skos:notation>4</skos:notation>
+    <l0:name xml:lang="it">Centimetro</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q174728"/>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/CMT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Centimetro</skos:prefLabel>
+    <l0:identifier>4</l0:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/30">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <analysis:unitSymbol>min</analysis:unitSymbol>
+    <l0:identifier>30</l0:identifier>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <skos:prefLabel xml:lang="it">Minuto</skos:prefLabel>
+    <rdfs:label xml:lang="it">Minuto</rdfs:label>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q7727"/>
+    <l0:name xml:lang="it">Minuto</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <skos:notation>30</skos:notation>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/MIN"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/7">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:name xml:lang="it">Grammo</l0:name>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/GRM"/>
+    <analysis:unitSymbol>g</analysis:unitSymbol>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q41803"/>
+    <l0:identifier>7</l0:identifier>
+    <skos:prefLabel xml:lang="it">Grammo</skos:prefLabel>
+    <rdfs:label xml:lang="it">Grammo</rdfs:label>
+    <skos:notation>7</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/mu-RDF-TURTLE">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+    <dct:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the measurement units</dct:title>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.ttl"/>
+    <dct:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle unità di misura</dct:title>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/10">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:identifier>10</l0:identifier>
+    <analysis:unitSymbol>cc</analysis:unitSymbol>
+    <l0:name xml:lang="it">Centimetro cubo</l0:name>
+    <skos:notation>10</skos:notation>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/CMQ"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q2489298"/>
+    <skos:prefLabel xml:lang="it">Centimetro cubo</skos:prefLabel>
+    <rdfs:label xml:lang="it">Centimetro cubo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/9">
+    <analysis:unitSymbol>ml</analysis:unitSymbol>
+    <skos:notation>9</skos:notation>
+    <l0:name xml:lang="it">Millilitro</l0:name>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/MLT"/>
+    <skos:prefLabel xml:lang="it">Millilitro</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q2332346"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdfs:label xml:lang="it">Millilitro</rdfs:label>
+    <l0:identifier>9</l0:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/11">
+    <l0:identifier>11</l0:identifier>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:name xml:lang="it">Percentuale</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="it">Percentuale</rdfs:label>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q11229"/>
+    <skos:prefLabel xml:lang="it">Percentuale</skos:prefLabel>
+    <skos:notation>11</skos:notation>
+    <analysis:unitSymbol>%</analysis:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/12">
+    <skos:prefLabel xml:lang="it">Ettogrammo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:identifier>12</l0:identifier>
+    <l0:name xml:lang="it">Ettogrammo</l0:name>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q58239924"/>
+    <skos:notation>12</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <rdfs:label xml:lang="it">Ettogrammo</rdfs:label>
+    <analysis:unitSymbol>hg</analysis:unitSymbol>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/27">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <l0:identifier>27</l0:identifier>
+    <skos:prefLabel xml:lang="it">Grammo/100 grammi</skos:prefLabel>
+    <rdfs:label xml:lang="it">Grammo/100 grammi</rdfs:label>
+    <analysis:unitSymbol>g/100 g</analysis:unitSymbol>
+    <l0:name xml:lang="it">Grammo/100 grammi</l0:name>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <skos:notation>27</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/measurement-unit/24">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    <l0:name xml:lang="it">Grado Celsius</l0:name>
+    <skos:notation>24</skos:notation>
+    <owl:sameAs rdf:resource="http://publications.europa.eu/resource/authority/measurement-unit/CEL"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    <rdfs:label xml:lang="it">Grado Celsius</rdfs:label>
+    <skos:prefLabel xml:lang="it">Grado Celsius</skos:prefLabel>
+    <l0:identifier>24</l0:identifier>
+    <analysis:unitSymbol>°C</analysis:unitSymbol>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25267"/>
+  </rdf:Description>
+</rdf:RDF>

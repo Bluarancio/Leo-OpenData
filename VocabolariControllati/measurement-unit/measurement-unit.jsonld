@@ -1,0 +1,1556 @@
+[
+  {
+    "@id": "https://w3id.org/leo/data/distribution/mu-JSON-LD",
+    "@type": [
+      "http://www.w3.org/ns/dcat#Distribution",
+      "http://dati.gov.it/onto/dcatapit#Distribution"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "This is the RDF XML distribution of the controlled vocabulary on the measurement units"
+      },
+      {
+        "@language": "it",
+        "@value": "Questa è la distribuzione JSON-LD del vocabolario controllato sulle unità di misura"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#accessURL": [
+      {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#downloadURL": [
+      {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measureement-unit/measurement-unit.jsonld"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/9",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Millilitro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/MLT"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q2332346"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "9"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Millilitro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "9"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Millilitro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "ml"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/8",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Milligrammo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/MGM"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q3241121"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "8"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Milligrammo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "8"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Milligrammo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "mg"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/5",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Giorno"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q573"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "5"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Giorno"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "5"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Giorno"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "gg"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/4",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Centimetro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/CMT"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q174728"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Centimetro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "4"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Centimetro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "cm"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/7",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Grammo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q41803"
+      },
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/GRM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "7"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Grammo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "7"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Grammo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "g"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/6",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Mese"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q5151"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "6"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Mese"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "6"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Mese"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "mm"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/1",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Chilogrammo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/KGM"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q11570"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Chilogrammo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "1"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Chilogrammo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "kg"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/0",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Unità uno"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "it",
+        "@value": "Si applica alle misure adimensionali"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Unità uno"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/description": [
+      {
+        "@language": "it",
+        "@value": "Si applica alle misure adimensionali"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "0"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Unità uno"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/3",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Ettaro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q35852"
+      },
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/HAR"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Ettaro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "3"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Ettaro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "ha"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Litro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/LTR"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q11582"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Litro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "2"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Litro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "L"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/20",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Metro cubo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q25517"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "20"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Metro cubo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "20"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Metro cubo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "m3"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/21",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Millimetro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/MMT"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q174789"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "21"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Millimetro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "21"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Millimetro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "mm"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/22",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Millimole/Litro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q55435387"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "22"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Millimole/Litro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "22"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Millimole/Litro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "mmol/L"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/24",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Grado Celsius"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/CEL"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q25267"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "24"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Grado Celsius"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "24"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Grado Celsius"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "°C"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/25",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Unità Formanti Colonia/Millilitro"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "25"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Unità Formanti Colonia/Millilitro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "25"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Unità Formanti Colonia/Millilitro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "UFC/ml"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/26",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Milligrammo/Decilitro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q55435156"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "26"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Milligrammo/Decilitro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "26"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Milligrammo/Decilitro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "mg/dl"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/27",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Grammo/100 grammi"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "27"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Grammo/100 grammi"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "27"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Grammo/100 grammi"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "g/100 g"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/11",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Percentuale"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q11229"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "11"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Percentuale"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "11"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Percentuale"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "%"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit",
+    "@type": [
+      "http://dati.gov.it/onto/dcatapit#Dataset",
+      "http://www.w3.org/ns/dcat#Dataset",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "http://www.w3.org/ns/adms#Asset"
+    ],
+    "http://purl.org/dc/terms/accrualPeriodicity": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data"
+      },
+      {
+        "@language": "it",
+        "@value": "Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data"
+      }
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "https://w3id.org/leo/controlled-vocabulary/measurement-unit"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-07-22"
+      }
+    ],
+    "http://purl.org/dc/terms/language": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-07-22"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      }
+    ],
+    "http://purl.org/dc/terms/rightsHolder": [
+      {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Controlled Vocabulary on the measurement unit of LEO project"
+      },
+      {
+        "@language": "it",
+        "@value": "Vocabolario controllato delle unità di misura del progetto LEO"
+      }
+    ],
+    "http://purl.org/dc/terms/type": [
+      {
+        "@id": "http://purl.org/adms/assettype/CodeList"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data"
+      },
+      {
+        "@language": "en",
+        "@value": "This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Controlled Vocabulary on the measurement unit of LEO project"
+      },
+      {
+        "@language": "it",
+        "@value": "Vocabolario controllato delle unità di misura del progetto LEO"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@language": "it",
+        "@value": "Versione 0.1"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept": [
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/22"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/21"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/24"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/10"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/14"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/9"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/26"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/13"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/0"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/12"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/6"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/2"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/7"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/18"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/8"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/15"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/4"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/1"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/30"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/11"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/25"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/5"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/17"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/27"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/3"
+      },
+      {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/20"
+      }
+    ],
+    "http://www.w3.org/ns/adms#representationTechnique": [
+      {
+        "@id": "http://purl.org/adms/representationtechnique/SKOS"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#contactPoint": [
+      {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#distribution": [
+      {
+        "@id": "https://w3id.org/leo/data/distribution/mu-JSON-LD"
+      },
+      {
+        "@id": "https://w3id.org/leo/data/distribution/mu-RDF-TURTLE"
+      },
+      {
+        "@id": "https://w3id.org/leo/data/distribution/mu-RDF-XML"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#keyword": [
+      {
+        "@language": "en",
+        "@value": "measurement unit"
+      },
+      {
+        "@language": "it",
+        "@value": "unità di misura"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#theme": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/data/distribution/mu-RDF-XML",
+    "@type": [
+      "http://dati.gov.it/onto/dcatapit#Distribution",
+      "http://www.w3.org/ns/dcat#Distribution"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "it",
+        "@value": "Questa è la distribuzione RDF XML del vocabolario controllato sulle unità di misura"
+      },
+      {
+        "@language": "en",
+        "@value": "This is the RDF XML distribution of the controlled vocabulary on the measurement units"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#accessURL": [
+      {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#downloadURL": [
+      {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.rdf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/18",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Metro quadrato"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/MTK"
+      },
+      {
+        "@id": "http://www.wikidata.org/entity/Q25343"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Metro quadrato"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "18"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Metro quadrato"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "m2"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/30",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Minuto"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q7727"
+      },
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/MIN"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Minuto"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "30"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Minuto"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "min"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/15",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Centilitro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q1815100"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "15"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Centilitro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "15"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Centilitro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "cl"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/14",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Decagrammo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q6517513"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "14"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Decagrammo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "14"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Decagrammo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "dag"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/17",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Metro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q11573"
+      },
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/MTR"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "17"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Metro"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "17"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Metro"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "m"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/data/distribution/mu-RDF-TURTLE",
+    "@type": [
+      "http://www.w3.org/ns/dcat#Distribution",
+      "http://dati.gov.it/onto/dcatapit#Distribution"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "This is the RDF TURTLE distribution of the controlled vocabulary on the measurement units"
+      },
+      {
+        "@language": "it",
+        "@value": "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle unità di misura"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#accessURL": [
+      {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#downloadURL": [
+      {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/10",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Centimetro cubo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q2489298"
+      },
+      {
+        "@id": "http://publications.europa.eu/resource/authority/measurement-unit/CMQ"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "10"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Centimetro cubo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "10"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Centimetro cubo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "cc"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/13",
+    "@type": [
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/italia/onto/MU/MeasurementUnit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Unità internazionale"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q835916"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "13"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Unità internazionale"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "13"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Unità internazionale"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "UI"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/leo/controlled-vocabulary/measurement-unit/12",
+    "@type": [
+      "https://w3id.org/italia/onto/MU/MeasurementUnit",
+      "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Ettogrammo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q58239924"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "12"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "Ettogrammo"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/identifier": [
+      {
+        "@value": "12"
+      }
+    ],
+    "https://w3id.org/italia/onto/l0/name": [
+      {
+        "@language": "it",
+        "@value": "Ettogrammo"
+      }
+    ],
+    "https://w3id.org/leo/onto/analysis/unitSymbol": [
+      {
+        "@value": "hg"
+      }
+    ]
+  }
+]
