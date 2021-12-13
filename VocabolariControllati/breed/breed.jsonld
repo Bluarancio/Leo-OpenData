@@ -9,7 +9,7 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "This is the controlled Vocabulary on the breeds of the farm animals produced in the context of project LEO - Livestock Environment Open Data"
+    "@value" : "This is the controlled vocabulary on the breeds of the farm animals produced in the context of project LEO - Livestock Environment Open Data"
   }, {
     "@language" : "it",
     "@value" : "Questo è il vocabolario controllato delle razze degli animali da allevamento prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
@@ -26,7 +26,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-01-13"
+    "@value" : "2021-11-26"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
@@ -35,30 +35,32 @@
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
   } ],
   "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Controlled Vocabulary on the breeds of farm animals"
+  }, {
     "@language" : "it",
     "@value" : "Vocabolario controllato delle razze degli animali da allevamento"
-  }, {
-    "@value" : "Controlled Vocabulary on the breeds of the farm animals"
   } ],
   "http://purl.org/dc/terms/type" : [ {
     "@id" : "http://purl.org/adms/assettype/CodeList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This is the controlled Vocabulary on the breeds of the farm animals produced in the context of project LEO - Livestock Environment Open Data"
+    "@value" : "This is the controlled vocabulary on the breeds of farm animals produced in the context of project LEO - Livestock Environment Open Data"
   }, {
     "@language" : "it",
     "@value" : "Questo è il vocabolario controllato delle razze degli animali da allevamento prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Controlled Vocabulary on the breeds of farm animals"
+  }, {
     "@language" : "it",
     "@value" : "Vocabolario controllato delle razze degli animali da allevamento"
-  }, {
-    "@value" : "Controlled Vocabulary on the breeds of the farm animals"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
-    "@value" : "Versione 0.1 - alpha"
+    "@value" : "Versione 0.2 - alpha | Correzioni e miglioramenti"
   } ],
   "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
     "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed-1"
@@ -669,6 +671,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed-1",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "-1"
   } ],
@@ -689,6 +694,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed-2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "-2"
   } ],
@@ -709,6 +717,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed00",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "00"
   } ],
@@ -734,6 +745,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2926576"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "01"
@@ -761,6 +775,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q58910"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "02"
   } ],
@@ -786,6 +803,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3553523"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "03"
@@ -813,6 +833,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16589861"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "04"
   } ],
@@ -838,6 +861,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q45908"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "05"
@@ -865,6 +891,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3317853"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "06"
   } ],
@@ -890,6 +919,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3423411"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "07"
@@ -917,6 +949,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3317924"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "08"
   } ],
@@ -943,6 +978,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3421394"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "09"
   } ],
@@ -968,6 +1006,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3932915"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "10"
@@ -999,6 +1040,9 @@
   }, {
     "@id" : "http://www.wikidata.org/entity/Q3116640"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "11"
   } ],
@@ -1024,6 +1068,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1479156"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "12"
@@ -1051,6 +1098,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1860330"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "13"
   } ],
@@ -1076,6 +1126,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q947963"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "14"
@@ -1103,6 +1156,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q987965"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "15"
   } ],
@@ -1128,6 +1184,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q322890"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "16"
@@ -1155,6 +1214,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2934515"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "17"
   } ],
@@ -1180,6 +1242,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3553519"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "18"
@@ -1207,6 +1272,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2928512"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "19"
   } ],
@@ -1232,6 +1300,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17100375"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "20"
@@ -1259,6 +1330,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3473575"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "21"
   } ],
@@ -1284,6 +1358,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16576893"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "22"
@@ -1311,6 +1388,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3634705"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "23"
   } ],
@@ -1336,6 +1416,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q5151995"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "24"
@@ -1363,6 +1446,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16525708"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "25"
   } ],
@@ -1388,6 +1474,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3620865"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "26"
@@ -1415,6 +1504,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16982239"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "27"
   } ],
@@ -1440,6 +1532,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q5027918"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "28"
@@ -1467,6 +1562,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16992617"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "29"
   } ],
@@ -1492,6 +1590,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16549119"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "30"
@@ -1519,6 +1620,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16985401"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "31"
   } ],
@@ -1544,6 +1648,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q4891423"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "32"
@@ -1571,6 +1678,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16988135"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "33"
   } ],
@@ -1597,6 +1707,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2925346"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "34"
   } ],
@@ -1617,6 +1730,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed35",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "35"
   } ],
@@ -1637,6 +1753,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed36",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "36"
   } ],
@@ -1657,6 +1776,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed37",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "37"
   } ],
@@ -1682,6 +1804,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16951685"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "38"
@@ -1709,6 +1834,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q5427968"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "39"
   } ],
@@ -1734,6 +1862,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q6744778"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "40"
@@ -1761,6 +1892,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3657818"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "41"
   } ],
@@ -1787,6 +1921,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1305107"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "42"
   } ],
@@ -1807,6 +1944,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed43",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "43"
   } ],
@@ -1832,6 +1972,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q645054"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "44"
@@ -1859,6 +2002,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1501202"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "45"
   } ],
@@ -1884,6 +2030,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3657817"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "46"
@@ -1911,6 +2060,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q7423654"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "47"
   } ],
@@ -1931,6 +2083,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed48",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "48"
   } ],
@@ -1956,6 +2111,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1043718"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "49"
@@ -1983,6 +2141,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q4971219"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "50"
   } ],
@@ -2008,6 +2169,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2424850"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "51"
@@ -2035,6 +2199,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1071628"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "52"
   } ],
@@ -2060,6 +2227,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q586876"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "53"
@@ -2087,6 +2257,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1765592"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "54"
   } ],
@@ -2112,6 +2285,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1094310"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "55"
@@ -2139,6 +2315,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3393110"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "56"
   } ],
@@ -2164,6 +2343,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q450099"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "57"
@@ -2191,6 +2373,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3098320"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "58"
   } ],
@@ -2216,6 +2401,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3397777"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "59"
@@ -2243,6 +2431,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16250673"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "60"
   } ],
@@ -2268,6 +2459,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q28408416"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "61"
@@ -2295,6 +2489,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2932248"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "62"
   } ],
@@ -2320,6 +2517,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2826791"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "63"
@@ -2347,6 +2547,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3389189"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "64"
   } ],
@@ -2367,6 +2570,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed65",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "65"
   } ],
@@ -2387,6 +2593,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed66",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "66"
   } ],
@@ -2407,6 +2616,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed67",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "67"
   } ],
@@ -2432,6 +2644,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1851651"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "68"
@@ -2459,6 +2674,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3473582"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "69"
   } ],
@@ -2484,6 +2702,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q10975478"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "70"
@@ -2511,6 +2732,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q4904501"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "71"
   } ],
@@ -2536,6 +2760,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16951731"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "72"
@@ -2563,6 +2790,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3140727"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "73"
   } ],
@@ -2588,6 +2818,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q787795"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "74"
@@ -2615,6 +2848,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2582366"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "75"
   } ],
@@ -2640,6 +2876,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16993373"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "76"
@@ -2667,6 +2906,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2119152"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "77"
   } ],
@@ -2692,6 +2934,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q658189"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "78"
@@ -2719,6 +2964,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17049352"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "79"
   } ],
@@ -2744,6 +2992,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1363458"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "80"
@@ -2771,6 +3022,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q23807945"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "81"
   } ],
@@ -2796,6 +3050,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q4882474"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "82"
@@ -2823,6 +3080,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q262867"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "83"
   } ],
@@ -2849,6 +3109,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q956817"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "84"
   } ],
@@ -2869,6 +3132,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed85",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "85"
   } ],
@@ -2895,6 +3161,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1205207"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "86"
   } ],
@@ -2915,6 +3184,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed87",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "87"
   } ],
@@ -2940,6 +3212,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1465038"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "88"
@@ -2967,6 +3242,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q5873263"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "89"
   } ],
@@ -2993,6 +3271,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q6275571"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "90"
   } ],
@@ -3013,6 +3294,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed91",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "91"
   } ],
@@ -3033,6 +3317,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed92",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "92"
   } ],
@@ -3059,6 +3346,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q15836540"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "93"
   } ],
@@ -3079,6 +3369,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breed94",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "94"
   } ],
@@ -3104,6 +3397,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17300048"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "95"
@@ -3131,6 +3427,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2972815"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "96"
   } ],
@@ -3156,6 +3455,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16993602"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "97"
@@ -3183,6 +3485,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17049851"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "98"
   } ],
@@ -3208,6 +3513,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q885012"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "99"
@@ -3235,6 +3543,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q758501"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "AB"
   } ],
@@ -3260,6 +3571,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q212348"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "AN"
@@ -3287,6 +3601,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q465128"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "AT"
   } ],
@@ -3312,6 +3629,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q793281"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "AY"
@@ -3339,6 +3659,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q952024"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B1"
   } ],
@@ -3359,6 +3682,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedB2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B2"
   } ],
@@ -3384,6 +3710,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3900138"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B3"
@@ -3411,6 +3740,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2411022"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B4"
   } ],
@@ -3436,6 +3768,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1522758"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B5"
@@ -3463,6 +3798,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1953691"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B6"
   } ],
@@ -3488,6 +3826,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q7410017"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B7"
@@ -3515,6 +3856,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3530581"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B8"
   } ],
@@ -3540,6 +3884,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1424315"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "B9"
@@ -3567,6 +3914,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q885012"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "BA"
   } ],
@@ -3593,6 +3943,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2893650"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "BE"
   } ],
@@ -3613,6 +3966,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedBR",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "BR"
   } ],
@@ -3633,6 +3989,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedC0",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "C0"
   } ],
@@ -3659,6 +4018,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16972614"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "CI"
   } ],
@@ -3679,6 +4041,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedCP",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "CP"
   } ],
@@ -3704,6 +4069,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q500434"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "CS"
@@ -3731,6 +4099,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q6387072"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "CZ"
   } ],
@@ -3756,6 +4127,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q164220"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "D0"
@@ -3783,6 +4157,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q184138"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "D5"
   } ],
@@ -3809,6 +4186,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3925977"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "D6"
   } ],
@@ -3829,6 +4209,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedD7",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "D7"
   } ],
@@ -3849,6 +4232,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedD8",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "D8"
   } ],
@@ -3874,6 +4260,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1299835"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "D9"
@@ -3901,6 +4290,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1207227"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "DX"
   } ],
@@ -3927,6 +4319,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2962930"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E0"
   } ],
@@ -3947,6 +4342,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedE1",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E1"
   } ],
@@ -3972,6 +4370,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q954597"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E2"
@@ -3999,6 +4400,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q210826"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E3"
   } ],
@@ -4024,6 +4428,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3540808"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E4"
@@ -4051,6 +4458,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1894708"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E5"
   } ],
@@ -4076,6 +4486,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q808022"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E6"
@@ -4103,6 +4516,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q217671"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E7"
   } ],
@@ -4128,6 +4544,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2962956"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E8"
@@ -4155,6 +4574,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1390589"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "E9"
   } ],
@@ -4175,6 +4597,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedEE",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "EE"
   } ],
@@ -4200,6 +4625,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16981283"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F0"
@@ -4227,6 +4655,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16827583"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F1"
   } ],
@@ -4247,6 +4678,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedF2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F2"
   } ],
@@ -4272,6 +4706,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16846263"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F3"
@@ -4299,6 +4736,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16847131"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F5"
   } ],
@@ -4325,6 +4765,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16958334"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F6"
   } ],
@@ -4345,6 +4788,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedF7",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F7"
   } ],
@@ -4370,6 +4816,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16951955"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F8"
@@ -4397,6 +4846,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16980751"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "F9"
   } ],
@@ -4422,6 +4874,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16992389"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G0"
@@ -4449,6 +4904,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16981667"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G1"
   } ],
@@ -4475,6 +4933,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16981671"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G2"
   } ],
@@ -4495,6 +4956,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedG3",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G3"
   } ],
@@ -4520,6 +4984,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16992153"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G4"
@@ -4547,6 +5014,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17051489"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G5"
   } ],
@@ -4572,6 +5042,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16985218"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G6"
@@ -4599,6 +5072,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16988410"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G7"
   } ],
@@ -4624,6 +5100,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16988902"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G8"
@@ -4651,6 +5130,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16992333"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "G9"
   } ],
@@ -4676,6 +5158,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3098701"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "GA"
@@ -4703,6 +5188,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q890780"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "GR"
   } ],
@@ -4729,6 +5217,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q935155"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "GW"
   } ],
@@ -4749,6 +5240,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedH0",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H0"
   } ],
@@ -4774,6 +5268,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q428039"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H1"
@@ -4801,6 +5298,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1070901"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H2"
   } ],
@@ -4826,6 +5326,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1501738"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H3"
@@ -4853,6 +5356,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q571149"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H4"
   } ],
@@ -4873,6 +5379,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedH5",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H5"
   } ],
@@ -4899,6 +5408,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q166777"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H6"
   } ],
@@ -4919,6 +5431,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedH7",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H7"
   } ],
@@ -4939,6 +5454,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedH8",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H8"
   } ],
@@ -4959,6 +5477,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedH9",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "H9"
   } ],
@@ -4984,6 +5505,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3116188"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "HA"
@@ -5011,6 +5535,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q737173"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "HE"
   } ],
@@ -5037,6 +5564,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q58903"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "HL"
   } ],
@@ -5057,6 +5587,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedHS",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "HS"
   } ],
@@ -5082,6 +5615,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3146761"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "IN"
@@ -5109,6 +5645,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q514553"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J0"
   } ],
@@ -5135,6 +5674,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q551732"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J1"
   } ],
@@ -5155,6 +5697,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedJ2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J2"
   } ],
@@ -5175,6 +5720,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedJ3",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J3"
   } ],
@@ -5200,6 +5748,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q843585"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J4"
@@ -5227,6 +5778,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1280354"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J5"
   } ],
@@ -5252,6 +5806,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q489798"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J6"
@@ -5279,6 +5836,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q937595"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J7"
   } ],
@@ -5299,6 +5859,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedJ8",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J8"
   } ],
@@ -5325,6 +5888,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q673441"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "J9"
   } ],
@@ -5345,6 +5911,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedJU",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "JU"
   } ],
@@ -5370,6 +5939,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q214720"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K0"
@@ -5397,6 +5969,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q605306"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K1"
   } ],
@@ -5422,6 +5997,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q466602"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K2"
@@ -5449,6 +6027,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q620656"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K3"
   } ],
@@ -5474,6 +6055,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q692939"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K4"
@@ -5501,6 +6085,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1759281"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K5"
   } ],
@@ -5521,6 +6108,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedK6",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K6"
   } ],
@@ -5546,6 +6136,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q663150"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K7"
@@ -5573,6 +6166,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q848812"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K8"
   } ],
@@ -5598,6 +6194,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1096752"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "K9"
@@ -5625,6 +6224,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17514017"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L0"
   } ],
@@ -5650,6 +6252,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17511345"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L1"
@@ -5677,6 +6282,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17509621"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L3"
   } ],
@@ -5702,6 +6310,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17509631"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L4"
@@ -5729,6 +6340,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17509636"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L5"
   } ],
@@ -5754,6 +6368,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17183256"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L6"
@@ -5781,6 +6398,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17514010"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L7"
   } ],
@@ -5801,6 +6421,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedL8",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L8"
   } ],
@@ -5821,6 +6444,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedL9",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "L9"
   } ],
@@ -5847,6 +6473,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17512634"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M0"
   } ],
@@ -5867,6 +6496,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M2"
   } ],
@@ -5887,6 +6519,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM3",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M3"
   } ],
@@ -5907,6 +6542,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM4",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M4"
   } ],
@@ -5927,6 +6565,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM5",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M5"
   } ],
@@ -5947,6 +6588,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM6",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M6"
   } ],
@@ -5967,6 +6611,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM7",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M7"
   } ],
@@ -5993,6 +6640,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q18126094"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M8"
   } ],
@@ -6013,6 +6663,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedM9",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "M9"
   } ],
@@ -6038,6 +6691,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q6858093"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "MI"
@@ -6065,6 +6721,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3307644"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "MR"
   } ],
@@ -6085,6 +6744,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedN0",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N0"
   } ],
@@ -6105,6 +6767,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedN1",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N1"
   } ],
@@ -6130,6 +6795,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17509556"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N2"
@@ -6157,6 +6825,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17509062"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N3"
   } ],
@@ -6177,6 +6848,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedN4",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N4"
   } ],
@@ -6197,6 +6871,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedN5",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N5"
   } ],
@@ -6223,6 +6900,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17509989"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N6"
   } ],
@@ -6243,6 +6923,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedN7",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N7"
   } ],
@@ -6263,6 +6946,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedN9",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "N9"
   } ],
@@ -6289,6 +6975,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16986467"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "NA"
   } ],
@@ -6309,6 +6998,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedNS",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "NS"
   } ],
@@ -6335,6 +7027,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q12786253"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O1"
   } ],
@@ -6355,6 +7050,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedO2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O2"
   } ],
@@ -6375,6 +7073,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedO3",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O3"
   } ],
@@ -6400,6 +7101,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1712211"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O4"
@@ -6427,6 +7131,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q494612"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O5"
   } ],
@@ -6452,6 +7159,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16846352"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O6"
@@ -6479,6 +7189,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16800658"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O7"
   } ],
@@ -6499,6 +7212,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedO8",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "O8"
   } ],
@@ -6524,6 +7240,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3366121"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "PA"
@@ -6551,6 +7270,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3382607"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "PR"
   } ],
@@ -6571,6 +7293,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedQ0",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q0"
   } ],
@@ -6596,6 +7321,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17514242"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q1"
@@ -6623,6 +7351,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3875809"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q2"
   } ],
@@ -6643,6 +7374,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedQ3",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q3"
   } ],
@@ -6668,6 +7402,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q18129364"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q4"
@@ -6695,6 +7432,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16532375"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q5"
   } ],
@@ -6720,6 +7460,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17514371"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q6"
@@ -6747,6 +7490,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q6937576"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q7"
   } ],
@@ -6767,6 +7513,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedQ8",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q8"
   } ],
@@ -6787,6 +7536,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedQ9",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Q9"
   } ],
@@ -6813,6 +7565,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3141458"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R0"
   } ],
@@ -6833,6 +7588,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedR1",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R1"
   } ],
@@ -6853,6 +7611,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedR2",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R2"
   } ],
@@ -6879,6 +7640,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17054062"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R3"
   } ],
@@ -6899,6 +7663,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedR4",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R4"
   } ],
@@ -6924,6 +7691,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16992926"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R5"
@@ -6951,6 +7721,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16993377"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R6"
   } ],
@@ -6976,6 +7749,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q17056745"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R7"
@@ -7003,6 +7779,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2936776"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "R8"
   } ],
@@ -7028,6 +7807,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1492080"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "RB"
@@ -7055,6 +7837,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1332095"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "RN"
   } ],
@@ -7080,6 +7865,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3443207"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "RS"
@@ -7107,6 +7895,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1753138"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "SA"
   } ],
@@ -7132,6 +7923,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16250678"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "SB"
@@ -7159,6 +7953,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q223232"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "SC"
   } ],
@@ -7185,6 +7982,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q870185"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "SH"
   } ],
@@ -7205,6 +8005,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedSI",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "SI"
   } ],
@@ -7225,6 +8028,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedSN",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "SN"
   } ],
@@ -7251,6 +8057,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q16993228"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "TR"
   } ],
@@ -7271,6 +8080,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedTS",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "TS"
   } ],
@@ -7297,6 +8109,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q28229613"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "TU"
   } ],
@@ -7317,6 +8132,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedVI",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "VI"
   } ],
@@ -7337,6 +8155,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedVV",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "VV"
   } ],
@@ -7362,6 +8183,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3650021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "W2"
@@ -7389,6 +8213,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3661723"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "W3"
   } ],
@@ -7414,6 +8241,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1947080"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "W4"
@@ -7441,6 +8271,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q18420387"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "W5"
   } ],
@@ -7466,6 +8299,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3874809"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "W6"
@@ -7493,6 +8329,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q1757956"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "WA"
   } ],
@@ -7518,6 +8357,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2962933"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X0"
@@ -7545,6 +8387,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q916364"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X1"
   } ],
@@ -7570,6 +8415,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q22009217"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X2"
@@ -7597,6 +8445,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3663935"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X3"
   } ],
@@ -7622,6 +8473,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q3620866"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X4"
@@ -7649,6 +8503,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2962905"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X5"
   } ],
@@ -7669,6 +8526,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedX6",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "X6"
   } ],
@@ -7689,6 +8549,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedYK",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "YK"
   } ],
@@ -7709,6 +8572,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedZ0",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Z0"
   } ],
@@ -7735,6 +8601,9 @@
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q4379442"
   } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "Z1"
   } ],
@@ -7755,6 +8624,9 @@
 }, {
   "@id" : "https://w3id.org/leo/controlled-vocabulary/breed/breedZB",
   "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/Breed" ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
+  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "ZB"
   } ],
@@ -7780,6 +8652,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.wikidata.org/entity/Q2512371"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/breed"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@value" : "ZW"
@@ -7809,13 +8684,13 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "This is the RDF XML distribution of the controlled vocabulary on the breeds"
+    "@value" : "This is the JSON-LD of the controlled vocabulary on the breeds"
   }, {
     "@language" : "it",
     "@value" : "Questa è la distribuzione JSON-LD del vocabolario controllato sulle razze"
   } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/breed"
+    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/breed"
   } ],
   "http://www.w3.org/ns/dcat#downloadURL" : [ {
     "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/breed/breed.jsonld"
@@ -7837,7 +8712,7 @@
     "@value" : "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle razze"
   } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/breed"
+    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/breed"
   } ],
   "http://www.w3.org/ns/dcat#downloadURL" : [ {
     "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/breed/breed.ttl"
@@ -7859,7 +8734,7 @@
     "@value" : "Questa è la distribuzione RDF XML del vocabolario controllato sulle razze"
   } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/breed"
+    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/breed"
   } ],
   "http://www.w3.org/ns/dcat#downloadURL" : [ {
     "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/breed/breed.rdf"

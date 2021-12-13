@@ -32,15 +32,15 @@
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/measurement-unit";
   dct:issued "2021-07-22"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
-  dct:modified "2021-07-22"^^xsd:date;
+  dct:modified "2021-12-01"^^xsd:date;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
-  dct:title "Controlled Vocabulary on the measurement unit of LEO project", "Vocabolario controllato delle unità di misura del progetto LEO"@it;
+  dct:title "Controlled Vocabulary on the measurement unit of LEO project"@en , "Vocabolario controllato delle unità di misura del progetto LEO"@it;
   dct:type <http://purl.org/adms/assettype/CodeList>;
   rdfs:comment "Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data"@en;
-  rdfs:label "Controlled Vocabulary on the measurement unit of LEO project", "Vocabolario controllato delle unità di misura del progetto LEO"@it;
-  owl:versionInfo "Versione 0.1"@it;
+  rdfs:label "Controlled Vocabulary on the measurement unit of LEO project"@en , "Vocabolario controllato delle unità di misura del progetto LEO"@it;
+  owl:versionInfo "Versione 0.2"@it;
   skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/measurement-unit/0>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/1>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/10>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/11>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/12>,
@@ -64,6 +64,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/0> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Unità uno"@it;
   skos:definition "Si applica alle misure adimensionali"@it;
   skos:notation "0";
@@ -74,6 +75,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/1> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Chilogrammo"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/KGM>,
     <http://www.wikidata.org/entity/Q11570>;
@@ -85,6 +87,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/10> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Centimetro cubo"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/CMQ>,
     <http://www.wikidata.org/entity/Q2489298>;
@@ -96,6 +99,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/11> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Percentuale"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q11229>;
   skos:notation "11";
@@ -106,6 +110,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/12> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Ettogrammo"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q58239924>;
   skos:notation "12";
@@ -116,6 +121,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/13> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Unità internazionale"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q835916>;
   skos:notation "13";
@@ -126,6 +132,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/14> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Decagrammo"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q6517513>;
   skos:notation "14";
@@ -136,6 +143,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/15> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Centilitro"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q1815100>;
   skos:notation "15";
@@ -146,6 +154,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/17> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Metro"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MTR>,
     <http://www.wikidata.org/entity/Q11573>;
@@ -157,6 +166,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/18> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Metro quadrato"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MTK>,
     <http://www.wikidata.org/entity/Q25343>;
@@ -168,6 +178,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/2> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Litro"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/LTR>,
     <http://www.wikidata.org/entity/Q11582>;
@@ -179,6 +190,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/20> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Metro cubo"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q25517>;
   skos:notation "20";
@@ -189,6 +201,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/21> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Millimetro"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MMT>,
     <http://www.wikidata.org/entity/Q174789>;
@@ -200,6 +213,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/22> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Millimole/Litro"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q55435387>;
   skos:notation "22";
@@ -210,6 +224,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/24> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Grado Celsius"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/CEL>,
     <http://www.wikidata.org/entity/Q25267>;
@@ -221,6 +236,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/25> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Unità Formanti Colonia/Millilitro"@it;
   skos:notation "25";
   skos:prefLabel "Unità Formanti Colonia/Millilitro"@it;
@@ -230,6 +246,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/26> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Milligrammo/Decilitro"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q55435156>;
   skos:notation "26";
@@ -240,6 +257,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/27> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Grammo/100 grammi"@it;
   skos:notation "27";
   skos:prefLabel "Grammo/100 grammi"@it;
@@ -249,6 +267,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/3> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Ettaro"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/HAR>,
     <http://www.wikidata.org/entity/Q35852>;
@@ -260,6 +279,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/30> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Minuto"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MIN>,
     <http://www.wikidata.org/entity/Q7727>;
@@ -271,6 +291,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/4> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Centimetro"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/CMT>,
     <http://www.wikidata.org/entity/Q174728>;
@@ -282,6 +303,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/5> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Giorno"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q573>;
   skos:notation "5";
@@ -292,6 +314,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/6> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Mese"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q5151>;
   skos:notation "6";
@@ -302,6 +325,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/7> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Grammo"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/GRM>,
     <http://www.wikidata.org/entity/Q41803>;
@@ -313,6 +337,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/8> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Milligrammo"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MGM>,
     <http://www.wikidata.org/entity/Q3241121>;
@@ -324,6 +349,7 @@
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/9> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit> ;
   rdfs:label "Millilitro"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MLT>,
     <http://www.wikidata.org/entity/Q2332346>;
@@ -337,16 +363,16 @@
   dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD>;
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
   dct:title "Questa è la distribuzione JSON-LD del vocabolario controllato sulle unità di misura"@it,
-    "This is the RDF XML distribution of the controlled vocabulary on the measurement units"@en;
-  dcat:accessURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit>;
-  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measureement-unit/measurement-unit.jsonld> .
+    "This is the JSON-LD distribution of the controlled vocabulary on the measurement units"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/measurement-unit>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.jsonld> .
 
 <https://w3id.org/leo/data/distribution/mu-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
   dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle unità di misura"@it,
     "This is the RDF TURTLE distribution of the controlled vocabulary on the measurement units"@en;
-  dcat:accessURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit>;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/measurement-unit>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.ttl> .
 
 <https://w3id.org/leo/data/distribution/mu-RDF-XML> a dcatapit:Distribution, dcat:Distribution;
@@ -354,5 +380,5 @@
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
   dct:title "Questa è la distribuzione RDF XML del vocabolario controllato sulle unità di misura"@it,
     "This is the RDF XML distribution of the controlled vocabulary on the measurement units"@en;
-  dcat:accessURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit>;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/measurement-unit>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.rdf> .
