@@ -1,0 +1,290 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix ale: <https://w3id.org/leo/onto/ale/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason> a dcatapit:Dataset,
+    skos:ConceptScheme, adms:Asset, dcat:Dataset;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:description "Questo è il vocabolario controllato dei motivi di uscita degli animali da un allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the reasons for animals for exiting a farm, used in the context of project LEO - Livestock Environment Open Data"@en;
+  dct:identifier "https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason";
+  dct:issued "2022-01-11"^^xsd:date;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
+  dct:modified "2022-01-11"^^xsd:date;
+  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:title "Controlled Vocabulary on the reasons for animals for exiting a farm, in the context of the LEO project"@en,
+    "Vocabolario controllato dei motivi di uscita degli animali da un allevamento nel contesto del progetto LEO"@it;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  rdfs:comment "Questo è il vocabolario controllato dei motivi di uscita degli animali da un allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the reasons for animals for exiting a farm, used in the context of project LEO - Livestock Environment Open Data"@en;
+  rdfs:label "Controlled Vocabulary on the reasons for animals for exiting a farm, in the context of the LEO project"@en,
+    "Vocabolario controllato dei motivi di uscita degli animali da un allevamento nel contesto del progetto LEO"@it;
+  owl:versionInfo "Versione 0.1"@it;
+  skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/A>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/C>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/D>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/E>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/F>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/G>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/H>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/I>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/J>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/K>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/L>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/M>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/N>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/O>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/P>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/Q>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/R>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/S>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/T>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/U>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/V>,
+    <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/W>, <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/X>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia>;
+  dcat:distribution <https://w3id.org/leo/data/distribution/exit-fr-JSON-LD>, <https://w3id.org/leo/data/distribution/exit-fr-RDF-TURTLE>,
+    <https://w3id.org/leo/data/distribution/exit-fr-RDF-XML>;
+  dcat:keyword "exit from farm reason"@en, "motivo di uscita da un allevamento"@it;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/A> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Venduto per autoconsumo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "A";
+  skos:prefLabel "Venduto per autoconsumo"@it;
+  l0:identifier "A";
+  l0:name "Venduto per autoconsumo"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/C> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Cancellazione amministrativa"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "C";
+  skos:prefLabel "Cancellazione amministrativa"@it;
+  l0:identifier "C";
+  l0:name "Cancellazione amministrativa"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/D> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Morto/abbattuto/macellato in azienda"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "D";
+  skos:prefLabel "Morto/abbattuto/macellato in azienda"@it;
+  l0:identifier "D";
+  l0:name "Morto/abbattuto/macellato in azienda"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/E> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Venduto a un paese estero"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "E";
+  skos:prefLabel "Venduto a un paese estero"@it;
+  l0:identifier "E";
+  l0:name "Venduto a un paese estero"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/F> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Oggetto di furto/smarrimento"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "F";
+  skos:prefLabel "Oggetto di furto/smarrimento"@it;
+  l0:identifier "F";
+  l0:name "Oggetto di furto/smarrimento"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/G> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso centro genetico"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "G";
+  skos:prefLabel "Uscito verso centro genetico"@it;
+  l0:identifier "G";
+  l0:name "Uscito verso centro genetico"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/H> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Oggetto di furto"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "H";
+  skos:prefLabel "Oggetto di furto"@it;
+  l0:identifier "H";
+  l0:name "Oggetto di furto"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/I> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso stabulario"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "I";
+  skos:prefLabel "Uscito verso stabulario"@it;
+  l0:identifier "I";
+  l0:name "Uscito verso stabulario"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/J> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscita da pascolo a pascolo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "J";
+  skos:prefLabel "Uscita da pascolo a pascolo"@it;
+  l0:identifier "J";
+  l0:name "Uscita da pascolo a pascolo"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/K> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso centro di raccolta"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "K";
+  skos:prefLabel "Uscito verso centro di raccolta"@it;
+  l0:identifier "K";
+  l0:name "Uscito verso centro di raccolta"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/L> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Identificati singolarmente"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "L";
+  skos:prefLabel "Identificati singolarmente"@it;
+  l0:identifier "L";
+  l0:name "Identificati singolarmente"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/M> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso macello"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "M";
+  skos:prefLabel "Uscito verso macello"@it;
+  l0:identifier "M";
+  l0:name "Uscito verso macello"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/N> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Non specificato"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "N";
+  skos:prefLabel "Non specificato"@it;
+  l0:identifier "N";
+  l0:name "Non specificato"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/O> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Escursione/competizione"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "O";
+  skos:prefLabel "Escursione/competizione"@it;
+  l0:identifier "O";
+  l0:name "Escursione/competizione"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/P> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso pascolo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "P";
+  skos:prefLabel "Uscito verso pascolo"@it;
+  l0:identifier "P";
+  l0:name "Uscito verso pascolo"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/Q> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Macellato per autoconsumo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "Q";
+  skos:prefLabel "Macellato per autoconsumo"@it;
+  l0:identifier "Q";
+  l0:name "Macellato per autoconsumo"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/R> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso circo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "R";
+  skos:prefLabel "Uscito verso circo"@it;
+  l0:identifier "R";
+  l0:name "Uscito verso circo"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/S> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso stalla di sosta"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "S";
+  skos:prefLabel "Uscito verso stalla di sosta"@it;
+  l0:identifier "S";
+  l0:name "Uscito verso stalla di sosta"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/T> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Trasferito senza vendita"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "T";
+  skos:prefLabel "Trasferito senza vendita"@it;
+  l0:identifier "T";
+  l0:name "Trasferito senza vendita"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/U> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Uscito verso una fiera"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "U";
+  skos:prefLabel "Uscito verso una fiera"@it;
+  l0:identifier "U";
+  l0:name "Uscito verso una fiera"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/V> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Trasferito ad allevamento italiano"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "V";
+  skos:prefLabel "Trasferito ad allevamento italiano"@it;
+  l0:identifier "V";
+  l0:name "Trasferito ad allevamento italiano"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/W> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Oggetto di smarrimento"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "W";
+  skos:prefLabel "Oggetto di smarrimento"@it;
+  l0:identifier "W";
+  l0:name "Oggetto di smarrimento"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason/X> a skos:Concept,
+    ale:ExitFromFarmReason;
+  rdfs:label "Dettaglio uscita da completare"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason>;
+  skos:notation "X";
+  skos:prefLabel "Dettaglio uscita da completare"@it;
+  l0:identifier "X";
+  l0:name "Dettaglio uscita da completare"@it .
+
+<https://w3id.org/leo/data/distribution/exit-fr-JSON-LD> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione JSON-LD del vocabolario controllato sui motivi di uscita degli animali da un allevamento"@it,
+    "This is the JSON-LD distribution of the controlled vocabulary on the reasons for animals for exiting a farm"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/exit-from-farm-reason>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/exit-from-farm-reason/exit-from-farm-reason.jsonld> .
+
+<https://w3id.org/leo/data/distribution/exit-fr-RDF-TURTLE> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sui motivi di uscita degli animali da un allevamento"@it,
+    "This is the RDF TURTLE distribution of the controlled vocabulary on the reasons for animals for exiting a farm"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/exit-from-farm-reason>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/exit-from-farm-reason/exit-from-farm-reason.ttl> .
+
+<https://w3id.org/leo/data/distribution/exit-fr-RDF-XML> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF XML del vocabolario controllato sui motivi di uscita degli animali da un allevamento"@it,
+    "This is the RDF XML distribution of the controlled vocabulary on the reasons for animals for exiting a farm"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/exit-from-farm-reason>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/exit-from-farm-reason/exit-from-farm-reason.rdf> .
