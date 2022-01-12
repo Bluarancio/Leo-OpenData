@@ -1,0 +1,262 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix ale: <https://w3id.org/leo/onto/ale/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason> a dcatapit:Dataset,
+    skos:ConceptScheme, adms:Asset, dcat:Dataset;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:description "Questo è il vocabolario controllato dei motivi di ingresso degli animali in allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the reasons for animals for entering a farm, used in the context of project LEO - Livestock Environment Open Data"@en;
+  dct:identifier "https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason";
+  dct:issued "2022-01-11"^^xsd:date;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
+  dct:modified "2022-01-11"^^xsd:date;
+  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:title "Controlled Vocabulary on the reasons for animals for entering a farm, in the context of the LEO project"@en,
+    "Vocabolario controllato dei motivi di ingresso degli animali in allevamento nel contesto del progetto LEO"@it;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  rdfs:comment "Questo è il vocabolario controllato dei motivi di ingresso degli animali in allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the reasons for animals for entering a farm, used in the context of project LEO - Livestock Environment Open Data"@en;
+  rdfs:label "Controlled Vocabulary on the reasons for animals for entering a farm, in the context of the LEO project"@en,
+    "Vocabolario controllato dei motivi di ingresso degli animali in allevamento nel contesto del progetto LEO"@it;
+  owl:versionInfo "Versione 0.1"@it;
+  skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/A>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/B>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/C>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/D>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/E>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/F>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/G>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/I>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/K>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/L>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/M>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/N>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/P>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/Q>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/R>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/S>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/T>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/V>, <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/W>,
+    <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/Z>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia>;
+  dcat:distribution <https://w3id.org/leo/data/distribution/entry-fr-JSON-LD>, <https://w3id.org/leo/data/distribution/entry-fr-RDF-TURTLE>,
+    <https://w3id.org/leo/data/distribution/entry-fr-RDF-XML>;
+  dcat:keyword "entry in farm reason"@en, "motivo di ingresso in allevamento"@it;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/A> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Capo sentinella"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "A";
+  skos:prefLabel "Capo sentinella"@it;
+  l0:identifier "A";
+  l0:name "Capo sentinella"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/B> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Capo controllato"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "B";
+  skos:prefLabel "Capo controllato"@it;
+  l0:identifier "B";
+  l0:name "Capo controllato"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/C> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da paesi UE con cedola"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "C";
+  skos:prefLabel "Acquistato da paesi UE con cedola"@it;
+  l0:identifier "C";
+  l0:name "Acquistato da paesi UE con cedola"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/D> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Depopolamento aree protette"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "D";
+  skos:prefLabel "Depopolamento aree protette"@it;
+  l0:identifier "D";
+  l0:name "Depopolamento aree protette"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/E> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da paesi UE"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "E";
+  skos:prefLabel "Acquistato da paesi UE"@it;
+  l0:identifier "E";
+  l0:name "Acquistato da paesi UE"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/F> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da fiera o mercato"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "F";
+  skos:prefLabel "Acquistato da fiera o mercato"@it;
+  l0:identifier "F";
+  l0:name "Acquistato da fiera o mercato"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/G> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da centro genetico"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "G";
+  skos:prefLabel "Acquistato da centro genetico"@it;
+  l0:identifier "G";
+  l0:name "Acquistato da centro genetico"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/I> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da stabulario"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "I";
+  skos:prefLabel "Acquistato da stabulario"@it;
+  l0:identifier "I";
+  l0:name "Acquistato da stabulario"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/K> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da centro di raccolta"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "K";
+  skos:prefLabel "Acquistato da centro di raccolta"@it;
+  l0:identifier "K";
+  l0:name "Acquistato da centro di raccolta"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/L> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da stalla di sosta"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "L";
+  skos:prefLabel "Acquistato da stalla di sosta"@it;
+  l0:identifier "L";
+  l0:name "Acquistato da stalla di sosta"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/M> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Trasferito da allevamento italiano"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "M";
+  skos:prefLabel "Trasferito da allevamento italiano"@it;
+  l0:identifier "M";
+  l0:name "Trasferito da allevamento italiano"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/N> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Nato in stalla"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "N";
+  skos:prefLabel "Nato in stalla"@it;
+  l0:identifier "N";
+  l0:name "Nato in stalla"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/P> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Rientro da pascolo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "P";
+  skos:prefLabel "Rientro da pascolo"@it;
+  l0:identifier "P";
+  l0:name "Rientro da pascolo"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/Q> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Trasferito senza acquisto"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "Q";
+  skos:prefLabel "Trasferito senza acquisto"@it;
+  l0:identifier "Q";
+  l0:name "Trasferito senza acquisto"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/R> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Prima iscrizione"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "R";
+  skos:prefLabel "Prima iscrizione"@it;
+  l0:identifier "R";
+  l0:name "Prima iscrizione"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/S> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Rientro da paese estero"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "S";
+  skos:prefLabel "Rientro da paese estero"@it;
+  l0:identifier "S";
+  l0:name "Rientro da paese estero"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/T> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Acquistato da paesi terzi"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "T";
+  skos:prefLabel "Acquistato da paesi terzi"@it;
+  l0:identifier "T";
+  l0:name "Acquistato da paesi terzi"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/V> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Rientro fiera mancata vendita"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "V";
+  skos:prefLabel "Rientro fiera mancata vendita"@it;
+  l0:identifier "V";
+  l0:name "Rientro fiera mancata vendita"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/W> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Nato in stalla (parto gemellare)"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "W";
+  skos:prefLabel "Nato in stalla (parto gemellare)"@it;
+  l0:identifier "W";
+  l0:name "Nato in stalla (parto gemellare)"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason/Z> a skos:Concept,
+    ale:EntryInFarmReason;
+  rdfs:label "Sconosciuto"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason>;
+  skos:notation "Z";
+  skos:prefLabel "Sconosciuto"@it;
+  l0:identifier "Z";
+  l0:name "Sconosciuto"@it .
+
+<https://w3id.org/leo/data/distribution/entry-fr-JSON-LD> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione JSON-LD del vocabolario controllato sui motivi di ingresso degli animali in allevamento"@it,
+    "This is the JSON-LD distribution of the controlled vocabulary on the reasons for animals for entering a farm"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/entry-in-farm-reason>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/entry-in-farm-reason/entry-in-farm-reason.jsonld> .
+
+<https://w3id.org/leo/data/distribution/entry-fr-RDF-TURTLE> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sui motivi di ingresso degli animali in allevamento"@it,
+    "This is the RDF TURTLE distribution of the controlled vocabulary on the reasons for animals for entering a farm"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/entry-in-farm-reason>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/entry-in-farm-reason/entry-in-farm-reason.ttl> .
+
+<https://w3id.org/leo/data/distribution/entry-fr-RDF-XML> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF XML del vocabolario controllato sui motivi di ingresso degli animali in allevamento"@it,
+    "This is the RDF XML distribution of the controlled vocabulary on the reasons for animals for entering a farm"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/entry-in-farm-reason>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/entry-in-farm-reason/entry-in-farm-reason.rdf> .
