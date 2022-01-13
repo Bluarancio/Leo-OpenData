@@ -1,0 +1,363 @@
+BreedAIACode;BreedCodeAIASpecies;BreedName;BreedProductiveAttitudeCode
+00;C4;Meticcia;7
+01;C4;Bruna;7
+02;C4;Frisona Italiana;1
+03;C4;Valdostana Pezzata Rossa;7
+04;C4;Pezzata Rossa Italiana;7
+05;C4;Piemontese;7
+06;C4;Modenese;7
+07;C4;Reggiana;7
+08;C4;Modicana;1
+09;C4;Pezzata Rossa Oropa;7
+-1;C4;Rotbunte (discendenza);1
+10;C4;Rendena;7
+11;C4;Grigio Alpina;7
+12;C4;Tarina;2
+13;C4;Rossa Danese;1
+14;C4;Pinzgauer;7
+15;C4;Jersey;1
+16;C4;Abbondance;7
+17;C4;Calvana;2
+18;C4;Valdostana Pezzata Nera;7
+19;C4;Burlina;1
+-2;C4;Rotbunte (importato);1
+20;C5;Moscia Leccese;1
+21;C5;Sarda;1
+22;C5;Massese;1
+23;C5;Barbaresca;1
+24;C5;Comisana;1
+25;C5;Altamurana;1
+26;C5;Appenninica;2
+27;C5;Gentile Di Puglia;2
+28;C5;Laticauda;2
+29;C5;Sopravissana;7
+30;C5;Delle Langhe;1
+31;C5;Merinizzata;2
+32;C5;Bergamasca;2
+33;C5;Pinzirita;1
+34;C5;BRIGASCA;7
+35;C5;Fasanese;7
+36;C5;Frisona Italiana;1
+37;C5;Finnica;7
+38;C5;Cornella Bianca;1
+39;C5;Fabrianese;2
+40;C6;Maltese;1
+41;C6;Garganica;1
+42;C6;Girgentana;1
+43;C6;Bionda Adamello;1
+44;C6;Saanen;1
+45;C6;Camosciata Delle Alpi;1
+46;C6;Frisa Valtellinese;1
+47;C6;Sarda;1
+48;C6;Rossa Mediterranea (Derivata Di Siria);1
+49;C6;Toggenburg;1
+50;C4;Charolaise;2
+51;C4;Marchigiana;2
+52;C4;Chianina;2
+53;C4;Limousine;2
+54;C4;Romagnola;2
+55;C4;Maremmana;2
+56;C4;Podolica;2
+57;C4;Angler;7
+58;C4;Garfagnina;2
+59;C4;Pontremolese;2
+60;C4;Sarda;2
+61;C4;Castana (Aosta);7
+62;C4;Cabannina;1
+63;C4;Agerolese;7
+64;C4;Mucca Pisana;2
+65;C4;P.N. Polacca;1
+66;C4;P.R. Jugoslavo;7
+67;C4;Varzese o Ottonese o Tortonese;7
+68;C4;Blue Belga;2
+69;C4;Sardo Modicana;2
+70;70;Bufalo Mediterraneo;1
+71;C5;Biellese;2
+72;C5;Corniglio;1
+73;C5;Ile De France;2
+74;C5;Suffolk;2
+75;C5;Romanov;7
+76;C5;Valle Belice;1
+77;C4;Pustertaler Sprinzen;7
+78;C5;Berichonne Du Cher;2
+79;C5;Bagnolese;1
+80;C7;Large White;
+81;C7;Landrace;
+82;C7;Landrace Belga;
+83;C7;Hampshire;
+84;C7;Pietrain;
+85;C7;Spotted Poland;
+86;C7;Duroc;
+87;C7;Ibrido;
+88;C4;MontBeliard;7
+89;C6;Argentata Dell'etna;1
+90;C6;Jonica;1
+91;C6;Grigia Molisana (Campobasso);1
+92;C6;Vallese;1
+93;C6;Verzaschese;1
+94;C6;Orobica o Di Val Gerola;1
+95;C6;Roccaverano;1
+96;C4;Cinisara;1
+97;C5;Zerasca;7
+98;C5;Carsolina;7
+99;C4;Garonnese;2
+A5;A3;Asino Romagnolo;
+A6;A3;Asino Pantesco;
+AA;A3;Meticci;
+AB;C4;Aubrac;7
+AN;C4;Aberdeen Angus;2
+AT;C4;Tuxer;7
+AY;C4;Ayrshire;7
+B0;A3;Asino Dell'amiata;
+B1;C0;Pony Di Esperia;
+B2;C0;Salernitano;
+B3;C0;Persano;
+B4;C0;Sanfratellano;
+B5;C0;Cavallino Di Giara;
+B6;C0;Murgese;
+B7;C0;Samolaco;
+B8;C0;Tolfetano;
+B9;C0;Cavallino Di Monterufoli;
+BA;C4;Blonde d'Aquitaine;2
+BD;C0;Bardotto;
+BE;C4;BeefMaster;7
+BR;C4;American Brahman;2
+BS;BS;Bisonte;2
+C0;C0;CAVALLI;
+CI;C5;Pecora Ciuta;2
+CP;C6;Meticcia Caprini;1
+CS;C7;Cinta Senese;
+CZ;C4;Cserwona Polska;7
+D0;C0;Anglo Normanno;
+D1;A3;Asino Ragusano;
+D2;A3;Asino Dell'asinara;
+D3;A3;Asino Sardo;
+D4;A3;Asino Di Martina Franca;
+D5;C0;Puro sangue Arabo;
+D6;C0;Puro sangue Orientale;
+D7;C0;Puro sangue Angloorientale;
+D8;C0;Cavallo Anglo Arabo;
+D9;C0;Anglo Arabo Sardo;
+DX;C4;Dexter;7
+E0;C0;Cavallo Del Catria;
+E1;C0;Avelignese  (Haflinger);
+E2;C0;Agricolo Italiano da TPR;
+E3;C0;Puro sangue Inglese;
+E4;C0;Trottatore Italiano;
+E5;C0;Maremmano;
+E6;C0;Bardigiano;
+E7;C0;Lipizzano;
+E8;C0;Cavallo Del Ventasso;
+E9;C0;Norico;
+EE;C0;Meticci;
+F0;C5;Frabosana;7
+F1;C5;Alpagota;7
+F2;C5;Bellunese;7
+F3;C5;Brentegana;2
+F5;C5;Brogne;2
+F6;C5;Ciavenasca;2
+F7;C5;Di Benevento (Quadrella);2
+F8;C5;Pecora di Corteno;2
+F9;C5;Finarda;2
+G0;C5;Saltasassi;2
+G1;C5;Garessina;7
+G2;C5;Garfagnina Bianca;1
+G3;C5;Lamon (Lamonese);7
+G4;C5;Nostrana;2
+G5;C5;Marrane;2
+G6;C5;Matesina;2
+G7;C5;Pomarancina;7
+G8;C5;Pusterese;2
+G9;C5;Rosset;2
+GA;C4;GASCONNE;2
+GR;C4;Guernsey;1
+GW;C4;Galloway;2
+H0;C0;Sella Spagnolo;
+H1;C0;Sella Italiano;
+H2;C0;Sella Francese;
+H3;C0;Hannover;
+H4;C0;Holstein;
+H5;C0;Westfalia;
+H6;C0;Oldenburg;
+H7;C0;Sella Belga;
+H8;C0;Sella Irlandese;
+H9;C0;Sella Olandese;
+HA;C5;Hampshire;2
+HE;C4;Hereford;2
+HL;C4;Highland;2
+HS;C4;Hérens (Heringer );7
+IN;C4;Inra 95;2
+J0;C0;Bretone;
+J1;C0;Wurttemberg;
+J2;C0;Hessen;
+J3;C0;Bayer;
+J4;C0;Trakehner;
+J5;C0;Arabo Tersk;
+J6;C0;Andaluso;
+J7;C0;Lusitano;
+J8;C0;Camargue Delta;
+J9;C0;Franches Montaigne;
+JU;C5;Juraschaf (Pecora Giurassica);10
+K0;C0;Pony Shetland;
+K1;C0;Cavallo Di Merens;
+K3;C0;Appaloosa;
+K4;C0;Paint Horse;
+K5;C0;Morgan;
+K6;C0;Achal Techè;
+K7;C0;Budyonny;
+K8;C0;Pony Connemara;
+K9;C0;Pony Welsh;
+KB;C4;Karnter Blondvieh;2
+L0;C6;Di Teramo;1
+L1;C6;Alpina;1
+L3;C6;Cilentana Fulva;1
+L4;C6;Cilentana Grigia;1
+L5;C6;Cilentana Nera;1
+L6;C6;Ciociara Grigia;1
+L7;C6;Di L'Aquila;1
+L8;C6;Di Montecristo;1
+L9;C6;Grigia di Lucania (Potenza);1
+M0;C6;Napoletana;1
+M2;C6;Fulva degli Alburni;1
+M3;C6;Fulva dei monti Picentini;1
+M4;C6;Fulva Lucana;1
+M5;C6;Garfagnana;1
+M6;C6;Grigia degli Alburni;1
+M7;C6;Grigia dei monti Picentini;1
+M8;C6;Istriana;7
+M9;C6;Mantellata Posteriore;1
+MI;C4;Milking Shorthorn;7
+MR;C4;Mosa Reno Yssel;7
+MT;C4;Mertolenga;2
+MU;A3;Mulo;
+N0;C6;Messinese;1
+N1;C6;Pomellata;1
+N2;C6;Sarda Primitiva;1
+N3;C6;Rustica di Calabria;1
+N4;C6;Screziata;1
+N5;C6;Selvaggia;1
+N6;C6;Sempione;2
+N7;C6;Valfortorina (di Benevento);7
+N9;C6;Passeirer Gebirgziege (Passiria);2
+NA;C5;Nera di Arbus;7
+NS;C7;Suino Nero Siciliano;
+O1;C5;Plezzana;2
+O2;C5;Tiroler Bergschaf (Alpina Tirolese);2
+O3;C5;Schwarz Braunes Bergschaf (Nero Bruna);2
+O4;C5;Villnoesser Schaf;2
+O5;C5;Texel;1
+O6;C5;Brianzola;7
+O7;C5;Noticiana;1
+O8;C5;Pecora dell'Amiata;7
+P1;P0;Castorini;
+P2;P0;Cincillà;
+P3;P0;Visoni;
+P4;P0;Volpi;
+PA;C4;Parthenaise;7
+PR;C4;Pie Rouge Des Plaines;7
+Q0;C6;Lariana o di Livo;7
+Q1;C6;Valdostana;1
+Q2;C6;Nicastrese;1
+Q3;C6;Aspromontana;1
+Q4;C6;Pezzata Mochena;1
+Q5;C6;Bianca Monticellana;1
+Q6;C6;Capestrina;1
+Q7;C6;Murciana;1
+Q8;C6;Grigia della Valle di Lanzo (Fiurinà);1
+Q9;C6;Malagueña;1
+R0;C5;Lacaune;1
+R1;C5;Sambucana (Demontina);2
+R2;C5;Samperina;7
+R3;C5;Savoiarda;7
+R4;C5;Sciara (Moscia Calabrese);7
+R5;C5;Tacola;2
+R6;C5;Varesina;2
+R7;C5;Vissana;7
+R8;C5;Assaf;1
+RB;C4;Rubia Gallega;2
+RN;C4;Rossa Norvegese;1
+RS;C4;Rossa Svedese;1
+SA;C4;Salers;7
+SB;C4;Sardo Bruna;2
+SC;C4;Normande;7
+SH;C5;Schwarznasenschaf;11
+SI;C4;Siciliana;7
+SN;C5;Schnalserschaf (Pecora Val Senales);11
+SP;C4;Parckle Park;2
+TR;C5;Trimeticcia di Segezia;7
+TS;C5;Tiroler Steinschaf (Pecora della roccia Tirolese);10
+TU;C5;Turchessa;7
+U1;C8;Struzzi;
+V0;A4;Ancona;
+V1;A4;Bianca di Saluzzo;
+V2;A4;Bionda Piemontese;
+V3;A4;Collo Nudo Italiana;
+V4;A4;Ermellinata di Rovigo;
+V5;A4;Livorno;
+V6;A4;Mericanel della Brianza;
+V7;A4;Millefiori Lonigo;
+V8;A4;Millefiori Piemontese;
+V9;A4;Modenese;
+VA;A4;Mugellese;
+VB;A4;Padovana;
+VC;A4;Pepoi;
+VD;A4;Polverara;
+VE;A4;Robusta Lionata;
+VF;A4;Robusta Maculata;
+VG;A4;Romagnolo;
+VH;A4;Valdarnese bianca;
+VI;C5;Vicentina o Foza;11
+VJ;A7;Pezzata veneta;
+VK;A7;Padovana;
+VL;A4;Valdarno;
+VM;A4;Siciliana;
+VN;A0;Azzurra di Ghigi;
+VO;A0;Bianca albina;
+VP;A0;Bluetta;
+VQ;A0;Camosciata;
+VR;A0;Fulvetta;
+VS;A0;Grigia Comune;
+VT;A0;Lilla o Grigio perla;
+VU;A5;Mignon;
+VV;C5;Meticcia Ovini;7
+VX;A6;Muta o di Barberia;
+VY;A5;Romagnola;
+VZ;A5;Germanata veneta;
+W2;C7;Calabrese;
+W3;C7;Casertana;
+W4;C7;Mora romagnola;
+W5;C7;Sarda;
+W6;C7;Nero di Parma;2
+WA;C4;Wagyu;2
+X0;C0;Cavallo Pentro;
+X1;C0;Napoletano;
+X2;C0;Cavallo Delta;
+X3;C0;Cavallo del Sarcidano;
+X4;C0;Cavallo Appenninico;
+X5;C0;Cavallo Romano della Maremma Laziale;
+X6;C0;Knabstrupper (razza estera);
+X7;A3;Asino Viterbese;
+Y0;A7;Romagnola;
+Y1;A8;Brianzolo;
+Y2;A8;Bronzato comune;
+Y3;A8;Bronzato dei Colli Euganei;
+Y4;A8;Castano precoce;
+Y5;A8;Ermellinato di Rovigo;
+Y6;A8;Romagnolo;
+Y7;A8;Nero di Italia;
+Y8;A9;Ascolano;
+Y9;A9;Bergamasco;
+YA;A9;Piacentino;
+YB;A9;Reggianono;
+YC;A9;Romagnolo;
+YD;A9;Romano;
+YE;A9;Sottobanca modenese;
+YF;A9;Triganino Modenese;
+YG;A4;Trentino;
+YH;A4;Tirolose o Tirolerhuhn;
+YI;A8;Parma e Piaenza;
+YK;C4;Yak;7
+Z0;70;Bufalo Meticcio;1
+Z1;70;Bufalo Murrah;1
+ZB;C4;Zebù;7
+ZW;C5;Zwartbles;2
