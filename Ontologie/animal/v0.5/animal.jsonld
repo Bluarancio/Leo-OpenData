@@ -1868,7 +1868,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Inverse property of \"has productive orientation\" that links the productive orientation to the breed"
+    "@value" : "Inverse property of \"has productive attitude\" that links the productive orientation to the breed"
   }, {
     "@language" : "it",
     "@value" : "Proprietà inversa di \"ha orientamento produttivo\" che lega l'orientamento produttivo alla razza"
