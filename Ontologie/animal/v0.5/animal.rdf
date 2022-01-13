@@ -626,7 +626,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isProductiveAttitudeOf">
         <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
         <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
-        <rdfs:comment xml:lang="en">Inverse property of &quot;has productive orientation&quot; that links the productive orientation to the breed</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has productive attitude&quot; that links the productive orientation to the breed</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha orientamento produttivo&quot; che lega l&apos;orientamento produttivo alla razza</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
         <rdfs:label xml:lang="en">is productive orientation of</rdfs:label>
