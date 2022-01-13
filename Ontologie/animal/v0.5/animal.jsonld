@@ -1881,7 +1881,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is productive orientation of"
+    "@value" : "is productive attitude of"
   }, {
     "@language" : "it",
     "@value" : "è orientamento produttivo di"
