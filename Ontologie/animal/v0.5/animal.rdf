@@ -1,0 +1,1410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/animal/"
+     xml:base="https://w3id.org/leo/onto/animal/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/animal">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/animal/0.5"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+        <dc:description rdf:resource="https://www.dropbox.com/s/0scxmmwvwpwp01c/FarmAnimal.png?raw=1"/>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia degli animali d&apos;allevamento sviluppata nel contesto del progetto LEO.</terms:description>
+        <terms:description xml:lang="en">This is the  ontology of the Farm Animals developed in the context of the LEO project.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-18</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:modified xml:lang="en">2022-01-13</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
+        <terms:title xml:lang="en">Farm Animals Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia degli animali di allevamento</terms:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia degli animali di allevamento del progetto LEO</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the  ontology of farm animals developed in the context of the LEO project</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">Farm Animal Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia degli animali di allevamento</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.5 - 2022 - ProductiveOrientation has been deleted and replaced with ProductionType. ProductionTarget has been deleted and replaced with ProductionTarget. Deleted AIAPOCode (use of AIAPTCode in the ProductionTarget class).</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.5 - 2022- La classe Orientamento Produttivo è stata cancellata e sostituita con la classe Tipo Produzione. La classe Indirizzo Produttivo è stata cancellata e sostituita con la classe Tipo Produzione. Cancellata la proprietà AIAPOCode per utilizzare al suo posto AIAPTCode nella classe Tipo Produzione.</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">Animali d&apos;allevamento</dcat:keyword>
+        <dcat:keyword xml:lang="en">Bovine</dcat:keyword>
+        <dcat:keyword xml:lang="it">Bovini</dcat:keyword>
+        <dcat:keyword xml:lang="en">Farm Animal</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+        <ADMS:acronym>animal</ADMS:acronym>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LEO-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LEO-RDF-XML"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/animal</ADMS:officialURI>
+        <ADMS:prefix>animal</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <ADMS:status xml:lang="en">catalogued</ADMS:status>
+        <ADMS:target>Imprese</ADMS:target>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/name -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/assignedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/assignedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+        <rdfs:comment xml:lang="en">Property that links the alternative identifier to the organization responsable for assigning it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di collegare il codice alternativo all&apos;organizzazione che lo assegna.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">assegnato da</rdfs:label>
+        <rdfs:label xml:lang="en">assigned by</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio - introdotto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable - included in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasAlternativeIdentifier -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasAlternativeIdentifier">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify an alternative identifier for the livestock species, farm animal and production type.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare un codice alternato alle specie zootecniche, agli animali d&apos;allevamento e al tipo di produzione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha identificativo alternativo</rdfs:label>
+        <rdfs:label xml:lang="en">has alternative identifier</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - revisionato il dominio della proprietà per essere aperto a tante cose nel dominio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - revised the domain of the property to be open to many things in the domain</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasAnimalDestination -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasAnimalDestination">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/animal/isAnimalDestinationOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+        <rdfs:comment xml:lang="en">Property that links the farm animal to its destination (life or slaughterhouse).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;animale alla sua destinazione (vita, macello)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha destinazione animale d&apos;allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">has animal destination</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasBreed">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="en">Property that represents the belonging relationship between a farm animal and its breed.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che rappresenta la relazione di appartenenza dell&apos;animale alla sua razza.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">appartiene a</rdfs:label>
+        <rdfs:label xml:lang="en">belongs to</rdfs:label>
+        <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasFather -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasFather">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify the father of the farm animal.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare il padre dell&apos;animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha padre</rdfs:label>
+        <rdfs:label xml:lang="en">has father</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasFatherBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasFatherBreed">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="it">Questa proprietà è stata aggiunta come forma di &apos;scorciatoia&apos; per ottenere la razza del padre direttamente dall&apos;animale, qualora l&apos;animale padre non sia conosciuto. Qualora il padre sia un animale conosciuto nel sistema, si suggerisce di gestire questa proprietà attraverso la proprietà &apos;ha padre&apos; dell&apos;ontologia e poi &apos;ha razza&apos;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property has been added as a form of &apos;shortcut&apos; to obtain the breed of the father directly from the animal, if the father animal is not known. If the father is a known animal in the system, it is suggested to manage this property through the &apos;has father&apos; property of the ontology and then &apos;has breed&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha razza padre</rdfs:label>
+        <rdfs:label xml:lang="en">has father breed</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta nella terza versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version three of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasGeneticMother -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasGeneticMother">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify the mother who brings in the genetic inheritance</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare la madre che apporta il patrimonio genetico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha madre genetica</rdfs:label>
+        <rdfs:label xml:lang="en">has genetic mother</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasGeneticMotherBreed -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasGeneticMotherBreed">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="it">Questa proprietà è stata aggiunta come forma di &apos;scorciatoia&apos; per ottenere la razza della madre genetica direttamente dall&apos;animale, qualora l&apos;animale madre genetica non sia conosciuto. Qualora la madre genetica sia un animale conosciuto nel sistema, si suggerisce di gestire questa proprietà attraverso la proprietà &apos;ha madre genetica&apos; dell&apos;ontologia e poi &apos;ha razza&apos;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property has been added as a form of &apos;shortcut&apos; to obtain the breed of the genetic mother directly from the animal if the genetic mother animal is not known. If the genetic mother is a known animal in the system, it is suggested to manage this property through the &apos;has genetic mother&apos; property of the ontology and then &apos;has breed&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha razza madre genetica</rdfs:label>
+        <rdfs:label xml:lang="en">has genetic mother breed</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta nella terza versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version three of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasProductionTarget -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasProductionTarget">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/animal/isProductionTargetOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/InboudMovement"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
+        <rdfs:comment xml:lang="en">Property that links the farm animal (and thus the inbound movement) and the livestock species to their production target</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;animale (e quindi l&apos;evento di spostamento dell&apos;animale in entrata all&apos;allevamento) o la specie zootecnica all&apos;indirizzo produttivo di riferimento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha indirizzo produttivo</rdfs:label>
+        <rdfs:label xml:lang="en">has production target</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasProductiveAttitude -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasProductiveAttitude">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/animal/isProductiveAttitudeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
+        <rdfs:comment xml:lang="en">Property that links the breed to its productive attitude</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega la razza al proprio orientamento produttivo</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha orientamento produttivo</rdfs:label>
+        <rdfs:label xml:lang="en">has productive attitude</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - rivista nella versione 0.5 dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - revised in version 0.5 of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasSex -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasSex">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/animal/isSexOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+        <rdfs:comment xml:lang="en">Property that links the farm animal with its sex.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;animale al suo sesso (femmina, maschio)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha sesso</rdfs:label>
+        <rdfs:label xml:lang="en">has sex</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasUniqueAnimalNumberInTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasUniqueAnimalNumberInTime">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"/>
+        <rdfs:comment xml:lang="en">Property that links the farm animal to the situation where the unique number associated with it may change over time.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega l&apos;animale d&apos;allevamento alla situazione in cui il numero unico ad esso associato può variare nel tempo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha numero unico animale nel tempo</rdfs:label>
+        <rdfs:label xml:lang="en">has unique animal number in time</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isAnimalDestinationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isAnimalDestinationOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has destination&quot; that links a destination to the farm animal</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha destinazione&quot; che collega la destinazione con l&apos;animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is destination of</rdfs:label>
+        <rdfs:label xml:lang="it">è destinazione di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Inverse property of belongs to that links a breed to the farm animal</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;appartiene a&quot; che collega la razza all&apos;animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is breed of farm animal</rdfs:label>
+        <rdfs:label xml:lang="it">è razza animale di allevamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isOfSpecies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isOfSpecies">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/animal/isSpeciesOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+        <rdfs:comment xml:lang="en">Property that allows one to link the farm animal to its livestock species.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di collegare l&apos;animale alla sua specie zootecnica</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is of species</rdfs:label>
+        <rdfs:label xml:lang="it">è di specie</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isProductionTargetOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isProductionTargetOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/InboudMovement"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has production target&quot; that links the production target to the farm animal or livestock species.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha indirizzo produttivo&quot; che lega l&apos;indirizzo produttivo all&apos;animale o alla specie zootecnica</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is production target of</rdfs:label>
+        <rdfs:label xml:lang="it">è indirizzo produttivo di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isProductiveAttitudeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isProductiveAttitudeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has productive attitude&quot; that links the productive attitude to the breed</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha orientamento produttivo&quot; che lega l&apos;orientamento produttivo alla razza</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is productive attitude of</rdfs:label>
+        <rdfs:label xml:lang="it">è orientamento produttivo di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isSexOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isSexOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has sex&quot; that links the sex to the farm animal</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha sesso&quot; che lega il sesso all&apos;animale da allevamento</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is sex of</rdfs:label>
+        <rdfs:label xml:lang="it">è sesso di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isSpeciesOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isSpeciesOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;is of species&quot; that links the livestock species to the farm animal.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;è di specie&quot; che consente di collegare la specie zootecnica all&apos;animale</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is species of</rdfs:label>
+        <rdfs:label xml:lang="en">è specie di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/isWithin -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/isWithin">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+        <rdfs:comment xml:lang="en">Property that links the breed to the livestock species</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega la razza alla specie zootecnica</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">is within</rdfs:label>
+        <rdfs:label xml:lang="it">rientra in</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"/>
+        <rdfs:comment xml:lang="en">Property that allows one to keep track of the previous unique number of a farm animal in the situation in which the unique number may change over time.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che permette di tenere traccia del precedente numero unico di un animale da allevamento nella situazione in cui il numero unico può cambiare nel tempo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">precedente numero unico animale</rdfs:label>
+        <rdfs:label xml:lang="en">previous unique animal number</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/date -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/date"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/birthDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/birthDate"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/disposalDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/disposalDate"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/registrationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/registrationDate"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/AIABreedCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/AIABreedCode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">AIA code identifying the breed</rdfs:comment>
+        <rdfs:comment xml:lang="it">Codice AIA che identifica la razza</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">AIA breed code</rdfs:label>
+        <rdfs:label xml:lang="it">codice AIA razza</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/AIAPTCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/AIAPTCode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">AIA code that identifies the production target</rdfs:comment>
+        <rdfs:comment xml:lang="it">Codice AIA che identifica l&apos;indirizzo produttivo</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">AIA production target code</rdfs:label>
+        <rdfs:label xml:lang="it">codice AIA indirizzo produttivo</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/AIASpeciesCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/AIASpeciesCode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">AIA code identifying the livestock species</rdfs:comment>
+        <rdfs:comment xml:lang="it">Codice AIA che identifica le specie zootecniche</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">AIA livestock species code</rdfs:label>
+        <rdfs:label xml:lang="it">codice AIA specie zootecniche</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/shortAnimalName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/shortAnimalName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Name used commercially to recognise the animal (mainly used for males)</rdfs:comment>
+        <rdfs:comment xml:lang="it">Nome utilizzato commercialmente per riconoscere l’animale (usato soprattutto per i maschi)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">nome corto animale</rdfs:label>
+        <rdfs:label xml:lang="en">short animal name</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/uniqueAnimalNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/uniqueAnimalNumber">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Codice identificativo univoco dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Unique code that identifies the farm animal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">numero univoco animale</rdfs:label>
+        <rdfs:label xml:lang="en">unique animal number</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Agent -->
+
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Organization -->
+
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/Project -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/Organization -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/Birth -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/Identification -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/InboudMovement -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/InboudMovement"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/Breed -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Breed">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/AIABreedCode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It represents the breed of the farm animal.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la razza dell&apos;animale allevato</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">Breed</rdfs:label>
+        <rdfs:label xml:lang="it">Razza</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasUniqueAnimalNumberInTime"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasAnimalDestination"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasBreed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasFather"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasGeneticMother"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasSex"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/isOfSpecies"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/birthDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/disposalDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/registrationDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/shortAnimalName"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It represents the farm animal.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta il soggetto o l&apos;animale da allevamento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">Animale di Allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">Farm Animal</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimalDestination -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimalDestination">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/isAnimalDestinationOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It represents the managerial decision which the breeder makes when the animal is born about his willingness to raise the animal for breeding or slaughter.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la decisione manageriale che l’allevatore prende al momento della nascita dell’animale circa la sua volontà di allevare l’animale da riproduzione o destinarlo alla macellazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">Destinazione dell&apos;Animale di Allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">Farm Animal Destination</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/Identifier -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Identifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/assignedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Identificativo utilizzato in alcune liste controllate di codici del dominio zootecnico dove per la specie e per il tipo di produzione, altre organizzazioni assegnano codici identificativi a questi concetti diversi dal codice AIA</rdfs:comment>
+        <rdfs:comment xml:lang="en">identifier used for livestock species and production type code lists that is alternative with respect to AIA codes, assigned by other organizations (e.g., ISTAT - Italian National Institute of Statistics).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">Identificativo</rdfs:label>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - rifattorizzato il nome nella terza versione dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - name of the class has been refactored in thrid version of the ontology</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/LivestockSpecies -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/isSpeciesOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/AIASpeciesCode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It represents the zootechnical species. By species it means: cattle, buffaloes, goats, sheep, pigs. The scientific names of the species are not used.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la specie zootecnica. Per specie si intende: bovini, bufali, capre, ovini, suini. Non vengono usati i nomi scientifici delle specie.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">Livestock Species</rdfs:label>
+        <rdfs:label xml:lang="it">Specie Zootecnica</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - aggiornata nella seconda versione da Specie a Specie Zootecnica</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - update from Species to Livestock Species</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/ProductionType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/ProductionType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/AIAPTCode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La categorizzazione dei diversi tipi di produzione per gli animali d&apos;allevamento e le specie e le razze. Nel caso degli animali e delle specie si parla di indirizzo produttivo che assume i valori di questa classe, nel caso della razza si parla invece di orientamento produttivo, che assume i valori di questa classe. I valori di questa classe sono quelli del vocabolario controllato https://w3id.org/leo/controlled-vocabulary/production-type</rdfs:comment>
+        <rdfs:comment xml:lang="en">The categorisation of the different types of production for farm animals and species and breeds. In the case of animals and species we refet to it with the term production target; in the case of breeds we refer to it with the term productive attitude. The values of this class are those of the controlled vocabulary https://w3id.org/leo/controlled-vocabulary/production-type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">Production Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di produzione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - rivisto nella versione 0.5 dell&apos;ontologia</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - revised in version 0.5 of the ontology</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/Sex -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Sex">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/isSexOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It represents the sex of the farm animal. Its values are F:female and M:Male</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta il sesso dell&apos;animale e può assumere solo due valori F: Femmina e M:Maschio</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">Sesso</rdfs:label>
+        <rdfs:label xml:lang="en">Sex</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la situazione del numero unico degli animali d&apos;allevamento che cambiano nel tempo. La situazione è abbastanza rara poiché l&apos;animale che perde il suo numero unico (matricola) può ri-acquisirlo. Tuttavia, vi è un 10% di casi in cui il numero unico può cambiare nel tempo. Questa classe permette di tenere traccia di questi cambiamenti, compresa la relazione con il numero unico precedente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the situation of the unique animal number that changes over time. The situation is quite rare since the animal that looses its unique number can re-acquire it. However, there are a 10% of cases in which the unique number may change over time. This class allows one to keep track of these changes including the relation with the previous unique number.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">Numero Unico Animale nel Tempo</rdfs:label>
+        <rdfs:label xml:lang="en">Unique Animal Number in Time</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/contact-point/onto-aia">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdfs:label xml:lang="it">Sistemi informativi</rdfs:label>
+        <ns:fn xml:lang="it">Sistemi informativi</ns:fn>
+        <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LEO-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LEO-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sugli animali da allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of Farm animals ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia LEO</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of LEO Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sugli animali da allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Farm animals ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia LEO</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of LEO Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/leo/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/leo/latest/leo.jsonld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sugli animali da allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/Turtle of Farm animals ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia LEO</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of LEO Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sugli animali da allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Farm animals ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia LEO</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of LEO Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/leo/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/leo/latest/leo.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LEO-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LEO-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sugli animali da allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of Farm animals ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia LEO</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of LEO Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sugli animali da allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Farm animals ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia LEO</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of LEO Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/leo/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/leo/latest/leo.rdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>00944701002</terms:identifier>
+        <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+        <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>06695411006</terms:identifier>
+        <foaf:name xml:lang="en">Bluarancio</foaf:name>
+        <foaf:name xml:lang="it">Bluarancio</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/project/LEO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/animal">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/F -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/animal/F">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+        <rdfs:label xml:lang="en">Female</rdfs:label>
+        <rdfs:label xml:lang="it">Femmina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/Life -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/animal/Life">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+        <rdfs:label xml:lang="en">Life</rdfs:label>
+        <rdfs:label xml:lang="it">Vita</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/M -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/animal/M">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Sex"/>
+        <rdfs:label xml:lang="en">Male</rdfs:label>
+        <rdfs:label xml:lang="it">Maschio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/Slaughterhouse -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/animal/Slaughterhouse">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
+        <rdfs:label xml:lang="it">Macello</rdfs:label>
+        <rdfs:label xml:lang="en">Slaughterhouse</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
