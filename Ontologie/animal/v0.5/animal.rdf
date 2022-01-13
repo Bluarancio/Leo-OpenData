@@ -629,7 +629,7 @@
         <rdfs:comment xml:lang="en">Inverse property of &quot;has productive attitude&quot; that links the productive orientation to the breed</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha orientamento produttivo&quot; che lega l&apos;orientamento produttivo alla razza</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
-        <rdfs:label xml:lang="en">is productive orientation of</rdfs:label>
+        <rdfs:label xml:lang="en">is productive attitude of</rdfs:label>
         <rdfs:label xml:lang="it">è orientamento produttivo di</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
