@@ -1,0 +1,512 @@
+[ {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type",
+  "@type" : [ "http://dati.gov.it/onto/dcatapit#Dataset", "http://www.w3.org/2004/02/skos/core#ConceptScheme", "http://www.w3.org/ns/adms#Asset", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This is the controlled Vocabulary on the production targets and productive orientations, used in the context of project LEO - Livestock Environment Open Data"
+  }, {
+    "@language" : "it",
+    "@value" : "Questo è il vocabolario controllato degli indirizzi/orientamenti produttivi utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-01-13"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-01-13"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Controlled Vocabulary on the production targets and productive orientations, in the context of the LEO project"
+  }, {
+    "@language" : "it",
+    "@value" : "Vocabolario controllato degli indirizzi/orientamenti produttivi nel contesto del progetto LEO"
+  } ],
+  "http://purl.org/dc/terms/type" : [ {
+    "@id" : "http://purl.org/adms/assettype/CodeList"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the controlled Vocabulary on the production targets and productive orientations, used in the context of project LEO - Livestock Environment Open Data"
+  }, {
+    "@language" : "it",
+    "@value" : "Questo è il vocabolario controllato degli indirizzi/orientamenti produttivi utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Controlled Vocabulary on the production targets and productive orientations, in the context of the LEO project"
+  }, {
+    "@language" : "it",
+    "@value" : "Vocabolario controllato degli indirizzi/orientamenti produttivi nel contesto del progetto LEO"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "Versione 0.1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/1"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/10"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/11"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/12"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/2"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/3"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/4"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/5"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/6"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/7"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/8"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/9"
+  } ],
+  "http://www.w3.org/ns/adms#representationTechnique" : [ {
+    "@id" : "http://purl.org/adms/representationtechnique/SKOS"
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://w3id.org/leo/data/distribution/production-type-JSON-LD"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/production-type-RDF-TURTLE"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/production-type-RDF-XML"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "en",
+    "@value" : "production target"
+  }, {
+    "@language" : "en",
+    "@value" : "production type"
+  }, {
+    "@language" : "en",
+    "@value" : "productive orientation"
+  }, {
+    "@language" : "it",
+    "@value" : "indirizzo produttivo"
+  }, {
+    "@language" : "it",
+    "@value" : "orientamento produttivo"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/1",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Latte"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Latte"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "1"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Latte"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/10",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lana"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "10"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Lana"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "10"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Lana"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/11",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lana e Carne"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "11"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Lana e Carne"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "11"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Lana e Carne"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "11"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/12",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Latte e Lana"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "12"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Latte e Lana"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "12"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Latte e Lana"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "12"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/2",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Carne"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "2"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Carne"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/3",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Leggero"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Carne Leggero"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "3"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Carne Leggero"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/4",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Medio"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Carne Medio"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "4"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Carne Medio"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/5",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Pesante"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Carne Pesante"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "5"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Carne Pesante"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/6",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Riproduzione"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Riproduzione"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "6"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Riproduzione"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "6"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/7",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Duplice Attitudine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "7"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Duplice Attitudine"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "7"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Duplice Attitudine"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "7"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/8",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Uova"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Uova"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "8"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Uova"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "8"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type/9",
+  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/ProductionType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Produttivo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/production-type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "9"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Produttivo"
+  } ],
+  "https://w3id.org/italia/onto/l0/identifier" : [ {
+    "@value" : "9"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "Produttivo"
+  } ],
+  "https://w3id.org/leo/onto/animal/AIAPTCode" : [ {
+    "@value" : "9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/production-type-JSON-LD",
+  "@type" : [ "http://dati.gov.it/onto/dcatapit#Distribution", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "This is the JSON-LD distribution of the controlled vocabulary on the production targets and productive orientations"
+  }, {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione JSON-LD del vocabolario controllato sugli indirizzi/orientamenti produttivi"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.jsonld"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/production-type-RDF-TURTLE",
+  "@type" : [ "http://dati.gov.it/onto/dcatapit#Distribution", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "This is the RDF TURTLE distribution of the controlled vocabulary on the production targets and productive orientations"
+  }, {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF TURTLE del vocabolario controllato sugli indirizzi/orientamenti produttivi"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.ttl"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/production-type-RDF-XML",
+  "@type" : [ "http://dati.gov.it/onto/dcatapit#Distribution", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "This is the RDF XML distribution of the controlled vocabulary on the production targets and productive orientations"
+  }, {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF XML del vocabolario controllato sugli indirizzi/orientamenti produttivi"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.rdf"
+  } ]
+} ]

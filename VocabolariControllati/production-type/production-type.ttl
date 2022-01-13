@@ -1,0 +1,187 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix animal: <https://w3id.org/leo/onto/animal/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type> a dcatapit:Dataset, skos:ConceptScheme,
+    adms:Asset, dcat:Dataset;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:description "Questo è il vocabolario controllato degli indirizzi/orientamenti produttivi utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the production targets and productive orientations, used in the context of project LEO - Livestock Environment Open Data"@en;
+  dct:identifier "https://w3id.org/leo/controlled-vocabulary/production-type";
+  dct:issued "2022-01-13"^^xsd:date;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
+  dct:modified "2022-01-13"^^xsd:date;
+  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:title "Controlled Vocabulary on the production targets and productive orientations, in the context of the LEO project"@en,
+    "Vocabolario controllato degli indirizzi/orientamenti produttivi nel contesto del progetto LEO"@it;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  rdfs:comment "Questo è il vocabolario controllato degli indirizzi/orientamenti produttivi utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the production targets and productive orientations, used in the context of project LEO - Livestock Environment Open Data"@en;
+  rdfs:label "Controlled Vocabulary on the production targets and productive orientations, in the context of the LEO project"@en,
+    "Vocabolario controllato degli indirizzi/orientamenti produttivi nel contesto del progetto LEO"@it;
+  owl:versionInfo "Versione 0.1"@it;
+  skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/production-type/1>,
+    <https://w3id.org/leo/controlled-vocabulary/production-type/10>, <https://w3id.org/leo/controlled-vocabulary/production-type/11>,
+    <https://w3id.org/leo/controlled-vocabulary/production-type/12>, <https://w3id.org/leo/controlled-vocabulary/production-type/2>,
+    <https://w3id.org/leo/controlled-vocabulary/production-type/3>, <https://w3id.org/leo/controlled-vocabulary/production-type/4>,
+    <https://w3id.org/leo/controlled-vocabulary/production-type/5>, <https://w3id.org/leo/controlled-vocabulary/production-type/6>,
+    <https://w3id.org/leo/controlled-vocabulary/production-type/7>, <https://w3id.org/leo/controlled-vocabulary/production-type/8>,
+    <https://w3id.org/leo/controlled-vocabulary/production-type/9>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia>;
+  dcat:distribution <https://w3id.org/leo/data/distribution/production-type-JSON-LD>,
+    <https://w3id.org/leo/data/distribution/production-type-RDF-TURTLE>, <https://w3id.org/leo/data/distribution/production-type-RDF-XML>;
+  dcat:keyword "indirizzo produttivo"@it, "orientamento produttivo"@it, "production target"@en,
+    "production type"@en, "productive orientation"@en;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/1> a skos:Concept, animal:ProductionType;
+  rdfs:label "Latte"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "1";
+  skos:prefLabel "Latte"@it;
+  l0:identifier "1";
+  l0:name "Latte"@it;
+  animal:AIAPTCode "1" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/10> a skos:Concept, animal:ProductionType;
+  rdfs:label "Lana"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "10";
+  skos:prefLabel "Lana"@it;
+  l0:identifier "10";
+  l0:name "Lana"@it;
+  animal:AIAPTCode "10" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/11> a skos:Concept, animal:ProductionType;
+  rdfs:label "Lana e Carne"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "11";
+  skos:prefLabel "Lana e Carne"@it;
+  l0:identifier "11";
+  l0:name "Lana e Carne"@it;
+  animal:AIAPTCode "11" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/12> a skos:Concept, animal:ProductionType;
+  rdfs:label "Latte e Lana"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "12";
+  skos:prefLabel "Latte e Lana"@it;
+  l0:identifier "12";
+  l0:name "Latte e Lana"@it;
+  animal:AIAPTCode "12" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/2> a skos:Concept, animal:ProductionType;
+  rdfs:label "Carne"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "2";
+  skos:prefLabel "Carne"@it;
+  l0:identifier "2";
+  l0:name "Carne"@it;
+  animal:AIAPTCode "2" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/3> a skos:Concept, animal:ProductionType;
+  rdfs:label "Carne Leggero"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "3";
+  skos:prefLabel "Carne Leggero"@it;
+  l0:identifier "3";
+  l0:name "Carne Leggero"@it;
+  animal:AIAPTCode "3" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/4> a skos:Concept, animal:ProductionType;
+  rdfs:label "Carne Medio"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "4";
+  skos:prefLabel "Carne Medio"@it;
+  l0:identifier "4";
+  l0:name "Carne Medio"@it;
+  animal:AIAPTCode "4" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/5> a skos:Concept, animal:ProductionType;
+  rdfs:label "Carne Pesante"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "5";
+  skos:prefLabel "Carne Pesante"@it;
+  l0:identifier "5";
+  l0:name "Carne Pesante"@it;
+  animal:AIAPTCode "5" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/6> a skos:Concept, animal:ProductionType;
+  rdfs:label "Riproduzione"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "6";
+  skos:prefLabel "Riproduzione"@it;
+  l0:identifier "6";
+  l0:name "Riproduzione"@it;
+  animal:AIAPTCode "6" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/7> a skos:Concept, animal:ProductionType;
+  rdfs:label "Duplice Attitudine"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "7";
+  skos:prefLabel "Duplice Attitudine"@it;
+  l0:identifier "7";
+  l0:name "Duplice Attitudine"@it;
+  animal:AIAPTCode "7" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/8> a skos:Concept, animal:ProductionType;
+  rdfs:label "Uova"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "8";
+  skos:prefLabel "Uova"@it;
+  l0:identifier "8";
+  l0:name "Uova"@it;
+  animal:AIAPTCode "8" .
+
+<https://w3id.org/leo/controlled-vocabulary/production-type/9> a skos:Concept, animal:ProductionType;
+  rdfs:label "Produttivo"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/production-type>;
+  skos:notation "9";
+  skos:prefLabel "Produttivo"@it;
+  l0:identifier "9";
+  l0:name "Produttivo"@it;
+  animal:AIAPTCode "9" .
+
+<https://w3id.org/leo/data/distribution/production-type-JSON-LD> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione JSON-LD del vocabolario controllato sugli indirizzi/orientamenti produttivi"@it,
+    "This is the JSON-LD distribution of the controlled vocabulary on the production targets and productive orientations"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.jsonld> .
+
+<https://w3id.org/leo/data/distribution/production-type-RDF-TURTLE> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sugli indirizzi/orientamenti produttivi"@it,
+    "This is the RDF TURTLE distribution of the controlled vocabulary on the production targets and productive orientations"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.ttl> .
+
+<https://w3id.org/leo/data/distribution/production-type-RDF-XML> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF XML del vocabolario controllato sugli indirizzi/orientamenti produttivi"@it,
+    "This is the RDF XML distribution of the controlled vocabulary on the production targets and productive orientations"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.rdf> .
