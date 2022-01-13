@@ -460,7 +460,7 @@ xsd:dateTime rdf:type rdfs:Datatype .
                                                           rdfs:comment "Inverse property of \"has productive attitude\" that links the productive orientation to the breed"@en ,
                                                                        "Proprietà inversa di \"ha orientamento produttivo\" che lega l'orientamento produttivo alla razza"@it ;
                                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/animal> ;
-                                                          rdfs:label "is productive orientation of"@en ,
+                                                          rdfs:label "is productive attitude of"@en ,
                                                                      "è orientamento produttivo di"@it ;
                                                           owl:versionInfo "stabile"@it ,
                                                                           "stable"@en .
