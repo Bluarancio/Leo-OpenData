@@ -1,0 +1,173 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix animal: <https://w3id.org/leo/onto/animal/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status> a dcatapit:Dataset,
+    skos:ConceptScheme, adms:Asset, dcat:Dataset;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:description "Questo è il vocabolario controllato degli stati degli animali d'allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the states of farm animals used in the context of project LEO - Livestock Environment Open Data"@en;
+  dct:identifier "https://w3id.org/leo/controlled-vocabulary/farm-animal-status";
+  dct:issued "2022-02-24"^^xsd:date;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
+  dct:modified "2022-02-24"^^xsd:date;
+  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:title "Controlled Vocabulary on the states of farm animals in the context of the LEO project"@en,
+    "Vocabolario controllato degli stati degli animali d'allevamento nel contesto del progetto LEO"@it;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  rdfs:comment "Questo è il vocabolario controllato degli stati degli animali d'allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the states of farm animals used in the context of project LEO - Livestock Environment Open Data"@en;
+  rdfs:label "Controlled Vocabulary on the states of farm animals in the context of the LEO project"@en,
+    "Vocabolario controllato degli stati degli animali d'allevamento nel contesto del progetto LEO"@it;
+  owl:versionInfo "Versione 0.1"@it;
+  skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/A>,
+    <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/B>, <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/C>,
+    <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/E>, <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/F>,
+    <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/I>, <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/M>,
+    <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/P>, <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/S>,
+    <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/U>, <https://w3id.org/leo/controlled-vocabulary/farm-animal-status/V>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia>;
+  dcat:distribution <https://w3id.org/leo/data/distribution/farm-animal-status-JSON-LD>,
+    <https://w3id.org/leo/data/distribution/farm-animal-status-RDF-TURTLE>, <https://w3id.org/leo/data/distribution/farm-animal-status-RDF-XML>;
+  dcat:keyword "state of a farm animal"@en, "stato dell'animale"@it, "status of a farm animal"@en;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/A> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MACELLATO O MOVIMENTATO IN ATTESA DI PERFEZIONAMENTO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "A";
+  skos:prefLabel "MACELLATO O MOVIMENTATO IN ATTESA DI PERFEZIONAMENTO"@it;
+  l0:identifier "A";
+  l0:name "MACELLATO O MOVIMENTATO IN ATTESA DI PERFEZIONAMENTO"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/B> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "CANCELLATO PER PROVVEDIMENTO AMMINISTRATIVO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "B";
+  skos:prefLabel "CANCELLATO PER PROVVEDIMENTO AMMINISTRATIVO"@it;
+  l0:identifier "B";
+  l0:name "CANCELLATO PER PROVVEDIMENTO AMMINISTRATIVO"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/C> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MOVIMENTATO IN USCITA IN ATTESA DI PERFEZIONAMENTO DOPO CERTIFICAZIONE"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "C";
+  skos:prefLabel "MOVIMENTATO IN USCITA IN ATTESA DI PERFEZIONAMENTO DOPO CERTIFICAZIONE"@it;
+  l0:identifier "C";
+  l0:name "MOVIMENTATO IN USCITA IN ATTESA DI PERFEZIONAMENTO DOPO CERTIFICAZIONE"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/E> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MOVIMENTATO VERSO UN PAESE ESTERO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "E";
+  skos:prefLabel "MOVIMENTATO VERSO UN PAESE ESTERO"@it;
+  l0:identifier "E";
+  l0:name "MOVIMENTATO VERSO UN PAESE ESTERO"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/F> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MOVIMENTATO VERSO MACELLO IN ATTESA DI PERFEZIONAMENTO DOPO CERTIFICAZIONE"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "F";
+  skos:prefLabel "MOVIMENTATO VERSO MACELLO IN ATTESA DI PERFEZIONAMENTO DOPO CERTIFICAZIONE"@it;
+  l0:identifier "F";
+  l0:name "MOVIMENTATO VERSO MACELLO IN ATTESA DI PERFEZIONAMENTO DOPO CERTIFICAZIONE"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/I> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MOVIMENTATO VERSO MACELLO IN ATTESA DI PERFEZIONAMENTO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "I";
+  skos:prefLabel "MOVIMENTATO VERSO MACELLO IN ATTESA DI PERFEZIONAMENTO"@it;
+  l0:identifier "I";
+  l0:name "MOVIMENTATO VERSO MACELLO IN ATTESA DI PERFEZIONAMENTO"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/M> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MORTO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "M";
+  skos:prefLabel "MORTO"@it;
+  l0:identifier "M";
+  l0:name "MORTO"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/P> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MACELLATO O MOVIMENTATO PRIMA DEL 31/12/1999"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "P";
+  skos:prefLabel "MACELLATO O MOVIMENTATO PRIMA DEL 31/12/1999"@it;
+  l0:identifier "P";
+  l0:name "MACELLATO O MOVIMENTATO PRIMA DEL 31/12/1999"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/S> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "CAPO CON SOLO ANAGRAFICA"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "S";
+  skos:prefLabel "CAPO CON SOLO ANAGRAFICA"@it;
+  l0:identifier "S";
+  l0:name "CAPO CON SOLO ANAGRAFICA"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/U> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "MOVIMENTATO IN USCITA IN ATTESA DI PERFEZIONAMENTO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "U";
+  skos:prefLabel "MOVIMENTATO IN USCITA IN ATTESA DI PERFEZIONAMENTO"@it;
+  l0:identifier "U";
+  l0:name "MOVIMENTATO IN USCITA IN ATTESA DI PERFEZIONAMENTO"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/farm-animal-status/V> a skos:Concept,
+    animal:FarmAnimalStatus;
+  rdfs:label "VIVO"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/farm-animal-status>;
+  skos:notation "V";
+  skos:prefLabel "VIVO"@it;
+  l0:identifier "V";
+  l0:name "VIVO"@it .
+
+<https://w3id.org/leo/data/distribution/farm-animal-status-JSON-LD> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione JSON-LD del vocabolario controllato sugli stati degli animali d'allevamento"@it,
+    "This is the JSON-LD distribution of the controlled vocabulary on the states of farm animals"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/farm-animal-status>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/farm-animal-status/farm-animal-status.jsonld> .
+
+<https://w3id.org/leo/data/distribution/farm-animal-status-RDF-TURTLE> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sugli stati degli animali d'allevamento"@it,
+    "This is the RDF TURTLE distribution of the controlled vocabulary on the states of farm animals"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/farm-animal-status>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/farm-animal-status/farm-animal-status.ttl> .
+
+<https://w3id.org/leo/data/distribution/farm-animal-status-RDF-XML> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF XML del vocabolario controllato sugli stati degli animali d'allevamento"@it,
+    "This is the RDF XML distribution of the controlled vocabulary on the states of farm animals"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/farm-animal-status>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/farm-animal-status/farm-animal-status.rdf> .
