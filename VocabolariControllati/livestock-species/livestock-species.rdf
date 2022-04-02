@@ -34,7 +34,7 @@
     <rdf:type rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
     <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
     <cov:IPAcode>ISTAT</cov:IPAcode>
-    <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q214195"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q214195"/>
     <cov:taxCode>80111810588</cov:taxCode>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Italian_National_Institute_of_Statistics"/>
     <cov:legalName xml:lang="it">Istituto Nazionale di Statistica - ISTAT</cov:legalName>
