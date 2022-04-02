@@ -426,7 +426,7 @@
   }, {
     "@id" : "https://w3id.org/italia/data/public-organization/ISTAT"
   }, {
-    "@id" : "https://www.wikidata.org/entity/Q214195"
+    "@id" : "http://www.wikidata.org/entity/Q214195"
   } ],
   "https://w3id.org/italia/onto/COV/IPAcode" : [ {
     "@value" : "ISTAT"
