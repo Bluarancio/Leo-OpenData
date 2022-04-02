@@ -176,7 +176,7 @@
 <https://w3id.org/leo/data/public-organization/ISTAT> a cov:Organization, l0:Agent;
   rdfs:label "Istituto Nazionale di Statistica - ISTAT"@it;
   owl:sameAs <http://dbpedia.org/resource/Italian_National_Institute_of_Statistics>,
-    <https://w3id.org/italia/data/public-organization/ISTAT>, <https://www.wikidata.org/entity/Q214195>;
+    <https://w3id.org/italia/data/public-organization/ISTAT>, <http://www.wikidata.org/entity/Q214195>;
   cov:IPAcode "ISTAT";
   cov:hasCategory <https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/S13/110>;
   cov:hasLegalStatus <https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/2711>;
