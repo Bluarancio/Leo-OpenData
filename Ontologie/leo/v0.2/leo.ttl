@@ -23,7 +23,8 @@
                                               <https://w3id.org/leo/onto/co> ,
                                               <https://w3id.org/leo/onto/analysis> ,
                                               <https://w3id.org/leo/onto/indicator> ,
-                                              <https://w3id.org/leo/onto/weather> ;
+                                              <https://w3id.org/leo/onto/weather> ,
+                                              <https://w3id.org/leo/onto/livestockfarm-building-description> ;
                                   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                   dct:creator <https://w3id.org/leo/data/private-organization/00944701002> ;
                                   dct:description "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."@it ,
@@ -31,10 +32,11 @@
                                   dct:issued "2018-06-18"^^xsd:date ;
                                   dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                  dct:modified "2019-12-12"^^xsd:date ;
+                                  dct:modified "2022-04-21"^^xsd:date ;
                                   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002> ;
                                   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002> ;
                                   dct:subject <http://eurovoc.europa.eu/100254> ;
+                                  dct:identifier "onto-BA-7" ;
                                   dct:title "Access point Ontology to all the network of Ontologies for LEO project"@en ,
                                             "Punto di accesso unico alla rete di ontologie del progetto LEO"@it ;
                                   rdfs:comment "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."@it ,
@@ -42,8 +44,8 @@
                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/leo> ;
                                   rdfs:label "Access point Ontology to all the network of Ontologies for LEO project"@en ,
                                             "Punto di accesso unico alla rete di ontologie del progetto LEO"@it ;
-                                  owl:versionInfo "Version 0.2 - 2019 - Creation of the second version of the ontology. New elements are specified in their respective versionInfo annotation properties"@en ,
-                                                  "Versione 0.2 - 2019 - Creazione della seconda versione dell'ontologia. I nuovi elementi sono specificati nelle rispettive proprietà di annotazione versionInfo"@it ;
+                                  owl:versionInfo "Version 0.2 - 2022 - Added livestock farm building description ontology"@en ,
+                                                  "Versione 0.2 - 2022 - Aggiunta un'altra ontologia: descrizione dell'edificio (insediamento) dell'azienda d'allevamento"@it ;
                                   dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia> ;
                                   dcat:keyword "Animali d'allevamento"@it ,
                                                "Indicatori"@it ,
