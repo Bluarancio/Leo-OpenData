@@ -1,0 +1,1348 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus"
+    }, {
+      "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/TimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/date"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/MU/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/MU/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/TI/BioSecurityManagementType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/TI/TimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/TI/atTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/TI/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/leo/data/contact-point/onto-aia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Organization", "http://www.w3.org/2006/vcard/ns#Kind", "http://www.w3.org/2006/vcard/ns#Organization" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infomation systems"
+  }, {
+    "@language" : "it",
+    "@value" : "Sistemi informativi"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#fn" : [ {
+    "@value" : "Sistemi informativi"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#hasEmail" : [ {
+    "@id" : "mailto:affarigenerali@pec.aia.it"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/lfd-JSON-LD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in JSON-LD of the Livestock Farm Description ontology"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione JSON-LD ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "JSON-LD distribution of the Livestock Farm Description Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in JSON-LD of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione JSON-LD dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "JSON-LD distribution of the Livestock Farm Description Ontology"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/livestockfarm-description/latest"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/livestockfarm-description/latest/livestockfarm-description.jsonld"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/lfd-RDF-TURTLE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/Turtle of the Livestock Farm Description ontology"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/Turtle dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/Turtle distribution of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/Turtle of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/Turtle dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/Turtle distribution of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/livestockfarm-description/latest"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/livestockfarm-description/latest/livestockfarm-description.ttl"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/lfd-RDF-XML",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sulla descrizione dell'azienda d'allevamentoo"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/XML of the Livestock Farm Description ontology"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/XML dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/XML distribution of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/XML of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/XML dell'ontologia sulla descrizione dell'azienda d'allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/XML distribution of the Livestock Farm Description ontology"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/livestockfarm-description/latest"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/livestockfarm-description/latest/livestockfarm-description.rdf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/private-organization/00944701002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Agent", "http://xmlns.com/foaf/0.1/Agent" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "00944701002"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "it",
+    "@value" : "Associazione Italiana Allevatori"
+  }, {
+    "@language" : "en",
+    "@value" : "Italian Breeders' Association"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/private-organization/06695411006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Agent", "http://xmlns.com/foaf/0.1/Agent" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "06695411006"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Bluarancio"
+  }, {
+    "@language" : "it",
+    "@value" : "Bluarancio"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/project/LEO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/Project" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il progetto LEO dove viene usata l'ontologia"
+  }, {
+    "@language" : "en",
+    "@value" : "LEO project where the ontology is used"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LEO - Livestok Environment Open Data"
+  }, {
+    "@language" : "it",
+    "@value" : "LEO - Livestok Environment Open Data"
+  } ],
+  "https://w3id.org/italia/onto/l0/name" : [ {
+    "@language" : "it",
+    "@value" : "LEO - Livestok Environment Open Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/co/LivestockFarmSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://www.dropbox.com/s/t5p5in8boxp0ib4/LivestockFarmDescription.png?raw=1"
+  } ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia che consente di descrivere un'azienda d'allevamento sotto diverse dimensioni: management, sanità, nutrizione, ambiente. In particolare, l'ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente al loro allevamento. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto 'Configuratore allevamento'"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology that allows one to describe an Italian livestock farm under different perspectives: management, nutrition, health, environment. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the farm. In the context of the livestock domain, these data is referred to as the so-called 'livestock farm site configurator'."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "onto-BA-9"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@language" : "it",
+    "@value" : "2022-04-22"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@language" : "it",
+    "@value" : "2022-04-22"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/subject" : [ {
+    "@id" : "http://eurovoc.europa.eu/100254"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Livestock Farm Description Ontologia"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia sulla Descrizione dell'Azienda d'Allevamento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia che consente di descrivere un'azienda d'allevamento sotto diverse dimensioni: management, sanità, nutrizione, ambiente. In particolare, l'ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente al loro allevamento. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto 'Configuratore allevamento'"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology that allows one to describe an Italian livestock farm under different perspectives: management, nutrition, health, environment. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the farm. In the context of the livestock domain, these data is referred to as the so-called 'livestock farm site configurator'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Livestock Farm Description Ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia sulla Descrizione dell'Azienda d'Allevamento"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "Version 0.1 - creation of the frst draft of the ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Versione 0.1 - creazione della prima bozza dell'ontologia"
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "it",
+    "@value" : "Ambiente"
+  }, {
+    "@language" : "it",
+    "@value" : "Configuratore Allevamento"
+  }, {
+    "@language" : "it",
+    "@value" : "Management"
+  }, {
+    "@language" : "it",
+    "@value" : "Nutrizione"
+  }, {
+    "@language" : "it",
+    "@value" : "Sanità"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HealthStatus"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
+    "@id" : "https://w3id.org/leo/data/distribution/lfd-JSON-LD"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/lfd-RDF-TURTLE"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/lfd-RDF-XML"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
+    "@language" : "it",
+    "@value" : "https://w3id.org/leo/onto/livestockfarm-description"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
+    "@value" : "lfd"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
+    "@id" : "https://w3id.org/leo/data/project/LEO"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/status" : [ {
+    "@value" : "draft"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/target" : [ {
+    "@language" : "it",
+    "@value" : "Aziende"
+  }, {
+    "@language" : "it",
+    "@value" : "Comunità open data"
+  }, {
+    "@language" : "it",
+    "@value" : "Professionisti del settore zootecnico"
+  }, {
+    "@language" : "it",
+    "@value" : "Pubbliche Amministrazioni"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/type" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Biogas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalSubstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationProgrammeType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Employee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/EducationAudience" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ExternalStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FarmLandSurfaceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FreeUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/OwnershipType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HealthProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HealthStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/InternalStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La descrizione di come l'allevamento in generale è configurato secondo una serie di dimensioni: ambiente fisico, gestione aziendale, protocolli sanitari e di nutrizione. Per allevamento si intende tutta la superficie dell’azienda agricola(d'allevamento)."
+  }, {
+    "@language" : "en",
+    "@value" : "The description of how the entire livestock farm site is configured according to a variety of dimensions; namely, physical environment, management, health and nutrition protocols"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Configurazione Azienda d'Allevamento"
+  }, {
+    "@language" : "en",
+    "@value" : "Livestock Farm Site Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/MicroBiologicalAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Nobody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/EducationAudience" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/EducationAudience" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Ownership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/OwnershipType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/OwnershipType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Photovoltaic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Produced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProductionSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Purchased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Rental",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/OwnershipType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SiteFenceCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WasteManagementContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Collection"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterChemicalParameterObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterIndicatorParameterObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterMicrobiologicalParameterObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterTreatmentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Wind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/accumulatorAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/alternativeSoilPreparation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/complementaryWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/consistsOfWO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/dryerAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/entryInSiteRegulated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/extraordinarySowing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/footwearMandatory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasAdherenceToProductionSpec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProductionSpecification"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasAgronomicSourceOfEmissionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasAnnualConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasBiosecurityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/BioSecurityManagementType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasChemicalProductType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasChemicalSubstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterChemicalParameterObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalSubstance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasEducationAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationAudience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasEducationProgramme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasEducationProgrammeType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EducationProgrammeType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasEnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasFarmLandStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasFarmLandSurfaceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FarmLandSurfaceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasFeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasGroupMgmt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasGroupPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasGroupType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasHealthProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HealthStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HealthProtocol"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasHygieneTreatmentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasLivestockFarmSiteConfig",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarmSite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/hasDescription"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasMicroBiologicalAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterMicrobiologicalParameterObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/MicroBiologicalAgent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasOwnershipType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/OwnershipType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasProducedREDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasProducedRenewableEnergyTyp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasRenewableCoveragePercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasRenewableEnergyMgmt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasRenewableEnergyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasScheduledHygieneTreatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasSiteFenceCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SiteFenceCharacteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasSiteFenceDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasSurfaceUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasSurfaceUsageType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasTreatmentExecutor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasWasteMgmtContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WasteManagementContract"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasWaterAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasWaterObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservableProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/hasWaterTreatmentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterTreatmentType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/includesEnvironmentStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/includesHealthStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/HealthStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/includesManagementStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/includesNutritionStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/maintenanceContractAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/numOfMonthsPerYearOfGrazingUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/numberOfTreatmentPerYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/pesticideAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ploughingSoilPreparation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/reductionPracticePerfomed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/refinemenetWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/siteFenceAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/sodSeedingSoilPreparation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/Working"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/transhumanceWithoutStructures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/treatmentRegistryAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/usedInPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/vehicleDisinfectionTankAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/livestockfarm-description/volatilePresence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+} ]

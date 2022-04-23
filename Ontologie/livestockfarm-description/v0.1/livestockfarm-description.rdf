@@ -1,0 +1,1410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/livestockfarm-description/"
+     xml:base="https://w3id.org/leo/onto/livestockfarm-description/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/livestockfarm-description">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+        <dc:description rdf:resource="https://www.dropbox.com/s/t5p5in8boxp0ib4/LivestockFarmDescription.png?raw=1"/>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia che consente di descrivere un&apos;azienda d&apos;allevamento sotto diverse dimensioni: management, sanità, nutrizione, ambiente. In particolare, l&apos;ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente al loro allevamento. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto &apos;Configuratore allevamento&apos;</terms:description>
+        <terms:description xml:lang="en">This is the ontology that allows one to describe an Italian livestock farm under different perspectives: management, nutrition, health, environment. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the farm. In the context of the livestock domain, these data is referred to as the so-called &apos;livestock farm site configurator&apos;.</terms:description>
+        <terms:identifier>onto-BA-9</terms:identifier>
+        <terms:issued xml:lang="it">2022-04-22</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:modified xml:lang="it">2022-04-22</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
+        <terms:title xml:lang="en">Livestock Farm Description Ontologia</terms:title>
+        <terms:title xml:lang="it">Ontologia sulla Descrizione dell&apos;Azienda d&apos;Allevamento</terms:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia che consente di descrivere un&apos;azienda d&apos;allevamento sotto diverse dimensioni: management, sanità, nutrizione, ambiente. In particolare, l&apos;ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente al loro allevamento. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto &apos;Configuratore allevamento&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology that allows one to describe an Italian livestock farm under different perspectives: management, nutrition, health, environment. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the farm. In the context of the livestock domain, these data is referred to as the so-called &apos;livestock farm site configurator&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-description"/>
+        <rdfs:label xml:lang="en">Livestock Farm Description Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia sulla Descrizione dell&apos;Azienda d&apos;Allevamento</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.1 - creation of the frst draft of the ontology</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.1 - creazione della prima bozza dell&apos;ontologia</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">Ambiente</dcat:keyword>
+        <dcat:keyword xml:lang="it">Configuratore Allevamento</dcat:keyword>
+        <dcat:keyword xml:lang="it">Management</dcat:keyword>
+        <dcat:keyword xml:lang="it">Nutrizione</dcat:keyword>
+        <dcat:keyword xml:lang="it">Sanità</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HealthStatus"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/lfd-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/lfd-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/lfd-RDF-XML"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <ADMS:officialURI xml:lang="it">https://w3id.org/leo/onto/livestockfarm-description</ADMS:officialURI>
+        <ADMS:prefix>lfd</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <ADMS:status>draft</ADMS:status>
+        <ADMS:target xml:lang="it">Aziende</ADMS:target>
+        <ADMS:target xml:lang="it">Comunità open data</ADMS:target>
+        <ADMS:target xml:lang="it">Professionisti del settore zootecnico</ADMS:target>
+        <ADMS:target xml:lang="it">Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/hasValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/MU/hasValue"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/consistsOfWO -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/consistsOfWO">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasAdherenceToProductionSpec -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasAdherenceToProductionSpec">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProductionSpecification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasAgronomicSourceOfEmissionType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasAgronomicSourceOfEmissionType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasAnnualConsumption -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasAnnualConsumption">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasBiosecurityType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasBiosecurityType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/TI/BioSecurityManagementType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasChemicalProductType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasChemicalProductType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasChemicalSubstance -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasChemicalSubstance">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterChemicalParameterObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ChemicalSubstance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasEducationAudience -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasEducationAudience">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationAudience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasEducationProgramme -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasEducationProgramme">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasEducationProgrammeType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasEducationProgrammeType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationProgrammeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasEnergyConsumption -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasEnergyConsumption">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasFarmLandStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasFarmLandStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasFarmLandSurfaceType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasFarmLandSurfaceType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/FarmLandSurfaceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasFeatureOfInterest">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/FeatureOfInterest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasGroupMgmt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasGroupMgmt">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasGroupPhase -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasGroupPhase">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupManagement"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasGroupType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasGroupType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupManagement"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasHealthProtocol -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasHealthProtocol">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HealthStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HealthProtocol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasHygieneTreatmentType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasHygieneTreatmentType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasLivestockFarmSiteConfig -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasLivestockFarmSiteConfig">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/hasDescription"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/co/LivestockFarmSite"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasMicroBiologicalAgent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasMicroBiologicalAgent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterMicrobiologicalParameterObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/MicroBiologicalAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasOwnershipType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasOwnershipType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/OwnershipType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasProducedREDescription -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasProducedREDescription">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasProducedRenewableEnergyTyp -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasProducedRenewableEnergyTyp">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasRenewableCoveragePercentage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasRenewableCoveragePercentage">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasRenewableEnergyMgmt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasRenewableEnergyMgmt">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasRenewableEnergyType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasRenewableEnergyType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasScheduledHygieneTreatment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasScheduledHygieneTreatment">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasSiteFenceCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasSiteFenceCharacteristic">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/SiteFenceCharacteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasSiteFenceDescription -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasSiteFenceDescription">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasSurfaceUsage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasSurfaceUsage">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasSurfaceUsageType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasSurfaceUsageType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasTreatmentExecutor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasTreatmentExecutor">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasWasteMgmtContract -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasWasteMgmtContract">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WasteManagementContract"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasWaterAnalysis -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasWaterAnalysis">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasWaterObservableProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasWaterObservableProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/hasWaterTreatmentType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/hasWaterTreatmentType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterTreatmentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/includesEnvironmentStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/includesEnvironmentStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/includesHealthStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/includesHealthStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HealthStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/includesManagementStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/includesManagementStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/includesNutritionStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/includesNutritionStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/isAssociatedWith">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/usedInPhase -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/usedInPhase">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupType"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/date -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/date"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/accumulatorAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/accumulatorAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/alternativeSoilPreparation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/alternativeSoilPreparation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/Working"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/complementaryWork -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/complementaryWork">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/Working"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/dryerAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/dryerAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/entryInSiteRegulated -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/entryInSiteRegulated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/extraordinarySowing -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/extraordinarySowing">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/Working"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/footwearMandatory -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/footwearMandatory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/maintenanceContractAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/maintenanceContractAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/numOfMonthsPerYearOfGrazingUsage -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/numOfMonthsPerYearOfGrazingUsage">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/numberOfTreatmentPerYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/numberOfTreatmentPerYear">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/pesticideAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/pesticideAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ploughingSoilPreparation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ploughingSoilPreparation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/Working"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/reductionPracticePerfomed -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/reductionPracticePerfomed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/refinemenetWork -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/refinemenetWork">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/Working"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/siteFenceAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/siteFenceAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/sodSeedingSoilPreparation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/sodSeedingSoilPreparation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/Working"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/transhumanceWithoutStructures -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/transhumanceWithoutStructures">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/treatmentRegistryAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/treatmentRegistryAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/vehicleDisinfectionTankAvailable -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/vehicleDisinfectionTankAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/volatilePresence -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-description/volatilePresence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/Value -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/MU/Value"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/BioSecurityManagementType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/BioSecurityManagementType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/co/LivestockFarmSite -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarmSite"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ChemicalProductUsage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ChemicalSubstance -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ChemicalSubstance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/EducationAudience -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/EducationAudience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/EducationProgramme">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/EducationProgrammeType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/EducationProgrammeType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/EnergyConsumption">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/EnvironmentStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/FarmLandOwnershipStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/FarmLandSurfaceType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/FarmLandSurfaceType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/FeatureOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/FeatureOfInterest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/GroupManagement -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/GroupManagement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/GroupManagementPhase">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/GroupType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/GroupType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/HealthProtocol -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/HealthProtocol">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/HealthStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/HealthStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/LivestockFarmSiteConfiguration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La descrizione di come l&apos;allevamento in generale è configurato secondo una serie di dimensioni: ambiente fisico, gestione aziendale, protocolli sanitari e di nutrizione. Per allevamento si intende tutta la superficie dell’azienda agricola(d&apos;allevamento).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The description of how the entire livestock farm site is configured according to a variety of dimensions; namely, physical environment, management, health and nutrition protocols</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-description"/>
+        <rdfs:label xml:lang="it">Configurazione Azienda d&apos;Allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">Livestock Farm Site Configuration</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ManagementStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/MicroBiologicalAgent -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/MicroBiologicalAgent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/NutritionStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/OwnershipType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/OwnershipType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ProductionSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ProductionSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyManagement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ScheduledHygieneTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/SiteFenceCharacteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/SiteFenceCharacteristic">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/SiteFenceDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageForAnimalFeeding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/SurfaceUsageType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WasteManagementContract -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WasteManagementContract">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterChemicalParameterObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterChemicalParameterObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterIndicatorParameterObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterIndicatorParameterObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterMicrobiologicalParameterObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterMicrobiologicalParameterObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterObservableProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterObservableProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterObservablePropertyObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/WaterTreatmentType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/WaterTreatmentType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Working -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Working">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/AgronomicSourceOfEmissionType"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/contact-point/onto-aia">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdfs:label xml:lang="en">Infomation systems</rdfs:label>
+        <rdfs:label xml:lang="it">Sistemi informativi</rdfs:label>
+        <ns:fn>Sistemi informativi</ns:fn>
+        <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/lfd-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/lfd-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of the Livestock Farm Description ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of the Livestock Farm Description Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of the Livestock Farm Description ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of the Livestock Farm Description Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-description/latest/livestockfarm-description.jsonld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/lfd-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/lfd-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/Turtle of the Livestock Farm Description ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of the Livestock Farm Description ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of the Livestock Farm Description ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of the Livestock Farm Description ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-description/latest/livestockfarm-description.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/lfd-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/lfd-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamentoo</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of the Livestock Farm Description ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of the Livestock Farm Description ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of the Livestock Farm Description ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML dell&apos;ontologia sulla descrizione dell&apos;azienda d&apos;allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of the Livestock Farm Description ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-description/latest/livestockfarm-description.rdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>00944701002</terms:identifier>
+        <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+        <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>06695411006</terms:identifier>
+        <foaf:name xml:lang="en">Bluarancio</foaf:name>
+        <foaf:name xml:lang="it">Bluarancio</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/project/LEO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
+        <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
+        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Biogas -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Biogas">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Employee -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Employee">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationAudience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/ExternalStaff -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/ExternalStaff">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/FreeUse -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/FreeUse">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/OwnershipType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/InternalStaff -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/InternalStaff">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/HygieneTreatmentExecutor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Nobody -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Nobody">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationAudience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Owner -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Owner">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/EducationAudience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Ownership -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Ownership">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/OwnershipType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Photovoltaic -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Photovoltaic">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Produced -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Produced">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Purchased -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Purchased">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/RenewableEnergyType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Rental -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Rental">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/OwnershipType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-description/Wind -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-description/Wind">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/livestockfarm-description/ProducedRenewableEnergyType"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
