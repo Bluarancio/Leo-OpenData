@@ -1,0 +1,319 @@
+{
+  "@graph" : [ {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-family",
+    "@type" : [ "dcatapit:Dataset", "dcat:Dataset", "skos:ConceptScheme", "adms:Asset" ],
+    "accrualPeriodicity" : "http://publications.europa.eu/resource/authority/frequency/IRREG",
+    "conformsTo" : "https://w3id.org/italia/data/standard/SKOS",
+    "creator" : "https://w3id.org/leo/data/private-organization/06695411006",
+    "description" : [ {
+      "@language" : "it",
+      "@value" : "Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
+    }, {
+      "@language" : "en",
+      "@value" : "This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data"
+    } ],
+    "dct:identifier" : "https://w3id.org/leo/controlled-vocabulary/livestock-family",
+    "issued" : "2022-04-22",
+    "language" : [ "http://publications.europa.eu/resource/authority/language/ENG", "http://publications.europa.eu/resource/authority/language/ITA" ],
+    "modified" : "2022-04-22",
+    "publisher" : "https://w3id.org/leo/data/private-organization/06695411006",
+    "rightsHolder" : "https://w3id.org/leo/data/private-organization/00944701002",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Controlled Vocabulary on Livestock Families"
+    }, {
+      "@language" : "it",
+      "@value" : "Vocabolario controllato delle famiglie zootecniche"
+    } ],
+    "type" : "http://purl.org/adms/assettype/CodeList",
+    "numberOfLevels" : "1",
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data"
+    }, {
+      "@language" : "it",
+      "@value" : "Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
+    } ],
+    "label" : [ {
+      "@language" : "it",
+      "@value" : "Vocabolario controllato delle famiglie zootecniche"
+    }, {
+      "@language" : "en",
+      "@value" : "Controlled Vocabulary on Livestock Families"
+    } ],
+    "versionInfo" : {
+      "@language" : "it",
+      "@value" : "Versione 0.1 - Creation of the vocabulary"
+    },
+    "hasTopConcept" : [ "https://w3id.org/leo/controlled-vocabulary/livestock-family/4", "https://w3id.org/leo/controlled-vocabulary/livestock-family/3", "https://w3id.org/leo/controlled-vocabulary/livestock-family/2", "https://w3id.org/leo/controlled-vocabulary/livestock-family/1" ],
+    "representationTechnique" : "http://purl.org/adms/representationtechnique/SKOS",
+    "contactPoint" : "https://w3id.org/leo/data/contact-point/onto-aia",
+    "distribution" : [ "https://w3id.org/leo/data/distribution/families-JSON-LD", "https://w3id.org/leo/data/distribution/families-RDF-TURTLE", "https://w3id.org/leo/data/distribution/families-RDF-XML" ],
+    "keyword" : [ {
+      "@language" : "en",
+      "@value" : "livestock families"
+    }, {
+      "@language" : "it",
+      "@value" : "famiglie zootecniche"
+    } ],
+    "theme" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-family/1",
+    "@type" : [ "skos:Concept", "animal:LivestockFamily" ],
+    "sameAs" : [ "http://aims.fao.org/aos/agrovoc/c_1038", "http://www.wikidata.org/entity/Q25497" ],
+    "altLable" : {
+      "@language" : "it",
+      "@value" : "Bovidi"
+    },
+    "exactMatch" : [ "http://www.wikidata.org/entity/Q25497", "http://aims.fao.org/aos/agrovoc/c_1038" ],
+    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/livestock-family",
+    "notation" : "1",
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "Bovidae"
+    }, {
+      "@language" : "it",
+      "@value" : "Bovide"
+    } ],
+    "identifier" : "1",
+    "name" : [ {
+      "@language" : "it",
+      "@value" : "Bovide"
+    }, {
+      "@language" : "en",
+      "@value" : "Bovidae"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-family/2",
+    "@type" : [ "skos:Concept", "animal:LivestockFamily" ],
+    "sameAs" : [ "http://aims.fao.org/aos/agrovoc/c_2628", "http://www.wikidata.org/entity/Q165115" ],
+    "altLabel" : {
+      "@language" : "it",
+      "@value" : "Equidi"
+    },
+    "exactMatch" : [ "http://aims.fao.org/aos/agrovoc/c_2628", "http://www.wikidata.org/entity/Q165115" ],
+    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/livestock-family",
+    "notation" : "2",
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "Equidae"
+    }, {
+      "@language" : "it",
+      "@value" : "Equide"
+    } ],
+    "identifier" : "2",
+    "name" : [ {
+      "@language" : "it",
+      "@value" : "Equide"
+    }, {
+      "@language" : "en",
+      "@value" : "Equidae"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-family/3",
+    "@type" : [ "skos:Concept", "animal:LivestockFamily" ],
+    "sameAs" : [ "http://www.wikidata.org/entity/Q25900", "http://aims.fao.org/aos/agrovoc/c_ec3f0982" ],
+    "altLabel" : {
+      "@language" : "it",
+      "@value" : "Leporidi"
+    },
+    "exactMatch" : [ "http://www.wikidata.org/entity/Q25900", "http://aims.fao.org/aos/agrovoc/c_ec3f0982" ],
+    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/livestock-family",
+    "notation" : "3",
+    "prefLabel" : [ {
+      "@language" : "it",
+      "@value" : "Leporide"
+    }, {
+      "@language" : "en",
+      "@value" : "Leporidae"
+    } ],
+    "identifier" : "3",
+    "name" : [ {
+      "@language" : "it",
+      "@value" : "Leporide"
+    }, {
+      "@language" : "en",
+      "@value" : "Leporidae"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-family/4",
+    "@type" : [ "skos:Concept", "animal:LivestockFamily" ],
+    "sameAs" : [ "http://www.wikidata.org/entity/Q166898", "http://aims.fao.org/aos/agrovoc/c_31903" ],
+    "altLabel" : {
+      "@language" : "it",
+      "@value" : "Suidi"
+    },
+    "exactMatch" : [ "http://www.wikidata.org/entity/Q166898", "http://aims.fao.org/aos/agrovoc/c_31903" ],
+    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/livestock-family",
+    "notation" : "4",
+    "prefLabel" : [ {
+      "@language" : "it",
+      "@value" : "Suide"
+    }, {
+      "@language" : "en",
+      "@value" : "Suidae"
+    } ],
+    "identifier" : "4",
+    "name" : [ {
+      "@language" : "it",
+      "@value" : "Suide"
+    }, {
+      "@language" : "en",
+      "@value" : "Suidae"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/families-JSON-LD",
+    "@type" : [ "dcat:Distribution", "dcatapit:Distribution" ],
+    "format" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD",
+    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "This is the JSON-LD distribution of the controlled vocabulary on the livestock families"
+    }, {
+      "@language" : "it",
+      "@value" : "Questa è la distribuzione JSON-LD del vocabolario controllato sulle famiglie zootecniche"
+    } ],
+    "accessURL" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family",
+    "downloadURL" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.jsonld"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/families-RDF-TURTLE",
+    "@type" : [ "dcat:Distribution", "dcatapit:Distribution" ],
+    "format" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE",
+    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "This is the RDF TURTLE distribution of the controlled vocabulary on the livestock families"
+    }, {
+      "@language" : "it",
+      "@value" : "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle famiglie zootecniche"
+    } ],
+    "accessURL" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family",
+    "downloadURL" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.ttl"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/families-RDF-XML",
+    "@type" : [ "dcat:Distribution", "dcatapit:Distribution" ],
+    "format" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML",
+    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "This is the RDF XML distribution of the controlled vocabulary on the livestock families"
+    }, {
+      "@language" : "it",
+      "@value" : "Questa è la distribuzione RDF XML del vocabolario controllato sulle famiglie zootecniche"
+    } ],
+    "accessURL" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family",
+    "downloadURL" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.rdf"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "exactMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type" : "@id"
+    },
+    "name" : "https://w3id.org/italia/onto/l0/name",
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "@id"
+    },
+    "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "notation" : "http://www.w3.org/2004/02/skos/core#notation",
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "identifier" : "https://w3id.org/italia/onto/l0/identifier",
+    "downloadURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL",
+      "@type" : "@id"
+    },
+    "accessURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessURL",
+      "@type" : "@id"
+    },
+    "title" : "http://purl.org/dc/terms/title",
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format",
+      "@type" : "@id"
+    },
+    "altLable" : "http://www.w3.org/2004/02/skos/core#altLable",
+    "rightsHolder" : {
+      "@id" : "http://purl.org/dc/terms/rightsHolder",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "representationTechnique" : {
+      "@id" : "http://www.w3.org/ns/adms#representationTechnique",
+      "@type" : "@id"
+    },
+    "description" : "http://purl.org/dc/terms/description",
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution",
+      "@type" : "@id"
+    },
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "numberOfLevels" : "http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "type" : {
+      "@id" : "http://purl.org/dc/terms/type",
+      "@type" : "@id"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language",
+      "@type" : "@id"
+    },
+    "keyword" : "http://www.w3.org/ns/dcat#keyword",
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "accrualPeriodicity" : {
+      "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "contactPoint" : {
+      "@id" : "http://www.w3.org/ns/dcat#contactPoint",
+      "@type" : "@id"
+    },
+    "adms" : "http://www.w3.org/ns/adms#",
+    "l0" : "https://w3id.org/italia/onto/l0/",
+    "dct" : "http://purl.org/dc/terms/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "dcatapit" : "http://dati.gov.it/onto/dcatapit#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "animal" : "https://w3id.org/leo/onto/animal/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#"
+  }
+}

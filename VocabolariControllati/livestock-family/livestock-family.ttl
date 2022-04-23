@@ -1,0 +1,113 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix animal: <https://w3id.org/leo/onto/animal/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/leo/controlled-vocabulary/livestock-family> a dcatapit:Dataset,
+    skos:ConceptScheme, adms:Asset, dcat:Dataset;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dct:creator <https://w3id.org/leo/data/private-organization/06695411006>;
+  dct:description "Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data"@en;
+  dct:identifier "https://w3id.org/leo/controlled-vocabulary/livestock-family";
+  dct:issued "2022-04-22"^^xsd:date;
+  xkos:numberOfLevels "1";
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG>;
+  dct:modified "2022-04-22"^^xsd:date;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006>;
+  dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:title "Controlled Vocabulary on Livestock Families"@en, "Vocabolario controllato delle famiglie zootecniche"@it;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  rdfs:comment "Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"@it,
+    "This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data"@en;
+  rdfs:label "Controlled Vocabulary on Livestock Families"@en, "Vocabolario controllato delle famiglie zootecniche"@it;
+  owl:versionInfo "Versione 0.1 - Creation of the vocabulary"@it;
+  skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/livestock-family/1>,
+    <https://w3id.org/leo/controlled-vocabulary/livestock-family/2>, <https://w3id.org/leo/controlled-vocabulary/livestock-family/3>,
+    <https://w3id.org/leo/controlled-vocabulary/livestock-family/4> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia>;
+  dcat:distribution <https://w3id.org/leo/data/distribution/families-JSON-LD>, <https://w3id.org/leo/data/distribution/families-RDF-TURTLE>,
+    <https://w3id.org/leo/data/distribution/families-RDF-XML>;
+  dcat:keyword "livestock families"@en, "famiglie zootecniche"@it;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> .
+
+<https://w3id.org/leo/controlled-vocabulary/livestock-family/1> a skos:Concept,
+    animal:LivestockFamily;
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_1038> , <http://www.wikidata.org/entity/Q25497>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_1038> , <http://www.wikidata.org/entity/Q25497> ;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/livestock-family>;
+  skos:notation "1";
+  skos:prefLabel "Bovide"@it , "Bovidae"@en;
+  skos:altLable "Bovidi"@it ;
+  l0:name "Bovide"@it , "Bovidae"@en ;
+  l0:identifier "1" .
+
+<https://w3id.org/leo/controlled-vocabulary/livestock-family/2> a skos:Concept,
+    animal:LivestockFamily;
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_2628> , <http://www.wikidata.org/entity/Q165115>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_2628>, <http://www.wikidata.org/entity/Q165115> ;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/livestock-family>;
+  skos:notation "2";
+  skos:prefLabel "Equide"@it, "Equidae"@en ;
+  skos:altLabel "Equidi"@it ;
+  l0:name "Equide"@it, "Equidae"@en ;
+  l0:identifier "2" .
+
+<https://w3id.org/leo/controlled-vocabulary/livestock-family/3> a skos:Concept,
+    animal:LivestockFamily;
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_ec3f0982> , <http://www.wikidata.org/entity/Q25900>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_ec3f0982>, <http://www.wikidata.org/entity/Q25900> ;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/livestock-family>;
+  skos:notation "3";
+  skos:prefLabel "Leporide"@it, "Leporidae"@en ;
+  skos:altLabel "Leporidi"@it ;
+  l0:name "Leporide"@it, "Leporidae"@en ;
+  l0:identifier "3" .
+
+<https://w3id.org/leo/controlled-vocabulary/livestock-family/4> a skos:Concept,
+    animal:LivestockFamily;
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_31903> , <http://www.wikidata.org/entity/Q166898> ;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_31903>, <http://www.wikidata.org/entity/Q166898> ;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/livestock-family>;
+  skos:notation "4";
+  skos:prefLabel "Suide"@it, "Suidae"@en ;
+  skos:altLabel "Suidi"@it ;
+  l0:name "Suide"@it, "Suidae"@en ;
+  l0:identifier "4" .
+
+<https://w3id.org/leo/data/distribution/families-JSON-LD> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione JSON-LD del vocabolario controllato sulle famiglie zootecniche"@it,
+    "This is the JSON-LD distribution of the controlled vocabulary on the livestock families"@en;
+  dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family>;
+  dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.jsonld> .
+
+<https://w3id.org/leo/data/distribution/families-RDF-TURTLE> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle famiglie zootecniche"@it,
+    "This is the RDF TURTLE distribution of the controlled vocabulary on the livestock families"@en;
+    dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family>;
+    dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.ttl> .
+
+<https://w3id.org/leo/data/distribution/families-RDF-XML> a dcatapit:Distribution,
+    dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF XML del vocabolario controllato sulle famiglie zootecniche"@it,
+    "This is the RDF XML distribution of the controlled vocabulary on the livestock families"@en;
+    dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family>;
+    dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.rdf> .
