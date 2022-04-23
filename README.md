@@ -27,3 +27,4 @@ Oltre alle ontologie, il presente repository include inoltre una serie di vocabo
 7. [**Motivi di uscita**](https://w3id.org/leo/controlled-vocabulary/exit-from-farm-reason): è il vocabolario controllato utilizzato per indicare i motivi di uscita di un animale d'allevamento da un'azienda;
 8. [**Indirizzi/Orientamenti produttivi**](https://w3id.org/leo/controlled-vocabulary/production-type): è il vocabolario controllato sugli orientamenti e indirizzi produttivi di un animale d'allevamento (e.g., carne, latte, lana, etc.)
 9. [**Stato del capo**](https://w3id.org/leo/controlled-vocabulary/farm-animal-status): è il vocabolario controllato dello stato dell'animale d'allevamento.
+10. [**Famiglie Zootecniche**](https://w3id.org/leo/controlled-vocabulary/livestock-family): è il vocabolario controllato delle famiglie zootecniche (equidi, bovidi, ecc.).
