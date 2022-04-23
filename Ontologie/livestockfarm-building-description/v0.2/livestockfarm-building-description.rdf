@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/livestockfarm-building-description/"
+     xml:base="https://w3id.org/leo/onto/livestockfarm-building-description/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+        <dc:description rdf:resource="https://www.dropbox.com/s/g2vlla0g3n65m2k/LivestockFarmBuildingDescription.png?raw=1"/>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia che consente di descrivere una serie di caratteristiche degli edifici (o insediamenti) delle aziende di allevamento italiane. In particolare, l&apos;ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente alle caratteristiche fisiche degli insediamenti. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto &apos;Configuratore insediamento&apos;</terms:description>
+        <terms:description xml:lang="en">This is the ontology that allows one to describe a series of characteristics of the buildings of Italian livestock farms. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the physical characteristics of the buildings. In the context of the livestock domain, these data is referred to as the so-called &apos;building configurator&apos;.</terms:description>
+        <terms:identifier>onto-BA-8</terms:identifier>
+        <terms:issued xml:lang="en">2022-04-15</terms:issued>
+        <terms:modified xml:lang="en">2022-04-22</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
+        <terms:title xml:lang="en">Livestock Farm Building Description Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia della descrizione dell&apos;insediamento (edificio) dell&apos;azienda d&apos;allevamento</terms:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia che consente di descrivere una serie di caratteristiche degli edifici (o insediamenti) delle aziende di allevamento italiane. In particolare, l&apos;ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente alle caratteristiche fisiche degli insediamenti. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto &apos;Configuratore insediamento&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology that allows one to describe a series of characteristics of the buildings of Italian livestock farms. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the physical characteristics of the buildings. In the context of the livestock domain, these data is referred to as the so-called &apos;building configurator&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">Livestock Farm Building Description Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia della descrizione dell&apos;insediamento (edificio) dell&apos;azienda d&apos;allevamento</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.2 - introduction of OWL restrictions.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.2 - introduzione delle restrizioni OWL</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">Azienda d&apos;Allevamento</dcat:keyword>
+        <dcat:keyword xml:lang="it">Edificio</dcat:keyword>
+        <dcat:keyword xml:lang="it">Ricovero Animali</dcat:keyword>
+        <dcat:keyword xml:lang="it">Tipologia Edificio</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LFBD-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LFBD-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LFBD-RDF-XML"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/livestockfarm-building-description</ADMS:officialURI>
+        <ADMS:prefix xml:lang="en">lfbd</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <ADMS:status>catalogued</ADMS:status>
+        <ADMS:target>Comunità open data</ADMS:target>
+        <ADMS:target>Imprese</ADMS:target>
+        <ADMS:target>Professionisti della zootecnia</ADMS:target>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/hasValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/MU/hasValue"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/hasAnimalHousingCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/hasAnimalHousingCharacteristic">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingCharacteristic"/>
+        <rdfs:comment xml:lang="en">Property used to specify the characteristics of the animal housing of a livestock farm site. These characteristics contribute to define the description of the animal house itself.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specificare le caratteristiche del ricovero degli animali di un insediamento di un&apos;azienda d&apos;allevamento. Le caratteristiche contribuiscono a definire la descrizione del ricovero animali stesso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">ha caratteristica ricovero animali</rdfs:label>
+        <rdfs:label xml:lang="en">has animal housing characteristic</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/hasBuildingConfiguration -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/hasBuildingConfiguration">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/hasDescription"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/co/LivestockFarmSite"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:comment xml:lang="it">La proprietà che collega il sito dell&apos;azienda d&apos;allevamento con la descrizione del suo insediamento (edificio).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property linking the site of the livestock farm with the description of its building(s).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">ha configurazione insediamento</rdfs:label>
+        <rdfs:label xml:lang="en">has building configuration</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesAnimalHousingDescription -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/includesAnimalHousingDescription">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription"/>
+        <rdfs:comment xml:lang="en">Property use to describe the animal housing building in a site of a livestock farm company.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per modellare la descrizione del ricovero degli animali in un insediamento dell&apos;azienda d&apos;allevamento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">include descrizione ricovero animali</rdfs:label>
+        <rdfs:label xml:lang="en">includes animal housing description</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingStructure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingStructure">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure"/>
+        <rdfs:comment xml:lang="en">Property used to specify the types of structures (e.g., delivery room, milking room, etc.) available in a site of a livestock farm company.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specificare le tipologie di strutture presenti (e.g., sala parto, sala mungitura, caseificio aziendale, ecc.) in un insediamento di un&apos;azienda d&apos;allevamento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">include struttura presente nell&apos;insediamento</rdfs:label>
+        <rdfs:label xml:lang="en">includes building structure</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingTypology -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingTypology">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingTypology"/>
+        <rdfs:comment xml:lang="en">Property used to specify the type of building (e.g., rural bulding) of a livestock farm company.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specificare la tipologia di insediamento (e.g., fabbricato rurale, ecc.) di un&apos;azienda d&apos;allevamento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">include tipo di insediamento</rdfs:label>
+        <rdfs:label xml:lang="en">includes building typology</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesWaterProvenance -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/includesWaterProvenance">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/WaterProvenanceStructure"/>
+        <rdfs:comment xml:lang="en">Property used to specify the type of provenance of the water in a site of a livestcok farm company</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specificare il tipo di provenienza delle acque in un insediamento di un&apos;azienda d&apos;allevamento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">include provenienza acque</rdfs:label>
+        <rdfs:label xml:lang="en">includes water provenance</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/animalHousingBuildingYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/animalHousingBuildingYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="en">Property used to identify the year when the building for animal housing has been constructed.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per identificare l&apos;anno di costruzione del ricovero per animali.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">animal housing building year</rdfs:label>
+        <rdfs:label xml:lang="it">anno di costruzione ricovero animali</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Il codice associato a ciascun edificio (insediamento) di un&apos;azienda d&apos;allevamento. Ad esempio se ci sono 2 edifici, questo codice può assumere i valori 1 e 2 per ciascun di essi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The code associated with each building of a livestock farm site. For example if there are 2 buildings, this code can take the values 1 and 2 for each of them.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">building code</rdfs:label>
+        <rdfs:label xml:lang="it">codice insediamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/Value -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/MU/Value"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/co/LivestockFarmSite -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarmSite"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingCharacteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingCharacteristic">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La caratteristica attraverso cui viene descritto il ricovero per gli animali. Esempi includono: presenza del camino centrale, numero di lati chiusi, altezza colmo, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The characteristic through which the animal housing is described. Examples include: presence of central chimney, number of closed sides, ridge height. etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">Animal Housing Characteristic</rdfs:label>
+        <rdfs:label xml:lang="it">Caratteristica Ricovero Animali</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/hasAnimalHousingCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/animalHousingBuildingYear"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:comment xml:lang="en">A description of the animal housing included in the site of the livestock farm. This class is used to implement the ontology design pattern &apos;Description&apos;. The pattern allows the detailing of a variable set of characteristics which constitute the description of the animal housing. They may not all be known during the domain modelling phase. This type of modelling is therefore flexible enough to allow the addition of future features that contribute to the description of the animal housing.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una descrizione del ricovero degli animali incluso nel area agricola dell&apos;azienda d&apos;allevamento. Questa classe è utilizzata per implementare il design pattern ontologico &quot;Description&quot;. Il pattern permette di dettagliare un insieme variabile di caratteristiche che costituiscono la descrizione del ricovero degli animali. QUeste caratteristiche possono non essere tutte note durante la fase di modellazione del dominio. Pertanto, questo tipo di modellazione diventa flessibile da permettere l&apos;aggiunta di ulteriore caratteristiche future.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">Animal Housing Description</rdfs:label>
+        <rdfs:label xml:lang="it">Descrizione Ricovero Animali</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/includesAnimalHousingDescription"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingStructure"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingTypology"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingTypology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/includesWaterProvenance"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/WaterProvenanceStructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La descrizione di come è configurato un insediamento (inteso come edificio in cui vengono gestiti i capi) di un&apos;azienda di allevamento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The description of how the building of a livestock farm site is configured.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">Building Configuration</rdfs:label>
+        <rdfs:label xml:lang="it">Configurazione Insediamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/WaterProvenanceStructure"/>
+        <rdfs:comment xml:lang="it">La struttura presente nell&apos;insediamento dell&apos;azienda d&apos;allevamento. Esempi includono: caseificio aziendale, sala parto, sala mungitura, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The building available in the site of the livestock farm company. Examples include: the delivery room, the milking room, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">Building Structure</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura Insediamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/BuildingTypology -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingTypology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe dei tipi di edificio di un&apos;azienda d&apos;allevamento. Esempio: Fabbricato rurale</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of building types of a livestock farm site. Example: Rural building</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="en">Building Typology</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Insediamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description/WaterProvenanceStructure -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/WaterProvenanceStructure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La struttura di provenienza dell&apos;acqua. Esempi includono: acquedotto, pozzo, cisterna, sorgente esterna.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The specific  type of physical structure from which the water arrives. Examples include: Aqueduct, Tank, Shaft, External Source.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description"/>
+        <rdfs:label xml:lang="it">Struttura Provenienza Acqua</rdfs:label>
+        <rdfs:label xml:lang="en">Water Provenance Structure</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/contact-point/onto-aia">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdfs:label xml:lang="en">Infomation systems</rdfs:label>
+        <rdfs:label xml:lang="it">Sistemi informativi</rdfs:label>
+        <ns:fn>Sistemi informativi</ns:fn>
+        <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LFBD-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LFBD-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulla descrizione delle caratteristiche fisiche degli edifici delle aziende d&apos;allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of Livestock Farm Building Description ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia Descrizione Edifici Aziende d&apos;Allevamento</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of Livestock Farm Building Description Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulla descrizione delle caratteristiche fisiche degli edifici delle aziende d&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Livestock Farm Building Description ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Descrizione Edifici Aziende d&apos;Allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of Livestock Farm Building Description Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.jsonld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LFBD-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LFBD-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulla descrizione delle caratteristiche fisiche degli edifici delle aziende d&apos;allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/Turtle of Livestock Farm Building Description ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia Descrizione Edifici Aziende d&apos;Allevamento</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of Livestock Farm Building Description Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dell&apos;ontologia sulla descrizione delle caratteristiche fisiche degli edifici delle aziende d&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Livestock Farm Building Description ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Descrizione Edifici Aziende d&apos;Allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of Livestock Farm Building Description Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LFBD-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LFBD-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulla descrizione delle caratteristiche fisiche degli edifici delle aziende d&apos;allevamento</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of Livestock Farm Building Description ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia Descrizione Edifici Aziende d&apos;Allevamento</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of Livestock Farm Building Description Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dell&apos;ontologia sulla descrizione delle caratteristiche fisiche degli edifici delle aziende d&apos;allevamento</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Livestock Farm Building Description ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Descrizione Edifici Aziende d&apos;Allevamento</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of Livestock Farm Building Description Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.rdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>00944701002</terms:identifier>
+        <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+        <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>06695411006</terms:identifier>
+        <foaf:name xml:lang="en">Bluarancio</foaf:name>
+        <foaf:name xml:lang="it">Bluarancio</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/project/LEO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
+        <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
+        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/livestockfarm-building-description -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
