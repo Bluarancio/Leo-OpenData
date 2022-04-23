@@ -12,7 +12,7 @@
                                                        <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/t5p5in8boxp0ib4/LivestockFarmDescription.png?raw=1> ;
                                                        <http://purl.org/dc/terms/issued> "2022-04-22"@it ;
                                                        <http://purl.org/dc/terms/modified> "2022-04-22"@it ;
-                                                       <http://purl.org/dc/terms/title> "Livestock Farm Description Ontologia"@en ,
+                                                       <http://purl.org/dc/terms/title> "Livestock Farm Description Ontology"@en ,
                                                                                         "Ontologia sulla Descrizione dell'Azienda d'Allevamento"@it ;
                                                        <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                                        <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
