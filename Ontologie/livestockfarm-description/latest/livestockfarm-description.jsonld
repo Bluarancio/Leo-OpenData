@@ -318,7 +318,7 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "Livestock Farm Description Ontologia"
+    "@value" : "Livestock Farm Description Ontology"
   }, {
     "@language" : "it",
     "@value" : "Ontologia sulla Descrizione dell'Azienda d'Allevamento"
