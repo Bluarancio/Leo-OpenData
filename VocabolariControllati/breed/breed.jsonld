@@ -26,7 +26,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-01-13"
+    "@value" : "2022-05-07"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
@@ -10948,11 +10948,11 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "it",
-    "@value" : "Parma e Piaenza"
+    "@value" : "Parma e Piacenza"
   } ],
   "https://w3id.org/italia/onto/l0/name" : [ {
     "@language" : "it",
-    "@value" : "Parma e Piaenza"
+    "@value" : "Parma e Piacenza"
   } ],
   "https://w3id.org/leo/onto/animal/AIABreedCode" : [ {
     "@value" : "YI"
