@@ -35,7 +35,7 @@
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/breed";
   dct:issued "2020-12-09"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
-  dct:modified "2022-01-13"^^xsd:date;
+  dct:modified "2022-05-07"^^xsd:date;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the breeds of farm animals"@en, "Vocabolario controllato delle razze degli animali da allevamento"@it;
