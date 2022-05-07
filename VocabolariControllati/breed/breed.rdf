@@ -3966,8 +3966,8 @@
   <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/breed/breedYI">
     <animal:isWithin rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/A8"/>
     <animal:AIABreedCode>YI</animal:AIABreedCode>
-    <l0:name xml:lang="it">Parma e Piaenza</l0:name>
-    <skos:prefLabel xml:lang="it">Parma e Piaenza</skos:prefLabel>
+    <l0:name xml:lang="it">Parma e Piacenza</l0:name>
+    <skos:prefLabel xml:lang="it">Parma e Piacenza</skos:prefLabel>
     <skos:notation>YI</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed"/>
     <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
