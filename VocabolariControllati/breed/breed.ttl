@@ -3729,8 +3729,8 @@
 <https://w3id.org/leo/controlled-vocabulary/breed/breedYI> a skos:Concept, animal:Breed;
   skos:inScheme <https://w3id.org/leo/controlled-vocabulary/breed>;
   skos:notation "YI";
-  skos:prefLabel "Parma e Piaenza"@it;
-  l0:name "Parma e Piaenza"@it;
+  skos:prefLabel "Parma e Piacenza"@it;
+  l0:name "Parma e Piacenza"@it;
   animal:AIABreedCode "YI";
   animal:isWithin <https://w3id.org/leo/controlled-vocabulary/livestock-species/A8> .
 
