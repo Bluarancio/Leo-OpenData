@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/leo/onto/ale#"
-     xml:base="https://w3id.org/leo/onto/ale"
+<rdf:RDF xmlns="https://w3id.org/leo/onto/ale/"
+     xml:base="https://w3id.org/leo/onto/ale/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
