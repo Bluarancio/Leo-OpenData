@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/leo/onto/ale/> .
+@prefix : <https://w3id.org/leo/onto/ale#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,30 +7,31 @@
 @base <https://w3id.org/leo/onto/ale> .
 
 <https://w3id.org/leo/onto/ale> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/leo/onto/ale/0.4> ;
+                                 owl:versionIRI <https://w3id.org/leo/onto/ale/0.5> ;
                                  owl:imports <https://w3id.org/italia/onto/TI> ,
                                              <https://w3id.org/italia/onto/l0> ;
-                                 <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/8xr7c60yip8jra4/AleModule.png?raw=1> ;
+                                 <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/xrx1bl1suyzrwem/AleModule.png?raw=1> ;
                                  <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                  <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                  <http://purl.org/dc/terms/description> "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"@it ,
                                                                         "This is the ontology of the farm animals life events"@en ;
+                                 <http://purl.org/dc/terms/identifier> "onto-BA-3" ;
                                  <http://purl.org/dc/terms/issued> "2018-06-18"^^xsd:date ;
                                  <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                      <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                 <http://purl.org/dc/terms/modified> "2022-01-12" ;
+                                 <http://purl.org/dc/terms/modified> "2022-05-18" ;
                                  <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                  <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                  <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/100254> ;
                                  <http://purl.org/dc/terms/title> "Animal Life Event Ontology"@en ,
                                                                   "Ontologia degli eventi della vita degli animali di allevamento"@it ;
-                                 rdfs:comment "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"@it ,
+                                 rdfs:comment "Questa è l'ontologia degli eventi della vita degli animali di allevamento"@it ,
                                               "This is the ontology of the farm animals life events"@en ;
                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                  rdfs:label "Animal Life Event Ontology"@en ,
                                             "Ontologia degli eventi della vita degli animali di allevamento"@it ;
-                                 owl:versionInfo "Version 0.4 - 2021 - Stabilisation of part of the ontology (excluding Milking event) and addition of new elements (e.g. 'entry in farm reason', date and number of model 4 - animal movement declaration)"@en ,
-                                                 "Versione 0.4 - 2021 - Stabilizzazione di una parte dell'ontologia (escluso evento Mungitura) e aggiunta di nuovi elementi (e.g., 'motivo d'ingresso', data e numero modello 4)"@it ;
+                                 owl:versionInfo "Version 0.5- 18 May 2022 - Renamed registrationDate in identificationDate and moved birthdDate from this ontology to animal ontology. Revised Milking (session) event."@en ,
+                                                 "Versione 0.5 - 18 May 2022 - Rinominata la proprietà data di immatricolazione in data di identificazione univoca. Spostata la data di nascita da questa ontologia all'ontologia animal. RIvista interamente la parte di mungitura con l'introduzione della misurazione della conducibilità media."@it ;
                                  <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/leo/data/contact-point/onto-aia> ;
                                  <http://www.w3.org/ns/dcat#keyword> "Animali d'allevamento"@it ,
                                                                      "Bovine"@en ,
@@ -54,7 +55,9 @@
                                  <https://w3id.org/italia/onto/ADMS/prefix> "ale" ;
                                  <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/leo/data/project/LEO> ;
                                  <https://w3id.org/italia/onto/ADMS/status> "catalogued" ;
-                                 <https://w3id.org/italia/onto/ADMS/target> "Imprese" ,
+                                 <https://w3id.org/italia/onto/ADMS/target> "Comunità Open Data"@it ,
+                                                                            "Imprese" ,
+                                                                            "Professionisti del settore zootecnico"@it ,
                                                                             "Pubbliche Amministrazioni" ;
                                  <https://w3id.org/italia/onto/ADMS/type> <https://w3id.org/italia/onto/ADMS/DomainOntology> .
 
@@ -201,18 +204,17 @@
                                                                  "stable - introduced in version 0.4 of the ontology"@en .
 
 
-###  https://w3id.org/leo/onto/ale/atMilkingTime
-<https://w3id.org/leo/onto/ale/atMilkingTime> rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/atTime> ;
-                                              rdfs:domain <https://w3id.org/leo/onto/ale/Milking> ;
-                                              rdfs:range <https://w3id.org/italia/onto/TI/TimeInterval> ;
-                                              rdfs:comment "Property that links the milking event to the time interval at which it occures (with start date/time and end date/time)."@en ,
-                                                           "Proprietà che collega l'evento della mungitura all'intervallo di tempo in cui avviene (con data e ora di inizio e data e ora di fine)."@it ;
-                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                              rdfs:label "at milking time"@en ,
-                                                         "mungitura al tempo"@it ;
-                                              owl:versionInfo "provvisorio - aggiunto nella seconda versione dell'ontologia"@it ,
-                                                              "unstable - added in the second version of the ontology"@en .
+###  https://w3id.org/leo/onto/ale/carriedOutBy
+<https://w3id.org/leo/onto/ale/carriedOutBy> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement> ;
+                                             rdfs:range <https://w3id.org/leo/onto/co/LivestockFarm> ;
+                                             rdfs:comment "Property that links the measurement of the milk conductivity to the company that provides the results."@en ,
+                                                          "Proprietà che collega la misurazione della conducibilità media del latte all'azienda che fornisce i risultati."@it ;
+                                             rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                             rdfs:label "carried out by"@en ,
+                                                        "fatta da"@it ;
+                                             owl:versionInfo "stabile"@it ,
+                                                             "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/carriedOutBySlaughterhouse
@@ -259,7 +261,7 @@
 <https://w3id.org/leo/onto/ale/hasAnimalBirthCompany> rdf:type owl:ObjectProperty ;
                                                       rdfs:subPropertyOf <https://w3id.org/leo/onto/ale/involvesCompany> ;
                                                       rdfs:domain <https://w3id.org/leo/onto/ale/Birth> ;
-                                                      rdfs:range <https://w3id.org/leo/onto/co/LivestockCompany> ;
+                                                      rdfs:range <https://w3id.org/leo/onto/co/LivestockFarm> ;
                                                       rdfs:comment "Property used to link the birth life event to the birth company of the farm animal."@en ,
                                                                    "Proprietà che lega la nascita all'azienda di nascita dell'animale d'allevamento."@it ;
                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
@@ -286,7 +288,7 @@
 <https://w3id.org/leo/onto/ale/hasAnimalDestinationCompany> rdf:type owl:ObjectProperty ;
                                                             rdfs:subPropertyOf <https://w3id.org/leo/onto/ale/involvesCompany> ;
                                                             rdfs:domain <https://w3id.org/leo/onto/ale/OutboundMovement> ;
-                                                            rdfs:range <https://w3id.org/leo/onto/co/LivestockCompany> ;
+                                                            rdfs:range <https://w3id.org/leo/onto/co/LivestockFarm> ;
                                                             rdfs:comment "Property that allows one to specify the destination company for the farm animal."@en ,
                                                                          "Proprietà che consente di specificare l'azienda di destinazione dell'animale d'allevamento."@it ;
                                                             rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
@@ -327,11 +329,11 @@
 <https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany> rdf:type owl:ObjectProperty ;
                                                       rdfs:subPropertyOf <https://w3id.org/leo/onto/ale/involvesCompany> ;
                                                       rdfs:domain [ rdf:type owl:Class ;
-                                                                    owl:unionOf ( <https://w3id.org/leo/onto/ale/InboudMovement>
+                                                                    owl:unionOf ( <https://w3id.org/leo/onto/ale/InboundMovement>
                                                                                   <https://w3id.org/leo/onto/ale/OutboundMovement>
                                                                                 )
                                                                   ] ;
-                                                      rdfs:range <https://w3id.org/leo/onto/co/LivestockCompany> ;
+                                                      rdfs:range <https://w3id.org/leo/onto/co/LivestockFarm> ;
                                                       rdfs:comment "Property that allows one to specify the owner company for the farm animal in some of its life events."@en ,
                                                                    "Proprietà che consente di specificare l'azienda proprietaria dell'animale d'allevamento per alcuni suoi eventi della vita."@it ;
                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
@@ -345,13 +347,13 @@
 <https://w3id.org/leo/onto/ale/hasAnimalProvenanceCompany> rdf:type owl:ObjectProperty ;
                                                            rdfs:subPropertyOf <https://w3id.org/leo/onto/ale/involvesCompany> ;
                                                            rdfs:domain [ rdf:type owl:Class ;
-                                                                         owl:unionOf ( <https://w3id.org/leo/onto/ale/InboudMovement>
+                                                                         owl:unionOf ( <https://w3id.org/leo/onto/ale/InboundMovement>
                                                                                        <https://w3id.org/leo/onto/ale/Slaughter>
                                                                                      )
                                                                        ] ;
-                                                           rdfs:range <https://w3id.org/leo/onto/co/LivestockCompany> ;
-                                                           rdfs:comment "Association between the event slaughter and the company of provenance of the farm animal subject to slaughter"@en ,
-                                                                        "Proprietà che lega l'evento della macellazione con l'azienda di provenienza dell'animale soggetto a macellazione."@it ;
+                                                           rdfs:range <https://w3id.org/leo/onto/co/LivestockFarm> ;
+                                                           rdfs:comment "Property that links the event of slaughter and inbound movement with the farm company of origin of the animal."@en ,
+                                                                        "Proprietà che lega l'evento della macellazione e spostamento in entrata con l'azienda di provenienza dell'animale."@it ;
                                                            rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                            rdfs:label "ha azienda di provenienza dell'animale"@it ,
                                                                       "has animal provenance company"@en ;
@@ -363,13 +365,26 @@
 <https://w3id.org/leo/onto/ale/hasAnimalProvenanceCountry> rdf:type owl:ObjectProperty ;
                                                            rdfs:domain <https://w3id.org/leo/onto/ale/Slaughter> ;
                                                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                           rdfs:comment "Association between the slaughter animal life event and the country of provenance of the farm animal subject to the slaugther."@en ,
-                                                                        "Relazione tra l'evento di macellazione e il paese di provenienza dell'animale soggetto a macellazione."@it ;
+                                                           rdfs:comment "Relationship between the slaughter event and the country of origin of the animal subject to slaughter. In essence, this is the country where the last farm company from which the animal came is located."@en ,
+                                                                        "Relazione tra l'evento di macellazione e il paese di provenienza dell'animale soggetto a macellazione. In sostanza è  il paese dove è sita l’ultima azienda da cui proviene l’animale."@it ;
                                                            rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                            rdfs:label "ha paese di provenienza dell'animale"@it ,
                                                                       "has animal provenance country"@en ;
                                                            owl:versionInfo "stabile - introdotta nella versione 0.3 dell'ontologia"@it ,
                                                                            "stable - introduced in version 0.3 of the ontology"@en .
+
+
+###  https://w3id.org/leo/onto/ale/hasAvgMilkConductivity
+<https://w3id.org/leo/onto/ale/hasAvgMilkConductivity> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement> ;
+                                                       rdfs:range <https://w3id.org/italia/onto/MU/Value> ;
+                                                       rdfs:comment "Property that links the measurement of the milk conductivity to its average value."@en ,
+                                                                    "Proprietà che collega la misurazione della conduttività del latte al suo valore medio."@it ;
+                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                       rdfs:label "ha conducibilità latte media"@it ,
+                                                                  "has average milk conductivity"@en ;
+                                                       owl:versionInfo "stabile"@it ,
+                                                                       "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/hasBreederBreed
@@ -381,7 +396,7 @@
                                                             ] ;
                                                 rdfs:range <https://w3id.org/leo/onto/animal/Breed> ;
                                                 rdfs:comment "Property that links the fertilisation or implantation events to the breed of the breeder that is reported in the events. The breed of the breeder is the breed of the male used for the fertilization"@en ,
-                                                             "Proprietà che lega gli eventi di fecondazione o impianto alla razza del riproduttore che viene riportata negli eventi. La razza del riproduttore è la  razza del maschio utilizzato per la fecondazione"@it ;
+                                                             "Proprietà che lega gli eventi di fecondazione o impianto alla razza del riproduttore che viene riportata negli eventi. La razza del riproduttore è la razza del maschio utilizzato per la fecondazione"@it ;
                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                 rdfs:label "ha razza riproduttore"@it ,
                                                            "has breeder breed"@en ;
@@ -475,7 +490,7 @@
 
 ###  https://w3id.org/leo/onto/ale/hasEntryInFarmReason
 <https://w3id.org/leo/onto/ale/hasEntryInFarmReason> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <https://w3id.org/leo/onto/ale/InboudMovement> ;
+                                                     rdfs:domain <https://w3id.org/leo/onto/ale/InboundMovement> ;
                                                      rdfs:range <https://w3id.org/leo/onto/ale/EntryInFarmReason> ;
                                                      rdfs:comment "Association between the 'Inbound movement' animal life event to the reason for the entry in farm."@en ,
                                                                   "Associazione tra l'evento della vita dell'animale d'allevamento 'spostamento in entrata' con le motivazioni per lo spostamento dell'animale nell'allevamento."@it ;
@@ -513,17 +528,17 @@
                                                                      "stable"@en .
 
 
-###  https://w3id.org/leo/onto/ale/hasMilkingVelocity
-<https://w3id.org/leo/onto/ale/hasMilkingVelocity> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <https://w3id.org/leo/onto/ale/Milking> ;
-                                                   rdfs:range <https://w3id.org/italia/onto/MU/Value> ;
-                                                   rdfs:comment "Property that links the miliking events to the muliking velocity it reports."@en ,
-                                                                "Proprietà che collega l'evento della mungitura con la velocità di mungitura che esso riporta."@it ;
-                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                                   rdfs:label "ha velocità di mungitura"@it ,
-                                                              "has milking velocity"@en ;
-                                                   owl:versionInfo "provvisoria - aggiunta nella seconda versione dell'ontologia"@it ,
-                                                                   "unstable - added in the second version of the ontology"@en .
+###  https://w3id.org/leo/onto/ale/hasMilkYield
+<https://w3id.org/leo/onto/ale/hasMilkYield> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/leo/onto/ale/MilkingSession> ;
+                                             rdfs:range <https://w3id.org/italia/onto/MU/Value> ;
+                                             rdfs:comment "Property linking the milking session to the amount of milk produced (in hectograms (hg))."@en ,
+                                                          "Proprietà che lega la sessione di mungitura alla quantità di latte prodotto (in ettogrammi (hg))."@it ;
+                                             rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                             rdfs:label "ha produzione latte (mungitura)"@it ,
+                                                        "has milk yield"@en ;
+                                             owl:versionInfo "stabile"@it ,
+                                                             "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/hasPregnancyResult
@@ -592,6 +607,19 @@
                                                                   "stable"@en .
 
 
+###  https://w3id.org/leo/onto/ale/measuredForFarmAnimal
+<https://w3id.org/leo/onto/ale/measuredForFarmAnimal> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement> ;
+                                                      rdfs:range <https://w3id.org/leo/onto/animal/FarmAnimal> ;
+                                                      rdfs:comment "Property linking the measurement of average milk conductivity to the farm animal"@en ,
+                                                                   "Proprietà che lega la misurazione della conducibilità media del latte all'animale d'allevamento"@it ;
+                                                      rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                      rdfs:label "measured for farm animal"@en ,
+                                                                 "misurata per animale d'allevamento"@it ;
+                                                      owl:versionInfo "stabile"@it ,
+                                                                      "stable"@en .
+
+
 ###  https://w3id.org/leo/onto/ale/producesCarcass
 <https://w3id.org/leo/onto/ale/producesCarcass> rdf:type owl:ObjectProperty ;
                                                 rdfs:domain <https://w3id.org/leo/onto/ale/Slaughter> ;
@@ -603,6 +631,20 @@
                                                            "produces carcass"@en ;
                                                 owl:versionInfo "stabile - introdotta nelal versione 0.3 dell'ontologia."@it ,
                                                                 "stable - introduced in version 0.3 of the ontology"@en .
+
+
+###  https://w3id.org/leo/onto/ale/withinMilkingSession
+<https://w3id.org/leo/onto/ale/withinMilkingSession> rdf:type owl:ObjectProperty ,
+                                                              owl:FunctionalProperty ;
+                                                     rdfs:domain <https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement> ;
+                                                     rdfs:range <https://w3id.org/leo/onto/ale/MilkingSession> ;
+                                                     rdfs:comment "Property linking the measurment of the milk conductivity to its milking session during which is measured."@en ,
+                                                                  "Proprietà che collega la misurazione della conduttività del latte alla sessione di mungitura durante la quale viene misurata."@it ;
+                                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                     rdfs:label "durante sessione di mungitura"@it ,
+                                                                "within milking session"@en ;
+                                                     owl:versionInfo "stabile"@it ,
+                                                                     "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/animal/hasAnimalDestination
@@ -621,6 +663,10 @@
 #    Data properties
 #################################################################
 
+###  https://w3id.org/italia/onto/l0/identifier
+<https://w3id.org/italia/onto/l0/identifier> rdf:type owl:DatatypeProperty .
+
+
 ###  https://w3id.org/leo/onto/ale/abortionDate
 <https://w3id.org/leo/onto/ale/abortionDate> rdf:type owl:DatatypeProperty ;
                                              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
@@ -630,8 +676,8 @@
                                                                         xsd:dateTime
                                                                       )
                                                         ] ;
-                                             rdfs:comment "Data di aborto dell’animale gravido. E' rlevata nell'evento della vita aborto"@it ,
-                                                          "Date of the abort of the pregnant animal. It is detected in the abort life event."@en ;
+                                             rdfs:comment "Data di espulsione del feto."@it ,
+                                                          "Date of expulsion of the foetus."@en ;
                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                              rdfs:label "abortion date"@en ,
                                                         "data aborto"@it ;
@@ -640,7 +686,8 @@
 
 
 ###  https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse
-<https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse> rdf:type owl:DatatypeProperty ;
+<https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse> rdf:type owl:DatatypeProperty ,
+                                                                           owl:FunctionalProperty ;
                                                                   rdfs:domain <https://w3id.org/leo/onto/ale/Slaughter> ;
                                                                   rdfs:range xsd:boolean ;
                                                                   rdfs:comment "Indica se l'animale è arrivato morto o meno al macello"@it ,
@@ -650,60 +697,6 @@
                                                                              "animale arrivato morto al macello"@it ;
                                                                   owl:versionInfo "stabile - introdotta nella versione 0.3 dell'ontologia"@it ,
                                                                                   "stable - introduced in version 0.3 of the ontology"@en .
-
-
-###  https://w3id.org/leo/onto/ale/animalMovementDeclarationDate
-<https://w3id.org/leo/onto/ale/animalMovementDeclarationDate> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                              rdfs:domain [ rdf:type owl:Class ;
-                                                                            owl:unionOf ( <https://w3id.org/leo/onto/ale/InboudMovement>
-                                                                                          <https://w3id.org/leo/onto/ale/OutboundMovement>
-                                                                                        )
-                                                                          ] ;
-                                                              rdfs:range xsd:date ;
-                                                              rdfs:comment "Property that allows one to specify the date of the declaration (document) of origin and destination of the farm animals. This declaration/document is also called model 4 in the Italian national database of the zootechnical registry (BDN). The declaration is used in the movement of the farm animals."@en ,
-                                                                           "Proprietà che consente di specificare la data della dichiarazione (documento)  di provenienza e di destinazione degli animali. Questa dichiarazione/documento è anche chiamato modello 4 nella banca dati nazionale dell'anagrafe zootecnica (BDN). Il modello 4 è utilizzato nelle movimentazioni degli animali d'allevamento."@it ;
-                                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                                              rdfs:label "animal movement declaration date"@en ,
-                                                                         "data dichiarazione provenienza e destinazione animale"@en ;
-                                                              owl:versionInfo "stabile - introdotta nella versione 0.4 dell'ontologia. Da capire se in futuro sia possibile associare tale proprietà a una classe di tipo documento."@it ,
-                                                                              "stable - introduced in version 0.4 of the ontology. When a more complex management of the declaration (document) of movements for farm animals is available, this property can change its current domain."@en .
-
-
-###  https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber
-<https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber> rdf:type owl:DatatypeProperty ;
-                                                                rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
-                                                                rdfs:domain [ rdf:type owl:Class ;
-                                                                              owl:unionOf ( <https://w3id.org/leo/onto/ale/InboudMovement>
-                                                                                            <https://w3id.org/leo/onto/ale/OutboundMovement>
-                                                                                          )
-                                                                            ] ;
-                                                                rdfs:range rdfs:Literal ;
-                                                                rdfs:comment "Property that allows one to specify the number of the document/declaration of provenance and destination (also known as model 4) of the animals. The document is used in animal movements."@en ,
-                                                                             "Proprietà che consente di specificare il numero del documento/dichiarazione di provenienza e di destinazione (o anche modello 4) degli animali. Il documento è usato nelle movimentazioni degli animali."@it ;
-                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                                                rdfs:label "animal movement declaration number"@en ,
-                                                                           "numero dichiarazione provenienza e destinazione animali"@it ;
-                                                                owl:versionInfo "provvisoria - introdotta nella versione 0.4 dell'ontologia. Da capire se in futuro sia possibile associare tale proprietà a una classe di tipo documento."@it ,
-                                                                                "unstable - introduced in version 0.4 of the ontology"@en .
-
-
-###  https://w3id.org/leo/onto/ale/birthDate
-<https://w3id.org/leo/onto/ale/birthDate> rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                          rdfs:domain <https://w3id.org/leo/onto/animal/FarmAnimal> ;
-                                          rdfs:range [ rdf:type rdfs:Datatype ;
-                                                       owl:unionOf ( xsd:date
-                                                                     xsd:dateTime
-                                                                   )
-                                                     ] ;
-                                          rdfs:comment "Data nella quale è nato l’animale"@it ,
-                                                       "Date on which the animal was born"@en ;
-                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                          rdfs:label "birth date"@en ,
-                                                     "data di nascita"@it ;
-                                          owl:versionInfo "stabile"@it ,
-                                                          "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/deadReason
@@ -741,8 +734,8 @@
                                                                          xsd:dateTime
                                                                        )
                                                          ] ;
-                                              rdfs:comment "La data di rilevazione dell'evento della vita dell'animale."@it ,
-                                                           "The date of detection of the life event of the animal."@en ;
+                                              rdfs:comment "La data  usata per riportare informazioni di vario genere nel dominio di riferimento."@it ,
+                                                           "The date in which information is reported."@en ;
                                               rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                               rdfs:label "data di rilevazione"@it ,
                                                          "detection date"@en ;
@@ -799,8 +792,8 @@
                                                                    xsd:dateTime
                                                                  )
                                                    ] ;
-                                        rdfs:comment "La data nella quale l’allevatore dopo aver ridotto volontariamente la mungitura della femmina la sospende."@it ,
-                                                     "The date on which the farmer, after voluntarily reducing the milking of the female, stops milking her."@en ;
+                                        rdfs:comment "It represents the date on which the animal is put out to dry."@en ,
+                                                     "Rappresenta la data in cui l’animale viene messo in asciutta."@it ;
                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                         rdfs:label "data asciutta"@it ,
                                                    "dry date"@en ;
@@ -808,28 +801,28 @@
                                                         "stable"@en .
 
 
-###  https://w3id.org/leo/onto/ale/embryonicResorptionDate
-<https://w3id.org/leo/onto/ale/embryonicResorptionDate> rdf:type owl:DatatypeProperty ;
-                                                        rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                        rdfs:domain <https://w3id.org/leo/onto/ale/EmbryonicResorption> ;
-                                                        rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                     owl:unionOf ( xsd:date
-                                                                                   xsd:dateTime
-                                                                                 )
-                                                                   ] ;
-                                                        rdfs:comment "Data del riassorbimento embrionale dell’animale gravido (aborto molto precoci)"@it ,
-                                                                     "Date of embryonic resorption of the pregnant animal (very early abortion)"@en ;
-                                                        rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                                        rdfs:label "data riassorbimento embrionale"@it ,
-                                                                   "embryonic resorption date"@en ;
-                                                        owl:versionInfo "stabile"@it ,
-                                                                        "stable"@en .
+###  https://w3id.org/leo/onto/ale/embryoResorptionDate
+<https://w3id.org/leo/onto/ale/embryoResorptionDate> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                                                     rdfs:domain <https://w3id.org/leo/onto/ale/EmbryoResorption> ;
+                                                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                  owl:unionOf ( xsd:date
+                                                                                xsd:dateTime
+                                                                              )
+                                                                ] ;
+                                                     rdfs:comment "Data in cui viene segnalato il riassorbimento embrionale."@it ,
+                                                                  "Date on which embryo resorption is reported."@en ;
+                                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                     rdfs:label "data riassorbimento embrionale"@it ,
+                                                                "embryo resorption date"@en ;
+                                                     owl:versionInfo "stabile"@it ,
+                                                                     "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/entryInFarmDate
 <https://w3id.org/leo/onto/ale/entryInFarmDate> rdf:type owl:DatatypeProperty ;
                                                 rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                rdfs:domain <https://w3id.org/leo/onto/ale/InboudMovement> ;
+                                                rdfs:domain <https://w3id.org/leo/onto/ale/InboundMovement> ;
                                                 rdfs:range [ rdf:type rdfs:Datatype ;
                                                              owl:unionOf ( xsd:date
                                                                            xsd:dateTime
@@ -871,13 +864,35 @@
                                                                              xsd:dateTime
                                                                            )
                                                              ] ;
-                                                  rdfs:comment "La data nella quale la vacca viene fecondata."@it ,
-                                                               "The date on which the cow is fertilized."@en ;
+                                                  rdfs:comment "Data in cui viene effettuato l'impianto embrionale."@it ,
+                                                               "The date on which the embryo implantation event occurs."@en ;
                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                   rdfs:label "data di fecondazione/inseminazione"@it ,
                                                              "fertilization date"@en ;
                                                   owl:versionInfo "stabile - aggiunto nella seconda versione dell'ontologia"@it ,
                                                                   "stable - added in the second version of the ontology"@en .
+
+
+###  https://w3id.org/leo/onto/ale/identificationDate
+<https://w3id.org/leo/onto/ale/identificationDate> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( <https://w3id.org/leo/onto/ale/Identification>
+                                                                               <https://w3id.org/leo/onto/animal/FarmAnimal>
+                                                                             )
+                                                               ] ;
+                                                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                owl:unionOf ( xsd:date
+                                                                              xsd:dateTime
+                                                                            )
+                                                              ] ;
+                                                   rdfs:comment "Data in cui l'animale da allevamento è identificato in modo univoco secondo diversi meccanismi. Questa data può coincidere con la data di applicazione della marca (quando viene applicato il marchio auricolare) dell'animale."@it ,
+                                                                "Date on which the farm animal is uniquely identified according to different mechanisms. This date may coincide with the tagging date (when the eartag is applied) of the animal."@en ;
+                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                   rdfs:label "data di identificazione univoca"@it ,
+                                                              "identification date"@en ;
+                                                   owl:versionInfo "stabile - revisionata nella versione 0.5 dell'ontologia"@it ,
+                                                                   "stable - revised in version 0.5 of the ontology"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/implantationDate
@@ -899,7 +914,8 @@
 
 
 ###  https://w3id.org/leo/onto/ale/isCarcassForConsumption
-<https://w3id.org/leo/onto/ale/isCarcassForConsumption> rdf:type owl:DatatypeProperty ;
+<https://w3id.org/leo/onto/ale/isCarcassForConsumption> rdf:type owl:DatatypeProperty ,
+                                                                 owl:FunctionalProperty ;
                                                         rdfs:domain <https://w3id.org/leo/onto/ale/FarmAnimalCarcass> ;
                                                         rdfs:range xsd:boolean ;
                                                         rdfs:comment "Property used to indicate whether the carcass is for consumption or not"@en ,
@@ -909,6 +925,42 @@
                                                                    "è carcassa per consumo"@it ;
                                                         owl:versionInfo "stabile - introdotta nella versione 0.3 dell'ontologia"@it ,
                                                                         "stable - introduced in version 0.3 of the ontology"@en .
+
+
+###  https://w3id.org/leo/onto/ale/milkConductivityDetectionDate
+<https://w3id.org/leo/onto/ale/milkConductivityDetectionDate> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                                                              rdfs:domain <https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement> ;
+                                                              rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                           owl:unionOf ( xsd:date
+                                                                                         xsd:dateTime
+                                                                                       )
+                                                                         ] ;
+                                                              rdfs:comment "Momento nel quale si inizia a rilevare la conducibilità media del latte"@it ,
+                                                                           "Time at which the average conductivity of milk starts to be measured"@en ;
+                                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                              rdfs:label "data rilevamento conducibilità latte"@it ,
+                                                                         "milk conductivity detection date"@en ;
+                                                              owl:versionInfo "stabile"@it ,
+                                                                              "stable"@en .
+
+
+###  https://w3id.org/leo/onto/ale/milkingSessionDate
+<https://w3id.org/leo/onto/ale/milkingSessionDate> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                                                   rdfs:domain <https://w3id.org/leo/onto/ale/MilkingSession> ;
+                                                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                owl:unionOf ( xsd:date
+                                                                              xsd:dateTime
+                                                                            )
+                                                              ] ;
+                                                   rdfs:comment "Momento nel quale si inizia a mungere l’animale (data e ora)"@it ,
+                                                                "Time when milking starts (date and time)"@en ;
+                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                   rdfs:label "data sessione mungitura"@it ,
+                                                              "milking session date"@en ;
+                                                   owl:versionInfo "stabile"@it ,
+                                                                   "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/numberOfBornAliveFemales
@@ -945,8 +997,8 @@
                                                                                   )
                                                                     ] ;
                                                         rdfs:range xsd:integer ;
-                                                        rdfs:comment "Number of females born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion)."@en ,
-                                                                     "Numero di femmine nate morte originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)"@it ;
+                                                        rdfs:comment "Number of female foetuses expelled in case of abortion or stillbirth."@en ,
+                                                                     "Numero di feti femmina espulsi in caso di aborto o nate morte."@it ;
                                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                         rdfs:label "number of born dead females"@en ,
                                                                    "numero di femmine nate morte"@it ;
@@ -962,8 +1014,8 @@
                                                                                 )
                                                                   ] ;
                                                       rdfs:range xsd:integer ;
-                                                      rdfs:comment "Number of males born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion)."@en ,
-                                                                   "Numero di maschi nati morti originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)"@it ;
+                                                      rdfs:comment "Number of males foetuses expelled in case of abortion or stillbirth."@en ,
+                                                                   "Numero di feti maschi espulsi in caso di aborto o nati morti."@it ;
                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                       rdfs:label "number of born dead males"@en ,
                                                                  "numero di maschi nati morti"@it ;
@@ -980,8 +1032,8 @@
                                                                            xsd:dateTime
                                                                          )
                                                            ] ;
-                                                rdfs:comment "Data del parto dell'animale."@it ,
-                                                             "Date of the parturition of the animal."@en ;
+                                                rdfs:comment "Data in cui avviene il parto dell'animale."@it ,
+                                                             "Date on which the parturition of the animal occurs."@en ;
                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                 rdfs:label "data parto"@it ,
                                                            "parturition date"@en ;
@@ -991,7 +1043,7 @@
 
 ###  https://w3id.org/leo/onto/ale/provenanceType
 <https://w3id.org/leo/onto/ale/provenanceType> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain <https://w3id.org/leo/onto/ale/InboudMovement> ;
+                                               rdfs:domain <https://w3id.org/leo/onto/ale/InboundMovement> ;
                                                rdfs:range rdfs:Literal ;
                                                rdfs:comment "La proprietà è utilizzata per categorizzare (o descrivere) la provenienza dell'animale d'allevamento. Per esempio: 'allevamento'. Al tempo di stesura della versione 0.4 dell'ontologia, non esiste alcun vocabolario controllato per questa proprietà e si è scelto quindi di usare direttamente un valore stringa. Se in futuro un vocabolario fosse adottato, questa proprietà potrebbe essere trasformata per collegare l'evento di spostamento in entrata con un concetto e un codice associato (object property)."@it ,
                                                             "The property is used to categorise (or describe) the provenance of the farm animal. For example: 'farming'. At the time of writing version 0.4 of the ontology, there is no controlled vocabulary for this property and it was therefore chosen to use a string value directly. If a vocabulary were to be adopted in the future, this property could be transformed to link the inbound movement event with a concept and associated code (object property)."@en ;
@@ -1000,28 +1052,6 @@
                                                           "tipo di provenienza"@it ;
                                                owl:versionInfo "stabile - introdotta nella versione 0.4 dell'ontologia. Da sostituire in caso di disponibilità di un vocabolario controllato"@it ,
                                                                "stable - introduced in version 0.4 of the ontology. To be replaced in case of the availability of a controlled vocabulary"@en .
-
-
-###  https://w3id.org/leo/onto/ale/registrationDate
-<https://w3id.org/leo/onto/ale/registrationDate> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                 rdfs:domain [ rdf:type owl:Class ;
-                                                               owl:unionOf ( <https://w3id.org/leo/onto/ale/Identification>
-                                                                             <https://w3id.org/leo/onto/animal/FarmAnimal>
-                                                                           )
-                                                             ] ;
-                                                 rdfs:range [ rdf:type rdfs:Datatype ;
-                                                              owl:unionOf ( xsd:date
-                                                                            xsd:dateTime
-                                                                          )
-                                                            ] ;
-                                                 rdfs:comment "Data nella quale viene applicata la marca auricolare all’animale"@it ,
-                                                              "Date on which the eartag is applied to the animal"@en ;
-                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                                 rdfs:label "data di immatricolazione"@it ,
-                                                            "registration date"@en ;
-                                                 owl:versionInfo "stabile - aggiunto nella seconda versione dell'ontologia"@it ,
-                                                                 "stable - added in the second version of the ontology"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/slaughterDate
@@ -1094,8 +1124,12 @@
                                                            owl:onDataRange xsd:integer
                                                          ] ;
                                          <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/yjfrgznudw5msd6/Ale_Abort.png?raw=1> ;
-                                         rdfs:comment "L'evento di aborto dell'animale."@it ,
-                                                      "The abort event of the animal."@en ;
+                                         rdfs:comment """L'evento di aborto dell'animale. In particolare, rappresenta l'interruzione della gravidanza con espulsione del feto. In particolare, nei bovini da latte si definisce aborto l'interruzione della gravidanza con l'espulsione del feto dal 42° al 260° post – fecondazione. Da non confondere con il parto prematuro (nascita di un vitello capace di vita autonoma dopo il 260° giorno di gravidanza) o parto a termine di un vitello morto o disvitale ('stillbirth”). Sempre nei bovini da latte, si ha aborto precoce dal 42° al 90° giorno di gravidanza, e aborto tardivo, dopo il 90° giorno.
+
+Possibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Calcolo del tasso di abortività aziendale, dei fattori di rischio per il benessere e per la fertilità. Assistenza tecnica, Gestione sanitaria"""@it ,
+                                                      """The event of abortion of the animal. In particular, it represents the termination of pregnancy with expulsion of the foetus. Specifically, in dairy cattle, abortion is defined as the termination of pregnancy with expulsion of the foetus from the 42nd to the 260th post - fertilisation. Not to be confused with premature birth (birth of a calf capable of independent life after the 260th day of pregnancy) or term birth of a stillborn calf. In dairy cattle, early abortion occurs from day 42 to day 90 of pregnancy, and late abortion after day 90.
+
+Possible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Calculation of abortion rate, welfare and fertility risk factors. Technical assistance, Health management"""@en ;
                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                          rdfs:label "Abortion"@en ,
                                                     "Aborto"@it ;
@@ -1111,8 +1145,8 @@
                                                                              )
                                                                  ] ;
                                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ;
-                                             rdfs:comment "Questa classe modella il tipo di aborto. Ci sono due tipi di aborto: Tardivo (T) e Precoce (P)."@it ,
-                                                          "This class allows one to represent the type of abortion. There are two types of abortion: belated (T) and premature (P)."@en ;
+                                             rdfs:comment "Questa classe modella il tipo di aborto. Ci sono due tipi di aborto: Tardivo (T) e Precoce (P). L'aborto Tardivo inizia una nuova lattazione."@it ,
+                                                          "This class allows one to represent the type of abortion. There are two types of abortion: belated (T) and premature (P). Late abortion starts a new lactation."@en ;
                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                              rdfs:label "Abortion Type"@en ,
                                                         "Tipo di Aborto"@it ;
@@ -1129,7 +1163,7 @@
                                                                 ] ,
                                                                 [ rdf:type owl:Restriction ;
                                                                   owl:onProperty <https://w3id.org/leo/onto/ale/involvesCompany> ;
-                                                                  owl:allValuesFrom <https://w3id.org/leo/onto/co/LivestockCompany>
+                                                                  owl:allValuesFrom <https://w3id.org/leo/onto/co/LivestockFarm>
                                                                 ] ,
                                                                 [ rdf:type owl:Restriction ;
                                                                   owl:onProperty <https://w3id.org/leo/onto/ale/involvesFarmAnimal> ;
@@ -1159,7 +1193,7 @@
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalBirthCompany> ;
                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                        owl:onClass <https://w3id.org/leo/onto/co/LivestockCompany>
+                                                        owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
                                                       ] ,
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalBirthWeight> ;
@@ -1201,10 +1235,16 @@ The categories into which carcasses are divided are defined in a controlled voca
 ###  https://w3id.org/leo/onto/ale/CarcassClassification
 <https://w3id.org/leo/onto/ale/CarcassClassification> rdf:type owl:Class ;
                                                       rdfs:subClassOf <https://w3id.org/italia/onto/l0/Topic> ;
-                                                      rdfs:comment """Classification of the carcass, based on the assessment of its conformation and fat cover status. Carcass classification is defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013.
+                                                      rdfs:comment """Classification of the carcass, based on the assessment of its muscle conformation and fat cover.
+Muscle conformation defines the development of the carcass profiles and in particular of its essential parts (thigh, back and shoulder).
+Fat cover defines the mass of fat on the outside of the carcase and on the inner wall of the thoracic cavity.
+Carcass classification is defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013.
 
 Classes for carcass classification are defined in a controlled vocabulary."""@en ,
-                                                                   """Classificazione della carcassa, basata sulla valutazione della sua conformazione e dello stato di ingrassamento. La classificazione delle carcasse è definita nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013.
+                                                                   """Classificazione della carcassa, basata sulla valutazione della sua conformazione muscolare e dello stato di ingrassamento.
+La Conformazione muscolare definisce lo sviluppo dei profili della carcassa e segnatamente delle sue parti essenziali (coscia, schiena e spalla).
+Lo Stato di ingrassamento definisce la massa di grasso all’esterno della carcassa e sulla parete interna della cassa toracica.
+La classificazione delle carcasse è definita nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013.
 
 Le classi per la classificazione delle carcasse sono definite in un apposito vocabolario controllato."""@it ;
                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
@@ -1271,14 +1311,18 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
                                                                                          )
                                                                            ]
                                                          ] ;
-                                         <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/6528ov6a402qqw2/Ale_Disposal.png?raw=1> ;
-                                         rdfs:comment "L'evento della vita dell'animale dell'eliminazione."@it ,
-                                                      "The animal's life event of the disposal."@en ;
+                                         <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/9ot2hlckexlo6dg/Ale_Disposal.png?raw=1> ;
+                                         rdfs:comment """This is the event whereby the farmed animal is removed from the farm permanently for a number of reasons related to management or to pathological or metabolic states. Disposal represents the exit of the animal from the farm for any reason (e.g. sale to another farm, slaughter, death on the farm, etc.).
+
+Possible applications: Managerial. Calculation of the length of the productive career of the animal, of the average farm longevity. Correct identification of the movements (sale/purchase) of the animal. Technical assistance data for estimation of company replacement rates"""@en ,
+                                                      """È l’evento per il quale l’animale allevato viene allontanato dall’azienda in maniera definitiva per una serie di cause legate alla managerialità o a stati patologici o metabolici. L’eliminazione rappresenta l’uscita del capo dall’azienda per qualsiasi motivo (ad esempio, vendita ad altro allevamento, macellazione, morte in azienda, ecc).
+
+Possibili Applicazioni: Manageriale. Calcolo della lunghezza della carriera produttiva dell'animale, della longevità media aziendale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto. Dato di assistenza tecnica per la stima dei tassi di rimonta aziendali."""@it ;
                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                          rdfs:label "Disposal"@en ,
                                                     "Eliminazione"@it ;
-                                         owl:versionInfo "provvisorio - aggiunto nella seconda versione dell'ontologia"@en ,
-                                                         "unstable - added  in the second version of the ontology"@en .
+                                         owl:versionInfo "stabile"@it ,
+                                                         "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/DisposalReason
@@ -1290,12 +1334,13 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
                                                                                  <https://w3id.org/leo/onto/ale/SlaughterHealth>
                                                                                  <https://w3id.org/leo/onto/ale/SlaughterWellness>
                                                                                  <https://w3id.org/leo/onto/ale/Slaughterhouse>
+                                                                                 <https://w3id.org/leo/onto/ale/Theft>
                                                                                  <https://w3id.org/leo/onto/ale/UrgentSlaughterStable>
                                                                                )
                                                                    ] ;
                                                rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ;
-                                               rdfs:comment "Information that specifies the cause of the animal disposal"@en ,
-                                                            "Informazione che specifica la causa di eliminazione dell’animale."@it ;
+                                               rdfs:comment "It is the reason why the animal was eliminated."@en ,
+                                                            "È il motivo per il quale l'animale è stato eliminato."@it ;
                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                rdfs:label "Disposal Reason"@en ,
                                                           "Motivazione Eliminazione"@it ;
@@ -1316,8 +1361,12 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
                                                                       ]
                                                     ] ;
                                     <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/f6x5und0otcxy58/Ale_Dry.png?raw=1> ;
-                                    rdfs:comment "L'evento dell'asciutta, ovvero l'evento svolto per finalità sanitarie che consente di sospendere la mungitura dell'animale."@it ,
-                                                 "The dry event, i.e. the event carried out for health purposes that stops the milking of the animal."@en ;
+                                    rdfs:comment """L'evento dell'asciutta. Nei soggetti allevati per la produzione di latte, il termine indica la cessazione, naturale o più spesso indotta con opportune pratiche dall'allevatore, della produzione di latte nell'ultima fase di lattazione in modo che l'animale possa utilizzare le energie esclusivamente per recupero del peso e formazione di riserve corporee per il parto e la lattazione successiva.
+
+Possibili applicazioni: Riproduzione. Calcolo dello stato riproduttivo dell'animale. Calcolo lunghezza della lattazione e della durata della preparazione al parto successivo. Individuazione lattazioni corte. Assistenza tecnica."""@it ,
+                                                 """The dry event. In animals bred for milk production, the term indicates the cessation, natural or more often induced with appropriate practices by the farmer, of milk production in the last phase of lactation so that the animal can use its energy exclusively for weight recovery and the formation of body reserves for parturition and subsequent lactation.
+
+Possible applications: Reproduction. Calculation of the animal's reproductive status. Calculation of lactation length and duration of preparation for the next calving. Identification of short lactations. Technical assistance."""@en ;
                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                     rdfs:label "Asciutta"@it ,
                                                "Dry"@en ;
@@ -1345,26 +1394,30 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
                                                                   "stable - added in the second version of the ontology"@en .
 
 
-###  https://w3id.org/leo/onto/ale/EmbryonicResorption
-<https://w3id.org/leo/onto/ale/EmbryonicResorption> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <https://w3id.org/leo/onto/ale/embryonicResorptionDate> ;
-                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                                        owl:unionOf ( xsd:date
-                                                                                                      xsd:dateTime
-                                                                                                    )
-                                                                                      ]
-                                                                    ] ;
-                                                    <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/erv0fq940dsw0ci/Ale_EmbryonicResorption.png?raw=1> ;
-                                                    rdfs:comment "L'evento della vita dell'animale di riassorbimento embrionale avvenuto in azienda."@it ,
-                                                                 "The animal's life event of embryonic resorption occurred in the farm (company)."@en ;
-                                                    rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                                    rdfs:label "Embryonic Resorption"@en ,
-                                                               "Riassorbimento Embrionale"@it ;
-                                                    owl:versionInfo "stabile"@it ,
-                                                                    "stable"@en .
+###  https://w3id.org/leo/onto/ale/EmbryoResorption
+<https://w3id.org/leo/onto/ale/EmbryoResorption> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <https://w3id.org/leo/onto/ale/embryoResorptionDate> ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                     owl:unionOf ( xsd:date
+                                                                                                   xsd:dateTime
+                                                                                                 )
+                                                                                   ]
+                                                                 ] ;
+                                                 <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/erv0fq940dsw0ci/Ale_EmbryonicResorption.png?raw=1> ;
+                                                 rdfs:comment """L'evento della vita dell'animale di riassorbimento embrionale avvenuto in azienda. Definito in termini clinici come 'morte embrionale”, è un fenomeno che consiste nella morte dell'embrione/feto durante le prime fasi di gravidanza. Nei bovini da latte la morte embrionale si distingue in tre sottogruppi: morte embrionale precoce (primi 16 giorni dall'inseminazione), morte embrionale tardiva (da 17 a 42 giorni dall'inseminazione) e morte fetale dopo i 42 giorni di gravidanza.
+
+Possibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Calcolo del tasso di abortività aziendale, dei fattori di rischio per il benessere e per la fertilità. Assistenza tecnica. Gestione sanitaria"""@it ,
+                                                              """The event in the animal's life of embryo resorption occurring on the farm company. Defined in clinical terms as 'embryonic death', it is a phenomenon consisting of the death of the embryo/fetus during the early stages of pregnancy. In dairy cattle, embryo death can be divided into three subgroups: early embryo death (first 16 days after insemination), late embryo death (17 to 42 days after insemination) and foetal death after 42 days of pregnancy.
+
+Possible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Calculation of abortion rate, welfare and fertility risk factors. Technical assistance. Health management."""@en ;
+                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                 rdfs:label "Embryo Resorption"@en ,
+                                                            "Riassorbimento Embrionale"@it ;
+                                                 owl:versionInfo "stabile"@it ,
+                                                                 "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/EntryInFarmReason
@@ -1445,8 +1498,12 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                                 ]
                                                               ] ;
                                               <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/nmbjwnm5ts0cjh8/Ale_Fertilization.png?raw=1> ;
-                                              rdfs:comment "L'evento di fecondazione dell'animale."@it ,
-                                                           "The fertilization of the animal event."@en ;
+                                              rdfs:comment """L'evento di fecondazione dell'animale. È l’atto fecondativo dell’animale. La più diffusa, in particolare nei bovini, è l’inseminazione artificiale che è la pratica di introdurre seme nell’utero di una riproduttrice tramite un’apposita strumentazione senza ricorrere all’accoppiamento. Fondamentale nell’attività di miglioramento genetico, permette di migliorare, nella progenie, la produzione di latte o altre caratteristiche diffondendo i geni favorevoli del maschio nella popolazione.
+
+Possibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Calcolo dei parametri di fertilità. Assistenza tecnica. Miglioramento genetico (fertilità)."""@it ,
+                                                           """The fertilization of the animal event. This is the fertilising act of the animal. The most widely used, particularly in cattle, is artificial insemination, which is the practice of introducing semen into the uterus of a breeding animal by means of a special device without recourse to mating. It is essential in genetic improvement, as it improves milk production or other characteristics in the offspring by spreading favourable male genes throughout the population.
+
+Possible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Calculation of fertility parameters. Technical assistance. Genetic improvement (fertility)."""@en ;
                                               rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                               rdfs:label "Fecondazione"@it ,
                                                          "Fertilization"@en ,
@@ -1465,8 +1522,8 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                                   )
                                                                       ] ;
                                                   rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ;
-                                                  rdfs:comment "Indica se la fecondazione subita dalla femmina è stata effettuata attraverso una monta naturale o attraverso l’intervento strumentale o attraverso un impianto di embrioni"@it ,
-                                                               "Indicates whether the fertilization suffered by the female was carried out through a natural mount or through instrumental intervention or through an embryo implantation"@en ;
+                                                  rdfs:comment "Indica se la fecondazione subita dalla femmina è stata effettuata attraverso una fecondazione artificiale o naturale o gestita in un gruppo di monta."@it ,
+                                                               "Indicates whether the fertilisation undergone by the female was carried out through artificial or natural fertilisation or managed in a mating group."@en ;
                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                   rdfs:label "Fertilization Type"@en ,
                                                              "Tipo Fecondazione"@it ;
@@ -1482,7 +1539,7 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/registrationDate> ;
+                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/identificationDate> ;
                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                  owl:onDataRange [ rdf:type rdfs:Datatype ;
                                                                                    owl:unionOf ( xsd:date
@@ -1491,8 +1548,12 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                                  ]
                                                                ] ;
                                                <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/xscdk4jl9kjyw08/Ale_Identification.png?raw=1> ;
-                                               rdfs:comment "L'evento della vita dell'animale che consente la sua identificazione in azienda."@it ,
-                                                            "The animal's life event that allows one to identify it in a farm."@en ;
+                                               rdfs:comment """L'evento della vita dell'animale che consente la sua identificazione in azienda. In particolare, è l’evento con il quale avviene l’immatricolazione del soggetto. Il codice attribuito è unico sul territorio nazionale. Permette una identificazione univoca dell’animale in tutte le fasi dell’allevamento e di tracciarne gli spostamenti fino al macello. Fondamentale sia per la gestione dell’azienda sia per tutte le attività legate alla profilassi zootecnica e tracciamento dell’animale e dei suoi prodotti.
+
+Possibili Applicazioni: Identificativo. Univoca identificazione del soggetto, dato chiave nel database relazionale."""@it ,
+                                                            """The event in the life of the animal that enables it to be identified on the farm. In particular, it is the event with which the registration of the animal takes place. The code assigned is unique on the national territory. It allows a unique identification of the animal in all the phases of the breeding and to trace its movements up to the slaughterhouse. Fundamental both for management of the farm and for all activities linked to zootechnical prophylaxis and tracking of the animal and its products.
+
+Possible applications: Identification. Unique identification of the subject, key data in the relational database."""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                rdfs:label "Identification"@en ,
                                                           "Identificazione"@it ;
@@ -1527,80 +1588,111 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                              "stable - added in the second version of the ontology"@en .
 
 
-###  https://w3id.org/leo/onto/ale/InboudMovement
-<https://w3id.org/leo/onto/ale/InboudMovement> rdf:type owl:Class ;
+###  https://w3id.org/leo/onto/ale/InboundMovement
+<https://w3id.org/leo/onto/ale/InboundMovement> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/leo/onto/ale/hasEntryInFarmReason> ;
+                                                                  owl:allValuesFrom <https://w3id.org/leo/onto/ale/EntryInFarmReason>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany> ;
+                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/leo/onto/animal/hasProductionTarget> ;
+                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onClass <https://w3id.org/leo/onto/animal/ProductionType>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/leo/onto/ale/provenanceType> ;
+                                                                  owl:allValuesFrom rdfs:Literal
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/leo/onto/ale/entryInFarmDate> ;
+                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                    owl:unionOf ( xsd:date
+                                                                                                  xsd:dateTime
+                                                                                                )
+                                                                                  ]
+                                                                ] ;
+                                                <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/f24rbcpprwvpu5k/Ale_InboundMovement.png?raw=1> ;
+                                                rdfs:comment """L'evento della vita dell'animale che rappresenta l'entrata/ingresso dell'animale in azienda (ad esempio, acquisto di un soggetto non nato in azienda).
+
+Possibili Applicazioni: Manageriale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto), stima dell'effetto ambientale."""@it ,
+                                                             """The event in the life of the animal that represents the entry of the animal into the farm company (e.g. purchase of an animal not born in the company).
+
+Possible applications: Managerial. Correct identification of movements (sale/purchase) of the subject), estimation of environmental effect"""@en ;
+                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                rdfs:label "Inbound Movement"@en ,
+                                                           "Spostamento in Entrata"@it ;
+                                                owl:versionInfo "stabile -cambiato URI nella versione 0.4 dell'ontologia"@it ,
+                                                                "stable - renamed the URI with InboundMovement in version 0.4 of the ontology"@en .
+
+
+###  https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement
+<https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://w3id.org/italia/onto/TI/TimeIndexedEvent> ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/withinMilkingSession> ;
+                                                                                 owl:allValuesFrom <https://w3id.org/leo/onto/ale/MilkingSession>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/carriedOutBy> ;
+                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                 owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/measuredForFarmAnimal> ;
+                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                 owl:onClass <https://w3id.org/leo/onto/animal/FarmAnimal>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/hasAvgMilkConductivity> ;
+                                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                 owl:onClass <https://w3id.org/italia/onto/MU/Value>
+                                                                               ] ;
+                                                               rdfs:comment "La classe rappresenta la misurazione della conduttività media del latte. Questa viene rilevata in una data all'interno di una sessione di mungitura. È registrata per un animale da allevamento e i dati sono prodotti da un'azienda agricola."@it ,
+                                                                            "The class represents the measurement of the average milk conductivity. This is detected in a date within a milking session. It is registered for a farm animal and the data are produced by a farm company."@en ;
+                                                               rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                                               rdfs:label "Milking Conductivity Measurement"@en ,
+                                                                          "Osservazione su Conducibilità (Media) del Latte"@it ;
+                                                               owl:versionInfo "stabile"@it ,
+                                                                               "stable"@en .
+
+
+###  https://w3id.org/leo/onto/ale/MilkingSession
+<https://w3id.org/leo/onto/ale/MilkingSession> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/hasEntryInFarmReason> ;
-                                                                 owl:allValuesFrom <https://w3id.org/leo/onto/ale/EntryInFarmReason>
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany> ;
+                                                                 owl:onProperty <https://w3id.org/italia/onto/TI/hasDuration> ;
                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onClass <https://w3id.org/leo/onto/co/LivestockCompany>
+                                                                 owl:onClass <https://w3id.org/italia/onto/TI/Duration>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalProvenanceCompany> ;
+                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/hasMilkYield> ;
                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onClass <https://w3id.org/leo/onto/co/LivestockCompany>
+                                                                 owl:onClass <https://w3id.org/italia/onto/MU/Value>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/animal/hasProductionTarget> ;
-                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onClass <https://w3id.org/leo/onto/animal/ProductionType>
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/provenanceType> ;
-                                                                 owl:allValuesFrom rdfs:Literal
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/entryInFarmDate> ;
+                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/milkingSessionDate> ;
                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                  owl:onDataRange [ rdf:type rdfs:Datatype ;
                                                                                    owl:unionOf ( xsd:date
                                                                                                  xsd:dateTime
                                                                                                )
                                                                                  ]
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/animalMovementDeclarationDate> ;
-                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onDataRange xsd:date
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber> ;
-                                                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                                ] ;
-                                               <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/f24rbcpprwvpu5k/Ale_InboundMovement.png?raw=1> ;
-                                               rdfs:comment "L'evento della vita dell'animale che rappresenta l'entrata dell'animale in azienda."@it ,
-                                                            "The event in the animal's life that represents the animal's entry into the farm (company)."@en ;
+                                               <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/slvqtx91kvo3nr9/Milking.png?raw=1> ;
+                                               rdfs:comment "L'evento per il quale un animale è sottoposto a una sessione di mungitura."@it ,
+                                                            "The event for which an animal is subject to a milking session."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                               rdfs:label "Inbound Movement"@en ,
-                                                          "Spostamento in Entrata"@it ;
-                                               owl:versionInfo "stabile -cambiato URI nella versione 0.4 dell'ontologia"@it ,
-                                                               "stable - renamed the URI with InboundMovement in version 0.4 of the ontology"@en .
-
-
-###  https://w3id.org/leo/onto/ale/Milking
-<https://w3id.org/leo/onto/ale/Milking> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/leo/onto/ale/atMilkingTime> ;
-                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                          owl:onClass <https://w3id.org/italia/onto/TI/TimeInterval>
-                                                        ] ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/leo/onto/ale/hasMilkingVelocity> ;
-                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                          owl:onClass <https://w3id.org/italia/onto/MU/Value>
-                                                        ] ;
-                                        rdfs:comment "L'evento della vita dell'animale della mungitura."@it ,
-                                                     "The animal's life event of the milking."@en ;
-                                        rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
-                                        rdfs:label "Milking"@en ,
-                                                   "Mungitura"@it ;
-                                        owl:versionInfo "provvisorio - aggiunto nella seconda versione dell'ontologia"@it ,
-                                                        "unstable - added in the second version of the ontology"@en .
+                                               rdfs:label "Milking Session"@en ,
+                                                          "Sessione di Mungitura"@it ;
+                                               owl:versionInfo "stabile"@it ,
+                                                               "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/OutboundMovement
@@ -1611,14 +1703,9 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                    owl:allValuesFrom <https://w3id.org/leo/onto/ale/ExitFromFarmReason>
                                                                  ] ,
                                                                  [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalDestinationCompany> ;
-                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                   owl:onClass <https://w3id.org/leo/onto/co/LivestockCompany>
-                                                                 ] ,
-                                                                 [ rdf:type owl:Restriction ;
                                                                    owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany> ;
                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                   owl:onClass <https://w3id.org/leo/onto/co/LivestockCompany>
+                                                                   owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
                                                                  ] ,
                                                                  [ rdf:type owl:Restriction ;
                                                                    owl:onProperty <https://w3id.org/leo/onto/ale/destinationType> ;
@@ -1628,19 +1715,14 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                    owl:onProperty <https://w3id.org/leo/onto/ale/exitFromFarmDate> ;
                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                    owl:onDataRange xsd:date
-                                                                 ] ,
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty <https://w3id.org/leo/onto/ale/animalMovementDeclarationDate> ;
-                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                   owl:onDataRange xsd:date
-                                                                 ] ,
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty <https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber> ;
-                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                                  ] ;
                                                  <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/262apccs0gjpm46/Ale_OutboundMovement.png?raw=1> ;
-                                                 rdfs:comment "L'evento di uscita dall'animale dall'allevamento"@it ,
-                                                              "The event of outbound movement of the animal from the farm"@en ;
+                                                 rdfs:comment """L'evento di uscita dall'animale dall'allevamento (ad esempio, vendita del soggetto ad altro allevamento, ecc.).
+
+Possibili Applicazioni: Manageriale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto), stima dell'effetto ambientale."""@it ,
+                                                              """The event of the animal leaving the farm company (e.g. sale of the animal to another farm, etc.).
+
+Possible Applications: Managerial. Correct identification of movements (sale/purchase) of the subject), estimation of the environmental effect."""@en ;
                                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                  rdfs:label "Outbound Movement"@en ,
                                                             "Spostamento in Uscita"@it ;
@@ -1686,8 +1768,12 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                               owl:onDataRange xsd:integer
                                                             ] ;
                                             <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/w8w5gxiyo4ln6z6/Ale_Parturition.png?raw=1> ;
-                                            rdfs:comment "L'evento della vita dell'animale del parto."@it ,
-                                                         "The animal's life event parturition"@en ;
+                                            rdfs:comment """This is the event that ends gestation and consists of the expulsion of the foetus/fetuses from the animal's uterus. It can be natural or aided by people. In dairy cattle, if it occurs after the 260th day of gestation and the baby is capable of independent life, it is called early birth; if the birth occurs at the normal distance from fertilisation but the baby is dead or unviable, it is called stillbirth.
+
+Possible applications: Reproduction. calculation of the animal's reproductive status and days to lactation. Technical assistance, calculation of welfare indicators, fertility indicators, genetic improvement."""@en ,
+                                                         """È l'evento che termina la gestazione e consiste nell'espulsione del feto/feti dall'utero dell'animale. Può essere naturale o aiutato dall'uomo. Nei bovini da latte, se avviene dopo il 260° giorno di gestazione ed il nato è capace di vita autonoma si parla di parto precoce; se il parto avviene alla normale distanza dalla fecondazione ma il nato è morto o disvitale, prende il termine di 'stillbirth”.
+
+Possibili Applicazioni: Riproduzione. calcolo dello stato riproduttivo dell'animale e dei giorni di lattazione. Assistenza tecnica, calcolo indicatore di benessere, indicatori di fertilità, miglioramento genetico."""@it ;
                                             rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                             rdfs:label "Parto"@it ,
                                                        "Parturition"@en ;
@@ -1703,8 +1789,12 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                      owl:onClass <https://w3id.org/leo/onto/ale/PregnancyResult>
                                                                    ] ;
-                                                   rdfs:comment "La specifica diagnosi della gravidanza dell'animale"@it ,
-                                                                "The specific diagnosis of the pregnancy of the animal"@en ;
+                                                   rdfs:comment """This is the event whereby the presence of a foetus is verified after insemination. Diagnoses are made by veterinary surgeons and rarely by other specialised personnel. They are carried out using ultrasound equipment, palpation or rapid test kits for hormone dosage.
+
+Possible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Technical assistance, genetic improvement."""@en ,
+                                                                """È l’evento con il quale si verifica la presenza di feto dopo una inseminazione. Le diagnosi vengono effettuate dai medici veterinari e raramente da altro personale specializzato. Vengono effettuate con strumentazione ecografica, con palpazione o con kit di analisi rapidi per il dosaggio ormonale.
+
+Possibili applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Assistenza tecnica, miglioramento genetico."""@it ;
                                                    rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                                    rdfs:label "Diagnosi Gravidanza"@it ,
                                                               "Pragnacy Diagnosis"@en ;
@@ -1721,8 +1811,8 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                                                                 )
                                                                     ] ;
                                                 rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ;
-                                                rdfs:comment "Esito della visite ginecologiche o dell’analisi di laboratorio che determina se la femmina è gravida."@it ,
-                                                             "Results of gynaecological examinations or laboratory analysis determining whether the female is pregnant."@en ;
+                                                rdfs:comment "Esito della diagnosi di gravidanza. Indica se la diagnosi è Positiva, Negativa o Rivedibile."@it ,
+                                                             "Result of pregnancy diagnosis. Indicates whether the diagnosis is Positive, Negative or Revisable."@en ;
                                                 rdfs:label "Esito Diagnosi Gravidanza"@it ,
                                                            "Pregnancy Result"@en ;
                                                 owl:priorVersion <https://w3id.org/leo/onto/ale> ;
@@ -1732,10 +1822,67 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
 
 ###  https://w3id.org/leo/onto/ale/Slaughter
 <https://w3id.org/leo/onto/ale/Slaughter> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ;
+                                          rdfs:subClassOf <https://w3id.org/leo/onto/ale/AnimalLifeEvent> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalLiveWeight> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <https://w3id.org/italia/onto/MU/Value>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalProvenanceCompany> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/hasAnimalProvenanceCountry> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/hasCarcassCategory> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <https://w3id.org/leo/onto/ale/CarcassCategory>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/hasCarcassClassification> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <https://w3id.org/leo/onto/ale/CarcassClassification>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/hasCarcassWeight> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <https://w3id.org/italia/onto/MU/Value>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/slaughterDate> ;
+                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                              owl:unionOf ( xsd:date
+                                                                                            xsd:dateTime
+                                                                                          )
+                                                                            ]
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onDataRange xsd:boolean
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/deadReason> ;
+                                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <https://w3id.org/leo/onto/ale/isCarcassForConsumption> ;
+                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onDataRange xsd:boolean
+                                                          ] ;
                                           <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/w2ppkgnizjzeuoh/Slaughter.png?raw=1> ;
-                                          rdfs:comment "It is the event in the life of the animal that involves its killing, using appropriate methods, in a slaughterhouse. This event produces a carcass of the animal that can be used for human consumption."@en ,
-                                                       "È l'evento della vita dell'animale che riguarda la sua uccisione, con opportuni metodi, presso un'azienda di tipo macello. Tale evento produce una carcassa dell'animale che può essere destinata al consumo umano."@it ;
+                                          rdfs:comment """It is the event in the life of the animal that relates to its killing, using appropriate methods, for commercial purposes on a slaughterhouse-type farm. This event follows the exit of the animal from the farm company and produces a carcass that can be used for human consumption.
+
+Possible Applications: Managerial. Information recorded at slaughter (e.g.: meat classification, destination for consumption, country of origin, date of slaughter, etc.) useful information for genetic improvement (meat production), management (correct feeding)."""@en ,
+                                                       """È l'evento della vita dell'animale che riguarda la sua uccisione, con opportuni metodi, per scopi commerciali presso un'azienda di tipo macello. Tale evento segue l'uscita dell'animale dall'allevamento e produce una carcassa che può essere destinata al consumo umano.
+
+Possibili Applicazioni: Manageriale. Informazioni registrate in macellazione (es.: classificazione carni, destinazione al consumo, paese di provenienza, data di macellazione, ecc.) informazioni utili per il miglioramento genetico (produzione carne), gestionale (corretta alimentazione)."""@it ;
                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                                           rdfs:label "Macellazione"@it ,
                                                      "Slaughter"@en ;
@@ -1765,6 +1912,10 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
 
 ###  https://w3id.org/leo/onto/co/LivestockCompany
 <https://w3id.org/leo/onto/co/LivestockCompany> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/co/LivestockFarm
+<https://w3id.org/leo/onto/co/LivestockFarm> rdf:type owl:Class .
 
 
 ###  https://w3id.org/leo/onto/co/Site
@@ -2072,6 +2223,16 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                                              "Tardivo"@it ;
                                   owl:versionInfo "stabile"@it ,
                                                   "stable"@en .
+
+
+###  https://w3id.org/leo/onto/ale/Theft
+<https://w3id.org/leo/onto/ale/Theft> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/leo/onto/ale/DisposalReason> ;
+                                      rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
+                                      rdfs:label "Furto"@it ,
+                                                 "Theft"@en ;
+                                      owl:versionInfo "stabile - introdotto nella versione 0.5 dell'ontologia"@en ,
+                                                      "stable - introduced in version 0.5 of the ontology"@en .
 
 
 ###  https://w3id.org/leo/onto/ale/UrgentSlaughterStable

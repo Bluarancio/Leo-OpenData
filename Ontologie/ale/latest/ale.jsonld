@@ -13,23 +13,10 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid102",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/DisposalReason"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/hasDisposalReason"
-  } ]
-}, {
-  "@id" : "_:genid103",
+  "@id" : "_:genid100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid104"
+    "@id" : "_:genid101"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/disposalDate"
@@ -39,7 +26,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid104",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -49,7 +36,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid107",
+  "@id" : "_:genid104",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -65,14 +52,16 @@
     }, {
       "@id" : "https://w3id.org/leo/onto/ale/Slaughterhouse"
     }, {
+      "@id" : "https://w3id.org/leo/onto/ale/Theft"
+    }, {
       "@id" : "https://w3id.org/leo/onto/ale/UrgentSlaughterStable"
     } ]
   } ]
 }, {
-  "@id" : "_:genid115",
+  "@id" : "_:genid113",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid116"
+    "@id" : "_:genid114"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/dryDate"
@@ -82,7 +71,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid116",
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -92,7 +81,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid117",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -118,20 +107,20 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid123",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid126"
+    "@id" : "_:genid124"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/embryonicResorptionDate"
+    "@id" : "https://w3id.org/leo/onto/ale/embryoResorptionDate"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid126",
+  "@id" : "_:genid124",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -141,7 +130,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid129",
+  "@id" : "_:genid127",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -154,7 +143,7 @@
     "@id" : "https://w3id.org/leo/onto/ale/hasBreederBreed"
   } ]
 }, {
-  "@id" : "_:genid130",
+  "@id" : "_:genid128",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -167,10 +156,10 @@
     "@id" : "https://w3id.org/leo/onto/ale/hasFertilizationType"
   } ]
 }, {
-  "@id" : "_:genid131",
+  "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid132"
+    "@id" : "_:genid130"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/fertilizationDate"
@@ -180,7 +169,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid132",
+  "@id" : "_:genid130",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -190,7 +179,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid133",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -202,7 +191,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid139",
+  "@id" : "_:genid137",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -212,20 +201,20 @@
     "@id" : "https://w3id.org/leo/onto/animal/uniqueAnimalNumber"
   } ]
 }, {
-  "@id" : "_:genid140",
+  "@id" : "_:genid138",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid141"
+    "@id" : "_:genid139"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/registrationDate"
+    "@id" : "https://w3id.org/leo/onto/ale/identificationDate"
   } ]
 }, {
-  "@id" : "_:genid141",
+  "@id" : "_:genid139",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -235,7 +224,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid144",
+  "@id" : "_:genid142",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -248,10 +237,10 @@
     "@id" : "https://w3id.org/leo/onto/ale/hasBreederBreed"
   } ]
 }, {
-  "@id" : "_:genid145",
+  "@id" : "_:genid143",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid146"
+    "@id" : "_:genid144"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/implantationDate"
@@ -261,7 +250,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid146",
+  "@id" : "_:genid144",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -271,13 +260,39 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid149",
+  "@id" : "_:genid147",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/EntryInFarmReason"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/hasEntryInFarmReason"
+  } ]
+}, {
+  "@id" : "_:genid148",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany"
+  } ]
+}, {
+  "@id" : "_:genid149",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/ProductionType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/hasProductionTarget"
   } ]
 }, {
   "@id" : "_:genid15",
@@ -292,45 +307,6 @@
 }, {
   "@id" : "_:genid150",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany"
-  } ]
-}, {
-  "@id" : "_:genid151",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalProvenanceCompany"
-  } ]
-}, {
-  "@id" : "_:genid152",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/ProductionType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/hasProductionTarget"
-  } ]
-}, {
-  "@id" : "_:genid153",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ],
@@ -338,10 +314,10 @@
     "@id" : "https://w3id.org/leo/onto/ale/provenanceType"
   } ]
 }, {
-  "@id" : "_:genid154",
+  "@id" : "_:genid151",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid155"
+    "@id" : "_:genid152"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/entryInFarmDate"
@@ -351,7 +327,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid155",
+  "@id" : "_:genid152",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -361,43 +337,42 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid158",
+  "@id" : "_:genid155",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingSession"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/animalMovementDeclarationDate"
+    "@id" : "https://w3id.org/leo/onto/ale/withinMilkingSession"
   } ]
 }, {
-  "@id" : "_:genid159",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber"
-  } ]
-}, {
-  "@id" : "_:genid160",
+  "@id" : "_:genid156",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/TimeInterval"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/atMilkingTime"
+    "@id" : "https://w3id.org/leo/onto/ale/carriedOutBy"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid161",
+  "@id" : "_:genid157",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/measuredForFarmAnimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid158",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -407,10 +382,59 @@
     "@id" : "https://w3id.org/italia/onto/MU/Value"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/hasMilkingVelocity"
+    "@id" : "https://w3id.org/leo/onto/ale/hasAvgMilkConductivity"
+  } ]
+}, {
+  "@id" : "_:genid159",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/Duration"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid160",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasMilkYield"
+  } ]
+}, {
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid162"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/milkingSessionDate"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid162",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid165",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/ExitFromFarmReason"
@@ -419,33 +443,20 @@
     "@id" : "https://w3id.org/leo/onto/ale/hasExitFromFarmReason"
   } ]
 }, {
-  "@id" : "_:genid163",
+  "@id" : "_:genid166",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalDestinationCompany"
-  } ]
-}, {
-  "@id" : "_:genid164",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany"
   } ]
 }, {
-  "@id" : "_:genid165",
+  "@id" : "_:genid167",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -454,7 +465,7 @@
     "@id" : "https://w3id.org/leo/onto/ale/destinationType"
   } ]
 }, {
-  "@id" : "_:genid166",
+  "@id" : "_:genid168",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -465,29 +476,6 @@
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid167",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/animalMovementDeclarationDate"
-  } ]
-}, {
-  "@id" : "_:genid168",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber"
   } ]
 }, {
   "@id" : "_:genid169",
@@ -613,33 +601,170 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/ale/OutboundMovement"
-    } ]
+  "@id" : "_:genid183",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalLiveWeight"
   } ]
 }, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/ale/OutboundMovement"
-    } ]
+  "@id" : "_:genid184",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalProvenanceCompany"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid185",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasAnimalProvenanceCountry"
+  } ]
+}, {
+  "@id" : "_:genid186",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/CarcassCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasCarcassCategory"
+  } ]
+}, {
+  "@id" : "_:genid187",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/CarcassClassification"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasCarcassClassification"
+  } ]
+}, {
+  "@id" : "_:genid188",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasCarcassWeight"
+  } ]
+}, {
+  "@id" : "_:genid189",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid190"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/slaughterDate"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid190",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2001/XMLSchema#date"
     }, {
       "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid193",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse"
+  } ]
+}, {
+  "@id" : "_:genid194",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/deadReason"
+  } ]
+}, {
+  "@id" : "_:genid195",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/isCarcassForConsumption"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/leo/onto/ale/Disposal"
+    }, {
+      "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
     } ]
   } ]
 }, {
@@ -664,12 +789,12 @@
   } ]
 }, {
   "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/Disposal"
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
     }, {
-      "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
     } ]
   } ]
 }, {
@@ -704,12 +829,12 @@
   } ]
 }, {
   "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+      "@id" : "https://w3id.org/leo/onto/ale/Identification"
     }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
     } ]
   } ]
 }, {
@@ -747,19 +872,19 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
+      "@id" : "https://w3id.org/leo/onto/ale/InboundMovement"
     }, {
       "@id" : "https://w3id.org/leo/onto/ale/OutboundMovement"
     } ]
   } ]
 }, {
   "@id" : "_:genid60",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/Abortion"
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
     }, {
-      "@id" : "https://w3id.org/leo/onto/ale/Parturition"
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
     } ]
   } ]
 }, {
@@ -774,22 +899,22 @@
   } ]
 }, {
   "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/leo/onto/ale/Abortion"
+    }, {
+      "@id" : "https://w3id.org/leo/onto/ale/Parturition"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2001/XMLSchema#date"
     }, {
       "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/Identification"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
     } ]
   } ]
 }, {
@@ -804,16 +929,6 @@
   } ]
 }, {
   "@id" : "_:genid75",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -826,10 +941,10 @@
     "@id" : "https://w3id.org/leo/onto/ale/hasAbortionType"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid80"
+    "@id" : "_:genid77"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/abortionDate"
@@ -839,7 +954,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid80",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -849,7 +964,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -862,7 +977,7 @@
     "@id" : "https://w3id.org/leo/onto/ale/numberOfBornDeadFemales"
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -875,7 +990,7 @@
     "@id" : "https://w3id.org/leo/onto/ale/numberOfBornDeadMales"
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -885,7 +1000,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/co/Site"
@@ -894,26 +1009,16 @@
     "@id" : "https://w3id.org/leo/onto/ale/happensIn"
   } ]
 }, {
-  "@id" : "_:genid89",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/involvesCompany"
   } ]
 }, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/ale/Slaughter"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid90",
+  "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
@@ -922,10 +1027,10 @@
     "@id" : "https://w3id.org/leo/onto/ale/involvesFarmAnimal"
   } ]
 }, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid92"
+    "@id" : "_:genid89"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/detectionDate"
@@ -935,7 +1040,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid92",
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -945,10 +1050,20 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid95",
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/leo/onto/ale/InboundMovement"
+    }, {
+      "@id" : "https://w3id.org/leo/onto/ale/Slaughter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/hasAnimalBirthCompany"
@@ -958,7 +1073,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid96",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -971,7 +1086,7 @@
     "@id" : "https://w3id.org/leo/onto/ale/hasAnimalBirthWeight"
   } ]
 }, {
-  "@id" : "_:genid97",
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -984,10 +1099,10 @@
     "@id" : "https://w3id.org/leo/onto/animal/hasAnimalDestination"
   } ]
 }, {
-  "@id" : "_:genid98",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid99"
+    "@id" : "_:genid96"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/diagnosisDate"
@@ -997,7 +1112,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid99",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -1005,6 +1120,19 @@
     }, {
       "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/DisposalReason"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/hasDisposalReason"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
@@ -1102,6 +1230,9 @@
 }, {
   "@id" : "https://w3id.org/italia/onto/l0/controlledVocabulary",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://w3id.org/italia/onto/l0/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1301,7 +1432,7 @@
   "@id" : "https://w3id.org/leo/onto/ale",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/8xr7c60yip8jra4/AleModule.png?raw=1"
+    "@id" : "https://www.dropbox.com/s/xrx1bl1suyzrwem/AleModule.png?raw=1"
   } ],
   "http://purl.org/dc/terms/accrualPeriodicity" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
@@ -1316,6 +1447,9 @@
     "@language" : "en",
     "@value" : "This is the ontology of the farm animals life events"
   } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "onto-BA-3"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2018-06-18"
@@ -1326,7 +1460,7 @@
     "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2022-01-12"
+    "@value" : "2022-05-18"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
@@ -1346,7 +1480,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Questa è l'ontologia degli eventi della vita degli animali di allevamento,"
+    "@value" : "Questa è l'ontologia degli eventi della vita degli animali di allevamento"
   }, {
     "@language" : "en",
     "@value" : "This is the ontology of the farm animals life events"
@@ -1367,14 +1501,14 @@
     "@id" : "https://w3id.org/italia/onto/l0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/0.4"
+    "@id" : "https://w3id.org/leo/onto/ale/0.5"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "Version 0.4 - 2021 - Stabilisation of part of the ontology (excluding Milking event) and addition of new elements (e.g. 'entry in farm reason', date and number of model 4 - animal movement declaration)"
+    "@value" : "Version 0.5- 18 May 2022 - Renamed registrationDate in identificationDate and moved birthdDate from this ontology to animal ontology. Revised Milking (session) event."
   }, {
     "@language" : "it",
-    "@value" : "Versione 0.4 - 2021 - Stabilizzazione di una parte dell'ontologia (escluso evento Mungitura) e aggiunta di nuovi elementi (e.g., 'motivo d'ingresso', data e numero modello 4)"
+    "@value" : "Versione 0.5 - 18 May 2022 - Rinominata la proprietà data di immatricolazione in data di identificazione univoca. Spostata la data di nascita da questa ontologia all'ontologia animal. RIvista interamente la parte di mungitura con l'introduzione della misurazione della conducibilità media."
   } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
@@ -1444,7 +1578,13 @@
     "@value" : "catalogued"
   } ],
   "https://w3id.org/italia/onto/ADMS/target" : [ {
+    "@language" : "it",
+    "@value" : "Comunità Open Data"
+  }, {
     "@value" : "Imprese"
+  }, {
+    "@language" : "it",
+    "@value" : "Professionisti del settore zootecnico"
   }, {
     "@value" : "Pubbliche Amministrazioni"
   } ],
@@ -1459,10 +1599,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento di aborto dell'animale."
+    "@value" : "L'evento di aborto dell'animale. In particolare, rappresenta l'interruzione della gravidanza con espulsione del feto. In particolare, nei bovini da latte si definisce aborto l'interruzione della gravidanza con l'espulsione del feto dal 42° al 260° post – fecondazione. Da non confondere con il parto prematuro (nascita di un vitello capace di vita autonoma dopo il 260° giorno di gravidanza) o parto a termine di un vitello morto o disvitale ('stillbirth”). Sempre nei bovini da latte, si ha aborto precoce dal 42° al 90° giorno di gravidanza, e aborto tardivo, dopo il 90° giorno.\n\nPossibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Calcolo del tasso di abortività aziendale, dei fattori di rischio per il benessere e per la fertilità. Assistenza tecnica, Gestione sanitaria"
   }, {
     "@language" : "en",
-    "@value" : "The abort event of the animal."
+    "@value" : "The event of abortion of the animal. In particular, it represents the termination of pregnancy with expulsion of the foetus. Specifically, in dairy cattle, abortion is defined as the termination of pregnancy with expulsion of the foetus from the 42nd to the 260th post - fertilisation. Not to be confused with premature birth (birth of a calf capable of independent life after the 260th day of pregnancy) or term birth of a stillborn calf. In dairy cattle, early abortion occurs from day 42 to day 90 of pregnancy, and late abortion after day 90.\n\nPossible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Calculation of abortion rate, welfare and fertility risk factors. Technical assistance, Health management"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -1477,13 +1617,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid78"
+    "@id" : "_:genid75"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid76"
   }, {
-    "@id" : "_:genid83"
+    "@id" : "_:genid80"
   }, {
-    "@id" : "_:genid84"
+    "@id" : "_:genid81"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1497,10 +1637,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Questa classe modella il tipo di aborto. Ci sono due tipi di aborto: Tardivo (T) e Precoce (P)."
+    "@value" : "Questa classe modella il tipo di aborto. Ci sono due tipi di aborto: Tardivo (T) e Precoce (P). L'aborto Tardivo inizia una nuova lattazione."
   }, {
     "@language" : "en",
-    "@value" : "This class allows one to represent the type of abortion. There are two types of abortion: belated (T) and premature (P)."
+    "@value" : "This class allows one to represent the type of abortion. There are two types of abortion: belated (T) and premature (P). Late abortion starts a new lactation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -1516,7 +1656,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid85"
+    "@id" : "_:genid82"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1548,13 +1688,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/TimeIndexedEvent"
   }, {
+    "@id" : "_:genid85"
+  }, {
+    "@id" : "_:genid86"
+  }, {
+    "@id" : "_:genid87"
+  }, {
     "@id" : "_:genid88"
-  }, {
-    "@id" : "_:genid89"
-  }, {
-    "@id" : "_:genid90"
-  }, {
-    "@id" : "_:genid91"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1609,11 +1749,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid95"
+    "@id" : "_:genid92"
   }, {
-    "@id" : "_:genid96"
+    "@id" : "_:genid93"
   }, {
-    "@id" : "_:genid97"
+    "@id" : "_:genid94"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1680,10 +1820,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Classification of the carcass, based on the assessment of its conformation and fat cover status. Carcass classification is defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013.\n\nClasses for carcass classification are defined in a controlled vocabulary."
+    "@value" : "Classification of the carcass, based on the assessment of its muscle conformation and fat cover.\nMuscle conformation defines the development of the carcass profiles and in particular of its essential parts (thigh, back and shoulder).\nFat cover defines the mass of fat on the outside of the carcase and on the inner wall of the thoracic cavity.\nCarcass classification is defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013.\n\nClasses for carcass classification are defined in a controlled vocabulary."
   }, {
     "@language" : "it",
-    "@value" : "Classificazione della carcassa, basata sulla valutazione della sua conformazione e dello stato di ingrassamento. La classificazione delle carcasse è definita nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013.\n\nLe classi per la classificazione delle carcasse sono definite in un apposito vocabolario controllato."
+    "@value" : "Classificazione della carcassa, basata sulla valutazione della sua conformazione muscolare e dello stato di ingrassamento.\nLa Conformazione muscolare definisce lo sviluppo dei profili della carcassa e segnatamente delle sue parti essenziali (coscia, schiena e spalla).\nLo Stato di ingrassamento definisce la massa di grasso all’esterno della carcassa e sulla parete interna della cassa toracica.\nLa classificazione delle carcasse è definita nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013.\n\nLe classi per la classificazione delle carcasse sono definite in un apposito vocabolario controllato."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -1807,7 +1947,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid98"
+    "@id" : "_:genid95"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1840,14 +1980,14 @@
   "@id" : "https://w3id.org/leo/onto/ale/Disposal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/6528ov6a402qqw2/Ale_Disposal.png?raw=1"
+    "@id" : "https://www.dropbox.com/s/9ot2hlckexlo6dg/Ale_Disposal.png?raw=1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "L'evento della vita dell'animale dell'eliminazione."
-  }, {
     "@language" : "en",
-    "@value" : "The animal's life event of the disposal."
+    "@value" : "This is the event whereby the farmed animal is removed from the farm permanently for a number of reasons related to management or to pathological or metabolic states. Disposal represents the exit of the animal from the farm for any reason (e.g. sale to another farm, slaughter, death on the farm, etc.).\n\nPossible applications: Managerial. Calculation of the length of the productive career of the animal, of the average farm longevity. Correct identification of the movements (sale/purchase) of the animal. Technical assistance data for estimation of company replacement rates"
+  }, {
+    "@language" : "it",
+    "@value" : "È l’evento per il quale l’animale allevato viene allontanato dall’azienda in maniera definitiva per una serie di cause legate alla managerialità o a stati patologici o metabolici. L’eliminazione rappresenta l’uscita del capo dall’azienda per qualsiasi motivo (ad esempio, vendita ad altro allevamento, macellazione, morte in azienda, ecc).\n\nPossibili Applicazioni: Manageriale. Calcolo della lunghezza della carriera produttiva dell'animale, della longevità media aziendale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto. Dato di assistenza tecnica per la stima dei tassi di rimonta aziendali."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -1862,26 +2002,26 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid102"
+    "@id" : "_:genid99"
   }, {
-    "@id" : "_:genid103"
+    "@id" : "_:genid100"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "provvisorio - aggiunto nella seconda versione dell'ontologia"
+    "@language" : "it",
+    "@value" : "stabile"
   }, {
     "@language" : "en",
-    "@value" : "unstable - added  in the second version of the ontology"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/DisposalReason",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Information that specifies the cause of the animal disposal"
+    "@value" : "It is the reason why the animal was eliminated."
   }, {
     "@language" : "it",
-    "@value" : "Informazione che specifica la causa di eliminazione dell’animale."
+    "@value" : "È il motivo per il quale l'animale è stato eliminato."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -1897,7 +2037,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid107"
+    "@id" : "_:genid104"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1914,10 +2054,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento dell'asciutta, ovvero l'evento svolto per finalità sanitarie che consente di sospendere la mungitura dell'animale."
+    "@value" : "L'evento dell'asciutta. Nei soggetti allevati per la produzione di latte, il termine indica la cessazione, naturale o più spesso indotta con opportune pratiche dall'allevatore, della produzione di latte nell'ultima fase di lattazione in modo che l'animale possa utilizzare le energie esclusivamente per recupero del peso e formazione di riserve corporee per il parto e la lattazione successiva.\n\nPossibili applicazioni: Riproduzione. Calcolo dello stato riproduttivo dell'animale. Calcolo lunghezza della lattazione e della durata della preparazione al parto successivo. Individuazione lattazioni corte. Assistenza tecnica."
   }, {
     "@language" : "en",
-    "@value" : "The dry event, i.e. the event carried out for health purposes that stops the milking of the animal."
+    "@value" : "The dry event. In animals bred for milk production, the term indicates the cessation, natural or more often induced with appropriate practices by the farmer, of milk production in the last phase of lactation so that the animal can use its energy exclusively for weight recovery and the formation of body reserves for parturition and subsequent lactation.\n\nPossible applications: Reproduction. Calculation of the animal's reproductive status. Calculation of lactation length and duration of preparation for the next calving. Identification of short lactations. Technical assistance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -1932,7 +2072,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid115"
+    "@id" : "_:genid113"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1965,7 +2105,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid119"
+    "@id" : "_:genid117"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1995,24 +2135,24 @@
     "@value" : "unstable - added in the second version of the ontology"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/ale/EmbryonicResorption",
+  "@id" : "https://w3id.org/leo/onto/ale/EmbryoResorption",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@id" : "https://www.dropbox.com/s/erv0fq940dsw0ci/Ale_EmbryonicResorption.png?raw=1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento della vita dell'animale di riassorbimento embrionale avvenuto in azienda."
+    "@value" : "L'evento della vita dell'animale di riassorbimento embrionale avvenuto in azienda. Definito in termini clinici come 'morte embrionale”, è un fenomeno che consiste nella morte dell'embrione/feto durante le prime fasi di gravidanza. Nei bovini da latte la morte embrionale si distingue in tre sottogruppi: morte embrionale precoce (primi 16 giorni dall'inseminazione), morte embrionale tardiva (da 17 a 42 giorni dall'inseminazione) e morte fetale dopo i 42 giorni di gravidanza.\n\nPossibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Calcolo del tasso di abortività aziendale, dei fattori di rischio per il benessere e per la fertilità. Assistenza tecnica. Gestione sanitaria"
   }, {
     "@language" : "en",
-    "@value" : "The animal's life event of embryonic resorption occurred in the farm (company)."
+    "@value" : "The event in the animal's life of embryo resorption occurring on the farm company. Defined in clinical terms as 'embryonic death', it is a phenomenon consisting of the death of the embryo/fetus during the early stages of pregnancy. In dairy cattle, embryo death can be divided into three subgroups: early embryo death (first 16 days after insemination), late embryo death (17 to 42 days after insemination) and foetal death after 42 days of pregnancy.\n\nPossible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Calculation of abortion rate, welfare and fertility risk factors. Technical assistance. Health management."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Embryonic Resorption"
+    "@value" : "Embryo Resorption"
   }, {
     "@language" : "it",
     "@value" : "Riassorbimento Embrionale"
@@ -2020,7 +2160,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid125"
+    "@id" : "_:genid123"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2246,10 +2386,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento di fecondazione dell'animale."
+    "@value" : "L'evento di fecondazione dell'animale. È l’atto fecondativo dell’animale. La più diffusa, in particolare nei bovini, è l’inseminazione artificiale che è la pratica di introdurre seme nell’utero di una riproduttrice tramite un’apposita strumentazione senza ricorrere all’accoppiamento. Fondamentale nell’attività di miglioramento genetico, permette di migliorare, nella progenie, la produzione di latte o altre caratteristiche diffondendo i geni favorevoli del maschio nella popolazione.\n\nPossibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Calcolo dei parametri di fertilità. Assistenza tecnica. Miglioramento genetico (fertilità)."
   }, {
     "@language" : "en",
-    "@value" : "The fertilization of the animal event."
+    "@value" : "The fertilization of the animal event. This is the fertilising act of the animal. The most widely used, particularly in cattle, is artificial insemination, which is the practice of introducing semen into the uterus of a breeding animal by means of a special device without recourse to mating. It is essential in genetic improvement, as it improves milk production or other characteristics in the offspring by spreading favourable male genes throughout the population.\n\nPossible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Calculation of fertility parameters. Technical assistance. Genetic improvement (fertility)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2270,11 +2410,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
+    "@id" : "_:genid127"
+  }, {
+    "@id" : "_:genid128"
+  }, {
     "@id" : "_:genid129"
-  }, {
-    "@id" : "_:genid130"
-  }, {
-    "@id" : "_:genid131"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2288,10 +2428,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica se la fecondazione subita dalla femmina è stata effettuata attraverso una monta naturale o attraverso l’intervento strumentale o attraverso un impianto di embrioni"
+    "@value" : "Indica se la fecondazione subita dalla femmina è stata effettuata attraverso una fecondazione artificiale o naturale o gestita in un gruppo di monta."
   }, {
     "@language" : "en",
-    "@value" : "Indicates whether the fertilization suffered by the female was carried out through a natural mount or through instrumental intervention or through an embryo implantation"
+    "@value" : "Indicates whether the fertilisation undergone by the female was carried out through artificial or natural fertilisation or managed in a mating group."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2307,7 +2447,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid135"
+    "@id" : "_:genid133"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2324,10 +2464,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento della vita dell'animale che consente la sua identificazione in azienda."
+    "@value" : "L'evento della vita dell'animale che consente la sua identificazione in azienda. In particolare, è l’evento con il quale avviene l’immatricolazione del soggetto. Il codice attribuito è unico sul territorio nazionale. Permette una identificazione univoca dell’animale in tutte le fasi dell’allevamento e di tracciarne gli spostamenti fino al macello. Fondamentale sia per la gestione dell’azienda sia per tutte le attività legate alla profilassi zootecnica e tracciamento dell’animale e dei suoi prodotti.\n\nPossibili Applicazioni: Identificativo. Univoca identificazione del soggetto, dato chiave nel database relazionale."
   }, {
     "@language" : "en",
-    "@value" : "The animal's life event that allows one to identify it in a farm."
+    "@value" : "The event in the life of the animal that enables it to be identified on the farm. In particular, it is the event with which the registration of the animal takes place. The code assigned is unique on the national territory. It allows a unique identification of the animal in all the phases of the breeding and to trace its movements up to the slaughterhouse. Fundamental both for management of the farm and for all activities linked to zootechnical prophylaxis and tracking of the animal and its products.\n\nPossible applications: Identification. Unique identification of the subject, key data in the relational database."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2342,9 +2482,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid139"
+    "@id" : "_:genid137"
   }, {
-    "@id" : "_:genid140"
+    "@id" : "_:genid138"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2379,9 +2519,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
-    "@id" : "_:genid144"
+    "@id" : "_:genid142"
   }, {
-    "@id" : "_:genid145"
+    "@id" : "_:genid143"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2391,17 +2531,17 @@
     "@value" : "stable - added in the second version of the ontology"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/ale/InboudMovement",
+  "@id" : "https://w3id.org/leo/onto/ale/InboundMovement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@id" : "https://www.dropbox.com/s/f24rbcpprwvpu5k/Ale_InboundMovement.png?raw=1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento della vita dell'animale che rappresenta l'entrata dell'animale in azienda."
+    "@value" : "L'evento della vita dell'animale che rappresenta l'entrata/ingresso dell'animale in azienda (ad esempio, acquisto di un soggetto non nato in azienda).\n\nPossibili Applicazioni: Manageriale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto), stima dell'effetto ambientale."
   }, {
     "@language" : "en",
-    "@value" : "The event in the animal's life that represents the animal's entry into the farm (company)."
+    "@value" : "The event in the life of the animal that represents the entry of the animal into the farm company (e.g. purchase of an animal not born in the company).\n\nPossible applications: Managerial. Correct identification of movements (sale/purchase) of the subject), estimation of environmental effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2416,21 +2556,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
   }, {
+    "@id" : "_:genid147"
+  }, {
+    "@id" : "_:genid148"
+  }, {
     "@id" : "_:genid149"
   }, {
     "@id" : "_:genid150"
   }, {
     "@id" : "_:genid151"
-  }, {
-    "@id" : "_:genid152"
-  }, {
-    "@id" : "_:genid153"
-  }, {
-    "@id" : "_:genid154"
-  }, {
-    "@id" : "_:genid158"
-  }, {
-    "@id" : "_:genid159"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2460,27 +2594,70 @@
     "@value" : "Introduced in version 0.4 of the ontology"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/ale/Milking",
+  "@id" : "https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento della vita dell'animale della mungitura."
+    "@value" : "La classe rappresenta la misurazione della conduttività media del latte. Questa viene rilevata in una data all'interno di una sessione di mungitura. È registrata per un animale da allevamento e i dati sono prodotti da un'azienda agricola."
   }, {
     "@language" : "en",
-    "@value" : "The animal's life event of the milking."
+    "@value" : "The class represents the measurement of the average milk conductivity. This is detected in a date within a milking session. It is registered for a farm animal and the data are produced by a farm company."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Milking"
+    "@value" : "Milking Conductivity Measurement"
   }, {
     "@language" : "it",
-    "@value" : "Mungitura"
+    "@value" : "Osservazione su Conducibilità (Media) del Latte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/TimeIndexedEvent"
+  }, {
+    "@id" : "_:genid155"
+  }, {
+    "@id" : "_:genid156"
+  }, {
+    "@id" : "_:genid157"
+  }, {
+    "@id" : "_:genid158"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/ale/MilkingSession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://www.dropbox.com/s/slvqtx91kvo3nr9/Milking.png?raw=1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'evento per il quale un animale è sottoposto a una sessione di mungitura."
+  }, {
+    "@language" : "en",
+    "@value" : "The event for which an animal is subject to a milking session."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Milking Session"
+  }, {
+    "@language" : "it",
+    "@value" : "Sessione di Mungitura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+  }, {
+    "@id" : "_:genid159"
   }, {
     "@id" : "_:genid160"
   }, {
@@ -2488,10 +2665,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
-    "@value" : "provvisorio - aggiunto nella seconda versione dell'ontologia"
+    "@value" : "stabile"
   }, {
     "@language" : "en",
-    "@value" : "unstable - added in the second version of the ontology"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/Negative",
@@ -2521,10 +2698,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "L'evento di uscita dall'animale dall'allevamento"
+    "@value" : "L'evento di uscita dall'animale dall'allevamento (ad esempio, vendita del soggetto ad altro allevamento, ecc.).\n\nPossibili Applicazioni: Manageriale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto), stima dell'effetto ambientale."
   }, {
     "@language" : "en",
-    "@value" : "The event of outbound movement of the animal from the farm"
+    "@value" : "The event of the animal leaving the farm company (e.g. sale of the animal to another farm, etc.).\n\nPossible Applications: Managerial. Correct identification of movements (sale/purchase) of the subject), estimation of the environmental effect."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2538,12 +2715,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
-  }, {
-    "@id" : "_:genid162"
-  }, {
-    "@id" : "_:genid163"
-  }, {
-    "@id" : "_:genid164"
   }, {
     "@id" : "_:genid165"
   }, {
@@ -2587,11 +2758,11 @@
     "@id" : "https://www.dropbox.com/s/w8w5gxiyo4ln6z6/Ale_Parturition.png?raw=1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "L'evento della vita dell'animale del parto."
-  }, {
     "@language" : "en",
-    "@value" : "The animal's life event parturition"
+    "@value" : "This is the event that ends gestation and consists of the expulsion of the foetus/fetuses from the animal's uterus. It can be natural or aided by people. In dairy cattle, if it occurs after the 260th day of gestation and the baby is capable of independent life, it is called early birth; if the birth occurs at the normal distance from fertilisation but the baby is dead or unviable, it is called stillbirth.\n\nPossible applications: Reproduction. calculation of the animal's reproductive status and days to lactation. Technical assistance, calculation of welfare indicators, fertility indicators, genetic improvement."
+  }, {
+    "@language" : "it",
+    "@value" : "È l'evento che termina la gestazione e consiste nell'espulsione del feto/feti dall'utero dell'animale. Può essere naturale o aiutato dall'uomo. Nei bovini da latte, se avviene dopo il 260° giorno di gestazione ed il nato è capace di vita autonoma si parla di parto precoce; se il parto avviene alla normale distanza dalla fecondazione ma il nato è morto o disvitale, prende il termine di 'stillbirth”.\n\nPossibili Applicazioni: Riproduzione. calcolo dello stato riproduttivo dell'animale e dei giorni di lattazione. Assistenza tecnica, calcolo indicatore di benessere, indicatori di fertilità, miglioramento genetico."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2649,11 +2820,11 @@
   "@id" : "https://w3id.org/leo/onto/ale/PregnancyDiagnosis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La specifica diagnosi della gravidanza dell'animale"
-  }, {
     "@language" : "en",
-    "@value" : "The specific diagnosis of the pregnancy of the animal"
+    "@value" : "This is the event whereby the presence of a foetus is verified after insemination. Diagnoses are made by veterinary surgeons and rarely by other specialised personnel. They are carried out using ultrasound equipment, palpation or rapid test kits for hormone dosage.\n\nPossible applications: Reproduction and Welfare. Calculation of the reproductive status of the animal. Technical assistance, genetic improvement."
+  }, {
+    "@language" : "it",
+    "@value" : "È l’evento con il quale si verifica la presenza di feto dopo una inseminazione. Le diagnosi vengono effettuate dai medici veterinari e raramente da altro personale specializzato. Vengono effettuate con strumentazione ecografica, con palpazione o con kit di analisi rapidi per il dosaggio ormonale.\n\nPossibili applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell'animale. Assistenza tecnica, miglioramento genetico."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2682,10 +2853,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Esito della visite ginecologiche o dell’analisi di laboratorio che determina se la femmina è gravida."
+    "@value" : "Esito della diagnosi di gravidanza. Indica se la diagnosi è Positiva, Negativa o Rivedibile."
   }, {
     "@language" : "en",
-    "@value" : "Results of gynaecological examinations or laboratory analysis determining whether the female is pregnant."
+    "@value" : "Result of pregnancy diagnosis. Indicates whether the diagnosis is Positive, Negative or Revisable."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -2758,10 +2929,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "It is the event in the life of the animal that involves its killing, using appropriate methods, in a slaughterhouse. This event produces a carcass of the animal that can be used for human consumption."
+    "@value" : "It is the event in the life of the animal that relates to its killing, using appropriate methods, for commercial purposes on a slaughterhouse-type farm. This event follows the exit of the animal from the farm company and produces a carcass that can be used for human consumption.\n\nPossible Applications: Managerial. Information recorded at slaughter (e.g.: meat classification, destination for consumption, country of origin, date of slaughter, etc.) useful information for genetic improvement (meat production), management (correct feeding)."
   }, {
     "@language" : "it",
-    "@value" : "È l'evento della vita dell'animale che riguarda la sua uccisione, con opportuni metodi, presso un'azienda di tipo macello. Tale evento produce una carcassa dell'animale che può essere destinata al consumo umano."
+    "@value" : "È l'evento della vita dell'animale che riguarda la sua uccisione, con opportuni metodi, per scopi commerciali presso un'azienda di tipo macello. Tale evento segue l'uscita dell'animale dall'allevamento e produce una carcassa che può essere destinata al consumo umano.\n\nPossibili Applicazioni: Manageriale. Informazioni registrate in macellazione (es.: classificazione carni, destinazione al consumo, paese di provenienza, data di macellazione, ecc.) informazioni utili per il miglioramento genetico (produzione carne), gestionale (corretta alimentazione)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -2775,6 +2946,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/AnimalLifeEvent"
+  }, {
+    "@id" : "_:genid183"
+  }, {
+    "@id" : "_:genid184"
+  }, {
+    "@id" : "_:genid185"
+  }, {
+    "@id" : "_:genid186"
+  }, {
+    "@id" : "_:genid187"
+  }, {
+    "@id" : "_:genid188"
+  }, {
+    "@id" : "_:genid189"
+  }, {
+    "@id" : "_:genid193"
+  }, {
+    "@id" : "_:genid194"
+  }, {
+    "@id" : "_:genid195"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2864,6 +3055,26 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "https://w3id.org/leo/onto/ale/Theft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/ale/DisposalReason" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Furto"
+  }, {
+    "@language" : "en",
+    "@value" : "Theft"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "stabile - introdotto nella versione 0.5 dell'ontologia"
+  }, {
+    "@language" : "en",
+    "@value" : "stable - introduced in version 0.5 of the ontology"
+  } ]
+}, {
   "@id" : "https://w3id.org/leo/onto/ale/UrgentSlaughterStable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/ale/DisposalReason" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -2888,10 +3099,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Data di aborto dell’animale gravido. E' rlevata nell'evento della vita aborto"
+    "@value" : "Data di espulsione del feto."
   }, {
     "@language" : "en",
-    "@value" : "Date of the abort of the pregnant animal. It is detected in the abort life event."
+    "@value" : "Date of expulsion of the foetus."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/Abortion"
@@ -2921,7 +3132,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
     "@value" : "Indica se l'animale è arrivato morto o meno al macello"
@@ -2951,78 +3162,6 @@
   }, {
     "@language" : "en",
     "@value" : "stable - introduced in version 0.3 of the ontology"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/ale/animalMovementDeclarationDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that allows one to specify the date of the declaration (document) of origin and destination of the farm animals. This declaration/document is also called model 4 in the Italian national database of the zootechnical registry (BDN). The declaration is used in the movement of the farm animals."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che consente di specificare la data della dichiarazione (documento)  di provenienza e di destinazione degli animali. Questa dichiarazione/documento è anche chiamato modello 4 nella banca dati nazionale dell'anagrafe zootecnica (BDN). Il modello 4 è utilizzato nelle movimentazioni degli animali d'allevamento."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid21"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "animal movement declaration date"
-  }, {
-    "@language" : "en",
-    "@value" : "data dichiarazione provenienza e destinazione animale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile - introdotta nella versione 0.4 dell'ontologia. Da capire se in futuro sia possibile associare tale proprietà a una classe di tipo documento."
-  }, {
-    "@language" : "en",
-    "@value" : "stable - introduced in version 0.4 of the ontology. When a more complex management of the declaration (document) of movements for farm animals is available, this property can change its current domain."
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/ale/animalMovementDeclarationNumber",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that allows one to specify the number of the document/declaration of provenance and destination (also known as model 4) of the animals. The document is used in animal movements."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che consente di specificare il numero del documento/dichiarazione di provenienza e di destinazione (o anche modello 4) degli animali. Il documento è usato nelle movimentazioni degli animali."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid24"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "animal movement declaration number"
-  }, {
-    "@language" : "it",
-    "@value" : "numero dichiarazione provenienza e destinazione animali"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "provvisoria - introdotta nella versione 0.4 dell'ontologia. Da capire se in futuro sia possibile associare tale proprietà a una classe di tipo documento."
-  }, {
-    "@language" : "en",
-    "@value" : "unstable - introduced in version 0.4 of the ontology"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/appliesToSpecies",
@@ -3058,69 +3197,30 @@
     "@value" : "stable - introduced in version 0.4 of the ontology"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/ale/atMilkingTime",
+  "@id" : "https://w3id.org/leo/onto/ale/carriedOutBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property that links the milking event to the time interval at which it occures (with start date/time and end date/time)."
+    "@value" : "Property that links the measurement of the milk conductivity to the company that provides the results."
   }, {
     "@language" : "it",
-    "@value" : "Proprietà che collega l'evento della mungitura all'intervallo di tempo in cui avviene (con data e ora di inizio e data e ora di fine)."
+    "@value" : "Proprietà che collega la misurazione della conducibilità media del latte all'azienda che fornisce i risultati."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/Milking"
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "at milking time"
+    "@value" : "carried out by"
   }, {
     "@language" : "it",
-    "@value" : "mungitura al tempo"
+    "@value" : "fatta da"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/TimeInterval"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/atTime"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "provvisorio - aggiunto nella seconda versione dell'ontologia"
-  }, {
-    "@language" : "en",
-    "@value" : "unstable - added in the second version of the ontology"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/ale/birthDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Data nella quale è nato l’animale"
-  }, {
-    "@language" : "en",
-    "@value" : "Date on which the animal was born"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "birth date"
-  }, {
-    "@language" : "it",
-    "@value" : "data di nascita"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid27"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -3235,10 +3335,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "La data di rilevazione dell'evento della vita dell'animale."
+    "@value" : "La data  usata per riportare informazioni di vario genere nel dominio di riferimento."
   }, {
     "@language" : "en",
-    "@value" : "The date of detection of the life event of the animal."
+    "@value" : "The date in which information is reported."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -3254,7 +3354,7 @@
     "@value" : "detection date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid30"
+    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3290,7 +3390,7 @@
     "@value" : "diagnosis date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid33"
+    "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3313,7 +3413,7 @@
     "@value" : "Date on which the animal leaves the farm and its destination is NOT another farm on which it will be bred"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid36"
+    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -3326,7 +3426,7 @@
     "@value" : "disposal date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid39"
+    "@id" : "_:genid30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3342,11 +3442,11 @@
   "@id" : "https://w3id.org/leo/onto/ale/dryDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La data nella quale l’allevatore dopo aver ridotto volontariamente la mungitura della femmina la sospende."
-  }, {
     "@language" : "en",
-    "@value" : "The date on which the farmer, after voluntarily reducing the milking of the female, stops milking her."
+    "@value" : "It represents the date on which the animal is put out to dry."
+  }, {
+    "@language" : "it",
+    "@value" : "Rappresenta la data in cui l’animale viene messo in asciutta."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/Dry"
@@ -3362,7 +3462,7 @@
     "@value" : "dry date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid42"
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3375,17 +3475,17 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/ale/embryonicResorptionDate",
+  "@id" : "https://w3id.org/leo/onto/ale/embryoResorptionDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Data del riassorbimento embrionale dell’animale gravido (aborto molto precoci)"
+    "@value" : "Data in cui viene segnalato il riassorbimento embrionale."
   }, {
     "@language" : "en",
-    "@value" : "Date of embryonic resorption of the pregnant animal (very early abortion)"
+    "@value" : "Date on which embryo resorption is reported."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/EmbryonicResorption"
+    "@id" : "https://w3id.org/leo/onto/ale/EmbryoResorption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -3395,10 +3495,10 @@
     "@value" : "data riassorbimento embrionale"
   }, {
     "@language" : "en",
-    "@value" : "embryonic resorption date"
+    "@value" : "embryo resorption date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid45"
+    "@id" : "_:genid36"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3421,7 +3521,7 @@
     "@value" : "Date on which the animal entered the herd, it could coincide with the date of birth if it represents an entry of a stable born."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
+    "@id" : "https://w3id.org/leo/onto/ale/InboundMovement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -3434,7 +3534,7 @@
     "@value" : "entry in farm date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid48"
+    "@id" : "_:genid39"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3470,7 +3570,7 @@
     "@value" : "exit from farm date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid51"
+    "@id" : "_:genid42"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3487,10 +3587,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "La data nella quale la vacca viene fecondata."
+    "@value" : "Data in cui viene effettuato l'impianto embrionale."
   }, {
     "@language" : "en",
-    "@value" : "The date on which the cow is fertilized."
+    "@value" : "The date on which the embryo implantation event occurs."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/Fertilization"
@@ -3506,7 +3606,7 @@
     "@value" : "fertilization date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid54"
+    "@id" : "_:genid45"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3608,7 +3708,7 @@
     "@value" : "has animal birth company"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/involvesCompany"
@@ -3676,7 +3776,7 @@
     "@value" : "has animal destination company"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/involvesCompany"
@@ -3781,7 +3881,7 @@
     "@value" : "has animal owner company"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/involvesCompany"
@@ -3798,10 +3898,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Association between the event slaughter and the company of provenance of the farm animal subject to slaughter"
+    "@value" : "Property that links the event of slaughter and inbound movement with the farm company of origin of the animal."
   }, {
     "@language" : "it",
-    "@value" : "Proprietà che lega l'evento della macellazione con l'azienda di provenienza dell'animale soggetto a macellazione."
+    "@value" : "Proprietà che lega l'evento della macellazione e spostamento in entrata con l'azienda di provenienza dell'animale."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid9"
@@ -3817,7 +3917,7 @@
     "@value" : "has animal provenance company"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/involvesCompany"
@@ -3834,10 +3934,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Association between the slaughter animal life event and the country of provenance of the farm animal subject to the slaugther."
+    "@value" : "Relationship between the slaughter event and the country of origin of the animal subject to slaughter. In essence, this is the country where the last farm company from which the animal came is located."
   }, {
     "@language" : "it",
-    "@value" : "Relazione tra l'evento di macellazione e il paese di provenienza dell'animale soggetto a macellazione."
+    "@value" : "Relazione tra l'evento di macellazione e il paese di provenienza dell'animale soggetto a macellazione. In sostanza è  il paese dove è sita l’ultima azienda da cui proviene l’animale."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/Slaughter"
@@ -3863,6 +3963,39 @@
     "@value" : "stable - introduced in version 0.3 of the ontology"
   } ]
 }, {
+  "@id" : "https://w3id.org/leo/onto/ale/hasAvgMilkConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links the measurement of the milk conductivity to its average value."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega la misurazione della conduttività del latte al suo valore medio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha conducibilità latte media"
+  }, {
+    "@language" : "en",
+    "@value" : "has average milk conductivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "https://w3id.org/leo/onto/ale/hasBreederBreed",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3870,7 +4003,7 @@
     "@value" : "Property that links the fertilisation or implantation events to the breed of the breeder that is reported in the events. The breed of the breeder is the breed of the male used for the fertilization"
   }, {
     "@language" : "it",
-    "@value" : "Proprietà che lega gli eventi di fecondazione o impianto alla razza del riproduttore che viene riportata negli eventi. La razza del riproduttore è la  razza del maschio utilizzato per la fecondazione"
+    "@value" : "Proprietà che lega gli eventi di fecondazione o impianto alla razza del riproduttore che viene riportata negli eventi. La razza del riproduttore è la razza del maschio utilizzato per la fecondazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid12"
@@ -4104,7 +4237,7 @@
     "@value" : "Associazione tra l'evento della vita dell'animale d'allevamento 'spostamento in entrata' con le motivazioni per lo spostamento dell'animale nell'allevamento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
+    "@id" : "https://w3id.org/leo/onto/ale/InboundMovement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -4193,37 +4326,37 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/ale/hasMilkingVelocity",
+  "@id" : "https://w3id.org/leo/onto/ale/hasMilkYield",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property that links the miliking events to the muliking velocity it reports."
+    "@value" : "Property linking the milking session to the amount of milk produced (in hectograms (hg))."
   }, {
     "@language" : "it",
-    "@value" : "Proprietà che collega l'evento della mungitura con la velocità di mungitura che esso riporta."
+    "@value" : "Proprietà che lega la sessione di mungitura alla quantità di latte prodotto (in ettogrammi (hg))."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/Milking"
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingSession"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
-    "@value" : "ha velocità di mungitura"
+    "@value" : "ha produzione latte (mungitura)"
   }, {
     "@language" : "en",
-    "@value" : "has milking velocity"
+    "@value" : "has milk yield"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/italia/onto/MU/Value"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
-    "@value" : "provvisoria - aggiunta nella seconda versione dell'ontologia"
+    "@value" : "stabile"
   }, {
     "@language" : "en",
-    "@value" : "unstable - added in the second version of the ontology"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/hasPregnancyResult",
@@ -4259,6 +4392,42 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "https://w3id.org/leo/onto/ale/identificationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Data in cui l'animale da allevamento è identificato in modo univoco secondo diversi meccanismi. Questa data può coincidere con la data di applicazione della marca (quando viene applicato il marchio auricolare) dell'animale."
+  }, {
+    "@language" : "en",
+    "@value" : "Date on which the farm animal is uniquely identified according to different mechanisms. This date may coincide with the tagging date (when the eartag is applied) of the animal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid48"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data di identificazione univoca"
+  }, {
+    "@language" : "en",
+    "@value" : "identification date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/date"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile - revisionata nella versione 0.5 dell'ontologia"
+  }, {
+    "@language" : "en",
+    "@value" : "stable - revised in version 0.5 of the ontology"
+  } ]
+}, {
   "@id" : "https://w3id.org/leo/onto/ale/implantationDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4282,7 +4451,7 @@
     "@value" : "implantation date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid57"
+    "@id" : "_:genid54"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -4365,7 +4534,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/isCarcassForConsumption",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Property used to indicate whether the carcass is for consumption or not"
@@ -4463,6 +4632,111 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "https://w3id.org/leo/onto/ale/measuredForFarmAnimal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property linking the measurement of average milk conductivity to the farm animal"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che lega la misurazione della conducibilità media del latte all'animale d'allevamento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measured for farm animal"
+  }, {
+    "@language" : "it",
+    "@value" : "misurata per animale d'allevamento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/ale/milkConductivityDetectionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Momento nel quale si inizia a rilevare la conducibilità media del latte"
+  }, {
+    "@language" : "en",
+    "@value" : "Time at which the average conductivity of milk starts to be measured"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data rilevamento conducibilità latte"
+  }, {
+    "@language" : "en",
+    "@value" : "milk conductivity detection date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid57"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/date"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/ale/milkingSessionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Momento nel quale si inizia a mungere l’animale (data e ora)"
+  }, {
+    "@language" : "en",
+    "@value" : "Time when milking starts (date and time)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data sessione mungitura"
+  }, {
+    "@language" : "en",
+    "@value" : "milking session date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid60"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/date"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "https://w3id.org/leo/onto/ale/numberOfBornAliveFemales",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4533,13 +4807,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Number of females born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion)."
+    "@value" : "Number of female foetuses expelled in case of abortion or stillbirth."
   }, {
     "@language" : "it",
-    "@value" : "Numero di femmine nate morte originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)"
+    "@value" : "Numero di feti femmina espulsi in caso di aborto o nate morte."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid60"
+    "@id" : "_:genid63"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -4566,13 +4840,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Number of males born dead due to birth or late abortion. The two values can be distinguished by the connected measure (date of birth or date of abortion)."
+    "@value" : "Number of males foetuses expelled in case of abortion or stillbirth."
   }, {
     "@language" : "it",
-    "@value" : "Numero di maschi nati morti originate dal parto o dall’aborto tardivo. Le due valenze si distinguono attraverso la misura collegata (data parto o data aborto)"
+    "@value" : "Numero di feti maschi espulsi in caso di aborto o nati morti."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid63"
+    "@id" : "_:genid66"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -4599,10 +4873,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Data del parto dell'animale."
+    "@value" : "Data in cui avviene il parto dell'animale."
   }, {
     "@language" : "en",
-    "@value" : "Date of the parturition of the animal."
+    "@value" : "Date on which the parturition of the animal occurs."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/leo/onto/ale/Parturition"
@@ -4618,7 +4892,7 @@
     "@value" : "parturition date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid66"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -4674,7 +4948,7 @@
     "@value" : "The property is used to categorise (or describe) the provenance of the farm animal. For example: 'farming'. At the time of writing version 0.4 of the ontology, there is no controlled vocabulary for this property and it was therefore chosen to use a string value directly. If a vocabulary were to be adopted in the future, this property could be transformed to link the inbound movement event with a concept and associated code (object property)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/InboudMovement"
+    "@id" : "https://w3id.org/leo/onto/ale/InboundMovement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/ale"
@@ -4695,42 +4969,6 @@
   }, {
     "@language" : "en",
     "@value" : "stable - introduced in version 0.4 of the ontology. To be replaced in case of the availability of a controlled vocabulary"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/ale/registrationDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Data nella quale viene applicata la marca auricolare all’animale"
-  }, {
-    "@language" : "en",
-    "@value" : "Date on which the eartag is applied to the animal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid69"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "data di immatricolazione"
-  }, {
-    "@language" : "en",
-    "@value" : "registration date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid72"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile - aggiunto nella seconda versione dell'ontologia"
-  }, {
-    "@language" : "en",
-    "@value" : "stable - added in the second version of the ontology"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/ale/slaughterDate",
@@ -4756,7 +4994,7 @@
     "@value" : "slaughter date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid75"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -4767,6 +5005,39 @@
   }, {
     "@language" : "en",
     "@value" : "stable - introduced in version 0.3 of the ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/ale/withinMilkingSession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property linking the measurment of the milk conductivity to its milking session during which is measured."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega la misurazione della conduttività del latte alla sessione di mungitura durante la quale viene misurata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingConductivityMeasurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "durante sessione di mungitura"
+  }, {
+    "@language" : "en",
+    "@value" : "within milking session"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/ale/MilkingSession"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/animal/Breed",
@@ -4797,6 +5068,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://w3id.org/leo/onto/co/LivestockCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/co/LivestockFarm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/leo/onto/co/Site",
