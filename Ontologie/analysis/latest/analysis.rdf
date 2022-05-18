@@ -1,0 +1,1982 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/analysis/"
+     xml:base="https://w3id.org/leo/onto/analysis/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/analysis">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/analysis/0.4"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+        <dc:description rdf:resource="https://www.dropbox.com/s/7edkt5d77axxwqe/Analysis.png?raw=1"/>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati LabData e in certi casi i HealthData nel progetto LEO ovvero i dati raccolti sanitari e di tipo laboratorio, intesi come osservazioni di proprietà con determinati valori</terms:description>
+        <terms:description xml:lang="en">This is the ontology used to model the LabData  and in some cases the HealthData of the LEO project, i.e. the collected health and laboratory data, understood as observations with properties with certain values.</terms:description>
+        <terms:identifier xml:lang="it">onto-BA-4</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-14</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-18</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
+        <terms:title xml:lang="en">Analysis Ontology - LabData and HeathData</terms:title>
+        <terms:title xml:lang="it">Ontologia delle Analisi - LabData e HealthData</terms:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati che nel progetto LEO sono chiamati LabData. In certi casi l&apos;ontologia può essere usata per i dati cosiddetti HealthData ovvero dati sanitari ma quando questi sono intesi come osservazioni di proprietà con determinati valori</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology used to model the data which in the LEO project are called LabData. In certain cases the ontology can be used for so called HealthData but when these are understood as observations of properties with certain values</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Analysis Ontology - LabData</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia delle Analisi - LabData</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.4 - 2022 - Fourth version of the ontology - introduced measurement quality and range of values of reference</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.4 - 2022 - Quarta versione dell&apos;ontologia che introduce la gestione del seme, la misura della qualità dell&apos;osservazione e l&apos;intervallo dei valori di riferimento (per una proprietà osservata).</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">Analisi campione di massa</dcat:keyword>
+        <dcat:keyword xml:lang="it">Analisi di laboratorio</dcat:keyword>
+        <dcat:keyword xml:lang="it">IBR</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
+        <ADMS:acronym>AN</ADMS:acronym>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/analysis/IBRAnalysis"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/analysis/MilkMassAnalysis"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/analysis/PAGAnalysis"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/AN-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/AN-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/AN-RDF-XML"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/analysis</ADMS:officialURI>
+        <ADMS:prefix>analysis</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <ADMS:status>published</ADMS:status>
+        <ADMS:target xml:lang="it">Comunità Open Data</ADMS:target>
+        <ADMS:target>Imprese</ADMS:target>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#commnet -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#commnet"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/name -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://w3id.org/italia/onto/IoT/hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/italia/onto/IoT/hasFeatureOfInterest"/>
+
+
+
+    <!-- http://w3id.org/italia/onto/IoT/isFeatureOfInterestFor -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/italia/onto/IoT/isFeatureOfInterestFor"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/carriedOutOnSample -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/carriedOutOnSample">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/analysis/isAnalyzedIn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:comment xml:lang="en">Property that links the analysis observation or the laboratory analysis to the sample on which the observation, and in general the analysis, is carried out.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;osservazione dell&apos;analisi o l&apos;analisi di laboratorio al campione su cui viene effettuata l&apos;osservazione, e in generale l&apos;analisi.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">carried out on sample</rdfs:label>
+        <rdfs:label xml:lang="it">eseguita su campione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/collectedFrom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/collectedFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/LivestockSpecies"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Property that allows one to link the sample to the livestock species it refers to.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per modellare la relazione che esiste tra il campione e la specie zootecnica a cui si riferisce.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">collected from</rdfs:label>
+        <rdfs:label xml:lang="it">raccolto da</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/analysis/isAnalysisObservationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:comment xml:lang="en">Property that links the laboratory analysis to the various observations. There must be at least one observation to describe the laboratory analysis</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;analisi di laboratorio alle varie osservazioni. Ci deve essere almeno un&apos;osservazione per descrivere le analisi di laboratorio</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">consiste di osservazioni dell&apos;analisi</rdfs:label>
+        <rdfs:label xml:lang="en">consists of analysis observation</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/definedForSpecies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/definedForSpecies">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/LivestockSpecies"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the specie for which a specific range of values applies.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare la specie a cui si applicano certi intervalli di valori. Infatti, certi intervalli di valori di riferimento, per una qualche proprietà osservata di un&apos;analisi di laboratorio, variano da specie a specie.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">defined for species</rdfs:label>
+        <rdfs:label xml:lang="it">definito per specie</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasDownloadURL -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasDownloadURL">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/SpectrumDistribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the URL for the download of the JSON representation of the spectrum.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che indica il link dove scaricare la rappresentazione JSON dello spettro.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha URL per download</rdfs:label>
+        <rdfs:label xml:lang="en">has download URL</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasFeatureOfInterest">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/italia/onto/IoT/hasFeatureOfInterest"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/analysis/isFeatureOfInterestFor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/FeatureOfInterest"/>
+        <rdfs:comment xml:lang="en">Property used to link an observation of the analysis with the specific feature of interest whose quality is observed. It is the inverse property of &apos;is feature of interest for&apos;.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega un&apos;osservazione di un&apos;analisi alla specifica caratteristica di interesse per cui una certa qualità è osservata. È proprietà inversa di &apos;è caratteristica di interesse per&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha caratteristica di interesse</rdfs:label>
+        <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - inserita in versione 0.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasMaxValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasMaxValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:comment xml:lang="en">Property used to represent the upper boud i.e. the maximum value in a range of reference values.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per rappresentare l&apos;upper boud ossia il valore massimo in un intervallo di valori di riferimento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha valore massimo</rdfs:label>
+        <rdfs:label xml:lang="en">has maximum value</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasMeasurementQualityType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasMeasurementQualityType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/MeasurementQuality"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/MeasurementQualityType"/>
+        <rdfs:comment xml:lang="en">Property used to specify the type of quality measurement (e.g., consistency, consistency, accuracy, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specifica il tipo di misura di qualità (e.g., coerenza, consistenza, accuratezza, ecc.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha tipo di misura di qualità</rdfs:label>
+        <rdfs:label xml:lang="en">has measurement quality type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasMeasurementQualityValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasMeasurementQualityValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/MeasurementQuality"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:comment xml:lang="en">Property used to specify the value assumed by a certain measurement quality characteristic.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specificare il valore assunto da una certa caratteristica di qualità della misurazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha valore misura di qualità</rdfs:label>
+        <rdfs:label xml:lang="en">has measurement quality value</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasMinValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasMinValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:comment xml:lang="en">Property used to represent the lower boud i.e. the minimum value in a range of reference values.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per rappresentare il lower boud ossia il valore minimo in un intervallo di valori di riferimento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha valore minimo</rdfs:label>
+        <rdfs:label xml:lang="en">has minimum value</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasObservableProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasObservableProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Property that links the observation of the analysis with its observable properties (with properties such as Urea, Lactose, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega l&apos;osservazione dell&apos;analisi con le sue proprietà osservabili (con proprietà quali Urea, Lattosio, ecc.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha misura di laboratorio osservabile</rdfs:label>
+        <rdfs:label xml:lang="en">has observable property</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasQuality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasQuality">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/MeasurementQuality"/>
+        <rdfs:comment xml:lang="en">Property used to specify the value of a quality characteristic for something in the domain of reference. In the context of this ontology it can be used to specify the quality value of an analysis observation, according to some quality characteristic.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per specificare il valore di una caratteristica di qualità per qualcosa nel dominio di riferimento. Nel contesto di questa ontologia, può essere utilizzata per specificare il valore di qualità di un&apos;osservazione dell&apos;analisi, in base a qualche caratteristica di qualità.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha qualità</rdfs:label>
+        <rdfs:label xml:lang="en">has quality</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasReferenceRange -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasReferenceRange">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification"/>
+        <rdfs:comment xml:lang="en">Generic property used to specify a range of reference values that can be applied to something (e.g., observed property) in the reference domain.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà generica utilizzata per specificare un intervallo di valori di riferimento che si può applicare a qualcosa (e.g., proprietà osservata) nel dominio di riferimento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha intervallo di valori di riferimento</rdfs:label>
+        <rdfs:label xml:lang="en">has reference range (of values)</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/ObservableProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify for each observable property in lab data the reference measurement unit. For instance, in the case of coagulation time for milk the measurement unit of reference is minute, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare per ogni proprietà/parametro osservato nei dati di laboratorio l&apos;unità di misura di riferimento. Per esempio nel caso del tempo di coagulazione R l&apos;unità di misura di riferimento è il minuto, ecc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha unità di misura di riferimento</rdfs:label>
+        <rdfs:label xml:lang="en">has reference unit of measure</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasResult -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasResult">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/analysis/isResultOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/ObservedValue"/>
+        <rdfs:comment xml:lang="it">E&apos; la proprietà che determina il risultato dell&apos;osservazione ovvero che lega l&apos;osservazione al suo risultato (valore dell&apos;osservazione).</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the property that determines the result of the observation, i.e. it is the property that links the observation to its result (observation value).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha risultato</rdfs:label>
+        <rdfs:label xml:lang="en">has result</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasSpectrumDistribution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasSpectrumDistribution">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/SpectrumDistribution"/>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per collegare l&apos;analisi degli spettri alla specifica rappresenzione dello spettro, tipicamente un file JSON scaricabile.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Prpperty used to link the spectrum analysis with the specific spectrum representation; that is a Jdownloadable SON file.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha distribuzione dello spettro</rdfs:label>
+        <rdfs:label xml:lang="en">has spectrum distribution</rdfs:label>
+        <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasUnitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/CountValue"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+        <rdfs:comment xml:lang="en">Property that links an object that can be measured to its unit of measure.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega un oggetto che può essere misurata alla sua unità di misura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">ha unità di misura</rdfs:label>
+        <rdfs:label xml:lang="en">has unit of measure</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/isAnalysisObservationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/isAnalysisObservationOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;consists of analysis observation&quot; that links the analysis observation to the laboratory analysis</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;consiste di osservazioni dell&apos;analisi&quot; che consente di collegare l&apos;osservazione dell&apos;analisi all&apos;analisi di laboratorio</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">is analysis observation of</rdfs:label>
+        <rdfs:label xml:lang="it">è osservazione dell&apos;analisi di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/isAnalyzedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/isAnalyzedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;carried out on&quot; that links the sample to the laboratory analysis or analysis observation</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;eseguita su&quot; che collega un campione all&apos;analisi di laboratorio o all&apos;osservazione dell&apos;analisi</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">is analyzed in</rdfs:label>
+        <rdfs:label xml:lang="it">è analizzato in</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/isFeatureOfInterestFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/isFeatureOfInterestFor">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/italia/onto/IoT/isFeatureOfInterestFor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:comment xml:lang="en">Inverse property of &apos;has feature of interest&apos; used to link a feature of interest to the related analysis observation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &apos;ha caratteristica di interesse&apos; utilizzata per collegare una caratteristica di interesse alla relativa osservazione dell&apos;analisi.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">is feature of interest for</rdfs:label>
+        <rdfs:label xml:lang="it">è caratteristica di interesse per</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/isResultOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/isResultOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/ObservedValue"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;has result&quot; that links the observation value to the analysis observation</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;ha risultato&quot; che collega un valore dell&apos;osservazione all&apos;osservazione dell&apos;analisi</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">is result of</rdfs:label>
+        <rdfs:label xml:lang="it">è risultato di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/isSampleOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/isSampleOf">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/BiologicalMaterial"/>
+        <rdfs:comment xml:lang="en">Property used to link a sample to its biological material. It allows one to express something like &quot;the sample of milk&quot;, &quot;the sample of blood&quot;, &quot;the sample of seed&quot;, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per collegare il campione al materiale biologico di riferimento. Consente infatti di rappresentare qualcosa come &quot;il campione di latte&quot;, &quot;il campione di sangue&quot;, &quot;il campione di seme&quot;, ecc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">is sample of</rdfs:label>
+        <rdfs:label xml:lang="it">è campione di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/isSubjectOfAnalysis -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/isSubjectOfAnalysis">
+        <owl:inverseOf rdf:resource="https://w3id.org/leo/onto/analysis/performedOnAnimal"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/IBRAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/PAGAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SemenAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;performed on animal&quot; that links the animal to the specific types of laboratory analyses that involve the analimal; that is, IBR analysis, PAG analysis and single animal analysis</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;eseguita su animale&quot; che collega l&apos;animale alle specifiche analisi di laboratorio che coinvolgono l&apos;animale ovvero l&apos;analisi IBR, l&apos;analisi PAG e l&apos;analisi su singolo animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">is subject of analysis</rdfs:label>
+        <rdfs:label xml:lang="it">è soggetto di analisi</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/performedForOwnerCompany -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/performedForOwnerCompany">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/co/Company"/>
+        <rdfs:comment xml:lang="en">Property that links the laboratory analyses to the owner company. All types of laboratory analysis are always related to the company.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega le analisi di laboratorio all&apos;azienda proprietaria. Tutti i tipi di analisi di laboratorio sono sempre riferiti all&apos;azienda.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">effettuata per azienda proprietaria</rdfs:label>
+        <rdfs:label xml:lang="en">performed for owner company</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/performedOnAnimal -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/performedOnAnimal">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/IBRAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/PAGAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SemenAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:comment xml:lang="en">Property that links some laboratory analyses to the animal. In particular, IBR, PAG and single animal analyses refer to an animal and this property is used for this purpose.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega alcune analisi di laboratorio all&apos;animale. In particolare, le analisi IBR, PAG e su singolo animale si riferiscono a un animale e questa proprietà è utilizzata a tale scopo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">eseguita su animale</rdfs:label>
+        <rdfs:label xml:lang="en">performed on animal</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/refersToLivestockSpecies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/refersToLivestockSpecies">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/LivestockSpecies"/>
+        <rdfs:comment xml:lang="en">Property that links the mass milk  and the spectroscopic analyses to the livestock species.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega le analisi del campione di massa e spettoscopica alla specie dell&apos;animale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">refers to livestock species</rdfs:label>
+        <rdfs:label xml:lang="it">si riferisce a specie zootecnica</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/onto/TI/date -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/date"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/description -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/description"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/acquisitionTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/analysis/acquisitionTime">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La data di prelievo del campione</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date in which the sample is acquired/collected.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">acquisition time</rdfs:label>
+        <rdfs:label xml:lang="it">data prelievo</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/countObservedValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/analysis/countObservedValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/value"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/CountValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="it">L&apos;effettivo valore conteggiabile</rdfs:comment>
+        <rdfs:comment xml:lang="en">The actual countable observed value</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">count observed value</rdfs:label>
+        <rdfs:label xml:lang="it">valore conteggiabile osservato</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/idSemenPailleteLot -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/analysis/idSemenPailleteLot">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/analysis/sampleNumber"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/SemenLot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Il codice lotto ovvero il codice dell&apos;insieme di una serie di paillettes che provengono dal congelamento di un eiaculato prodotto da un singolo toro in una determinata giornata. Il codice lotto viene espresso sotto forma di data (formato italiano  o americano) oppure come giorno progressivo dell&apos;anno ( es  il 01.01.2020 sarà 1.20 il 02.01.2020 sarà 2.20 ecc).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The lot id, i.e. the code of a set of sequins that come from the freezing of an ejaculate produced by a single bull on a given day. The lot code is expressed as a date (Italian or American format) or as a progressive day of the year (e.g. 01.01.2020 will be 1.20, 02.01.2020 will be 2.20 etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">codice lotto relativo alla paillete di seme</rdfs:label>
+        <rdfs:label xml:lang="en">id semen paillete lot</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/resultTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/analysis/resultTime">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Il tempo di risultato è l&apos;istante di tempo in cui l&apos;attività di osservazione è stata completata. Per esempio, il tempo di risultato dell&apos;osservazione dell&apos;integrità della membrana è la data in cui si concludono i processi di analisi dell&apos;integrità della membrana.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The result time is the instant of time when the observation activity was completed. For instance the result time of the observation of the membrane integrity is the date in which the analysis processes of membrane integrity are concluded.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">result time</rdfs:label>
+        <rdfs:label xml:lang="it">tempo del risultato</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/sampleNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/analysis/sampleNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Identifica il codice a barre della provetta o sua numerazione .</rdfs:comment>
+        <rdfs:comment xml:lang="en">It identifies the barcode of the tube or its numbering .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">numero campione</rdfs:label>
+        <rdfs:label xml:lang="en">sample number</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/unitSymbol -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/analysis/unitSymbol">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di associare l&apos;unità di misura al relativo simbolo quando esistente (e.g., kg, m, ml, ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property used to associate a measurement unit with a symbol (e.g., kg, m, g, etc.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">simbolo unità di misura</rdfs:label>
+        <rdfs:label xml:lang="en">unit symbol</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://w3id.org/italia/onto/IoT/FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://w3id.org/italia/onto/IoT/FeatureOfInterest"/>
+
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/IoT/MeasurementQuality -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/MeasurementQuality"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/IoT/Observation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/Observation"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/IoT/ObservationParameter -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/ObservationParameter"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/IoT/ObservationValue -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/ObservationValue"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Activity"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/Collection -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Collection"/>
+
+
+
+    <!-- https://w3id.org/italia/onto/l0/Object -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Object"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/LivestockSpecies -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/LivestockSpecies"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/AnalysisObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/AnalysisObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/Observation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasQuality"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/MeasurementQuality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/isAnalysisObservationOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/ObservedValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasFeatureOfInterest"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasObservableProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/ObservableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/carriedOutOnSample"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/resultTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe dell&apos;osservazione nelle analisi. Un osservazione è un atto associato a un tempo (istante o periodo temporale). Essa  coinvolge l&apos;applicazione di una determinata procedura che porta a produrre un risultato relativo a una qualche proprietà di una caratteristica di interesse. Nel contesto di questa ontologia. l&apos;osservazione dell&apos;analisi di laboratorio viene svolta su un insieme di proprietà per le quali si produce un risultato (in una certa data - per esempio la data dell&apos;analisi dell&apos;integrità di membrana è la data in cui si sono conclusi i processi di analisi dell&apos;integrità di membrana); il risultato può essere quantitativo e qualitativo. Per esempio, l&apos;osservazione sulla misurazione del livello dell&apos;Urea presente nel campione di latte o la misurazione d’idoneità del campione del latte alla caseificazione (A30);</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of observation in analysis. An observation is an act associated with a time (instant or time period). It involves the application of a certain procedure that leads to a result related to some property of a feature of interest. In the context of this ontology. the observation of laboratory analysis is carried out on a set of properties for which a result is produced (on a certain date - e.g. the date of the membrane integrity analysis is the date on which the membrane integrity analysis processes were completed and a result is obtained); the result can be quantitative and qualitative. For example, the observation of the measurement of the level of Urea present in the milk sample or the measurement of the suitability of the milk sample for cheesemaking (A30);</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Analysis Observation</rdfs:label>
+        <rdfs:label xml:lang="it">Osservazione dell&apos;Analisi</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/AnimalAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/AnimalAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/performedOnAnimal"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/performedOnAnimal"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/BiologicalMaterial -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/BiologicalMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+        <rdfs:comment xml:lang="it">La classe dei materiali biologici di riferimento per i campioni di analisi. Esempi includono: latte, feci, seme, urina, pelo, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of biological reference materials for laboratory analysis samples. Examples include: milk, faeces, semen, urine, hair, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Biological Material</rdfs:label>
+        <rdfs:label xml:lang="it">Materiale Biologico</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/BulkMilkAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/BulkMilkAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/refersToLivestockSpecies"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/LivestockSpecies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/IBRAnalysis"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SemenAnalysis"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"/>
+        <rdfs:comment xml:lang="it">E&apos; l&apos;analisi latte del campione di massa. E&apos; fatta in una certa data (data analisi campione) e su un campione identificato univocamente da un numero (numero coampione di massa - Numero identificativo della provetta che contiene il campione di latte relativo alla mungitura effettuata su tutta la mandria.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">It&apos;s the milk bulk analysis. It is done on a certain date (data milk bulk  analysis) and on a sample uniquely identified by a number (milk bulk sample number - Identification number of the tube containing the milk sample related to the milking carried out on the whole herd).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi di Campione di Massa</rdfs:label>
+        <rdfs:label xml:lang="en">Bulk Mass Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/CategoryObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/CategoryObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:comment xml:lang="it">La classe delle osservazioni di tipo categoria ovvero osservazioni i cui valori (risultati) sono valore di categoria ossia valori di un vocbaolario controllato o di una tassonomia. Questa definizione deriva dallo standard ISO 19156 (Modello Osservazionel)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of observations of category type i.e. observations whose values (results) are category value, meaning values of a controlled vocabulary or taxonomy. This definition is derived from ISO 19156 (Observation Model).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Category Observation</rdfs:label>
+        <rdfs:label xml:lang="it">Osservazione di tipo Categoria</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/CategoryValue -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/CategoryValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/ObservedValue"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/CountValue"/>
+        <rdfs:comment xml:lang="it">E&apos; un valore del risultato dell&apos;osservazione che deriva in generale da un vocabolario controllato (o tassonomia). Per esempio, un valore di categoria può essere &quot;buono&quot;, &quot;ottimo&quot;, &quot;sufficiente&quot;, &quot;insufficiente&quot; oppure &quot;positvo&quot;, &quot;negativo&quot;, &quot;dubbio&quot; ecc. Nel contesto della presente ontologia distinguiamo tra valori di tipo categoria che sono valori IBR e valori PAG tutti provenienti da vocabolari controllati distinti molto semplici</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is a value of the result of the observation that is generally derived from a controlled vocabulary (or taxonomy). For example, a category value can be &quot;good&quot;, &quot;excellent&quot;, &quot;sufficient&quot;, &quot;insufficient&quot; or &quot;positve&quot;, &quot;negative&quot;, &quot;doubtful&quot; etc. In the context of the present ontology we distinguish between IBRValue and PAGValue that are all coming from distinct controlled vocabularies</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Category Value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore di tipo Categoria</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/CountObservation -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/CountObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+        <rdfs:comment xml:lang="it">La classe delle osservazioni di tipo conteggio ovvero osservazioni i cui valori (risultati) sono valori semplici interi. Questa definizione deriva dallo standard ISO 19156 (Modello Osservazionel)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of observations of count type i.e. observations whose values (results) are count value, meaning integer. This definition is derived from ISO 19156 (Observation Model).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Count Observation</rdfs:label>
+        <rdfs:label xml:lang="it">Osservazione di tipo Conteggio</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/CountValue -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/CountValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/ObservedValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/countObservedValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It is a countable value (a simple integer for instance).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Si tratta di un valore conteggiabile (un semplice numero intero per esempio).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Count Value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore conteggiabile</rdfs:label>
+        <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/DSCCAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/DSCCAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnimalAnalysis"/>
+        <rdfs:comment xml:lang="it">La classe delle analisi sulle cellule somatiche differenziali di un campione di latte prelevato dal singolo animale. &quot;Il valore delle cellule differenziali (Dscc) indica la percentuale di leucociti polimorfonucleati neutrofili e linfociti sul totale della conta leucocitaria; per differenza il resto ad arrivare a 100 rappresenta la percentuale di macrofagi.&quot; (https://www.aral.lom.it/wp-content/uploads/2020/06/Zanini_dscc_mastite_4_2019.pdf)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of differential somatic cell count analyses of a milk sample taken from an individual animal. &quot;The differential cell count (Dscc) indicates the percentage of polymorphonuclear leukocytes neutrophils and lymphocytes out of the total leukocyte count; by difference the remainder to 100 represents the percentage of macrophages.&quot; (https://www.aral.lom.it/wp-content/uploads/2020/06/Zanini_dscc_mastite_4_2019.pdf)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi Cellule Somatiche Differenziali</rdfs:label>
+        <rdfs:label xml:lang="en">Differential Somatic Cell Count Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/FeatureOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/FeatureOfInterest">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/italia/onto/IoT/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/isFeatureOfInterestFor"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">L&apos;entità le cui proprietà sono stimate o calcolate nel corso di una osservazione per arrivare a un certo risultato. Esempio: nel contesto della presente ontologia, un campione di latte è una caratteristica di interesse.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The entity whose property is being estimated or calculated in the course of an observation to arrive at a result,</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Caratteristica d&apos;interesse</rdfs:label>
+        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/IBRAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/IBRAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnimalAnalysis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/CategoryObservation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SemenAnalysis"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"/>
+        <rdfs:comment xml:lang="it">E&apos; l&apos;analisi IBR, ovvero l’analisi del campione di latte che determinerà il rischio di presenza di rinotracheite infettiva nell’ animale. È equivalente a un insieme di osservazioni di tipo categoria dove la proprietà osservata è IBR, che ha come risultato dell&apos;osservazione uno dei valori che può assumere l&apos;IBR. E&apos; eseguita in una certa data (data analisi IBR) su un campione (campione IBR) identificato univocamente da un numero (Numero campione IBR).
+L&apos;IBR è una malattia diffusa in tutto il mondo che colpisce tipicamente il bovino e talvolta altri ruminanti. L’infezione è altamente contagiosa e caratterizzata da un andamento acuto. Il virus infetta l’ospite a partire dalla cavità nasale e si diffonde rapidamente alle mucose delle prime vie respiratorie e, successivamente, a quelle congiuntivali, l’agente è in grado di diffondersi nell’organismo (viremia) ed indurre aborto; il sito di latenza viene raggiunto sfruttando il trasporto assonale retrogrado.  Vista la notevole diffusione della malattia essa ha un grande impatto economico. La determinazione può essere effettuata su matrice latte e/o sangue.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the IBR analysis, i.e. the analysis of the milk sample that will determine the risk of the presence of infectious rhinotracheitis in the animal. It is equivalent to a set of category type observations where the property observed is IBR which has as a result of the observation one of the IBR values. It is carried out on a certain data IBR analysis and done on a specific sample IBR identified by a number.
+IBR is a worldwide disease that typically affects cattle and sometimes other ruminants. The infection is highly contagious and characterised by an acute course. The virus infects the host from the nasal cavity and spreads rapidly to the mucous membranes of the upper respiratory tract and subsequently to the conjunctival mucous membranes. The agent is capable of spreading throughout the body (viremia) and inducing abortion; the site of latency is reached by retrograde axonal transport.  Due to the high prevalence of the disease it has a great economic impact. The determination can be carried out on milk and/or blood matrix.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi IBR</rdfs:label>
+        <rdfs:label xml:lang="en">IBR Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/IBRValue -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/IBRValue">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Doubtful"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Negative"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Positive"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Vaccinated"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/CategoryValue"/>
+        <rdfs:comment xml:lang="it">Il valore IBR della proprietà dell&apos;osservazione IBR. Assume uno dei seguenti valori &quot;Positivo&quot;, &quot;Negativo&quot;, &quot;Dubbio&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The IBR value for the observation property IBR. It assumes one of the following values: &quot;Positive&quot;, &quot;Negative&quot; , &quot;Doubtful&quot;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">IBR Value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore IBR</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/LaboratoryAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/LaboratoryAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/AnalysisObservation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/performedForOwnerCompany"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/co/Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/carriedOutOnSample"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe delle analisi di laboratorio, ovvero dell&apos;insieme di osservazioni di specifiche proprietà di analisi. Le analisi di laboratorio vengono effettuate in una certa data (data analisi) e su un campione (per esempio nel caso della specie zootecnica dei bovini su campioni di latte).
+Le analisi di laboratorio si riferiscono sempre a un&apos;azienda e possono essere eseguite su un singolo animale o meno. In particolare, Le analisi IBR, analisi PAG e analisi su singolo animale si eseguono su uno specifico animale d&apos;allevamento individuato. La data analisi nel caso dell&apos;analisi IBR diventa la data di analisi IBR, la data analisi nel caso dell&apos;analisi PAG diventa la data di analisi PAG, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of laboratory analysis, i.e. the set of observations of specific analysis properties. Laboratory analyses are carried out on a certain date (date of analysis) and on a sample (e.g. in the case of cattle on milk samples).
+Laboratory analyses always refer to a company and can be carried out on a single animal or not. In particular, IBR analyses, PAG analyses and individual animal analyses are carried out on a specific farm animal. The date of the analysis in the case of IBR analysis becomes the date of IBR analysis, the date of the analysis in the case of PAG analysis becomes the date of PAG analysis, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi di Laboratorio</rdfs:label>
+        <rdfs:label xml:lang="en">Laboratory Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/MeasurementQuality -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/MeasurementQuality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/MeasurementQuality"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasMeasurementQualityType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/MeasurementQualityType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasMeasurementQualityValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe consente di collegare un valore di qualità della misurazione con la caratteristica di qualità (e.g., coerenza) e con la cosa del dominio di riferimento al quale associare una qualità di misurazione (nel caso della presente ontologia l&apos;osservazione dell&apos;analisi di laboratorio).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class makes it possible to link a measurement quality value with the quality characteristic (e.g., coherence) and the reference domain thing to which a measurement quality is associated (in the case of this ontology, the observation of laboratory analysis) .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Measurement Quality</rdfs:label>
+        <rdfs:label xml:lang="it">Qualità della Misurazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/MeasurementQualityType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/MeasurementQualityType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe delle caratteristiche di qualità di una misurazione. Ad esempio, coerenza, accuratezza, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of quality characteristics of a measurement. For example, consistency, accuracy, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Caratteristica Qualità di Misurazione</rdfs:label>
+        <rdfs:label xml:lang="en">Measurement Quality Type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/ObservableProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/ObservableProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/ObservationParameter"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasReferenceRange"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An observable property/parameter of a feature of interest. The concept of observation properties is included in the INSPIRE model on Observations and Measurements. In the context of this ontology, the properties have been explicitly identified and are all those properties for Urea, Fat, etc on single animal/subject and on bulk milk analyses.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una proprietà/parametro osservabile di una caratteristica di interesse. Il concetto di proprietà dell&apos;osservazione è incluso nel modello INSPIRE su Osservazioni e Misurazioni. Nel contesto della presente ontologia, le proprietà sono state identificate esplicitamente e sono tutte quelle proprietà come per esempio il livello di Urea nel latte, il numero di acidi grassi saturi ecc  rilevate in analisi fatte sui singoli animali/soggetti e sui campioni di massa.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Misura di Laboratorio Osservabile</rdfs:label>
+        <rdfs:label xml:lang="en">Observable Property</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/ObservedValue -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/ObservedValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/ObservationValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">E&apos; il valore osservato/risultato dell&apos;osservazione.  Il valore di un&apos;osservazione può essere di diversi tipo. Per esempio, il valore categoria è un valore preso da un vocabolario controllato, il valore derivante da un conteggio può essere un semplice valore intero, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It&apos;s the observed value/result of the observation.  The value of an observation can be of different types. For example, the category value is a value taken from a controlled vocabulary, the value derived from a count can be a simple integer value, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Observed value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore osservato</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/PAGAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/PAGAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnimalAnalysis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/CategoryObservation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SemenAnalysis"/>
+        <rdfs:comment xml:lang="it">E&apos; l’analisi del campione di latte che determinerà la quantità di progesterone per determinare la gravidanza.. E&apos; eseguita in una data (data analisi PAG ) su un campione di latte identificato univocamente da un numero (numero campione PAG).</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the analysis of the milk sample that will determine the amount of progesterone to determine pregnancy. It is performed on a date (date of PAG analysis) on a milk sample uniquely identified by a number (PAG sample number).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi PAG</rdfs:label>
+        <rdfs:label xml:lang="en">PAG Analysis</rdfs:label>
+        <rdfs:label xml:lang="en">Pregnancy-Associated Glycoproteins Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/PAGValue -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/PAGValue">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Negative"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Positive"/>
+                    <rdf:Description rdf:about="https://w3id.org/leo/onto/analysis/Revisable"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/CategoryValue"/>
+        <rdfs:comment xml:lang="it">Il valore della proprietà dell&apos;osservazione PAG. Esso assume uno fra i seguenti valori &quot;Positiva&quot;, &quot;Negativa&quot;, &quot;Rivedibile&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The value of the observation property PAG. It assumes one of the following values &quot;Positive&quot;, &quot;Negative&quot;, &quot;Revisable&quot;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">PAG Value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore PAG</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/definedForSpecies"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/LivestockSpecies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasMaxValue"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasMinValue"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe consente di specificare un intervallo di valori di riferimento (che nel contesto di questa ontologia dipende anche dalla specie zootecnica).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class allows one to specify a range of reference values (that in the context of this ontology also depends on the livestock species).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Reference Range Specification</rdfs:label>
+        <rdfs:label xml:lang="it">Specifica dell&apos;Intervallo di Valori di Riferimento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Sample -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/Sample">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/collectedFrom"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/LivestockSpecies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/isSampleOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/BiologicalMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/sampleNumber"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/acquisitionTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">E&apos; il campione (per esempio la provetta che contiene il campione di latte per un singolo animale/soggetto sul quale verranno fatte le analisi di laboratorio) su cui si eseguono singole osservazioni e in generale analisi di laboratorio. E&apos; identificato univocamente da un numero di campione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the sample (for example, the tube containing the milk sample for a single animal/subject on which the laboratory analysis will be carried out) on which individual observations and laboratory analysis in general are carried out. It is uniquely identified by a sample number.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Campione</rdfs:label>
+        <rdfs:label xml:lang="en">Sample</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/SemenAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/SemenAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnimalAnalysis"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"/>
+        <rdfs:comment xml:lang="it">La classe sull&apos;analisi dello sperma. I dati sull&apos;analisi provengono dall&apos;Istituto Spallanzani. L&apos;analisi fornisce dati su una serie di parametri tra cui: &quot;integrità della membrana&quot; espressa in % e determinata da Nucleocounter SP100 utilizzando il protocollo fornito dal produttore che dichiara una precisione espressa come CV% &lt; 8, concentrazione totale del numero di spermi, velocità media di spostamento (VAP), Motilità Progressiva (MP), ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class about semen analysis. The data on the analysis come from the Spallanzani Institute. The analysis provides data about a set of parameters including: &quot;membrane integrity&quot; expressed in % and determined by Nucleocounter SP100 using the protocol provided by the manufacturer who declares an accuracy expressed as CV% &lt; 8, total concentration of semens, average velocity of movement, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi Sperma</rdfs:label>
+        <rdfs:label xml:lang="en">Semen Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/SemenLot -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/SemenLot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/Sample"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/idSemenPailleteLot"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A semen lot is a set of a series of sequins originating from the freezing of an ejaculate produced by a single bull on a given day. It is uniquely identified by a lot code</rdfs:comment>
+        <rdfs:comment xml:lang="it">Per lotto o partita si intende l&apos;insieme di una serie di paillettes che provengono dal congelamento di un eiaculato prodotto da un singolo toro in una determinata giornata. E&apos; identificato univocamente da un codice lotto</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Lotto relativo alla paillete di Seme</rdfs:label>
+        <rdfs:label xml:lang="en">Semen Lot</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/SemenType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/SemenType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe dei tipi di semi analizzati. Le istanze di questa classe sono: refrigerato, congelato, fresco.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the type of semen. Instances of this class are: frozen, cool, refrigerated</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Semen Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Seme (analizzato)</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnimalAnalysis"/>
+        <rdfs:comment xml:lang="it">E&apos; l&apos;analisi eseguita su un singolo soggetto. E&apos; fatta in una data (data analysis) e su un certo campione identificato univocamente da un numero (numero campione)</rdfs:comment>
+        <rdfs:comment xml:lang="en">It&apos;s the analysis performed on a single subject. It is made in a date (analysis date) and on a certain sample uniquely identified by a number (sample number)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Analisi Latte su Singolo Animale</rdfs:label>
+        <rdfs:label xml:lang="en">Single Animal Milk Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/analysis/AnimalAnalysis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasSpectrumDistribution"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/analysis/SpectrumDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/refersToLivestockSpecies"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/LivestockSpecies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Analisi di laboratorio che dà origine a cosiddetti spettri dei singoli campioni di latte sia riferiti agli animali che ai campioni di massa</rdfs:comment>
+        <rdfs:comment xml:lang="en">Laboratory analysis that results in the production of spectria on single milk samplesreferred to both single farm animals and milk mass</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Analisi Spettroscopica</rdfs:label>
+        <rdfs:label xml:lang="it">Spectroscopic Analysis</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/SpectrumDistribution -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/SpectrumDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasDownloadURL"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe che modella una specifica rappresentazione degli spettri. La classe non rappresenta lo spettro di per sé ma è una sua serializzazione, tipicamente disponibile in un file JSON. L&apos;uso della proprietà &quot;has URL per il download&quot; indica che la serializzazione è scaricabile per successivi utilizzi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that models a specific representation of spectra. The class does not represent the spectrum per se but it is a serialization of it, typically available in a JSON file. The use of the &quot;has download URL&quot; property indicates that the serialization is downloadable for later uses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Distribuzione Spetro</rdfs:label>
+        <rdfs:label xml:lang="en">Spectrum Distribution</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/UnitOfMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/unitSymbol"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe delle unità di misura (e.g., millimole/litro, Unità fFormati Colonia/millilitro). La classe può essere associata a un simbolo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of units  of measure (e.g., kilogram, metre, etc,). The class may be associated with a symbol.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Unit of Measure</rdfs:label>
+        <rdfs:label xml:lang="it">Unità di Misura</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+
+
+
+    <!-- https://w3id.org/leo/onto/co/Company -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/Company"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/contact-point/onto-aia">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <ns:fn>Sistemi informativi</ns:fn>
+        <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/distribution/AN-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/AN-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulle analisi</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of analysis ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia Analisi</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of Analysis Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulle analisi</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of analysis ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Analisi</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of Analysis Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/weathr/latest/analysis.jsonld"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/distribution/AN-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/AN-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulle analisi</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/Turtle of Analysis ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia Analisi</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of Analysis Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulle analisi</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Analysis ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Analisi</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of Analysis Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest/analysis.ttl"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/distribution/AN-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/AN-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulle analisi</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of Analysis ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia Analisi</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of Analysis Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulle analisi</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Analysis ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Analisi</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of Analysis Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest"/>
+        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest/analysis.rdf"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>00944701002</terms:identifier>
+        <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+        <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:identifier>06695411006</terms:identifier>
+        <foaf:name xml:lang="en">Bluarancio</foaf:name>
+        <foaf:name xml:lang="it">Bluarancio</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/data/project/LEO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+        <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
+        <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
+        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Cool -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Cool">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/SemenType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Cool</rdfs:label>
+        <rdfs:label xml:lang="it">Fresco</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Doubtful -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Doubtful">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/IBRValue"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Doubtful</rdfs:label>
+        <rdfs:label xml:lang="it">Dubbio</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Frozen -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Frozen">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/SemenType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="it">Congelato</rdfs:label>
+        <rdfs:label xml:lang="en">Frozen</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Negative -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Negative">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/IBRValue"/>
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/PAGValue"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Negative</rdfs:label>
+        <rdfs:label xml:lang="it">Negativo/a</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Positive -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Positive">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/IBRValue"/>
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/PAGValue"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Positive</rdfs:label>
+        <rdfs:label xml:lang="it">Positivo/a</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Refrigerated -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Refrigerated">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/SemenType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Refrigerated</rdfs:label>
+        <rdfs:label xml:lang="it">Refrigerato</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Revisable -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Revisable">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/PAGValue"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Revisable</rdfs:label>
+        <rdfs:label xml:lang="it">Rivedibile</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/leo/onto/analysis/Vaccinated -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis/Vaccinated">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/analysis/IBRValue"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
+        <rdfs:label xml:lang="en">Vaccinated</rdfs:label>
+        <rdfs:label xml:lang="it">Vaccinato</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
