@@ -1,0 +1,750 @@
+@prefix : <https://w3id.org/leo/onto/livestock-indicator/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/leo/onto/livestock-indicator> .
+
+<https://w3id.org/leo/onto/livestock-indicator> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <https://w3id.org/leo/onto/livestock-indicator/0.3> ;
+                                                 owl:imports <https://w3id.org/italia/onto/Indicator> ,
+                                                             <https://w3id.org/italia/onto/l0> ;
+                                                 <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/kb61f2wcx7sqz0q/livestock-indicator.png?raw=1> ;
+                                                 <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                                 <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                 <http://purl.org/dc/terms/description> "Questa è l'ontologia degli indicatori usati nel dominio zootecnico."@it ,
+                                                                                        "This is the ontology of indicators used in the livestock environment"@en ;
+                                                 <http://purl.org/dc/terms/issued> "2018-06-18"^^xsd:date ;
+                                                 <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                                                     <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                                 <http://purl.org/dc/terms/modified> "2022-11-05"^^xsd:date ;
+                                                 <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                 <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                 <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/100254> ;
+                                                 <http://purl.org/dc/terms/title> "Livestock Indicator Ontology"@en ,
+                                                                                  "Ontologia degli Indicatori del dominio Zootecnico"@it ;
+                                                 rdfs:comment "Questa è l'ontologia degli indicatori usati nel dominio zootecnico."@it ,
+                                                              "This is the ontology of indicators used in the livestock environment"@en ;
+                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                                 rdfs:label "Livestock Indicator Ontology"@en ,
+                                                            "Ontologia degli Indicatori del dominio Zootecnico"@it ;
+                                                 owl:versionInfo "Version 0.3 - 2022 - Introduction of two new properties: isLivestockIndicatorCalculationOfBreed and :doneForIndicatorType. Finally, ComplementaryInfo is now a subClass of Concept"@en ,
+                                                                 "Versione 0.2 - 2022 - Introdotte due proprietà: 'è calcolo dell'indicatore zootecnico di razza' e 'fatto per tipo di indicatore'. La classe delle informazioni complementari è ora sottoclasse di concetto (concept)."@it ;
+                                                 <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/leo/data/contact-point/onto-aia> ;
+                                                 <http://www.w3.org/ns/dcat#keyword> "Indicatore Genetico"@it ,
+                                                                                     "Indicatore Zootecnico"@it ,
+                                                                                     "Indicatore di Benessere"@it ;
+                                                 <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
+                                                 <https://w3id.org/italia/onto/ADMS/acronym> "LEO" ;
+                                                 <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
+                                                 <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
+                                                 <https://w3id.org/italia/onto/ADMS/hasKeyClass> :AnimalBasedIndicatorCalculation ,
+                                                                                                 :CompanyBasedIndicatorCalculation ,
+                                                                                                 :LivestockIndicator ,
+                                                                                                 :LivestockIndicatorCalculation ;
+                                                 <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> ;
+                                                 <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/leo/data/distribution/IND-JSON-LD> ,
+                                                                                                                  <https://w3id.org/leo/data/distribution/IND-RDF-TURTLE> ,
+                                                                                                                  <https://w3id.org/leo/data/distribution/IND-RDF-XML> ;
+                                                 <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> ,
+                                                                                             <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> ,
+                                                                                             <https://w3id.org/italia/onto/ADMS/SearchTask> ;
+                                                 <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/leo/onto/livestock-indicator"^^xsd:anyURI ;
+                                                 <https://w3id.org/italia/onto/ADMS/prefix> "li" ;
+                                                 <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/leo/data/project/LEO> ;
+                                                 <https://w3id.org/italia/onto/ADMS/status> "catalogued" ;
+                                                 <https://w3id.org/italia/onto/ADMS/target> "Comunità open data" ,
+                                                                                            "Imprese" ,
+                                                                                            "Professionisti settore zootecnico" ,
+                                                                                            "Pubbliche Amministrazioni" ;
+                                                 <https://w3id.org/italia/onto/ADMS/type> <https://w3id.org/italia/onto/ADMS/DomainOntology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/accrualPeriodicity
+<http://purl.org/dc/terms/accrualPeriodicity> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+<http://purl.org/dc/terms/rightsHolder> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+<http://www.w3.org/2006/vcard/ns#fn> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+<http://www.w3.org/2006/vcard/ns#hasEmail> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#contactPoint
+<http://www.w3.org/ns/dcat#contactPoint> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/acronym
+<https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasContributor
+<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
+<https://w3id.org/italia/onto/ADMS/hasFormalityLevel> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasKeyClass
+<https://w3id.org/italia/onto/ADMS/hasKeyClass> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasOntologyLanguage
+<https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution
+<https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasTask
+<https://w3id.org/italia/onto/ADMS/hasTask> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/officialURI
+<https://w3id.org/italia/onto/ADMS/officialURI> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/prefix
+<https://w3id.org/italia/onto/ADMS/prefix> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/semanticAssetInUse
+<https://w3id.org/italia/onto/ADMS/semanticAssetInUse> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/status
+<https://w3id.org/italia/onto/ADMS/status> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/target
+<https://w3id.org/italia/onto/ADMS/target> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/type
+<https://w3id.org/italia/onto/ADMS/type> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/controlledVocabulary
+<https://w3id.org/italia/onto/l0/controlledVocabulary> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/name
+<https://w3id.org/italia/onto/l0/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/leo/onto/animal/doneForIndicatorType
+<https://w3id.org/leo/onto/animal/doneForIndicatorType> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :LivestockIndicatorCalculation ;
+                                                        rdfs:range <https://w3id.org/italia/onto/Indicator/IndicatorType> ;
+                                                        rdfs:comment "Property used to associate the speciifc calculation of a livestock indicator to the indicator type"@en ,
+                                                                     "Proprietà utilizzata per associare uno specifico calcolo dell'indicatore zootecnico al tipo di indicatore (e.g., genetico, genomico, pedigree)"@it ;
+                                                        rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                                        rdfs:label "(calcolo) fatto per tipo indicatore"@it ,
+                                                                   "done for indicator type"@en ;
+                                                        owl:versionInfo "stabile"@it ,
+                                                                        "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/associatedWithIndicator
+:associatedWithIndicator rdf:type owl:ObjectProperty ;
+                         rdfs:domain owl:Thing ;
+                         rdfs:range :LivestockIndicator ;
+                         rdfs:comment "A general property that links an entity to an indicator."@en ,
+                                      "Proprietà generica che collega una generica entitò a un indicatore."@it ;
+                         rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                         rdfs:label "associated with indicator"@en ,
+                                    "associato con indicatore"@it ;
+                         owl:versionInfo "stabile"@it ,
+                                         "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/associatedWithProductionTarget
+:associatedWithProductionTarget rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf <https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf> ;
+                                rdfs:domain :CompanyBasedIndicatorCalculation ;
+                                rdfs:range <https://w3id.org/leo/onto/animal/ProductionType> ;
+                                rdfs:comment "Property that links the livestock indicator calculation (and in particular the company-based livestock indicator calculation) with the production target of the livestock species"@en ,
+                                             "Proprietà che lega l'indicatore di benessere animale all'indirizzo produttivo specifico della specie zootecnica"@it ;
+                                rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                rdfs:label "associated with production target"@en ,
+                                           "associato con indirizzo produttivo"@it ;
+                                owl:versionInfo "stabile"@it ,
+                                                "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/basedOnCalculation
+:basedOnCalculation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :LivestockIndicatorCalculation ;
+                    rdfs:range :LivestockIndicatorCalculation ;
+                    rdfs:comment "Property that enables the modelling of hierarchies in calculations of livestock indicators."@en ,
+                                 "Proprietà che consente di modellare gerarchie nei calcoli degli indicatori zootecnici."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                    rdfs:label "basato su calcolo"@it ,
+                               "based on calculation"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/computedForFarmAnimal
+:computedForFarmAnimal rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf> ;
+                       rdfs:domain :AnimalBasedIndicatorCalculation ;
+                       rdfs:range <https://w3id.org/leo/onto/animal/FarmAnimal> ;
+                       rdfs:comment "Property that links the animal-based livestock indicator calculation (in particular the genetic indicators/indexes) to the farm animal."@en ,
+                                    "Proprietà che collega il calcolo degli indicatori zootecnici basati sull'animale (in particolare gli indicatori/indici genetici) all'animale da allevamento."@it ;
+                       rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                       rdfs:label "calcolato per animale d'allevamento"@it ,
+                                  "computed for farm animal"@en ;
+                       owl:versionInfo "stabile"@it ,
+                                       "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasCalculationAccuracy
+:hasCalculationAccuracy rdf:type owl:ObjectProperty ;
+                        rdfs:domain :LivestockIndicatorCalculation ;
+                        rdfs:range <https://w3id.org/italia/onto/MU/Value> ;
+                        rdfs:comment "Property that allows one to specify the accuracy in percentage of the livestock indicator calculation."@en ,
+                                     "Proprietà che consente di specificare l'accuratezza, in percentuale, del calcolo dell'indicatore zootecnico."@it ;
+                        rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                        rdfs:label "ha accuratezza del calcolo"@it ,
+                                   "has calculation accuracy"@en ;
+                        owl:versionInfo "stabile"@it ,
+                                        "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasComplementaryInfo
+:hasComplementaryInfo rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ComplementaryInfoDescription ;
+                      rdfs:range :ComplementaryInfo ;
+                      rdfs:comment "Property that links the description of the complementary information with the type of complementary information used in the livestock indicator calculation."@en ,
+                                   "Proprietà che collega la descrizione delle informazioni complementari con il tipo di informazioni complementari utilizzate nel calcolo dell'indicatore zootecnico."@it ;
+                      rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                      rdfs:label "ha informazione complementare"@it ,
+                                 "has complementary information"@en ;
+                      owl:versionInfo "stabile"@it ,
+                                      "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasComplementaryInformationDesc
+:hasComplementaryInformationDesc rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :LivestockIndicatorCalculation ;
+                                 rdfs:range :ComplementaryInfoDescription ;
+                                 <http://purl.org/dc/elements/1.1/description> """<pre>
+
+ex:myIndicatorCalculation1 a li:LivestockIndicatorCalculation ;
+li:hasComplementaryInformationDesc ex:myComplementaryInfoDescND-3 .
+
+ex:myComplementaryInfoDescND-3 a li:ComplementaryInfoDescription ;
+mu:hasValue ex:myValue3-0 ;
+li:hasComplementaryInfo ex:myComplementaryInfoND .
+
+ex:myValue3-0 a mu:Value ;
+mu:value 3;
+mu:hasMeasurementUnit <https://w3id.org/leo/controlled-vocabulary/measurement-unit/0> .
+
+ex:myComplementaryInfoND a li:ComplementaryInfo ;
+rdfs:label \"Number of daughters\"@en , \"Numero figlie\"@it ;
+l0:name \"Number of daughters\"@en , \"Numero figlie\"@it.
+
+</pre>""" ;
+                                 rdfs:comment "Proprietà che consente di collegare il calcolo dell'indicatore zootecnico alle descrizioni (informazione complementare e valore) di ciascuna informazione complementare usata nel calcolo."@it ;
+                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                 rdfs:label "ha descrizione informazioni complementari"@it ,
+                                            "has complementary information description"@en ;
+                                 owl:versionInfo "stabile"@it ,
+                                                 "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasForeignCountryOfInfluence
+:hasForeignCountryOfInfluence rdf:type owl:ObjectProperty ;
+                              rdfs:domain :LivestockIndicatorCalculation ;
+                              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                              rdfs:comment "La proprietà che lega il calcolo dell'indicatore zootecnico con i paesi esteri che influenzano sul calcolo stesso."@it ,
+                                           "The property that links the calculation of the livestock indicator with the foreign countries that influence the calculation."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                              rdfs:label "ha area geografica estera di influenza sul calcolo"@it ,
+                                         "has foreign country of influence"@en ;
+                              owl:versionInfo "stabile"@it ,
+                                              "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasLivestockIndicatorCalculation
+:hasLivestockIndicatorCalculation rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf <https://w3id.org/italia/onto/Indicator/hasIndicatorCalculation> ;
+                                  rdfs:domain :LivestockIndicator ;
+                                  rdfs:range :LivestockIndicatorCalculation ;
+                                  rdfs:comment "Property that links the livestock indicator to its calculation."@en ,
+                                               "Proprietà che lega l'indicatore zootecnico al suo calcolo."@it ;
+                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                  rdfs:label "ha calcolo indicatore zootecnico"@it ,
+                                             "has livestock indicator calculation"@en ;
+                                  owl:versionInfo "stabile"@it ,
+                                                  "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasOriginType
+:hasOriginType rdf:type owl:ObjectProperty ;
+               rdfs:domain :LivestockIndicatorCalculation ;
+               rdfs:range :LivestockIndicatorOriginType ;
+               rdfs:comment "Property used to specify all the sources fot the livestock indicator calculation that are not the foreign countries of influence on the calculation."@en ,
+                            "Proprietà utilizzata per specificare tutte le fonti per il calcolo dell'indicatore zootecnico che non sono i Paesi stranieri di influenza sul calcolo."@it ;
+               rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+               rdfs:label "ha tipologia origine (diversa dal paese straniero d'influenza)"@it ,
+                          "has origin type (different from foreign country of influence)"@en ;
+               owl:versionInfo "stabile"@it ,
+                               "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/hasYearOfReference
+:hasYearOfReference rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/hasYear> ;
+                    rdfs:domain :LivestockIndicatorCalculation ;
+                    rdfs:range <https://w3id.org/italia/onto/TI/Year> ;
+                    rdfs:comment "Property allowing one to specify the reference year of the livestock indicator calculation."@en ,
+                                 "Proprietà che consente di specificare l'anno di riferimento del calcolo dell'indicatore zootecnico."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                    rdfs:label "ha anno di riferimento"@it ,
+                               "has year of reference"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/isLivestockIndicatorCalculationOfBreed
+:isLivestockIndicatorCalculationOfBreed rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf> ;
+                                        rdfs:domain :CompanyBasedIndicatorCalculation ;
+                                        rdfs:range <https://w3id.org/leo/onto/animal/Breed> ;
+                                        rdfs:comment "Property used to link indicators calculated at farm level with the breed. In particular, this property is valorised in the presence of indicators such as Indicator Age 1 Parturition"@en ,
+                                                     "Proprietà utilizzata per collegare indicatori calcolati a livello aziendale con la razza. In particolare, questa proprietà è valorizzata in presenza di indicatori quali Indicatore Età 1 Parto"@it ;
+                                        rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                        rdfs:label "is livestock indicator calcultation of breed"@en ,
+                                                   "è calcolo dell'indicatore zootecnico di razza"@it ;
+                                        owl:versionInfo "stabile"@it ,
+                                                        "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/isLivestockIndicatorCalculationOfCompany
+:isLivestockIndicatorCalculationOfCompany rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf> ;
+                                          rdfs:domain :CompanyBasedIndicatorCalculation ;
+                                          rdfs:range <https://w3id.org/leo/onto/co/LivestockFarm> ;
+                                          rdfs:comment "Property that links the company-based livestock indicator calculation (and in particular the animal wellbeing indicator) to the company."@en ,
+                                                       "Proprietà che collega il calcolo dell'indicatore zootecnico aziendale (e in particolare l'indicatore di benessere animale) all'azienda."@it ;
+                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                          rdfs:label "is livestock indicator calculation of company"@en ,
+                                                     "è calcolo dell'indicatore zootecnico di azienda"@it ;
+                                          owl:versionInfo "stabile"@it ,
+                                                          "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/isLivestockIndicatorCalculationOfSpecies
+:isLivestockIndicatorCalculationOfSpecies rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf> ;
+                                          rdfs:domain :LivestockIndicatorCalculation ;
+                                          rdfs:range <https://w3id.org/leo/onto/animal/LivestockSpecies> ;
+                                          rdfs:comment "Property that links the livestock indicator calculation to the livestock species it refers."@en ,
+                                                       "Proprietà che collega il calcolo dell'indicatore zootecnico alla specie a cui si riferisce"@it ;
+                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                          rdfs:label "is livestock indicator calculation of species"@en ,
+                                                     "è calcolo indicatore zootecnico di specie"@it ;
+                                          owl:versionInfo "stabile"@it ,
+                                                          "stable"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/leo/onto/livestock-indicator/computationDate
+:computationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                 rdfs:domain :LivestockIndicator ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:unionOf ( xsd:date
+                                            xsd:dateTime
+                                          )
+                            ] ;
+                 rdfs:comment "La data di calcolo dell'indicatore."@it ,
+                              "The computation date of the indicator."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                 rdfs:label "computation date"@en ,
+                            "data di calcolo"@it ;
+                 owl:versionInfo "stabile"@it ,
+                                 "stable"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/animal/Breed
+<https://w3id.org/leo/onto/animal/Breed> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/animal/FarmAnimal
+<https://w3id.org/leo/onto/animal/FarmAnimal> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/animal/LivestockSpecies
+<https://w3id.org/leo/onto/animal/LivestockSpecies> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/animal/ProductionType
+<https://w3id.org/leo/onto/animal/ProductionType> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/co/LivestockFarm
+<https://w3id.org/leo/onto/co/LivestockFarm> rdf:type owl:Class .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/AnimalBasedIndicatorCalculation
+:AnimalBasedIndicatorCalculation rdf:type owl:Class ;
+                                 rdfs:subClassOf :LivestockIndicatorCalculation ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :computedForFarmAnimal ;
+                                                   owl:someValuesFrom <https://w3id.org/leo/onto/animal/FarmAnimal>
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :computedForFarmAnimal ;
+                                                   owl:allValuesFrom <https://w3id.org/leo/onto/animal/FarmAnimal>
+                                                 ] ;
+                                 rdfs:comment "La classe del calcolo di tutti gli indicatori che si basano sul singolo animale d'allevamento. Rientrano in questa categoria il calcolo degli indici genetici."@it ,
+                                              "The class of calculating all indicators that are based on the individual farm animal. This category includes the calculation of genetic indexes."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                 rdfs:label "Animal-based Indicator Calculation"@en ,
+                                            "Calcolo Indicatore Zootecnico su Animale"@it ;
+                                 owl:versionInfo "stabile"@it ,
+                                                 "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/CompanyBasedIndicatorCalculation
+:CompanyBasedIndicatorCalculation rdf:type owl:Class ;
+                                  rdfs:subClassOf :LivestockIndicatorCalculation ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :associatedWithProductionTarget ;
+                                                    owl:someValuesFrom <https://w3id.org/leo/onto/animal/ProductionType>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isLivestockIndicatorCalculationOfCompany ;
+                                                    owl:someValuesFrom <https://w3id.org/leo/onto/co/LivestockFarm>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isLivestockIndicatorCalculationOfCompany ;
+                                                    owl:allValuesFrom <https://w3id.org/leo/onto/co/LivestockFarm>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isLivestockIndicatorCalculationOfBreed ;
+                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass <https://w3id.org/leo/onto/animal/Breed>
+                                                  ] ;
+                                  rdfs:comment "The class of calculating all indicators that are based on the individual farm company. This category includes the calculation of the wellbeing farm animal indicator."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                                  rdfs:label "Calcolo Indicatore Zootecnico su Azienda"@it ,
+                                             "Company-based Indicator Calculation"@en ,
+                                             "La classe di calcolo di tutti gli indicatori che si basano sull'azienda da allevamento. Questa categoria comprende il calcolo dell'indicatore di benessere degli animali da allevamento."@it ;
+                                  owl:versionInfo "stabile"@it ,
+                                                  "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/ComplementaryInfo
+:ComplementaryInfo rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                                     owl:someValuesFrom rdfs:Literal
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                                     owl:allValuesFrom rdfs:Literal
+                                   ] ;
+                   rdfs:comment "La classe del tipo di informazioni complementari per il calcolo dell'indicatore  zootecnico."@it ,
+                                "The class of the type of complementary information for the calculation of the livestock indicator."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                   rdfs:label "Complementary Information"@en ,
+                              "Informazione Complementare"@it ;
+                   owl:versionInfo "stabile"@it ,
+                                   "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/ComplementaryInfoDescription
+:ComplementaryInfoDescription rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/italia/onto/MU/hasValue> ;
+                                                owl:someValuesFrom <https://w3id.org/italia/onto/MU/Value>
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasComplementaryInfo ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass :ComplementaryInfo
+                                              ] ;
+                              rdfs:comment "La classe rappresenta la descrizione complessiva delle informazioni complementari (quali informazioni e il loro valore) utilizzate nel calcolo dell'indicatore zootecnico. Esempi includono, numero di figlie = 3, numero di aziende = 1, ecc."@it ,
+                                           "The class represents the overall description of the complementary information (what information and its value) used in the calculation of the livestock indicator. Example are: number of daughters = 3, number of companies = 1, etc."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                              rdfs:label "Complementary Information Description"@en ,
+                                         "Descrizione Informazioni Complementari"@it ;
+                              owl:versionInfo "stabile"@it ,
+                                              "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/LivestockIndicator
+:LivestockIndicator rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/italia/onto/Indicator/Indicator> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasLivestockIndicatorCalculation ;
+                                      owl:allValuesFrom :LivestockIndicatorCalculation
+                                    ] ;
+                    rdfs:comment "It represents an indicator used in the livestock context. The Livestock Indicator is defined through  a name and a description. Example: the farm animal wellbeing indicator, the genetic feed conversion ratio, etc."@en ,
+                                 "Rappresenta un indicatore usato nell'ambito zootecnico. L'indicatore è definito sulla base di un nome e una descrizione. Peer esempio l'indice benessere animale, l'indice genetico di conversione alimentare (ICA), ecc."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                    rdfs:label "Indicatore Zootecnico"@it ,
+                               "Livestock Indicator"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/LivestockIndicatorCalculation
+:LivestockIndicatorCalculation rdf:type owl:Class ;
+                               rdfs:subClassOf <https://w3id.org/italia/onto/Indicator/IndicatorCalculation> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :basedOnCalculation ;
+                                                 owl:allValuesFrom :LivestockIndicatorCalculation
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCalculationAccuracy ;
+                                                 owl:allValuesFrom <https://w3id.org/italia/onto/MU/Value>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasComplementaryInformationDesc ;
+                                                 owl:allValuesFrom :ComplementaryInfoDescription
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasForeignCountryOfInfluence ;
+                                                 owl:allValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasOriginType ;
+                                                 owl:allValuesFrom :LivestockIndicatorOriginType
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasYearOfReference ;
+                                                 owl:allValuesFrom <https://w3id.org/italia/onto/TI/Year>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :isLivestockIndicatorCalculationOfSpecies ;
+                                                 owl:allValuesFrom <https://w3id.org/leo/onto/animal/LivestockSpecies>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :computationDate ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:date
+                                               ] ;
+                               rdfs:comment "La classe del calcolo di uno specifico indicatore zootecnico eseguito seguendo un certo metodo di calcolo. La classe consente di separare il calcolo dell'indicatore zootecnico con i valori e le metriche che contribuiscono al calcolo, con l'indicatore zootecnico stesso."@it ,
+                                            "The class of calculation of a specific livestock indicator performed following a certain calculation method and using one or more complementary information. The class allows one to separate the calculation of the livestock indicator with the values and metrics that contribute to the calculation, with the livestock indicator itself."@en ;
+                               rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                               rdfs:label "Calcolo Indicatore Zootecnico"@it ,
+                                          "Livestock Indicator Calculation"@en ;
+                               owl:versionInfo "stabile"@it ,
+                                               "stable"@en .
+
+
+###  https://w3id.org/leo/onto/livestock-indicator/LivestockIndicatorOriginType
+:LivestockIndicatorOriginType rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                                                owl:someValuesFrom rdfs:Literal
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                                                owl:allValuesFrom rdfs:Literal
+                                              ] ;
+                              rdfs:comment "La classe di tutti i tipi di origini, utilizzate nel calcolo degli indicatori zootecnici,diverse dal Paese estero di influenza del calcolo. Esempi includono: sistemi specifici di conversione."@it ,
+                                           "The class of all types of sources, used in the calculation of the livestock indicators, that are different from the foreign country of influence of the calculation. Examples include specific conversion systems."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/leo/onto/livestock-indicator> ;
+                              rdfs:label "Livestock Indicator Origin Type"@en ,
+                                         "Tipo Origine Indicatore Zootecnico"@it ;
+                              owl:versionInfo "stabile"@it ,
+                                              "stable"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/leo/data/contact-point/onto-aia
+<https://w3id.org/leo/data/contact-point/onto-aia> rdf:type owl:NamedIndividual ,
+                                                            <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                            <http://www.w3.org/2006/vcard/ns#Kind> ,
+                                                            <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                                   rdfs:label "Sistemi informativi"@it ;
+                                                   <http://www.w3.org/2006/vcard/ns#fn> "Sistemi informativi"@it ;
+                                                   <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:affarigenerali@pec.aia.it> .
+
+
+###  https://w3id.org/leo/data/distribution/IND-JSON-LD
+<https://w3id.org/leo/data/distribution/IND-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> ;
+                                                     <http://purl.org/dc/terms/description> "Questa è la distribuzione JSON-LD dell'ontologia sugli indicatori del dominio zootecnico"@it ,
+                                                                                            "This is the distribution in JSON-LD of Livestock Indicator ontology"@en ;
+                                                     <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                     <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                     <http://purl.org/dc/terms/title> "Distribuzione JSON-LD ontologia Indicatori"@it ,
+                                                                                      "JSON-LD distribution of Indicator Ontology"@en ;
+                                                     rdfs:comment "Questa è la distribuzione JSON-LD dell'ontologia sugli indicatori del dominio zootecnico"@it ,
+                                                                  "This is the distribution in JSON-LD of Livestock Indicator ontology"@en ;
+                                                     rdfs:label "Distribuzione JSON-LD ontologia Indicatori"@it ,
+                                                                "JSON-LD distribution of Indicator Ontology"@en ;
+                                                     <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/indicator/latest> ;
+                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/indicator/latest/indicator.jsonld> .
+
+
+###  https://w3id.org/leo/data/distribution/IND-RDF-TURTLE
+<https://w3id.org/leo/data/distribution/IND-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> ;
+                                                        <http://purl.org/dc/terms/description> "Questa è la distribuzione RDF/Turtle dell'ontologia sugli indicatori del dominio zootecnico"@it ,
+                                                                                               "This is the distribution in RDF/Turtle of Livestock Indicator ontology"@en ;
+                                                        <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                        <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                        <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia Indicatori"@it ,
+                                                                                         "RDF/Turtle distribution of Indicator Ontology"@en ;
+                                                        rdfs:comment "Questa è la distribuzione RDF/Turtle dell'ontologia sugli indicatori del dominio zootecnico"@it ,
+                                                                     "This is the distribution in RDF/Turtle of Livestock Indicator ontology"@en ;
+                                                        rdfs:label "Distribuzione RDF/Turtle ontologia Indicatori"@it ,
+                                                                   "RDF/Turtle distribution of Indicator Ontology"@en ;
+                                                        <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/indicator/latest> ;
+                                                        <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/indicator/latest/indicator.ttl> .
+
+
+###  https://w3id.org/leo/data/distribution/IND-RDF-XML
+<https://w3id.org/leo/data/distribution/IND-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> ;
+                                                     <http://purl.org/dc/terms/description> "Questa è la distribuzione RDF/XML dell'ontologia sugli indicatori del dominio zootecnico"@it ,
+                                                                                            "This is the distribution in RDF/XML of Livestock Indicator ontology"@en ;
+                                                     <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                     <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                     <http://purl.org/dc/terms/title> "Distribuzione RDF/XML ontologia Indicatori"@it ,
+                                                                                      "RDF/XML distribution of Indicator Ontology"@en ;
+                                                     rdfs:comment "Questa è la distribuzione RDF/XML dell'ontologia sugli indicatori del dominio zootecnico"@it ,
+                                                                  "This is the distribution in RDF/XML of Livestock Indicator ontology"@en ;
+                                                     rdfs:label "Distribuzione RDF/XML ontologia Indicatori"@it ,
+                                                                "RDF/XML distribution of Indicator Ontology"@en ;
+                                                     <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/indicator/latest> ;
+                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/indicator/latest/indicator.rdf> .
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
+                                                             <http://purl.org/dc/terms/identifier> "00944701002" ;
+                                                             <http://xmlns.com/foaf/0.1/name> "Associazione Italiana Allevatori"@it ,
+                                                                                              "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
+                                                             <http://purl.org/dc/terms/identifier> "06695411006" ;
+                                                             <http://xmlns.com/foaf/0.1/name> "Bluarancio"@en ,
+                                                                                              "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/italia/onto/ADMS/Project> ;
+                                        rdfs:label "LEO - Livestok Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestok Environment Open Data"@it .
+
+
+###  https://w3id.org/leo/onto/indicator
+<https://w3id.org/leo/onto/indicator> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/italia/onto/ADMS/SemanticAsset> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
