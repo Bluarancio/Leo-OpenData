@@ -10,68 +10,26 @@
   } ]
 }, {
   "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/analysis/IBRAnalysis"
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
     }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/PAGAnalysis"
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
     }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SemenAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
     } ]
   } ]
 }, {
   "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/analysis/IBRAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/PAGAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SemenAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/MeasurementQuality"
@@ -80,7 +38,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/hasQuality"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
@@ -89,7 +47,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/isAnalysisObservationOf"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -102,7 +60,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/hasResult"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/FeatureOfInterest"
@@ -115,7 +73,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/ObservableProperty"
@@ -128,7 +86,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -141,20 +99,20 @@
     "@id" : "https://w3id.org/leo/onto/analysis/carriedOutOnSample"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid38"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/resultTime"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -164,17 +122,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/leo/onto/LivestockSpecies"
-    }, {
-      "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/performedOnAnimal"
@@ -183,7 +131,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
@@ -192,7 +140,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/performedOnAnimal"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -205,7 +153,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/refersToLivestockSpecies"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"
@@ -214,7 +162,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
@@ -223,7 +171,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/countObservedValue"
@@ -232,7 +180,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/AnalysisObservation"
@@ -241,7 +189,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/isFeatureOfInterestFor"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
@@ -250,7 +198,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/CategoryObservation"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -264,7 +212,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
@@ -273,7 +221,17 @@
     "@id" : "https://w3id.org/leo/onto/analysis/AnalysisObservation"
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/leo/onto/LivestockSpecies"
+    }, {
+      "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/co/Company"
@@ -282,7 +240,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/performedForOwnerCompany"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/Sample"
@@ -295,16 +253,16 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid58"
+    "@id" : "_:genid43"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -314,7 +272,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/MeasurementQualityType"
@@ -327,7 +285,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid62",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/onto/MU/Value"
@@ -340,7 +298,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/MU/MeasurementUnit"
@@ -349,7 +307,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -362,7 +320,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/hasReferenceRange"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/name"
@@ -371,7 +329,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -380,7 +338,7 @@
     "@id" : "https://w3id.org/italia/onto/l0/description"
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -390,7 +348,30 @@
     "@id" : "https://w3id.org/italia/onto/l0/identifier"
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/DoseType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/hasDoseType"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/analysisNumber"
+  } ]
+}, {
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation"
@@ -399,7 +380,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/CategoryObservation"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -408,6 +389,95 @@
       "@id" : "https://w3id.org/leo/onto/analysis/Positive"
     }, {
       "@id" : "https://w3id.org/leo/onto/analysis/Revisable"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/leo/onto/LivestockSpecies"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/definedForSpecies"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/hasMaxValue"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/hasMinValue"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/leo/onto/LivestockSpecies"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/collectedFrom"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/BiologicalMaterial"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/isSampleOf"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/sampleNumber"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid67"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/acquisitionTime"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
     } ]
   } ]
 }, {
@@ -421,96 +491,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid73",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/LivestockSpecies"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/definedForSpecies"
-  } ]
-}, {
-  "@id" : "_:genid74",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/Value"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/hasMaxValue"
-  } ]
-}, {
-  "@id" : "_:genid75",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/Value"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/hasMinValue"
-  } ]
-}, {
-  "@id" : "_:genid76",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/LivestockSpecies"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/collectedFrom"
-  } ]
-}, {
-  "@id" : "_:genid77",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/BiologicalMaterial"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/isSampleOf"
-  } ]
-}, {
-  "@id" : "_:genid78",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#int"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/sampleNumber"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid79",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid80"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/acquisitionTime"
-  } ]
-}, {
-  "@id" : "_:genid80",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -520,16 +501,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/idSemenPailleteLot"
   } ]
 }, {
-  "@id" : "_:genid84",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/SpectrumDistribution"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/hasSpectrumDistribution"
-  } ]
-}, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -542,26 +514,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/refersToLivestockSpecies"
   } ]
 }, {
-  "@id" : "_:genid86",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/hasDownloadURL"
-  } ]
-}, {
-  "@id" : "_:genid87",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ]
-}, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -600,9 +553,6 @@
 }, {
   "@id" : "http://w3id.org/italia/onto/IoT/isFeatureOfInterestFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -685,171 +635,6 @@
   "@id" : "https://w3id.org/italia/onto/TI/date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://w3id.org/italia/onto/l0",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/7edkt5d77axxwqe/Analysis.png?raw=1"
-  } ],
-  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia usata per modellare i dati LabData e in certi casi i HealthData nel progetto LEO ovvero i dati raccolti sanitari e di tipo laboratorio, intesi come osservazioni di proprietà con determinati valori"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model the LabData  and in some cases the HealthData of the LEO project, i.e. the collected health and laboratory data, understood as observations with properties with certain values."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@language" : "it",
-    "@value" : "onto-BA-4"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2019-03-14"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
-  }, {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-05-18"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/rightsHolder" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/subject" : [ {
-    "@id" : "http://eurovoc.europa.eu/6271"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/6272"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Analysis Ontology - LabData and HeathData"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia delle Analisi - LabData e HealthData"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia usata per modellare i dati che nel progetto LEO sono chiamati LabData. In certi casi l'ontologia può essere usata per i dati cosiddetti HealthData ovvero dati sanitari ma quando questi sono intesi come osservazioni di proprietà con determinati valori"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model the data which in the LEO project are called LabData. In certain cases the ontology can be used for so called HealthData but when these are understood as observations of properties with certain values"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Analysis Ontology - LabData"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia delle Analisi - LabData"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/TI"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/0.4"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "Version 0.4 - 2022 - Fourth version of the ontology - introduced measurement quality and range of values of reference"
-  }, {
-    "@language" : "it",
-    "@value" : "Versione 0.4 - 2022 - Quarta versione dell'ontologia che introduce la gestione del seme, la misura della qualità dell'osservazione e l'intervallo dei valori di riferimento (per una proprietà osservata)."
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "it",
-    "@value" : "Analisi campione di massa"
-  }, {
-    "@language" : "it",
-    "@value" : "IBR"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/TECH"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
-    "@value" : "AN"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/AnalysisObservation"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/analysis/IBRAnalysis"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/analysis/MilkMassAnalysis"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/analysis/PAGAnalysis"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
-    "@id" : "https://w3id.org/leo/data/distribution/AN-JSON-LD"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/AN-RDF-TURTLE"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/AN-RDF-XML"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://w3id.org/leo/onto/analysis"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
-    "@value" : "analysis"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
-    "@id" : "https://w3id.org/leo/data/project/LEO"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@value" : "published"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/target" : [ {
-    "@language" : "it",
-    "@value" : "Comunità Open Data"
-  }, {
-    "@value" : "Imprese"
-  }, {
-    "@value" : "Pubbliche Amministrazioni"
-  }, {
-    "@language" : "it",
-    "@value" : "Specialisti del settore zootecnico"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/type" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
-  } ]
-}, {
   "@id" : "https://w3id.org/italia/onto/l0/Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -864,6 +649,9 @@
 }, {
   "@id" : "https://w3id.org/italia/onto/l0/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/italia/onto/l0/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -1060,7 +848,172 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://www.dropbox.com/s/7edkt5d77axxwqe/Analysis.png?raw=1"
+  } ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia usata per modellare i dati LabData e in certi casi i HealthData nel progetto LEO ovvero i dati raccolti sanitari e di tipo laboratorio, intesi come osservazioni di proprietà con determinati valori"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology used to model the LabData  and in some cases the HealthData of the LEO project, i.e. the collected health and laboratory data, understood as observations with properties with certain values."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@language" : "it",
+    "@value" : "onto-BA-4"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-03-14"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-05"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/subject" : [ {
+    "@id" : "http://eurovoc.europa.eu/6271"
+  }, {
+    "@id" : "http://eurovoc.europa.eu/6272"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Analysis Ontology - LabData and HeathData"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia delle Analisi - LabData e HealthData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia usata per modellare i dati che nel progetto LEO sono chiamati LabData. In certi casi l'ontologia può essere usata per i dati cosiddetti HealthData ovvero dati sanitari ma quando questi sono intesi come osservazioni di proprietà con determinati valori"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology used to model the data which in the LEO project are called LabData. In certain cases the ontology can be used for so called HealthData but when these are understood as observations of properties with certain values"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Analysis Ontology - LabData"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia delle Analisi - LabData"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/TI"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/l0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/0.5"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "Version 0.5 - 2023 - Fifth version of the ontology - revision of spectroscopic analysis; added DNA Fragmentation Analysis; revised classification of the different types of analysis"
+  }, {
+    "@language" : "it",
+    "@value" : "Versione 0.5 - 2023 - Quinta versione dell'ontologia - revisione dell'analisi degli spettri; aggiunta l'analisi di frammentazione del DNA, rivista la classificazione dei differenti tipi di analisi in base alla distinzione su singolo animale e campione di massa"
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "it",
+    "@value" : "Analisi campione di massa"
+  }, {
+    "@language" : "it",
+    "@value" : "Analisi di laboratorio"
+  }, {
+    "@language" : "it",
+    "@value" : "IBR"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/data-theme/TECH"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
+    "@value" : "AN"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/AnalysisObservation"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/analysis/IBRAnalysis"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/analysis/MilkMassAnalysis"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/analysis/PAGAnalysis"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
+    "@id" : "https://w3id.org/leo/data/distribution/AN-JSON-LD"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/AN-RDF-TURTLE"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/AN-RDF-XML"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
+    "@value" : "analysis"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
+    "@id" : "https://w3id.org/leo/data/project/LEO"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/status" : [ {
+    "@value" : "published"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/target" : [ {
+    "@language" : "it",
+    "@value" : "Comunità Open Data"
+  }, {
+    "@value" : "Imprese"
+  }, {
+    "@value" : "Pubbliche Amministrazioni"
+  }, {
+    "@language" : "it",
+    "@value" : "Specialisti del settore zootecnico"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/type" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
+  } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/AnalysisObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1086,19 +1039,19 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Activity"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid16"
   }, {
-    "@id" : "_:genid32"
+    "@id" : "_:genid17"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid18"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid19"
   }, {
-    "@id" : "_:genid35"
+    "@id" : "_:genid20"
   }, {
-    "@id" : "_:genid36"
+    "@id" : "_:genid21"
   }, {
-    "@id" : "_:genid37"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1113,15 +1066,39 @@
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/AnimalAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Classe generica delle analisi eseguite su singoli animali. Si differenzia dalle analisi su campioni di massa."
+  }, {
+    "@language" : "en",
+    "@value" : "Generic class that represents the analyses that are carried out on single animals. It differentiates from the bulk milk analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Analisi su Animale"
+  }, {
+    "@language" : "en",
+    "@value" : "Animal Analysis"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
   }, {
-    "@id" : "_:genid41"
+    "@id" : "_:genid26"
   }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/BiologicalMaterial",
@@ -1176,7 +1153,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/LaboratoryAnalysis"
   }, {
-    "@id" : "_:genid43"
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/IBRAnalysis"
@@ -1256,26 +1233,6 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/analysis/Cool",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/analysis/SemenType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Cool"
-  }, {
-    "@language" : "it",
-    "@value" : "Fresco"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
   "@id" : "https://w3id.org/leo/onto/analysis/CountObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1330,11 +1287,11 @@
   }, {
     "@id" : "https://w3id.org/leo/onto/analysis/ObservedValue"
   }, {
-    "@id" : "_:genid44"
+    "@id" : "_:genid29"
   }, {
-    "@id" : "_:genid45"
+    "@id" : "_:genid30"
   }, {
-    "@id" : "_:genid46"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
@@ -1342,6 +1299,36 @@
   }, {
     "@language" : "it",
     "@value" : "stabile"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/DNAFragmentationAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe delle analisi sulla frammentazione del DNA nelle cellule staminali (Indice di Frammentazione del DNA - DFI). Le analisi sono svolte dall'Istituto Spallanzani."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of DNA fragmentation analyses in stem cells (DNA Fragmentation Index - DFI). The analyses are carried out by the Italian Spallanzani Institute."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Analisi Frammentazione DNA"
+  }, {
+    "@language" : "en",
+    "@value" : "DNA Fragmentation Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/SemenAnalysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/DSCCAnalysis",
@@ -1372,6 +1359,65 @@
   }, {
     "@language" : "en",
     "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/DSCCBulkMilkAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  }, {
+    "@language" : "it",
+    "@value" : "La classe delle analisi delle cellule differenziali effettuate sul campione di Latte prelevato dal tank (Campione di Massa)."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of differential cell analyses performed on the milk sample taken from the tank (Mass Sample)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Analisi DSCC Campione di Massa"
+  }, {
+    "@language" : "en",
+    "@value" : "DSCC Bulk Milk Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/DoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il tipo di dose nell'analisi sul controllo ufficiale del seme (CUS). Essa può assumere due valori: Media, Mini."
+  }, {
+    "@language" : "en",
+    "@value" : "The type of dose in the official semen control analysis. It can take two values: Medium, Mini."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dose Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo Dose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisorio"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/Doubtful",
@@ -1418,7 +1464,7 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Entity"
   }, {
-    "@id" : "_:genid47"
+    "@id" : "_:genid32"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1429,6 +1475,26 @@
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
     "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/Fresh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/analysis/SemenType" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Fresco"
+  }, {
+    "@language" : "en",
+    "@value" : "Fresh"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/Frozen",
@@ -1455,7 +1521,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "E' l'analisi IBR, ovvero l’analisi del campione di latte che determinerà il rischio di presenza di rinotracheite infettiva nell’ animale. È equivalente a un insieme di osservazioni di tipo categoria dove la proprietà osservata è IBR, che ha come risultato dell'osservazione uno dei valori che può assumere l'IBR. E' eseguita in una certa data (data analisi IBR) su un campione (campione IBR) identificato univocamente da un numero (Numero campione IBR).\nL'IBR è una malattia diffusa in tutto il mondo che colpisce tipicamente il bovino e talvolta altri ruminanti. L’infezione è altamente contagiosa e caratterizzata da un andamento acuto. Il virus infetta l’ospite a partire dalla cavità nasale e si diffonde rapidamente alle mucose delle prime vie respiratorie e, successivamente, a quelle congiuntivali, l’agente è in grado di diffondersi nell’organismo (viremia) ed indurre aborto; il sito di latenza viene raggiunto sfruttando il trasporto assonale retrogrado.  Vista la notevole diffusione della malattia essa ha un grande impatto economico. La determinazione può essere effettuata su matrice latte e/o sangue."
+    "@value" : "E' l'analisi IBR, ovvero l’analisi del campione di latte che determinerà il rischio di presenza di rinotracheite infettiva nell’animale. È equivalente a un insieme di osservazioni di tipo categoria dove la proprietà osservata è IBR, che ha come risultato dell'osservazione uno dei valori che può assumere l'IBR. E' eseguita in una certa data (data analisi IBR) su un campione (campione IBR) identificato univocamente da un numero (Numero campione IBR).\nL'IBR è una malattia diffusa in tutto il mondo che colpisce tipicamente il bovino e talvolta altri ruminanti. L’infezione è altamente contagiosa e caratterizzata da un andamento acuto. Il virus infetta l’ospite a partire dalla cavità nasale e si diffonde rapidamente alle mucose delle prime vie respiratorie e, successivamente, a quelle congiuntivali, l’agente è in grado di diffondersi nell’organismo (viremia) ed indurre aborto; il sito di latenza viene raggiunto sfruttando il trasporto assonale retrogrado.  Vista la notevole diffusione della malattia essa ha un grande impatto economico. La determinazione può essere effettuata su matrice latte e/o sangue."
   }, {
     "@language" : "en",
     "@value" : "It is the IBR analysis, i.e. the analysis of the milk sample that will determine the risk of the presence of infectious rhinotracheitis in the animal. It is equivalent to a set of category type observations where the property observed is IBR which has as a result of the observation one of the IBR values. It is carried out on a certain data IBR analysis and done on a specific sample IBR identified by a number.\nIBR is a worldwide disease that typically affects cattle and sometimes other ruminants. The infection is highly contagious and characterised by an acute course. The virus infects the host from the nasal cavity and spreads rapidly to the mucous membranes of the upper respiratory tract and subsequently to the conjunctival mucous membranes. The agent is capable of spreading throughout the body (viremia) and inducing abortion; the site of latency is reached by retrograde axonal transport.  Due to the high prevalence of the disease it has a great economic impact. The determination can be carried out on milk and/or blood matrix."
@@ -1473,14 +1539,43 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/AnimalAnalysis"
   }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/SemenAnalysis"
   }, {
     "@id" : "https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"
   }, {
-    "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"
+    "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnimalAnalysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/IBRBulkMilkAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  }, {
+    "@language" : "it",
+    "@value" : "La classe delle analisi IBR effettuata sul campione di Latte prelevato dal tank (Campione di Massa)"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of IBR analyses carried out on the milk sample taken from the tank (Mass Sample)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Analisi IBR Campione di Massa"
+  }, {
+    "@language" : "en",
+    "@value" : "IBR Bulk Milk Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1513,7 +1608,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/CategoryValue"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid49"
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1545,13 +1640,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Collection"
   }, {
-    "@id" : "_:genid54"
+    "@id" : "_:genid39"
   }, {
-    "@id" : "_:genid55"
+    "@id" : "_:genid40"
   }, {
-    "@id" : "_:genid56"
+    "@id" : "_:genid41"
   }, {
-    "@id" : "_:genid57"
+    "@id" : "_:genid42"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1585,9 +1680,9 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid61"
+    "@id" : "_:genid46"
   }, {
-    "@id" : "_:genid62"
+    "@id" : "_:genid47"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1625,6 +1720,46 @@
   }, {
     "@language" : "en",
     "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/analysis/DoseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Media"
+  }, {
+    "@language" : "en",
+    "@value" : "Medium"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisorio"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/Mini",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/analysis/DoseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mini"
+  }, {
+    "@language" : "it",
+    "@value" : "Mini"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisorio"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/Negative",
@@ -1671,15 +1806,15 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid63"
+    "@id" : "_:genid48"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid49"
   }, {
-    "@id" : "_:genid65"
+    "@id" : "_:genid50"
   }, {
-    "@id" : "_:genid66"
+    "@id" : "_:genid51"
   }, {
-    "@id" : "_:genid67"
+    "@id" : "_:genid52"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1727,6 +1862,40 @@
     "@id" : "http://www.w3.org/ns/sosa/Result"
   } ]
 }, {
+  "@id" : "https://w3id.org/leo/onto/analysis/OfficialSemenControlAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe delle analisi effettuate sugli animali che rappresentano il risultato del Controllo Ufficiale del Seme (CUS). Il Controllo Ufficiale del seme è stabilito dal Regolamento 403/2000 che prevede i controlli di qualità del materiale seminale congelato, attività demandata all'Istituto Sperimentale Italiano Lazzaro Spallanzani."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of analyses performed on animals that represent the result of Official Semen Control (OSC). Official Semen Control is established by Regulation 403/2000, which provides for quality control of frozen seminal material, an activity delegated to the Italian Lazzaro Spallanzani Experimental Institute."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Controllo Ufficiale Seme (CUS) Analisi"
+  }, {
+    "@language" : "en",
+    "@value" : "Official Semen Control Analsyis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/SemenAnalysis"
+  }, {
+    "@id" : "_:genid53"
+  }, {
+    "@id" : "_:genid54"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisorio"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
   "@id" : "https://w3id.org/leo/onto/analysis/PAGAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1752,7 +1921,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/AnimalAnalysis"
   }, {
-    "@id" : "_:genid68"
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/SemenAnalysis"
@@ -1788,7 +1957,7 @@
     "@id" : "https://w3id.org/leo/onto/analysis/CategoryValue"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid69"
+    "@id" : "_:genid56"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1840,11 +2009,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid73"
+    "@id" : "_:genid60"
   }, {
-    "@id" : "_:genid74"
+    "@id" : "_:genid61"
   }, {
-    "@id" : "_:genid75"
+    "@id" : "_:genid62"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1916,13 +2085,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid76"
+    "@id" : "_:genid63"
   }, {
-    "@id" : "_:genid77"
+    "@id" : "_:genid64"
   }, {
-    "@id" : "_:genid78"
+    "@id" : "_:genid65"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid66"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1960,7 +2129,7 @@
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis"
   }, {
-    "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"
+    "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnimalAnalysis"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1992,7 +2161,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/Sample"
   }, {
-    "@id" : "_:genid83"
+    "@id" : "_:genid70"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2062,31 +2231,29 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis",
+  "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnimalAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Analisi di laboratorio che dà origine a cosiddetti spettri dei singoli campioni di latte sia riferiti agli animali che ai campioni di massa"
+    "@value" : "Analisi di laboratorio che dà origine a cosiddetti spettri dei singoli campioni di latte  riferiti a singoli animali"
   }, {
     "@language" : "en",
-    "@value" : "Laboratory analysis that results in the production of spectria on single milk samplesreferred to both single farm animals and milk mass"
+    "@value" : "Laboratory analysis that results in the production of spectria on single milk samples referred to  single farm animals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Analisi Spettroscopica"
-  }, {
     "@language" : "it",
-    "@value" : "Spectroscopic Analysis"
+    "@value" : "Analisi Spettroscopica Singolo Animale"
+  }, {
+    "@language" : "en",
+    "@value" : "Spectroscopic Animal Analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/AnimalAnalysis"
   }, {
-    "@id" : "_:genid84"
-  }, {
-    "@id" : "_:genid85"
+    "@id" : "_:genid71"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2096,38 +2263,33 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/analysis/SpectrumDistribution",
+  "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicBulkMilkAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  }, {
     "@language" : "it",
-    "@value" : "La classe che modella una specifica rappresentazione degli spettri. La classe non rappresenta lo spettro di per sé ma è una sua serializzazione, tipicamente disponibile in un file JSON. L'uso della proprietà \"has URL per il download\" indica che la serializzazione è scaricabile per successivi utilizzi."
+    "@value" : "La classe delle analisi degli spettri svolte su campione di massa."
   }, {
     "@language" : "en",
-    "@value" : "The class that models a specific representation of spectra. The class does not represent the spectrum per se but it is a serialization of it, typically available in a JSON file. The use of the \"has download URL\" property indicates that the serialization is downloadable for later uses."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis"
+    "@value" : "The class of spectroscopic analyses carried out on mass sample."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
-    "@value" : "Distribuzione Spetro"
+    "@value" : "Analisi Spettri Campione di Massa"
   }, {
     "@language" : "en",
-    "@value" : "Spectrum Distribution"
+    "@value" : "Spectroscopic Bulk Milk Analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Entity"
-  }, {
-    "@id" : "_:genid86"
-  }, {
-    "@id" : "_:genid87"
+    "@id" : "https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
-    "@value" : "provvisorio"
+    "@value" : "stabile"
   }, {
     "@language" : "en",
-    "@value" : "unstable"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
@@ -2152,7 +2314,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/MU/MeasurementUnit"
   }, {
-    "@id" : "_:genid88"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2205,7 +2367,7 @@
     "@value" : "data prelievo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -2216,6 +2378,42 @@
   }, {
     "@language" : "en",
     "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/analysisNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il numero dell'analisi. Assume i valori 1, che significa 1° analisi, oppure 2 che significa 2° analisi (solo in caso di ri-analisi)."
+  }, {
+    "@language" : "en",
+    "@value" : "The number of the analysis. It takes the values 1, meaning 1st analysis, or 2, meaning 2nd analysis (only in the case of re-analysis)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/OfficialSemenControlAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "analysis number"
+  }, {
+    "@language" : "it",
+    "@value" : "numero analisi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/identifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisorio"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/analysis/carriedOutOnSample",
@@ -2312,6 +2510,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/AnalysisObservation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/hasMember"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/isAnalysisObservationOf"
   } ],
@@ -2392,30 +2593,30 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/analysis/hasDownloadURL",
+  "@id" : "https://w3id.org/leo/onto/analysis/hasDoseType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property used to indicate the URL for the download of the JSON representation of the spectrum."
+    "@value" : "Property that links the official semen control analysis to the type of dose."
   }, {
     "@language" : "it",
-    "@value" : "Proprietà che indica il link dove scaricare la rappresentazione JSON dello spettro."
+    "@value" : "Proprietà che lega l'analisi del controllo ufficiale del seme (CUS) con il tipo di dose (media, mini)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/SpectrumDistribution"
+    "@id" : "https://w3id.org/leo/onto/analysis/OfficialSemenControlAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
-    "@value" : "ha URL per download"
+    "@value" : "ha tipo di dose"
   }, {
     "@language" : "en",
-    "@value" : "has download URL"
+    "@value" : "has dose type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    "@id" : "https://w3id.org/leo/onto/analysis/DoseType"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2714,7 +2915,7 @@
     "@value" : "Proprietà che consente di specificare per ogni proprietà/parametro osservato nei dati di laboratorio l'unità di misura di riferimento. Per esempio nel caso del tempo di coagulazione R l'unità di misura di riferimento è il minuto, ecc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/ObservableProperty"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis"
@@ -2773,39 +2974,6 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/analysis/hasSpectrumDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per collegare l'analisi degli spettri alla specifica rappresenzione dello spettro, tipicamente un file JSON scaricabile."
-  }, {
-    "@language" : "en",
-    "@value" : "Prpperty used to link the spectrum analysis with the specific spectrum representation; that is a Jdownloadable SON file."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/SpectroscopicAnalysis"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha distribuzione dello spettro"
-  }, {
-    "@language" : "en",
-    "@value" : "has spectrum distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/SpectrumDistribution"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "stabile"
-  }, {
-    "@language" : "it",
-    "@value" : "stabile"
-  } ]
-}, {
   "@id" : "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2816,7 +2984,7 @@
     "@value" : "Proprietà che collega un oggetto che può essere misurata alla sua unità di misura."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/CountValue"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis"
@@ -3069,7 +3237,7 @@
     "@value" : "è soggetto di analisi"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid10"
+    "@id" : "https://w3id.org/leo/onto/analysis/AnimalAnalysis"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis/performedOnAnimal"
@@ -3125,7 +3293,7 @@
     "@value" : "Proprietà che collega alcune analisi di laboratorio all'animale. In particolare, le analisi IBR, PAG e su singolo animale si riferiscono a un animale e questa proprietà è utilizzata a tale scopo."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid16"
+    "@id" : "https://w3id.org/leo/onto/analysis/AnimalAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis"
@@ -3158,7 +3326,7 @@
     "@value" : "Proprietà che collega le analisi del campione di massa e spettoscopica alla specie dell'animale."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid22"
+    "@id" : "https://w3id.org/leo/onto/analysis/BulkMilkAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/analysis"
@@ -3204,7 +3372,7 @@
     "@value" : "tempo del risultato"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
@@ -3241,6 +3409,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/identifier"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
