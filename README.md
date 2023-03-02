@@ -2,7 +2,7 @@
 
 Questo è il repository ufficiale degli open data del progetto LEO. In questo repository pubblico potete trovare tutte le ontologie e vocabolari controllati, e le relative versioni, che sono state sviluppate nel progetto, nonché altro materiale prodotto a supporto della componente open data.
 
-Alcune ontologie sono da riternersi ancora **preliminari** (e.g., indicator), altre invece sono più stabili e possono essere già considerate per un possibile riutilizzo (e.g., analysis). I vocabolari controllati sono tutti in versione stabile e possono essere considerati per il riutilizzo. Le ontologie sono organizzate in una rete interconnessa, seguendo lo stesso approccio metodologico della [rete nazionale di ontologie OntoPiA](ttps://github.com/italia/daf-ontologie-vocabolari-controllati). Le ontologie del progetto LEO riusano poi direttamente alcune ontologie di OntoPiA, in particolare [l'ontologia fondazionale di OntoPiA L0](https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/l0/latest).
+Le ontologie sono organizzate in una rete interconnessa, seguendo lo stesso approccio metodologico della [rete nazionale di ontologie OntoPiA](ttps://github.com/italia/daf-ontologie-vocabolari-controllati). Le ontologie del progetto LEO riusano poi direttamente alcune ontologie di OntoPiA, in particolare [l'ontologia fondazionale di OntoPiA L0](https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/l0/latest).
 
 Al momento la rete si compone dei seguenti moduli:
 
