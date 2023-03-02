@@ -193,6 +193,9 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -450,6 +453,9 @@
 }, {
   "@id" : "https://w3id.org/leo/onto/livestock-assessment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://www.dropbox.com/s/1a7atu5ic1drplo/livestock-assessment.png?raw=1"
+  } ],
   "http://purl.org/dc/terms/accrualPeriodicity" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
   } ],
@@ -457,8 +463,6 @@
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@id" : "https://www.dropbox.com/s/1a7atu5ic1drplo/livestock-assessment.png??raw=1"
-  }, {
     "@language" : "it",
     "@value" : "Questa ontologia implementa un pattern generale per modellare controlli in ambito zootecnico. Questa sarà specializzata in diversi tipi di controlli: gli accertamenti zootecnici, i controlli funzionali sul latte, i controlli sull'efficienza della mungitura."
   }, {

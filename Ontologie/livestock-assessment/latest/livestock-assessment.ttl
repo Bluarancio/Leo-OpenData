@@ -11,11 +11,11 @@
                                                   owl:imports <https://w3id.org/italia/onto/MU> ,
                                                               <https://w3id.org/italia/onto/TI> ,
                                                               <https://w3id.org/italia/onto/l0> ;
+                                                  <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/1a7atu5ic1drplo/livestock-assessment.png?raw=1> ;
                                                   <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                                   <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                   <http://purl.org/dc/terms/description> "Questa ontologia implementa un pattern generale per modellare controlli in ambito zootecnico. Questa sarà specializzata in diversi tipi di controlli: gli accertamenti zootecnici, i controlli funzionali sul latte, i controlli sull'efficienza della mungitura."@it ,
                                                                                          "This ontology implements a general pattern for modelling zootechnical controls. It will specialise in different types of controls: livestock checks, functional milk controls, milking efficiency controls."@en ;
-                                                  <http://purl.org/dc/terms/description> <https://www.dropbox.com/s/1a7atu5ic1drplo/livestock-assessment.png??raw=1> ;
                                                   <http://purl.org/dc/terms/identifier> "onto-BA-11"@it ;
                                                   <http://purl.org/dc/terms/issued> "2023-02-15"^^xsd:date ;
                                                   <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
@@ -64,6 +64,10 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/accrualPeriodicity
 <http://purl.org/dc/terms/accrualPeriodicity> rdf:type owl:AnnotationProperty .
