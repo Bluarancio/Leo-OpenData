@@ -1,0 +1,362 @@
+@prefix : <https://w3id.org/leo/onto/leo/> .
+@prefix co: <https://w3id.org/leo/onto/co/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix ale: <https://w3id.org/leo/onto/ale/> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@base <https://w3id.org/leo/onto/leo> .
+
+<https://w3id.org/leo/onto/leo> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://w3id.org/leo/onto/leo/0.4> ;
+                                 owl:imports <https://w3id.org/leo/onto/ale> ,
+                                             <https://w3id.org/leo/onto/analysis> ,
+                                             <https://w3id.org/leo/onto/animal> ,
+                                             <https://w3id.org/leo/onto/co> ,
+                                             <https://w3id.org/leo/onto/health-assessment> ,
+                                             <https://w3id.org/leo/onto/livestock-indicator> ,
+                                             <https://w3id.org/leo/onto/livestockfarm-building-description> ,
+                                             <https://w3id.org/leo/onto/livestockfarm-description> ,
+                                             <https://w3id.org/leo/onto/weather> ,
+                                             <https://w3id.org/leo/onto/livestock-assessment> ;
+                                 dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                 dct:creator <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:description "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."@it ,
+                                                 "This is the main ontology, the unique acess point to all the network of ontologies developed in the context of LEO project."@en ;
+                                 dct:identifier "onto-BA-7" ;
+                                 dct:issued "2018-06-18"^^xsd:date ;
+                                 dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                              <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                 dct:modified "2023-03-02"^^xsd:date ;
+                                 dct:publisher <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:subject <http://eurovoc.europa.eu/100254> ;
+                                 dct:title "Access point Ontology to all the network of Ontologies for LEO project"@en ,
+                                           "Punto di accesso unico alla rete di ontologie del progetto LEO"@it ;
+                                 rdfs:comment "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."@it ,
+                                              "This is the main ontology, the unique acess point to all the network of ontologies developed in the context of LEO project."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/leo> ;
+                                 rdfs:label "Access point Ontology to all the network of Ontologies for LEO project"@en ,
+                                            "Punto di accesso unico alla rete di ontologie del progetto LEO"@it ;
+                                 owl:versionInfo "Version 0.4 - 2022 - Added health assessment ontology"@en ,
+                                                 "Versione 0.4 - 2022 - Aggiunta un'altra ontologia: accertamenti sanitari"@it ;
+                                 dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia> ;
+                                 dcat:keyword "Animali d'allevamento"@it ,
+                                              "Aziende d'allevamento"@it ,
+                                              "Bovine"@en ,
+                                              "Bovini"@it ,
+                                              "Eventi della vita degli animali"@it ,
+                                              "Farm Animal"@en ,
+                                              "Indicatori"@it ;
+                                 dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
+                                 admsapit:acronym "LEO" ;
+                                 admsapit:hasContributor <https://w3id.org/leo/data/private-organization/06695411006> ;
+                                 admsapit:hasFormalityLevel admsapit:Formal ;
+                                 admsapit:hasOntologyLanguage admsapit:OWL ;
+                                 admsapit:hasSemanticAssetDistribution <https://w3id.org/leo/data/distribution/LEO-JSON-LD> ,
+                                                                       <https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE> ,
+                                                                       <https://w3id.org/leo/data/distribution/LEO-RDF-XML> ;
+                                 admsapit:hasTask admsapit:AnnotationTask ,
+                                                  admsapit:QueryFormulationTask ,
+                                                  admsapit:SearchTask ;
+                                 admsapit:officialURI "https://w3id.org/leo/onto/leo"^^xsd:anyURI ;
+                                 admsapit:prefix "leo" ;
+                                 admsapit:semanticAssetInUse <https://w3id.org/leo/data/project/LEO> ;
+                                 admsapit:status "draft" ;
+                                 admsapit:target "Imprese" ,
+                                                 "Pubbliche Amministrazioni" ;
+                                 admsapit:type admsapit:CoreOntology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/accrualPeriodicity
+dct:accrualPeriodicity rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+dct:format rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+dct:language rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+dct:rightsHolder rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/subject
+dct:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#contactPoint
+dcat:contactPoint rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+dcat:downloadURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+dcat:keyword rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+dcat:theme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+prov:wasInfluencedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/acronym
+admsapit:acronym rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasContributor
+admsapit:hasContributor rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
+admsapit:hasFormalityLevel rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasKeyClass
+admsapit:hasKeyClass rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasOntologyLanguage
+admsapit:hasOntologyLanguage rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution
+admsapit:hasSemanticAssetDistribution rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasTask
+admsapit:hasTask rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/officialURI
+admsapit:officialURI rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/prefix
+admsapit:prefix rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/semanticAssetInUse
+admsapit:semanticAssetInUse rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/status
+admsapit:status rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/target
+admsapit:target rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/type
+admsapit:type rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/controlledVocabulary
+l0:controlledVocabulary rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/name
+l0:name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dati.gov.it/onto/dcatapit#Agent
+<http://dati.gov.it/onto/dcatapit#Agent> rdf:type owl:Class .
+
+
+###  http://dati.gov.it/onto/dcatapit#Organization
+<http://dati.gov.it/onto/dcatapit#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Kind
+vcard:Kind rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+vcard:Organization rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/ADMS/Project
+admsapit:Project rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/ADMS/SemanticAsset
+admsapit:SemanticAsset rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution
+admsapit:SemanticAssetDistribution rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Concept
+l0:Concept rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/leo/data/contact-point/onto-aia
+<https://w3id.org/leo/data/contact-point/onto-aia> rdf:type owl:NamedIndividual ,
+                                                            <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                            vcard:Kind ,
+                                                            vcard:Organization ;
+                                                   rdfs:label "Sistemi informativi"@it ;
+                                                   vcard:fn "Sistemi informativi"@it ;
+                                                   vcard:hasEmail <mailto:affarigenerali@pec.aia.it> .
+
+
+###  https://w3id.org/leo/data/distribution/LEO-JSON-LD
+<https://w3id.org/leo/data/distribution/LEO-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                              admsapit:SemanticAssetDistribution ;
+                                                     dct:description "Questa è la distribuzione JSON-LD dell'ontologia sull'accesso alla rete del progetto LEO"@it ,
+                                                                     "This is the distribution in JSON-LD of the access point ontology for the network of ontologies of LEO project"@en ;
+                                                     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                     dct:title "Distribuzione JSON-LD ontologia LEO"@it ,
+                                                               "JSON-LD distribution of LEO Ontology"@en ;
+                                                     rdfs:comment "Questa è la distribuzione JSON-LD dell'ontologia sull'accesso alla rete del progetto LEO"@it ,
+                                                                  "This is the distribution in JSON-LD of the access point ontology for the network of ontologies of LEO project"@en ;
+                                                     rdfs:label "Distribuzione JSON-LD ontologia LEO"@it ,
+                                                                "JSON-LD distribution of LEO Ontology"@en ;
+                                                     dcat:accessURL <https://www.leo-project.it/Ontologie/leo/latest> ;
+                                                     dcat:downloadURL <https://www.leo-project.it/Ontologie/leo/latest/leo.jsonld> .
+
+
+###  https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE
+<https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                 admsapit:SemanticAssetDistribution ;
+                                                        dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia sull'accesso alla rete del progetto LEO"@it ,
+                                                                        "This is the distribution in RDF/Turtle the access point ontology for the network of ontologies of LEO project"@en ;
+                                                        dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                        dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                        dct:title "Distribuzione RDF/Turtle ontologia LEO"@it ,
+                                                                  "RDF/Turtle distribution of LEO Ontology"@en ;
+                                                        rdfs:comment "Questa è la distribuzione RDF/Turtle dell'ontologia sull'accesso alla rete del progetto LEO"@it ,
+                                                                     "This is the distribution in RDF/Turtle of the access point ontology for the network of ontologies of LEO project"@en ;
+                                                        rdfs:label "Distribuzione RDF/Turtle ontologia LEO"@it ,
+                                                                   "RDF/Turtle distribution of LEO Ontology"@en ;
+                                                        dcat:accessURL <https://www.leo-project.it/Ontologie/leo/latest> ;
+                                                        dcat:downloadURL <https://www.leo-project.it/Ontologie/leo/latest/leo.ttl> .
+
+
+###  https://w3id.org/leo/data/distribution/LEO-RDF-XML
+<https://w3id.org/leo/data/distribution/LEO-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                              admsapit:SemanticAssetDistribution ;
+                                                     dct:description "Questa è la distribuzione RDF/XML dell'ontologia sull'accesso alla rete del progetto LEO"@it ,
+                                                                     "This is the distribution in RDF/XML of the access point ontology for the network of ontologies of LEO project"@en ;
+                                                     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                     dct:title "Distribuzione RDF/XML ontologia LEO"@it ,
+                                                               "RDF/XML distribution of LEO Ontology"@en ;
+                                                     rdfs:comment "Questa è la distribuzione RDF/XML dell'ontologia sull'accesso alla rete del progetto LEO"@it ,
+                                                                  "This is the distribution in RDF/XML of the access point ontology for the network of ontologies of LEO project"@en ;
+                                                     rdfs:label "Distribuzione RDF/XML ontologia LEO"@it ,
+                                                                "RDF/XML distribution of LEO Ontology"@en ;
+                                                     dcat:accessURL <https://www.leo-project.it/Ontologie/leo/latest> ;
+                                                     dcat:downloadURL <https://www.leo-project.it/Ontologie/leo/latest/leo.rdf> .
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "00944701002" ;
+                                                             foaf:name "Associazione Italiana Allevatori"@it ,
+                                                                       "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "06695411006" ;
+                                                             foaf:name "Bluarancio"@en ,
+                                                                       "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 admsapit:Project ;
+                                        rdfs:label "LEO - Livestok Environment Open Data"@it ;
+                                        l0:name "LEO - Livestok Environment Open Data"@it .
+
+
+###  https://w3id.org/leo/onto/leo
+<https://w3id.org/leo/onto/leo> rdf:type owl:NamedIndividual ,
+                                         admsapit:SemanticAsset .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
