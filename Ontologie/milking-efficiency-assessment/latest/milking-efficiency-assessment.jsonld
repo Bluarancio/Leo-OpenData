@@ -460,7 +460,7 @@
   "@id" : "https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment"
+    "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment"
@@ -656,7 +656,7 @@
     "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
   } ]
 }, {
-  "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment",
+  "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/fall-of-the-vacuum-assessment.png"
@@ -664,15 +664,15 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
     "@value" : "La classe che rappresenta il rilevamento del test di caduta del vuoto (FOT), test legato all'impianto di mungitura. Il test viene effettuato mediante l'uso di uno strumento chiamato Vadia."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment"
   }, {
     "@language" : "en",
     "@value" : "The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/milking-efficiency-assessment"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
+    "@language" : "it",
     "@value" : "Controllo della Caduta del Vuoto"
   }, {
     "@language" : "en",

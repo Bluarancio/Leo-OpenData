@@ -220,7 +220,7 @@
 ###  https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue
 <https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue> rdf:type owl:ObjectProperty ;
                                                                          rdfs:subPropertyOf <https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue> ;
-                                                                         rdfs:domain <https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment> ;
+                                                                         rdfs:domain <https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment> ;
                                                                          rdfs:range <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue> ;
                                                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
                                                                          rdfs:label "ha valore di singola proprietà di caduta del vuoto"@it ,
@@ -364,21 +364,21 @@
 <https://w3id.org/leo/onto/co/LivestockFarm> rdf:type owl:Class .
 
 
-###  https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment
-<https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment> rdf:type owl:Class ;
-                                                                                  rdfs:subClassOf <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
-                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty <https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue> ;
-                                                                                                    owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
-                                                                                                  ] ;
-                                                                                  <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/fall-of-the-vacuum-assessment.png> ;
-                                                                                  rdfs:comment "La classe che rappresenta il rilevamento del test di caduta del vuoto (FOT), test legato all'impianto di mungitura. Il test viene effettuato mediante l'uso di uno strumento chiamato Vadia."@it ;
-                                                                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ,
-                                                                                                   "The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia."@en ;
-                                                                                  rdfs:label "Controllo della Caduta del Vuoto"@en ,
-                                                                                             "Fall of the Vacuum Assessment"@en ;
-                                                                                  owl:versionInfo "stabile"@it ,
-                                                                                                  "stable"@en .
+###  https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment
+<https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue> ;
+                                                                                                      owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
+                                                                                                    ] ;
+                                                                                    <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/fall-of-the-vacuum-assessment.png> ;
+                                                                                    rdfs:comment "La classe che rappresenta il rilevamento del test di caduta del vuoto (FOT), test legato all'impianto di mungitura. Il test viene effettuato mediante l'uso di uno strumento chiamato Vadia."@it ,
+                                                                                                 "The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia."@en ;
+                                                                                    rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                    rdfs:label "Controllo della Caduta del Vuoto"@it ,
+                                                                                               "Fall of the Vacuum Assessment"@en ;
+                                                                                    owl:versionInfo "stabile"@it ,
+                                                                                                    "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment

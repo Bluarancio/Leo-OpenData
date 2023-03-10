@@ -315,7 +315,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue"/>
-        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment"/>
         <rdfs:range rdf:resource="https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment"/>
         <rdfs:label xml:lang="it">ha valore di singola proprietà di caduta del vuoto</rdfs:label>
@@ -517,9 +517,9 @@
     
 
 
-    <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment -->
+    <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment -->
 
-    <owl:Class rdf:about="https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment">
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -529,9 +529,9 @@
         </rdfs:subClassOf>
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/fall-of-the-vacuum-assessment.png"/>
         <rdfs:comment xml:lang="it">La classe che rappresenta il rilevamento del test di caduta del vuoto (FOT), test legato all&apos;impianto di mungitura. Il test viene effettuato mediante l&apos;uso di uno strumento chiamato Vadia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment"/>
-        <rdfs:isDefinedBy xml:lang="en">The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Controllo della Caduta del Vuoto</rdfs:label>
+        <rdfs:label xml:lang="it">Controllo della Caduta del Vuoto</rdfs:label>
         <rdfs:label xml:lang="en">Fall of the Vacuum Assessment</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
