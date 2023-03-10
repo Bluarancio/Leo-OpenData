@@ -537,10 +537,10 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "Milking Efficiency Assessment Ontology - HeathData"
+    "@value" : "Milking Efficiency Assessment Ontology - FieldData"
   }, {
     "@language" : "it",
-    "@value" : "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"
+    "@value" : "Ontologia dei Controlli sull'Efficienza della Mungitura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",

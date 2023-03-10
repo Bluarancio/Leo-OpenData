@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/leo/onto/milking-efficiency-assessment/> .
+@prefix : <https://w3id.org/leo/onto/milking-efficiency-assessment#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -23,8 +23,8 @@
                                                            <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                            <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/6271> ,
                                                                                               <http://eurovoc.europa.eu/6272> ;
-                                                           <http://purl.org/dc/terms/title> "Milking Efficiency Assessment Ontology - HeathData"@en ,
-                                                                                            "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"@it ;
+                                                           <http://purl.org/dc/terms/title> "Milking Efficiency Assessment Ontology - FieldData"@en ,
+                                                                                            "Ontologia dei Controlli sull'Efficienza della Mungitura"@it ;
                                                            rdfs:comment "Questa è l'ontologia usata per modellare i dati relativi all'efficienza della mungitura (compresi i controlli sugli impianti). I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. I dati comprendono i controlli dinamici sulla mungitura a livello di statistiche aziendali e a livello di singoli parametri individuali legati alla singola mungitura di animali, che variano anche a seconda dei diversi strumenti utilizzati. Inoltre, i controlli coinvolgono i parametri di settaggio dei pulsanti dell'impianto di mungitura e i test di caduta del vuoto."@it ,
                                                                         "This is the ontology used to model data on milking efficiency (including plant controls). The data is collected in the context of the LEO - Livestock Environment Open Data project. The data includes dynamic milking controls at the level of livestock farm statistics and at the level of individual animal milking parameters, which also vary according to the different devices used. In addition, the controls involve the milking plant's pulsantors setting parameters and vacuum fall tests"@en ;
                                                            rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
@@ -41,11 +41,11 @@
                                                            <https://w3id.org/italia/onto/ADMS/acronym> "MEA" ;
                                                            <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                            <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
-                                                           <https://w3id.org/italia/onto/ADMS/hasKeyClass> :FallOfTheVacuumAssessment ,
-                                                                                                           :MilkingEfficiencyAssessment ,
-                                                                                                           :MilkingPlantDynamicAssessment ,
-                                                                                                           :MilkingPlantPulsatorSettingAssessment ,
-                                                                                                           :SingleMilkingDynamicAssessment ;
+                                                           <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment> ,
+                                                                                                           <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
+                                                                                                           <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment> ,
+                                                                                                           <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantPulsatorSettingAssessment> ,
+                                                                                                           <https://w3id.org/leo/onto/milking-efficiency-assessment/SingleMilkingDynamicAssessment> ;
                                                            <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> ;
                                                            <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/leo/data/distribution/MEA-JSON-LD> ,
                                                                                                                             <https://w3id.org/leo/data/distribution/MEA-RDF-TURTLE> ,
@@ -203,8 +203,8 @@
 <https://w3id.org/leo/onto/animal/hasAssessedEfficiencySinglePropertyValue> rdf:type owl:ObjectProperty ;
                                                                             rdfs:subPropertyOf <https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue> ;
                                                                             rdfs:domain [ rdf:type owl:Class ;
-                                                                                          owl:unionOf ( :MilkingPlantDynamicAssessment
-                                                                                                        :SingleMilkingDynamicAssessment
+                                                                                          owl:unionOf ( <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment>
+                                                                                                        <https://w3id.org/leo/onto/milking-efficiency-assessment/SingleMilkingDynamicAssessment>
                                                                                                       )
                                                                                         ] ;
                                                                             rdfs:range <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue> ;
@@ -220,7 +220,7 @@
 ###  https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue
 <https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue> rdf:type owl:ObjectProperty ;
                                                                          rdfs:subPropertyOf <https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue> ;
-                                                                         rdfs:domain :FallTheVacuumAssessment ;
+                                                                         rdfs:domain <https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment> ;
                                                                          rdfs:range <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue> ;
                                                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
                                                                          rdfs:label "ha valore di singola proprietà di caduta del vuoto"@it ,
@@ -230,43 +230,43 @@
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/doneDuring
-:doneDuring rdf:type owl:ObjectProperty ;
-            rdfs:domain :MilkingPlantDynamicAssessment ;
-            rdfs:range <https://w3id.org/leo/onto/ale/MilkingSession> ;
-            rdfs:comment "Property used to indicate the milking session in the specific dynamic control of milking plant efficiency referable to the livestock farm."@en ,
-                         "Proprietà utilizzata per indicare la sessione di mungitura nello specifico controllo dinamico dell'efficienza della mungitura riferibile all'azienda."@it ;
-            rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-            rdfs:label "done during"@en ,
-                       "fatto durante"@it ;
-            owl:versionInfo "stabile"@it ,
-                            "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/doneDuring> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment> ;
+                                                                     rdfs:range <https://w3id.org/leo/onto/ale/MilkingSession> ;
+                                                                     rdfs:comment "Property used to indicate the milking session in the specific dynamic control of milking plant efficiency referable to the livestock farm."@en ,
+                                                                                  "Proprietà utilizzata per indicare la sessione di mungitura nello specifico controllo dinamico dell'efficienza della mungitura riferibile all'azienda."@it ;
+                                                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                     rdfs:label "done during"@en ,
+                                                                                "fatto durante"@it ;
+                                                                     owl:versionInfo "stabile"@it ,
+                                                                                     "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/hasPlantPulsatorEfficiencyAssessedPropValue
-:hasPlantPulsatorEfficiencyAssessedPropValue rdf:type owl:ObjectProperty ;
-                                             rdfs:subPropertyOf <https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue> ;
-                                             rdfs:domain :MilkingPlantPulsatorSettingAssessment ;
-                                             rdfs:range <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue> ;
-                                             rdfs:comment "Property used to link the control of the milking plant's pulsator setting to the values of the pulsator efficiency properties being evaluated."@en ,
-                                                          "Proprietà usata per collegare il controllo del settaggio dei pulsatori dell'impianto di mungitura ai valori delle proprietà di efficienza dei pulsatori che sono oggetto di valutaizione."@it ;
-                                             rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                                             rdfs:label "ha valore di proprietà di efficienza pulsatore impianto mungitura valutata"@it ,
-                                                        "has plant pulsator efficiency assessed property value"@en ;
-                                             owl:versionInfo "stabile"@it ,
-                                                             "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/hasPlantPulsatorEfficiencyAssessedPropValue> rdf:type owl:ObjectProperty ;
+                                                                                                      rdfs:subPropertyOf <https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue> ;
+                                                                                                      rdfs:domain <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantPulsatorSettingAssessment> ;
+                                                                                                      rdfs:range <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue> ;
+                                                                                                      rdfs:comment "Property used to link the control of the milking plant's pulsator setting to the values of the pulsator efficiency properties being evaluated."@en ,
+                                                                                                                   "Proprietà usata per collegare il controllo del settaggio dei pulsatori dell'impianto di mungitura ai valori delle proprietà di efficienza dei pulsatori che sono oggetto di valutaizione."@it ;
+                                                                                                      rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                                      rdfs:label "ha valore di proprietà di efficienza pulsatore impianto mungitura valutata"@it ,
+                                                                                                                 "has plant pulsator efficiency assessed property value"@en ;
+                                                                                                      owl:versionInfo "stabile"@it ,
+                                                                                                                      "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/refersToProductionType
-:refersToProductionType rdf:type owl:ObjectProperty ;
-                        rdfs:domain :MilkingPlantDynamicAssessment ;
-                        rdfs:range <https://w3id.org/leo/onto/animal/ProductionType> ;
-                        rdfs:comment "Property used to specify the production type for the specific milking plant dynamic assessment"@en ,
-                                     "Proprietà utilizzata per specificare l'orientamento produttivo per lo specifico controllo dinamico dell'efficienza della mungitura riferibile all'azienda."@it ;
-                        rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                        rdfs:label "refers to production type"@en ,
-                                   "si riferisce a indirizzo produttivo"@it ;
-                        owl:versionInfo "stabile"@it ,
-                                        "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/refersToProductionType> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment> ;
+                                                                                 rdfs:range <https://w3id.org/leo/onto/animal/ProductionType> ;
+                                                                                 rdfs:comment "Property used to specify the production type for the specific milking plant dynamic assessment"@en ,
+                                                                                              "Proprietà utilizzata per specificare l'orientamento produttivo per lo specifico controllo dinamico dell'efficienza della mungitura riferibile all'azienda."@it ;
+                                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                 rdfs:label "refers to production type"@en ,
+                                                                                            "si riferisce a indirizzo produttivo"@it ;
+                                                                                 owl:versionInfo "stabile"@it ,
+                                                                                                 "stable"@en .
 
 
 #################################################################
@@ -274,30 +274,30 @@
 #################################################################
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/channelPlantPulsantor
-:channelPlantPulsantor rdf:type owl:DatatypeProperty ;
-                       rdfs:domain <https://w3id.org/leo/onto/animal/MilkingPlantPulsator> ;
-                       rdfs:range rdfs:Literal ;
-                       rdfs:comment "Property for specifying the milking plant's pulsator channel"@en ,
-                                    "Proprietà che consente di specificare il canale del pulsatore dell'impianto di mungitura"@it ;
-                       rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                       rdfs:label "canale del pulsatore"@it ,
-                                  "channel plant pulsator"@en ;
-                       owl:versionInfo "stabile"@it ,
-                                       "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/channelPlantPulsantor> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <https://w3id.org/leo/onto/animal/MilkingPlantPulsator> ;
+                                                                                rdfs:range rdfs:Literal ;
+                                                                                rdfs:comment "Property for specifying the milking plant's pulsator channel"@en ,
+                                                                                             "Proprietà che consente di specificare il canale del pulsatore dell'impianto di mungitura"@it ;
+                                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                rdfs:label "canale del pulsatore"@it ,
+                                                                                           "channel plant pulsator"@en ;
+                                                                                owl:versionInfo "stabile"@it ,
+                                                                                                "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/numPlantPulsator
-:numPlantPulsator rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
-                  rdfs:domain <https://w3id.org/leo/onto/animal/MilkingPlantPulsator> ;
-                  rdfs:range rdfs:Literal ;
-                  rdfs:comment "Il numero associato al pulsatore dell'impianto di mungitura aziendale"@it ,
-                               "The number associated with the company's milking plant pulsator"@en ;
-                  rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                  rdfs:label "number plant pulsator"@en ,
-                             "numero del pulsatore aziendale"@it ;
-                  owl:versionInfo "stabile"@it ,
-                                  "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/numPlantPulsator> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
+                                                                           rdfs:domain <https://w3id.org/leo/onto/animal/MilkingPlantPulsator> ;
+                                                                           rdfs:range rdfs:Literal ;
+                                                                           rdfs:comment "Il numero associato al pulsatore dell'impianto di mungitura aziendale"@it ,
+                                                                                        "The number associated with the company's milking plant pulsator"@en ;
+                                                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                           rdfs:label "number plant pulsator"@en ,
+                                                                                      "numero del pulsatore aziendale"@it ;
+                                                                           owl:versionInfo "stabile"@it ,
+                                                                                           "stable"@en .
 
 
 #################################################################
@@ -340,11 +340,11 @@
 <https://w3id.org/leo/onto/animal/MilkingPlantPulsator> rdf:type owl:Class ;
                                                         rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> ,
                                                                         [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty :numPlantPulsator ;
+                                                                          owl:onProperty <https://w3id.org/leo/onto/milking-efficiency-assessment/numPlantPulsator> ;
                                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
                                                                         ] ,
                                                                         [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty :channelPlantPulsantor ;
+                                                                          owl:onProperty <https://w3id.org/leo/onto/milking-efficiency-assessment/channelPlantPulsantor> ;
                                                                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                                         ] ;
                                                         rdfs:comment "La classe che rappresenta i  pulsatori dell'impianto di mungitura. È costituito da canali ed è identificato da un numero."@it ,
@@ -365,111 +365,111 @@
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment
-:FallTheVacuumAssessment rdf:type owl:Class ;
-                         rdfs:subClassOf :MilkingEfficiencyAssessment ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty <https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue> ;
-                                           owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
-                                         ] ;
-                         <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/fall-of-the-vacuum-assessment.png> ;
-                         rdfs:comment "La classe che rappresenta il rilevamento del test di caduta del vuoto (FOT), test legato all'impianto di mungitura. Il test viene effettuato mediante l'uso di uno strumento chiamato Vadia."@it ;
-                         rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ,
-                                          "The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia."@en ;
-                         rdfs:label "Controllo della Caduta del Vuoto"@en ,
-                                    "Fall of the Vacuum Assessment"@en ;
-                         owl:versionInfo "stabile"@it ,
-                                         "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/FallTheVacuumAssessment> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue> ;
+                                                                                                    owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
+                                                                                                  ] ;
+                                                                                  <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/fall-of-the-vacuum-assessment.png> ;
+                                                                                  rdfs:comment "La classe che rappresenta il rilevamento del test di caduta del vuoto (FOT), test legato all'impianto di mungitura. Il test viene effettuato mediante l'uso di uno strumento chiamato Vadia."@it ;
+                                                                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ,
+                                                                                                   "The class representing the vacuum fall test (FOT), a test related to milking plant. The test is performed using a device called Vadia."@en ;
+                                                                                  rdfs:label "Controllo della Caduta del Vuoto"@en ,
+                                                                                             "Fall of the Vacuum Assessment"@en ;
+                                                                                  owl:versionInfo "stabile"@it ,
+                                                                                                  "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment
-:MilkingEfficiencyAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf <https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment> ,
-                                             [ rdf:type owl:Restriction ;
-                                               owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf> ;
-                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                               owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
-                                             ] ;
-                             rdfs:comment "La classe che raggruppa tutti i diversi tipi di valutazione che possono essere fatti sull'efficienza della mungitura degli animali da allevamento."@it ,
-                                          "The class that group all the different types of assessments that can be done on the efficiency of the milking of farm animals."@en ;
-                             rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                             rdfs:label "Controllo Efficienza Mungitura"@it ,
-                                        "Milking Efficiency Assessment"@en ;
-                             owl:versionInfo "stabile"@it ,
-                                             "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment> ,
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf> ;
+                                                                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                        owl:onClass <https://w3id.org/leo/onto/co/LivestockFarm>
+                                                                                                      ] ;
+                                                                                      rdfs:comment "La classe che raggruppa tutti i diversi tipi di valutazione che possono essere fatti sull'efficienza della mungitura degli animali da allevamento."@it ,
+                                                                                                   "The class that group all the different types of assessments that can be done on the efficiency of the milking of farm animals."@en ;
+                                                                                      rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                      rdfs:label "Controllo Efficienza Mungitura"@it ,
+                                                                                                 "Milking Efficiency Assessment"@en ;
+                                                                                      owl:versionInfo "stabile"@it ,
+                                                                                                      "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment
-:MilkingPlantDynamicAssessment rdf:type owl:Class ;
-                               rdfs:subClassOf :MilkingEfficiencyAssessment ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <https://w3id.org/leo/onto/animal/hasAssessedEfficiencySinglePropertyValue> ;
-                                                 owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasSubject> ;
-                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass <https://w3id.org/leo/onto/animal/LivestockSpecies>
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :refersToProductionType ;
-                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass <https://w3id.org/leo/onto/animal/ProductionType>
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :doneDuring ;
-                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass <https://w3id.org/leo/onto/ale/MilkingSession>
-                                               ] ;
-                               <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milking-plant-dynamic-assessment.png> ;
-                               rdfs:comment "La classe dei controlli dinamici legati all'impianto di mungitura di un'azienda durante la sessione di mungitura. Può accadere che non tutti gli animali concorrano al controllo. Questo tipo di controllo viene effettuato mediante uno strumento chiamato Lactocorder."@it ,
-                                            "The class of dynamic controls related to the milking plant of a livestock farm during the milking session. It may happen that not all farm animals participate in the control. This type of control is carried out using a device called a Lactocorder."@en ;
-                               rdfs:label "Controllo Dinamico Mungitura su Azienda"@it ,
-                                          "Milking Plant Dynamic Assessment"@en ;
-                               owl:versionInfo "stabile"@it ,
-                                               "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/leo/onto/animal/hasAssessedEfficiencySinglePropertyValue> ;
+                                                                                                          owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasSubject> ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass <https://w3id.org/leo/onto/animal/LivestockSpecies>
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/leo/onto/milking-efficiency-assessment/refersToProductionType> ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass <https://w3id.org/leo/onto/animal/ProductionType>
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/leo/onto/milking-efficiency-assessment/doneDuring> ;
+                                                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass <https://w3id.org/leo/onto/ale/MilkingSession>
+                                                                                                        ] ;
+                                                                                        <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milking-plant-dynamic-assessment.png> ;
+                                                                                        rdfs:comment "La classe dei controlli dinamici legati all'impianto di mungitura di un'azienda durante la sessione di mungitura. Può accadere che non tutti gli animali concorrano al controllo. Questo tipo di controllo viene effettuato mediante uno strumento chiamato Lactocorder."@it ,
+                                                                                                     "The class of dynamic controls related to the milking plant of a livestock farm during the milking session. It may happen that not all farm animals participate in the control. This type of control is carried out using a device called a Lactocorder."@en ;
+                                                                                        rdfs:label "Controllo Dinamico Mungitura su Azienda"@it ,
+                                                                                                   "Milking Plant Dynamic Assessment"@en ;
+                                                                                        owl:versionInfo "stabile"@it ,
+                                                                                                        "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantPulsatorSettingAssessment
-:MilkingPlantPulsatorSettingAssessment rdf:type owl:Class ;
-                                       rdfs:subClassOf :MilkingEfficiencyAssessment ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :hasPlantPulsatorEfficiencyAssessedPropValue ;
-                                                         owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf> ;
-                                                         owl:allValuesFrom <https://w3id.org/leo/onto/animal/MilkingPlantPulsator>
-                                                       ] ;
-                                       owl:disjointWith :SingleMilkingDynamicAssessment ;
-                                       <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milking-plant-pulsator-setting-assessment.png> ;
-                                       rdfs:comment "La classe dei controlli relativi all'impianto di mungitura e in particolare ai settaggi dei pulsatori dell’impianto di mungitura e dei loro singoli canali (PT). Generalmente questi controlli vengono effettuati utilizzando lo strumento di nome Vadia."@it ,
-                                                    "The class of milking plant controls and in particular assessments related to the settings of the milking plant pulsators and their individual channels (PT). Generally, these assessments are performed using the device named Vadia."@en ;
-                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                                       rdfs:label "Controllo del Settaggio dei Pulsanti dell'Impianto di Mungitura"@it ,
-                                                  "Milking Plant Pulsantor Setting Assessment"@en ;
-                                       owl:versionInfo "stabile"@it ,
-                                                       "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantPulsatorSettingAssessment> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <https://w3id.org/leo/onto/milking-efficiency-assessment/hasPlantPulsatorEfficiencyAssessedPropValue> ;
+                                                                                                                  owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
+                                                                                                                ] ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf> ;
+                                                                                                                  owl:allValuesFrom <https://w3id.org/leo/onto/animal/MilkingPlantPulsator>
+                                                                                                                ] ;
+                                                                                                owl:disjointWith <https://w3id.org/leo/onto/milking-efficiency-assessment/SingleMilkingDynamicAssessment> ;
+                                                                                                <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milking-plant-pulsator-setting-assessment.png> ;
+                                                                                                rdfs:comment "La classe dei controlli relativi all'impianto di mungitura e in particolare ai settaggi dei pulsatori dell’impianto di mungitura e dei loro singoli canali (PT). Generalmente questi controlli vengono effettuati utilizzando lo strumento di nome Vadia."@it ,
+                                                                                                             "The class of milking plant controls and in particular assessments related to the settings of the milking plant pulsators and their individual channels (PT). Generally, these assessments are performed using the device named Vadia."@en ;
+                                                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                                rdfs:label "Controllo del Settaggio dei Pulsanti dell'Impianto di Mungitura"@it ,
+                                                                                                           "Milking Plant Pulsantor Setting Assessment"@en ;
+                                                                                                owl:versionInfo "stabile"@it ,
+                                                                                                                "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/milking-efficiency-assessment/SingleMilkingDynamicAssessment
-:SingleMilkingDynamicAssessment rdf:type owl:Class ;
-                                rdfs:subClassOf :MilkingEfficiencyAssessment ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty <https://w3id.org/leo/onto/animal/hasAssessedEfficiencySinglePropertyValue> ;
-                                                  owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
-                                                ] ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasSubject> ;
-                                                  owl:someValuesFrom <https://w3id.org/leo/onto/animal/FarmAnimal>
-                                                ] ;
-                                <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/single-milking-dynamic-assessment.png> ;
-                                rdfs:comment "La classe dei controlli dinamici legati alla singola mungitura degli animali. I controlli sono generalmente effettuati mediante l'uso dello strumento Lactocorder."@it ,
-                                             "The class of dynamic controls related to the individual milking of animals. Assessments are generally performed using the Lactocorder device."@en ;
-                                rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
-                                rdfs:label "Controllo Dinamico su Singola Mungitura Animale"@it ,
-                                           "Single Milking Dynamic Assessment"@en ;
-                                owl:versionInfo "stabile"@it ,
-                                                "stable"@en .
+<https://w3id.org/leo/onto/milking-efficiency-assessment/SingleMilkingDynamicAssessment> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://w3id.org/leo/onto/animal/hasAssessedEfficiencySinglePropertyValue> ;
+                                                                                                           owl:someValuesFrom <https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasSubject> ;
+                                                                                                           owl:someValuesFrom <https://w3id.org/leo/onto/animal/FarmAnimal>
+                                                                                                         ] ;
+                                                                                         <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/single-milking-dynamic-assessment.png> ;
+                                                                                         rdfs:comment "La classe dei controlli dinamici legati alla singola mungitura degli animali. I controlli sono generalmente effettuati mediante l'uso dello strumento Lactocorder."@it ,
+                                                                                                      "The class of dynamic controls related to the individual milking of animals. Assessments are generally performed using the Lactocorder device."@en ;
+                                                                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/milking-efficiency-assessment> ;
+                                                                                         rdfs:label "Controllo Dinamico su Singola Mungitura Animale"@it ,
+                                                                                                    "Single Milking Dynamic Assessment"@en ;
+                                                                                         owl:versionInfo "stabile"@it ,
+                                                                                                         "stable"@en .
 
 
 #################################################################
