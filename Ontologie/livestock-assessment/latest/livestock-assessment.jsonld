@@ -10,28 +10,6 @@
 }, {
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Entity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/TimeInterval"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/atTime"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -43,7 +21,7 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasPerformer"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -56,20 +34,20 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/uses"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/date"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -79,7 +57,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -89,13 +67,32 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/assessmentId"
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/name"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/description"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/identifier"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -105,25 +102,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/MU/hasValue"
-  } ]
-}, {
-  "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/description"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -141,24 +119,6 @@
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasAssessmentResult"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Entity"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/Method"
   } ],
@@ -166,7 +126,7 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/applies"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/MeasureProperty"
@@ -175,7 +135,7 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"
@@ -184,13 +144,35 @@
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasAssessmentResult"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Entity"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/TimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/atTime"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
@@ -454,7 +436,7 @@
   "@id" : "https://w3id.org/leo/onto/livestock-assessment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/1a7atu5ic1drplo/livestock-assessment.png?raw=1"
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/livestock-assessment.png"
   } ],
   "http://purl.org/dc/terms/accrualPeriodicity" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
@@ -484,7 +466,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-02-15"
+    "@value" : "2023-03-10"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
@@ -749,11 +731,7 @@
   }, {
     "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid13"
-  }, {
-    "@id" : "_:genid14"
-  }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -784,11 +762,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
     "@id" : "_:genid19"
-  }, {
-    "@id" : "_:genid20"
-  }, {
-    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",

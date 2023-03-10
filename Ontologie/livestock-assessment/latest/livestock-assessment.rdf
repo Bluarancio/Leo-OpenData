@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/leo/onto/livestock-assessment/"
-     xml:base="https://w3id.org/leo/onto/livestock-assessment/"
+<rdf:RDF xmlns="https://w3id.org/leo/onto/livestock-assessment#"
+     xml:base="https://w3id.org/leo/onto/livestock-assessment"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -18,7 +18,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dc:description rdf:resource="https://www.dropbox.com/s/1a7atu5ic1drplo/livestock-assessment.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/livestock-assessment.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:description xml:lang="it">Questa ontologia implementa un pattern generale per modellare controlli in ambito zootecnico. Questa sarà specializzata in diversi tipi di controlli: gli accertamenti zootecnici, i controlli funzionali sul latte, i controlli sull&apos;efficienza della mungitura.</terms:description>
@@ -27,7 +27,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-15</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-15</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-10</terms:modified>
         <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
@@ -597,18 +597,6 @@
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/EventOrSituation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/hasAssessmentResult"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/hasSubject"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/applies"/>
