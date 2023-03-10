@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/italia/onto/l0#> .
+@prefix : <https://w3id.org/leo/onto/health-assessment/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,20 +7,18 @@
 @base <https://w3id.org/leo/onto/health-assessment> .
 
 <https://w3id.org/leo/onto/health-assessment> rdf:type owl:Ontology ;
-                                               owl:versionIRI <https://w3id.org/leo/onto/health-assessment/0.1> ;
-                                               owl:imports <https://w3id.org/italia/onto/MU> ,
-                                                           <https://w3id.org/italia/onto/TI> ,
-                                                           <https://w3id.org/italia/onto/l0> ;
+                                               owl:versionIRI <https://w3id.org/leo/onto/health-assessment/0.2> ;
+                                               owl:imports <https://w3id.org/leo/onto/livestock-assessment> ;
+                                               <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/v7d9md0op4v9o9y/HealthAssessment.png?raw=1> ;
                                                <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                                <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                <http://purl.org/dc/terms/description> "Questa è l'ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche."@it ,
                                                                                       "This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the 'Istituto Zooprofilattico Umbria-Marche'."@en ;
                                                <http://purl.org/dc/terms/identifier> "onto-BA-10"@it ;
-                                               <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/v7d9md0op4v9o9y/HealthAssessment.png?raw=1> ;
                                                <http://purl.org/dc/terms/issued> "2022-11-22"^^xsd:date ;
                                                <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                                    <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                               <http://purl.org/dc/terms/modified> "2022-11-22"^^xsd:date ;
+                                               <http://purl.org/dc/terms/modified> "2023-03-09"^^xsd:date ;
                                                <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/6271> ,
@@ -32,8 +30,8 @@
                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
                                                rdfs:label "Health Assessment Ontology - HeathData"@en ,
                                                           "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"@it ;
-                                               owl:versionInfo "Version 0.1 - 2022 - First version of the ontology - ontology creation"@en ,
-                                                               "Versione 0.1 - 2022 - Prima versione dell'ontologia - creazione dell'ontologia"@it ;
+                                               owl:versionInfo "Version 0.2 - 2023 - Revision of the ontology based on the availability of livestock assessment general ontology"@en ,
+                                                               "Versione 0.1 - 2023 - Revisione dell'ontologia sulla base della disponibilità dell'ontologia generale sugli accertamenti in ambito zootecnico"@it ;
                                                <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/leo/data/contact-point/onto-aia> ;
                                                <http://www.w3.org/ns/dcat#keyword> "Accertamento Sanitario"@it ,
                                                                                    "Malattia"@it ,
@@ -43,10 +41,10 @@
                                                <https://w3id.org/italia/onto/ADMS/acronym> "HA" ;
                                                <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
-                                               <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/leo/onto/health-assessment/CompanyScreening> ,
-                                                                                               <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ,
-                                                                                               <https://w3id.org/leo/onto/health-assessment/Disease> ,
-                                                                                               <https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment> ;
+                                               <https://w3id.org/italia/onto/ADMS/hasKeyClass> :CompanyScreening ,
+                                                                                               :DiagnosticHealthAssessment ,
+                                                                                               :Disease ,
+                                                                                               :SingleAnimalHealthAssessment ;
                                                <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> ;
                                                <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/leo/data/distribution/HA-JSON-LD> ,
                                                                                                                 <https://w3id.org/leo/data/distribution/HA-RDF-TURTLE> ,
@@ -201,327 +199,316 @@
 
 
 ###  https://w3id.org/leo/onto/health-assessment/doneForSample
-<https://w3id.org/leo/onto/health-assessment/doneForSample> rdf:type owl:ObjectProperty ;
-                                                            rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                            rdfs:range <https://w3id.org/leo/onto/analysis/Sample> ;
-                                                            rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                            rdfs:label "done for sample"@en ,
-                                                                       "fatto per campione"@it ;
-                                                            owl:versionInfo "stabile"@it ,
-                                                                            "stable"@en .
+:doneForSample rdf:type owl:ObjectProperty ;
+               rdfs:domain :DiagnosticHealthAssessment ;
+               rdfs:range <https://w3id.org/leo/onto/analysis/Sample> ;
+               rdfs:comment "Property used to specify for which sample the health assessment was done."@en ,
+                            "Proprietà usata per indicare per quale campione è stato fatto l'accertamento sanitario."@it ;
+               rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+               rdfs:label "done for sample"@en ,
+                          "fatto per campione"@it ;
+               owl:versionInfo "stabile"@it ,
+                               "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease
-<https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                 rdfs:range <https://w3id.org/leo/onto/health-assessment/Disease> ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                 rdfs:label "ha malattia analizzata"@it ,
-                                                                            "has analysed disease"@en ;
-                                                                 owl:versionInfo "stabile"@it ,
-                                                                                 "stable"@en .
-
-
-###  https://w3id.org/leo/onto/health-assessment/hasAssessmentResult
-<https://w3id.org/leo/onto/health-assessment/hasAssessmentResult> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                  rdfs:range <https://w3id.org/leo/onto/health-assessment/Result> ;
-                                                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                  rdfs:label "ha risultato dell'accertamento"@it ,
-                                                                             "has assessment result"@en ;
-                                                                  owl:versionInfo "stabile"@it ,
-                                                                                  "stable"@en .
+:hasAnalysedDisease rdf:type owl:ObjectProperty ;
+                    rdfs:domain :DiagnosticHealthAssessment ;
+                    rdfs:range :Disease ;
+                    rdfs:comment "Property used to indicate the analysed disease in the health assessment."@en ,
+                                 "Proprietà utilizzata per specificare quale malattia è stata analizzata nell'accertamento sanitario."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                    rdfs:label "ha malattia analizzata"@it ,
+                               "has analysed disease"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial
-<https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                  rdfs:range <https://w3id.org/leo/onto/analysis/BiologicalMaterial> ;
-                                                                  rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                  rdfs:label "ha materiale esaminato"@it ,
-                                                                             "has examined material"@en ;
-                                                                  owl:versionInfo "stabile"@it ,
-                                                                                  "stable"@en .
-
-
-###  https://w3id.org/leo/onto/health-assessment/hasPerformer
-<https://w3id.org/leo/onto/health-assessment/hasPerformer> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                           rdfs:range <https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab> ;
-                                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                           rdfs:label "ha esecutore di accertamento"@it ,
-                                                                      "has performer"@en ;
-                                                           owl:versionInfo "stabile"@it ,
-                                                                           "stable"@en .
+:hasExaminedMaterial rdf:type owl:ObjectProperty ;
+                     rdfs:domain :DiagnosticHealthAssessment ;
+                     rdfs:range <https://w3id.org/leo/onto/analysis/BiologicalMaterial> ;
+                     rdfs:comment "Property used to represent the biological material that is being analysed in the health assessment."@en ,
+                                  "Proprietà usata per rappresentare il materiale esaminato nell'accertamento sanitario."@it ;
+                     rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                     rdfs:label "ha materiale esaminato"@it ,
+                                "has examined material"@en ;
+                     owl:versionInfo "stabile"@it ,
+                                     "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/hasReason
-<https://w3id.org/leo/onto/health-assessment/hasReason> rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain <https://w3id.org/leo/onto/health-assessment/Sampling> ;
-                                                        rdfs:range <https://w3id.org/leo/onto/health-assessment/Reason> ;
-                                                        rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                        rdfs:label "ha motivo prelievo"@it ,
-                                                                   "has reason for sampling"@en ;
-                                                        owl:versionInfo "stabile"@it ,
-                                                                        "stable"@en .
+:hasReason rdf:type owl:ObjectProperty ;
+           rdfs:domain :Sampling ;
+           rdfs:range :Reason ;
+           rdfs:comment "Property used to specify the reason for the sampling activity."@en ,
+                        "Proprietà utilizzata per specificare il motivo per effettuare il prelievo."@it ;
+           rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+           rdfs:label "ha motivo prelievo"@it ,
+                      "has reason for sampling"@en ;
+           owl:versionInfo "stabile"@it ,
+                           "stable"@en .
 
 
-###  https://w3id.org/leo/onto/health-assessment/hasReplacedTrialReport
-<https://w3id.org/leo/onto/health-assessment/hasReplacedTrialReport> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                     rdfs:range <https://w3id.org/leo/onto/health-assessment/TrialReport> ;
-                                                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                     rdfs:label "ha rapporto di prova sostituito"@it ,
-                                                                                "has replaced trial report"@en ;
-                                                                     owl:versionInfo "stabile"@it ,
-                                                                                     "stable"@en .
+###  https://w3id.org/leo/onto/health-assessment/hasReplacedTestReport
+:hasReplacedTestReport rdf:type owl:ObjectProperty ;
+                       rdfs:domain :DiagnosticHealthAssessment ;
+                       rdfs:range :TestReport ;
+                       rdfs:comment "Property used to indicate the replaced test report in a health assessment"@en ,
+                                    "Proprietà per indicare il rapporto di prova sostituito in un accertamento sanitario"@it ;
+                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                       rdfs:label "ha rapporto di prova sostituito"@it ,
+                                  "has replaced test report"@en ;
+                       owl:versionInfo "stabile"@it ,
+                                       "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor
-<https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                rdfs:range <https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab> ;
-                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                rdfs:label "ha laboratorio che accetta campione"@it ,
-                                                                           "has sample acceptor"@en ;
-                                                                owl:versionInfo "stabile"@it ,
-                                                                                "stable"@en .
+:hasSampleAcceptor rdf:type owl:ObjectProperty ;
+                   rdfs:domain :DiagnosticHealthAssessment ;
+                   rdfs:range :ZooprophylacticLab ;
+                   rdfs:comment "Property used to represent the laboratory that accepted the sample on which the health assessment is done."@en ,
+                                "Proprietà usata per indicare il laboratorio che accetta il campione oggetto di accertamento sanitario."@it ;
+                   rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                   rdfs:label "ha laboratorio che accetta campione"@it ,
+                              "has sample acceptor"@en ;
+                   owl:versionInfo "stabile"@it ,
+                                   "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/hasSampleJudgement
-<https://w3id.org/leo/onto/health-assessment/hasSampleJudgement> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                 rdfs:range <https://w3id.org/leo/onto/health-assessment/SampleJudgement> ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                 rdfs:label "ha giudizio sul campione"@it ,
-                                                                            "has sample judgement"@en ;
-                                                                 owl:versionInfo "stabile"@it ,
-                                                                                 "stable"@en .
+:hasSampleJudgement rdf:type owl:ObjectProperty ;
+                    rdfs:domain :DiagnosticHealthAssessment ;
+                    rdfs:range :SampleJudgement ;
+                    rdfs:comment "Property representing jthe udgement done in the context of the health assessment on the sample"@en ,
+                                 "Proprietà che rappresenta il giudizio nel contesto dell'accertamento sanitario in merito al campione"@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                    rdfs:label "ha giudizio sul campione"@it ,
+                               "has sample judgement"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
 
 
-###  https://w3id.org/leo/onto/health-assessment/hasSubject
-<https://w3id.org/leo/onto/health-assessment/hasSubject> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                         rdfs:range owl:Thing ;
-                                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                         rdfs:label "ha soggetto accertamento"@it ,
-                                                                    "has subject"@en ;
-                                                         owl:versionInfo "stabile"@it ,
-                                                                         "stable"@en .
-
-
-###  https://w3id.org/leo/onto/health-assessment/hasTrialReport
-<https://w3id.org/leo/onto/health-assessment/hasTrialReport> rdf:type owl:ObjectProperty ;
-                                                             rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                             rdfs:range <https://w3id.org/leo/onto/health-assessment/TrialReport> ;
-                                                             rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                             rdfs:label "ha rapporto di prova"@it ,
-                                                                        "has trial report"@en ;
-                                                             owl:versionInfo "stabile"@it ,
-                                                                             "stable"@en .
+###  https://w3id.org/leo/onto/health-assessment/hasTestReport
+:hasTestReport rdf:type owl:ObjectProperty ;
+               rdfs:domain :DiagnosticHealthAssessment ;
+               rdfs:range :TestReport ;
+               rdfs:comment "Proprietà usata per specificare il rapporto di prova associato all'accertamento sanitario."@it ,
+                            "The property used to specify the test report for the health assessment"@en ;
+               rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+               rdfs:label "ha rapporto di prova"@it ,
+                          "has test report"@en ;
+               owl:versionInfo "stabile"@it ,
+                               "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique
-<https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique> rdf:type owl:ObjectProperty ;
-                                                                         owl:inverseOf <https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf> ;
-                                                                         rdfs:domain <https://w3id.org/leo/onto/health-assessment/Technique> ;
-                                                                         rdfs:range <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                         rdfs:label "ha tecnica analitica usata"@it ,
-                                                                                    "has used analytical technique"@en ;
-                                                                         owl:versionInfo "stabile"@it ,
-                                                                                         "stable"@en .
+:hasUsedAnalyticalTechnique rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <https://w3id.org/leo/onto/livestock-assessment/applies> ;
+                            owl:inverseOf :isAnalyticalTechniqueOf ;
+                            rdfs:domain :DiagnosticHealthAssessment ;
+                            rdfs:range :Technique ;
+                            rdfs:comment "Property used to specify the analytical method/technique used in the health assessment"@en ,
+                                         "Proprietà utilizzata per specificare la/il tecnica/metodo analitica/o usata/o nell'accertamento sanitario."@it ;
+                            rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                            rdfs:label "ha tecnica analitica usata"@it ,
+                                       "has used analytical technique"@en ;
+                            owl:versionInfo "stabile"@it ,
+                                            "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf
-<https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                      rdfs:range <https://w3id.org/leo/onto/health-assessment/Technique> ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                      rdfs:label "is analytical technique of"@en ,
-                                                                                 "è tecnica analitica di"@it ;
-                                                                      owl:versionInfo "stabile"@it ,
-                                                                                      "stable"@en .
-
-
-###  https://w3id.org/leo/onto/health-assessment/isAssessmentOfCompany
-<https://w3id.org/leo/onto/health-assessment/isAssessmentOfCompany> rdf:type owl:ObjectProperty ;
-                                                                    rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                    rdfs:range <https://w3id.org/leo/onto/co/LivestockCompany> ;
-                                                                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                    rdfs:label "is assessment of company"@en ,
-                                                                               "è accertamento di azienda"@it ;
-                                                                    owl:versionInfo "stabile"@it ,
-                                                                                    "stable"@en .
+:isAnalyticalTechniqueOf rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Technique ;
+                         rdfs:range :DiagnosticHealthAssessment ;
+                         rdfs:comment "Inverse property of 'has used analytical technique' which links the technique or method to the health assessment."@en ,
+                                      "Proprietà inversa di 'ha tecnica analitica utilizzata' che collega la tecnica o metodo all'accertamento sanitario."@it ;
+                         rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                         rdfs:label "is analytical technique of"@en ,
+                                    "è tecnica analitica di"@it ;
+                         owl:versionInfo "stabile"@it ,
+                                         "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/isReferredToSampling
-<https://w3id.org/leo/onto/health-assessment/isReferredToSampling> rdf:type owl:ObjectProperty ;
-                                                                   rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                   rdfs:range <https://w3id.org/leo/onto/health-assessment/Sampling> ;
-                                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                   rdfs:label "is referred to sampling"@en ,
-                                                                              "è riferito a prelievo"@it ;
-                                                                   owl:versionInfo "stabile"@it ,
-                                                                                   "stable"@en .
+:isReferredToSampling rdf:type owl:ObjectProperty ;
+                      rdfs:domain :DiagnosticHealthAssessment ;
+                      rdfs:range :Sampling ;
+                      rdfs:comment "Property used to link the health assessmnet to sampling activity."@en ,
+                                   "Proprietà usata per collegare l'accertamento sanitario all'attività di prelievo del campione."@it ;
+                      rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                      rdfs:label "is referred to sampling"@en ,
+                                 "è riferito a prelievo"@it ;
+                      owl:versionInfo "stabile"@it ,
+                                      "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/replaced
-<https://w3id.org/leo/onto/health-assessment/replaced> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <https://w3id.org/leo/onto/health-assessment/TrialReport> ;
-                                                       rdfs:range <https://w3id.org/leo/onto/health-assessment/TrialReport> ;
-                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                       rdfs:label "replaced"@en ,
-                                                                  "sostituito"@it ;
-                                                       owl:versionInfo "stabile"@it ,
-                                                                       "stable"@en .
+:replaced rdf:type owl:ObjectProperty ;
+          rdfs:domain :TestReport ;
+          rdfs:range :TestReport ;
+          rdfs:comment "Property used to indicate that a trial report has replaced another  report"@en ,
+                       "Proprietà usata per indicare che un rapporto di prova ha sostituito un altro rapporto di prova"@it ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+          rdfs:label "replaced"@en ,
+                     "sostituito"@it ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/resultingInSample
-<https://w3id.org/leo/onto/health-assessment/resultingInSample> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain <https://w3id.org/leo/onto/health-assessment/Sampling> ;
-                                                                rdfs:range <https://w3id.org/leo/onto/analysis/Sample> ;
-                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                rdfs:label "resulting in sample"@en ,
-                                                                           "risultante in campione"@it ;
-                                                                owl:versionInfo "stabile"@it ,
-                                                                                "stable"@en .
+:resultingInSample rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Sampling ;
+                   rdfs:range <https://w3id.org/leo/onto/analysis/Sample> ;
+                   rdfs:comment "Property used to represent the sample resulting from a sampling activity"@en ,
+                                "Proprietà utilizzata per rappresentare il campione risultante da un'attività di campionamento."@it ;
+                   rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                   rdfs:label "resulting in sample"@en ,
+                              "risultante in campione"@it ;
+                   owl:versionInfo "stabile"@it ,
+                                   "stable"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/leo/onto/health-assessment/assessmentId
-<https://w3id.org/leo/onto/health-assessment/assessmentId> rdf:type owl:DatatypeProperty ;
-                                                           rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
-                                                           rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                           rdfs:range rdfs:Literal ;
-                                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                           rdfs:label "assessment identifier"@en ,
-                                                                      "codice accertamento diagnostico"@it ;
-                                                           owl:versionInfo "stabile"@it ,
-                                                                           "stable"@en .
-
-
 ###  https://w3id.org/leo/onto/health-assessment/efsaCode
-<https://w3id.org/leo/onto/health-assessment/efsaCode> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
-                                                       rdfs:domain owl:Thing ;
-                                                       rdfs:range rdfs:Literal ;
-                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                       rdfs:label "EFSA code"@en ,
-                                                                  "codice EFSA"@it ;
-                                                       owl:versionInfo "stabile"@it ,
-                                                                       "stable"@en .
+:efsaCode rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
+          rdfs:domain owl:Thing ;
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "It represents the EFSA - European Food Safety Authority codes used in health inspections to identify various elements including the zooprophylactic institutes, the analytical technique used."@en ,
+                       "Rappresenta i codici EFSA - European Food Safety Authority usati negli accertamenti sanitari per identificare diversi elementi tra cui gli istituti zooprofilattici, la tecnica analitica utilizzata."@it ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+          rdfs:label "EFSA code"@en ,
+                     "codice EFSA"@it ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/note
-<https://w3id.org/leo/onto/health-assessment/note> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/description> ;
-                                                   rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                   rdfs:range rdf:PlainLiteral ;
-                                                   rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                   rdfs:label "nota"@it ,
-                                                              "note"@en ;
-                                                   owl:versionInfo "stabile"@it ,
-                                                                   "stable"@en .
+:note rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/description> ;
+      rdfs:domain :DiagnosticHealthAssessment ;
+      rdfs:range rdf:PlainLiteral ;
+      rdfs:comment "Eventuali note sull'accertamento sanitario"@it ,
+                   "Some descriptive note on the health assessment"@en ;
+      rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+      rdfs:label "nota"@it ,
+                 "note"@en ;
+      owl:versionInfo "stabile"@it ,
+                      "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/numNegativeSamples
-<https://w3id.org/leo/onto/health-assessment/numNegativeSamples> rdf:type owl:DatatypeProperty ;
-                                                                 rdfs:subPropertyOf <https://w3id.org/italia/onto/MU/value> ;
-                                                                 rdfs:domain <https://w3id.org/leo/onto/health-assessment/CompanyScreening> ;
-                                                                 rdfs:range xsd:integer ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                 rdfs:label "number negative samples"@en ,
-                                                                            "numero campioni negativi"@it ;
-                                                                 owl:versionInfo "stabile"@it ,
-                                                                                 "stable"@en .
+:numNegativeSamples rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/italia/onto/MU/value> ;
+                    rdfs:domain :CompanyScreening ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment "Property used to specify the number of negative samples in company screenings"@en ,
+                                 "Proprietà usata per specificare il numero di campioni negativi negli screening aziendali"@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                    rdfs:label "number negative samples"@en ,
+                               "numero campioni negativi"@it ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples
-<https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples> rdf:type owl:DatatypeProperty ;
-                                                                              rdfs:subPropertyOf <https://w3id.org/italia/onto/MU/value> ;
-                                                                              rdfs:domain <https://w3id.org/leo/onto/health-assessment/CompanyScreening> ;
-                                                                              rdfs:range xsd:integer ;
-                                                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                              rdfs:label "number not examined/unsuitable samples"@en ,
-                                                                                         "numero campioni non esaminati/idonei"@it ;
-                                                                              owl:versionInfo "stabile"@it ,
-                                                                                              "stable"@en .
+:numNotExaminedUnsuitableSamples rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf <https://w3id.org/italia/onto/MU/value> ;
+                                 rdfs:domain :CompanyScreening ;
+                                 rdfs:range xsd:integer ;
+                                 rdfs:comment "Il numero di campioni non esaminati o non idonei negli screening aziendali"@it ,
+                                              "The number of samples that are not examined in company screenings"@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                                 rdfs:label "number not examined/unsuitable samples"@en ,
+                                            "numero campioni non esaminati/idonei"@it ;
+                                 owl:versionInfo "stabile"@it ,
+                                                 "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/numPositiveSamples
-<https://w3id.org/leo/onto/health-assessment/numPositiveSamples> rdf:type owl:DatatypeProperty ;
-                                                                 rdfs:subPropertyOf <https://w3id.org/italia/onto/MU/value> ;
-                                                                 rdfs:domain <https://w3id.org/leo/onto/health-assessment/CompanyScreening> ;
-                                                                 rdfs:range xsd:integer ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                 rdfs:label "number positive samples"@en ,
-                                                                            "numero campioni positivi"@it ;
-                                                                 owl:versionInfo "stabile"@it ,
-                                                                                 "stable"@en .
+:numPositiveSamples rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/italia/onto/MU/value> ;
+                    rdfs:domain :CompanyScreening ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment "Il numero di campioni positivi negli screening aziendali"@it ,
+                                 "The number of positive samples in the compnay screenings."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                    rdfs:label "number positive samples"@en ,
+                               "numero campioni positivi"@it ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate
-<https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate> rdf:type owl:DatatypeProperty ;
-                                                                    rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                                    rdfs:domain <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ;
-                                                                    rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                                 owl:unionOf ( xsd:date
-                                                                                               xsd:dateTime
-                                                                                             )
-                                                                               ] ;
-                                                                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                    rdfs:label "data accettazione campione"@it ,
-                                                                               "sampling accepting date"@en ;
-                                                                    owl:versionInfo "stabile"@it ,
-                                                                                    "stable"@en .
+:samplingAcceptingDate rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                       rdfs:domain :DiagnosticHealthAssessment ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:unionOf ( xsd:date
+                                                  xsd:dateTime
+                                                )
+                                  ] ;
+                       rdfs:comment "La data di accettazione del campione in accertamento sanitario"@it ,
+                                    "The date of acceptance of the sample in a health assessment"@en ;
+                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                       rdfs:label "data accettazione campione"@it ,
+                                  "sampling accepting date"@en ;
+                       owl:versionInfo "stabile"@it ,
+                                       "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/samplingDate
-<https://w3id.org/leo/onto/health-assessment/samplingDate> rdf:type owl:DatatypeProperty ;
-                                                           rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                           rdfs:domain <https://w3id.org/leo/onto/health-assessment/Sampling> ;
-                                                           rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                        owl:unionOf ( xsd:date
-                                                                                      xsd:dateTime
-                                                                                    )
-                                                                      ] ;
-                                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                           rdfs:label "data prelievo"@it ,
-                                                                      "sampling date"@en ;
-                                                           owl:versionInfo "stabile"@it ,
-                                                                           "stable"@en .
+:samplingDate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+              rdfs:domain :Sampling ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:unionOf ( xsd:date
+                                         xsd:dateTime
+                                       )
+                         ] ;
+              rdfs:comment "La data in cui il campione è stato prelevato"@it ,
+                           "The date on which the sample was taken"@en ;
+              rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+              rdfs:label "data prelievo"@it ,
+                         "sampling date"@en ;
+              owl:versionInfo "stabile"@it ,
+                              "stable"@en .
 
 
-###  https://w3id.org/leo/onto/health-assessment/trialReportDate
-<https://w3id.org/leo/onto/health-assessment/trialReportDate> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
-                                                              rdfs:domain <https://w3id.org/leo/onto/health-assessment/TrialReport> ;
-                                                              rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                           owl:unionOf ( xsd:date
-                                                                                         xsd:dateTime
-                                                                                       )
-                                                                         ] ;
-                                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                              rdfs:label "data rapporto di prova"@it ,
-                                                                         "trial report date"@en ;
-                                                              owl:versionInfo "stabile"@it ,
-                                                                              "stable"@en .
+###  https://w3id.org/leo/onto/health-assessment/testReportDate
+:testReportDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                rdfs:domain :TestReport ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:unionOf ( xsd:date
+                                           xsd:dateTime
+                                         )
+                           ] ;
+                rdfs:comment "La data associata al rapporto di prova"@it ,
+                             "The date associated to the test report"@en ;
+                rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                rdfs:label "data rapporto di prova"@it ,
+                           "test report date"@en ;
+                owl:versionInfo "stabile"@it ,
+                                "stable"@en .
 
 
-###  https://w3id.org/leo/onto/health-assessment/trialReportNumber
-<https://w3id.org/leo/onto/health-assessment/trialReportNumber> rdf:type owl:DatatypeProperty ;
-                                                                rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
-                                                                rdfs:domain <https://w3id.org/leo/onto/health-assessment/TrialReport> ;
-                                                                rdfs:range rdfs:Literal ;
-                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                rdfs:label "numero rapporto di prova"@it ,
-                                                                           "trial report number"@en ;
-                                                                owl:versionInfo "stabile"@it ,
-                                                                                "stable"@en .
+###  https://w3id.org/leo/onto/health-assessment/testReportNumber
+:testReportNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <https://w3id.org/italia/onto/l0/identifier> ;
+                  rdfs:domain :TestReport ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:comment "L'identificativo univoco, espresso come numbero, del rapporto di prova in un accertamento sanitario"@it ,
+                               "The unique identifier of the test report"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                  rdfs:label "numero rapporto di prova"@it ,
+                             "test report number"@en ;
+                  owl:versionInfo "stabile"@it ,
+                                  "stable"@en .
 
 
 #################################################################
@@ -569,328 +556,312 @@
 
 
 ###  https://w3id.org/leo/onto/health-assessment/CompanyScreening
-<https://w3id.org/leo/onto/health-assessment/CompanyScreening> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ,
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasSubject> ;
-                                                                                 owl:allValuesFrom <https://w3id.org/leo/onto/animal/LivestockSpecies>
-                                                                               ] ,
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <https://w3id.org/leo/onto/health-assessment/numNegativeSamples> ;
-                                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                 owl:onDataRange xsd:integer
-                                                                               ] ,
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples> ;
-                                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                 owl:onDataRange xsd:integer
-                                                                               ] ,
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <https://w3id.org/leo/onto/health-assessment/numPositiveSamples> ;
-                                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                 owl:onDataRange xsd:integer
-                                                                               ] ;
-                                                               owl:disjointWith <https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment> ;
-                                                               rdfs:comment "Gli Screening Aziendali sono degli accertamenti sanitari diagnostici che fanno riferimento ad un insieme di animali e pertanto offrono il risultato di sintesi."@it ;
-                                                               rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                               rdfs:label "Company Screening"@en ,
-                                                                          "Screening Aziendale"@it ;
-                                                               owl:versionInfo "stabile"@it ,
-                                                                               "stable"@en .
+:CompanyScreening rdf:type owl:Class ;
+                  rdfs:subClassOf :DiagnosticHealthAssessment ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasSubject> ;
+                                    owl:someValuesFrom <https://w3id.org/leo/onto/animal/LivestockSpecies>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :numNegativeSamples ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:integer
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :numNotExaminedUnsuitableSamples ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:integer
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :numPositiveSamples ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:integer
+                                  ] ;
+                  owl:disjointWith :SingleAnimalHealthAssessment ;
+                  rdfs:comment "Company Screenings are diagnostic health checks that refer to a set of animals and therefore offer the summary result."@en ,
+                               "Gli Screening Aziendali sono degli accertamenti sanitari diagnostici che fanno riferimento ad un insieme di animali e pertanto offrono il risultato di sintesi."@it ;
+                  rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                  rdfs:label "Company Screening"@en ,
+                             "Screening Aziendale"@it ;
+                  owl:versionInfo "stabile"@it ,
+                                  "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment
-<https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> rdf:type owl:Class ;
-                                                                         rdfs:subClassOf <https://w3id.org/italia/onto/l0/EventOrSituation> ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease> ;
-                                                                                           owl:allValuesFrom <https://w3id.org/leo/onto/health-assessment/Disease>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial> ;
-                                                                                           owl:allValuesFrom <https://w3id.org/leo/onto/analysis/BiologicalMaterial>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasSampleJudgement> ;
-                                                                                           owl:allValuesFrom <https://w3id.org/leo/onto/health-assessment/SampleJudgement>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique> ;
-                                                                                           owl:allValuesFrom <https://w3id.org/leo/onto/health-assessment/Technique>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/isReferredToSampling> ;
-                                                                                           owl:allValuesFrom <https://w3id.org/leo/onto/health-assessment/Sampling>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/isAssessmentOfCompany> ;
-                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onClass <https://w3id.org/leo/onto/co/LivestockCompany>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/doneForSample> ;
-                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onClass <https://w3id.org/leo/onto/analysis/Sample>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasPerformer> ;
-                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onClass <https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasReplacedTrialReport> ;
-                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onClass <https://w3id.org/leo/onto/health-assessment/TrialReport>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor> ;
-                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onClass <https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasTrialReport> ;
-                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onClass <https://w3id.org/leo/onto/health-assessment/TrialReport>
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/note> ;
-                                                                                           owl:allValuesFrom rdf:PlainLiteral
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/assessmentId> ;
-                                                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                                         ] ,
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate> ;
-                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                                                             owl:unionOf ( xsd:date
-                                                                                                                           xsd:dateTime
-                                                                                                                         )
-                                                                                                           ]
-                                                                                         ] ;
-                                                                         rdfs:comment "La classe degli accertamenti diagnostici di patologie di interesse zootecnico"@it ,
-                                                                                      "The class of diagnostic assessments for diseases of zootechnical interest"@en ;
-                                                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                         rdfs:label "Accertamento Sanitario Diagnostico"@it ,
-                                                                                    "Diagnostic Health Assessment"@en ;
-                                                                         owl:versionInfo "stabile"@it ,
-                                                                                         "stable"@en .
+:DiagnosticHealthAssessment rdf:type owl:Class ;
+                            rdfs:subClassOf <https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment> ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasPerformer> ;
+                                              owl:someValuesFrom :ZooprophylacticLab
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf> ;
+                                              owl:someValuesFrom <https://w3id.org/leo/onto/co/LivestockCompany>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasAnalysedDisease ;
+                                              owl:allValuesFrom :Disease
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasExaminedMaterial ;
+                                              owl:allValuesFrom <https://w3id.org/leo/onto/analysis/BiologicalMaterial>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasSampleJudgement ;
+                                              owl:allValuesFrom :SampleJudgement
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasUsedAnalyticalTechnique ;
+                                              owl:allValuesFrom :Technique
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :isReferredToSampling ;
+                                              owl:allValuesFrom :Sampling
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :doneForSample ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <https://w3id.org/leo/onto/analysis/Sample>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasReplacedTestReport ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :TestReport
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasSampleAcceptor ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :ZooprophylacticLab
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasTestReport ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :TestReport
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :note ;
+                                              owl:allValuesFrom rdf:PlainLiteral
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :samplingAcceptingDate ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                owl:unionOf ( xsd:date
+                                                                              xsd:dateTime
+                                                                            )
+                                                              ]
+                                            ] ;
+                            rdfs:comment "La classe degli accertamenti diagnostici di patologie di interesse zootecnico"@it ,
+                                         "The class of diagnostic assessments for diseases of zootechnical interest"@en ;
+                            rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                            rdfs:label "Accertamento Sanitario Diagnostico"@it ,
+                                       "Diagnostic Health Assessment"@en ;
+                            owl:versionInfo "stabile"@it ,
+                                            "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Disease
-<https://w3id.org/leo/onto/health-assessment/Disease> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ,
-                                                                      [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
-                                                                        owl:someValuesFrom rdfs:Literal
-                                                                      ] ,
-                                                                      [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty <https://w3id.org/italia/onto/l0/identifier> ;
-                                                                        owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                      ] ;
-                                                      rdfs:comment "La classe delle malattie analizzate nell'accertamento sanitario. Le malattie sono identificate da un codice (codice SIMAN)."@it ,
-                                                                   "The class of diseases analysed in the health assessment. Diseases are identified by a code (SIMAN code)."@en ;
-                                                      rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                      rdfs:label "Disease"@en ,
-                                                                 "Malattia"@it ;
-                                                      owl:versionInfo "stabile"@it ,
-                                                                      "stable"@en .
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                           owl:someValuesFrom rdfs:Literal
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://w3id.org/italia/onto/l0/identifier> ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "La classe delle malattie analizzate nell'accertamento sanitario. Le malattie sono identificate da un codice (codice SIMAN)."@it ,
+                      "The class of diseases analysed in the health assessment. Diseases are identified by a code (SIMAN code)."@en ;
+         rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+         rdfs:label "Disease"@en ,
+                    "Malattia"@it ;
+         owl:versionInfo "stabile"@it ,
+                         "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/QualitativeResult
-<https://w3id.org/leo/onto/health-assessment/QualitativeResult> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <https://w3id.org/leo/onto/health-assessment/Result> ,
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <https://w3id.org/italia/onto/MU/value> ;
-                                                                                  owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                                ] ;
-                                                                owl:disjointWith <https://w3id.org/leo/onto/health-assessment/QuantitativeResult> ;
-                                                                rdfs:comment "La classe degli esiti degli accertamenti di tipo qualitativo (e.g., positivo, negativo)."@it ,
-                                                                             "The class of qualitative results of the health assessments (e.g. positive, negative)."@en ;
-                                                                rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                rdfs:label "Qualitative Result"@en ,
-                                                                           "Risultato Qualitativo"@it ;
-                                                                owl:versionInfo "stabile"@it ,
-                                                                                "stable"@en .
+:QualitativeResult rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/leo/onto/livestock-assessment/AssessmentResult> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/italia/onto/MU/value> ;
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                   ] ;
+                   owl:disjointWith :QuantitativeResult ;
+                   rdfs:comment "La classe degli esiti degli accertamenti di tipo qualitativo (e.g., positivo, negativo)."@it ,
+                                "The class of qualitative results of the health assessments (e.g. positive, negative)."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                   rdfs:label "Qualitative Result"@en ,
+                              "Risultato Qualitativo"@it ;
+                   owl:versionInfo "stabile"@it ,
+                                   "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/QuantitativeResult
-<https://w3id.org/leo/onto/health-assessment/QuantitativeResult> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf <https://w3id.org/italia/onto/MU/Value> ,
-                                                                                 <https://w3id.org/leo/onto/health-assessment/Result> ,
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <https://w3id.org/leo/onto/analysis/hasUnitOfMeasure> ;
-                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                   owl:onClass <https://w3id.org/leo/onto/analysis/UnitOfMeasure>
-                                                                                 ] ;
-                                                                 rdfs:comment "La classe degli esiti quantitativi, ossia risultati di tipo numerico, associati a un'unità di misura"@it ,
-                                                                              "The class of quantitative outcomes, i.e. results of a numerical type, associated with a unit of measurement"@en ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                 rdfs:label "Esito Quantitativo"@it ,
-                                                                            "Quantitative Result"@en ;
-                                                                 owl:versionInfo "stabile"@it ,
-                                                                                 "stable"@en .
+:QuantitativeResult rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/italia/onto/MU/Value> ,
+                                    <https://w3id.org/leo/onto/livestock-assessment/AssessmentResult> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/leo/onto/analysis/hasUnitOfMeasure> ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <https://w3id.org/leo/onto/analysis/UnitOfMeasure>
+                                    ] ;
+                    rdfs:comment "La classe degli esiti quantitativi, ossia risultati di tipo numerico, associati a un'unità di misura"@it ,
+                                 "The class of quantitative outcomes, i.e. results of a numerical type, associated with a unit of measurement"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                    rdfs:label "Esito Quantitativo"@it ,
+                               "Quantitative Result"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Reason
-<https://w3id.org/leo/onto/health-assessment/Reason> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ,
-                                                                     <https://w3id.org/italia/onto/l0/Concept> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/italia/onto/l0/description> ;
-                                                                       owl:someValuesFrom rdfs:Literal
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/italia/onto/l0/identifier> ;
-                                                                       owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                     ] ;
-                                                     rdfs:comment "La classe di tutte le motivazioni per l'esecuzione di un prelievo riferito agli accertamenti sanitari."@it ,
-                                                                  "The class of all the motivations for carrying out a sampling referred in health assessments."@en ;
-                                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                     rdfs:label "Motivo del Prelievo"@it ,
-                                                                "Reason (of the Sampling)"@en ;
-                                                     owl:versionInfo "stabile"@it ,
-                                                                     "stable"@en .
-
-
-###  https://w3id.org/leo/onto/health-assessment/Result
-<https://w3id.org/leo/onto/health-assessment/Result> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ;
-                                                     rdfs:comment "La classe dei diversi tipi di risultati degli accertamenti sanitari. Un risultato può essere qualitativo (e.g., positivo, negativo, ecc.) o quantitativa (un valore numerico)."@it ,
-                                                                  "The class of the different types of result of health assessments. A result can be qualitative (e.g. positive, negative, etc.) or quantitative (a numerical value)."@en ;
-                                                     rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                     rdfs:label "Esito"@it ,
-                                                                "Result"@en ;
-                                                     owl:versionInfo "stabile"@it ,
-                                                                     "stable"@en .
+:Reason rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ,
+                        <https://w3id.org/italia/onto/l0/Concept> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                          owl:someValuesFrom rdfs:Literal
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://w3id.org/italia/onto/l0/identifier> ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        rdfs:comment "La classe di tutte le motivazioni per l'esecuzione di un prelievo riferito agli accertamenti sanitari."@it ,
+                     "The class of all the motivations for carrying out a sampling referred in health assessments."@en ;
+        rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+        rdfs:label "Motivo del Prelievo"@it ,
+                   "Reason (of the Sampling)"@en ;
+        owl:versionInfo "stabile"@it ,
+                        "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/SampleJudgement
-<https://w3id.org/leo/onto/health-assessment/SampleJudgement> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ;
-                                                              rdfs:comment "Indica il giudizio relativo al campione. i valori possibili sono negativo, positivo, non esaminato, non idoneo, dubbio"@it ,
-                                                                           "Indicates the rating for the sample. possible values are negative, positive, not examined, unsuitable, doubtful"@en ;
-                                                              rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                              rdfs:label "Giudizio Campione"@it ,
-                                                                         "Sample Judgement"@en ;
-                                                              owl:versionInfo "stabile"@it ,
-                                                                              "stable"@en .
+:SampleJudgement rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ;
+                 rdfs:comment "Indica il giudizio relativo al campione. i valori possibili sono negativo, positivo, non esaminato, non idoneo, dubbio"@it ,
+                              "Indicates the rating for the sample. possible values are negative, positive, not examined, unsuitable, doubtful"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                 rdfs:label "Giudizio Campione"@it ,
+                            "Sample Judgement"@en ;
+                 owl:versionInfo "stabile"@it ,
+                                 "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Sampling
-<https://w3id.org/leo/onto/health-assessment/Sampling> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/italia/onto/l0/Activity> ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasReason> ;
-                                                                         owl:allValuesFrom <https://w3id.org/leo/onto/health-assessment/Reason>
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <https://w3id.org/leo/onto/health-assessment/resultingInSample> ;
-                                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                         owl:onClass <https://w3id.org/leo/onto/analysis/Sample>
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <https://w3id.org/leo/onto/health-assessment/samplingDate> ;
-                                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                         owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                                           owl:unionOf ( xsd:date
-                                                                                                         xsd:dateTime
-                                                                                                       )
-                                                                                         ]
-                                                                       ] ;
-                                                       rdfs:comment "L'attività di prelievo necessaria per lo svolgimento di accertamenti sanitari"@it ,
-                                                                    "The activity of sampling referred to some health assessment"@en ;
-                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                       rdfs:label "Prelievo"@it ,
-                                                                  "Sampling"@en ;
-                                                       owl:versionInfo "stabile"@it ,
-                                                                       "stable"@en ;
-                                                       <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/sosa/Sampling> .
+:Sampling rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/italia/onto/l0/Activity> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasReason ;
+                            owl:allValuesFrom :Reason
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :resultingInSample ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass <https://w3id.org/leo/onto/analysis/Sample>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :samplingDate ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                              owl:unionOf ( xsd:date
+                                                            xsd:dateTime
+                                                          )
+                                            ]
+                          ] ;
+          rdfs:comment "L'attività di prelievo necessaria per lo svolgimento di accertamenti sanitari"@it ,
+                       "The activity of sampling referred to some health assessment"@en ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+          rdfs:label "Prelievo"@it ,
+                     "Sampling"@en ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en ;
+          <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/sosa/Sampling> .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment
-<https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf <https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment> ,
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty <https://w3id.org/leo/onto/health-assessment/hasSubject> ;
-                                                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                             owl:onClass <https://w3id.org/leo/onto/animal/FarmAnimal>
-                                                                                           ] ;
-                                                                           rdfs:comment "La classe degli accertamenti sanitari diagnostici effettuati su singoli animali."@it ,
-                                                                                        "The class of all the diagnostic health assessments done on single farm animals"@en ;
-                                                                           rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                           rdfs:label "Accertamento Sanitario su Singolo Animale"@it ,
-                                                                                      "Single Animal Health Assessment"@en ;
-                                                                           owl:versionInfo "stabile"@it ,
-                                                                                           "stable"@en .
+:SingleAnimalHealthAssessment rdf:type owl:Class ;
+                              rdfs:subClassOf :DiagnosticHealthAssessment ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://w3id.org/leo/onto/livestock-assessment/hasSubject> ;
+                                                owl:someValuesFrom <https://w3id.org/leo/onto/animal/FarmAnimal>
+                                              ] ;
+                              rdfs:comment "La classe degli accertamenti sanitari diagnostici effettuati su singoli animali."@it ,
+                                           "The class of all the diagnostic health assessments done on single farm animals"@en ;
+                              rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                              rdfs:label "Accertamento Sanitario su Singolo Animale"@it ,
+                                         "Single Animal Health Assessment"@en ;
+                              owl:versionInfo "stabile"@it ,
+                                              "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Technique
-<https://w3id.org/leo/onto/health-assessment/Technique> rdf:type owl:Class ;
-                                                        rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ,
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
-                                                                          owl:someValuesFrom rdfs:Literal
-                                                                        ] ,
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <https://w3id.org/leo/onto/health-assessment/efsaCode> ;
-                                                                          owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                        ] ;
-                                                        rdfs:comment "La classe delle tecniche analitiche utilizzate per l'accertamento sanitario. La tecnica usata è identificata da un codice (Codici EFSA)"@it ,
-                                                                     "The class of analytical techniques used for health assessments. The technique used is identified by a code (EFSA Codes)"@en ;
-                                                        rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                        rdfs:label "Technique"@en ,
-                                                                   "Tecnica"@it ;
-                                                        owl:versionInfo "stabile"@it ,
-                                                                        "stable"@en .
+:Technique rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/leo/onto/livestock-assessment/Method> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                             owl:someValuesFrom rdfs:Literal
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :efsaCode ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ;
+           rdfs:comment "La classe delle tecniche analitiche utilizzate per l'accertamento sanitario. La tecnica usata è identificata da un codice (Codici EFSA)"@it ,
+                        "The class of analytical techniques used for health assessments. The technique used is identified by a code (EFSA Codes)"@en ;
+           rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+           rdfs:label "Technique"@en ,
+                      "Tecnica"@it ;
+           owl:versionInfo "stabile"@it ,
+                           "stable"@en .
 
 
-###  https://w3id.org/leo/onto/health-assessment/TrialReport
-<https://w3id.org/leo/onto/health-assessment/TrialReport> rdf:type owl:Class ;
-                                                          rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/leo/onto/health-assessment/replaced> ;
-                                                                            owl:allValuesFrom <https://w3id.org/leo/onto/health-assessment/TrialReport>
-                                                                          ] ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/leo/onto/health-assessment/trialReportNumber> ;
-                                                                            owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                          ] ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/leo/onto/health-assessment/trialReportDate> ;
-                                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                            owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                                              owl:unionOf ( xsd:date
-                                                                                                            xsd:dateTime
-                                                                                                          )
-                                                                                            ]
-                                                                          ] ;
-                                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                          rdfs:label "Rapporto di Prova"@it ,
-                                                                     "Trial Report"@en ;
-                                                          owl:versionInfo "stabile"@it ,
-                                                                          "stable"@en .
+###  https://w3id.org/leo/onto/health-assessment/TestReport
+:TestReport rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :replaced ;
+                              owl:allValuesFrom :TestReport
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :testReportNumber ;
+                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :testReportDate ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                owl:unionOf ( xsd:date
+                                                              xsd:dateTime
+                                                            )
+                                              ]
+                            ] ;
+            rdfs:comment "La classe di tutti i rapporti di prova che sono documenti, in formato digitale o cartaceo, che sono redatti dagli istituti zooprofilattici a conclusione del percorso diagnostico. Questi rapporti di prova possono essere poi mandati a destinatari quali il Ministero della Salute e il Servizio Veterinario Regionale."@it ,
+                         "The class of all test reports, which are documents, in digital or paper format, that are drawn up by zooprophylactic institutes at the end of the diagnostic process. These test reports can then be sent to recipients such as the Ministry of Health and the Regional Veterinary Service."@en ;
+            rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+            rdfs:label "Rapporto di Prova"@it ,
+                       "Test Report"@en ;
+            owl:versionInfo "stabile"@it ,
+                            "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab
-<https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf <https://w3id.org/italia/onto/COV/Organization> ,
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
-                                                                                   owl:someValuesFrom rdfs:Literal
-                                                                                 ] ,
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <https://w3id.org/leo/onto/health-assessment/efsaCode> ;
-                                                                                   owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                                                 ] ;
-                                                                 rdfs:comment "A public law health body with management and administrative autonomy, forming part of the Italian National Health Service, as a technical and operational tool for animal health."@en ,
-                                                                              "Un ente sanitario di diritto pubblico con autonomia gestionale ed amministrativa, facente parte del Servizio sanitario nazionale,  quale strumento tecnico ed operativo per la sanità animale."@it ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                                 rdfs:label "Laboratorio Zooprofilattico"@it ,
-                                                                            "Zooprophylactics Laboratory"@en ;
-                                                                 owl:versionInfo "stabile"@it ,
-                                                                                 "stable"@en .
+:ZooprophylacticLab rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/italia/onto/COV/Organization> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/italia/onto/l0/name> ;
+                                      owl:someValuesFrom rdfs:Literal
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :efsaCode ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ;
+                    rdfs:comment "A public law health body with management and administrative autonomy, forming part of the Italian National Health Service, as a technical and operational tool for animal health."@en ,
+                                 "Un ente sanitario di diritto pubblico con autonomia gestionale ed amministrativa, facente parte del Servizio sanitario nazionale,  quale strumento tecnico ed operativo per la sanità animale."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+                    rdfs:label "Laboratorio Zooprofilattico"@it ,
+                               "Zooprophylactics Laboratory"@en ;
+                    owl:versionInfo "stabile"@it ,
+                                    "stable"@en .
 
 
 #################################################################
@@ -911,7 +882,7 @@
                                                     rdfs:label "Distribuzione JSON-LD ontologia Accertamenti Sanitari"@it ,
                                                                "JSON-LD distribution of Health Assessment Ontology"@en ;
                                                     <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/health-assessment/latest> ;
-                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/health-assessment/latest/health-assessment.jsonld> .
+                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.jsonld> .
 
 
 ###  https://w3id.org/leo/data/distribution/HA-RDF-TURTLE
@@ -928,7 +899,7 @@
                                                        rdfs:label "Distribuzione RDF/Turtle ontologia Accertamenti Sanitari"@it ,
                                                                   "RDF/Turtle distribution of Health Assessment Ontology"@en ;
                                                        <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/health-assessment/latest> ;
-                                                       <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/health-assessment/latest/health-assessment.ttl> .
+                                                       <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.ttl> .
 
 
 ###  https://w3id.org/leo/data/distribution/HA-RDF-XML
@@ -945,7 +916,7 @@
                                                     rdfs:label "Distribuzione RDF/XML ontologia Accertamenti Sanitari"@it ,
                                                                "RDF/XML distribution of Health Assessment Ontology"@en ;
                                                     <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/health-assessment/latest> ;
-                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/health-assessment/latest/health-assessment.rdf> .
+                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.rdf> .
 
 
 ###  https://w3id.org/leo/onto/health-assessment
@@ -954,53 +925,53 @@
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Doubtful
-<https://w3id.org/leo/onto/health-assessment/Doubtful> rdf:type owl:NamedIndividual ,
-                                                                <https://w3id.org/leo/onto/health-assessment/SampleJudgement> ;
-                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                       rdfs:label "Doubtful"@en ,
-                                                                  "Dubbio"@it ;
-                                                       owl:versionInfo "stabile"@it ,
-                                                                       "stable"@en .
+:Doubtful rdf:type owl:NamedIndividual ,
+                   :SampleJudgement ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+          rdfs:label "Doubtful"@en ,
+                     "Dubbio"@it ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Negative
-<https://w3id.org/leo/onto/health-assessment/Negative> rdf:type owl:NamedIndividual ,
-                                                                <https://w3id.org/leo/onto/health-assessment/SampleJudgement> ;
-                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                       rdfs:label "Negative"@en ,
-                                                                  "Negativo"@it ;
-                                                       owl:versionInfo "stabile"@it ,
-                                                                       "stable"@en .
+:Negative rdf:type owl:NamedIndividual ,
+                   :SampleJudgement ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+          rdfs:label "Negative"@en ,
+                     "Negativo"@it ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/NotExamined
-<https://w3id.org/leo/onto/health-assessment/NotExamined> rdf:type owl:NamedIndividual ,
-                                                                   <https://w3id.org/leo/onto/health-assessment/SampleJudgement> ;
-                                                          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                          rdfs:label "Non Esaminato"@it ,
-                                                                     "Not Examined"@en ;
-                                                          owl:versionInfo "stabile"@it ,
-                                                                          "stable"@en .
+:NotExamined rdf:type owl:NamedIndividual ,
+                      :SampleJudgement ;
+             rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+             rdfs:label "Non Esaminato"@it ,
+                        "Not Examined"@en ;
+             owl:versionInfo "stabile"@it ,
+                             "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Positive
-<https://w3id.org/leo/onto/health-assessment/Positive> rdf:type owl:NamedIndividual ,
-                                                                <https://w3id.org/leo/onto/health-assessment/SampleJudgement> ;
-                                                       rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                       rdfs:label "Positive"@en ,
-                                                                  "Positivo"@it ;
-                                                       owl:versionInfo "stabile"@it ,
-                                                                       "stable"@en .
+:Positive rdf:type owl:NamedIndividual ,
+                   :SampleJudgement ;
+          rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+          rdfs:label "Positive"@en ,
+                     "Positivo"@it ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
 
 
 ###  https://w3id.org/leo/onto/health-assessment/Unsuitable
-<https://w3id.org/leo/onto/health-assessment/Unsuitable> rdf:type owl:NamedIndividual ,
-                                                                  <https://w3id.org/leo/onto/health-assessment/SampleJudgement> ;
-                                                         rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
-                                                         rdfs:label "Non Idoneo"@it ,
-                                                                    "Unsuitable"@en ;
-                                                         owl:versionInfo "stabile"@it ,
-                                                                         "stable"@en .
+:Unsuitable rdf:type owl:NamedIndividual ,
+                     :SampleJudgement ;
+            rdfs:isDefinedBy <https://w3id.org/leo/onto/health-assessment> ;
+            rdfs:label "Non Idoneo"@it ,
+                       "Unsuitable"@en ;
+            owl:versionInfo "stabile"@it ,
+                            "stable"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
