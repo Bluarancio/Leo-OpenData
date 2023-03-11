@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/leo/onto/analysis/"
-     xml:base="https://w3id.org/leo/onto/analysis/"
+     xml:base="https://w3id.org/leo/onto/analysis"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
@@ -19,7 +19,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dc:description rdf:resource="https://www.dropbox.com/s/7edkt5d77axxwqe/Analysis.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Analysis.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati LabData e in certi casi i HealthData nel progetto LEO ovvero i dati raccolti sanitari e di tipo laboratorio, intesi come osservazioni di proprietà con determinati valori</terms:description>
@@ -28,18 +28,18 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-14</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-05</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-11</terms:modified>
         <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
         <terms:title xml:lang="en">Analysis Ontology - LabData and HeathData</terms:title>
-        <terms:title xml:lang="it">Ontologia delle Analisi - LabData e HealthData</terms:title>
+        <terms:title xml:lang="it">Ontologia delle Analisi di Laboratorio</terms:title>
         <rdfs:comment xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati che nel progetto LEO sono chiamati LabData. In certi casi l&apos;ontologia può essere usata per i dati cosiddetti HealthData ovvero dati sanitari ma quando questi sono intesi come osservazioni di proprietà con determinati valori</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the ontology used to model the data which in the LEO project are called LabData. In certain cases the ontology can be used for so called HealthData but when these are understood as observations of properties with certain values</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
-        <rdfs:label xml:lang="en">Analysis Ontology - LabData</rdfs:label>
-        <rdfs:label xml:lang="it">Ontologia delle Analisi - LabData</rdfs:label>
+        <rdfs:label xml:lang="en">Analysis Ontology - LabData and HealthData</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia delle Analisi di Laboratorio</rdfs:label>
         <owl:versionInfo xml:lang="en">Version 0.5 - 2023 - Fifth version of the ontology - revision of spectroscopic analysis; added DNA Fragmentation Analysis; revised classification of the different types of analysis</owl:versionInfo>
         <owl:versionInfo xml:lang="it">Versione 0.5 - 2023 - Quinta versione dell&apos;ontologia - revisione dell&apos;analisi degli spettri; aggiunta l&apos;analisi di frammentazione del DNA, rivista la classificazione dei differenti tipi di analisi in base alla distinzione su singolo animale e campione di massa</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
@@ -72,10 +72,10 @@
         <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -83,190 +83,190 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/name -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -274,16 +274,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -291,25 +291,25 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://w3id.org/italia/onto/IoT/hasFeatureOfInterest -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/italia/onto/IoT/hasFeatureOfInterest"/>
-    
+
 
 
     <!-- http://w3id.org/italia/onto/IoT/isFeatureOfInterestFor -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/italia/onto/IoT/isFeatureOfInterestFor"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/hasMember -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/hasMember"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/carriedOutOnSample -->
@@ -333,7 +333,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/collectedFrom -->
@@ -356,7 +356,7 @@
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/consistsOfAnalysisObservation -->
@@ -374,7 +374,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/definedForSpecies -->
@@ -390,7 +390,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasDoseType -->
@@ -406,7 +406,7 @@
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasFeatureOfInterest -->
@@ -424,7 +424,7 @@
         <owl:versionInfo xml:lang="it">stabile - inserita in versione 0.2</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasMaxValue -->
@@ -441,7 +441,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasMeasurementQualityType -->
@@ -457,7 +457,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasMeasurementQualityValue -->
@@ -474,7 +474,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasMinValue -->
@@ -491,7 +491,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasObservableProperty -->
@@ -507,7 +507,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasQuality -->
@@ -523,7 +523,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasReferenceRange -->
@@ -539,7 +539,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure -->
@@ -547,15 +547,15 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
-        <rdfs:comment xml:lang="en">Property that allows one to specify for each observable property in lab data the reference measurement unit. For instance, in the case of coagulation time for milk the measurement unit of reference is minute, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Proprietà che consente di specificare per ogni proprietà/parametro osservato nei dati di laboratorio l&apos;unità di misura di riferimento. Per esempio nel caso del tempo di coagulazione R l&apos;unità di misura di riferimento è il minuto, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Generic property that allows one to specify a reference unit of measure to some thing in the modelled domain.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà generica che consente di specificare un&apos;unità di misura di riferimento per qualche oggetto nel dominio modellato.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/analysis"/>
         <rdfs:label xml:lang="it">ha unità di misura di riferimento</rdfs:label>
         <rdfs:label xml:lang="en">has reference unit of measure</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasResult -->
@@ -572,7 +572,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasUnitOfMeasure -->
@@ -589,7 +589,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/isAnalysisObservationOf -->
@@ -605,7 +605,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/isAnalyzedIn -->
@@ -628,7 +628,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/isFeatureOfInterestFor -->
@@ -645,7 +645,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/isResultOf -->
@@ -661,7 +661,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/isSampleOf -->
@@ -677,7 +677,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/isSubjectOfAnalysis -->
@@ -694,7 +694,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/performedForOwnerCompany -->
@@ -710,7 +710,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/performedOnAnimal -->
@@ -726,7 +726,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/refersToLivestockSpecies -->
@@ -742,10 +742,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -753,25 +753,25 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/date -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/date"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/description -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/description"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/identifier -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/acquisitionTime -->
@@ -795,7 +795,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/analysisNumber -->
@@ -812,7 +812,7 @@
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/countObservedValue -->
@@ -829,7 +829,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/idSemenPailleteLot -->
@@ -847,7 +847,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/resultTime -->
@@ -871,7 +871,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/sampleNumber -->
@@ -889,7 +889,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/unitSymbol -->
@@ -905,10 +905,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -916,61 +916,61 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://w3id.org/italia/onto/IoT/FeatureOfInterest -->
 
     <owl:Class rdf:about="http://w3id.org/italia/onto/IoT/FeatureOfInterest"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/MeasurementQuality -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/MeasurementQuality"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/Observation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/Observation"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/ObservationParameter -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/ObservationParameter"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/IoT/ObservationValue -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/IoT/ObservationValue"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Activity"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Collection -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Collection"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Object -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Object"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/LivestockSpecies -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/LivestockSpecies"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/AnalysisObservation -->
@@ -1041,7 +1041,7 @@
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/AnimalAnalysis -->
@@ -1069,7 +1069,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/BiologicalMaterial -->
@@ -1084,7 +1084,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.2</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/BulkMilkAnalysis -->
@@ -1109,7 +1109,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/CategoryObservation -->
@@ -1124,7 +1124,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/CategoryValue -->
@@ -1140,7 +1140,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/CountObservation -->
@@ -1155,7 +1155,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/CountValue -->
@@ -1189,7 +1189,7 @@
         <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/DNAFragmentationAnalysis -->
@@ -1204,7 +1204,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/DSCCAnalysis -->
@@ -1219,7 +1219,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/DSCCBulkMilkAnalysis -->
@@ -1234,7 +1234,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/DoseType -->
@@ -1249,7 +1249,7 @@
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/FeatureOfInterest -->
@@ -1272,7 +1272,7 @@
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/IBRAnalysis -->
@@ -1298,7 +1298,7 @@ IBR is a worldwide disease that typically affects cattle and sometimes other rum
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/IBRBulkMilkAnalysis -->
@@ -1313,7 +1313,7 @@ IBR is a worldwide disease that typically affects cattle and sometimes other rum
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/IBRValue -->
@@ -1338,7 +1338,7 @@ IBR is a worldwide disease that typically affects cattle and sometimes other rum
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/LaboratoryAnalysis -->
@@ -1387,7 +1387,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/MeasurementQuality -->
@@ -1417,7 +1417,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/MeasurementQualityType -->
@@ -1432,7 +1432,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/ObservableProperty -->
@@ -1480,7 +1480,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/ObservedValue -->
@@ -1497,7 +1497,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Result"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/OfficialSemenControlAnalysis -->
@@ -1525,7 +1525,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/PAGAnalysis -->
@@ -1548,7 +1548,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/PAGValue -->
@@ -1572,7 +1572,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/ReferenceRangeSpecification -->
@@ -1607,7 +1607,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Sample -->
@@ -1656,7 +1656,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/SemenAnalysis -->
@@ -1673,7 +1673,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/SemenLot -->
@@ -1694,7 +1694,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/SemenType -->
@@ -1709,7 +1709,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/SingleAnimalMilkAnalysis -->
@@ -1724,7 +1724,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/SpectroscopicAnimalAnalysis -->
@@ -1746,7 +1746,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/SpectroscopicBulkMilkAnalysis -->
@@ -1761,7 +1761,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
@@ -1782,22 +1782,22 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.2</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.2</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/Company -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/Company"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1805,7 +1805,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
@@ -1817,7 +1817,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <ns:fn>Sistemi informativi</ns:fn>
         <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/AN-JSON-LD -->
@@ -1837,7 +1837,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest"/>
         <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/weathr/latest/analysis.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/AN-RDF-TURTLE -->
@@ -1857,7 +1857,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest"/>
         <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest/analysis.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/AN-RDF-XML -->
@@ -1877,7 +1877,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest"/>
         <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/analysis/latest/analysis.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
@@ -1889,7 +1889,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
         <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
@@ -1901,7 +1901,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <foaf:name xml:lang="en">Bluarancio</foaf:name>
         <foaf:name xml:lang="it">Bluarancio</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/project/LEO -->
@@ -1914,7 +1914,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
         <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis -->
@@ -1922,7 +1922,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/analysis">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Doubtful -->
@@ -1935,7 +1935,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Fresh -->
@@ -1948,7 +1948,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Frozen -->
@@ -1961,7 +1961,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Medium -->
@@ -1974,7 +1974,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Mini -->
@@ -1987,7 +1987,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Negative -->
@@ -2001,7 +2001,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Positive -->
@@ -2015,7 +2015,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Refrigerated -->
@@ -2028,7 +2028,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Revisable -->
@@ -2041,7 +2041,7 @@ Laboratory analyses always refer to a company and can be carried out on a single
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Vaccinated -->
@@ -2059,4 +2059,3 @@ Laboratory analyses always refer to a company and can be carried out on a single
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

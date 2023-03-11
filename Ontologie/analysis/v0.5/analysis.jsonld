@@ -850,7 +850,7 @@
   "@id" : "https://w3id.org/leo/onto/analysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/7edkt5d77axxwqe/Analysis.png?raw=1"
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Analysis.png"
   } ],
   "http://purl.org/dc/terms/accrualPeriodicity" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
@@ -880,7 +880,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-01-05"
+    "@value" : "2023-03-11"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
@@ -898,7 +898,7 @@
     "@value" : "Analysis Ontology - LabData and HeathData"
   }, {
     "@language" : "it",
-    "@value" : "Ontologia delle Analisi - LabData e HealthData"
+    "@value" : "Ontologia delle Analisi di Laboratorio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -912,10 +912,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Analysis Ontology - LabData"
+    "@value" : "Analysis Ontology - LabData and HealthData"
   }, {
     "@language" : "it",
-    "@value" : "Ontologia delle Analisi - LabData"
+    "@value" : "Ontologia delle Analisi di Laboratorio"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://w3id.org/italia/onto/MU"
@@ -2909,10 +2909,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property that allows one to specify for each observable property in lab data the reference measurement unit. For instance, in the case of coagulation time for milk the measurement unit of reference is minute, etc."
+    "@value" : "Generic property that allows one to specify a reference unit of measure to some thing in the modelled domain."
   }, {
     "@language" : "it",
-    "@value" : "Proprietà che consente di specificare per ogni proprietà/parametro osservato nei dati di laboratorio l'unità di misura di riferimento. Per esempio nel caso del tempo di coagulazione R l'unità di misura di riferimento è il minuto, ecc."
+    "@value" : "Proprietà generica che consente di specificare un'unità di misura di riferimento per qualche oggetto nel dominio modellato."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
