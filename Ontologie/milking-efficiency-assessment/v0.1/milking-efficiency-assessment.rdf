@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/leo/onto/milking-efficiency-assessment#"
+<rdf:RDF xmlns="https://w3id.org/leo/onto/milking-efficiency-assessment/"
      xml:base="https://w3id.org/leo/onto/milking-efficiency-assessment"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
