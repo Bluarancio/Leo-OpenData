@@ -37,7 +37,7 @@
                                                                                                "efficienza"@it ,
                                                                                                "efficienza mungitura"@it ,
                                                                                                "mungitura"@it ;
-                                                           <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
+                                                           <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
                                                            <https://w3id.org/italia/onto/ADMS/acronym> "MEA" ;
                                                            <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                            <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;

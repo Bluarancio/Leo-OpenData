@@ -44,7 +44,7 @@
         <dcat:keyword xml:lang="it">efficienza</dcat:keyword>
         <dcat:keyword xml:lang="it">efficienza mungitura</dcat:keyword>
         <dcat:keyword xml:lang="it">mungitura</dcat:keyword>
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <ADMS:acronym>MEA</ADMS:acronym>
         <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>

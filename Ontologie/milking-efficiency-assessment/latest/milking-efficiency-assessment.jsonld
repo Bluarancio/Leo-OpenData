@@ -589,7 +589,7 @@
     "@value" : "mungitura"
   } ],
   "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/HEAL"
+    "@id" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
   } ],
   "https://w3id.org/italia/onto/ADMS/acronym" : [ {
     "@value" : "MEA"
