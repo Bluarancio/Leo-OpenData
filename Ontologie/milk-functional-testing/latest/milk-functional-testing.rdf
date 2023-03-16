@@ -1,0 +1,974 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/milk-functional-testing/"
+     xml:base="https://w3id.org/leo/onto/milk-functional-testing/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/milk-functional-testing">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/leo/onto/livestock-assessment"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milk-functional-testing.png"/>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati relativi ai controlli funzionali svolti nell&apos;ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema nazionale SIALL a fronte dell’acquisizione di dati di Controllo funzionale, in particolare nel momento in cui il controllo è chiuso ed è emesso il prestampato, comunica al progetto LEO in cooperazione applicativa, una serie misure calcolate legate al rilevamento del Latte sul singolo soggetto.</terms:description>
+        <terms:description xml:lang="en">This is the ontology used to model the data about functional tests carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL national system, when acquiring functional control data, in particular when the control is closed and the pre-print is issued, communicates to the LEO project through web services, a series of calculated measures linked to the detection of milk on the individual farm animal.</terms:description>
+        <terms:identifier xml:lang="it">onto-BA-13</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-11</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-11</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
+        <terms:title xml:lang="en">Milk Functional Testing Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia dei Controlli Funzionali sul Latte</terms:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati relativi ai controlli funzionali svolti nell&apos;ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema nazionale SIALL a fronte dell’acquisizione di dati di Controllo funzionale, in particolare nel momento in cui il controllo è chiuso ed è emesso il prestampato, comunica al progetto LEO in cooperazione applicativa, una serie misure calcolate legate al rilevamento del Latte sul singolo soggetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology used to model the data about functional tests carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL national system, when acquiring functional control data, in particular when the control is closed and the pre-print is issued, communicates to the LEO project through web services, a series of calculated measures linked to the detection of milk on the individual farm animal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Milk Functional Testing Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia dei Controlli Funzionali sul Latte</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.1 - 2023 - Creation of the ontology</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.1 - 2023 - Creazione dell&apos;ontologia</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">controllo</dcat:keyword>
+        <dcat:keyword xml:lang="it">controllo funzionale</dcat:keyword>
+        <dcat:keyword xml:lang="it">latte</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+        <ADMS:acronym>MFT</ADMS:acronym>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/MFT-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/MFT-RDF-XML"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/milk-functional-testing</ADMS:officialURI>
+        <ADMS:prefix>mft</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <ADMS:status>initial draft</ADMS:status>
+        <ADMS:target xml:lang="it">Comunità Open Data</ADMS:target>
+        <ADMS:target>Imprese</ADMS:target>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasUnitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"/>
+        <rdfs:comment xml:lang="en">Property used to link the milk functional testing to the number and types of milkings evaluated in the testing.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per collegare il controllo funzionale del latte al numero/tipi di mungiture valutate nel test.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">ha numero di mungiture controllate</rdfs:label>
+        <rdfs:label xml:lang="en">has number of evaluated milking</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"/>
+        <rdfs:comment xml:lang="en">Property used to link the milk functional testing with the categories of milk sample</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per collegare il controllo funzionale del latte con le categorie di campioni di latte</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">ha tipo campionamento del latte</rdfs:label>
+        <rdfs:label xml:lang="en">has milk sample type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+        <rdfs:comment xml:lang="en">Property that allows one to indicate the frequency of the milk functional testing</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di indicare la frequenza del controllo nel contesto dei controlli funzionali latte</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">ha frequenza del controllo</rdfs:label>
+        <rdfs:label xml:lang="en">has testing frequency</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <rdfs:comment xml:lang="en">Property that links the milk functional testing to the moment of the day in which the milk quantity measurement occurs</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega il controllo funzionale al momento della giornata in cui viene registrata la quantità di latte</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">ha momento di rilevamento quantità latte</rdfs:label>
+        <rdfs:label xml:lang="en">has time of milk quantity measurement</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Property used to represent whether the milking performed for the functional testing was performed with a robot</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per rappresentare se la mungitura effettuata per il controllo funzionale è stata fatta con robot</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">is milking performed with robot</rdfs:label>
+        <rdfs:label xml:lang="it">la mungitura è effettuata con robot</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Number of daily milkings carried out by the farm under functional control</rdfs:comment>
+        <rdfs:comment xml:lang="it">Numero mungiture giornaliere effettuate dall&apos;azienda sotto controllo funzionale</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">number performed milking</rdfs:label>
+        <rdfs:label xml:lang="en">numero di mungiture effettuate</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/EventOrSituation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/co/LivestockFarm -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarm"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta le mungiture interessate dal controllo funzionale. La classe definisce tre tipi di individui (valori costanti): A=Tutte, C=Una mungitura non alternata, T=Una mungitura alternata</rdfs:comment>
+        <rdfs:comment xml:lang="it">The class represents the milkings involved in the functional control. The class defines three types of individuals (constant values): A=All, C=One non-alternating milking, T=One alternating milking</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Evaluated Milking</rdfs:label>
+        <rdfs:label xml:lang="it">Mungitura Controllata</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">In caso di una sola mungitura controllata, la classe rappresenta la modalità con cui si stima la mungitura mancante per avere il latte prodotto in 24 ore</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the case of a single controlled milking, the class represents the way the missing milking is estimated in order to have the milk produced in 24 hours</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Milk Estimate Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Stima</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/hasSubject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/co/LivestockFarm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe che modella i controlli funzionali sul latte. In generale i controlli funzionali consistono nel rilievo di dati produttivi e riproduttivi su animali per la produzione della carne e del latte. Le specie controllate per la produzione della carne sono i bovini e gli ovini, mentre quelle per la produzione del latte sono i bovini, i bufalini e gli ovicaprini. I controlli funzionali hanno una frequenza di controllo e misurano dei parametri quali il latte alle 24 ore, il grasso alle 24 ore, le proteine alle 24 ore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that models milk functional testing. In general, functional controls consist of recording production and reproductive data on farm animals for meat and milk production. The species controlled for meat production are cattle and sheep, while those for milk production are cattle, buffalo and sheep and goats. Functional controls have a control frequency and measure parameters such as milk at 24 hours, fat at 24 hours, protein at 24 hours.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Controllo Funzionale sul Latte</rdfs:label>
+        <rdfs:label xml:lang="en">Milk Functional Testing</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">La classe delle modalità di campionamento del latte. La classe ha valori controllati (individui) che sono: N=Non Prelevato, P=Proporzionale su Ogni mungitura, U=Unico in una Sola Mungitura</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of milk sample cateogiers. The class has controlled values (individuals) which are: N=Not Collected, P=Proportional Sample on Each Milking, U=Unique Sample in One Milking</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Milk Sample Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Campionamento Latte</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe delle frequenze del controllo. In particolare, rappresenta il numero di settimane che intercorre fra due controlli consecutivi (in genere, per i controlli latte, 4,5,6)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The control frequency class. In particular, it represents the number of weeks between two consecutive controls (typically, for milk controls, 4,5,6)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Frequenza del Controllo</rdfs:label>
+        <rdfs:label xml:lang="en">Testing Frequency</rdfs:label>
+        <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:comment xml:lang="it">La classe che identifica chi effettua il controllo funzionale. Essa assume i seguenti valori controllati: A = Controllore AIA, B = Allevatore, C= Allevatore e Controllore</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that identifies who performs the functional check. It takes the following controlled values: A = AIA Controller, B = Farmer, C = Farmer and Controller</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Ruolo Esecutore Controllo</rdfs:label>
+        <rdfs:label xml:lang="en">Testing Performer Role</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/TimePeriod -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+        <rdfs:comment xml:lang="it">Momento della giornata in cui viene registrata la quantità di latte. La classe assume valori controllati (individui) che sono: M=Mattina, MPS= Mattina,Pomeriggio, Sera, MS=Mattina, Sera, P=Pomeriggio, S=Sera.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Time of the day when the amount of milk is recorded. The class takes controlled values (individuals) which are: M=Morning, MPS=Morning,Afternoon, Evening, MS=Morning, Evening, P=Afternoon, S=Evening.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Periodo temporale (del Rilevamento Quantità di Latte)</rdfs:label>
+        <rdfs:label xml:lang="en">TIme Period (of Milk Quantity Detection)</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/MFT-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/MFT-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sui controlli funzionali sul latte</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of milk functional testings ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia Controlli Funzionali sul Latte</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of Milk Functional Testing Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sui controlli funzionali sul latte</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of milk functional testings ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Controlli Funzionali sul Latte</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of Milk Functional Testing Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/milk-functional-testing/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.jsonld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sui controlli funzionali sul latte</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/Turtle of milk functional testings ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia Controlli Funzionali sul Latte</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of Milk Functional Testing Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sui controlli funzionali sul latte</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of milk functional testings ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Controlli Funzionali sul Latte</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of Milk Functional Testing Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/milk-functional-testing/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/MFT-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/MFT-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sui controlli funzionali sul latte</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of milk functional testings ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia Controlli Funzionali sul Latte</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of Milk Functional Testing Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sui controlli funzionali sul latte</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of milk functional testings ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Controlli Funzionali sul Latte</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of Milk Functional Testing Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/milk-functional-testing/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.rdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/A">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">All</rdfs:label>
+        <rdfs:label xml:lang="it">Tutte</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/C -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/C">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">One Non-Alternating Milking</rdfs:label>
+        <rdfs:label xml:lang="it">Una Mungitura Non Alternata</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/T -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/T">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">One Alternating Milking</rdfs:label>
+        <rdfs:label xml:lang="it">Una mungitura alternata</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/F -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/F">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Calculation Coefficient</rdfs:label>
+        <rdfs:label xml:lang="it">Coefficiente Calcolo</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/J -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/J">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Fornita da Lattometro Elettronico</rdfs:label>
+        <rdfs:label xml:lang="en">Supplied by Electronic Lactometer</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/K -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/K">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Comparison with Tank</rdfs:label>
+        <rdfs:label xml:lang="it">Confronto con Tank</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/Y -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/Y">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Doubling</rdfs:label>
+        <rdfs:label xml:lang="it">Raddoppio</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/N -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/N">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Non Prelevato</rdfs:label>
+        <rdfs:label xml:lang="en">Not Collected</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/P -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/P">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Proportional Sample on Each Milking</rdfs:label>
+        <rdfs:label xml:lang="it">Proporzionale su Ogni Mungitura</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/U -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/U">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Unico in una Sola Mungitura</rdfs:label>
+        <rdfs:label xml:lang="en">Unique Sample in One Milking</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/performer-role/A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/performer-role/A">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">AIA Controller</rdfs:label>
+        <rdfs:label xml:lang="it">Controllore AIA</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/performer-role/B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/performer-role/B">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Allevatore</rdfs:label>
+        <rdfs:label xml:lang="en">Farmer</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/performer-role/C -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/performer-role/C">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Allevatore e Controllore</rdfs:label>
+        <rdfs:label xml:lang="en">Farmer and Controller</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/time-period/M -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/time-period/M">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Mattina</rdfs:label>
+        <rdfs:label xml:lang="en">Morning</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/time-period/MPS -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/time-period/MPS">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Mattina, Pomeriggio, Sera</rdfs:label>
+        <rdfs:label xml:lang="en">Morning, Afternoon, Evening</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/time-period/MS -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/time-period/MS">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="it">Mattina, Sera</rdfs:label>
+        <rdfs:label xml:lang="en">Morning, Evening</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/time-period/P -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/time-period/P">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Afternoon</rdfs:label>
+        <rdfs:label xml:lang="it">Pomeriggio</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/milk-functional-testing/time-period/S -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/milk-functional-testing/time-period/S">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/milk-functional-testing"/>
+        <rdfs:label xml:lang="en">Evening</rdfs:label>
+        <rdfs:label xml:lang="it">Sera</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
