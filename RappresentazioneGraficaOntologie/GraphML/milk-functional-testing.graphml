@@ -13,7 +13,7 @@
   <key attr.name="description" attr.type="string" for="edge" id="d9"/>
   <key for="edge" id="d10" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
-    <data key="d0"/>
+    <data key="d0" xml:space="preserve"/>
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
@@ -119,7 +119,7 @@
           <y:Geometry height="43.0" width="97.78125" x="-188.30792085603846" y="484.50000000000006"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.78125" x="5.0" xml:space="preserve" y="10.078125">rdfs:Literal</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.78125" x="5.0" xml:space="preserve" y="10.078124999999943">rdfs:Literal</y:NodeLabel>
           <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
@@ -293,11 +293,11 @@ rdfs:label "Evening"@en</y:NodeLabel>
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="49.70263671875" width="215.87499999999994" x="355.3281250000001" y="626.79736328125"/>
+          <y:Geometry height="49.70263671875" width="247.625" x="355.3281250000001" y="626.79736328125"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="205.875" x="5.0" xml:space="preserve" y="4.007568359375">rdfs:label "Controllore"@it
-rdfs:label "Controller"@en</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="237.625" x="4.0" xml:space="preserve" y="4.0">rdfs:label "Controllore AIA"@it
+rdfs:label "AIA Controller"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -475,7 +475,7 @@ rdfs:label "Doubling"@en</y:NodeLabel>
           <y:Geometry height="49.70263671875" width="271.4531249999999" x="763.093792349848" y="536.29736328125"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="231.3046875" x="20.074218749999886" xml:space="preserve" y="4.007568359375">rdfs:label "Non Prelevato"@it
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="231.3046875" x="20.07421875" xml:space="preserve" y="4.007568359375">rdfs:label "Non Prelevato"@it
 rdfs:label "Not Collected"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
@@ -485,11 +485,11 @@ rdfs:label "Not Collected"@en</y:NodeLabel>
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="49.70263671875" width="442.83880592591004" x="763.0937923498481" y="591.148681640625"/>
+          <y:Geometry height="49.70263671875" width="420.4296875" x="762.140667349848" y="591.148681640625"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="411.3671875" x="15.735809212955019" xml:space="preserve" y="4.007568359375">rdfs:label "Proporzionale su ogni mungitura"@it
-rdfs:label "Proportional sample on each milking"@en</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="410.4296875" x="5.0" xml:space="preserve" y="4.007568359375">rdfs:label "Proporzionale su Ogni Mungitura"@it
+rdfs:label "Proportional Sample on Each Milking"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -498,11 +498,11 @@ rdfs:label "Proportional sample on each milking"@en</y:NodeLabel>
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="49.70263671875" width="368.0234375" x="763.0937923498481" y="646.0"/>
+          <y:Geometry height="49.70263671875" width="369.9296875" x="762.140667349848" y="646.0"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="358.0234375" x="5.0" xml:space="preserve" y="4.007568359375">rdfs:label "Unico in una sola mungitura"@it
-rdfs:label "Unique sample in one milking"@en</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="359.9296875" x="5.0" xml:space="preserve" y="4.007568359375">rdfs:label "Unico in Una Sola Mungitura"@it
+rdfs:label "Unique Sample in One Milking"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -579,11 +579,11 @@ rdfs:label "All"@en</y:NodeLabel>
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="48.0" width="352.0625" x="-615.0452379731225" y="394.0"/>
+          <y:Geometry height="48.0" width="361.921875" x="-619.9749254731225" y="394.0"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="342.0625" x="5.0" xml:space="preserve" y="3.15625">rdfs:label "Una mungitura non alternata"@it
-rdfs:label "A non-alternating milking"@en</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="351.921875" x="5.0" xml:space="preserve" y="3.15625">rdfs:label "Una mungitura non alternata"@it
+rdfs:label "One Non-Alternating Milking"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -592,11 +592,11 @@ rdfs:label "A non-alternating milking"@en</y:NodeLabel>
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="48.0" width="345.5628049258912" x="-605.7467147740138" y="446.0"/>
+          <y:Geometry height="48.0" width="321.0859375" x="-580.0843004731225" y="446.0"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="307.3125" x="19.125152462945607" xml:space="preserve" y="3.15625">rdfs:label "Una mungitura alternata"@it
-rdfs:label "An alternating milking"@en</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="311.0859375" x="5.0" xml:space="preserve" y="3.15625">rdfs:label "Una mungitura alternata"@it
+rdfs:label "One Alternating Milking"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -639,7 +639,7 @@ rdfs:label "An alternating milking"@en</y:NodeLabel>
           <y:Geometry height="44.0" width="195.6015625" x="1045.9194508859023" y="499.2112704141934"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.6015625" x="5.0" xml:space="preserve" y="10.578124999999943">analysis:UnitOfMeasure</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.6015625" x="5.0" xml:space="preserve" y="10.578125000000057">analysis:UnitOfMeasure</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -650,7 +650,7 @@ rdfs:label "An alternating milking"@en</y:NodeLabel>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="217.2259003847152" width="582.0921562456834" x="109.32643382239442" y="-268.55850511544077"/>
+              <y:Geometry height="244.103515625" width="582.0921562456834" x="109.32643382239442" y="-287.40225511544077"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="bold" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="582.0921562456834" x="0.0" xml:space="preserve" y="0.0">Prefixes   </y:NodeLabel>
@@ -658,7 +658,7 @@ rdfs:label "An alternating milking"@en</y:NodeLabel>
               <y:DropShadow color="#D2D2D2" offsetX="4" offsetY="4"/>
               <y:State closed="false" closedHeight="74.509765625" closedWidth="387.8295898437501" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="11" bottomF="10.809884759715203" left="0" leftF="0.0" right="51" rightF="50.67809374568344" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="51" rightF="50.67809374568344" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="298.7753623188405" y="231.60869565217376"/>
@@ -681,14 +681,16 @@ rdfs:label "An alternating milking"@en</y:NodeLabel>
               <y:Geometry height="22.2421875" width="501.4140625" x="124.32643382239442" y="-165.63858324044077"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="154.75" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="491.4140625" x="5.0" xml:space="preserve" y="-66.25390625">:               https://w3id.org/leo/onto/milk-functional-testing/
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="192.4375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="491.4140625" x="5.0" xml:space="preserve" y="-85.09765625">:               https://w3id.org/leo/onto/milk-functional-testing/
 la:            https://w3id.org/leo/onto/livestock-assessment/
 ti:             https://w3id.org/italia/onto/TI/
 ro:            https://w3id.org/italia/onto/RO/
 xsd:          http://www.w3.org/2001/XMLSchema#
 rdfs:         http://www.w3.org/2000/01/rdf-schema#
 rdf:           http://www.w3.org/1999/02/22-rdf-syntax-ns#
-analysis:   https://w3id.org/leo/onto/analysis/</y:NodeLabel>
+analysis:   https://w3id.org/leo/onto/analysis/
+co:           https://w3id.org/leo/onto/co/
+animal:     https://w3id.org/leo/onto/animal/</y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -928,7 +930,7 @@ l0:name<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" an
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="26.665893554687614" y="1.4900951101529927">
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="26.665588378906364" y="1.5324524120367187">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
@@ -1059,7 +1061,7 @@ l0:name<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" an
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="19.68857655617353" y="2.0">
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="19.212014056173416" y="2.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
@@ -1074,7 +1076,7 @@ l0:name<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" an
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="19.69071278664228" y="2.4841200078057">
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="19.214150286642166" y="2.4743808996014423">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
@@ -1126,7 +1128,7 @@ l0:name<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" an
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="-26.504909898025886" y="2.0">
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="-24.040066148025886" y="2.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
@@ -1141,7 +1143,7 @@ l0:name<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" an
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="-25.105495835525886" y="2.0">
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="-24.512722398025886" y="2.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
           <y:BendStyle smoothed="false"/>

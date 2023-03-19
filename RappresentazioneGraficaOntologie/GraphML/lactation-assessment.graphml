@@ -131,10 +131,10 @@ rdfs:label "Closed"@en</y:NodeLabel>
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="44.0" width="126.2578125" x="118.8479207356769" y="410.148681640625"/>
+          <y:Geometry height="44.0" width="180.25" x="91.8518269856769" y="410.148681640625"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.2578125" x="5.0" xml:space="preserve" y="10.578125">:LifeEventType</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="170.25" x="5.0" xml:space="preserve" y="10.578125">:AnimalLifeEventType</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -179,11 +179,11 @@ rdfs:label "Parturition"@en</y:NodeLabel>
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="49.70263671875" width="279.671875" x="-152.39192708333337" y="554.2494829430868"/>
+          <y:Geometry height="49.70263671875" width="265.84375" x="-138.56380208333337" y="554.2494829430868"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="269.671875" x="5.0" xml:space="preserve" y="4.007568359375">rdfs:label "Aborto Tardivo"@it
-rdfs:label "Belated Parturition"@en</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.6875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="255.84375" x="5.0" xml:space="preserve" y="4.007568359375">rdfs:label "Aborto Tardivo"@it
+rdfs:label "Belated Abortion"@en</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -458,12 +458,12 @@ animal:     https://w3id.org/leo/onto/animal/</y:NodeLabel>
           </y:Path>
           <y:LineStyle color="#008000" type="line" width="1.0"/>
           <y:Arrows source="transparent_circle" target="white_delta"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="135.90625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#008000" verticalTextPosition="bottom" visible="true" width="368.0625" x="28.765786115306355" xml:space="preserve" y="-237.5171880062824">:isLactationOpenInCompany
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="135.90625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#008000" verticalTextPosition="bottom" visible="true" width="320.6015625" x="52.496254865306355" xml:space="preserve" y="-237.5171880062824">:isLactationOpenInCompany
 :isOxytocinUsed
 :isProjectedLactationAlpinePasture
 :isLactationDurationBelowBreedLimit
 :isLactationDuringCovidPeriod
-:isCheckIrregularOrNotReachedMinNumChecks
+:isIrregularOrMinNumChecksNotReached
 
 <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
