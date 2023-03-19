@@ -1,0 +1,997 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/hasEventTypeGeneratingLactation"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/hasLactationStatus"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/hasParturitionOrder"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rightsHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#accessURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#contactPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#downloadURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#theme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/SemanticAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/acronym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/hasContributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/hasKeyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/hasTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/officialURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/prefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/ADMS/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/LACT-JSON-LD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sulla lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in JSON-LD of lactation assessment ontology"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione JSON-LD ontologia Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "JSON-LD distribution of Lactation Assessment Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sulla lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in JSON-LD of lactation assessment ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione JSON-LD ontologia Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "JSON-LD distribution of Lactation Assessment Ontology"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/lactation-assessment/latest"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.jsonld"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/LACT-RDF-TURTLE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sulla lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/Turtle of lactation assessment ontology"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/Turtle ontologia Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/Turtle distribution of Lactation Assessment Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sulla lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/Turtle of lactation assessment ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/Turtle ontologia Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/Turtle distribution of Lactation Assessment Ontology"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/lactation-assessment/latest"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.ttl"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/data/distribution/LACT-RDF-XML",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sulla lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/XML of lactation assessment ontology"
+  } ],
+  "http://purl.org/dc/terms/format" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/XML ontologia Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/XML distribution of Lactation Assessment Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sulla lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the distribution in RDF/XML of lactation assessment ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Distribuzione RDF/XML ontologia Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "RDF/XML distribution of Lactation Assessment Ontology"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.leo-project.it/Ontologie/lactation-assessment/latest"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.rdf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/co/LivestockFarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/lactation-assessment.png"
+  } ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia usata per modellare i dati relativi ai controlli sulla lattazione svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema SIALL a fronte dell’acquisizione di dati di Controllo funzionale, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, raccoglie informazioni sulla lattazione sia per i soggetti da latte che per i soggetti da carne. Tra queste informazioni vi è anche l'ordine di parto attraverso cui sono categorizzati a livello zootecnico le primipare e le pluripare.  Per i soggetti allevati da latte si tracciano informazioni inerenti alla stima della produzione effettiva (latte, grasso e proteine) e la stima del latte convenzionale cioè il latte prodotto ad una lunghezza standard di lattazione; se il calcolo della produzione effettiva e della convenzionale è anomalo rispetto allo standard AIA la lattazione presenta delle note"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology used to model data on lactation controls carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL system, when acquiring Functional Testing data, at the time when parturition and late abortion events are detected, collects information on lactation for both dairy and beef animals. Among this information is also the parturition order through which primiparae and pluriparae are categorised on a zootechnical level.  For dairy animals, information on estimated actual production (milk, fat and protein) and estimated conventional milk, i.e. the milk produced at a standard lactation length, is tracked; if the calculation of actual and conventional production is abnormal compared to the AIA standard, the lactation has some note."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@language" : "it",
+    "@value" : "onto-BA-13"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-03-17"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-03-17"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
+  } ],
+  "http://purl.org/dc/terms/subject" : [ {
+    "@id" : "http://eurovoc.europa.eu/6271"
+  }, {
+    "@id" : "http://eurovoc.europa.eu/6272"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Lactation Assessment Ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia della Lattazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa è l'ontologia usata per modellare i dati relativi ai controlli sulla lattazione svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema SIALL a fronte dell’acquisizione di dati di Controllo funzionale, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, raccoglie informazioni sulla lattazione sia per i soggetti da latte che per i soggetti da carne. Tra queste informazioni vi è anche l'ordine di parto attraverso cui sono categorizzati a livello zootecnico le primipare e le pluripare.  Per i soggetti allevati da latte si tracciano informazioni inerenti alla stima della produzione effettiva (latte, grasso e proteine) e la stima del latte convenzionale cioè il latte prodotto ad una lunghezza standard di lattazione; se il calcolo della produzione effettiva e della convenzionale è anomalo rispetto allo standard AIA la lattazione presenta delle note"
+  }, {
+    "@language" : "en",
+    "@value" : "This is the ontology used to model data on lactation controls carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL system, when acquiring Functional Testing data, at the time when parturition and late abortion events are detected, collects information on lactation for both dairy and beef animals. Among this information is also the parturition order through which primiparae and pluriparae are categorised on a zootechnical level.  For dairy animals, information on estimated actual production (milk, fat and protein) and estimated conventional milk, i.e. the milk produced at a standard lactation length, is tracked; if the calculation of actual and conventional production is abnormal compared to the AIA standard, the lactation has some note."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lactation Ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia della Lattazione"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestock-assessment"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "Version 0.1 - 2023 - Creation of the ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Versione 0.1 - 2023 - Creazione dell'ontologia"
+  } ],
+  "http://www.w3.org/ns/dcat#contactPoint" : [ {
+    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "it",
+    "@value" : "controllo"
+  }, {
+    "@language" : "it",
+    "@value" : "lattazione"
+  }, {
+    "@language" : "it",
+    "@value" : "latte"
+  }, {
+    "@language" : "it",
+    "@value" : "ordine di parto"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
+    "@value" : "LACT"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
+    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationStatus"
+  }, {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
+    "@id" : "https://w3id.org/leo/data/distribution/LACT-JSON-LD"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/LACT-RDF-TURTLE"
+  }, {
+    "@id" : "https://w3id.org/leo/data/distribution/LACT-RDF-XML"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
+    "@value" : "lact"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
+    "@id" : "https://w3id.org/leo/data/project/LEO"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/status" : [ {
+    "@value" : "initial draft"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/target" : [ {
+    "@language" : "it",
+    "@value" : "Comunità Open Data"
+  }, {
+    "@value" : "Imprese"
+  }, {
+    "@value" : "Pubbliche Amministrazioni"
+  }, {
+    "@language" : "it",
+    "@value" : "Specialisti del settore zootecnico"
+  } ],
+  "https://w3id.org/italia/onto/ADMS/type" : [ {
+    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/lactation-assessment/LactationStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Aperta"
+  }, {
+    "@language" : "en",
+    "@value" : "Open"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/ABT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Aborto Tardivo"
+  }, {
+    "@language" : "en",
+    "@value" : "Belated Abortion"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta se il tipo di evento della vita dell'animale che ha generato la lattazione è un Parto o un Aborto Tardivo. Assume due valori costanti (individui/istanze): PA = Parto, ABT = Aborto Tardivo"
+  }, {
+    "@language" : "en",
+    "@value" : "The class representing whether the type of event in the animal's life that gave rise to lactation is a Parturition or a Belated Abortion. It takes two constant values (individuals): PA = Parturition, ABT = Belated Abortion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal Life Event Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo Evento della Vita dell'Animale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/lactation-assessment/LactationStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Chiusa"
+  }, {
+    "@language" : "en",
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che modella i controlli sulla lattazione. In particolare, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, si raccolgono una serie di informazioni di controllo della lattazione sia per i soggetti da latte che per i soggetti da carne. I controlli avvengono in una data, la data della lattazione che coincide con la data di parto o aborto tardivo. Inoltre, i valori rilevati hanno un'unità di misura di riferimento relativa alla quantità di latte prodotto (Bovini e bufali: Kg, ovini e caprini:Litri)."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that models Lactation Assessment."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that models lactation controls. In particular, when parturition and late abortion events are detected, a set of lactation control information is collected for both dairy and beef animals. The controls take place on a date, the lactation date, which coincides with the parturition or late abortion date. In addition, the values recorded have a reference unit of measurement relating to the quantity of milk produced (cattle and buffalo: Kg, sheep and goats: Litres)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Controllo Lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Lactation Assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe utilizzata per modellare lo stato della lattazione che può essere Aperta (lattazione in corso) o Chiusa (lattazione terminata con evento asciutta)"
+  }, {
+    "@language" : "en",
+    "@value" : "The class used to model the state of lactation, which can be Open (lactation in progress) or Closed (lactation ended with dry event)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lactation Status"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato della Lattazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/PA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Parto"
+  }, {
+    "@language" : "en",
+    "@value" : "Parturition"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe rappresenta il numero di parti realizzati dall'animale nella sua carriera"
+  }, {
+    "@language" : "en",
+    "@value" : "The class represents the number of parturitions made by the animal in its career"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ordine di Parto"
+  }, {
+    "@language" : "en",
+    "@value" : "Parturition Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/hasEventTypeGeneratingLactation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that allows one to specify which type of animal life event generated the lactation, i.e. whether parturition or belated abortion"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che consente di specificare quale tipo di evento ha generato la lattazione, quindi se parto o se aborto tardivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo evento della vita che genera lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has event type generating lactation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/hasLactationStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate whether lactation is open or closed in the lactation control"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare se la lattazione è aperta o chiusa nel controllo della lattazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha stato della lattazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has lactation status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/hasParturitionOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate the information about the parturition order of the lactation"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare le informazioni sull'ordine di parto della lattazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha ordine di parto"
+  }, {
+    "@language" : "en",
+    "@value" : "has parturition order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/isIrregularOrMinNumChecksNotReached",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate whether the number of successive controls used for estimating lactation production is less than the established number. This may be caused by the presence, in some cases, of too high intervals of days between two successive controls"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare se Il numero di controlli successivi utilizzati per la stima della produzione della lattazione è inferiore a quello stabilito. Questo può essere causato della presenza, in qualche caso, di intervalli di giorni tra due controlli successivi troppo elevato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is irregular or minimum number of checks is not reached"
+  }, {
+    "@language" : "it",
+    "@value" : "è controllo irregolare/numero minimo di controlli non raggiunto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/isLactationDurationBelowBreedLimit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate whether the distance in parturition days/last functional milk testing is less than the minimum value set for the species"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà usata per indicare se la distanza in giorni parto/ultimo controllo funzionale latte è inferiore al valore minimo stabilito per la specie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is lactation duration below breed limit"
+  }, {
+    "@language" : "it",
+    "@value" : "è durata lattazione inferiore al limite di razza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/isLactationDuringCovidPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Property used to indicate whether the lactiona took place during the period of COVID restrictions"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare se la lattazione effettuata in periodo di restrizioni COVID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is lactation during covid period"
+  }, {
+    "@language" : "it",
+    "@value" : "è lattazione in periodo Covid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/isLactationOpenInCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate whether lactation is open on the farm company being controlled."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare se la lattazione è aperta nell'azienda in fase di controllo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is lactation open in company"
+  }, {
+    "@language" : "it",
+    "@value" : "è lattazione aperta in azienda (attendibile)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/isOxytocinUsed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate the fact that at the functional testing the farmer injected oxytocin at milking to facilitate the release of milk from the udder"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per segnalare il fatto che al controllo funzionale l'allevatore ha iniettato ossitocina al momento della mungitura per facilitare l'emissione del latte dalla mammella"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is oxytocin used"
+  }, {
+    "@language" : "it",
+    "@value" : "è ossitocina rilevata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/lactation-assessment/isProjectedLactationAlpinePasture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "On animals taken to pasture in the summer months and without functional control in the period, the property allows one to indicate whether lactation is estimated using the functional testings and an estimate of milk production in the alpine pasture"
+  }, {
+    "@language" : "it",
+    "@value" : "Su animali portati all'apeggio nei mesi estivi e senza controllo funzionale nel periodo, la proprietà permette di indicare se la lattazione è stimata utilizzando i controlli funzionali e una stima della produzione di latte in alpeggio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/lactation-assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is projected lactation alpine pasture"
+  }, {
+    "@language" : "it",
+    "@value" : "è lattazione proiettata per alpeggio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+} ]

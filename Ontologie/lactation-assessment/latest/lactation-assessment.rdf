@@ -1,0 +1,730 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/leo/onto/lactation-assessment/"
+     xml:base="https://w3id.org/leo/onto/lactation-assessment/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/leo/onto/lactation-assessment">
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/lactation-assessment/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/leo/onto/livestock-assessment"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/lactation-assessment.png"/>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati relativi ai controlli sulla lattazione svolti nell&apos;ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema SIALL a fronte dell’acquisizione di dati di Controllo funzionale, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, raccoglie informazioni sulla lattazione sia per i soggetti da latte che per i soggetti da carne. Tra queste informazioni vi è anche l&apos;ordine di parto attraverso cui sono categorizzati a livello zootecnico le primipare e le pluripare.  Per i soggetti allevati da latte si tracciano informazioni inerenti alla stima della produzione effettiva (latte, grasso e proteine) e la stima del latte convenzionale cioè il latte prodotto ad una lunghezza standard di lattazione; se il calcolo della produzione effettiva e della convenzionale è anomalo rispetto allo standard AIA la lattazione presenta delle note</terms:description>
+        <terms:description xml:lang="en">This is the ontology used to model data on lactation controls carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL system, when acquiring Functional Testing data, at the time when parturition and late abortion events are detected, collects information on lactation for both dairy and beef animals. Among this information is also the parturition order through which primiparae and pluriparae are categorised on a zootechnical level.  For dairy animals, information on estimated actual production (milk, fat and protein) and estimated conventional milk, i.e. the milk produced at a standard lactation length, is tracked; if the calculation of actual and conventional production is abnormal compared to the AIA standard, the lactation has some note.</terms:description>
+        <terms:identifier xml:lang="it">onto-BA-13</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-17</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-17</terms:modified>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
+        <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
+        <terms:title xml:lang="en">Lactation Assessment Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia della Lattazione</terms:title>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati relativi ai controlli sulla lattazione svolti nell&apos;ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema SIALL a fronte dell’acquisizione di dati di Controllo funzionale, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, raccoglie informazioni sulla lattazione sia per i soggetti da latte che per i soggetti da carne. Tra queste informazioni vi è anche l&apos;ordine di parto attraverso cui sono categorizzati a livello zootecnico le primipare e le pluripare.  Per i soggetti allevati da latte si tracciano informazioni inerenti alla stima della produzione effettiva (latte, grasso e proteine) e la stima del latte convenzionale cioè il latte prodotto ad una lunghezza standard di lattazione; se il calcolo della produzione effettiva e della convenzionale è anomalo rispetto allo standard AIA la lattazione presenta delle note</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology used to model data on lactation controls carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL system, when acquiring Functional Testing data, at the time when parturition and late abortion events are detected, collects information on lactation for both dairy and beef animals. Among this information is also the parturition order through which primiparae and pluriparae are categorised on a zootechnical level.  For dairy animals, information on estimated actual production (milk, fat and protein) and estimated conventional milk, i.e. the milk produced at a standard lactation length, is tracked; if the calculation of actual and conventional production is abnormal compared to the AIA standard, the lactation has some note.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">Lactation Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia della Lattazione</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.1 - 2023 - Creation of the ontology</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.1 - 2023 - Creazione dell&apos;ontologia</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+        <dcat:keyword xml:lang="it">controllo</dcat:keyword>
+        <dcat:keyword xml:lang="it">lattazione</dcat:keyword>
+        <dcat:keyword xml:lang="it">latte</dcat:keyword>
+        <dcat:keyword xml:lang="it">ordine di parto</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+        <ADMS:acronym>LACT</ADMS:acronym>
+        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationStatus"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder"/>
+        <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LACT-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LACT-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LACT-RDF-XML"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/lactation-assessment</ADMS:officialURI>
+        <ADMS:prefix>lact</ADMS:prefix>
+        <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
+        <ADMS:status>initial draft</ADMS:status>
+        <ADMS:target xml:lang="it">Comunità Open Data</ADMS:target>
+        <ADMS:target>Imprese</ADMS:target>
+        <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
+        <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/hasEventTypeGeneratingLactation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/hasEventTypeGeneratingLactation">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify which type of animal life event generated the lactation, i.e. whether parturition or belated abortion</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare quale tipo di evento ha generato la lattazione, quindi se parto o se aborto tardivo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">ha tipo evento della vita che genera lattazione</rdfs:label>
+        <rdfs:label xml:lang="en">has event type generating lactation</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/hasLactationStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/hasLactationStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationStatus"/>
+        <rdfs:comment xml:lang="en">Property used to indicate whether lactation is open or closed in the lactation control</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare se la lattazione è aperta o chiusa nel controllo della lattazione</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">ha stato della lattazione</rdfs:label>
+        <rdfs:label xml:lang="en">has lactation status</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/hasParturitionOrder -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/hasParturitionOrder">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the information about the parturition order of the lactation</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare le informazioni sull&apos;ordine di parto della lattazione</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">ha ordine di parto</rdfs:label>
+        <rdfs:label xml:lang="en">has parturition order</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/isIrregularOrMinNumChecksNotReached -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/isIrregularOrMinNumChecksNotReached">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Property used to indicate whether the number of successive controls used for estimating lactation production is less than the established number. This may be caused by the presence, in some cases, of too high intervals of days between two successive controls</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare se Il numero di controlli successivi utilizzati per la stima della produzione della lattazione è inferiore a quello stabilito. Questo può essere causato della presenza, in qualche caso, di intervalli di giorni tra due controlli successivi troppo elevato</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">is irregular or minimum number of checks is not reached</rdfs:label>
+        <rdfs:label xml:lang="it">è controllo irregolare/numero minimo di controlli non raggiunto</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/isLactationDurationBelowBreedLimit -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/isLactationDurationBelowBreedLimit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Property used to indicate whether the distance in parturition days/last functional milk testing is less than the minimum value set for the species</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà usata per indicare se la distanza in giorni parto/ultimo controllo funzionale latte è inferiore al valore minimo stabilito per la specie</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">is lactation duration below breed limit</rdfs:label>
+        <rdfs:label xml:lang="it">è durata lattazione inferiore al limite di razza</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/isLactationDuringCovidPeriod -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/isLactationDuringCovidPeriod">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">Property used to indicate whether the lactiona took place during the period of COVID restrictions</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare se la lattazione effettuata in periodo di restrizioni COVID</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">is lactation during covid period</rdfs:label>
+        <rdfs:label xml:lang="it">è lattazione in periodo Covid</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/isLactationOpenInCompany -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/isLactationOpenInCompany">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Property used to indicate whether lactation is open on the farm company being controlled.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare se la lattazione è aperta nell&apos;azienda in fase di controllo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">is lactation open in company</rdfs:label>
+        <rdfs:label xml:lang="it">è lattazione aperta in azienda (attendibile)</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/isOxytocinUsed -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/isOxytocinUsed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the fact that at the functional testing the farmer injected oxytocin at milking to facilitate the release of milk from the udder</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per segnalare il fatto che al controllo funzionale l&apos;allevatore ha iniettato ossitocina al momento della mungitura per facilitare l&apos;emissione del latte dalla mammella</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">is oxytocin used</rdfs:label>
+        <rdfs:label xml:lang="it">è ossitocina rilevata</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/isProjectedLactationAlpinePasture -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/lactation-assessment/isProjectedLactationAlpinePasture">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">On animals taken to pasture in the summer months and without functional control in the period, the property allows one to indicate whether lactation is estimated using the functional testings and an estimate of milk production in the alpine pasture</rdfs:comment>
+        <rdfs:comment xml:lang="it">Su animali portati all&apos;apeggio nei mesi estivi e senza controllo funzionale nel periodo, la proprietà permette di indicare se la lattazione è stimata utilizzando i controlli funzionali e una stima della produzione di latte in alpeggio</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">is projected lactation alpine pasture</rdfs:label>
+        <rdfs:label xml:lang="it">è lattazione proiettata per alpeggio</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/EventOrSituation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/co/LivestockFarm -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarm"/>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta se il tipo di evento della vita dell&apos;animale che ha generato la lattazione è un Parto o un Aborto Tardivo. Assume due valori costanti (individui/istanze): PA = Parto, ABT = Aborto Tardivo</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class representing whether the type of event in the animal&apos;s life that gave rise to lactation is a Parturition or a Belated Abortion. It takes two constant values (individuals): PA = Parturition, ABT = Belated Abortion</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">Animal Life Event Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Evento della Vita dell&apos;Animale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/LactationAssessment -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/lactation-assessment/LactationAssessment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/hasSubject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/co/LivestockFarm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/lactation-assessment/hasEventTypeGeneratingLactation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/lactation-assessment/hasLactationStatus"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/lactation-assessment/hasParturitionOrder"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe che modella i controlli sulla lattazione. In particolare, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, si raccolgono una serie di informazioni di controllo della lattazione sia per i soggetti da latte che per i soggetti da carne. I controlli avvengono in una data, la data della lattazione che coincide con la data di parto o aborto tardivo. Inoltre, i valori rilevati hanno un&apos;unità di misura di riferimento relativa alla quantità di latte prodotto (Bovini e bufali: Kg, ovini e caprini:Litri).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that models Lactation Assessment.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that models lactation controls. In particular, when parturition and late abortion events are detected, a set of lactation control information is collected for both dairy and beef animals. The controls take place on a date, the lactation date, which coincides with the parturition or late abortion date. In addition, the values recorded have a reference unit of measurement relating to the quantity of milk produced (cattle and buffalo: Kg, sheep and goats: Litres).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">Controllo Lattazione</rdfs:label>
+        <rdfs:label xml:lang="en">Lactation Assessment</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/LactationStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/lactation-assessment/LactationStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe utilizzata per modellare lo stato della lattazione che può essere Aperta (lattazione in corso) o Chiusa (lattazione terminata con evento asciutta)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class used to model the state of lactation, which can be Open (lactation in progress) or Closed (lactation ended with dry event)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="en">Lactation Status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato della Lattazione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/lactation-assessment/ParturitionOrder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta il numero di parti realizzati dall&apos;animale nella sua carriera</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents the number of parturitions made by the animal in its career</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">Ordine di Parto</rdfs:label>
+        <rdfs:label xml:lang="en">Parturition Order</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LACT-JSON-LD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LACT-JSON-LD">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulla lattazione</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of lactation assessment ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia Lattazione</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of Lactation Assessment Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sulla lattazione</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of lactation assessment ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Lattazione</rdfs:label>
+        <rdfs:label xml:lang="en">JSON-LD distribution of Lactation Assessment Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/lactation-assessment/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.jsonld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LACT-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LACT-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulla lattazione</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/Turtle of lactation assessment ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia Lattazione</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of Lactation Assessment Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia sulla lattazione</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of lactation assessment ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Lattazione</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/Turtle distribution of Lactation Assessment Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/lactation-assessment/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/data/distribution/LACT-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/distribution/LACT-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulla lattazione</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of lactation assessment ontology</terms:description>
+        <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia Lattazione</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of Lactation Assessment Ontology</terms:title>
+        <rdfs:comment xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia sulla lattazione</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of lactation assessment ontology</rdfs:comment>
+        <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Lattazione</rdfs:label>
+        <rdfs:label xml:lang="en">RDF/XML distribution of Lactation Assessment Ontology</rdfs:label>
+        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/lactation-assessment/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.rdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/lactation-assessment">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/lactation-assessment/A">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationStatus"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">Aperta</rdfs:label>
+        <rdfs:label xml:lang="en">Open</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/ABT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/lactation-assessment/ABT">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">Aborto Tardivo</rdfs:label>
+        <rdfs:label xml:lang="en">Belated Abortion</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/C -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/lactation-assessment/C">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/lactation-assessment/LactationStatus"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">Chiusa</rdfs:label>
+        <rdfs:label xml:lang="en">Closed</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/lactation-assessment/PA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/lactation-assessment/PA">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/lactation-assessment/AnimalLifeEventType"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/lactation-assessment"/>
+        <rdfs:label xml:lang="it">Parto</rdfs:label>
+        <rdfs:label xml:lang="en">Parturition</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
