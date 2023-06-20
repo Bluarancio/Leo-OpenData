@@ -12,6 +12,7 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 <https://w3id.org/leo/controlled-vocabulary/farm-animal-status> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
@@ -23,6 +24,7 @@
   dct:issued "2022-02-24"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-02-24"^^xsd:date;
+  ndc:keyConcept "farm-animal-status" ;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the states of farm animals in the context of the LEO project"@en,
