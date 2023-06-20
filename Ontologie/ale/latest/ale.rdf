@@ -15,31 +15,31 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/leo/onto/ale">
-        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/ale/0.5"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/ale/1.0"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dc:description rdf:resource="https://www.dropbox.com/s/xrx1bl1suyzrwem/AleModule.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/AleModule.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-        <terms:description xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento,</terms:description>
-        <terms:description xml:lang="en">This is the ontology of the farm animals life events</terms:description>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento, L&apos;ontologia rappresenta pertanto momenti importanti della vita degli animali come per esempio il parto, la nascita, l&apos;aborto, la fecondazione, i vari spostamenti in entrata e uscita dalle aziende di allevamento, il macello, ecc. Per ogni evento, l&apos;ontologia rappresenta elementi principali che caratterizzano ciascun evento.</terms:description>
+        <terms:description xml:lang="en">The ontology thus represents important moments in the life of animals, such as birth, abortion, fertilisation, the various movements on and off farms, slaughter, etc. For each event, the ontology represents the main elements that characterise it.</terms:description>
         <terms:identifier>onto-BA-3</terms:identifier>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-18</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <terms:modified>2022-05-18</terms:modified>
+        <terms:modified>2023-06-20</terms:modified>
         <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <terms:title xml:lang="en">Animal Life Event Ontology</terms:title>
         <terms:title xml:lang="it">Ontologia degli eventi della vita degli animali di allevamento</terms:title>
-        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is the ontology of the farm animals life events</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento, L&apos;ontologia rappresenta pertanto momenti importanti della vita degli animali come per esempio il parto, la nascita, l&apos;aborto, la fecondazione, i vari spostamenti in entrata e uscita dalle aziende di allevamento, il macello, ecc. Per ogni evento, l&apos;ontologia rappresenta elementi principali che caratterizzano ciascun evento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ontology thus represents important moments in the life of animals, such as birth, abortion, fertilisation, the various movements on and off farms, slaughter, etc. For each event, the ontology represents the main elements that characterise it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
         <rdfs:label xml:lang="en">Animal Life Event Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia degli eventi della vita degli animali di allevamento</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 0.5- 18 May 2022 - Renamed registrationDate in identificationDate and moved birthdDate from this ontology to animal ontology. Revised Milking (session) event.</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 0.5 - 18 May 2022 - Rinominata la proprietà data di immatricolazione in data di identificazione univoca. Spostata la data di nascita da questa ontologia all&apos;ontologia animal. RIvista interamente la parte di mungitura con l&apos;introduzione della misurazione della conducibilità media.</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version 1.0- June 2023 - Introduction of new animal life events, i.e., weaning, weighing, breast feeding termination, back fat thickness measurement, and related parameters.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 1.0 - Giugno 2023 - Introduzione di nuovi eventi della vita, i.e., svezzamento, pesata, interruzione dell&apos;allattamento, misurazione dello spessore del grasso dorsale, e relativi parametri.</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
         <dcat:keyword xml:lang="it">Animali d&apos;allevamento</dcat:keyword>
         <dcat:keyword xml:lang="en">Bovine</dcat:keyword>
@@ -378,6 +378,7 @@
     <!-- https://w3id.org/leo/onto/ale/hasAnimalBirthWeight -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasAnimalBirthWeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/ale/hasWeight"/>
         <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Birth"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
         <rdfs:comment xml:lang="en">Association between the birth event and the weight of the farm animal when it was born</rdfs:comment>
@@ -428,6 +429,7 @@
     <!-- https://w3id.org/leo/onto/ale/hasAnimalLiveWeight -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasAnimalLiveWeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/ale/hasWeight"/>
         <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Slaughter"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
         <rdfs:comment xml:lang="en">Association between the slaughter event and the live weight of the animal subject to slaughter</rdfs:comment>
@@ -505,6 +507,23 @@
     
 
 
+    <!-- https://w3id.org/leo/onto/ale/hasArtificialBreastFeedingDuration -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasArtificialBreastFeedingDuration">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/hasDuration"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Weaning"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/TI/Duration"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify the duration, typically in days, of artificial feeding in a weaning animal life event.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare, per lo svezzamento, la durata, tipicamente in giorni, dell&apos;allattamento artificiale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha durata dell&apos;allattamento artificiale</rdfs:label>
+        <rdfs:label xml:lang="it">has artificial breast feeding duration</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/leo/onto/ale/hasAvgMilkConductivity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasAvgMilkConductivity">
@@ -515,6 +534,48 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
         <rdfs:label xml:lang="it">ha conducibilità latte media</rdfs:label>
         <rdfs:label xml:lang="en">has average milk conductivity</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasBackFatThicknessValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasBackFatThicknessValue">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/BackFatThicknessMeasurement"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasBreastFeedingType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasBreastFeedingType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Weaning"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
+        <rdfs:comment xml:lang="en">Property linking weaning with the type of breastfeeding (artificial, natural, mixed).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega lo svezzamento con la tipologia di allattamento (artificiale, naturale, misto).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha tipo allattamento</rdfs:label>
+        <rdfs:label xml:lang="en">has breast feeding type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasBreastFeedingWithNurseDuration -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasBreastFeedingWithNurseDuration">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/hasDuration"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Weaning"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/TI/Duration"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify the duration, typically in days, of breast feeding with nurse in a weaning animal life event.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare, per lo svezzamento, la durata, tipicamente in giorni, dell&apos;allattamento con balia.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha durata dell&apos;allattamento con balia</rdfs:label>
+        <rdfs:label xml:lang="en">has breast feeding with nurse duration</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
@@ -579,6 +640,7 @@
     <!-- https://w3id.org/leo/onto/ale/hasCarcassWeight -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasCarcassWeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/leo/onto/ale/hasWeight"/>
         <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/FarmAnimalCarcass"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
         <rdfs:comment xml:lang="en">Association between the farm animal carcass and its weight</rdfs:comment>
@@ -724,6 +786,22 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
         <rdfs:label xml:lang="it">ha esito della diagnosi di gravidanza</rdfs:label>
         <rdfs:label xml:lang="en">has pregnancy result</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/hasWeight -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/ale/hasWeight">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:comment xml:lang="en">A general property that allows one to specify the weight in situations (e.g., the detected weight of the animal during the weighing, the weight of the animal during the birth, etc. ) or the weight of specific entities (e.g., the weight of the carcass of a farm animal).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una proprietà generale che consente di specificare il peso in eventi della vita dell&apos;animale (ad esempio, il peso rilevato dell&apos;animale durante la pesatura, il peso dell&apos;animale alla nascita, ecc.) o il peso di entità specifiche (ad esempio, il peso della carcassa di un animale da allevamento).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">ha peso</rdfs:label>
+        <rdfs:label xml:lang="en">has weight</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
@@ -916,6 +994,54 @@
         <rdfs:label xml:lang="it">animale arrivato morto al macello</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/bftMeasurementDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/bftMeasurementDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/BackFatThicknessMeasurement"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La proprietà è usata per indicare  la data in cui viene effettuata la misurazione dello spessore del grasso dorsale</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property is used to indicate the date on which the measurement of back fat thickness is taken</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">back fact thickness measurement date</rdfs:label>
+        <rdfs:label xml:lang="it">data misurazione spessore grasso dorsale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/breastFeedingTerminationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/breastFeedingTerminationDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingTermination"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">La proprietà è usata per indicare  la data in cui la madre termina l&apos;allattamento.</rdfs:comment>
+        <rdfs:comment xml:lang="it">The property is used to indicate the date on which the mother ends breast-feeding</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">breast feeding termination date</rdfs:label>
+        <rdfs:label xml:lang="it">data interruzione allattamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
@@ -1271,6 +1397,22 @@
     
 
 
+    <!-- https://w3id.org/leo/onto/ale/numberOfBorn -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfBorn">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Parturition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">La proprietà è utilizzata per indicare il numero complessivo dei nati quando non è disponibile una suddivisione per maschi/femmine, vivi/morti.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property is used to indicate the total number of births when a breakdown by male/female, live/dead is not available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">number of born</rdfs:label>
+        <rdfs:label xml:lang="it">numero di nati</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/leo/onto/ale/numberOfBornAliveFemales -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfBornAliveFemales">
@@ -1349,6 +1491,22 @@
     
 
 
+    <!-- https://w3id.org/leo/onto/ale/numberOfTeats -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/numberOfTeats">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Birth"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">La proprietà è utilizzata per indicare il numero totale di capezzoli ed è utilizzata solo per la specie Suina.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property is used to indicate the total number of teats and is only used for the species swine.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">number of teats</rdfs:label>
+        <rdfs:label xml:lang="it">numero di capezzoli</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/leo/onto/ale/parturitionDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/parturitionDate">
@@ -1409,6 +1567,54 @@
         <rdfs:label xml:lang="en">slaughter date</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/weaningDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/weaningDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Weaning"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La proprietà è utilizzata per indicare la data di svezzamento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property is used to indicate the date of weaning.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data svezzamento</rdfs:label>
+        <rdfs:label xml:lang="en">weaning date</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/weighingDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/weighingDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/Weighing"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">La proprietà è usata per indicare la data in cui viene effettuata la misurazione del peso dell&apos;animale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property is used to indicate the date on which the animal&apos;s weight is measured.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">data della pesata</rdfs:label>
+        <rdfs:label xml:lang="en">weighing date</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
@@ -1493,7 +1699,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/yjfrgznudw5msd6/Ale_Abort.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Abort.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento di aborto dell&apos;animale. In particolare, rappresenta l&apos;interruzione della gravidanza con espulsione del feto. In particolare, nei bovini da latte si definisce aborto l&apos;interruzione della gravidanza con l&apos;espulsione del feto dal 42° al 260° post – fecondazione. Da non confondere con il parto prematuro (nascita di un vitello capace di vita autonoma dopo il 260° giorno di gravidanza) o parto a termine di un vitello morto o disvitale (&apos;stillbirth”). Sempre nei bovini da latte, si ha aborto precoce dal 42° al 90° giorno di gravidanza, e aborto tardivo, dopo il 90° giorno.
 
 Possibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell&apos;animale. Calcolo del tasso di abortività aziendale, dei fattori di rischio per il benessere e per la fertilità. Assistenza tecnica, Gestione sanitaria</rdfs:comment>
@@ -1579,6 +1785,50 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
     
 
 
+    <!-- https://w3id.org/leo/onto/ale/BackFatThicknessMeasurement -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/BackFatThicknessMeasurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasBackFatThicknessValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasBackFatThicknessValue"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/bftMeasurementDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/BackFatThicknessMeasurement.png"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta l&apos;evento con il quale si indica la misurazione dello spessore del grasso dorsale. Lo spessore del grasso dorsale (SGD) è un parametro di registrazione comune nei suini ed il monitoraggio della sua evoluzione durante il ciclo produttivo viene interpretato come un indice di mobilizzazione e reintegrazione delle riserve corporee. 
+Comunemente, lo SGD viene generalmente misurato almeno allo svezzamento, dopo la diagnosi di gravidanza e all&apos;ingresso delle sale parto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents the event by which backfat thickness is measured. Back fat thickness (SGD) is a common recording parameter in pigs and monitoring its development during the production cycle is interpreted as an index of mobilisation and replenishment of body reserves. 
+Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at farrowing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Back Fat Thickness Measurement</rdfs:label>
+        <rdfs:label xml:lang="it">Misurazione Spessore Grasso Dorsale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/leo/onto/ale/Birth -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Birth">
@@ -1604,12 +1854,64 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
                 <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/t5xi7zax6q0rp20/Ale_Birth.png?raw=1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfTeats"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Birth.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento di nascita dell&apos;animale</rdfs:comment>
         <rdfs:comment xml:lang="en">The birth event of the animal</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
         <rdfs:label xml:lang="en">Birth</rdfs:label>
         <rdfs:label xml:lang="it">Nascita</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/BreastFeedingTermination -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/BreastFeedingTermination">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/breastFeedingTerminationDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/BreastFeedingTermination.png"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta l&apos;evento con il quale si indica quando la madre termina l’allattamento dei figli.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents the event indicating when the mother finishes breastfeeding her children.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Breast Feeding Termination</rdfs:label>
+        <rdfs:label xml:lang="it">Fine dell&apos;Allattamento</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/BreastFeedingType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/BreastFeedingType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta il tipo di allattamento che può essere artificiale, naturale o misto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents the type of breastfeeding, which can be artificial, natural or mixed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="en">Breast Feeding Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Allattamento</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
@@ -1700,7 +2002,7 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/90oxp07pm6x2p0w/Ale_Diagnosis.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Diagnosis.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento della diagnosi di qualsiasi tipo. Include la diagnosi della gravidanza.</rdfs:comment>
         <rdfs:comment xml:lang="en">The event of diagnosis including the pregnancy diagnosis</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
@@ -1737,7 +2039,7 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/9ot2hlckexlo6dg/Ale_Disposal.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Disposal.png"/>
         <rdfs:comment xml:lang="en">This is the event whereby the farmed animal is removed from the farm permanently for a number of reasons related to management or to pathological or metabolic states. Disposal represents the exit of the animal from the farm for any reason (e.g. sale to another farm, slaughter, death on the farm, etc.).
 
 Possible applications: Managerial. Calculation of the length of the productive career of the animal, of the average farm longevity. Correct identification of the movements (sale/purchase) of the animal. Technical assistance data for estimation of company replacement rates</rdfs:comment>
@@ -1800,7 +2102,7 @@ Possibili Applicazioni: Manageriale. Calcolo della lunghezza della carriera prod
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/f6x5und0otcxy58/Ale_Dry.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Dry.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento dell&apos;asciutta. Nei soggetti allevati per la produzione di latte, il termine indica la cessazione, naturale o più spesso indotta con opportune pratiche dall&apos;allevatore, della produzione di latte nell&apos;ultima fase di lattazione in modo che l&apos;animale possa utilizzare le energie esclusivamente per recupero del peso e formazione di riserve corporee per il parto e la lattazione successiva.
 
 Possibili applicazioni: Riproduzione. Calcolo dello stato riproduttivo dell&apos;animale. Calcolo lunghezza della lattazione e della durata della preparazione al parto successivo. Individuazione lattazioni corte. Assistenza tecnica.</rdfs:comment>
@@ -1860,7 +2162,7 @@ Possible applications: Reproduction. Calculation of the animal&apos;s reproducti
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/erv0fq940dsw0ci/Ale_EmbryonicResorption.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_EmbryonicResorption.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale di riassorbimento embrionale avvenuto in azienda. Definito in termini clinici come &apos;morte embrionale”, è un fenomeno che consiste nella morte dell&apos;embrione/feto durante le prime fasi di gravidanza. Nei bovini da latte la morte embrionale si distingue in tre sottogruppi: morte embrionale precoce (primi 16 giorni dall&apos;inseminazione), morte embrionale tardiva (da 17 a 42 giorni dall&apos;inseminazione) e morte fetale dopo i 42 giorni di gravidanza.
 
 Possibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell&apos;animale. Calcolo del tasso di abortività aziendale, dei fattori di rischio per il benessere e per la fertilità. Assistenza tecnica. Gestione sanitaria</rdfs:comment>
@@ -1975,7 +2277,7 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/nmbjwnm5ts0cjh8/Ale_Fertilization.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Fertilization.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento di fecondazione dell&apos;animale. È l’atto fecondativo dell’animale. La più diffusa, in particolare nei bovini, è l’inseminazione artificiale che è la pratica di introdurre seme nell’utero di una riproduttrice tramite un’apposita strumentazione senza ricorrere all’accoppiamento. Fondamentale nell’attività di miglioramento genetico, permette di migliorare, nella progenie, la produzione di latte o altre caratteristiche diffondendo i geni favorevoli del maschio nella popolazione.
 
 Possibili Applicazioni: Riproduzione e Benessere. Calcolo dello stato riproduttivo dell&apos;animale. Calcolo dei parametri di fertilità. Assistenza tecnica. Miglioramento genetico (fertilità).</rdfs:comment>
@@ -2041,7 +2343,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/xscdk4jl9kjyw08/Ale_Identification.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Identification.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale che consente la sua identificazione in azienda. In particolare, è l’evento con il quale avviene l’immatricolazione del soggetto. Il codice attribuito è unico sul territorio nazionale. Permette una identificazione univoca dell’animale in tutte le fasi dell’allevamento e di tracciarne gli spostamenti fino al macello. Fondamentale sia per la gestione dell’azienda sia per tutte le attività legate alla profilassi zootecnica e tracciamento dell’animale e dei suoi prodotti.
 
 Possibili Applicazioni: Identificativo. Univoca identificazione del soggetto, dato chiave nel database relazionale.</rdfs:comment>
@@ -2082,7 +2384,7 @@ Possible applications: Identification. Unique identification of the subject, key
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/532kit1n7oadzfj/Ale_Implantation.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Implantation.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale dell&apos;impianto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The animal&apos;s life event of the implantation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
@@ -2138,7 +2440,7 @@ Possible applications: Identification. Unique identification of the subject, key
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/f24rbcpprwvpu5k/Ale_InboundMovement.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_InboundMovement.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale che rappresenta l&apos;entrata/ingresso dell&apos;animale in azienda (ad esempio, acquisto di un soggetto non nato in azienda).
 
 Possibili Applicazioni: Manageriale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto), stima dell&apos;effetto ambientale.</rdfs:comment>
@@ -2228,7 +2530,7 @@ Possible applications: Managerial. Correct identification of movements (sale/pur
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/slvqtx91kvo3nr9/Milking.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Milking.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento per il quale un animale è sottoposto a una sessione di mungitura.</rdfs:comment>
         <rdfs:comment xml:lang="en">The event for which an animal is subject to a milking session.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
@@ -2270,7 +2572,7 @@ Possible applications: Managerial. Correct identification of movements (sale/pur
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/262apccs0gjpm46/Ale_OutboundMovement.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_OutboundMovement.png"/>
         <rdfs:comment xml:lang="it">L&apos;evento di uscita dall&apos;animale dall&apos;allevamento (ad esempio, vendita del soggetto ad altro allevamento, ecc.).
 
 Possibili Applicazioni: Manageriale. Corretta identificazione degli spostamenti (vendita/acquisto) del soggetto), stima dell&apos;effetto ambientale.</rdfs:comment>
@@ -2313,6 +2615,13 @@ Possible Applications: Managerial. Correct identification of movements (sale/pur
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBorn"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/numberOfBornAliveFemales"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -2339,7 +2648,7 @@ Possible Applications: Managerial. Correct identification of movements (sale/pur
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/w8w5gxiyo4ln6z6/Ale_Parturition.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Ale_Parturition.png"/>
         <rdfs:comment xml:lang="en">This is the event that ends gestation and consists of the expulsion of the foetus/fetuses from the animal&apos;s uterus. It can be natural or aided by people. In dairy cattle, if it occurs after the 260th day of gestation and the baby is capable of independent life, it is called early birth; if the birth occurs at the normal distance from fertilisation but the baby is dead or unviable, it is called stillbirth.
 
 Possible applications: Reproduction. calculation of the animal&apos;s reproductive status and days to lactation. Technical assistance, calculation of welfare indicators, fertility indicators, genetic improvement.</rdfs:comment>
@@ -2485,7 +2794,7 @@ Possibili applicazioni: Riproduzione e Benessere. Calcolo dello stato riprodutti
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:resource="https://www.dropbox.com/s/w2ppkgnizjzeuoh/Slaughter.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Slaughter.png"/>
         <rdfs:comment xml:lang="en">It is the event in the life of the animal that relates to its killing, using appropriate methods, for commercial purposes on a slaughterhouse-type farm. This event follows the exit of the animal from the farm company and produces a carcass that can be used for human consumption.
 
 Possible Applications: Managerial. Information recorded at slaughter (e.g.: meat classification, destination for consumption, country of origin, date of slaughter, etc.) useful information for genetic improvement (meat production), management (correct feeding).</rdfs:comment>
@@ -2497,6 +2806,107 @@ Possibili Applicazioni: Manageriale. Informazioni registrate in macellazione (es
         <rdfs:label xml:lang="en">Slaughter</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile - Introdotto nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/Weaning -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Weaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasWeight"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasArtificialBreastFeedingDuration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/TI/Duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasBreastFeedingType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasBreastFeedingWithNurseDuration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/TI/Duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/weaningDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Weaning.png"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta l&apos;evento per cui un animale giovane termina l’allattamento della madre o della balia o artificiale e inizia ad assumere una diversa alimentazione.
+L’età allo svezzamento e il programma di alimentazione influenzano le performance durante l&apos;accrescimento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents the event whereby a young animal terminates suckling from its mother or wet nurse and begins to take on a different diet.
+Age at weaning and feeding schedule influence performance during growth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Svezzamento</rdfs:label>
+        <rdfs:label xml:lang="en">Weaning</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/Weighing -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Weighing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasWeight"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/hasWeight"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/ale/weighingDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Weighing.png"/>
+        <rdfs:comment xml:lang="it">L&apos;evento della vita dell&apos;animale relativo alla misurazione del suo peso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The event in the animal&apos;s life relating to the measurement of its weight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
+        <rdfs:label xml:lang="it">Pesata</rdfs:label>
+        <rdfs:label xml:lang="en">Weighing</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -2685,6 +3095,14 @@ Possibili Applicazioni: Manageriale. Informazioni registrate in macellazione (es
     
 
 
+    <!-- https://w3id.org/leo/onto/ale/Artificial -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Artificial">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/leo/onto/ale/Assistant -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Assistant">
@@ -2824,6 +3242,22 @@ Possibili Applicazioni: Manageriale. Informazioni registrate in macellazione (es
         <rdfs:label xml:lang="it">Smarrito</rdfs:label>
         <owl:versionInfo xml:lang="it">Inserito nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">Introduced in version 0.4 of the ontology</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/Mixed -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Mixed">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/leo/onto/ale/Natural -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Natural">
+        <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
     </owl:NamedIndividual>
     
 
