@@ -25,7 +25,8 @@
     xmlns:idlab-fn="http://example.com/idlab/function/"
     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
     xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" >
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:ndc="https://w3id.org/italia/onto/NDC/">
   <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/breed/breedA6">
     <animal:isWithin rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/A3"/>
     <animal:AIABreedCode>A6</animal:AIABreedCode>
@@ -3406,7 +3407,7 @@
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedR1"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedY5"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedHA"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-07</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-13</dct:modified>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedF3"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedQ6"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedG2"/>
@@ -3707,6 +3708,7 @@
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breed81"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breed82"/>
     <dct:identifier>https://w3id.org/leo/controlled-vocabulary/breed</dct:identifier>
+    <ndc:keyConcept>breed</ndc:keyConcept>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedRN"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedTU"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breed03"/>
@@ -3966,8 +3968,8 @@
   <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/breed/breedYI">
     <animal:isWithin rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/A8"/>
     <animal:AIABreedCode>YI</animal:AIABreedCode>
-    <l0:name xml:lang="it">Parma e Piacenza</l0:name>
-    <skos:prefLabel xml:lang="it">Parma e Piacenza</skos:prefLabel>
+    <l0:name xml:lang="it">Parma e Piaenza</l0:name>
+    <skos:prefLabel xml:lang="it">Parma e Piaenza</skos:prefLabel>
     <skos:notation>YI</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed"/>
     <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>

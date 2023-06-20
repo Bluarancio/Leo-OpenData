@@ -24,6 +24,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/leo/controlled-vocabulary/breed> a dcatapit:Dataset, skos:ConceptScheme,
@@ -35,7 +36,8 @@
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/breed";
   dct:issued "2020-12-09"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
-  dct:modified "2022-05-07"^^xsd:date;
+  dct:modified "2022-01-13"^^xsd:date;
+  ndc:keyConcept "breed" ;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the breeds of farm animals"@en, "Vocabolario controllato delle razze degli animali da allevamento"@it;
@@ -3729,8 +3731,8 @@
 <https://w3id.org/leo/controlled-vocabulary/breed/breedYI> a skos:Concept, animal:Breed;
   skos:inScheme <https://w3id.org/leo/controlled-vocabulary/breed>;
   skos:notation "YI";
-  skos:prefLabel "Parma e Piacenza"@it;
-  l0:name "Parma e Piacenza"@it;
+  skos:prefLabel "Parma e Piaenza"@it;
+  l0:name "Parma e Piaenza"@it;
   animal:AIABreedCode "YI";
   animal:isWithin <https://w3id.org/leo/controlled-vocabulary/livestock-species/A8> .
 
