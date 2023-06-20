@@ -22,6 +22,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
@@ -31,8 +32,9 @@
     "This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/measurement-unit";
   dct:issued "2021-07-22"^^xsd:date;
+  ndc:keyConcept "measurement-unit" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
-  dct:modified "2022-04-12"^^xsd:date;
+  dct:modified "2022-09-15"^^xsd:date;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the measurement unit of LEO project"@en, "Vocabolario controllato delle unità di misura del progetto LEO"@it;
@@ -40,7 +42,7 @@
   rdfs:comment "Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data"@en;
   rdfs:label "Controlled Vocabulary on the measurement unit of LEO project"@en, "Vocabolario controllato delle unità di misura del progetto LEO"@it;
-  owl:versionInfo "Versione 0.3"@it;
+  owl:versionInfo "Versione 0.4"@it;
   skos:hasTopConcept <https://w3id.org/leo/controlled-vocabulary/measurement-unit/0>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/1>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/10>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/11>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/12>,
@@ -54,7 +56,12 @@
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/3>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/30>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/33>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/34>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/36>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/37>,
-    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/4>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/5>,
+    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/38>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/4>,
+    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/40>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/41>,
+    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/42>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/43>,
+    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/44>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/45>,
+    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/49>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/5>,
+    <https://w3id.org/leo/controlled-vocabulary/measurement-unit/50>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/51>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/6>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/7>,
     <https://w3id.org/leo/controlled-vocabulary/measurement-unit/8>, <https://w3id.org/leo/controlled-vocabulary/measurement-unit/9>;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
@@ -293,7 +300,7 @@
     analysis:UnitOfMeasure;
   rdfs:label "Minuto"@it;
   owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/MIN>,
-    <http://www.wikidata.org/entity/Q7727>;
+    <http://publications.europa.eu/resource/authority/timeperiod/MIN>, <http://www.wikidata.org/entity/Q7727>;
   skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
   skos:notation "30";
   skos:prefLabel "Minuto"@it;
@@ -345,6 +352,17 @@
   l0:name "Unità Formanti Colonia/100 millilitri"@it;
   analysis:unitSymbol "UFC/100ml" .
 
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/38> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Millisecondo"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q723733>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "38";
+  skos:prefLabel "Millisecondo"@it;
+  l0:identifier "38";
+  l0:name "Millisecondo"@it;
+  analysis:unitSymbol "ms" .
+
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/4> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
   rdfs:label "Centimetro"@it;
@@ -357,27 +375,123 @@
   l0:name "Centimetro"@it;
   analysis:unitSymbol "cm" .
 
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/40> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Chilogrammo/Minuto"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "40";
+  skos:prefLabel "Chilogrammo/Minuto"@it;
+  l0:identifier "40";
+  l0:name "Chilogrammo/Minuto"@it;
+  analysis:unitSymbol "kg/min" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/41> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Bar"@it;
+  owl:sameAs <http://publications.europa.eu/resource/authority/measurement-unit/BAR>,
+    <http://www.wikidata.org/entity/Q103510>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "41";
+  skos:prefLabel "Bar"@it;
+  l0:identifier "41";
+  l0:name "Bar"@it;
+  analysis:unitSymbol "bar" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/42> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Millibar"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q3495543>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "42";
+  skos:prefLabel "Millibar"@it;
+  l0:identifier "42";
+  l0:name "Millibar"@it;
+  analysis:unitSymbol "mbar" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/43> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Micrometro/Secondo"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q102130686>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "43";
+  skos:prefLabel "Micrometro/Secondo"@it;
+  l0:identifier "43";
+  l0:name "Micrometro/Secondo"@it;
+  analysis:unitSymbol "µm/s" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/44> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Kilopascal"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q21064807>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "44";
+  skos:prefLabel "Kilopascal"@it;
+  l0:identifier "44";
+  l0:name "Kilopascal"@it;
+  analysis:unitSymbol "kPa" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/45> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Battiti per minuto"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q743895>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "45";
+  skos:prefLabel "Battiti per minuto"@it;
+  l0:identifier "45";
+  l0:name "Battiti per minuto"@it;
+  analysis:unitSymbol "bpm" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/49> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Euro"@it;
+  owl:sameAs <http://publications.europa.eu/resource/authority/currency/EUR>, <http://www.wikidata.org/entity/Q4916>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "49";
+  skos:prefLabel "Euro"@it;
+  l0:identifier "49";
+  l0:name "Euro"@it;
+  analysis:unitSymbol "€" .
+
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/5> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
   rdfs:label "Giorno"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q573>;
+  owl:sameAs <http://publications.europa.eu/resource/authority/timeperiod/DAY>, <http://www.wikidata.org/entity/Q573>;
   skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
   skos:notation "5";
   skos:prefLabel "Giorno"@it;
   l0:identifier "5";
-  l0:name "Giorno"@it;
-  analysis:unitSymbol "gg" .
+  l0:name "Giorno"@it .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/50> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Grado decimale"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q1798227>;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "50";
+  skos:prefLabel "Grado decimale"@it;
+  l0:identifier "50";
+  l0:name "Grado decimale"@it;
+  analysis:unitSymbol "°" .
+
+<https://w3id.org/leo/controlled-vocabulary/measurement-unit/51> a skos:Concept, mu:MeasurementUnit,
+    analysis:UnitOfMeasure;
+  rdfs:label "Milioni per paillette"@it;
+  skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
+  skos:notation "51";
+  skos:prefLabel "Milioni per paillette"@it;
+  l0:identifier "51";
+  l0:name "Milioni per paillette"@it;
+  analysis:unitSymbol "milioni/paillette" .
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/6> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
   rdfs:label "Mese"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q5151>;
+  owl:sameAs <http://publications.europa.eu/resource/authority/timeperiod/MONTH>, <http://www.wikidata.org/entity/Q5151>;
   skos:inScheme <https://w3id.org/leo/controlled-vocabulary/measurement-unit>;
   skos:notation "6";
   skos:prefLabel "Mese"@it;
   l0:identifier "6";
-  l0:name "Mese"@it;
-  analysis:unitSymbol "mm" .
+  l0:name "Mese"@it .
 
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit/7> a skos:Concept, mu:MeasurementUnit,
     analysis:UnitOfMeasure;
