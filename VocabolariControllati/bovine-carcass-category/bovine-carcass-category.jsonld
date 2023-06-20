@@ -1,366 +1,483 @@
 {
-  "@graph" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "@type" : [ "dcatapit:Dataset", "dcat:Dataset", "adms:Asset", "skos:ConceptScheme" ],
-    "accrualPeriodicity" : "http://publications.europa.eu/resource/authority/frequency/IRREG",
-    "creator" : "https://w3id.org/leo/data/private-organization/00944701002",
-    "description" : [ {
-      "@language" : "en",
-      "@value" : "This is the controlled vocabulary for the categorization of carcasses of bovine animals, used in the context of project LEO - Livestock Environment Open Data. The reference categories for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013."
-    }, {
-      "@language" : "it",
-      "@value" : "Questo è il vocabolario controllato per la categorizzazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di categorizzazione di riferimento, che definisce le categorie in cui sono ripartite le carcasse bovine, è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013."
-    } ],
-    "identifier" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "issued" : "2021-10-01",
-    "language" : "http://publications.europa.eu/resource/authority/language/ITA",
-    "modified" : "2021-10-01",
-    "publisher" : "https://w3id.org/leo/data/private-organization/00944701002",
-    "rightsHolder" : "https://w3id.org/leo/data/private-organization/00944701002",
-    "title" : [ {
-      "@language" : "it",
-      "@value" : "Vocabolario controllato per la categorizzazione delle carcasse dei bovini del progetto LEO"
-    }, {
-      "@language" : "en",
-      "@value" : "Controlled Vocabulary for the categorization of carcasses of bovine animals of the LEO project"
-    } ],
-    "type" : "http://purl.org/adms/assettype/CodeList",
-    "comment" : [ {
-      "@language" : "en",
-      "@value" : "This is the controlled vocabulary for the categorization of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference categories for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013."
-    }, {
-      "@language" : "it",
-      "@value" : "Questo è il vocabolario controllato per la categorizzazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di categorizzazione di riferimento, che definisce le categorie in cui sono ripartite le carcasse bovine, è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013."
-    } ],
-    "label" : [ {
-      "@language" : "it",
-      "@value" : "Vocabolario controllato per la categorizzazione delle carcasse dei bovini del progetto LEO"
-    }, {
-      "@language" : "en",
-      "@value" : "Controlled Vocabulary for the categorization of carcasses of bovine animals of the LEO project"
-    } ],
-    "versionInfo" : {
-      "@language" : "it",
-      "@value" : "Versione 0.1"
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rr": "http://www.w3.org/ns/r2rml#",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ale": "https://w3id.org/leo/onto/ale/",
+    "dcatapit": "http://dati.gov.it/onto/dcatapit#",
+    "fnml": "http://semweb.mmlab.be/ns/fnml#",
+    "fno": "https://w3id.org/function/ontology#",
+    "grel": "http://users.ugent.be/~bjdmeest/function/grel.ttl#",
+    "idlab-fn": "http://example.com/idlab/function/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "ql": "http://semweb.mmlab.be/ns/ql#",
+    "rml": "http://semweb.mmlab.be/ns/rml#",
+    "ndc": "https://w3id.org/italia/onto/NDC/"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
+      "@type": [
+        "dcatapit:Dataset",
+        "skos:ConceptScheme",
+        "adms:Asset",
+        "dcat:Dataset"
+      ],
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questo è il vocabolario controllato per la categorizzazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di categorizzazione di riferimento, che definisce le categorie in cui sono ripartite le carcasse bovine, è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the controlled vocabulary for the categorization of carcasses of bovine animals, used in the context of project LEO - Livestock Environment Open Data. The reference categories for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013."
+        }
+      ],
+      "dcterms:identifier": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2021-10-01"
+      },
+      "dcterms:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2021-10-01"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Controlled Vocabulary for the categorization of carcasses of bovine animals of the LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Vocabolario controllato per la categorizzazione delle carcasse dei bovini del progetto LEO"
+        }
+      ],
+      "dcterms:type": {
+        "@id": "http://purl.org/adms/assettype/CodeList"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questo è il vocabolario controllato per la categorizzazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di categorizzazione di riferimento, che definisce le categorie in cui sono ripartite le carcasse bovine, è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the controlled vocabulary for the categorization of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference categories for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013."
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Controlled Vocabulary for the categorization of carcasses of bovine animals of the LEO project"
+        },
+        {
+          "@language": "it",
+          "@value": "Vocabolario controllato per la categorizzazione delle carcasse dei bovini del progetto LEO"
+        }
+      ],
+      "owl:versionInfo": {
+        "@language": "it",
+        "@value": "Versione 0.1"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/0"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/A"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/B"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/C"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/D"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/E"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/V"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/Z"
+        }
+      ],
+      "adms:representationTechnique": {
+        "@id": "http://purl.org/adms/representationtechnique/SKOS"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/bovine-carcass-category-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-XML"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "categorization of carcasses of bovine animals"
+        },
+        {
+          "@language": "it",
+          "@value": "categorizzazione delle carcasse dei bovini"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "ndc:keyConcept": "bovine-carcass-category"
     },
-    "hasTopConcept" : [ "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/B", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/Z", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/0", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/E", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/C", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/A", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/D", "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/V" ],
-    "representationTechnique" : "http://purl.org/adms/representationtechnique/SKOS",
-    "contactPoint" : "https://w3id.org/leo/data/contact-point/onto-aia",
-    "distribution" : [ "https://w3id.org/leo/data/distribution/bovine-carcass-category-JSON-LD", "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-TURTLE", "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-XML" ],
-    "keyword" : [ {
-      "@language" : "it",
-      "@value" : "categorizzazione delle carcasse dei bovini"
-    }, {
-      "@language" : "en",
-      "@value" : "categorization of carcasses of bovine animals"
-    } ],
-    "theme" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/0",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria 0 - Categoria non necessaria"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/0",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria 0 - Categoria non necessaria"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Categoria non necessaria"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "0",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria 0"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Categoria non necessaria"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/A",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria A - Carcasse di animali maschi non castrati di età pari o superiore a dodici mesi ma inferiore a ventiquattro mesi"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di animali maschi non castrati di età pari o superiore a dodici mesi ma inferiore a ventiquattro mesi"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "A",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria A"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "0",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria 0"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/B",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria B - Carcasse di animali maschi non castrati di età pari o superiore a ventiquattro mesi"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di animali maschi non castrati di età pari o superiore a ventiquattro mesi"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "B",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria B"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/A",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria A - Carcasse di animali maschi non castrati di età pari o superiore a dodici mesi ma inferiore a ventiquattro mesi"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/C",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria C - Carcasse di animali maschi castrati di età pari o superiore a dodici mesi"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di animali maschi castrati di età pari o superiore a dodici mesi"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "C",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria C"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di animali maschi non castrati di età pari o superiore a dodici mesi ma inferiore a ventiquattro mesi"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/D",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria D - Carcasse di animali femmine che hanno già figliato"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di animali femmine che hanno già figliato"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "D",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria D"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "A",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria A"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/E",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria E - Carcasse di altri animali femmine di età pari o superiore a dodici mesi"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di altri animali femmine di età pari o superiore a dodici mesi"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "E",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria E"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/B",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria B - Carcasse di animali maschi non castrati di età pari o superiore a ventiquattro mesi"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/V",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria V - Carcasse di animali di età inferiore a otto mesi"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di animali di età inferiore a otto mesi"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "V",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria V"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di animali maschi non castrati di età pari o superiore a ventiquattro mesi"
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/Z",
+      "@type": [
+        "skos:Concept",
+        "ale:CarcassCategory"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Categoria Z - Carcasse di animali di età pari o superiore a otto mesi ma inferiore a dodici mesi"
+      },
+      "skos:definition": {
+        "@language": "it",
+        "@value": "Carcasse di animali di età pari o superiore a otto mesi ma inferiore a dodici mesi"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "skos:notation": "Z",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "Categoria Z"
+      },
+      "skos:topConceptOf": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category"
+      },
+      "ale:appliesToSpecies": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+      }
     },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "B",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria B"
+    {
+      "@id": "https://w3id.org/leo/data/distribution/bovine-carcass-category-JSON-LD",
+      "@type": [
+        "dcatapit:Distribution",
+        "dcat:Distribution"
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD del vocabolario controllato sulla categorizzazione delle carcasse dei bovini"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the JSON-LD distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.jsonld"
+      }
     },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/C",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria C - Carcasse di animali maschi castrati di età pari o superiore a dodici mesi"
+    {
+      "@id": "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-TURTLE",
+      "@type": [
+        "dcatapit:Distribution",
+        "dcat:Distribution"
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulla categorizzazione delle carcasse dei bovini"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the RDF TURTLE distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.ttl"
+      }
     },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di animali maschi castrati di età pari o superiore a dodici mesi"
-    },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "C",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria C"
-    },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/D",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria D - Carcasse di animali femmine che hanno già figliato"
-    },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di animali femmine che hanno già figliato"
-    },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "D",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria D"
-    },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/E",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria E - Carcasse di altri animali femmine di età pari o superiore a dodici mesi"
-    },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di altri animali femmine di età pari o superiore a dodici mesi"
-    },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "E",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria E"
-    },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/V",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria V - Carcasse di animali di età inferiore a otto mesi"
-    },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di animali di età inferiore a otto mesi"
-    },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "V",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria V"
-    },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/Z",
-    "@type" : [ "ale:CarcassCategory", "skos:Concept" ],
-    "label" : {
-      "@language" : "it",
-      "@value" : "Categoria Z - Carcasse di animali di età pari o superiore a otto mesi ma inferiore a dodici mesi"
-    },
-    "definition" : {
-      "@language" : "it",
-      "@value" : "Carcasse di animali di età pari o superiore a otto mesi ma inferiore a dodici mesi"
-    },
-    "inScheme" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "notation" : "Z",
-    "prefLabel" : {
-      "@language" : "it",
-      "@value" : "Categoria Z"
-    },
-    "topConceptOf" : "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category",
-    "appliesToSpecies" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/bovine-carcass-category-JSON-LD",
-    "@type" : [ "dcat:Distribution", "dcatapit:Distribution" ],
-    "format" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD",
-    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
-    "title" : [ {
-      "@language" : "en",
-      "@value" : "This is the JSON-LD distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"
-    }, {
-      "@language" : "it",
-      "@value" : "Questa è la distribuzione JSON-LD del vocabolario controllato sulla categorizzazione delle carcasse dei bovini"
-    } ],
-    "accessURL" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category",
-    "downloadURL" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.jsonld"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-TURTLE",
-    "@type" : [ "dcat:Distribution", "dcatapit:Distribution" ],
-    "format" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE",
-    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
-    "title" : [ {
-      "@language" : "en",
-      "@value" : "This is the RDF TURTLE distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"
-    }, {
-      "@language" : "it",
-      "@value" : "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulla categorizzazione delle carcasse dei bovini"
-    } ],
-    "accessURL" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category",
-    "downloadURL" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.ttl"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-XML",
-    "@type" : [ "dcat:Distribution", "dcatapit:Distribution" ],
-    "format" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML",
-    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
-    "title" : [ {
-      "@language" : "en",
-      "@value" : "This is the RDF XML distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"
-    }, {
-      "@language" : "it",
-      "@value" : "Questa è la distribuzione RDF XML del vocabolario controllato sulla categorizzazione delle carcasse dei bovini"
-    } ],
-    "accessURL" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category",
-    "downloadURL" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.rdf"
-  } ],
-  "@id" : "urn:x-arq:DefaultGraphNode",
-  "@context" : {
-    "appliesToSpecies" : {
-      "@id" : "https://w3id.org/leo/onto/ale/appliesToSpecies",
-      "@type" : "@id"
-    },
-    "topConceptOf" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
-      "@type" : "@id"
-    },
-    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-    "notation" : "http://www.w3.org/2004/02/skos/core#notation",
-    "inScheme" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-      "@type" : "@id"
-    },
-    "definition" : "http://www.w3.org/2004/02/skos/core#definition",
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
-    "downloadURL" : {
-      "@id" : "http://www.w3.org/ns/dcat#downloadURL",
-      "@type" : "@id"
-    },
-    "accessURL" : {
-      "@id" : "http://www.w3.org/ns/dcat#accessURL",
-      "@type" : "@id"
-    },
-    "title" : "http://purl.org/dc/terms/title",
-    "license" : {
-      "@id" : "http://purl.org/dc/terms/license",
-      "@type" : "@id"
-    },
-    "format" : {
-      "@id" : "http://purl.org/dc/terms/format",
-      "@type" : "@id"
-    },
-    "theme" : {
-      "@id" : "http://www.w3.org/ns/dcat#theme",
-      "@type" : "@id"
-    },
-    "keyword" : "http://www.w3.org/ns/dcat#keyword",
-    "distribution" : {
-      "@id" : "http://www.w3.org/ns/dcat#distribution",
-      "@type" : "@id"
-    },
-    "hasTopConcept" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-      "@type" : "@id"
-    },
-    "rightsHolder" : {
-      "@id" : "http://purl.org/dc/terms/rightsHolder",
-      "@type" : "@id"
-    },
-    "creator" : {
-      "@id" : "http://purl.org/dc/terms/creator",
-      "@type" : "@id"
-    },
-    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
-    "description" : "http://purl.org/dc/terms/description",
-    "identifier" : "http://purl.org/dc/terms/identifier",
-    "modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "accrualPeriodicity" : {
-      "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
-      "@type" : "@id"
-    },
-    "contactPoint" : {
-      "@id" : "http://www.w3.org/ns/dcat#contactPoint",
-      "@type" : "@id"
-    },
-    "representationTechnique" : {
-      "@id" : "http://www.w3.org/ns/adms#representationTechnique",
-      "@type" : "@id"
-    },
-    "language" : {
-      "@id" : "http://purl.org/dc/terms/language",
-      "@type" : "@id"
-    },
-    "issued" : {
-      "@id" : "http://purl.org/dc/terms/issued",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
-    },
-    "type" : {
-      "@id" : "http://purl.org/dc/terms/type",
-      "@type" : "@id"
-    },
-    "rr" : "http://www.w3.org/ns/r2rml#",
-    "grel" : "http://users.ugent.be/~bjdmeest/function/grel.ttl#",
-    "adms" : "http://www.w3.org/ns/adms#",
-    "l0" : "https://w3id.org/italia/onto/l0/",
-    "owl" : "http://www.w3.org/2002/07/owl#",
-    "fno" : "https://w3id.org/function/ontology#",
-    "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#",
-    "rml" : "http://semweb.mmlab.be/ns/rml#",
-    "sd" : "http://www.w3.org/ns/sparql-service-description#",
-    "dct" : "http://purl.org/dc/terms/",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "fnml" : "http://semweb.mmlab.be/ns/fnml#",
-    "dcatapit" : "http://dati.gov.it/onto/dcatapit#",
-    "idlab-fn" : "http://example.com/idlab/function/",
-    "ale" : "https://w3id.org/leo/onto/ale/",
-    "ql" : "http://semweb.mmlab.be/ns/ql#",
-    "dcat" : "http://www.w3.org/ns/dcat#"
-  }
+    {
+      "@id": "https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-XML",
+      "@type": [
+        "dcatapit:Distribution",
+        "dcat:Distribution"
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF XML del vocabolario controllato sulla categorizzazione delle carcasse dei bovini"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the RDF XML distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.rdf"
+      }
+    }
+  ]
 }
