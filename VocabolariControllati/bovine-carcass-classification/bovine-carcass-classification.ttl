@@ -18,6 +18,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 <https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
@@ -27,6 +28,7 @@
     "This is the controlled vocabulary for the classification of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference classification scales for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013. Bovine carcasses are classified by assessing the conformation and the fat cover of the carcass."@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification";
   dct:issued "2021-10-01"^^xsd:date;
+  ndc:keyConcept "bovine-carcass-classification" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2021-10-01"^^xsd:date;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;

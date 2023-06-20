@@ -1,661 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:ql="http://semweb.mmlab.be/ns/ql#"
-    xmlns:fno="https://w3id.org/function/ontology#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:ale="https://w3id.org/leo/onto/ale/"
-    xmlns:fnml="http://semweb.mmlab.be/ns/fnml#"
-    xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
-    xmlns:l0="https://w3id.org/italia/onto/l0/"
-    xmlns:rr="http://www.w3.org/ns/r2rml#"
-    xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
-    xmlns:adms="http://www.w3.org/ns/adms#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:idlab-fn="http://example.com/idlab/function/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
-    xmlns:grel="http://users.ugent.be/~bjdmeest/function/grel.ttl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rml="http://semweb.mmlab.be/ns/rml#" >
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E1">
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>E1</skos:notation>
-    <skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: molto scarso</skos:prefLabel>
-    <rdfs:label xml:lang="it">E1 - Conformazione: eccellente; stato ingrassamento: molto scarso</rdfs:label>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Molto scarso</skos:prefLabel>
-    <skos:notation>1</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Copertura di grasso da inesistente a molto scarsa</skos:definition>
-    <rdfs:label xml:lang="it">Molto scarso</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E5">
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: molto abbondante</skos:prefLabel>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
-    <rdfs:label xml:lang="it">E5 - Conformazione: eccellente; stato ingrassamento: molto abbondante</rdfs:label>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:notation>E5</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Eccellente</skos:prefLabel>
-    <skos:notation>E</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Tutti i profili da convessi e superconvessi, sviluppo muscolare eccezionale</skos:definition>
-    <rdfs:label xml:lang="it">Eccellente</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O5">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: molto abbondante</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:notation>O5</skos:notation>
-    <rdfs:label xml:lang="it">O5 - Conformazione: abbastanza buona; stato ingrassamento: molto abbondante</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Molto abbondante</skos:prefLabel>
-    <skos:notation>5</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Il grasso ricopre tutta la carcassa, rilevanti masse all'interno della cassa toracica</skos:definition>
-    <rdfs:label xml:lang="it">Molto abbondante</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P3">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: medio</skos:prefLabel>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:notation>P3</skos:notation>
-    <rdfs:label xml:lang="it">P3 - Conformazione: mediocre; stato ingrassamento: medio</rdfs:label>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U1">
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: molto scarso</skos:prefLabel>
-    <skos:notation>U1</skos:notation>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <rdfs:label xml:lang="it">U1 - Conformazione: ottima; stato ingrassamento: molto scarso</rdfs:label>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S1">
-    <rdfs:label xml:lang="it">S1 - Conformazione: superiore; stato ingrassamento: molto scarso</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: molto scarso</skos:prefLabel>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:notation>S1</skos:notation>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R3">
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="it">R3 - Conformazione: buona; stato ingrassamento: medio</rdfs:label>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>R3</skos:notation>
-    <skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: medio</skos:prefLabel>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U5">
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: molto abbondante</skos:prefLabel>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdfs:label xml:lang="it">U5 - Conformazione: ottima; stato ingrassamento: molto abbondante</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:notation>U5</skos:notation>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O1">
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>O1</skos:notation>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="it">O1 - Conformazione: abbastanza buona; stato ingrassamento: molto scarso</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: molto scarso</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S5">
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
-    <skos:notation>S5</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdfs:label xml:lang="it">S5 - Conformazione: superiore; stato ingrassamento: molto abbondante</rdfs:label>
-    <skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: molto abbondante</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/00">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Classificazione non necessaria</skos:prefLabel>
-    <skos:notation>00</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdfs:label xml:lang="it">00 - Classificazione non necessaria</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation">
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
-    <skos:prefLabel xml:lang="it">Classi di conformazione delle carcasse bovine</skos:prefLabel>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
-    <rdfs:label xml:lang="it">Classi di conformazione delle carcasse bovine</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E4">
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdfs:label xml:lang="it">E4 - Conformazione: eccellente; stato ingrassamento: abbondante</rdfs:label>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-    <skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: abbondante</skos:prefLabel>
-    <skos:notation>E4</skos:notation>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Scarso</skos:prefLabel>
-    <skos:notation>2</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Sottile copertura di grasso, muscoli quasi ovunque apparenti</skos:definition>
-    <rdfs:label xml:lang="it">Scarso</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Mediocre</skos:prefLabel>
-    <skos:notation>P</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Tutti profili da concavi a molto concavi, sviluppo muscolare ridotto</skos:definition>
-    <rdfs:label xml:lang="it">Mediocre</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O4">
-    <rdfs:label xml:lang="it">O4 - Conformazione: abbastanza buona; stato ingrassamento: abbondante</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: abbondante</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:notation>O4</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/bovine-carcass-classification-JSON-LD">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-classification/bovine-carcass-classification.jsonld"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-classification"/>
-    <dct:title xml:lang="en">This is the JSON-LD distribution of the controlled vocabulary on the classification of carcasses of bovine animals</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulla classificazione delle carcasse dei bovini</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-XML">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-classification/bovine-carcass-classification.rdf"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-classification"/>
-    <dct:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the classification of carcasses of bovine animals</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulla classificazione delle carcasse dei bovini</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P2">
-    <skos:notation>P2</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
-    <skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: scarso</skos:prefLabel>
-    <rdfs:label xml:lang="it">P2 - Conformazione: mediocre; stato ingrassamento: scarso</rdfs:label>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U4">
-    <skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: abbondante</skos:prefLabel>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:notation>U4</skos:notation>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-    <rdfs:label xml:lang="it">U4 - Conformazione: ottima; stato ingrassamento: abbondante</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R2">
-    <skos:notation>R2</skos:notation>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: scarso</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdfs:label xml:lang="it">R2 - Conformazione: buona; stato ingrassamento: scarso</rdfs:label>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S4">
-    <skos:notation>S4</skos:notation>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="it">S4 - Conformazione: superiore; stato ingrassamento: abbondante</rdfs:label>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: abbondante</skos:prefLabel>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Ottima</skos:prefLabel>
-    <skos:notation>U</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Profili nell'insieme convessi, sviluppo muscolare abbondante</skos:definition>
-    <rdfs:label xml:lang="it">Ottima</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-TURTLE">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-classification/bovine-carcass-classification.ttl"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-classification"/>
-    <dct:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the classification of carcasses of bovine animals</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulla classificazione delle carcasse dei bovini</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E3">
-    <rdfs:label xml:lang="it">E3 - Conformazione: eccellente; stato ingrassamento: medio</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
-    <skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: medio</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <skos:notation>E3</skos:notation>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Abbastanza buona</skos:prefLabel>
-    <skos:notation>O</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Profili da rettilinei a concavi, sviluppo muscolare medio</skos:definition>
-    <rdfs:label xml:lang="it">Abbastanza buona</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Medio</skos:prefLabel>
-    <skos:notation>3</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Muscoli, salvo quelli della coscia e della spalla, quasi ovunque coperti di grasso; scarsi depositi di grasso all'interno della cassa toracica</skos:definition>
-    <rdfs:label xml:lang="it">Medio</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P5">
-    <skos:notation>P5</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <rdfs:label xml:lang="it">P5 - Conformazione: mediocre; stato ingrassamento: molto abbondante</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: molto abbondante</skos:prefLabel>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R5">
-    <rdfs:label xml:lang="it">R5 - Conformazione: buona; stato ingrassamento: molto abbondante</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:notation>R5</skos:notation>
-    <skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: molto abbondante</skos:prefLabel>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O3">
-    <skos:notation>O3</skos:notation>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: medio</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdfs:label xml:lang="it">O3 - Conformazione: abbastanza buona; stato ingrassamento: medio</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U3">
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: medio</skos:prefLabel>
-    <rdfs:label xml:lang="it">U3 - Conformazione: ottima; stato ingrassamento: medio</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
-    <skos:notation>U3</skos:notation>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P1">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: molto scarso</skos:prefLabel>
-    <rdfs:label xml:lang="it">P1 - Conformazione: mediocre; stato ingrassamento: molto scarso</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>P1</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S3">
-    <skos:notation>S3</skos:notation>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: medio</skos:prefLabel>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
-    <rdfs:label xml:lang="it">S3 - Conformazione: superiore; stato ingrassamento: medio</rdfs:label>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R1">
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>R1</skos:notation>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="it">R1 - Conformazione: buona; stato ingrassamento: molto scarso</rdfs:label>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: molto scarso</skos:prefLabel>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E2">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="it">E2 - Conformazione: eccellente; stato ingrassamento: scarso</rdfs:label>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: scarso</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:notation>E2</skos:notation>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification">
-    <dct:description xml:lang="it">Questo è il vocabolario controllato per la classificazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di classificazione di riferimento è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013. La classificazione delle carcasse di bovini si effettua valutando la conformazione e lo stato d'ingrassamento della carcassa.</dct:description>
-    <rdfs:comment xml:lang="it">Questo è il vocabolario controllato per la classificazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di classificazione di riferimento è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013. La classificazione delle carcasse di bovini si effettua valutando la conformazione e lo stato d'ingrassamento della carcassa.</rdfs:comment>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O4"/>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-classification-JSON-LD"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
-    <rdfs:comment xml:lang="en">This is the controlled vocabulary for the classification of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference classification scales for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013. Bovine carcasses are classified by assessing the conformation and the fat cover of the carcass.</rdfs:comment>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-01</dct:modified>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O1"/>
-    <dct:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E1"/>
-    <rdfs:label xml:lang="en">Controlled Vocabulary for the classification of carcasses of bovine animals of the LEO project</rdfs:label>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U2"/>
-    <dcat:keyword xml:lang="it">SEUROP</dcat:keyword>
-    <dcat:keyword xml:lang="en">SEUROP</dcat:keyword>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R3"/>
-    <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S4"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U4"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R5"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/00"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O2"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E2"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O5"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R4"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P4"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-01</dct:issued>
-    <dcat:keyword xml:lang="en">carcass fat cover</dcat:keyword>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E4"/>
-    <dct:title xml:lang="it">Vocabolario controllato per la classificazione delle carcasse dei bovini del progetto LEO</dct:title>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U3"/>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P1"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R1"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S2"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S5"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U5"/>
-    <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <dct:title xml:lang="en">Controlled Vocabulary for the classification of carcasses of bovine animals of the LEO project</dct:title>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O3"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E3"/>
-    <dcat:keyword xml:lang="it">conformazione della carcassa</dcat:keyword>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-XML"/>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-TURTLE"/>
-    <rdfs:label xml:lang="it">Vocabolario controllato per la classificazione delle carcasse dei bovini del progetto LEO</rdfs:label>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P5"/>
-    <dct:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E5"/>
-    <dct:description xml:lang="en">This is the controlled vocabulary for the classification of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference classification scales for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013. Bovine carcasses are classified by assessing the conformation and the fat cover of the carcass.</dct:description>
-    <dcat:keyword xml:lang="en">classification of carcasses of bovine animals</dcat:keyword>
-    <dcat:keyword xml:lang="it">classificazione delle carcasse dei bovini</dcat:keyword>
-    <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S3"/>
-    <owl:versionInfo xml:lang="it">Versione 0.1</owl:versionInfo>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P3"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S1"/>
-    <dcat:keyword xml:lang="en">carcass conformation</dcat:keyword>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P2"/>
-    <dcat:keyword xml:lang="it">stato d'ingrassamento della carcassa</dcat:keyword>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R2"/>
-    <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
-    <dct:identifier>https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification</dct:identifier>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U1"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Buona</skos:prefLabel>
-    <skos:notation>R</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Profili nell'insieme rettilinei, sviluppo muscolare buono</skos:definition>
-    <rdfs:label xml:lang="it">Buona</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Abbondante</skos:prefLabel>
-    <skos:notation>4</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Muscoli coperti di grasso, ma ancora parzialmente visibili al livello della coscia e della spalla; qualche massa consistente di grasso all'interno della cassa toracica</skos:definition>
-    <rdfs:label xml:lang="it">Abbondante</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/classification">
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S4"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/00"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R5"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O4"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P1"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U1"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S1"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E3"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S3"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O3"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R2"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U3"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E4"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S5"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R1"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O5"/>
-    <skos:prefLabel xml:lang="it">Classificazione delle carcasse bovine in base alla conformazione e allo stato di ingrassamento</skos:prefLabel>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P4"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U4"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R4"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P3"/>
-    <rdfs:label xml:lang="it">Classificazione delle carcasse bovine in base alla conformazione e allo stato di ingrassamento</rdfs:label>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R3"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O1"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P5"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U5"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E2"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S2"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O2"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E1"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P2"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O2">
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
-    <skos:notation>O2</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdfs:label xml:lang="it">O2 - Conformazione: abbastanza buona; stato ingrassamento: scarso</rdfs:label>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: scarso</skos:prefLabel>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P4">
-    <skos:notation>P4</skos:notation>
-    <skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: abbondante</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-    <rdfs:label xml:lang="it">P4 - Conformazione: mediocre; stato ingrassamento: abbondante</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U2">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>U2</skos:notation>
-    <rdfs:label xml:lang="it">U2 - Conformazione: ottima; stato ingrassamento: scarso</rdfs:label>
-    <skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: scarso</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S2">
-    <skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: scarso</skos:prefLabel>
-    <skos:notation>S2</skos:notation>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdfs:label xml:lang="it">S2 - Conformazione: superiore; stato ingrassamento: scarso</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R4">
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
-    <ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-    <skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:notation>R4</skos:notation>
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="it">R4 - Conformazione: buona; stato ingrassamento: abbondante</rdfs:label>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: abbondante</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S">
-    <ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:prefLabel xml:lang="it">Superiore</skos:prefLabel>
-    <skos:notation>S</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <skos:definition xml:lang="it">Tutti i profili superconvessi, sviluppo muscolare eccezionale con doppia groppa (groppa di cavallo)</skos:definition>
-    <rdfs:label xml:lang="it">Superiore</rdfs:label>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover">
-    <skos:prefLabel xml:lang="it">Classi di stato di ingrassamento delle carcasse bovine</skos:prefLabel>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
-    <skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
-    <rdfs:label xml:lang="it">Classi di stato di ingrassamento delle carcasse bovine</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-  </rdf:Description>
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rr="http://www.w3.org/ns/r2rml#"
+	xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:ale="https://w3id.org/leo/onto/ale/"
+	xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+	xmlns:fnml="http://semweb.mmlab.be/ns/fnml#"
+	xmlns:fno="https://w3id.org/function/ontology#"
+	xmlns:grel="http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+	xmlns:idlab-fn="http://example.com/idlab/function/"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:ql="http://semweb.mmlab.be/ns/ql#"
+	xmlns:rml="http://semweb.mmlab.be/ns/rml#"
+	xmlns:ndc="https://w3id.org/italia/onto/NDC/">
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:description xml:lang="it">Questo è il vocabolario controllato per la classificazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di classificazione di riferimento è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013. La classificazione delle carcasse di bovini si effettua valutando la conformazione e lo stato d&apos;ingrassamento della carcassa.</dcterms:description>
+		<dcterms:description xml:lang="en">This is the controlled vocabulary for the classification of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference classification scales for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013. Bovine carcasses are classified by assessing the conformation and the fat cover of the carcass.</dcterms:description>
+		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification</dcterms:identifier>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-01</dcterms:issued>
+		<ndc:keyConcept>bovine-carcass-classification</ndc:keyConcept>
+		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-01</dcterms:modified>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:title xml:lang="en">Controlled Vocabulary for the classification of carcasses of bovine animals of the LEO project</dcterms:title>
+		<dcterms:title xml:lang="it">Vocabolario controllato per la classificazione delle carcasse dei bovini del progetto LEO</dcterms:title>
+		<dcterms:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+		<rdfs:comment xml:lang="it">Questo è il vocabolario controllato per la classificazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di classificazione di riferimento è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013. La classificazione delle carcasse di bovini si effettua valutando la conformazione e lo stato d&apos;ingrassamento della carcassa.</rdfs:comment>
+		<rdfs:comment xml:lang="en">This is the controlled vocabulary for the classification of carcasses of bovine animals, used in the context of the project LEO - Livestock Environment Open Data. The reference classification scales for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013. Bovine carcasses are classified by assessing the conformation and the fat cover of the carcass.</rdfs:comment>
+		<rdfs:label xml:lang="en">Controlled Vocabulary for the classification of carcasses of bovine animals of the LEO project</rdfs:label>
+		<rdfs:label xml:lang="it">Vocabolario controllato per la classificazione delle carcasse dei bovini del progetto LEO</rdfs:label>
+		<owl:versionInfo xml:lang="it">Versione 0.1</owl:versionInfo>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/00"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E5"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O5"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P5"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R5"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S5"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U5"/>
+		<adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+		<dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-classification-JSON-LD"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-TURTLE"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-XML"/>
+		<dcat:keyword xml:lang="en">SEUROP</dcat:keyword>
+		<dcat:keyword xml:lang="it">SEUROP</dcat:keyword>
+		<dcat:keyword xml:lang="en">carcass conformation</dcat:keyword>
+		<dcat:keyword xml:lang="en">carcass fat cover</dcat:keyword>
+		<dcat:keyword xml:lang="en">classification of carcasses of bovine animals</dcat:keyword>
+		<dcat:keyword xml:lang="it">classificazione delle carcasse dei bovini</dcat:keyword>
+		<dcat:keyword xml:lang="it">conformazione della carcassa</dcat:keyword>
+		<dcat:keyword xml:lang="it">stato d&apos;ingrassamento della carcassa</dcat:keyword>
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/00">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">00 - Classificazione non necessaria</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>00</skos:notation>
+		<skos:prefLabel xml:lang="it">Classificazione non necessaria</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">E1 - Conformazione: eccellente; stato ingrassamento: molto scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>E1</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: molto scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">E2 - Conformazione: eccellente; stato ingrassamento: scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>E2</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">E3 - Conformazione: eccellente; stato ingrassamento: medio</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>E3</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: medio</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">E4 - Conformazione: eccellente; stato ingrassamento: abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>E4</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">E5 - Conformazione: eccellente; stato ingrassamento: molto abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>E5</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: eccellente; stato ingrassamento: molto abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">O1 - Conformazione: abbastanza buona; stato ingrassamento: molto scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>O1</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: molto scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">O2 - Conformazione: abbastanza buona; stato ingrassamento: scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>O2</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">O3 - Conformazione: abbastanza buona; stato ingrassamento: medio</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>O3</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: medio</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">O4 - Conformazione: abbastanza buona; stato ingrassamento: abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>O4</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">O5 - Conformazione: abbastanza buona; stato ingrassamento: molto abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>O5</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: abbastanza buona; stato ingrassamento: molto abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">P1 - Conformazione: mediocre; stato ingrassamento: molto scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>P1</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: molto scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">P2 - Conformazione: mediocre; stato ingrassamento: scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>P2</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">P3 - Conformazione: mediocre; stato ingrassamento: medio</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>P3</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: medio</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">P4 - Conformazione: mediocre; stato ingrassamento: abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>P4</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">P5 - Conformazione: mediocre; stato ingrassamento: molto abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>P5</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: mediocre; stato ingrassamento: molto abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">R1 - Conformazione: buona; stato ingrassamento: molto scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>R1</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: molto scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">R2 - Conformazione: buona; stato ingrassamento: scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>R2</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">R3 - Conformazione: buona; stato ingrassamento: medio</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>R3</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: medio</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">R4 - Conformazione: buona; stato ingrassamento: abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>R4</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">R5 - Conformazione: buona; stato ingrassamento: molto abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>R5</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: buona; stato ingrassamento: molto abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">S1 - Conformazione: superiore; stato ingrassamento: molto scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>S1</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: molto scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">S2 - Conformazione: superiore; stato ingrassamento: scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>S2</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">S3 - Conformazione: superiore; stato ingrassamento: medio</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>S3</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: medio</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">S4 - Conformazione: superiore; stato ingrassamento: abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>S4</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">S5 - Conformazione: superiore; stato ingrassamento: molto abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>S5</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: superiore; stato ingrassamento: molto abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">U1 - Conformazione: ottima; stato ingrassamento: molto scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>U1</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: molto scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">U2 - Conformazione: ottima; stato ingrassamento: scarso</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>U2</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: scarso</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">U3 - Conformazione: ottima; stato ingrassamento: medio</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>U3</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: medio</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">U4 - Conformazione: ottima; stato ingrassamento: abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>U4</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassClassification"/>
+		<rdfs:label xml:lang="it">U5 - Conformazione: ottima; stato ingrassamento: molto abbondante</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>U5</skos:notation>
+		<skos:prefLabel xml:lang="it">Conformazione: ottima; stato ingrassamento: molto abbondante</skos:prefLabel>
+		<skos:topConceptOf rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
+		<ale:hasConstituent rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/classification">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+		<rdfs:label xml:lang="it">Classificazione delle carcasse bovine in base alla conformazione e allo stato di ingrassamento</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/00"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/E5"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/O5"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/P5"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/R5"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/S5"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/U5"/>
+		<skos:prefLabel xml:lang="it">Classificazione delle carcasse bovine in base alla conformazione e allo stato di ingrassamento</skos:prefLabel>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+		<rdfs:label xml:lang="it">Classi di conformazione delle carcasse bovine</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U"/>
+		<skos:prefLabel xml:lang="it">Classi di conformazione delle carcasse bovine</skos:prefLabel>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/E">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
+		<rdfs:label xml:lang="it">Eccellente</rdfs:label>
+		<skos:definition xml:lang="it">Tutti i profili da convessi e superconvessi, sviluppo muscolare eccezionale</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>E</skos:notation>
+		<skos:prefLabel xml:lang="it">Eccellente</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/O">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
+		<rdfs:label xml:lang="it">Abbastanza buona</rdfs:label>
+		<skos:definition xml:lang="it">Profili da rettilinei a concavi, sviluppo muscolare medio</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>O</skos:notation>
+		<skos:prefLabel xml:lang="it">Abbastanza buona</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/P">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
+		<rdfs:label xml:lang="it">Mediocre</rdfs:label>
+		<skos:definition xml:lang="it">Tutti profili da concavi a molto concavi, sviluppo muscolare ridotto</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>P</skos:notation>
+		<skos:prefLabel xml:lang="it">Mediocre</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/R">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
+		<rdfs:label xml:lang="it">Buona</rdfs:label>
+		<skos:definition xml:lang="it">Profili nell&apos;insieme rettilinei, sviluppo muscolare buono</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>R</skos:notation>
+		<skos:prefLabel xml:lang="it">Buona</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/S">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
+		<rdfs:label xml:lang="it">Superiore</rdfs:label>
+		<skos:definition xml:lang="it">Tutti i profili superconvessi, sviluppo muscolare eccezionale con doppia groppa (groppa di cavallo)</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>S</skos:notation>
+		<skos:prefLabel xml:lang="it">Superiore</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/conformation/U">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/CarcassConformation"/>
+		<rdfs:label xml:lang="it">Ottima</rdfs:label>
+		<skos:definition xml:lang="it">Profili nell&apos;insieme convessi, sviluppo muscolare abbondante</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>U</skos:notation>
+		<skos:prefLabel xml:lang="it">Ottima</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+		<rdfs:label xml:lang="it">Classi di stato di ingrassamento delle carcasse bovine</rdfs:label>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4"/>
+		<skos:member rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5"/>
+		<skos:prefLabel xml:lang="it">Classi di stato di ingrassamento delle carcasse bovine</skos:prefLabel>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
+		<rdfs:label xml:lang="it">Molto scarso</rdfs:label>
+		<skos:definition xml:lang="it">Copertura di grasso da inesistente a molto scarsa</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>1</skos:notation>
+		<skos:prefLabel xml:lang="it">Molto scarso</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
+		<rdfs:label xml:lang="it">Scarso</rdfs:label>
+		<skos:definition xml:lang="it">Sottile copertura di grasso, muscoli quasi ovunque apparenti</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>2</skos:notation>
+		<skos:prefLabel xml:lang="it">Scarso</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
+		<rdfs:label xml:lang="it">Medio</rdfs:label>
+		<skos:definition xml:lang="it">Muscoli, salvo quelli della coscia e della spalla, quasi ovunque coperti di grasso; scarsi depositi di grasso all&apos;interno della cassa toracica</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>3</skos:notation>
+		<skos:prefLabel xml:lang="it">Medio</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
+		<rdfs:label xml:lang="it">Abbondante</rdfs:label>
+		<skos:definition xml:lang="it">Muscoli coperti di grasso, ma ancora parzialmente visibili al livello della coscia e della spalla; qualche massa consistente di grasso all&apos;interno della cassa toracica</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>4</skos:notation>
+		<skos:prefLabel xml:lang="it">Abbondante</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification/fat-cover/5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/ale/FatCover"/>
+		<rdfs:label xml:lang="it">Molto abbondante</rdfs:label>
+		<skos:definition xml:lang="it">Il grasso ricopre tutta la carcassa, rilevanti masse all&apos;interno della cassa toracica</skos:definition>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/bovine-carcass-classification"/>
+		<skos:notation>5</skos:notation>
+		<skos:prefLabel xml:lang="it">Molto abbondante</skos:prefLabel>
+		<ale:appliesToSpecies rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/bovine-carcass-classification-JSON-LD">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulla classificazione delle carcasse dei bovini</dcterms:title>
+		<dcterms:title xml:lang="en">This is the JSON-LD distribution of the controlled vocabulary on the classification of carcasses of bovine animals</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-classification"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-classification/bovine-carcass-classification.jsonld"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-TURTLE">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulla classificazione delle carcasse dei bovini</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the classification of carcasses of bovine animals</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-classification"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-classification/bovine-carcass-classification.ttl"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/bovine-carcass-classification-RDF-XML">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulla classificazione delle carcasse dei bovini</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the classification of carcasses of bovine animals</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-classification"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-classification/bovine-carcass-classification.rdf"/>
+	</rdf:Description>
 </rdf:RDF>
