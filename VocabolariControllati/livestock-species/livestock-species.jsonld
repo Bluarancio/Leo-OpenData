@@ -1,451 +1,589 @@
-[ {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species",
-  "@type" : [ "http://dati.gov.it/onto/dcatapit#Dataset", "http://www.w3.org/2004/02/skos/core#ConceptScheme", "http://www.w3.org/ns/adms#Asset", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data"
-  }, {
-    "@language" : "it",
-    "@value" : "Questo è il vocabolario controllato specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-12-09"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-04-22"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/rightsHolder" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Controlled Vocabulary on Livestock Species"
-  }, {
-    "@language" : "it",
-    "@value" : "Vocabolario controllato delle specie zootecniche"
-  } ],
-  "http://purl.org/dc/terms/type" : [ {
-    "@id" : "http://purl.org/adms/assettype/CodeList"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data"
-  }, {
-    "@language" : "it",
-    "@value" : "Questo è il vocabolario controllato delle specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Controlled Vocabulary on Livestock Species"
-  }, {
-    "@language" : "it",
-    "@value" : "Vocabolario controllato delle specie zootecniche"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "Versione 0.2 - Rifattorizzazione di AlternativeIdentifier in Identifier in base alle modifiche apportate all'ontologia per la rappresentazione degli animali; correzione dei downloadURL delle distribuzioni"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/70"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C0"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C5"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C6"
-  }, {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C7"
-  } ],
-  "http://www.w3.org/ns/adms#representationTechnique" : [ {
-    "@id" : "http://purl.org/adms/representationtechnique/SKOS"
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://w3id.org/leo/data/distribution/species-JSON-LD"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/species-RDF-TURTLE"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/species-RDF-XML"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "en",
-    "@value" : "livestock species"
-  }, {
-    "@language" : "it",
-    "@value" : "specie zootecniche"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/70",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/LivestockSpecies" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_25410"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_25410"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "70"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "it",
-    "@value" : "BUFALI"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "BUFALI"
-  } ],
-  "https://w3id.org/leo/onto/animal/AIASpeciesCode" : [ {
-    "@value" : "70"
-  } ],
-  "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier" : [ {
-    "@id" : "https://w3id.org/leo/data/identifier/0129"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C0",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/LivestockSpecies" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://eurovoc.europa.eu/842"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://eurovoc.europa.eu/842"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "C0"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "it",
-    "@value" : "EQUINI (razze Cavalline)"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "EQUINI (razze Cavalline)"
-  } ],
-  "https://w3id.org/leo/onto/animal/AIASpeciesCode" : [ {
-    "@value" : "C0"
-  } ],
-  "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier" : [ {
-    "@id" : "https://w3id.org/leo/data/identifier/0126"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/LivestockSpecies" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_1391"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/5034"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_1391"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/5034"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "C4"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "it",
-    "@value" : "BOVINI"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "BOVINI"
-  } ],
-  "https://w3id.org/leo/onto/animal/AIASpeciesCode" : [ {
-    "@value" : "C4"
-  } ],
-  "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier" : [ {
-    "@id" : "https://w3id.org/leo/data/identifier/0121"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C5",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/LivestockSpecies" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_7030"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/2211"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_7030"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/2211"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "C5"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "it",
-    "@value" : "OVINI"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "OVINI"
-  } ],
-  "https://w3id.org/leo/onto/animal/AIASpeciesCode" : [ {
-    "@value" : "C5"
-  } ],
-  "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier" : [ {
-    "@id" : "https://w3id.org/leo/data/identifier/0124"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C6",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/LivestockSpecies" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_3324"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/5252"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_3324"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/5252"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "C6"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "it",
-    "@value" : "CAPRINI"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "CAPRINI"
-  } ],
-  "https://w3id.org/leo/onto/animal/AIASpeciesCode" : [ {
-    "@value" : "C6"
-  } ],
-  "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier" : [ {
-    "@id" : "https://w3id.org/leo/data/identifier/0125"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species/C7",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept", "https://w3id.org/leo/onto/animal/LivestockSpecies" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_7555"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/2560"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://aims.fao.org/aos/agrovoc/c_7555"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/2560"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/leo/controlled-vocabulary/livestock-species"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#notation" : [ {
-    "@value" : "C7"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "it",
-    "@value" : "SUINI"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "SUINI"
-  } ],
-  "https://w3id.org/leo/onto/animal/AIASpeciesCode" : [ {
-    "@value" : "C7"
-  } ],
-  "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier" : [ {
-    "@id" : "https://w3id.org/leo/data/identifier/0122"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/species-JSON-LD",
-  "@type" : [ "http://dati.gov.it/onto/dcatapit#Distribution", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "This is the JSON-LD distribution of the controlled vocabulary on the livestock species"
-  }, {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD del vocabolario controllato sulle specie zootecniche"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.jsonld"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/species-RDF-TURTLE",
-  "@type" : [ "http://dati.gov.it/onto/dcatapit#Distribution", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "This is the RDF TURTLE distribution of the controlled vocabulary on the livestock species"
-  }, {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle specie zootecniche"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.ttl"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/species-RDF-XML",
-  "@type" : [ "http://dati.gov.it/onto/dcatapit#Distribution", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "This is the RDF XML distribution of the controlled vocabulary on the livestock species"
-  }, {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF XML del vocabolario controllato sulle specie zootecniche"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.rdf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/identifier/0121",
-  "@type" : [ "https://w3id.org/italia/onto/l0/Characteristic", "https://w3id.org/leo/onto/animal/Identifier" ],
-  "https://w3id.org/italia/onto/l0/identifier" : [ {
-    "@language" : "it",
-    "@value" : "0121"
-  } ],
-  "https://w3id.org/leo/onto/animal/assignedBy" : [ {
-    "@id" : "https://w3id.org/leo/data/public-organization/ISTAT"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/identifier/0122",
-  "@type" : [ "https://w3id.org/italia/onto/l0/Characteristic", "https://w3id.org/leo/onto/animal/Identifier" ],
-  "https://w3id.org/italia/onto/l0/identifier" : [ {
-    "@language" : "it",
-    "@value" : "0122"
-  } ],
-  "https://w3id.org/leo/onto/animal/assignedBy" : [ {
-    "@id" : "https://w3id.org/leo/data/public-organization/ISTAT"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/identifier/0124",
-  "@type" : [ "https://w3id.org/italia/onto/l0/Characteristic", "https://w3id.org/leo/onto/animal/Identifier" ],
-  "https://w3id.org/italia/onto/l0/identifier" : [ {
-    "@language" : "it",
-    "@value" : "0124"
-  } ],
-  "https://w3id.org/leo/onto/animal/assignedBy" : [ {
-    "@id" : "https://w3id.org/leo/data/public-organization/ISTAT"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/identifier/0125",
-  "@type" : [ "https://w3id.org/italia/onto/l0/Characteristic", "https://w3id.org/leo/onto/animal/Identifier" ],
-  "https://w3id.org/italia/onto/l0/identifier" : [ {
-    "@language" : "it",
-    "@value" : "0125"
-  } ],
-  "https://w3id.org/leo/onto/animal/assignedBy" : [ {
-    "@id" : "https://w3id.org/leo/data/public-organization/ISTAT"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/identifier/0126",
-  "@type" : [ "https://w3id.org/italia/onto/l0/Characteristic", "https://w3id.org/leo/onto/animal/Identifier" ],
-  "https://w3id.org/italia/onto/l0/identifier" : [ {
-    "@language" : "it",
-    "@value" : "0126"
-  } ],
-  "https://w3id.org/leo/onto/animal/assignedBy" : [ {
-    "@id" : "https://w3id.org/leo/data/public-organization/ISTAT"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/identifier/0129",
-  "@type" : [ "https://w3id.org/italia/onto/l0/Characteristic", "https://w3id.org/leo/onto/animal/Identifier" ],
-  "https://w3id.org/italia/onto/l0/identifier" : [ {
-    "@language" : "it",
-    "@value" : "0129"
-  } ],
-  "https://w3id.org/leo/onto/animal/assignedBy" : [ {
-    "@id" : "https://w3id.org/leo/data/public-organization/ISTAT"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/public-organization/ISTAT",
-  "@type" : [ "https://w3id.org/italia/onto/COV/Organization", "https://w3id.org/italia/onto/l0/Agent" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Istituto Nazionale di Statistica - ISTAT"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://dbpedia.org/resource/Italian_National_Institute_of_Statistics"
-  }, {
-    "@id" : "http://www.wikidata.org/entity/Q214195"
-  }, {
-    "@id" : "https://w3id.org/italia/data/public-organization/ISTAT"
-  } ],
-  "https://w3id.org/italia/onto/COV/IPAcode" : [ {
-    "@value" : "ISTAT"
-  } ],
-  "https://w3id.org/italia/onto/COV/hasCategory" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/S13/110"
-  } ],
-  "https://w3id.org/italia/onto/COV/hasLegalStatus" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/2711"
-  } ],
-  "https://w3id.org/italia/onto/COV/legalName" : [ {
-    "@language" : "it",
-    "@value" : "Istituto Nazionale di Statistica - ISTAT"
-  } ],
-  "https://w3id.org/italia/onto/COV/taxCode" : [ {
-    "@value" : "80111810588"
-  } ],
-  "https://w3id.org/italia/onto/l0/description" : [ {
-    "@language" : "it",
-    "@value" : "L’Istituto nazionale di statistica, ente di ricerca pubblico, è il principale produttore di statistica ufficiale a supporto dei cittadini e dei decisori pubblici. Opera in piena autonomia e in continua interazione con il mondo accademico e scientifico."
-  } ]
-} ]
+{
+  "@context": {
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rr": "http://www.w3.org/ns/r2rml#",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ale": "https://w3id.org/leo/onto/ale/",
+    "animal": "https://w3id.org/leo/onto/animal/",
+    "clv": "https://w3id.org/italia/onto/CLV/",
+    "co": "https://w3id.org/leo/onto/co/",
+    "cov": "https://w3id.org/italia/onto/COV/",
+    "dcatapit": "http://dati.gov.it/onto/dcatapit#",
+    "fnml": "http://semweb.mmlab.be/ns/fnml#",
+    "fno": "https://w3id.org/function/ontology#",
+    "grel": "http://users.ugent.be/~bjdmeest/function/grel.ttl#",
+    "idlab-fn": "http://example.com/idlab/function/",
+    "l0": "https://w3id.org/italia/onto/l0/",
+    "ql": "http://semweb.mmlab.be/ns/ql#",
+    "rml": "http://semweb.mmlab.be/ns/rml#",
+    "sm": "https://w3id.org/italia/onto/SM/",
+    "ndc": "https://w3id.org/italia/onto/NDC/"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species",
+      "@type": [
+        "dcatapit:Dataset",
+        "skos:ConceptScheme",
+        "adms:Asset",
+        "dcat:Dataset"
+      ],
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questo è il vocabolario controllato specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data"
+        }
+      ],
+      "dcterms:identifier": "https://w3id.org/leo/controlled-vocabulary/livestock-species",
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2020-12-09"
+      },
+      "dcterms:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2022-04-22"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Controlled Vocabulary on Livestock Species"
+        },
+        {
+          "@language": "it",
+          "@value": "Vocabolario controllato delle specie zootecniche"
+        }
+      ],
+      "dcterms:type": {
+        "@id": "http://purl.org/adms/assettype/CodeList"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questo è il vocabolario controllato delle specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Controlled Vocabulary on Livestock Species"
+        },
+        {
+          "@language": "it",
+          "@value": "Vocabolario controllato delle specie zootecniche"
+        }
+      ],
+      "owl:versionInfo": {
+        "@language": "it",
+        "@value": "Versione 0.2 - Rifattorizzazione di AlternativeIdentifier in Identifier in base alle modifiche apportate all'ontologia per la rappresentazione degli animali; correzione dei downloadURL delle distribuzioni"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/70"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C0"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C5"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C6"
+        },
+        {
+          "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C7"
+        }
+      ],
+      "adms:representationTechnique": {
+        "@id": "http://purl.org/adms/representationtechnique/SKOS"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/species-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/species-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/species-RDF-XML"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "livestock species"
+        },
+        {
+          "@language": "it",
+          "@value": "specie zootecniche"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "ndc:keyConcept": "livestock-species"
+    },
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/70",
+      "@type": [
+        "skos:Concept",
+        "animal:LivestockSpecies"
+      ],
+      "owl:sameAs": {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
+      },
+      "skos:exactMatch": {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
+      },
+      "skos:notation": "70",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "BUFALI"
+      },
+      "l0:name": {
+        "@language": "it",
+        "@value": "BUFALI"
+      },
+      "animal:AIASpeciesCode": "70",
+      "animal:hasAlternativeIdentifier": {
+        "@id": "https://w3id.org/leo/data/identifier/0129"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C0",
+      "@type": [
+        "skos:Concept",
+        "animal:LivestockSpecies"
+      ],
+      "owl:sameAs": {
+        "@id": "http://eurovoc.europa.eu/842"
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/842"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
+      },
+      "skos:notation": "C0",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "EQUINI (razze Cavalline)"
+      },
+      "l0:name": {
+        "@language": "it",
+        "@value": "EQUINI (razze Cavalline)"
+      },
+      "animal:AIASpeciesCode": "C0",
+      "animal:hasAlternativeIdentifier": {
+        "@id": "https://w3id.org/leo/data/identifier/0126"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C4",
+      "@type": [
+        "skos:Concept",
+        "animal:LivestockSpecies"
+      ],
+      "owl:sameAs": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_1391"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5034"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_1391"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5034"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
+      },
+      "skos:notation": "C4",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "BOVINI"
+      },
+      "l0:name": {
+        "@language": "it",
+        "@value": "BOVINI"
+      },
+      "animal:AIASpeciesCode": "C4",
+      "animal:hasAlternativeIdentifier": {
+        "@id": "https://w3id.org/leo/data/identifier/0121"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C5",
+      "@type": [
+        "skos:Concept",
+        "animal:LivestockSpecies"
+      ],
+      "owl:sameAs": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7030"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2211"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7030"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2211"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
+      },
+      "skos:notation": "C5",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "OVINI"
+      },
+      "l0:name": {
+        "@language": "it",
+        "@value": "OVINI"
+      },
+      "animal:AIASpeciesCode": "C5",
+      "animal:hasAlternativeIdentifier": {
+        "@id": "https://w3id.org/leo/data/identifier/0124"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C6",
+      "@type": [
+        "skos:Concept",
+        "animal:LivestockSpecies"
+      ],
+      "owl:sameAs": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_3324"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5252"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_3324"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5252"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
+      },
+      "skos:notation": "C6",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "CAPRINI"
+      },
+      "l0:name": {
+        "@language": "it",
+        "@value": "CAPRINI"
+      },
+      "animal:AIASpeciesCode": "C6",
+      "animal:hasAlternativeIdentifier": {
+        "@id": "https://w3id.org/leo/data/identifier/0125"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species/C7",
+      "@type": [
+        "skos:Concept",
+        "animal:LivestockSpecies"
+      ],
+      "owl:sameAs": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7555"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2560"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7555"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2560"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
+      },
+      "skos:notation": "C7",
+      "skos:prefLabel": {
+        "@language": "it",
+        "@value": "SUINI"
+      },
+      "l0:name": {
+        "@language": "it",
+        "@value": "SUINI"
+      },
+      "animal:AIASpeciesCode": "C7",
+      "animal:hasAlternativeIdentifier": {
+        "@id": "https://w3id.org/leo/data/identifier/0122"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/species-JSON-LD",
+      "@type": [
+        "dcatapit:Distribution",
+        "dcat:Distribution"
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD del vocabolario controllato sulle specie zootecniche"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the JSON-LD distribution of the controlled vocabulary on the livestock species"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.jsonld"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/species-RDF-TURTLE",
+      "@type": [
+        "dcatapit:Distribution",
+        "dcat:Distribution"
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle specie zootecniche"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the RDF TURTLE distribution of the controlled vocabulary on the livestock species"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.ttl"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/species-RDF-XML",
+      "@type": [
+        "dcatapit:Distribution",
+        "dcat:Distribution"
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF XML del vocabolario controllato sulle specie zootecniche"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the RDF XML distribution of the controlled vocabulary on the livestock species"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.rdf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/identifier/0121",
+      "@type": [
+        "l0:Characteristic",
+        "animal:Identifier"
+      ],
+      "l0:identifier": {
+        "@language": "it",
+        "@value": "0121"
+      },
+      "animal:assignedBy": {
+        "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/identifier/0122",
+      "@type": [
+        "l0:Characteristic",
+        "animal:Identifier"
+      ],
+      "l0:identifier": {
+        "@language": "it",
+        "@value": "0122"
+      },
+      "animal:assignedBy": {
+        "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/identifier/0124",
+      "@type": [
+        "l0:Characteristic",
+        "animal:Identifier"
+      ],
+      "l0:identifier": {
+        "@language": "it",
+        "@value": "0124"
+      },
+      "animal:assignedBy": {
+        "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/identifier/0125",
+      "@type": [
+        "l0:Characteristic",
+        "animal:Identifier"
+      ],
+      "l0:identifier": {
+        "@language": "it",
+        "@value": "0125"
+      },
+      "animal:assignedBy": {
+        "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/identifier/0126",
+      "@type": [
+        "l0:Characteristic",
+        "animal:Identifier"
+      ],
+      "l0:identifier": {
+        "@language": "it",
+        "@value": "0126"
+      },
+      "animal:assignedBy": {
+        "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/identifier/0129",
+      "@type": [
+        "l0:Characteristic",
+        "animal:Identifier"
+      ],
+      "l0:identifier": {
+        "@language": "it",
+        "@value": "0129"
+      },
+      "animal:assignedBy": {
+        "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/public-organization/ISTAT",
+      "@type": [
+        "cov:Organization",
+        "l0:Agent"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Istituto Nazionale di Statistica - ISTAT"
+      },
+      "owl:sameAs": [
+        {
+          "@id": "http://dbpedia.org/resource/Italian_National_Institute_of_Statistics"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q214195"
+        },
+        {
+          "@id": "https://w3id.org/italia/data/public-organization/ISTAT"
+        }
+      ],
+      "cov:IPAcode": "ISTAT",
+      "cov:hasCategory": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/S13/110"
+      },
+      "cov:hasLegalStatus": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/2711"
+      },
+      "cov:legalName": {
+        "@language": "it",
+        "@value": "Istituto Nazionale di Statistica - ISTAT"
+      },
+      "cov:taxCode": "80111810588",
+      "l0:description": {
+        "@language": "it",
+        "@value": "L’Istituto nazionale di statistica, ente di ricerca pubblico, è il principale produttore di statistica ufficiale a supporto dei cittadini e dei decisori pubblici. Opera in piena autonomia e in continua interazione con il mondo accademico e scientifico."
+      }
+    }
+  ]
+}

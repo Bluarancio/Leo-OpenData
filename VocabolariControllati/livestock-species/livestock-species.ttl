@@ -26,6 +26,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-species> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
@@ -35,6 +36,7 @@
     "This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/livestock-species";
   dct:issued "2020-12-09"^^xsd:date;
+  ndc:keyConcept "livestock-species" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-04-22"^^xsd:date;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
@@ -65,6 +67,8 @@
   skos:prefLabel "BUFALI"@it;
   l0:name "BUFALI"@it;
   animal:AIASpeciesCode "70";
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_25410>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_25410> ;
   animal:hasAlternativeIdentifier <https://w3id.org/leo/data/identifier/0129> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-species/C0> a skos:Concept,
@@ -76,6 +80,8 @@
   skos:prefLabel "EQUINI (razze Cavalline)"@it;
   l0:name "EQUINI (razze Cavalline)"@it;
   animal:AIASpeciesCode "C0";
+  owl:sameAs <http://eurovoc.europa.eu/842>;
+  skos:exactMatch <http://eurovoc.europa.eu/842> ;
   animal:hasAlternativeIdentifier <https://w3id.org/leo/data/identifier/0126> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-species/C4> a skos:Concept,
@@ -87,6 +93,8 @@
   skos:prefLabel "BOVINI"@it;
   l0:name "BOVINI"@it;
   animal:AIASpeciesCode "C4";
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_1391>, <http://eurovoc.europa.eu/5034>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_1391>, <http://eurovoc.europa.eu/5034> ;
   animal:hasAlternativeIdentifier <https://w3id.org/leo/data/identifier/0121> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-species/C5> a skos:Concept,
@@ -98,6 +106,8 @@
   skos:prefLabel "OVINI"@it;
   l0:name "OVINI"@it;
   animal:AIASpeciesCode "C5";
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_7030>, <http://eurovoc.europa.eu/2211>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_7030>, <http://eurovoc.europa.eu/2211> ;
   animal:hasAlternativeIdentifier <https://w3id.org/leo/data/identifier/0124> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-species/C6> a skos:Concept,
@@ -109,6 +119,8 @@
   skos:prefLabel "CAPRINI"@it;
   l0:name "CAPRINI"@it;
   animal:AIASpeciesCode "C6";
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_3324>, <http://eurovoc.europa.eu/5252>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_3324>, <http://eurovoc.europa.eu/5252> ;
   animal:hasAlternativeIdentifier <https://w3id.org/leo/data/identifier/0125> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-species/C7> a skos:Concept,
@@ -120,6 +132,8 @@
   skos:prefLabel "SUINI"@it;
   l0:name "SUINI"@it;
   animal:AIASpeciesCode "C7";
+  owl:sameAs <http://aims.fao.org/aos/agrovoc/c_7555>, <http://eurovoc.europa.eu/2560>;
+  skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_7555>, <http://eurovoc.europa.eu/2560> ;
   animal:hasAlternativeIdentifier <https://w3id.org/leo/data/identifier/0122> .
 
 <https://w3id.org/leo/data/distribution/species-JSON-LD> a dcatapit:Distribution,

@@ -1,228 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-    xmlns:sm="https://w3id.org/italia/onto/SM/"
-    xmlns:fno="https://w3id.org/function/ontology#"
-    xmlns:ale="https://w3id.org/leo/onto/ale/"
-    xmlns:fnml="http://semweb.mmlab.be/ns/fnml#"
-    xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:adms="http://www.w3.org/ns/adms#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
-    xmlns:grel="http://users.ugent.be/~bjdmeest/function/grel.ttl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rml="http://semweb.mmlab.be/ns/rml#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:ql="http://semweb.mmlab.be/ns/ql#"
-    xmlns:csvw="http://www.w3.org/ns/csvw#"
-    xmlns:clv="https://w3id.org/italia/onto/CLV/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:cov="https://w3id.org/italia/onto/COV/"
-    xmlns:co="https://w3id.org/leo/onto/co/"
-    xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
-    xmlns:l0="https://w3id.org/italia/onto/l0/"
-    xmlns:animal="https://w3id.org/leo/onto/animal/"
-    xmlns:rr="http://www.w3.org/ns/r2rml#"
-    xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:idlab-fn="http://example.com/idlab/function/"
-    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" >
-  <rdf:Description rdf:about="https://w3id.org/leo/data/public-organization/ISTAT">
-    <cov:hasLegalStatus rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/2711"/>
-    <rdfs:label xml:lang="it">Istituto Nazionale di Statistica - ISTAT</rdfs:label>
-    <cov:hasCategory rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/S13/110"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
-    <cov:IPAcode>ISTAT</cov:IPAcode>
-    <cov:taxCode>80111810588</cov:taxCode>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Italian_National_Institute_of_Statistics"/>
-    <cov:legalName xml:lang="it">Istituto Nazionale di Statistica - ISTAT</cov:legalName>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q214195"/>
-    <owl:sameAs rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
-    <l0:description xml:lang="it">L’Istituto nazionale di statistica, ente di ricerca pubblico, è il principale produttore di statistica ufficiale a supporto dei cittadini e dei decisori pubblici. Opera in piena autonomia e in continua interazione con il mondo accademico e scientifico.</l0:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4">
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
-    <animal:AIASpeciesCode>C4</animal:AIASpeciesCode>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_1391"/>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1391"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    <l0:name xml:lang="it">BOVINI</l0:name>
-    <animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0121"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>C4</skos:notation>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5034"/>
-    <skos:prefLabel xml:lang="it">BOVINI</skos:prefLabel>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5034"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C5">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="it">OVINI</skos:prefLabel>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/2211"/>
-    <l0:name xml:lang="it">OVINI</l0:name>
-    <skos:notation>C5</skos:notation>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    <animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0124"/>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/2211"/>
-    <animal:AIASpeciesCode>C5</animal:AIASpeciesCode>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_7030"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_7030"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C6">
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
-    <skos:prefLabel xml:lang="it">CAPRINI</skos:prefLabel>
-    <l0:name xml:lang="it">CAPRINI</l0:name>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_3324"/>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_3324"/>
-    <skos:notation>C6</skos:notation>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <animal:AIASpeciesCode>C6</animal:AIASpeciesCode>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/5252"/>
-    <animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0125"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5252"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C7">
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0122"/>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_7555"/>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/2560"/>
-    <skos:notation>C7</skos:notation>
-    <l0:name xml:lang="it">SUINI</l0:name>
-    <animal:AIASpeciesCode>C7</animal:AIASpeciesCode>
-    <skos:prefLabel xml:lang="it">SUINI</skos:prefLabel>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_7555"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/2560"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C0">
-    <l0:name xml:lang="it">EQUINI (razze Cavalline)</l0:name>
-    <owl:sameAs rdf:resource="http://eurovoc.europa.eu/842"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/842"/>
-    <animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0126"/>
-    <skos:prefLabel xml:lang="it">EQUINI (razze Cavalline)</skos:prefLabel>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    <animal:AIASpeciesCode>C0</animal:AIASpeciesCode>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
-    <skos:notation>C0</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species">
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
-    <rdfs:comment xml:lang="it">Questo è il vocabolario controllato delle specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data</rdfs:comment>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-09</dct:issued>
-    <dct:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
-    <dct:title xml:lang="en">Controlled Vocabulary on Livestock Species</dct:title>
-    <dct:description xml:lang="en">This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data</dct:description>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/70"/>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/species-JSON-LD"/>
-    <dcat:keyword xml:lang="it">specie zootecniche</dcat:keyword>
-    <dcat:keyword xml:lang="en">livestock species</dcat:keyword>
-    <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C5"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dct:modified>
-    <dct:description xml:lang="it">Questo è il vocabolario controllato specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data</dct:description>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/species-RDF-XML"/>
-    <rdfs:comment xml:lang="en">This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
-    <dct:title xml:lang="it">Vocabolario controllato delle specie zootecniche</dct:title>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/species-RDF-TURTLE"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C0"/>
-    <rdfs:label xml:lang="en">Controlled Vocabulary on Livestock Species</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <dct:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <dct:identifier>https://w3id.org/leo/controlled-vocabulary/livestock-species</dct:identifier>
-    <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <rdfs:label xml:lang="it">Vocabolario controllato delle specie zootecniche</rdfs:label>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C6"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
-    <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C7"/>
-    <owl:versionInfo xml:lang="it">Versione 0.2 - Rifattorizzazione di AlternativeIdentifier in Identifier in base alle modifiche apportate all'ontologia per la rappresentazione degli animali; correzione dei downloadURL delle distribuzioni</owl:versionInfo>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/species-RDF-XML">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.rdf"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"/>
-    <dct:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the livestock species</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulle specie zootecniche</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0121">
-    <animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
-    <l0:identifier xml:lang="it">0121</l0:identifier>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0122">
-    <animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
-    <l0:identifier xml:lang="it">0122</l0:identifier>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/species-RDF-TURTLE">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.ttl"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"/>
-    <dct:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the livestock species</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle specie zootecniche</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0124">
-    <animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
-    <l0:identifier xml:lang="it">0124</l0:identifier>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0125">
-    <animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
-    <l0:identifier xml:lang="it">0125</l0:identifier>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0126">
-    <animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
-    <l0:identifier xml:lang="it">0126</l0:identifier>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0129">
-    <animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
-    <l0:identifier xml:lang="it">0129</l0:identifier>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
-    <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/70">
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_25410"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="it">BUFALI</skos:prefLabel>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_25410"/>
-    <animal:AIASpeciesCode>70</animal:AIASpeciesCode>
-    <l0:name xml:lang="it">BUFALI</l0:name>
-    <animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0129"/>
-    <skos:notation>70</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/species-JSON-LD">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.jsonld"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"/>
-    <dct:title xml:lang="en">This is the JSON-LD distribution of the controlled vocabulary on the livestock species</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulle specie zootecniche</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:csvw="http://www.w3.org/ns/csvw#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rr="http://www.w3.org/ns/r2rml#"
+	xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:ale="https://w3id.org/leo/onto/ale/"
+	xmlns:animal="https://w3id.org/leo/onto/animal/"
+	xmlns:clv="https://w3id.org/italia/onto/CLV/"
+	xmlns:co="https://w3id.org/leo/onto/co/"
+	xmlns:cov="https://w3id.org/italia/onto/COV/"
+	xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+	xmlns:fnml="http://semweb.mmlab.be/ns/fnml#"
+	xmlns:fno="https://w3id.org/function/ontology#"
+	xmlns:grel="http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+	xmlns:idlab-fn="http://example.com/idlab/function/"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:ql="http://semweb.mmlab.be/ns/ql#"
+	xmlns:rml="http://semweb.mmlab.be/ns/rml#"
+	xmlns:sm="https://w3id.org/italia/onto/SM/"
+	xmlns:ndc="https://w3id.org/italia/onto/NDC/">
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:description xml:lang="it">Questo è il vocabolario controllato specie zootecniche prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data</dcterms:description>
+		<dcterms:description xml:lang="en">This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data</dcterms:description>
+		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/livestock-species</dcterms:identifier>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-09</dcterms:issued>
+		<ndc:keyConcept>livestock-species</ndc:keyConcept>
+		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dcterms:modified>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:title xml:lang="en">Controlled Vocabulary on Livestock Species</dcterms:title>
+		<dcterms:title xml:lang="it">Vocabolario controllato delle specie zootecniche</dcterms:title>
+		<dcterms:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+		<rdfs:comment xml:lang="it">Questo è il vocabolario controllato delle specie zootecniche prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data</rdfs:comment>
+		<rdfs:comment xml:lang="en">This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data</rdfs:comment>
+		<rdfs:label xml:lang="en">Controlled Vocabulary on Livestock Species</rdfs:label>
+		<rdfs:label xml:lang="it">Vocabolario controllato delle specie zootecniche</rdfs:label>
+		<owl:versionInfo xml:lang="it">Versione 0.2 - Rifattorizzazione di AlternativeIdentifier in Identifier in base alle modifiche apportate all&apos;ontologia per la rappresentazione degli animali; correzione dei downloadURL delle distribuzioni</owl:versionInfo>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/70"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C0"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C5"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C6"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species/C7"/>
+		<adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+		<dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/species-JSON-LD"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/species-RDF-TURTLE"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/species-RDF-XML"/>
+		<dcat:keyword xml:lang="en">livestock species</dcat:keyword>
+		<dcat:keyword xml:lang="it">specie zootecniche</dcat:keyword>
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/70">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_25410"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_25410"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
+		<skos:notation>70</skos:notation>
+		<skos:prefLabel xml:lang="it">BUFALI</skos:prefLabel>
+		<l0:name xml:lang="it">BUFALI</l0:name>
+		<animal:AIASpeciesCode>70</animal:AIASpeciesCode>
+		<animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0129"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C0">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+		<owl:sameAs rdf:resource="http://eurovoc.europa.eu/842"/>
+		<skos:exactMatch rdf:resource="http://eurovoc.europa.eu/842"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
+		<skos:notation>C0</skos:notation>
+		<skos:prefLabel xml:lang="it">EQUINI (razze Cavalline)</skos:prefLabel>
+		<l0:name xml:lang="it">EQUINI (razze Cavalline)</l0:name>
+		<animal:AIASpeciesCode>C0</animal:AIASpeciesCode>
+		<animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0126"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_1391"/>
+		<owl:sameAs rdf:resource="http://eurovoc.europa.eu/5034"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1391"/>
+		<skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5034"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
+		<skos:notation>C4</skos:notation>
+		<skos:prefLabel xml:lang="it">BOVINI</skos:prefLabel>
+		<l0:name xml:lang="it">BOVINI</l0:name>
+		<animal:AIASpeciesCode>C4</animal:AIASpeciesCode>
+		<animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0121"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C5">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_7030"/>
+		<owl:sameAs rdf:resource="http://eurovoc.europa.eu/2211"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_7030"/>
+		<skos:exactMatch rdf:resource="http://eurovoc.europa.eu/2211"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
+		<skos:notation>C5</skos:notation>
+		<skos:prefLabel xml:lang="it">OVINI</skos:prefLabel>
+		<l0:name xml:lang="it">OVINI</l0:name>
+		<animal:AIASpeciesCode>C5</animal:AIASpeciesCode>
+		<animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0124"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C6">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_3324"/>
+		<owl:sameAs rdf:resource="http://eurovoc.europa.eu/5252"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_3324"/>
+		<skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5252"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
+		<skos:notation>C6</skos:notation>
+		<skos:prefLabel xml:lang="it">CAPRINI</skos:prefLabel>
+		<l0:name xml:lang="it">CAPRINI</l0:name>
+		<animal:AIASpeciesCode>C6</animal:AIASpeciesCode>
+		<animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0125"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-species/C7">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_7555"/>
+		<owl:sameAs rdf:resource="http://eurovoc.europa.eu/2560"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_7555"/>
+		<skos:exactMatch rdf:resource="http://eurovoc.europa.eu/2560"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-species"/>
+		<skos:notation>C7</skos:notation>
+		<skos:prefLabel xml:lang="it">SUINI</skos:prefLabel>
+		<l0:name xml:lang="it">SUINI</l0:name>
+		<animal:AIASpeciesCode>C7</animal:AIASpeciesCode>
+		<animal:hasAlternativeIdentifier rdf:resource="https://w3id.org/leo/data/identifier/0122"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/species-JSON-LD">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulle specie zootecniche</dcterms:title>
+		<dcterms:title xml:lang="en">This is the JSON-LD distribution of the controlled vocabulary on the livestock species</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.jsonld"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/species-RDF-TURTLE">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle specie zootecniche</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the livestock species</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.ttl"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/species-RDF-XML">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulle specie zootecniche</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the livestock species</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-species"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-species/livestock-species.rdf"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0121">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+		<l0:identifier xml:lang="it">0121</l0:identifier>
+		<animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0122">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+		<l0:identifier xml:lang="it">0122</l0:identifier>
+		<animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0124">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+		<l0:identifier xml:lang="it">0124</l0:identifier>
+		<animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0125">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+		<l0:identifier xml:lang="it">0125</l0:identifier>
+		<animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0126">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+		<l0:identifier xml:lang="it">0126</l0:identifier>
+		<animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/identifier/0129">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/Identifier"/>
+		<l0:identifier xml:lang="it">0129</l0:identifier>
+		<animal:assignedBy rdf:resource="https://w3id.org/leo/data/public-organization/ISTAT"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/public-organization/ISTAT">
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+		<rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+		<rdfs:label xml:lang="it">Istituto Nazionale di Statistica - ISTAT</rdfs:label>
+		<owl:sameAs rdf:resource="http://dbpedia.org/resource/Italian_National_Institute_of_Statistics"/>
+		<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q214195"/>
+		<owl:sameAs rdf:resource="https://w3id.org/italia/data/public-organization/ISTAT"/>
+		<cov:IPAcode>ISTAT</cov:IPAcode>
+		<cov:hasCategory rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/S13/110"/>
+		<cov:hasLegalStatus rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-organizations/legal-status/2711"/>
+		<cov:legalName xml:lang="it">Istituto Nazionale di Statistica - ISTAT</cov:legalName>
+		<cov:taxCode>80111810588</cov:taxCode>
+		<l0:description xml:lang="it">L’Istituto nazionale di statistica, ente di ricerca pubblico, è il principale produttore di statistica ufficiale a supporto dei cittadini e dei decisori pubblici. Opera in piena autonomia e in continua interazione con il mondo accademico e scientifico.</l0:description>
+	</rdf:Description>
 </rdf:RDF>
