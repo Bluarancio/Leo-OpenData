@@ -1,147 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
-    xmlns:adms="http://www.w3.org/ns/adms#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
-    xmlns:l0="https://w3id.org/italia/onto/l0/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:animal="https://w3id.org/leo/onto/animal/" >
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/2">
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_2628"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
-    <l0:identifier>2</l0:identifier>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_2628"/>
-    <skos:prefLabel xml:lang="en">Equidae</skos:prefLabel>
-    <skos:notation>2</skos:notation>
-    <l0:name xml:lang="it">Equide</l0:name>
-    <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q165115"/>
-    <skos:prefLabel xml:lang="it">Equide</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q165115"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
-    <l0:name xml:lang="en">Equidae</l0:name>
-    <skos:altLabel xml:lang="it">Equidi</skos:altLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/1">
-    <l0:name xml:lang="it">Bovide</l0:name>
-    <skos:notation>1</skos:notation>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_1038"/>
-    <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q25497"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
-    <skos:altLable xml:lang="it">Bovidi</skos:altLable>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1038"/>
-    <l0:name xml:lang="en">Bovidae</l0:name>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25497"/>
-    <skos:prefLabel xml:lang="en">Bovidae</skos:prefLabel>
-    <l0:identifier>1</l0:identifier>
-    <skos:prefLabel xml:lang="it">Bovide</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family">
-    <dct:identifier>https://w3id.org/leo/controlled-vocabulary/livestock-family</dct:identifier>
-    <dct:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
-    <dct:conformsTo rdf:resource="https://w3id.org/italia/data/standard/SKOS"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dct:issued>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/4"/>
-    <rdfs:comment xml:lang="en">This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data</rdfs:comment>
-    <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
-    <dct:description xml:lang="it">Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data</dct:description>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/families-JSON-LD"/>
-    <rdfs:label xml:lang="it">Vocabolario controllato delle famiglie zootecniche</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
-    <xkos:numberOfLevels>1</xkos:numberOfLevels>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/families-RDF-TURTLE"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
-    <rdfs:comment xml:lang="it">Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data</rdfs:comment>
-    <dct:title xml:lang="en">Controlled Vocabulary on Livestock Families</dct:title>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/3"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dct:modified>
-    <dct:description xml:lang="en">This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data</dct:description>
-    <dct:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/2"/>
-    <dct:title xml:lang="it">Vocabolario controllato delle famiglie zootecniche</dct:title>
-    <dcat:keyword xml:lang="en">livestock families</dcat:keyword>
-    <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/1"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
-    <owl:versionInfo xml:lang="it">Versione 0.1 - Creation of the vocabulary</owl:versionInfo>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
-    <dcat:keyword xml:lang="it">famiglie zootecniche</dcat:keyword>
-    <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
-    <dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/families-RDF-XML"/>
-    <rdfs:label xml:lang="en">Controlled Vocabulary on Livestock Families</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/4">
-    <l0:name xml:lang="it">Suide</l0:name>
-    <l0:identifier>4</l0:identifier>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q166898"/>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_31903"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q166898"/>
-    <skos:prefLabel xml:lang="it">Suide</skos:prefLabel>
-    <l0:name xml:lang="en">Suidae</l0:name>
-    <skos:notation>4</skos:notation>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_31903"/>
-    <skos:altLabel xml:lang="it">Suidi</skos:altLabel>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
-    <skos:prefLabel xml:lang="en">Suidae</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/3">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q25900"/>
-    <l0:name xml:lang="it">Leporide</l0:name>
-    <skos:prefLabel xml:lang="it">Leporide</skos:prefLabel>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25900"/>
-    <skos:altLabel xml:lang="it">Leporidi</skos:altLabel>
-    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_ec3f0982"/>
-    <skos:notation>3</skos:notation>
-    <skos:prefLabel xml:lang="en">Leporidae</skos:prefLabel>
-    <l0:name xml:lang="en">Leporidae</l0:name>
-    <owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_ec3f0982"/>
-    <skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
-    <rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
-    <l0:identifier>3</l0:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/families-RDF-TURTLE">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.ttl"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
-    <dct:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the livestock families</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle famiglie zootecniche</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/families-RDF-XML">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.rdf"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
-    <dct:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the livestock families</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulle famiglie zootecniche</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/leo/data/distribution/families-JSON-LD">
-    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.jsonld"/>
-    <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
-    <dct:title xml:lang="en">This is the JSON-LD distribution of the controlled vocabulary on the livestock families</dct:title>
-    <dct:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulle famiglie zootecniche</dct:title>
-    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
-  </rdf:Description>
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:animal="https://w3id.org/leo/onto/animal/"
+	xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:ndc="https://w3id.org/italia/onto/NDC/">
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+		<dcterms:description xml:lang="it">Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data</dcterms:description>
+		<dcterms:description xml:lang="en">This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data</dcterms:description>
+		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/livestock-family</dcterms:identifier>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dcterms:issued>
+		<xkos:numberOfLevels>1</xkos:numberOfLevels>
+		<ndc:keyConcept>livestock-family</ndc:keyConcept>
+		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dcterms:modified>
+		<dcterms:conformsTo rdf:resource="https://w3id.org/italia/data/standard/SKOS"/>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:title xml:lang="en">Controlled Vocabulary on Livestock Families</dcterms:title>
+		<dcterms:title xml:lang="it">Vocabolario controllato delle famiglie zootecniche</dcterms:title>
+		<dcterms:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+		<rdfs:comment xml:lang="it">Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data</rdfs:comment>
+		<rdfs:comment xml:lang="en">This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data</rdfs:comment>
+		<rdfs:label xml:lang="en">Controlled Vocabulary on Livestock Families</rdfs:label>
+		<rdfs:label xml:lang="it">Vocabolario controllato delle famiglie zootecniche</rdfs:label>
+		<owl:versionInfo xml:lang="it">Versione 0.1 - Creation of the vocabulary</owl:versionInfo>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/1"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/2"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/3"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family/4"/>
+		<adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+		<dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/families-JSON-LD"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/families-RDF-TURTLE"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/families-RDF-XML"/>
+		<dcat:keyword xml:lang="en">livestock families</dcat:keyword>
+		<dcat:keyword xml:lang="it">famiglie zootecniche</dcat:keyword>
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/1">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_1038"/>
+		<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25497"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1038"/>
+		<skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q25497"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
+		<skos:notation>1</skos:notation>
+		<skos:prefLabel xml:lang="it">Bovide</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Bovidae</skos:prefLabel>
+		<skos:altLable xml:lang="it">Bovidi</skos:altLable>
+		<l0:name xml:lang="it">Bovide</l0:name>
+		<l0:name xml:lang="en">Bovidae</l0:name>
+		<l0:identifier>1</l0:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/2">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_2628"/>
+		<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q165115"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_2628"/>
+		<skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q165115"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
+		<skos:notation>2</skos:notation>
+		<skos:prefLabel xml:lang="it">Equide</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Equidae</skos:prefLabel>
+		<skos:altLabel xml:lang="it">Equidi</skos:altLabel>
+		<l0:name xml:lang="it">Equide</l0:name>
+		<l0:name xml:lang="en">Equidae</l0:name>
+		<l0:identifier>2</l0:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/3">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_ec3f0982"/>
+		<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q25900"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_ec3f0982"/>
+		<skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q25900"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
+		<skos:notation>3</skos:notation>
+		<skos:prefLabel xml:lang="it">Leporide</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Leporidae</skos:prefLabel>
+		<skos:altLabel xml:lang="it">Leporidi</skos:altLabel>
+		<l0:name xml:lang="it">Leporide</l0:name>
+		<l0:name xml:lang="en">Leporidae</l0:name>
+		<l0:identifier>3</l0:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/livestock-family/4">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/animal/LivestockFamily"/>
+		<owl:sameAs rdf:resource="http://aims.fao.org/aos/agrovoc/c_31903"/>
+		<owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q166898"/>
+		<skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_31903"/>
+		<skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q166898"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/livestock-family"/>
+		<skos:notation>4</skos:notation>
+		<skos:prefLabel xml:lang="it">Suide</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Suidae</skos:prefLabel>
+		<skos:altLabel xml:lang="it">Suidi</skos:altLabel>
+		<l0:name xml:lang="it">Suide</l0:name>
+		<l0:name xml:lang="en">Suidae</l0:name>
+		<l0:identifier>4</l0:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/families-JSON-LD">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulle famiglie zootecniche</dcterms:title>
+		<dcterms:title xml:lang="en">This is the JSON-LD distribution of the controlled vocabulary on the livestock families</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.jsonld"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/families-RDF-TURTLE">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle famiglie zootecniche</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the livestock families</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.ttl"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/families-RDF-XML">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulle famiglie zootecniche</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the livestock families</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.rdf"/>
+	</rdf:Description>
 </rdf:RDF>

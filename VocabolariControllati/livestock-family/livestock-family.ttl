@@ -10,6 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 <https://w3id.org/leo/controlled-vocabulary/livestock-family> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
@@ -20,6 +21,7 @@
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/livestock-family";
   dct:issued "2022-04-22"^^xsd:date;
   xkos:numberOfLevels "1";
+  ndc:keyConcept "livestock-family" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG>;
   dct:modified "2022-04-22"^^xsd:date;
   dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
