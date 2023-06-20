@@ -15,6 +15,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 
 <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
@@ -24,6 +25,7 @@
     "This is the controlled Vocabulary on the reasons for animals for entering a farm, used in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason";
   dct:issued "2022-01-11"^^xsd:date;
+  ndc:keyConcept "entry-in-farm-reason" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-01-11"^^xsd:date;
   dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
