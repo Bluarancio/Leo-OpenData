@@ -321,13 +321,26 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/HybridGeneticType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/hasHybridGeneticType"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/ProductionType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/hasProductionTarget"
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -340,7 +353,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/hasSex"
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -353,7 +366,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/isOfSpecies"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -362,7 +375,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/originType"
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -372,7 +385,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/uniqueAnimalNumber"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -380,19 +393,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ]
-}, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/disposalDate"
   } ]
 }, {
   "@id" : "_:genid60",
@@ -405,7 +405,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/ale/identificationDate"
+    "@id" : "https://w3id.org/leo/onto/ale/disposalDate"
   } ]
 }, {
   "@id" : "_:genid61",
@@ -418,10 +418,23 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/birthDate"
+    "@id" : "https://w3id.org/leo/onto/ale/identificationDate"
   } ]
 }, {
   "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/birthDate"
+  } ]
+}, {
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -434,7 +447,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/isBornThroughEmbryoTransfer"
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -447,7 +460,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/taggingDate"
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
@@ -456,7 +469,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/isAnimalDestinationOf"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/AspectDescriptionCollection"
@@ -465,7 +478,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/hasAspectDescriptionCollection"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -478,7 +491,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/isOfLivestockFamily"
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -491,7 +504,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/assignedBy"
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -499,15 +512,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ]
-}, {
-  "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/Identifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -525,13 +529,22 @@
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/Identifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/isSpeciesOf"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -544,7 +557,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/belongsTo"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/name"
@@ -553,7 +566,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -563,7 +576,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/AIASpeciesCode"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/Identifier"
@@ -572,7 +585,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/hasAlternativeIdentifier"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/name"
@@ -581,7 +594,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -591,7 +604,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/AIAPTCode"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
@@ -600,7 +613,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/isSexOf"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -613,7 +626,7 @@
     "@id" : "https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -974,7 +987,7 @@
   "@id" : "https://w3id.org/leo/onto/animal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/ufawaml46kv0jj8/FarmAnimal.png?raw=1"
+    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/FarmAnimal.png"
   } ],
   "http://purl.org/dc/terms/accrualPeriodicity" : [ {
     "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
@@ -1000,7 +1013,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@language" : "en",
-    "@value" : "2022-04-22"
+    "@value" : "2023-06-20"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
@@ -1039,14 +1052,14 @@
     "@id" : "https://w3id.org/italia/onto/l0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/1.1"
+    "@id" : "https://w3id.org/leo/onto/animal/1.2"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "Version 1.1- 22 April 2022 - Introduced the following concept: Herd, AspectDescriptionCollection, AspectDescription, Aspect, LivestockFamily"
+    "@value" : "Version 1.2- June 2023 - Introduced the class Hybrid Genetic Type (used in the context of swines and rabbits)"
   }, {
     "@language" : "it",
-    "@value" : "Versione 1.1 - 22 April 2022 - Introdotte le nuovi concetti di mandria, collezione di descrizione di caratteri informativi degli animali, descrizioni di caratteri informativi e il tipo di carattere informativo e la famiglia zootecnica"
+    "@value" : "Versione 1.2 - June 2023 - Introdotta la classe Tipo Genetico Ibrido (usata solo per i suini e i conigli)"
   } ],
   "http://www.w3.org/ns/dcat#contactPoint" : [ {
     "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
@@ -1111,7 +1124,6 @@
     "@id" : "https://w3id.org/leo/data/project/LEO"
   } ],
   "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@language" : "en",
     "@value" : "catalogued"
   } ],
   "https://w3id.org/italia/onto/ADMS/target" : [ {
@@ -1450,6 +1462,8 @@
     "@id" : "_:genid62"
   }, {
     "@id" : "_:genid63"
+  }, {
+    "@id" : "_:genid64"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1481,7 +1495,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid65"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1543,9 +1557,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Collection"
   }, {
-    "@id" : "_:genid65"
-  }, {
     "@id" : "_:genid66"
+  }, {
+    "@id" : "_:genid67"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1553,6 +1567,36 @@
   }, {
     "@language" : "en",
     "@value" : "stable - introduced in version 1.1 of the ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/animal/HybridGeneticType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe consente di rappresentare le denominazioni dei tipo di genetico ibrido (usato solo nel caso dei suini e dei conigli)."
+  }, {
+    "@language" : "en",
+    "@value" : "The class allows one to represent of hybrid genetic types (only used in the case of pigs and rabbits)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hybrid Genetic Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo Genetico Ibrido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/animal/Identifier",
@@ -1577,9 +1621,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid67"
-  }, {
     "@id" : "_:genid68"
+  }, {
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1651,8 +1695,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Concept"
   }, {
-    "@id" : "_:genid69"
-  }, {
     "@id" : "_:genid70"
   }, {
     "@id" : "_:genid71"
@@ -1660,6 +1702,8 @@
     "@id" : "_:genid72"
   }, {
     "@id" : "_:genid73"
+  }, {
+    "@id" : "_:genid74"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1703,11 +1747,11 @@
   }, {
     "@id" : "https://w3id.org/italia/onto/l0/Concept"
   }, {
-    "@id" : "_:genid74"
-  }, {
     "@id" : "_:genid75"
   }, {
     "@id" : "_:genid76"
+  }, {
+    "@id" : "_:genid77"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1739,7 +1783,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
   }, {
-    "@id" : "_:genid77"
+    "@id" : "_:genid78"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -1781,9 +1825,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/TI/TimeIndexedEvent"
   }, {
-    "@id" : "_:genid78"
-  }, {
     "@id" : "_:genid79"
+  }, {
+    "@id" : "_:genid80"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -2262,6 +2306,39 @@
   }, {
     "@language" : "en",
     "@value" : "stable - introduced in version three of the ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/leo/onto/animal/hasHybridGeneticType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property linking a farm animal (typically of the rabbit and swine species) to the names of hybrid genetic types"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega un animale d'allevamento (tipicamente delle specie conigli e suini) alle denominazioni dei tipi di genetico ibrido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo genetico ibrido"
+  }, {
+    "@language" : "en",
+    "@value" : "has hybrid genetic type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/leo/onto/animal/HybridGeneticType"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/leo/onto/animal/hasProductionTarget",

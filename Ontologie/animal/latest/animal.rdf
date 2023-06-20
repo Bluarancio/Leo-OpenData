@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/leo/onto/animal#"
-     xml:base="https://w3id.org/leo/onto/animal"
+<rdf:RDF xmlns="https://w3id.org/leo/onto/animal/"
+     xml:base="https://w3id.org/leo/onto/animal/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
@@ -15,9 +15,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/leo/onto/animal">
-        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/animal/1.1"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/leo/onto/animal/1.2"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dc:description rdf:resource="https://www.dropbox.com/s/ufawaml46kv0jj8/FarmAnimal.png?raw=1"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/FarmAnimal.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia degli animali di allevamento del progetto LEO. In particolare include tutti i dati che rappresentano l&apos;anagrafica degli animali d&apos;allevamento. Nell&apos;ontologia alcune proprietà derivano non solo dai sistemi di AIA (Associazione Italiana Allevatori) ma anche, attraverso la cooperazione applicativa, dalla BDN - Banca Dati Nazionale dell&apos;anagrafica degli animali d&apos;allevamento. Nell&apos;ambito del progetto LEO i dati rappresentati nell&apos;ambito di questa ontologia sono detti FieldData.</terms:description>
@@ -25,7 +25,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-18</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <terms:modified xml:lang="en">2022-04-22</terms:modified>
+        <terms:modified xml:lang="en">2023-06-20</terms:modified>
         <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
@@ -36,8 +36,8 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
         <rdfs:label xml:lang="en">Farm Animals Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia degli animali di allevamento</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 1.1- 22 April 2022 - Introduced the following concept: Herd, AspectDescriptionCollection, AspectDescription, Aspect, LivestockFamily</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 1.1 - 22 April 2022 - Introdotte le nuovi concetti di mandria, collezione di descrizione di caratteri informativi degli animali, descrizioni di caratteri informativi e il tipo di carattere informativo e la famiglia zootecnica</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version 1.2- June 2023 - Introduced the class Hybrid Genetic Type (used in the context of swines and rabbits)</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 1.2 - June 2023 - Introdotta la classe Tipo Genetico Ibrido (usata solo per i suini e i conigli)</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
         <dcat:keyword xml:lang="it">Animali d&apos;allevamento</dcat:keyword>
         <dcat:keyword xml:lang="en">Bovine</dcat:keyword>
@@ -60,7 +60,7 @@
         <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/animal</ADMS:officialURI>
         <ADMS:prefix>animal</ADMS:prefix>
         <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
-        <ADMS:status xml:lang="en">catalogued</ADMS:status>
+        <ADMS:status>catalogued</ADMS:status>
         <ADMS:target>Imprese</ADMS:target>
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
@@ -533,6 +533,22 @@
         <rdfs:label xml:lang="en">has genetic mother breed</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile - introdotta nella terza versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version three of the ontology</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/hasHybridGeneticType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasHybridGeneticType">
+        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
+        <rdfs:range rdf:resource="https://w3id.org/leo/onto/animal/HybridGeneticType"/>
+        <rdfs:comment xml:lang="en">Property linking a farm animal (typically of the rabbit and swine species) to the names of hybrid genetic types</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega un animale d&apos;allevamento (tipicamente delle specie conigli e suini) alle denominazioni dei tipi di genetico ibrido</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="it">ha tipo genetico ibrido</rdfs:label>
+        <rdfs:label xml:lang="en">has hybrid genetic type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
     
 
@@ -1328,6 +1344,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasHybridGeneticType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/HybridGeneticType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/leo/onto/animal/hasProductionTarget"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/leo/onto/animal/ProductionType"/>
@@ -1471,6 +1494,21 @@
         <rdfs:label xml:lang="it">Mandria</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/leo/onto/animal/HybridGeneticType -->
+
+    <owl:Class rdf:about="https://w3id.org/leo/onto/animal/HybridGeneticType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe consente di rappresentare le denominazioni dei tipo di genetico ibrido (usato solo nel caso dei suini e dei conigli).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class allows one to represent of hybrid genetic types (only used in the case of pigs and rabbits).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/animal"/>
+        <rdfs:label xml:lang="en">Hybrid Genetic Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Genetico Ibrido</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
