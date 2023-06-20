@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rr="http://www.w3.org/ns/r2rml#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:mft="https://w3id.org/leo/onto/milk-functional-testing/"
+	xmlns:ndc="https://w3id.org/italia/onto/NDC/"
+	xmlns:ql="http://semweb.mmlab.be/ns/ql#"
+	xmlns:rml="http://semweb.mmlab.be/ns/rml#">
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:description xml:lang="it">Questo è il vocabolario controllato delle frequenze del controllo funzionale del latte prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data. In particolare, il vocabolario presenta le frequenze intese come numero di settimane che intercorre fra due controlli consecutivi (in genere, per i controlli latte, 4,5,6)</dcterms:description>
+		<dcterms:description xml:lang="en">This is the controlled vocabulary of milk functional control frequencies produced in the context of the LEO - Livestock Environment Open Data project. In particular, the vocabulary presents the frequencies expressed as the number of weeks between two consecutive controls (generally, for milk controls, 4,5,6)</dcterms:description>
+		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies</dcterms:identifier>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-10</dcterms:issued>
+		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-17</dcterms:modified>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:title xml:lang="en">Controlled Vocabulary of the milk functional testing frequencies</dcterms:title>
+		<dcterms:title xml:lang="it">Vocabolario controllato delle frequenze del controllo funzionale del latte</dcterms:title>
+		<dcterms:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+		<rdfs:comment xml:lang="it">Questo è il vocabolario controllato delle frequenze del controllo funzionale del latte prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data. In particolare, il vocabolario presenta le frequenze intese come numero di settimane che intercorre fra due controlli consecutivi (in genere, per i controlli latte, 4,5,6)</rdfs:comment>
+		<rdfs:comment xml:lang="en">This is the controlled vocabulary of milk functional control frequencies produced in the context of the LEO - Livestock Environment Open Data project. In particular, the vocabulary presents the frequencies expressed as the number of weeks between two consecutive controls (generally, for milk controls, 4,5,6)</rdfs:comment>
+		<rdfs:label xml:lang="en">Controlled Vocabulary of the milk functional testing frequencies</rdfs:label>
+		<rdfs:label xml:lang="it">Vocabolario controllato delle frequenze del controllo funzionale del latte</rdfs:label>
+		<owl:versionInfo xml:lang="it">Versione 0.1</owl:versionInfo>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/00"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/04"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/05"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/06"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/08"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/09"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/13"/>
+		<skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/26"/>
+		<adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+		<dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/mtf-JSON-LD"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/mtf-RDF-TURTLE"/>
+		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/mtf-RDF-XML"/>
+		<dcat:keyword xml:lang="it">controllo funzionale</dcat:keyword>
+		<dcat:keyword xml:lang="it">frequenza di test</dcat:keyword>
+		<dcat:keyword xml:lang="it">latte</dcat:keyword>
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+		<ndc:keyConcept>milk-functional-testing-frequencies</ndc:keyConcept>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/00">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>00</skos:notation>
+		<skos:prefLabel xml:lang="it">Nessuna</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">None</skos:prefLabel>
+		<l0:identifier>00</l0:identifier>
+		<l0:name xml:lang="it">Nessuna</l0:name>
+		<l0:name xml:lang="en">None</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/04">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>04</skos:notation>
+		<skos:prefLabel xml:lang="it">4 Settimane</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">4 Weeks</skos:prefLabel>
+		<l0:identifier>04</l0:identifier>
+		<l0:name xml:lang="it">4 Settimane</l0:name>
+		<l0:name xml:lang="en">4 Weeks</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/05">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>05</skos:notation>
+		<skos:prefLabel xml:lang="it">5 Settimane</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">5 Weeks</skos:prefLabel>
+		<l0:identifier>05</l0:identifier>
+		<l0:name xml:lang="it">5 Settimane</l0:name>
+		<l0:name xml:lang="en">5 Weeks</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/06">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>06</skos:notation>
+		<skos:prefLabel xml:lang="it">6 Settimane</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">6 Weeks</skos:prefLabel>
+		<l0:identifier>06</l0:identifier>
+		<l0:name xml:lang="it">6 Settimane</l0:name>
+		<l0:name xml:lang="en">6 Weeks</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/08">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>08</skos:notation>
+		<skos:prefLabel xml:lang="it">8 Settimane (2 mesi)</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">8 Weeks (2 months)</skos:prefLabel>
+		<l0:identifier>08</l0:identifier>
+		<l0:name xml:lang="it">8 Settimane (2 mesi)</l0:name>
+		<l0:name xml:lang="en">8 Weeks (2 months)</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/09">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>09</skos:notation>
+		<skos:prefLabel xml:lang="it">9 Settimane</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">9 Weeks</skos:prefLabel>
+		<l0:identifier>09</l0:identifier>
+		<l0:name xml:lang="it">9 Settimane</l0:name>
+		<l0:name xml:lang="en">9 Weeks</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/13">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>13</skos:notation>
+		<skos:prefLabel xml:lang="it">13 Settimane (3 mesi)</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">13 Weeks (3 months)</skos:prefLabel>
+		<l0:identifier>13</l0:identifier>
+		<l0:name xml:lang="it">13 Settimane (3 mesi)</l0:name>
+		<l0:name xml:lang="en">13 Weeks (3 months)</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies/26">
+		<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdf:type rdf:resource="https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"/>
+		<skos:inScheme rdf:resource="https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies"/>
+		<skos:notation>26</skos:notation>
+		<skos:prefLabel xml:lang="it">26 Settimane (6 mesi)</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">26 Weeks (6 months)</skos:prefLabel>
+		<l0:identifier>26</l0:identifier>
+		<l0:name xml:lang="it">26 Settimane (6 mesi)</l0:name>
+		<l0:name xml:lang="en">26 Weeks (6 months)</l0:name>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/mtf-JSON-LD">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione JSON-LD del vocabolario controllato sulle frequenze del controllo funzionale del latte</dcterms:title>
+		<dcterms:title xml:lang="en">This is the JSON-LD of the controlled vocabulary on the milk functional testing frequencies</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/milk-functional-testing-frequencie"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/milk-functional-testing-frequencies/milk-functional-testing-frequencies.jsonld"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/mtf-RDF-TURTLE">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle frequenze del controllo funzionale del latte</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF TURTLE distribution of the controlled vocabulary on the milk functional testing frequencies</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/milk-functional-testing-frequencies"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/milk-functional-testing-frequencies/milk-functional-testing-frequencies.ttl"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/distribution/mtf-RDF-XML">
+		<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+		<dcterms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+		<dcterms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+		<dcterms:title xml:lang="it">Questa è la distribuzione RDF XML del vocabolario controllato sulle frequenze del controllo funzionale del latte</dcterms:title>
+		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the milk functional testing frequencies</dcterms:title>
+		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/milk-functional-testing-frequencies"/>
+		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/milk-functional-testing-frequencies/milk-functional-testing-frequencies.rdf"/>
+	</rdf:Description>
+</rdf:RDF>
