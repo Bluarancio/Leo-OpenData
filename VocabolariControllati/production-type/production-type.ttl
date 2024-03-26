@@ -20,7 +20,7 @@
 <https://w3id.org/leo/controlled-vocabulary/production-type> a dcatapit:Dataset, skos:ConceptScheme,
     adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>, <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:description "Questo è il vocabolario controllato degli indirizzi/orientamenti produttivi utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the production targets and productive orientations, used in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/production-type";
@@ -28,7 +28,7 @@
   ndc:keyConcept "production-type" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-01-13"^^xsd:date;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the production targets and productive orientations, in the context of the LEO project"@en,
     "Vocabolario controllato degli indirizzi/orientamenti produttivi nel contesto del progetto LEO"@it;
@@ -187,3 +187,15 @@
     "This is the RDF XML distribution of the controlled vocabulary on the production targets and productive orientations"@en;
   dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/production-type>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/production-type/production-type.rdf> .
+
+
+  <https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "00944701002" ;
+  foaf:name "Associazione Italiana Allevatori"@it ,
+             "Italian Breeders' Association"@en .
+
+
+  <https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "06695411006" ;
+  foaf:name "Bluarancio"@en ,
+            "Bluarancio"@it .
