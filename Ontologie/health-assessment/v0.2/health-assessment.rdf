@@ -1269,9 +1269,9 @@
           <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
           <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
           <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
-          <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
-          <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-          <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+          <rdfs:label xml:lang="en">LEO - Livestock Environment Open Data</rdfs:label>
+          <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+          <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
       </owl:NamedIndividual>
 
 
