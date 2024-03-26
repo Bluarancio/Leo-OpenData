@@ -13,11 +13,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
 
 <https://w3id.org/leo/controlled-vocabulary/farm-animal-status> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>, <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:description "Questo è il vocabolario controllato degli stati degli animali d'allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the states of farm animals used in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/farm-animal-status";
@@ -25,7 +27,7 @@
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-02-24"^^xsd:date;
   ndc:keyConcept "farm-animal-status" ;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the states of farm animals in the context of the LEO project"@en,
     "Vocabolario controllato degli stati degli animali d'allevamento nel contesto del progetto LEO"@it;
@@ -173,3 +175,15 @@
     "This is the RDF XML distribution of the controlled vocabulary on the states of farm animals"@en;
   dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/farm-animal-status>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/farm-animal-status/farm-animal-status.rdf> .
+
+
+  <https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "00944701002" ;
+  foaf:name "Associazione Italiana Allevatori"@it ,
+             "Italian Breeders' Association"@en .
+
+
+  <https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "06695411006" ;
+  foaf:name "Bluarancio"@en ,
+            "Bluarancio"@it .

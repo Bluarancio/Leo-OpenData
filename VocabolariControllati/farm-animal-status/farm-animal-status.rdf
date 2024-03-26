@@ -23,6 +23,7 @@
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
 		<dcterms:description xml:lang="it">Questo è il vocabolario controllato degli stati degli animali d&apos;allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data</dcterms:description>
 		<dcterms:description xml:lang="en">This is the controlled Vocabulary on the states of farm animals used in the context of project LEO - Livestock Environment Open Data</dcterms:description>
 		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/farm-animal-status</dcterms:identifier>
@@ -30,7 +31,7 @@
 		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-24</dcterms:modified>
 		<ndc:keyConcept>farm-animal-status</ndc:keyConcept>
-		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
 		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
 		<dcterms:title xml:lang="en">Controlled Vocabulary on the states of farm animals in the context of the LEO project</dcterms:title>
 		<dcterms:title xml:lang="it">Vocabolario controllato degli stati degli animali d&apos;allevamento nel contesto del progetto LEO</dcterms:title>
@@ -214,5 +215,27 @@
 		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the states of farm animals</dcterms:title>
 		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/farm-animal-status"/>
 		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/farm-animal-status/farm-animal-status.rdf"/>
+	</rdf:Description>
+
+	<!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>00944701002</dct:identifier>
+			<foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+			<foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+	</rdf:Description>
+
+
+
+	<!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>06695411006</dct:identifier>
+			<foaf:name xml:lang="en">Bluarancio</foaf:name>
+			<foaf:name xml:lang="it">Bluarancio</foaf:name>
 	</rdf:Description>
 </rdf:RDF>
