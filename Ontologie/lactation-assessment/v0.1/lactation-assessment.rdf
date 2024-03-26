@@ -8,6 +8,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
@@ -729,9 +730,9 @@
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
         <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
         <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
-        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:label xml:lang="en">LEO - Livestock Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
     </owl:NamedIndividual>
 
 
