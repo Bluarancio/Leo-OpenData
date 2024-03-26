@@ -12,7 +12,7 @@
                                                  <https://w3id.org/italia/onto/l0> ;
                                      <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/WeatherModule.png> ;
                                      <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                     <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                     <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                      <http://purl.org/dc/terms/description> "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo. L'ontologia include anche i concetti che consentono di rappresentare l'installazione delle centraline meteo all'interno di insediamenti dell'allevamento."@it ,
                                                                             "This is the ontology for modelling the data known as ClimData in the LEO project, i.e. climate data collected as observations captured by weather stations. The ontology also includes the concepts for representing the installation of weather stations within livestock companies' settlements."@en ;
                                      <http://purl.org/dc/terms/identifier> "onto-BA-5" ;
@@ -20,7 +20,7 @@
                                      <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                          <http://publications.europa.eu/resource/authority/language/ITA> ;
                                      <http://purl.org/dc/terms/modified> "2023-06-22"@en ;
-                                     <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                     <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                      <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                      <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/1892> ;
                                      <http://purl.org/dc/terms/title> "Ontologia dei dati meteo del progetto LEO (Livestock Environment Open Data) - ClimData"@it ,
@@ -41,7 +41,6 @@
                                                                          "Ventosìtà"@it ;
                                      <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
                                      <https://w3id.org/italia/onto/ADMS/acronym> "WT" ;
-                                     <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                      <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                      <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/leo/onto/weather/WeatherObservation> ,
                                                                                      <https://w3id.org/leo/onto/weather/WeatherStation> ;
@@ -55,7 +54,7 @@
                                      <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/leo/onto/weather"^^xsd:anyURI ;
                                      <https://w3id.org/italia/onto/ADMS/prefix> "wt" ;
                                      <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/leo/data/project/LEO> ;
-                                     <https://w3id.org/italia/onto/ADMS/status> "catalogued" ;
+                                     <https://w3id.org/italia/onto/ADMS/status> "published" ;
                                      <https://w3id.org/italia/onto/ADMS/target> "Comunità open data"@it ,
                                                                                 "Imprese" ,
                                                                                 "Professionisti del settore zootecnico"@it ,
@@ -128,11 +127,6 @@
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 <https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
-
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
 <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> rdf:type owl:AnnotationProperty .
@@ -547,8 +541,8 @@
                                                                                      "JSON-LD distribution of Weather Ontology"@en ;
                                                     rdfs:comment "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"@it ,
                                                                  "This is the distribution in JSON-LD of weather ontology"@en ;
-                                                    <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/weather/latest> ;
-                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/weathr/latest/weather.jsonld> .
+                                                    <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest> ;
+                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.jsonld> .
 
 
 ###  https://w3id.org/leo/data/distribution/WT-RDF-TURTLE
@@ -564,8 +558,8 @@
                                                                     "This is the distribution in RDF/Turtle of Weather ontology"@en ;
                                                        rdfs:label "Distribuzione RDF/Turtle ontologia Weather"@it ,
                                                                   "RDF/Turtle distribution of Weather Ontology"@en ;
-                                                       <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/weather/latest> ;
-                                                       <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/weather/latest/weather.ttl> .
+                                                       <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest> ;
+                                                       <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.ttl> .
 
 
 ###  https://w3id.org/leo/data/distribution/WT-RDF-XML
@@ -581,8 +575,8 @@
                                                                  "This is the distribution in RDF/XML of Weather ontology"@en ;
                                                     rdfs:label "Distribuzione RDF/XML ontologia Weather"@it ,
                                                                "RDF/XML distribution of Weather Ontology"@en ;
-                                                    <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/weather/latest> ;
-                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/weather/latest/weather.rdf> .
+                                                    <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest> ;
+                                                    <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.rdf> .
 
 
 ###  https://w3id.org/leo/data/private-organization/00944701002
@@ -606,8 +600,8 @@
 ###  https://w3id.org/leo/data/project/LEO
 <https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
                                                  <https://w3id.org/italia/onto/ADMS/Project> ;
-                                        rdfs:label "LEO - Livestok Environment Open Data"@it ;
-                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestok Environment Open Data"@it .
+                                        rdfs:label "LEO - Livestock Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestock Environment Open Data"@it .
 
 
 ###  https://w3id.org/leo/onto/weather

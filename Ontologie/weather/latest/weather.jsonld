@@ -1,1343 +1,1770 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/consistsOfWO"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservation"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/consistsOfWO"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid13"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/wocGenerationTime"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/isValid"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid18"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/wocTransmissionTime"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasSpatialCoverage"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Feature"
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/Geometry"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/CLV/hasGeometry"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/onto/COV/Organization"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/managedBy"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/IMEICode"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/isInstallationOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/isInstalledInArea"
-  } ]
-}, {
-  "@id" : "_:genid29",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid30"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/weatherStationInstallationDate"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/format",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/label",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/subject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2006/vcard/ns#fn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2006/vcard/ns#hasEmail",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#accessURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#downloadURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/acronym",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasContributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasKeyClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasTask",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/officialURI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/prefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/target",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/l0/controlledVocabulary",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/l0/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/leo/data/contact-point/onto-aia",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Organization", "http://www.w3.org/2006/vcard/ns#Kind", "http://www.w3.org/2006/vcard/ns#Organization" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Sistemi informativi"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#fn" : [ {
-    "@language" : "it",
-    "@value" : "Sistemi informativi"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#hasEmail" : [ {
-    "@id" : "mailto:affarigenerali@pec.aia.it"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/WT-JSON-LD",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in JSON-LD of weather ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
-  } ],
-  "http://purl.org/dc/terms/label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione JSON-LD ontologia Weather"
-  }, {
-    "@language" : "en",
-    "@value" : "JSON-LD distribution of Weather Ontology"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione JSON-LD ontologia Weather"
-  }, {
-    "@language" : "en",
-    "@value" : "JSON-LD distribution of Weather Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in JSON-LD of weather ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/weather/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/weathr/latest/weather.jsonld"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/WT-RDF-TURTLE",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sul meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/Turtle of Weather ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/Turtle ontologia Weather"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/Turtle distribution of Weather Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sul meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/Turtle of Weather ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/Turtle ontologia Weather"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/Turtle distribution of Weather Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/weather/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/weather/latest/weather.ttl"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/WT-RDF-XML",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sul meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/XML of Weather ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/XML ontologia Weather"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/XML distribution of Weather Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sul meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/XML of Weather ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/XML ontologia Weather"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/XML distribution of Weather Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/weather/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/weather/latest/weather.rdf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/private-organization/00944701002",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Agent", "http://xmlns.com/foaf/0.1/Agent" ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "00944701002"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "it",
-    "@value" : "Associazione Italiana Allevatori"
-  }, {
-    "@language" : "en",
-    "@value" : "Italian Breeders' Association"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/private-organization/06695411006",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Agent", "http://xmlns.com/foaf/0.1/Agent" ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "06695411006"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "en",
-    "@value" : "Bluarancio"
-  }, {
-    "@language" : "it",
-    "@value" : "Bluarancio"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/project/LEO",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/Project" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "LEO - Livestok Environment Open Data"
-  } ],
-  "https://w3id.org/italia/onto/l0/name" : [ {
-    "@language" : "it",
-    "@value" : "LEO - Livestok Environment Open Data"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/WeatherModule.png"
-  } ],
-  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo. L'ontologia include anche i concetti che consentono di rappresentare l'installazione delle centraline meteo all'interno di insediamenti dell'allevamento."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology for modelling the data known as ClimData in the LEO project, i.e. climate data collected as observations captured by weather stations. The ontology also includes the concepts for representing the installation of weather stations within livestock companies' settlements."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "onto-BA-5"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2019-11-20"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
-  }, {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@language" : "en",
-    "@value" : "2023-06-22"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/rightsHolder" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/subject" : [ {
-    "@id" : "http://eurovoc.europa.eu/1892"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Ontologia dei dati meteo del progetto LEO (Livestock Environment Open Data) - ClimData"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Ontology of the LEO Project (Livestock Environment Open Data)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model the data called ClimData in the LEO project, i.e. the collected climate data intended to be observations captured by weather stations."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Ontologia dei dati meteo del progetto LEO (Livestock Environment Open Data) - ClimData"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Ontology of the LEO Project (Livestock Environment Open Data)"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/0.3"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "Version 0.3 - June 2023 - Introduction of the installation concept for weather stations located within buildings of the livestock farm company site"
-  }, {
-    "@language" : "it",
-    "@value" : "Versione 0.3 - Giugno 2023 - Introduzione del concetto di installazione di centraline meteo localizzate all'interno di insediamenti zootecnici."
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "it",
-    "@value" : "Centraline Meteo"
-  }, {
-    "@language" : "it",
-    "@value" : "Meteo"
-  }, {
-    "@language" : "it",
-    "@value" : "Precipitazioni"
-  }, {
-    "@language" : "it",
-    "@value" : "Temperatura"
-  }, {
-    "@language" : "it",
-    "@value" : "Umidità"
-  }, {
-    "@language" : "it",
-    "@value" : "Ventosìtà"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/ENVI"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
-    "@value" : "WT"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservation"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStation"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
-    "@id" : "https://w3id.org/leo/data/distribution/WT-JSON-LD"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/WT-RDF-TURTLE"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/WT-RDF-XML"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
-    "@value" : "wt"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
-    "@id" : "https://w3id.org/leo/data/project/LEO"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@value" : "catalogued"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/target" : [ {
-    "@language" : "it",
-    "@value" : "Comunità open data"
-  }, {
-    "@value" : "Imprese"
-  }, {
-    "@language" : "it",
-    "@value" : "Professionisti del settore zootecnico"
-  }, {
-    "@value" : "Pubbliche Amministrazioni"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/type" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/Air",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Air"
-  }, {
-    "@language" : "it",
-    "@value" : "Aria"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/BioClimaticIndex",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe degli indici bioclimatici. Le istanze di questa classe possono essere l'indice temperatura umidità (THI), l'indice temperatura umidità (THI) load, ecc."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of the bioclimatic indexes. Instances of this class can be the Temperature Humidity Index (THI), the Temperature Humidity Index (THI) load, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Bioclimatic Index"
-  }, {
-    "@language" : "it",
-    "@value" : "Indice Bioclimatico"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/ObservationParameter"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservableProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/GroundLevelSoil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Ground Level Soil"
-  }, {
-    "@language" : "it",
-    "@value" : "Livello del Suolo"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/IMEICode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Identification number of installed weather station"
-  }, {
-    "@language" : "it",
-    "@value" : "Numero identificativo della centralina meteo installata"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "IMEI (International Mobile Equipment Identity) code"
-  }, {
-    "@language" : "it",
-    "@value" : "codice IMEI"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/Rainfall",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Pioggia"
-  }, {
-    "@language" : "en",
-    "@value" : "Rainfall"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "It represents the feature of interest in weather whose attribute is observed by a sensor to obtain a value. Examples of features of interest in weather are: air, rainfall, wind, etc."
-  }, {
-    "@language" : "it",
-    "@value" : "Rappresenta la caratteristica di interesse meteo il cui attributo osservato è osservato da un sensore per ottenere un valore. Esempi di caratteristiche di interesse nell'ambito meteo sono: l'aria, la pioggia, il vento, ecc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Caratteristica di interesse meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Feature of Interest"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/FeatureOfInterest"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/WeatherObservableProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe di tutte le proprietà di un'osservazione che possono essere osservate nel contesto meteorologico.  Esempi includono: temperatura, umidità, pressione, precipitazione, ecc."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of all the properties of an observation that can be observed in the weather context. Examples include: temperature, humidity, pressure, precipitation, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Proprietà Meteo Osservabile"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Observable Property"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/ObservationParameter"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/WeatherObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa classe rappresenta un'osservazione di tipo meteo."
-  }, {
-    "@language" : "en",
-    "@value" : "This class represents a specific observation of Meteo type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  }, {
-    "@language" : "it",
-    "@value" : "Osservazione Meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/Observation"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/WeatherObservationCollection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe rappresenta una collezione di singole osservazioni meteo rilevate dalle centraline meteo (tipicamente installate all'interno dell'insediamento dell'azienda di allevamento)."
-  }, {
-    "@language" : "en",
-    "@value" : "This class that represents a set of weather observation that come from a weather station (usually installed within livestock farm sites)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Collezione di Osservazioni Meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Observation Collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/ObservationCollection"
-  }, {
-    "@id" : "_:genid10"
-  }, {
-    "@id" : "_:genid11"
-  }, {
-    "@id" : "_:genid12"
-  }, {
-    "@id" : "_:genid16"
-  }, {
-    "@id" : "_:genid17"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/WeatherStation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa classe rappresenta la stazione meteo. La stazione è identificata univocamente da un identificativo, è gestita da un'organizzazione ed ha una geometria (tipicamente un punto) associata."
-  }, {
-    "@language" : "en",
-    "@value" : "This class represents the weather station. The station is uniquely identified by an identifier, is managed by an organization and has a geometry (usually a point) associated with it."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Stazione Meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Station"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/Platform"
-  }, {
-    "@id" : "_:genid21"
-  }, {
-    "@id" : "_:genid22"
-  }, {
-    "@id" : "_:genid23"
-  }, {
-    "@id" : "_:genid24"
-  }, {
-    "@id" : "_:genid25"
-  }, {
-    "@id" : "_:genid26"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/WeatherStationInstallation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe che rappresenta la situazione relativa all'installazione di una centralina meteo (tipicamente all'interno di zone specifiche di un allevamento)."
-  }, {
-    "@language" : "en",
-    "@value" : "The class representing the situation regarding the installation of a weather station (typically within specific areas of a livestock company site)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Installazione Centralina Meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "Weather Station Installation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
-  }, {
-    "@id" : "_:genid27"
-  }, {
-    "@id" : "_:genid28"
-  }, {
-    "@id" : "_:genid29"
-  }, {
-    "@id" : "_:genid33"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/Wind",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Vento"
-  }, {
-    "@language" : "en",
-    "@value" : "Wind"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/consistsOfWO",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that links the collection of weather observations to each single observations."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che collega la collezione di osservazioni meteorologiche a ogni singola osservazione."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "consiste di osservazioni meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "consists of weather observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/IoT/consistsOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/isInstallationOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that allows one to link the situation concerning the installation of a weather station (within a farm zone) to the weather station itself."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che consente di collegare la situazione relativa all'installazione di una centralina meteo (all'interno di una zona dell'allevamento) alla centralina stessa."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStationInstallation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is installation of"
-  }, {
-    "@language" : "it",
-    "@value" : "è installazione di"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStation"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/isInstalledInArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property allowing one to link the situation regarding the installation of a weather station (typically within a farm) to the area of the farm where the weather station is installed. The area could be: heifer house, feeding area, etc."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che consente di collegare la situazione relativa all'installazione di una centralina meteo (tipicamente all'interno di un allevamento) con l'area dell'allevamento dove si installa. L'area potrebbe essere: vitellaia, zona di alimentazione, ecc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStationInstallation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is installed in area"
-  }, {
-    "@language" : "it",
-    "@value" : "è installata in area"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/isValid",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to specify whether the collection of weather observations that have been done are valid. It is a boolean, true (yes) or false (no)."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per specificare se la collezione di rilevazioni meteo che è stata fatta è valida o meno. È un booleano: vero (sì), falso (no)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is valid"
-  }, {
-    "@language" : "it",
-    "@value" : "rilevazione valida"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/managedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that links the weather station to the organization it manages it"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che collega la stazione meteo all'organizzazione che la gestisce."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "gestita da"
-  }, {
-    "@language" : "en",
-    "@value" : "managed by"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/onto/COV/Organization"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/managesWeatherStation"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/managesWeatherStation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inverse property of \"managed by\" that links an organization to the weather station it manages."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà inversa di \"gestita da\" che collega l'organizzazione alla stazione meteo che essa gestisce."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/italia/onto/COV/Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "gestisce stazione meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "manages weather station"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStation"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/weatherStationInstallationDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La proprietà indica la data e l'ora di installazone della centralina meteo (in un allevamento)."
-  }, {
-    "@language" : "en",
-    "@value" : "The property indicates the date and time of installation of the weather station (within a farm)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherStationInstallation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "data e ora installazione centralina meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "weather station installation date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/wocGenerationTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La proprietà consente di specificare la data e l'ora di rilevamento delle osservazioni meteo che possono essere fatte nella zona di installazione della centralina (nell'allevamento)."
-  }, {
-    "@language" : "en",
-    "@value" : "This property allows one to specify the date and time of a collection of weather observations that can be made in the area where the weather station is installed (within the farm)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "tempo di generazione collezione osservazioni meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "weather observation collection generation time"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/weather/wocTransmissionTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La proprietà consente di specificare la data e l'ora in cui una serie di osservazioni meteo rilevati dalle centraline (presenti in allevamento) sono trasmessi."
-  }, {
-    "@language" : "en",
-    "@value" : "The property allows one to specify the date and time when a series of weather observations from the weather stations (present within the farm) are transmitted."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/weather"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "tempo di trasmissione della collezione osservazioni meteo"
-  }, {
-    "@language" : "en",
-    "@value" : "weather observation collection transmission time"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid7"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-} ]
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml": "http://www.w3.org/XML/1998/namespace/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "_:g0",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservation"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/consistsOfWO"
+      }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:g12"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/wocGenerationTime"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:boolean"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/isValid"
+      }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:g17"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/wocTransmissionTime"
+      }
+    },
+    {
+      "@id": "_:g17",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g20",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/CLV/hasSpatialCoverage"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/italia/onto/CLV/Feature"
+      }
+    },
+    {
+      "@id": "_:g21",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/italia/onto/CLV/Geometry"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/CLV/hasGeometry"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g22",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/italia/onto/COV/Organization"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/managedBy"
+      }
+    },
+    {
+      "@id": "_:g23",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:g24",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/identifier"
+      }
+    },
+    {
+      "@id": "_:g25",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/IMEICode"
+      }
+    },
+    {
+      "@id": "_:g26",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStation"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/isInstallationOf"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g27",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/isInstalledInArea"
+      }
+    },
+    {
+      "@id": "_:g28",
+      "@type": "owl:Restriction",
+      "owl:onDataRange": {
+        "@id": "_:g29"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/weatherStationInstallationDate"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g29",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g32",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode"
+      }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/weather/consistsOfWO"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservation"
+      }
+    },
+    {
+      "@id": "dc11:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:label",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/l0/controlledVocabulary",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/l0/name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/contact-point/onto-aia",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Organization",
+        "vcard:Kind",
+        "vcard:Organization"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "Sistemi informativi"
+      },
+      "vcard:fn": {
+        "@language": "it",
+        "@value": "Sistemi informativi"
+      },
+      "vcard:hasEmail": {
+        "@id": "mailto:affarigenerali@pec.aia.it"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/WT-JSON-LD",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of weather ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Weather"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Weather Ontology"
+        }
+      ],
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Weather"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Weather Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sul meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of weather ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.jsonld"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/WT-RDF-TURTLE",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sul meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Weather ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Weather"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Weather Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sul meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of Weather ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Weather"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Weather Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.ttl"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/WT-RDF-XML",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sul meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Weather ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Weather"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Weather Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sul meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of Weather ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Weather"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Weather Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.rdf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/Project"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "LEO - Livestock Environment Open Data"
+      },
+      "https://w3id.org/italia/onto/l0/name": {
+        "@language": "it",
+        "@value": "LEO - Livestock Environment Open Data"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAsset"
+      ],
+      "dc11:description": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/WeatherModule.png"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo. L'ontologia include anche i concetti che consentono di rappresentare l'installazione delle centraline meteo all'interno di insediamenti dell'allevamento."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology for modelling the data known as ClimData in the LEO project, i.e. climate data collected as observations captured by weather stations. The ontology also includes the concepts for representing the installation of weather stations within livestock companies' settlements."
+        }
+      ],
+      "dcterms:identifier": "onto-BA-5",
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2019-11-20"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@language": "en",
+        "@value": "2023-06-22"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": {
+        "@id": "http://eurovoc.europa.eu/1892"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Ontologia dei dati meteo del progetto LEO (Livestock Environment Open Data) - ClimData"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Ontology of the LEO Project (Livestock Environment Open Data)"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model the data called ClimData in the LEO project, i.e. the collected climate data intended to be observations captured by weather stations."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Ontologia dei dati meteo del progetto LEO (Livestock Environment Open Data) - ClimData"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Ontology of the LEO Project (Livestock Environment Open Data)"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/italia/onto/IoT"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/weather/0.3"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "Version 0.3 - June 2023 - Introduction of the installation concept for weather stations located within buildings of the livestock farm company site"
+        },
+        {
+          "@language": "it",
+          "@value": "Versione 0.3 - Giugno 2023 - Introduzione del concetto di installazione di centraline meteo localizzate all'interno di insediamenti zootecnici."
+        }
+      ],
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Centraline Meteo"
+        },
+        {
+          "@language": "it",
+          "@value": "Meteo"
+        },
+        {
+          "@language": "it",
+          "@value": "Precipitazioni"
+        },
+        {
+          "@language": "it",
+          "@value": "Temperatura"
+        },
+        {
+          "@language": "it",
+          "@value": "Umidità"
+        },
+        {
+          "@language": "it",
+          "@value": "Ventosìtà"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+      },
+      "https://w3id.org/italia/onto/ADMS/acronym": "WT",
+      "https://w3id.org/italia/onto/ADMS/hasFormalityLevel": {
+        "@id": "https://w3id.org/italia/onto/ADMS/Formal"
+      },
+      "https://w3id.org/italia/onto/ADMS/hasKeyClass": [
+        {
+          "@id": "https://w3id.org/leo/onto/weather/WeatherObservation"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/weather/WeatherStation"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage": {
+        "@id": "https://w3id.org/italia/onto/ADMS/OWL"
+      },
+      "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/WT-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/WT-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/WT-RDF-XML"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/hasTask": [
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/AnnotationTask"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/SearchTask"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/weather"
+      },
+      "https://w3id.org/italia/onto/ADMS/prefix": "wt",
+      "https://w3id.org/italia/onto/ADMS/semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "https://w3id.org/italia/onto/ADMS/status": "published",
+      "https://w3id.org/italia/onto/ADMS/target": [
+        {
+          "@language": "it",
+          "@value": "Comunità open data"
+        },
+        "Imprese",
+        {
+          "@language": "it",
+          "@value": "Professionisti del settore zootecnico"
+        },
+        "Pubbliche Amministrazioni"
+      ],
+      "https://w3id.org/italia/onto/ADMS/type": {
+        "@id": "https://w3id.org/italia/onto/ADMS/DomainOntology"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/Air",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Air"
+        },
+        {
+          "@language": "it",
+          "@value": "Aria"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/BioClimaticIndex",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe degli indici bioclimatici. Le istanze di questa classe possono essere l'indice temperatura umidità (THI), l'indice temperatura umidità (THI) load, ecc."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of the bioclimatic indexes. Instances of this class can be the Temperature Humidity Index (THI), the Temperature Humidity Index (THI) load, etc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Bioclimatic Index"
+        },
+        {
+          "@language": "it",
+          "@value": "Indice Bioclimatico"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/IoT/ObservationParameter"
+      },
+      "owl:disjointWith": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservableProperty"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/GroundLevelSoil",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Ground Level Soil"
+        },
+        {
+          "@language": "it",
+          "@value": "Livello del Suolo"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/IMEICode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Identification number of installed weather station"
+        },
+        {
+          "@language": "it",
+          "@value": "Numero identificativo della centralina meteo installata"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "IMEI (International Mobile Equipment Identity) code"
+        },
+        {
+          "@language": "it",
+          "@value": "codice IMEI"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/l0/identifier"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/Rainfall",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Pioggia"
+        },
+        {
+          "@language": "en",
+          "@value": "Rainfall"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It represents the feature of interest in weather whose attribute is observed by a sensor to obtain a value. Examples of features of interest in weather are: air, rainfall, wind, etc."
+        },
+        {
+          "@language": "it",
+          "@value": "Rappresenta la caratteristica di interesse meteo il cui attributo osservato è osservato da un sensore per ottenere un valore. Esempi di caratteristiche di interesse nell'ambito meteo sono: l'aria, la pioggia, il vento, ecc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Caratteristica di interesse meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Feature of Interest"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/IoT/FeatureOfInterest"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/WeatherObservableProperty",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe di tutte le proprietà di un'osservazione che possono essere osservate nel contesto meteorologico.  Esempi includono: temperatura, umidità, pressione, precipitazione, ecc."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of all the properties of an observation that can be observed in the weather context. Examples include: temperature, humidity, pressure, precipitation, etc."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Proprietà Meteo Osservabile"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Observable Property"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/IoT/ObservationParameter"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/WeatherObservation",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa classe rappresenta un'osservazione di tipo meteo."
+        },
+        {
+          "@language": "en",
+          "@value": "This class represents a specific observation of Meteo type"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@id": "https://w3id.org/leo/onto/weather"
+        },
+        {
+          "@language": "it",
+          "@value": "Osservazione Meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Observation"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/IoT/Observation"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/WeatherObservationCollection",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe rappresenta una collezione di singole osservazioni meteo rilevate dalle centraline meteo (tipicamente installate all'interno dell'insediamento dell'azienda di allevamento)."
+        },
+        {
+          "@language": "en",
+          "@value": "This class that represents a set of weather observation that come from a weather station (usually installed within livestock farm sites)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Collezione di Osservazioni Meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Observation Collection"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/IoT/ObservationCollection"
+        },
+        {
+          "@id": "_:g9"
+        },
+        {
+          "@id": "_:g10"
+        },
+        {
+          "@id": "_:g11"
+        },
+        {
+          "@id": "_:g15"
+        },
+        {
+          "@id": "_:g16"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/WeatherStation",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa classe rappresenta la stazione meteo. La stazione è identificata univocamente da un identificativo, è gestita da un'organizzazione ed ha una geometria (tipicamente un punto) associata."
+        },
+        {
+          "@language": "en",
+          "@value": "This class represents the weather station. The station is uniquely identified by an identifier, is managed by an organization and has a geometry (usually a point) associated with it."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Stazione Meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Station"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/IoT/Platform"
+        },
+        {
+          "@id": "_:g20"
+        },
+        {
+          "@id": "_:g21"
+        },
+        {
+          "@id": "_:g22"
+        },
+        {
+          "@id": "_:g23"
+        },
+        {
+          "@id": "_:g24"
+        },
+        {
+          "@id": "_:g25"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/WeatherStationInstallation",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe che rappresenta la situazione relativa all'installazione di una centralina meteo (tipicamente all'interno di zone specifiche di un allevamento)."
+        },
+        {
+          "@language": "en",
+          "@value": "The class representing the situation regarding the installation of a weather station (typically within specific areas of a livestock company site)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Installazione Centralina Meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "Weather Station Installation"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/EventOrSituation"
+        },
+        {
+          "@id": "_:g26"
+        },
+        {
+          "@id": "_:g27"
+        },
+        {
+          "@id": "_:g28"
+        },
+        {
+          "@id": "_:g32"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/Wind",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/weather/WeatherFeatureOfInterest"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Vento"
+        },
+        {
+          "@language": "en",
+          "@value": "Wind"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/consistsOfWO",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the collection of weather observations to each single observations."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega la collezione di osservazioni meteorologiche a ogni singola osservazione."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "consiste di osservazioni meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "consists of weather observation"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservation"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/IoT/consistsOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/isInstallationOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that allows one to link the situation concerning the installation of a weather station (within a farm zone) to the weather station itself."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di collegare la situazione relativa all'installazione di una centralina meteo (all'interno di una zona dell'allevamento) alla centralina stessa."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStationInstallation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is installation of"
+        },
+        {
+          "@language": "it",
+          "@value": "è installazione di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStation"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/isInstalledInArea",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property allowing one to link the situation regarding the installation of a weather station (typically within a farm) to the area of the farm where the weather station is installed. The area could be: heifer house, feeding area, etc."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di collegare la situazione relativa all'installazione di una centralina meteo (tipicamente all'interno di un allevamento) con l'area dell'allevamento dove si installa. L'area potrebbe essere: vitellaia, zona di alimentazione, ecc."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStationInstallation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is installed in area"
+        },
+        {
+          "@language": "it",
+          "@value": "è installata in area"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/isValid",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to specify whether the collection of weather observations that have been done are valid. It is a boolean, true (yes) or false (no)."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per specificare se la collezione di rilevazioni meteo che è stata fatta è valida o meno. È un booleano: vero (sì), falso (no)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is valid"
+        },
+        {
+          "@language": "it",
+          "@value": "rilevazione valida"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/managedBy",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the weather station to the organization it manages it"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega la stazione meteo all'organizzazione che la gestisce."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "gestita da"
+        },
+        {
+          "@language": "en",
+          "@value": "managed by"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/italia/onto/COV/Organization"
+      },
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/weather/managesWeatherStation"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/managesWeatherStation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of \"managed by\" that links an organization to the weather station it manages."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di \"gestita da\" che collega l'organizzazione alla stazione meteo che essa gestisce."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/italia/onto/COV/Organization"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "gestisce stazione meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "manages weather station"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStation"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/weatherStationInstallationDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La proprietà indica la data e l'ora di installazone della centralina meteo (in un allevamento)."
+        },
+        {
+          "@language": "en",
+          "@value": "The property indicates the date and time of installation of the weather station (within a farm)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherStationInstallation"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data e ora installazione centralina meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "weather station installation date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:g0"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/wocGenerationTime",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La proprietà consente di specificare la data e l'ora di rilevamento delle osservazioni meteo che possono essere fatte nella zona di installazione della centralina (nell'allevamento)."
+        },
+        {
+          "@language": "en",
+          "@value": "This property allows one to specify the date and time of a collection of weather observations that can be made in the area where the weather station is installed (within the farm)."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "tempo di generazione collezione osservazioni meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "weather observation collection generation time"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:g3"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/weather/wocTransmissionTime",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La proprietà consente di specificare la data e l'ora in cui una serie di osservazioni meteo rilevati dalle centraline (presenti in allevamento) sono trasmessi."
+        },
+        {
+          "@language": "en",
+          "@value": "The property allows one to specify the date and time when a series of weather observations from the weather stations (present within the farm) are transmitted."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/weather/WeatherObservationCollection"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/weather"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "tempo di trasmissione della collezione osservazioni meteo"
+        },
+        {
+          "@language": "en",
+          "@value": "weather observation collection transmission time"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:g6"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    }
+  ]
+}

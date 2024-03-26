@@ -22,6 +22,7 @@
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/WeatherModule.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia per modellare i dati detti ClimData nel progetto LEO ovvero i dati raccolti di tipo climatico, intesi come osservazioni catturate da stazioni meteo. L&apos;ontologia include anche i concetti che consentono di rappresentare l&apos;installazione delle centraline meteo all&apos;interno di insediamenti dell&apos;allevamento.</terms:description>
         <terms:description xml:lang="en">This is the ontology for modelling the data known as ClimData in the LEO project, i.e. climate data collected as observations captured by weather stations. The ontology also includes the concepts for representing the installation of weather stations within livestock companies&apos; settlements.</terms:description>
         <terms:identifier>onto-BA-5</terms:identifier>
@@ -29,7 +30,7 @@
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified xml:lang="en">2023-06-22</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/1892"/>
         <terms:title xml:lang="it">Ontologia dei dati meteo del progetto LEO (Livestock Environment Open Data) - ClimData</terms:title>
@@ -50,7 +51,6 @@
         <dcat:keyword xml:lang="it">Ventosìtà</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI"/>
         <ADMS:acronym>WT</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/weather/WeatherObservation"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/weather/WeatherStation"/>
@@ -64,7 +64,7 @@
         <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/weather</ADMS:officialURI>
         <ADMS:prefix>wt</ADMS:prefix>
         <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
-        <ADMS:status>catalogued</ADMS:status>
+        <ADMS:status>published</ADMS:status>
         <ADMS:target xml:lang="it">Comunità open data</ADMS:target>
         <ADMS:target>Imprese</ADMS:target>
         <ADMS:target xml:lang="it">Professionisti del settore zootecnico</ADMS:target>
@@ -178,13 +178,6 @@
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
@@ -761,8 +754,8 @@
         <terms:title xml:lang="en">JSON-LD distribution of Weather Ontology</terms:title>
         <rdfs:comment xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia sul meteo</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of weather ontology</rdfs:comment>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/weather/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/weathr/latest/weather.jsonld"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.jsonld"/>
     </owl:NamedIndividual>
 
 
@@ -781,8 +774,8 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Weather ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Weather</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of Weather Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/weather/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/weather/latest/weather.ttl"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.ttl"/>
     </owl:NamedIndividual>
 
 
@@ -801,8 +794,8 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Weather ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Weather</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of Weather Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/weather/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/weather/latest/weather.rdf"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/weather/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/weather/latest/weather.rdf"/>
     </owl:NamedIndividual>
 
 
@@ -835,8 +828,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
     </owl:NamedIndividual>
 
 

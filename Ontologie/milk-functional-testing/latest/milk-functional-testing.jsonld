@@ -1,1377 +1,1936 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency"
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/description"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockFarm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/format",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/language",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/modified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/rightsHolder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/subject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#accessURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#contactPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#downloadURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#keyword",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#theme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/SemanticAsset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/acronym",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasContributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasKeyClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasTask",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/officialURI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/prefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/target",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/RO/Role",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Object"
-  } ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/MFT-JSON-LD",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sui controlli funzionali sul latte"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in JSON-LD of milk functional testings ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione JSON-LD ontologia Controlli Funzionali sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "JSON-LD distribution of Milk Functional Testing Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sui controlli funzionali sul latte"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in JSON-LD of milk functional testings ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione JSON-LD ontologia Controlli Funzionali sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "JSON-LD distribution of Milk Functional Testing Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/milk-functional-testing/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.jsonld"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sui controlli funzionali sul latte"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/Turtle of milk functional testings ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/Turtle ontologia Controlli Funzionali sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/Turtle distribution of Milk Functional Testing Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sui controlli funzionali sul latte"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/Turtle of milk functional testings ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/Turtle ontologia Controlli Funzionali sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/Turtle distribution of Milk Functional Testing Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/milk-functional-testing/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.ttl"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/MFT-RDF-XML",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sui controlli funzionali sul latte"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/XML of milk functional testings ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/XML ontologia Controlli Funzionali sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/XML distribution of Milk Functional Testing Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sui controlli funzionali sul latte"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/XML of milk functional testings ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/XML ontologia Controlli Funzionali sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/XML distribution of Milk Functional Testing Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/milk-functional-testing/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.rdf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/co/LivestockFarm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milk-functional-testing.png"
-  } ],
-  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia usata per modellare i dati relativi ai controlli funzionali svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema nazionale SIALL a fronte dell’acquisizione di dati di Controllo funzionale, in particolare nel momento in cui il controllo è chiuso ed è emesso il prestampato, comunica al progetto LEO in cooperazione applicativa, una serie misure calcolate legate al rilevamento del Latte sul singolo soggetto."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model the data about functional tests carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL national system, when acquiring functional control data, in particular when the control is closed and the pre-print is issued, communicates to the LEO project through web services, a series of calculated measures linked to the detection of milk on the individual farm animal."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@language" : "it",
-    "@value" : "onto-BA-13"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-03-11"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
-  }, {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-03-11"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/rightsHolder" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/subject" : [ {
-    "@id" : "http://eurovoc.europa.eu/6271"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/6272"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Milk Functional Testing Ontology"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia dei Controlli Funzionali sul Latte"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia usata per modellare i dati relativi ai controlli funzionali svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema nazionale SIALL a fronte dell’acquisizione di dati di Controllo funzionale, in particolare nel momento in cui il controllo è chiuso ed è emesso il prestampato, comunica al progetto LEO in cooperazione applicativa, una serie misure calcolate legate al rilevamento del Latte sul singolo soggetto."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model the data about functional tests carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL national system, when acquiring functional control data, in particular when the control is closed and the pre-print is issued, communicates to the LEO project through web services, a series of calculated measures linked to the detection of milk on the individual farm animal."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Milk Functional Testing Ontology"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia dei Controlli Funzionali sul Latte"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/0.1"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "Version 0.1 - 2023 - Creation of the ontology"
-  }, {
-    "@language" : "it",
-    "@value" : "Versione 0.1 - 2023 - Creazione dell'ontologia"
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "it",
-    "@value" : "controllo"
-  }, {
-    "@language" : "it",
-    "@value" : "controllo funzionale"
-  }, {
-    "@language" : "it",
-    "@value" : "latte"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/AGRI"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
-    "@value" : "MFT"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
-    "@id" : "https://w3id.org/leo/data/distribution/MFT-JSON-LD"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/MFT-RDF-XML"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
-    "@value" : "mft"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
-    "@id" : "https://w3id.org/leo/data/project/LEO"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@value" : "initial draft"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/target" : [ {
-    "@language" : "it",
-    "@value" : "Comunità Open Data"
-  }, {
-    "@value" : "Imprese"
-  }, {
-    "@value" : "Pubbliche Amministrazioni"
-  }, {
-    "@language" : "it",
-    "@value" : "Specialisti del settore zootecnico"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/type" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe rappresenta le mungiture interessate dal controllo funzionale. La classe definisce tre tipi di individui (valori costanti): A=Tutte, C=Una mungitura non alternata, T=Una mungitura alternata"
-  }, {
-    "@language" : "it",
-    "@value" : "The class represents the milkings involved in the functional control. The class defines three types of individuals (constant values): A=All, C=One non-alternating milking, T=One alternating milking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Evaluated Milking"
-  }, {
-    "@language" : "it",
-    "@value" : "Mungitura Controllata"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0/Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "In caso di una sola mungitura controllata, la classe rappresenta la modalità con cui si stima la mungitura mancante per avere il latte prodotto in 24 ore"
-  }, {
-    "@language" : "en",
-    "@value" : "In the case of a single controlled milking, the class represents the way the missing milking is estimated in order to have the milk produced in 24 hours"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Milk Estimate Type"
-  }, {
-    "@language" : "it",
-    "@value" : "Tipo di Stima"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0/Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe che modella i controlli funzionali sul latte. In generale i controlli funzionali consistono nel rilievo di dati produttivi e riproduttivi su animali per la produzione della carne e del latte. Le specie controllate per la produzione della carne sono i bovini e gli ovini, mentre quelle per la produzione del latte sono i bovini, i bufalini e gli ovicaprini. I controlli funzionali hanno una frequenza di controllo e misurano dei parametri quali il latte alle 24 ore, il grasso alle 24 ore, le proteine alle 24 ore."
-  }, {
-    "@language" : "en",
-    "@value" : "The class that models milk functional testing. In general, functional controls consist of recording production and reproductive data on farm animals for meat and milk production. The species controlled for meat production are cattle and sheep, while those for milk production are cattle, buffalo and sheep and goats. Functional controls have a control frequency and measure parameters such as milk at 24 hours, fat at 24 hours, protein at 24 hours."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Controllo Funzionale sul Latte"
-  }, {
-    "@language" : "en",
-    "@value" : "Milk Functional Testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"
-  }, {
-    "@id" : "_:genid1"
-  }, {
-    "@id" : "_:genid2"
-  }, {
-    "@id" : "_:genid3"
-  }, {
-    "@id" : "_:genid4"
-  }, {
-    "@id" : "_:genid5"
-  }, {
-    "@id" : "_:genid6"
-  }, {
-    "@id" : "_:genid7"
-  }, {
-    "@id" : "_:genid8"
-  }, {
-    "@id" : "_:genid9"
-  }, {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe delle modalità di campionamento del latte. La classe ha valori controllati (individui) che sono: N=Non Prelevato, P=Proporzionale su Ogni mungitura, U=Unico in una Sola Mungitura"
-  }, {
-    "@language" : "en",
-    "@value" : "The class of milk sample cateogiers. The class has controlled values (individuals) which are: N=Not Collected, P=Proportional Sample on Each Milking, U=Unique Sample in One Milking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Milk Sample Type"
-  }, {
-    "@language" : "it",
-    "@value" : "Tipo Campionamento Latte"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0/Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe delle frequenze del controllo. In particolare, rappresenta il numero di settimane che intercorre fra due controlli consecutivi (in genere, per i controlli latte, 4,5,6)"
-  }, {
-    "@language" : "en",
-    "@value" : "The control frequency class. In particular, it represents the number of weeks between two consecutive controls (typically, for milk controls, 4,5,6)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Frequenza del Controllo"
-  }, {
-    "@language" : "en",
-    "@value" : "Testing Frequency"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0/Concept"
-  }, {
-    "@id" : "_:genid11"
-  }, {
-    "@id" : "_:genid12"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "stabile"
-  }, {
-    "@language" : "it",
-    "@value" : "stabile"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe che identifica chi effettua il controllo funzionale. Essa assume i seguenti valori controllati: A = Controllore AIA, B = Allevatore, C= Allevatore e Controllore"
-  }, {
-    "@language" : "en",
-    "@value" : "The class that identifies who performs the functional check. It takes the following controlled values: A = AIA Controller, B = Farmer, C = Farmer and Controller"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Ruolo Esecutore Controllo"
-  }, {
-    "@language" : "en",
-    "@value" : "Testing Performer Role"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/RO/Role"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Momento della giornata in cui viene registrata la quantità di latte. La classe assume valori controllati (individui) che sono: M=Mattina, MPS= Mattina,Pomeriggio, Sera, MS=Mattina, Sera, P=Pomeriggio, S=Sera."
-  }, {
-    "@language" : "en",
-    "@value" : "Time of the day when the amount of milk is recorded. The class takes controlled values (individuals) which are: M=Morning, MPS=Morning,Afternoon, Evening, MS=Morning, Evening, P=Afternoon, S=Evening."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Periodo temporale (del Rilevamento Quantità di Latte)"
-  }, {
-    "@language" : "en",
-    "@value" : "TIme Period (of Milk Quantity Detection)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/TemporalEntity"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "All"
-  }, {
-    "@language" : "it",
-    "@value" : "Tutte"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/C",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "One Non-Alternating Milking"
-  }, {
-    "@language" : "it",
-    "@value" : "Una Mungitura Non Alternata"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/T",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "One Alternating Milking"
-  }, {
-    "@language" : "it",
-    "@value" : "Una mungitura alternata"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to link the milk functional testing to the number and types of milkings evaluated in the testing."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per collegare il controllo funzionale del latte al numero/tipi di mungiture valutate nel test."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha numero di mungiture controllate"
-  }, {
-    "@language" : "en",
-    "@value" : "has number of evaluated milking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to link the milk functional testing with the categories of milk sample"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per collegare il controllo funzionale del latte con le categorie di campioni di latte"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha tipo campionamento del latte"
-  }, {
-    "@language" : "en",
-    "@value" : "has milk sample type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that allows one to indicate the frequency of the milk functional testing"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che consente di indicare la frequenza del controllo nel contesto dei controlli funzionali latte"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha frequenza del controllo"
-  }, {
-    "@language" : "en",
-    "@value" : "has testing frequency"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that links the milk functional testing to the moment of the day in which the milk quantity measurement occurs"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che collega il controllo funzionale al momento della giornata in cui viene registrata la quantità di latte"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha momento di rilevamento quantità latte"
-  }, {
-    "@language" : "en",
-    "@value" : "has time of milk quantity measurement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to represent whether the milking performed for the functional testing was performed with a robot"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per rappresentare se la mungitura effettuata per il controllo funzionale è stata fatta con robot"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is milking performed with robot"
-  }, {
-    "@language" : "it",
-    "@value" : "la mungitura è effettuata con robot"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/F",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Calculation Coefficient"
-  }, {
-    "@language" : "it",
-    "@value" : "Coefficiente Calcolo"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/J",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Fornita da Lattometro Elettronico"
-  }, {
-    "@language" : "en",
-    "@value" : "Supplied by Electronic Lactometer"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/K",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Comparison with Tank"
-  }, {
-    "@language" : "it",
-    "@value" : "Confronto con Tank"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/Y",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Doubling"
-  }, {
-    "@language" : "it",
-    "@value" : "Raddoppio"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/N",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Non Prelevato"
-  }, {
-    "@language" : "en",
-    "@value" : "Not Collected"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/P",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Proportional Sample on Each Milking"
-  }, {
-    "@language" : "it",
-    "@value" : "Proporzionale su Ogni Mungitura"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/U",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Unico in una Sola Mungitura"
-  }, {
-    "@language" : "en",
-    "@value" : "Unique Sample in One Milking"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Number of daily milkings carried out by the farm under functional control"
-  }, {
-    "@language" : "it",
-    "@value" : "Numero mungiture giornaliere effettuate dall'azienda sotto controllo funzionale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "number performed milking"
-  }, {
-    "@language" : "en",
-    "@value" : "numero di mungiture effettuate"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/performer-role/A",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "AIA Controller"
-  }, {
-    "@language" : "it",
-    "@value" : "Controllore AIA"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/performer-role/B",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Allevatore"
-  }, {
-    "@language" : "en",
-    "@value" : "Farmer"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/performer-role/C",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Allevatore e Controllore"
-  }, {
-    "@language" : "en",
-    "@value" : "Farmer and Controller"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/time-period/M",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Mattina"
-  }, {
-    "@language" : "en",
-    "@value" : "Morning"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/time-period/MPS",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Mattina, Pomeriggio, Sera"
-  }, {
-    "@language" : "en",
-    "@value" : "Morning, Afternoon, Evening"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/time-period/MS",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Mattina, Sera"
-  }, {
-    "@language" : "en",
-    "@value" : "Morning, Evening"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/time-period/P",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Afternoon"
-  }, {
-    "@language" : "it",
-    "@value" : "Pomeriggio"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/milk-functional-testing/time-period/S",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/milk-functional-testing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Evening"
-  }, {
-    "@language" : "it",
-    "@value" : "Sera"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-} ]
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml": "http://www.w3.org/XML/1998/namespace/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "_:g0",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency"
+      }
+    },
+    {
+      "@id": "_:g1",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "rdfs:Literal"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/description"
+      }
+    },
+    {
+      "@id": "_:g2",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/co/LivestockFarm"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure"
+      }
+    },
+    {
+      "@id": "_:g4",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking"
+      }
+    },
+    {
+      "@id": "_:g5",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType"
+      }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole"
+      }
+    },
+    {
+      "@id": "_:g7",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement"
+      }
+    },
+    {
+      "@id": "_:g8",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:boolean"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot"
+      }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking"
+      }
+    },
+    {
+      "@id": "dcterms:accrualPeriodicity",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:creator",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:issued",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:language",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:modified",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:publisher",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:rightsHolder",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:contactPoint",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:keyword",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:theme",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/SemanticAsset",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/RO/Role",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/l0/Object"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/l0/EventOrSituation",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/MFT-JSON-LD",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sui controlli funzionali sul latte"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of milk functional testings ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Controlli Funzionali sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Milk Functional Testing Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sui controlli funzionali sul latte"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of milk functional testings ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Controlli Funzionali sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Milk Functional Testing Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/milk-functional-testing/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.jsonld"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sui controlli funzionali sul latte"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of milk functional testings ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Controlli Funzionali sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Milk Functional Testing Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sui controlli funzionali sul latte"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of milk functional testings ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Controlli Funzionali sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Milk Functional Testing Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/milk-functional-testing/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.ttl"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/MFT-RDF-XML",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sui controlli funzionali sul latte"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of milk functional testings ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Controlli Funzionali sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Milk Functional Testing Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sui controlli funzionali sul latte"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of milk functional testings ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Controlli Funzionali sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Milk Functional Testing Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/milk-functional-testing/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milk-functional-testing/latest/milk-functional-testing.rdf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/Project"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il progetto LEO dove viene usata l'ontologia"
+        },
+        {
+          "@language": "en",
+          "@value": "LEO project where the ontology is used"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "LEO - Livestock Environment Open Data"
+        },
+        {
+          "@language": "it",
+          "@value": "LEO - Livestock Environment Open Data"
+        }
+      ],
+      "https://w3id.org/italia/onto/l0/name": {
+        "@language": "it",
+        "@value": "LEO - Livestock Environment Open Data"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/hasReferenceUnitOfMeasure",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/FarmAnimal",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/LivestockFarm",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAsset"
+      ],
+      "dc11:description": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milk-functional-testing.png"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia usata per modellare i dati relativi ai controlli funzionali svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema nazionale SIALL a fronte dell’acquisizione di dati di Controllo funzionale, in particolare nel momento in cui il controllo è chiuso ed è emesso il prestampato, comunica al progetto LEO in cooperazione applicativa, una serie misure calcolate legate al rilevamento del Latte sul singolo soggetto."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model the data about functional tests carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL national system, when acquiring functional control data, in particular when the control is closed and the pre-print is issued, communicates to the LEO project through web services, a series of calculated measures linked to the detection of milk on the individual farm animal."
+        }
+      ],
+      "dcterms:identifier": {
+        "@language": "it",
+        "@value": "onto-BA-13"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2023-03-11"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2023-03-11"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": [
+        {
+          "@id": "http://eurovoc.europa.eu/6271"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/6272"
+        }
+      ],
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Milk Functional Testing Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia dei Controlli Funzionali sul Latte"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia usata per modellare i dati relativi ai controlli funzionali svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema nazionale SIALL a fronte dell’acquisizione di dati di Controllo funzionale, in particolare nel momento in cui il controllo è chiuso ed è emesso il prestampato, comunica al progetto LEO in cooperazione applicativa, una serie misure calcolate legate al rilevamento del Latte sul singolo soggetto."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model the data about functional tests carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL national system, when acquiring functional control data, in particular when the control is closed and the pre-print is issued, communicates to the LEO project through web services, a series of calculated measures linked to the detection of milk on the individual farm animal."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Milk Functional Testing Ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia dei Controlli Funzionali sul Latte"
+        }
+      ],
+      "owl:imports": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment"
+      },
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/0.1"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "Version 0.1 - 2023 - Creation of the ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2023 - Creazione dell'ontologia"
+        }
+      ],
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Controllo"
+        },
+        {
+          "@language": "it",
+          "@value": "Controllo funzionale"
+        },
+        {
+          "@language": "it",
+          "@value": "Latte"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+      },
+      "https://w3id.org/italia/onto/ADMS/acronym": "MFT",
+      "https://w3id.org/italia/onto/ADMS/hasFormalityLevel": {
+        "@id": "https://w3id.org/italia/onto/ADMS/Formal"
+      },
+      "https://w3id.org/italia/onto/ADMS/hasKeyClass": [
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage": {
+        "@id": "https://w3id.org/italia/onto/ADMS/OWL"
+      },
+      "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/MFT-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/MFT-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/MFT-RDF-XML"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/hasTask": [
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/AnnotationTask"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/SearchTask"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "https://w3id.org/italia/onto/ADMS/prefix": "mft",
+      "https://w3id.org/italia/onto/ADMS/semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "https://w3id.org/italia/onto/ADMS/status": "published",
+      "https://w3id.org/italia/onto/ADMS/target": [
+        {
+          "@language": "it",
+          "@value": "Comunità Open Data"
+        },
+        "Imprese",
+        "Pubbliche Amministrazioni",
+        {
+          "@language": "it",
+          "@value": "Specialisti del settore zootecnico"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/type": {
+        "@id": "https://w3id.org/italia/onto/ADMS/DomainOntology"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe rappresenta le mungiture interessate dal controllo funzionale. La classe definisce tre tipi di individui (valori costanti): A=Tutte, C=Una mungitura non alternata, T=Una mungitura alternata"
+        },
+        {
+          "@language": "it",
+          "@value": "The class represents the milkings involved in the functional control. The class defines three types of individuals (constant values): A=All, C=One non-alternating milking, T=One alternating milking"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Evaluated Milking"
+        },
+        {
+          "@language": "it",
+          "@value": "Mungitura Controllata"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Characteristic"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Concept"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "In caso di una sola mungitura controllata, la classe rappresenta la modalità con cui si stima la mungitura mancante per avere il latte prodotto in 24 ore"
+        },
+        {
+          "@language": "en",
+          "@value": "In the case of a single controlled milking, the class represents the way the missing milking is estimated in order to have the milk produced in 24 hours"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Milk Estimate Type"
+        },
+        {
+          "@language": "it",
+          "@value": "Tipo di Stima"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Characteristic"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Concept"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe che modella i controlli funzionali sul latte. In generale i controlli funzionali consistono nel rilievo di dati produttivi e riproduttivi su animali per la produzione della carne e del latte. Le specie controllate per la produzione della carne sono i bovini e gli ovini, mentre quelle per la produzione del latte sono i bovini, i bufalini e gli ovicaprini. I controlli funzionali hanno una frequenza di controllo e misurano dei parametri quali il latte alle 24 ore, il grasso alle 24 ore, le proteine alle 24 ore."
+        },
+        {
+          "@language": "en",
+          "@value": "The class that models milk functional testing. In general, functional controls consist of recording production and reproductive data on farm animals for meat and milk production. The species controlled for meat production are cattle and sheep, while those for milk production are cattle, buffalo and sheep and goats. Functional controls have a control frequency and measure parameters such as milk at 24 hours, fat at 24 hours, protein at 24 hours."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Controllo Funzionale sul Latte"
+        },
+        {
+          "@language": "en",
+          "@value": "Milk Functional Testing"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"
+        },
+        {
+          "@id": "_:g0"
+        },
+        {
+          "@id": "_:g1"
+        },
+        {
+          "@id": "_:g2"
+        },
+        {
+          "@id": "_:g3"
+        },
+        {
+          "@id": "_:g4"
+        },
+        {
+          "@id": "_:g5"
+        },
+        {
+          "@id": "_:g6"
+        },
+        {
+          "@id": "_:g7"
+        },
+        {
+          "@id": "_:g8"
+        },
+        {
+          "@id": "_:g9"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe delle modalità di campionamento del latte. La classe ha valori controllati (individui) che sono: N=Non Prelevato, P=Proporzionale su Ogni mungitura, U=Unico in una Sola Mungitura"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of milk sample cateogiers. The class has controlled values (individuals) which are: N=Not Collected, P=Proportional Sample on Each Milking, U=Unique Sample in One Milking"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Milk Sample Type"
+        },
+        {
+          "@language": "it",
+          "@value": "Tipo Campionamento Latte"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Characteristic"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Concept"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe delle frequenze del controllo. In particolare, rappresenta il numero di settimane che intercorre fra due controlli consecutivi (in genere, per i controlli latte, 4,5,6)"
+        },
+        {
+          "@language": "en",
+          "@value": "The control frequency class. In particular, it represents the number of weeks between two consecutive controls (typically, for milk controls, 4,5,6)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Frequenza del Controllo"
+        },
+        {
+          "@language": "en",
+          "@value": "Testing Frequency"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Characteristic"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Concept"
+        },
+        {
+          "@id": "_:g10"
+        },
+        {
+          "@id": "_:g11"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "stabile"
+        },
+        {
+          "@language": "it",
+          "@value": "stabile"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe che identifica chi effettua il controllo funzionale. Essa assume i seguenti valori controllati: A = Controllore AIA, B = Allevatore, C= Allevatore e Controllore"
+        },
+        {
+          "@language": "en",
+          "@value": "The class that identifies who performs the functional check. It takes the following controlled values: A = AIA Controller, B = Farmer, C = Farmer and Controller"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Ruolo Esecutore Controllo"
+        },
+        {
+          "@language": "en",
+          "@value": "Testing Performer Role"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/RO/Role"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Momento della giornata in cui viene registrata la quantità di latte. La classe assume valori controllati (individui) che sono: M=Mattina, MPS= Mattina,Pomeriggio, Sera, MS=Mattina, Sera, P=Pomeriggio, S=Sera."
+        },
+        {
+          "@language": "en",
+          "@value": "Time of the day when the amount of milk is recorded. The class takes controlled values (individuals) which are: M=Morning, MPS=Morning,Afternoon, Evening, MS=Morning, Evening, P=Afternoon, S=Evening."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Periodo temporale (del Rilevamento Quantità di Latte)"
+        },
+        {
+          "@language": "en",
+          "@value": "TIme Period (of Milk Quantity Detection)"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/TI/TemporalEntity"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/A",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "All"
+        },
+        {
+          "@language": "it",
+          "@value": "Tutte"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/C",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "One Non-Alternating Milking"
+        },
+        {
+          "@language": "it",
+          "@value": "Una Mungitura Non Alternata"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/evaluated-milking/T",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "One Alternating Milking"
+        },
+        {
+          "@language": "it",
+          "@value": "Una mungitura alternata"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasEvaluatedMilking",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to link the milk functional testing to the number and types of milkings evaluated in the testing."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per collegare il controllo funzionale del latte al numero/tipi di mungiture valutate nel test."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha numero di mungiture controllate"
+        },
+        {
+          "@language": "en",
+          "@value": "has number of evaluated milking"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/EvaluatedMilking"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasMilkSampleType",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to link the milk functional testing with the categories of milk sample"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per collegare il controllo funzionale del latte con le categorie di campioni di latte"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha tipo campionamento del latte"
+        },
+        {
+          "@language": "en",
+          "@value": "has milk sample type"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasTestingFrequency",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that allows one to indicate the frequency of the milk functional testing"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che consente di indicare la frequenza del controllo nel contesto dei controlli funzionali latte"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha frequenza del controllo"
+        },
+        {
+          "@language": "en",
+          "@value": "has testing frequency"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingFrequency"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasTestingPerformerRole",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/hasTimeOfMilkQuantityMeasurement",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property that links the milk functional testing to the moment of the day in which the milk quantity measurement occurs"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che collega il controllo funzionale al momento della giornata in cui viene registrata la quantità di latte"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha momento di rilevamento quantità latte"
+        },
+        {
+          "@language": "en",
+          "@value": "has time of milk quantity measurement"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/isMilkingPerformedWithRobot",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to represent whether the milking performed for the functional testing was performed with a robot"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per rappresentare se la mungitura effettuata per il controllo funzionale è stata fatta con robot"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is milking performed with robot"
+        },
+        {
+          "@language": "it",
+          "@value": "la mungitura è effettuata con robot"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/F",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Calculation Coefficient"
+        },
+        {
+          "@language": "it",
+          "@value": "Coefficiente Calcolo"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/J",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Fornita da Lattometro Elettronico"
+        },
+        {
+          "@language": "en",
+          "@value": "Supplied by Electronic Lactometer"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/K",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Comparison with Tank"
+        },
+        {
+          "@language": "it",
+          "@value": "Confronto con Tank"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-estimate-type/Y",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkEstimateType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Doubling"
+        },
+        {
+          "@language": "it",
+          "@value": "Raddoppio"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/N",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Non Prelevato"
+        },
+        {
+          "@language": "en",
+          "@value": "Not Collected"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/P",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Proportional Sample on Each Milking"
+        },
+        {
+          "@language": "it",
+          "@value": "Proporzionale su Ogni Mungitura"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/milk-sample-type/U",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/MilkSampleType"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Unico in una Sola Mungitura"
+        },
+        {
+          "@language": "en",
+          "@value": "Unique Sample in One Milking"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/numPerformedMilking",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Number of daily milkings carried out by the farm under functional control"
+        },
+        {
+          "@language": "it",
+          "@value": "Numero mungiture giornaliere effettuate dall'azienda sotto controllo funzionale"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing/MilkFunctionalTesting"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "number performed milking"
+        },
+        {
+          "@language": "en",
+          "@value": "numero di mungiture effettuate"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/performer-role/A",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "AIA Controller"
+        },
+        {
+          "@language": "it",
+          "@value": "Controllore AIA"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/performer-role/B",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Allevatore"
+        },
+        {
+          "@language": "en",
+          "@value": "Farmer"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/performer-role/C",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TestingPerformerRole"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Allevatore e Controllore"
+        },
+        {
+          "@language": "en",
+          "@value": "Farmer and Controller"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/time-period/M",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Mattina"
+        },
+        {
+          "@language": "en",
+          "@value": "Morning"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/time-period/MPS",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Mattina, Pomeriggio, Sera"
+        },
+        {
+          "@language": "en",
+          "@value": "Morning, Afternoon, Evening"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/time-period/MS",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Mattina, Sera"
+        },
+        {
+          "@language": "en",
+          "@value": "Morning, Evening"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/time-period/P",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Afternoon"
+        },
+        {
+          "@language": "it",
+          "@value": "Pomeriggio"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/milk-functional-testing/time-period/S",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/milk-functional-testing/TimePeriod"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/milk-functional-testing"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Evening"
+        },
+        {
+          "@language": "it",
+          "@value": "Sera"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    }
+  ]
+}

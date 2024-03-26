@@ -19,6 +19,7 @@
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/milking-efficiency-assessment.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati relativi all&apos;efficienza della mungitura (compresi i controlli sugli impianti). I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. I dati comprendono i controlli dinamici sulla mungitura a livello di statistiche aziendali e a livello di singoli parametri individuali legati alla singola mungitura di animali, che variano anche a seconda dei diversi strumenti utilizzati. Inoltre, i controlli coinvolgono i parametri di settaggio dei pulsanti dell&apos;impianto di mungitura e i test di caduta del vuoto.</terms:description>
         <terms:description xml:lang="en">This is the ontology used to model data on milking efficiency (including plant controls). The data is collected in the context of the LEO - Livestock Environment Open Data project. The data includes dynamic milking controls at the level of livestock farm statistics and at the level of individual animal milking parameters, which also vary according to the different devices used. In addition, the controls involve the milking plant&apos;s pulsantors setting parameters and vacuum fall tests</terms:description>
         <terms:identifier xml:lang="it">onto-BA-12</terms:identifier>
@@ -26,7 +27,7 @@
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-10</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
@@ -46,7 +47,6 @@
         <dcat:keyword xml:lang="it">mungitura</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <ADMS:acronym>MEA</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment"/>
@@ -63,17 +63,17 @@
         <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/leo/onto/milking-efficiency-assessment</ADMS:officialURI>
         <ADMS:prefix>mea</ADMS:prefix>
         <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/leo/data/project/LEO"/>
-        <ADMS:status>initial draft</ADMS:status>
+        <ADMS:status>published</ADMS:status>
         <ADMS:target xml:lang="it">Comunità Open Data</ADMS:target>
         <ADMS:target>Imprese</ADMS:target>
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -81,196 +81,189 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#contactPoint -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -278,13 +271,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasUnitOfMeasure -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasAssessedEfficiencySinglePropertyValue -->
@@ -308,7 +301,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasFallOfTheVacuumSinglePropertyValue -->
@@ -323,7 +316,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/doneDuring -->
@@ -339,7 +332,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/hasPlantPulsatorEfficiencyAssessedPropValue -->
@@ -356,7 +349,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/refersToProductionType -->
@@ -372,10 +365,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -383,7 +376,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/channelPlantPulsantor -->
@@ -399,7 +392,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/numPlantPulsator -->
@@ -416,10 +409,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -427,55 +420,55 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/EventOrSituation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/EventOrSituation"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/MilkingSession -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/ale/MilkingSession"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Sample -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/Sample"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/LivestockSpecies -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/MilkingPlantPulsator -->
@@ -502,19 +495,19 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/ProductionType -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/ProductionType"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/LivestockFarm -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarm"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/FallOfTheVacuumAssessment -->
@@ -536,7 +529,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingEfficiencyAssessment -->
@@ -558,7 +551,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantDynamicAssessment -->
@@ -600,7 +593,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/MilkingPlantPulsatorSettingAssessment -->
@@ -629,7 +622,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment/SingleMilkingDynamicAssessment -->
@@ -657,10 +650,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -668,7 +661,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/MEA-JSON-LD -->
@@ -685,10 +678,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of milking efficiency assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Controlli Efficienza Mungitura</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of Milking Efficiency Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/milking-efficiency-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/milking-efficiency-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milking-efficiency-assessment/latest/milking-efficiency-assessment.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/MEA-RDF-TURTLE -->
@@ -705,10 +698,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of milking efficiency assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Controlli Efficienza Mungitura</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of Milking Efficiency Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/milking-efficiency-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/milking-efficiency-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milking-efficiency-assessment/latest/milking-efficiency-assessment.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/MEA-RDF-XML -->
@@ -725,10 +718,44 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of milking efficiency assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Controlli Efficienza Mungitura</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of Milking Efficiency Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/milking-efficiency-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/milking-efficiency-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/milking-efficiency-assessment/latest/milking-efficiency-assessment.rdf"/>
     </owl:NamedIndividual>
-    
+
+
+        <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+        <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+            <dct:identifier>00944701002</dct:identifier>
+            <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+            <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+        </owl:NamedIndividual>
+
+
+
+        <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+        <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+            <dct:identifier>06695411006</dct:identifier>
+            <foaf:name xml:lang="en">Bluarancio</foaf:name>
+            <foaf:name xml:lang="it">Bluarancio</foaf:name>
+        </owl:NamedIndividual>
+
+
+
+        <!-- https://w3id.org/leo/data/project/LEO -->
+
+        <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+            <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+            <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+            <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
+        </owl:NamedIndividual>
+
+
 
 
     <!-- https://w3id.org/leo/onto/milking-efficiency-assessment -->
@@ -741,4 +768,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
