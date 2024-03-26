@@ -1,2141 +1,2843 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/LivestockSpecies"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/numNegativeSamples"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/numPositiveSamples"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasPerformer"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/co/LivestockCompany"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Disease"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/BiologicalMaterial"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasSampleJudgement"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Technique"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique"
-  } ]
-}, {
-  "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Sampling"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/isReferredToSampling"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/Sample"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/doneForSample"
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasReplacedTestReport"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasTestReport"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/note"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid27"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ]
-}, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/value"
-  } ]
-}, {
-  "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Reason"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/hasReason"
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/Sample"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/resultingInSample"
-  } ]
-}, {
-  "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid39"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/samplingDate"
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid42",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal"
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/efsaCode"
-  } ]
-}, {
-  "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/replaced"
-  } ]
-}, {
-  "@id" : "_:genid46",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/testReportNumber"
-  } ]
-}, {
-  "@id" : "_:genid47",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid48"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/testReportDate"
-  } ]
-}, {
-  "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid51",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/name"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "_:genid52",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/efsaCode"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#date"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/format",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/language",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/modified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/rightsHolder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/subject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#accessURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#contactPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#downloadURL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#keyword",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#theme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/SemanticAsset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/acronym",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasContributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasKeyClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/hasTask",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/officialURI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/prefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/target",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/ADMS/type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/COV/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/HA-JSON-LD",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sugli accertamenti sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in JSON-LD of health assessments ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione JSON-LD ontologia Accertamenti Sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "JSON-LD distribution of Health Assessment Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione JSON-LD dell'ontologia sugli accertamenti sanitarli"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in JSON-LD of health assessments ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione JSON-LD ontologia Accertamenti Sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "JSON-LD distribution of Health Assessment Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/health-assessment/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.jsonld"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/HA-RDF-TURTLE",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sugli accertamenti sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/Turtle of health assessments ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/Turtle ontologia Accertamenti Sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/Turtle distribution of Health Assessment Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/Turtle dell'ontologia sugli accertamenti sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/Turtle of health assessments ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/Turtle ontologia Accertamenti Sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/Turtle distribution of Health Assessment Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/health-assessment/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.ttl"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/data/distribution/HA-RDF-XML",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sugli accertamenti sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/XML of health assessments ontology"
-  } ],
-  "http://purl.org/dc/terms/format" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/XML ontologia Accertamenti Sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/XML distribution of Health Assessment Ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è la distribuzione RDF/XML dell'ontologia sugli accertamenti sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "This is the distribution in RDF/XML of health assessments ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Distribuzione RDF/XML ontologia Accertamenti Sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "RDF/XML distribution of Health Assessment Ontology"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://www.leo-project.it/Ontologie/health-assessment/latest"
-  } ],
-  "http://www.w3.org/ns/dcat#downloadURL" : [ {
-    "@id" : "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.rdf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/BiologicalMaterial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/Sample",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/animal/FarmAnimal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/animal/LivestockSpecies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/co/LivestockCompany",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/italia/onto/ADMS/SemanticAsset" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://www.dropbox.com/s/v7d9md0op4v9o9y/HealthAssessment.png?raw=1"
-  } ],
-  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/frequency/IRREG"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the 'Istituto Zooprofilattico Umbria-Marche'."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@language" : "it",
-    "@value" : "onto-BA-10"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-11-22"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ENG"
-  }, {
-    "@id" : "http://publications.europa.eu/resource/authority/language/ITA"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-03-09"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/rightsHolder" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/00944701002"
-  } ],
-  "http://purl.org/dc/terms/subject" : [ {
-    "@id" : "http://eurovoc.europa.eu/6271"
-  }, {
-    "@id" : "http://eurovoc.europa.eu/6272"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Health Assessment Ontology - HeathData"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Questa è l'ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche."
-  }, {
-    "@language" : "en",
-    "@value" : "This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the 'Istituto Zooprofilattico Umbria-Marche'."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Health Assessment Ontology - HeathData"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/0.2"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "Version 0.2 - 2023 - Revision of the ontology based on the availability of livestock assessment general ontology"
-  }, {
-    "@language" : "it",
-    "@value" : "Versione 0.1 - 2023 - Revisione dell'ontologia sulla base della disponibilità dell'ontologia generale sugli accertamenti in ambito zootecnico"
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "https://w3id.org/leo/data/contact-point/onto-aia"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "it",
-    "@value" : "Accertamento Sanitario"
-  }, {
-    "@language" : "it",
-    "@value" : "Malattia"
-  }, {
-    "@language" : "it",
-    "@value" : "Prelievo"
-  }, {
-    "@language" : "it",
-    "@value" : "Screening Aziendale"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/data-theme/HEAL"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/acronym" : [ {
-    "@value" : "HA"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasContributor" : [ {
-    "@id" : "https://w3id.org/leo/data/private-organization/06695411006"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasFormalityLevel" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/Formal"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasKeyClass" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Disease"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/OWL"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution" : [ {
-    "@id" : "https://w3id.org/leo/data/distribution/HA-JSON-LD"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/HA-RDF-TURTLE"
-  }, {
-    "@id" : "https://w3id.org/leo/data/distribution/HA-RDF-XML"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/hasTask" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/AnnotationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/ADMS/SearchTask"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/officialURI" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/prefix" : [ {
-    "@value" : "ha"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/semanticAssetInUse" : [ {
-    "@id" : "https://w3id.org/leo/data/project/LEO"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@value" : "published"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/target" : [ {
-    "@language" : "it",
-    "@value" : "Comunità Open Data"
-  }, {
-    "@value" : "Imprese"
-  }, {
-    "@value" : "Pubbliche Amministrazioni"
-  }, {
-    "@language" : "it",
-    "@value" : "Specialisti del settore zootecnico"
-  } ],
-  "https://w3id.org/italia/onto/ADMS/type" : [ {
-    "@id" : "https://w3id.org/italia/onto/ADMS/DomainOntology"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/CompanyScreening",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Company Screenings are diagnostic health checks that refer to a set of animals and therefore offer the summary result."
-  }, {
-    "@language" : "it",
-    "@value" : "Gli Screening Aziendali sono degli accertamenti sanitari diagnostici che fanno riferimento ad un insieme di animali e pertanto offrono il risultato di sintesi."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Company Screening"
-  }, {
-    "@language" : "it",
-    "@value" : "Screening Aziendale"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  }, {
-    "@id" : "_:genid10"
-  }, {
-    "@id" : "_:genid11"
-  }, {
-    "@id" : "_:genid12"
-  }, {
-    "@id" : "_:genid13"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe degli accertamenti diagnostici di patologie di interesse zootecnico"
-  }, {
-    "@language" : "en",
-    "@value" : "The class of diagnostic assessments for diseases of zootechnical interest"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Accertamento Sanitario Diagnostico"
-  }, {
-    "@language" : "en",
-    "@value" : "Diagnostic Health Assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"
-  }, {
-    "@id" : "_:genid14"
-  }, {
-    "@id" : "_:genid15"
-  }, {
-    "@id" : "_:genid16"
-  }, {
-    "@id" : "_:genid17"
-  }, {
-    "@id" : "_:genid18"
-  }, {
-    "@id" : "_:genid19"
-  }, {
-    "@id" : "_:genid20"
-  }, {
-    "@id" : "_:genid21"
-  }, {
-    "@id" : "_:genid22"
-  }, {
-    "@id" : "_:genid23"
-  }, {
-    "@id" : "_:genid24"
-  }, {
-    "@id" : "_:genid25"
-  }, {
-    "@id" : "_:genid26"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Disease",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe delle malattie analizzate nell'accertamento sanitario. Le malattie sono identificate da un codice (codice SIMAN)."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of diseases analysed in the health assessment. Diseases are identified by a code (SIMAN code)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Disease"
-  }, {
-    "@language" : "it",
-    "@value" : "Malattia"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Concept"
-  }, {
-    "@id" : "_:genid30"
-  }, {
-    "@id" : "_:genid31"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Doubtful",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/health-assessment/SampleJudgement" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Doubtful"
-  }, {
-    "@language" : "it",
-    "@value" : "Dubbio"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Negative",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/health-assessment/SampleJudgement" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Negative"
-  }, {
-    "@language" : "it",
-    "@value" : "Negativo"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/NotExamined",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/health-assessment/SampleJudgement" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Non Esaminato"
-  }, {
-    "@language" : "en",
-    "@value" : "Not Examined"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Positive",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/health-assessment/SampleJudgement" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Positive"
-  }, {
-    "@language" : "it",
-    "@value" : "Positivo"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/QualitativeResult",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe degli esiti degli accertamenti di tipo qualitativo (e.g., positivo, negativo)."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of qualitative results of the health assessments (e.g. positive, negative)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Qualitative Result"
-  }, {
-    "@language" : "it",
-    "@value" : "Risultato Qualitativo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"
-  }, {
-    "@id" : "_:genid32"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/QuantitativeResult"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/QuantitativeResult",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe degli esiti quantitativi, ossia risultati di tipo numerico, associati a un'unità di misura"
-  }, {
-    "@language" : "en",
-    "@value" : "The class of quantitative outcomes, i.e. results of a numerical type, associated with a unit of measurement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Esito Quantitativo"
-  }, {
-    "@language" : "en",
-    "@value" : "Quantitative Result"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/Value"
-  }, {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"
-  }, {
-    "@id" : "_:genid33"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Reason",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe di tutte le motivazioni per l'esecuzione di un prelievo riferito agli accertamenti sanitari."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of all the motivations for carrying out a sampling referred in health assessments."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Motivo del Prelievo"
-  }, {
-    "@language" : "en",
-    "@value" : "Reason (of the Sampling)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Characteristic"
-  }, {
-    "@id" : "https://w3id.org/italia/onto/l0/Concept"
-  }, {
-    "@id" : "_:genid34"
-  }, {
-    "@id" : "_:genid35"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/SampleJudgement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Indica il giudizio relativo al campione. i valori possibili sono negativo, positivo, non esaminato, non idoneo, dubbio"
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates the rating for the sample. possible values are negative, positive, not examined, unsuitable, doubtful"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Giudizio Campione"
-  }, {
-    "@language" : "en",
-    "@value" : "Sample Judgement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Description"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Sampling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "L'attività di prelievo necessaria per lo svolgimento di accertamenti sanitari"
-  }, {
-    "@language" : "en",
-    "@value" : "The activity of sampling referred to some health assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Prelievo"
-  }, {
-    "@language" : "en",
-    "@value" : "Sampling"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Activity"
-  }, {
-    "@id" : "_:genid36"
-  }, {
-    "@id" : "_:genid37"
-  }, {
-    "@id" : "_:genid38"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ],
-  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Sampling"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe degli accertamenti sanitari diagnostici effettuati su singoli animali."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of all the diagnostic health assessments done on single farm animals"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Accertamento Sanitario su Singolo Animale"
-  }, {
-    "@language" : "en",
-    "@value" : "Single Animal Health Assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  }, {
-    "@id" : "_:genid42"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Technique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe delle tecniche analitiche utilizzate per l'accertamento sanitario. La tecnica usata è identificata da un codice (Codici EFSA)"
-  }, {
-    "@language" : "en",
-    "@value" : "The class of analytical techniques used for health assessments. The technique used is identified by a code (EFSA Codes)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Technique"
-  }, {
-    "@language" : "it",
-    "@value" : "Tecnica"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/Method"
-  }, {
-    "@id" : "_:genid43"
-  }, {
-    "@id" : "_:genid44"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La classe di tutti i rapporti di prova che sono documenti, in formato digitale o cartaceo, che sono redatti dagli istituti zooprofilattici a conclusione del percorso diagnostico. Questi rapporti di prova possono essere poi mandati a destinatari quali il Ministero della Salute e il Servizio Veterinario Regionale."
-  }, {
-    "@language" : "en",
-    "@value" : "The class of all test reports, which are documents, in digital or paper format, that are drawn up by zooprophylactic institutes at the end of the diagnostic process. These test reports can then be sent to recipients such as the Ministry of Health and the Regional Veterinary Service."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Rapporto di Prova"
-  }, {
-    "@language" : "en",
-    "@value" : "Test Report"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Object"
-  }, {
-    "@id" : "_:genid45"
-  }, {
-    "@id" : "_:genid46"
-  }, {
-    "@id" : "_:genid47"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/Unsuitable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/leo/onto/health-assessment/SampleJudgement" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Non Idoneo"
-  }, {
-    "@language" : "en",
-    "@value" : "Unsuitable"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A public law health body with management and administrative autonomy, forming part of the Italian National Health Service, as a technical and operational tool for animal health."
-  }, {
-    "@language" : "it",
-    "@value" : "Un ente sanitario di diritto pubblico con autonomia gestionale ed amministrativa, facente parte del Servizio sanitario nazionale,  quale strumento tecnico ed operativo per la sanità animale."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Laboratorio Zooprofilattico"
-  }, {
-    "@language" : "en",
-    "@value" : "Zooprophylactics Laboratory"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/COV/Organization"
-  }, {
-    "@id" : "_:genid51"
-  }, {
-    "@id" : "_:genid52"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/doneForSample",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to specify for which sample the health assessment was done."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà usata per indicare per quale campione è stato fatto l'accertamento sanitario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "done for sample"
-  }, {
-    "@language" : "it",
-    "@value" : "fatto per campione"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/Sample"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/efsaCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "It represents the EFSA - European Food Safety Authority codes used in health inspections to identify various elements including the zooprophylactic institutes, the analytical technique used."
-  }, {
-    "@language" : "it",
-    "@value" : "Rappresenta i codici EFSA - European Food Safety Authority usati negli accertamenti sanitari per identificare diversi elementi tra cui gli istituti zooprofilattici, la tecnica analitica utilizzata."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "EFSA code"
-  }, {
-    "@language" : "it",
-    "@value" : "codice EFSA"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to indicate the analysed disease in the health assessment."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per specificare quale malattia è stata analizzata nell'accertamento sanitario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha malattia analizzata"
-  }, {
-    "@language" : "en",
-    "@value" : "has analysed disease"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Disease"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to represent the biological material that is being analysed in the health assessment."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà usata per rappresentare il materiale esaminato nell'accertamento sanitario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha materiale esaminato"
-  }, {
-    "@language" : "en",
-    "@value" : "has examined material"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/BiologicalMaterial"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasReason",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to specify the reason for the sampling activity."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per specificare il motivo per effettuare il prelievo."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Sampling"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha motivo prelievo"
-  }, {
-    "@language" : "en",
-    "@value" : "has reason for sampling"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Reason"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasReplacedTestReport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to indicate the replaced test report in a health assessment"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà per indicare il rapporto di prova sostituito in un accertamento sanitario"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha rapporto di prova sostituito"
-  }, {
-    "@language" : "en",
-    "@value" : "has replaced test report"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to represent the laboratory that accepted the sample on which the health assessment is done."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà usata per indicare il laboratorio che accetta il campione oggetto di accertamento sanitario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha laboratorio che accetta campione"
-  }, {
-    "@language" : "en",
-    "@value" : "has sample acceptor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasSampleJudgement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property representing jthe udgement done in the context of the health assessment on the sample"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà che rappresenta il giudizio nel contesto dell'accertamento sanitario in merito al campione"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha giudizio sul campione"
-  }, {
-    "@language" : "en",
-    "@value" : "has sample judgement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasTestReport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Proprietà usata per specificare il rapporto di prova associato all'accertamento sanitario."
-  }, {
-    "@language" : "en",
-    "@value" : "The property used to specify the test report for the health assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha rapporto di prova"
-  }, {
-    "@language" : "en",
-    "@value" : "has test report"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to specify the analytical method/technique used in the health assessment"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per specificare la/il tecnica/metodo analitica/o usata/o nell'accertamento sanitario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "ha tecnica analitica usata"
-  }, {
-    "@language" : "en",
-    "@value" : "has used analytical technique"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Technique"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/livestock-assessment/applies"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inverse property of 'has used analytical technique' which links the technique or method to the health assessment."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà inversa di 'ha tecnica analitica utilizzata' che collega la tecnica o metodo all'accertamento sanitario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Technique"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is analytical technique of"
-  }, {
-    "@language" : "it",
-    "@value" : "è tecnica analitica di"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/isReferredToSampling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to link the health assessmnet to sampling activity."
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà usata per collegare l'accertamento sanitario all'attività di prelievo del campione."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is referred to sampling"
-  }, {
-    "@language" : "it",
-    "@value" : "è riferito a prelievo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Sampling"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/note",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Eventuali note sull'accertamento sanitario"
-  }, {
-    "@language" : "en",
-    "@value" : "Some descriptive note on the health assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "nota"
-  }, {
-    "@language" : "en",
-    "@value" : "note"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/description"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/numNegativeSamples",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to specify the number of negative samples in company screenings"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà usata per specificare il numero di campioni negativi negli screening aziendali"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "number negative samples"
-  }, {
-    "@language" : "it",
-    "@value" : "numero campioni negativi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/value"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Il numero di campioni non esaminati o non idonei negli screening aziendali"
-  }, {
-    "@language" : "en",
-    "@value" : "The number of samples that are not examined in company screenings"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "number not examined/unsuitable samples"
-  }, {
-    "@language" : "it",
-    "@value" : "numero campioni non esaminati/idonei"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/value"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/numPositiveSamples",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Il numero di campioni positivi negli screening aziendali"
-  }, {
-    "@language" : "en",
-    "@value" : "The number of positive samples in the compnay screenings."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "number positive samples"
-  }, {
-    "@language" : "it",
-    "@value" : "numero campioni positivi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/value"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/replaced",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to indicate that a trial report has replaced another  report"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà usata per indicare che un rapporto di prova ha sostituito un altro rapporto di prova"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "replaced"
-  }, {
-    "@language" : "it",
-    "@value" : "sostituito"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/resultingInSample",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property used to represent the sample resulting from a sampling activity"
-  }, {
-    "@language" : "it",
-    "@value" : "Proprietà utilizzata per rappresentare il campione risultante da un'attività di campionamento."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Sampling"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "resulting in sample"
-  }, {
-    "@language" : "it",
-    "@value" : "risultante in campione"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/leo/onto/analysis/Sample"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La data di accettazione del campione in accertamento sanitario"
-  }, {
-    "@language" : "en",
-    "@value" : "The date of acceptance of the sample in a health assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "data accettazione campione"
-  }, {
-    "@language" : "en",
-    "@value" : "sampling accepting date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/samplingDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La data in cui il campione è stato prelevato"
-  }, {
-    "@language" : "en",
-    "@value" : "The date on which the sample was taken"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/Sampling"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "data prelievo"
-  }, {
-    "@language" : "en",
-    "@value" : "sampling date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/testReportDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La data associata al rapporto di prova"
-  }, {
-    "@language" : "en",
-    "@value" : "The date associated to the test report"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "data rapporto di prova"
-  }, {
-    "@language" : "en",
-    "@value" : "test report date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid7"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/TI/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/leo/onto/health-assessment/testReportNumber",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "L'identificativo univoco, espresso come numbero, del rapporto di prova in un accertamento sanitario"
-  }, {
-    "@language" : "en",
-    "@value" : "The unique identifier of the test report"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment/TestReport"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/leo/onto/health-assessment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "numero rapporto di prova"
-  }, {
-    "@language" : "en",
-    "@value" : "test report number"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/identifier"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "it",
-    "@value" : "stabile"
-  }, {
-    "@language" : "en",
-    "@value" : "stable"
-  } ]
-} ]
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml": "http://www.w3.org/XML/1998/namespace/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "_:g0",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/numNegativeSamples"
+      }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples"
+      }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:integer"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/numPositiveSamples"
+      }
+    },
+    {
+      "@id": "_:g13",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/hasPerformer"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab"
+      }
+    },
+    {
+      "@id": "_:g14",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/co/LivestockCompany"
+      }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Disease"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease"
+      }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/analysis/BiologicalMaterial"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial"
+      }
+    },
+    {
+      "@id": "_:g17",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasSampleJudgement"
+      }
+    },
+    {
+      "@id": "_:g18",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Technique"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique"
+      }
+    },
+    {
+      "@id": "_:g19",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Sampling"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/isReferredToSampling"
+      }
+    },
+    {
+      "@id": "_:g20",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/doneForSample"
+      }
+    },
+    {
+      "@id": "_:g21",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasReplacedTestReport"
+      }
+    },
+    {
+      "@id": "_:g22",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor"
+      }
+    },
+    {
+      "@id": "_:g23",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasTestReport"
+      }
+    },
+    {
+      "@id": "_:g24",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "rdf:PlainLiteral"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/note"
+      }
+    },
+    {
+      "@id": "_:g25",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:g26"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate"
+      }
+    },
+    {
+      "@id": "_:g26",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g29",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g30",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/identifier"
+      }
+    },
+    {
+      "@id": "_:g31",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/MU/value"
+      }
+    },
+    {
+      "@id": "_:g32",
+      "@type": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/UnitOfMeasure"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      }
+    },
+    {
+      "@id": "_:g33",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:g34",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/identifier"
+      }
+    },
+    {
+      "@id": "_:g35",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Reason"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/hasReason"
+      }
+    },
+    {
+      "@id": "_:g36",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/resultingInSample"
+      }
+    },
+    {
+      "@id": "_:g37",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:g38"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/samplingDate"
+      }
+    },
+    {
+      "@id": "_:g38",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g41",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/FarmAnimal"
+      }
+    },
+    {
+      "@id": "_:g42",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:g43",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/efsaCode"
+      }
+    },
+    {
+      "@id": "_:g44",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/replaced"
+      }
+    },
+    {
+      "@id": "_:g45",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/testReportNumber"
+      }
+    },
+    {
+      "@id": "_:g46",
+      "@type": "owl:Restriction",
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "_:g47"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/testReportDate"
+      }
+    },
+    {
+      "@id": "_:g47",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g50",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/italia/onto/l0/name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "_:g51",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/efsaCode"
+      }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:date"
+          },
+          {
+            "@id": "xsd:dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/hasSubject"
+      },
+      "owl:someValuesFrom": {
+        "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies"
+      }
+    },
+    {
+      "@id": "dcterms:accrualPeriodicity",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:creator",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:format",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:issued",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:language",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:modified",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:publisher",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:rightsHolder",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:subject",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcterms:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:contactPoint",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:keyword",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dcat:theme",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/SemanticAsset",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/acronym",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasFormalityLevel",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasKeyClass",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/hasTask",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/officialURI",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/prefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/semanticAssetInUse",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/target",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/ADMS/type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/COV/Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/l0/EventOrSituation",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/HA-JSON-LD",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli accertamenti sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of health assessments ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Accertamenti Sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Health Assessment Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione JSON-LD dell'ontologia sugli accertamenti sanitarli"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in JSON-LD of health assessments ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione JSON-LD ontologia Accertamenti Sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "JSON-LD distribution of Health Assessment Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "hhttps://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.jsonld"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/HA-RDF-TURTLE",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli accertamenti sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of health assessments ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Accertamenti Sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Health Assessment Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia sugli accertamenti sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/Turtle of health assessments ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/Turtle ontologia Accertamenti Sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/Turtle distribution of Health Assessment Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.ttl"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/distribution/HA-RDF-XML",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli accertamenti sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of health assessments ontology"
+        }
+      ],
+      "dcterms:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dcterms:license": {
+        "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+      },
+      "dcterms:title": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Accertamenti Sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Health Assessment Ontology"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è la distribuzione RDF/XML dell'ontologia sugli accertamenti sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "This is the distribution in RDF/XML of health assessments ontology"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Distribuzione RDF/XML ontologia Accertamenti Sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "RDF/XML distribution of Health Assessment Ontology"
+        }
+      ],
+      "dcat:accessURL": {
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.rdf"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://dati.gov.it/onto/dcatapit#Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/project/LEO",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/Project"
+      ],
+      "rdfs:label": {
+        "@language": "it",
+        "@value": "LEO - Livestock Environment Open Data"
+      },
+      "https://w3id.org/italia/onto/l0/name": {
+        "@language": "it",
+        "@value": "LEO - Livestock Environment Open Data"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/BiologicalMaterial",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/Sample",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/UnitOfMeasure",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/analysis/hasUnitOfMeasure",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/FarmAnimal",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/animal/LivestockSpecies",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/co/LivestockCompany",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment",
+      "@type": [
+        "owl:Ontology",
+        "owl:NamedIndividual",
+        "https://w3id.org/italia/onto/ADMS/SemanticAsset"
+      ],
+      "dc11:description": {
+        "@id": "https://www.dropbox.com/s/v7d9md0op4v9o9y/HealthAssessment.png?raw=1"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the 'Istituto Zooprofilattico Umbria-Marche'."
+        }
+      ],
+      "dcterms:identifier": {
+        "@language": "it",
+        "@value": "onto-BA-10"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date",
+        "@value": "2022-11-22"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2023-03-09"
+      },
+      "dcterms:publisher": {
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+      },
+      "dcterms:rightsHolder": {
+        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+      },
+      "dcterms:subject": [
+        {
+          "@id": "http://eurovoc.europa.eu/6271"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/6272"
+        }
+      ],
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "Health Assessment Ontology - HeathData"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Questa è l'ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche."
+        },
+        {
+          "@language": "en",
+          "@value": "This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the 'Istituto Zooprofilattico Umbria-Marche'."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Health Assessment Ontology - HeathData"
+        },
+        {
+          "@language": "it",
+          "@value": "Ontologia degli Accertamenti Sanitari (inclusi Screening Aziendali)- HealthData"
+        }
+      ],
+      "owl:imports": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment"
+      },
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/0.2"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "en",
+          "@value": "Version 0.2 - 2023 - Revision of the ontology based on the availability of livestock assessment general ontology"
+        },
+        {
+          "@language": "it",
+          "@value": "Versione 0.1 - 2023 - Revisione dell'ontologia sulla base della disponibilità dell'ontologia generale sugli accertamenti in ambito zootecnico"
+        }
+      ],
+      "dcat:contactPoint": {
+        "@id": "https://w3id.org/leo/data/contact-point/onto-aia"
+      },
+      "dcat:keyword": [
+        {
+          "@language": "it",
+          "@value": "Accertamento Sanitario"
+        },
+        {
+          "@language": "it",
+          "@value": "Malattia"
+        },
+        {
+          "@language": "it",
+          "@value": "Prelievo"
+        },
+        {
+          "@language": "it",
+          "@value": "Screening Aziendale"
+        }
+      ],
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/HEAL"
+      },
+      "https://w3id.org/italia/onto/ADMS/acronym": "HA",
+      "https://w3id.org/italia/onto/ADMS/hasFormalityLevel": {
+        "@id": "https://w3id.org/italia/onto/ADMS/Formal"
+      },
+      "https://w3id.org/italia/onto/ADMS/hasKeyClass": [
+        {
+          "@id": "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/health-assessment/Disease"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage": {
+        "@id": "https://w3id.org/italia/onto/ADMS/OWL"
+      },
+      "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution": [
+        {
+          "@id": "https://w3id.org/leo/data/distribution/HA-JSON-LD"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/HA-RDF-TURTLE"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/distribution/HA-RDF-XML"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/hasTask": [
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/AnnotationTask"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/QueryFormulationTask"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/ADMS/SearchTask"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/officialURI": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "https://w3id.org/italia/onto/ADMS/prefix": "ha",
+      "https://w3id.org/italia/onto/ADMS/semanticAssetInUse": {
+        "@id": "https://w3id.org/leo/data/project/LEO"
+      },
+      "https://w3id.org/italia/onto/ADMS/status": "published",
+      "https://w3id.org/italia/onto/ADMS/target": [
+        {
+          "@language": "it",
+          "@value": "Comunità Open Data"
+        },
+        "Imprese",
+        "Pubbliche Amministrazioni",
+        {
+          "@language": "it",
+          "@value": "Specialisti del settore zootecnico"
+        }
+      ],
+      "https://w3id.org/italia/onto/ADMS/type": {
+        "@id": "https://w3id.org/italia/onto/ADMS/DomainOntology"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/CompanyScreening",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Company Screenings are diagnostic health checks that refer to a set of animals and therefore offer the summary result."
+        },
+        {
+          "@language": "it",
+          "@value": "Gli Screening Aziendali sono degli accertamenti sanitari diagnostici che fanno riferimento ad un insieme di animali e pertanto offrono il risultato di sintesi."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Company Screening"
+        },
+        {
+          "@language": "it",
+          "@value": "Screening Aziendale"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+        },
+        {
+          "@id": "_:g9"
+        },
+        {
+          "@id": "_:g10"
+        },
+        {
+          "@id": "_:g11"
+        },
+        {
+          "@id": "_:g12"
+        }
+      ],
+      "owl:disjointWith": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe degli accertamenti diagnostici di patologie di interesse zootecnico"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of diagnostic assessments for diseases of zootechnical interest"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Accertamento Sanitario Diagnostico"
+        },
+        {
+          "@language": "en",
+          "@value": "Diagnostic Health Assessment"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"
+        },
+        {
+          "@id": "_:g13"
+        },
+        {
+          "@id": "_:g14"
+        },
+        {
+          "@id": "_:g15"
+        },
+        {
+          "@id": "_:g16"
+        },
+        {
+          "@id": "_:g17"
+        },
+        {
+          "@id": "_:g18"
+        },
+        {
+          "@id": "_:g19"
+        },
+        {
+          "@id": "_:g20"
+        },
+        {
+          "@id": "_:g21"
+        },
+        {
+          "@id": "_:g22"
+        },
+        {
+          "@id": "_:g23"
+        },
+        {
+          "@id": "_:g24"
+        },
+        {
+          "@id": "_:g25"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Disease",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe delle malattie analizzate nell'accertamento sanitario. Le malattie sono identificate da un codice (codice SIMAN)."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of diseases analysed in the health assessment. Diseases are identified by a code (SIMAN code)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Disease"
+        },
+        {
+          "@language": "it",
+          "@value": "Malattia"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Concept"
+        },
+        {
+          "@id": "_:g29"
+        },
+        {
+          "@id": "_:g30"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Doubtful",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Doubtful"
+        },
+        {
+          "@language": "it",
+          "@value": "Dubbio"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Negative",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Negative"
+        },
+        {
+          "@language": "it",
+          "@value": "Negativo"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/NotExamined",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Non Esaminato"
+        },
+        {
+          "@language": "en",
+          "@value": "Not Examined"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Positive",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Positive"
+        },
+        {
+          "@language": "it",
+          "@value": "Positivo"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/QualitativeResult",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe degli esiti degli accertamenti di tipo qualitativo (e.g., positivo, negativo)."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of qualitative results of the health assessments (e.g. positive, negative)."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Qualitative Result"
+        },
+        {
+          "@language": "it",
+          "@value": "Risultato Qualitativo"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"
+        },
+        {
+          "@id": "_:g31"
+        }
+      ],
+      "owl:disjointWith": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/QuantitativeResult"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/QuantitativeResult",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe degli esiti quantitativi, ossia risultati di tipo numerico, associati a un'unità di misura"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of quantitative outcomes, i.e. results of a numerical type, associated with a unit of measurement"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Esito Quantitativo"
+        },
+        {
+          "@language": "en",
+          "@value": "Quantitative Result"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/MU/Value"
+        },
+        {
+          "@id": "https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"
+        },
+        {
+          "@id": "_:g32"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Reason",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe di tutte le motivazioni per l'esecuzione di un prelievo riferito agli accertamenti sanitari."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of all the motivations for carrying out a sampling referred in health assessments."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Motivo del Prelievo"
+        },
+        {
+          "@language": "en",
+          "@value": "Reason (of the Sampling)"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Characteristic"
+        },
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Concept"
+        },
+        {
+          "@id": "_:g33"
+        },
+        {
+          "@id": "_:g34"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/SampleJudgement",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Indica il giudizio relativo al campione. i valori possibili sono negativo, positivo, non esaminato, non idoneo, dubbio"
+        },
+        {
+          "@language": "en",
+          "@value": "Indicates the rating for the sample. possible values are negative, positive, not examined, unsuitable, doubtful"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Giudizio Campione"
+        },
+        {
+          "@language": "en",
+          "@value": "Sample Judgement"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "https://w3id.org/italia/onto/l0/Description"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Sampling",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'attività di prelievo necessaria per lo svolgimento di accertamenti sanitari"
+        },
+        {
+          "@language": "en",
+          "@value": "The activity of sampling referred to some health assessment"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Prelievo"
+        },
+        {
+          "@language": "en",
+          "@value": "Sampling"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Activity"
+        },
+        {
+          "@id": "_:g35"
+        },
+        {
+          "@id": "_:g36"
+        },
+        {
+          "@id": "_:g37"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ],
+      "prov:wasDerivedFrom": {
+        "@id": "sosa:Sampling"
+      }
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe degli accertamenti sanitari diagnostici effettuati su singoli animali."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of all the diagnostic health assessments done on single farm animals"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Accertamento Sanitario su Singolo Animale"
+        },
+        {
+          "@language": "en",
+          "@value": "Single Animal Health Assessment"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+        },
+        {
+          "@id": "_:g41"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Technique",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe delle tecniche analitiche utilizzate per l'accertamento sanitario. La tecnica usata è identificata da un codice (Codici EFSA)"
+        },
+        {
+          "@language": "en",
+          "@value": "The class of analytical techniques used for health assessments. The technique used is identified by a code (EFSA Codes)"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Technique"
+        },
+        {
+          "@language": "it",
+          "@value": "Tecnica"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/leo/onto/livestock-assessment/Method"
+        },
+        {
+          "@id": "_:g42"
+        },
+        {
+          "@id": "_:g43"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/TestReport",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La classe di tutti i rapporti di prova che sono documenti, in formato digitale o cartaceo, che sono redatti dagli istituti zooprofilattici a conclusione del percorso diagnostico. Questi rapporti di prova possono essere poi mandati a destinatari quali il Ministero della Salute e il Servizio Veterinario Regionale."
+        },
+        {
+          "@language": "en",
+          "@value": "The class of all test reports, which are documents, in digital or paper format, that are drawn up by zooprophylactic institutes at the end of the diagnostic process. These test reports can then be sent to recipients such as the Ministry of Health and the Regional Veterinary Service."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Rapporto di Prova"
+        },
+        {
+          "@language": "en",
+          "@value": "Test Report"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/l0/Object"
+        },
+        {
+          "@id": "_:g44"
+        },
+        {
+          "@id": "_:g45"
+        },
+        {
+          "@id": "_:g46"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/Unsuitable",
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Non Idoneo"
+        },
+        {
+          "@language": "en",
+          "@value": "Unsuitable"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A public law health body with management and administrative autonomy, forming part of the Italian National Health Service, as a technical and operational tool for animal health."
+        },
+        {
+          "@language": "it",
+          "@value": "Un ente sanitario di diritto pubblico con autonomia gestionale ed amministrativa, facente parte del Servizio sanitario nazionale,  quale strumento tecnico ed operativo per la sanità animale."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "Laboratorio Zooprofilattico"
+        },
+        {
+          "@language": "en",
+          "@value": "Zooprophylactics Laboratory"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://w3id.org/italia/onto/COV/Organization"
+        },
+        {
+          "@id": "_:g50"
+        },
+        {
+          "@id": "_:g51"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/doneForSample",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to specify for which sample the health assessment was done."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per indicare per quale campione è stato fatto l'accertamento sanitario."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "done for sample"
+        },
+        {
+          "@language": "it",
+          "@value": "fatto per campione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/efsaCode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "It represents the EFSA - European Food Safety Authority codes used in health inspections to identify various elements including the zooprophylactic institutes, the analytical technique used."
+        },
+        {
+          "@language": "it",
+          "@value": "Rappresenta i codici EFSA - European Food Safety Authority usati negli accertamenti sanitari per identificare diversi elementi tra cui gli istituti zooprofilattici, la tecnica analitica utilizzata."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "EFSA code"
+        },
+        {
+          "@language": "it",
+          "@value": "codice EFSA"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/l0/identifier"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to indicate the analysed disease in the health assessment."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per specificare quale malattia è stata analizzata nell'accertamento sanitario."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha malattia analizzata"
+        },
+        {
+          "@language": "en",
+          "@value": "has analysed disease"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Disease"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to represent the biological material that is being analysed in the health assessment."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per rappresentare il materiale esaminato nell'accertamento sanitario."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha materiale esaminato"
+        },
+        {
+          "@language": "en",
+          "@value": "has examined material"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/BiologicalMaterial"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasReason",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to specify the reason for the sampling activity."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per specificare il motivo per effettuare il prelievo."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Sampling"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha motivo prelievo"
+        },
+        {
+          "@language": "en",
+          "@value": "has reason for sampling"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Reason"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasReplacedTestReport",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to indicate the replaced test report in a health assessment"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà per indicare il rapporto di prova sostituito in un accertamento sanitario"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha rapporto di prova sostituito"
+        },
+        {
+          "@language": "en",
+          "@value": "has replaced test report"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to represent the laboratory that accepted the sample on which the health assessment is done."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per indicare il laboratorio che accetta il campione oggetto di accertamento sanitario."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha laboratorio che accetta campione"
+        },
+        {
+          "@language": "en",
+          "@value": "has sample acceptor"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasSampleJudgement",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property representing jthe udgement done in the context of the health assessment on the sample"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà che rappresenta il giudizio nel contesto dell'accertamento sanitario in merito al campione"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha giudizio sul campione"
+        },
+        {
+          "@language": "en",
+          "@value": "has sample judgement"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/SampleJudgement"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasTestReport",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per specificare il rapporto di prova associato all'accertamento sanitario."
+        },
+        {
+          "@language": "en",
+          "@value": "The property used to specify the test report for the health assessment"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha rapporto di prova"
+        },
+        {
+          "@language": "en",
+          "@value": "has test report"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to specify the analytical method/technique used in the health assessment"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per specificare la/il tecnica/metodo analitica/o usata/o nell'accertamento sanitario."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "ha tecnica analitica usata"
+        },
+        {
+          "@language": "en",
+          "@value": "has used analytical technique"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Technique"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/leo/onto/livestock-assessment/applies"
+      },
+      "owl:inverseOf": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Inverse property of 'has used analytical technique' which links the technique or method to the health assessment."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà inversa di 'ha tecnica analitica utilizzata' che collega la tecnica o metodo all'accertamento sanitario."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Technique"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is analytical technique of"
+        },
+        {
+          "@language": "it",
+          "@value": "è tecnica analitica di"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/isReferredToSampling",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to link the health assessmnet to sampling activity."
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per collegare l'accertamento sanitario all'attività di prelievo del campione."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "is referred to sampling"
+        },
+        {
+          "@language": "it",
+          "@value": "è riferito a prelievo"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Sampling"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/note",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Eventuali note sull'accertamento sanitario"
+        },
+        {
+          "@language": "en",
+          "@value": "Some descriptive note on the health assessment"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "nota"
+        },
+        {
+          "@language": "en",
+          "@value": "note"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdf:PlainLiteral"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/l0/description"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/numNegativeSamples",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to specify the number of negative samples in company screenings"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per specificare il numero di campioni negativi negli screening aziendali"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "number negative samples"
+        },
+        {
+          "@language": "it",
+          "@value": "numero campioni negativi"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/MU/value"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il numero di campioni non esaminati o non idonei negli screening aziendali"
+        },
+        {
+          "@language": "en",
+          "@value": "The number of samples that are not examined in company screenings"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "number not examined/unsuitable samples"
+        },
+        {
+          "@language": "it",
+          "@value": "numero campioni non esaminati/idonei"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/MU/value"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/numPositiveSamples",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "Il numero di campioni positivi negli screening aziendali"
+        },
+        {
+          "@language": "en",
+          "@value": "The number of positive samples in the compnay screenings."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/CompanyScreening"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "number positive samples"
+        },
+        {
+          "@language": "it",
+          "@value": "numero campioni positivi"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/MU/value"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/replaced",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to indicate that a trial report has replaced another  report"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà usata per indicare che un rapporto di prova ha sostituito un altro rapporto di prova"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "replaced"
+        },
+        {
+          "@language": "it",
+          "@value": "sostituito"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/resultingInSample",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Property used to represent the sample resulting from a sampling activity"
+        },
+        {
+          "@language": "it",
+          "@value": "Proprietà utilizzata per rappresentare il campione risultante da un'attività di campionamento."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Sampling"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "resulting in sample"
+        },
+        {
+          "@language": "it",
+          "@value": "risultante in campione"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "https://w3id.org/leo/onto/analysis/Sample"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La data di accettazione del campione in accertamento sanitario"
+        },
+        {
+          "@language": "en",
+          "@value": "The date of acceptance of the sample in a health assessment"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data accettazione campione"
+        },
+        {
+          "@language": "en",
+          "@value": "sampling accepting date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:g0"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/samplingDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La data in cui il campione è stato prelevato"
+        },
+        {
+          "@language": "en",
+          "@value": "The date on which the sample was taken"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/Sampling"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data prelievo"
+        },
+        {
+          "@language": "en",
+          "@value": "sampling date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:g3"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/testReportDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "La data associata al rapporto di prova"
+        },
+        {
+          "@language": "en",
+          "@value": "The date associated to the test report"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "data rapporto di prova"
+        },
+        {
+          "@language": "en",
+          "@value": "test report date"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "_:g6"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/TI/date"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/onto/health-assessment/testReportNumber",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": [
+        {
+          "@language": "it",
+          "@value": "L'identificativo univoco, espresso come numbero, del rapporto di prova in un accertamento sanitario"
+        },
+        {
+          "@language": "en",
+          "@value": "The unique identifier of the test report"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "https://w3id.org/leo/onto/health-assessment/TestReport"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://w3id.org/leo/onto/health-assessment"
+      },
+      "rdfs:label": [
+        {
+          "@language": "it",
+          "@value": "numero rapporto di prova"
+        },
+        {
+          "@language": "en",
+          "@value": "test report number"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "https://w3id.org/italia/onto/l0/identifier"
+      },
+      "owl:versionInfo": [
+        {
+          "@language": "it",
+          "@value": "stabile"
+        },
+        {
+          "@language": "en",
+          "@value": "stable"
+        }
+      ]
+    }
+  ]
+}

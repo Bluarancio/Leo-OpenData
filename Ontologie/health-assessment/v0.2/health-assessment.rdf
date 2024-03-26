@@ -19,6 +19,7 @@
         <dc:description rdf:resource="https://www.dropbox.com/s/v7d9md0op4v9o9y/HealthAssessment.png?raw=1"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche.</terms:description>
         <terms:description xml:lang="en">This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the &apos;Istituto Zooprofilattico Umbria-Marche&apos;.</terms:description>
         <terms:identifier xml:lang="it">onto-BA-10</terms:identifier>
@@ -26,7 +27,7 @@
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-09</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
@@ -46,7 +47,6 @@
         <dcat:keyword xml:lang="it">Screening Aziendale</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
         <ADMS:acronym>HA</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/health-assessment/CompanyScreening"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment"/>
@@ -69,10 +69,10 @@
         <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -80,196 +80,190 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#contactPoint -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
 
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -277,13 +271,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasUnitOfMeasure -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/doneForSample -->
@@ -299,7 +293,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasAnalysedDisease -->
@@ -315,7 +309,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasExaminedMaterial -->
@@ -331,7 +325,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasReason -->
@@ -347,7 +341,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasReplacedTestReport -->
@@ -363,7 +357,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasSampleAcceptor -->
@@ -379,7 +373,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasSampleJudgement -->
@@ -395,7 +389,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasTestReport -->
@@ -411,7 +405,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/hasUsedAnalyticalTechnique -->
@@ -429,7 +423,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/isAnalyticalTechniqueOf -->
@@ -445,7 +439,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/isReferredToSampling -->
@@ -461,7 +455,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/replaced -->
@@ -477,7 +471,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/resultingInSample -->
@@ -493,10 +487,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -504,7 +498,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/efsaCode -->
@@ -521,7 +515,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/note -->
@@ -538,7 +532,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/numNegativeSamples -->
@@ -555,7 +549,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/numNotExaminedUnsuitableSamples -->
@@ -572,7 +566,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/numPositiveSamples -->
@@ -589,7 +583,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/samplingAcceptingDate -->
@@ -613,7 +607,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/samplingDate -->
@@ -637,7 +631,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/testReportDate -->
@@ -661,7 +655,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/testReportNumber -->
@@ -678,10 +672,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -689,67 +683,67 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/COV/Organization -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/EventOrSituation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/EventOrSituation"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/BiologicalMaterial -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/BiologicalMaterial"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/Sample -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/Sample"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/LivestockSpecies -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/LivestockCompany -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockCompany"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/CompanyScreening -->
@@ -792,7 +786,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/DiagnosticHealthAssessment -->
@@ -897,7 +891,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Disease -->
@@ -924,7 +918,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/QualitativeResult -->
@@ -946,7 +940,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/QuantitativeResult -->
@@ -969,7 +963,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Reason -->
@@ -997,7 +991,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/SampleJudgement -->
@@ -1012,7 +1006,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Sampling -->
@@ -1055,7 +1049,7 @@
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/SingleAnimalHealthAssessment -->
@@ -1076,7 +1070,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Technique -->
@@ -1103,7 +1097,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/TestReport -->
@@ -1144,7 +1138,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/ZooprophylacticLab -->
@@ -1171,10 +1165,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1182,7 +1176,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/HA-JSON-LD -->
@@ -1199,10 +1193,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of health assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Accertamenti Sanitari</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of Health Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/health-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/HA-RDF-TURTLE -->
@@ -1219,10 +1213,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of health assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Accertamenti Sanitari</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of Health Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/health-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/HA-RDF-XML -->
@@ -1239,10 +1233,46 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of health assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Accertamenti Sanitari</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of Health Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/health-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.rdf"/>
     </owl:NamedIndividual>
-    
+
+
+      <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+      <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+          <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+          <terms:identifier>00944701002</terms:identifier>
+          <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+          <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+      </owl:NamedIndividual>
+
+
+
+      <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+      <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+          <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+          <terms:identifier>06695411006</terms:identifier>
+          <foaf:name xml:lang="en">Bluarancio</foaf:name>
+          <foaf:name xml:lang="it">Bluarancio</foaf:name>
+      </owl:NamedIndividual>
+
+
+
+      <!-- https://w3id.org/leo/data/project/LEO -->
+
+      <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+          <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+          <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
+          <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
+          <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
+          <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+          <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+      </owl:NamedIndividual>
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment -->
@@ -1250,7 +1280,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/health-assessment">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Doubtful -->
@@ -1263,7 +1293,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Negative -->
@@ -1276,7 +1306,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/NotExamined -->
@@ -1289,7 +1319,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Positive -->
@@ -1302,7 +1332,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/health-assessment/Unsuitable -->
@@ -1320,4 +1350,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

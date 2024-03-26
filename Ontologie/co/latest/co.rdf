@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/leo/onto/co#"
-     xml:base="https://w3id.org/leo/onto/co"
+<rdf:RDF xmlns="https://w3id.org/leo/onto/co/"
+     xml:base="https://w3id.org/leo/onto/co/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
@@ -23,13 +23,14 @@
         <dc:description rdf:resource="https://www.dropbox.com/s/smurlk24eky143i/CompanyModule.png?raw=1"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia dell&apos;ubicazione e quindi delle aziende degli animali d&apos;allevamento. L&apos;ontologia modella sia allevamenti che macelli. Inoltre, l&apos;ontologia consente di localizzare le aziende in un luogo fisico (e.g., provincia).</terms:description>
         <terms:description xml:lang="en">This is the ontology of location and therefore of farms for farm animals. The ontology models both farms and slaughterhouses. In addition, the ontology allows farms to be located in a physical place (e.g. province).</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-20</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified xml:lang="en">2022-04-02</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <terms:title xml:lang="en">Company of Farm Animals Ontology</terms:title>
@@ -43,16 +44,16 @@
         <owl:versionInfo xml:lang="it">Versione 0.3 - 2022- Aggiornamento complessivo dell&apos;ontologia in base a nuovi dati (e.g., eliminazione della descrizione dell&apos;insediamento, insediamento per la specifico tipo di aziena zootecnica di allevamento).</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
         <dcat:keyword xml:lang="it">Animali d&apos;allevamento</dcat:keyword>
-        <dcat:keyword xml:lang="en">Aziende</dcat:keyword>
+        <dcat:keyword xml:lang="it">Aziende Zootecnia</dcat:keyword>
         <dcat:keyword xml:lang="it">Macello</dcat:keyword>
         <dcat:keyword xml:lang="it">Ubicazione</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <ADMS:acronym>CO</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/co/LivestockCompany"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/co/LivestockCompanyInTime"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/co/Site"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/co/Slaughterhouse"/>
         <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
         <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/CO-JSON-LD"/>
         <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/CO-RDF-TURTLE"/>
@@ -169,13 +170,6 @@
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
@@ -983,8 +977,8 @@ legge, degli animali</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Companies of the Farm Animals ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia CO (Company)</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of CO (Company) Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/co/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/co/latest/co.jsonld"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/co/latest/co.jsonld"/>
     </owl:NamedIndividual>
 
 
@@ -1003,8 +997,8 @@ legge, degli animali</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Companies of the Farm Animals ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia CO (Company)</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of CO (Company) Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/co/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/co/latest/co.ttl"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/co/latest/co.ttl"/>
     </owl:NamedIndividual>
 
 
@@ -1023,8 +1017,8 @@ legge, degli animali</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Companies of the Farm Animals ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia CO (Company)</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of CO (Company) Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/co/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/co/latest/co.rdf"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/co/latest/co.rdf"/>
     </owl:NamedIndividual>
 
 

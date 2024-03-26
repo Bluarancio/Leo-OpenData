@@ -11,7 +11,7 @@
                                                owl:imports <https://w3id.org/leo/onto/livestock-assessment> ;
                                                <http://purl.org/dc/elements/1.1/description> <https://www.dropbox.com/s/v7d9md0op4v9o9y/HealthAssessment.png?raw=1> ;
                                                <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                               <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                               <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006>;
                                                <http://purl.org/dc/terms/description> "Questa è l'ontologia usata per modellare i dati di tipo HealthData nel progetto LEO ovvero dati relativi ad accertamenti sanitari che riguardano sia singoli animali che cosiddetti screening aziendali. I dati sono acquisiti in cooperazione applicativa direttamente dall’Istituto Zooprofilattico Umbria-Marche."@it ,
                                                                                       "This is the ontology used to model data of HealthData type in the LEO project. Specifically, the ontology represents the data on health assessments concerning both individual animals and so-called farm screenings. The data is acquired through machine-to-machine mechanisms directly from the 'Istituto Zooprofilattico Umbria-Marche'."@en ;
                                                <http://purl.org/dc/terms/identifier> "onto-BA-10"@it ;
@@ -19,7 +19,7 @@
                                                <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                                    <http://publications.europa.eu/resource/authority/language/ITA> ;
                                                <http://purl.org/dc/terms/modified> "2023-03-09"^^xsd:date ;
-                                               <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                               <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/6271> ,
                                                                                   <http://eurovoc.europa.eu/6272> ;
@@ -39,7 +39,6 @@
                                                                                    "Screening Aziendale"@it ;
                                                <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
                                                <https://w3id.org/italia/onto/ADMS/acronym> "HA" ;
-                                               <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                                <https://w3id.org/italia/onto/ADMS/hasKeyClass> :CompanyScreening ,
                                                                                                :DiagnosticHealthAssessment ,
@@ -140,11 +139,6 @@
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 <https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
-
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
 <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> rdf:type owl:AnnotationProperty .
@@ -881,7 +875,7 @@
                                                                  "This is the distribution in JSON-LD of health assessments ontology"@en ;
                                                     rdfs:label "Distribuzione JSON-LD ontologia Accertamenti Sanitari"@it ,
                                                                "JSON-LD distribution of Health Assessment Ontology"@en ;
-                                                    <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/health-assessment/latest> ;
+                                                    <http://www.w3.org/ns/dcat#accessURL> <hhttps://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest> ;
                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.jsonld> .
 
 
@@ -898,7 +892,7 @@
                                                                     "This is the distribution in RDF/Turtle of health assessments ontology"@en ;
                                                        rdfs:label "Distribuzione RDF/Turtle ontologia Accertamenti Sanitari"@it ,
                                                                   "RDF/Turtle distribution of Health Assessment Ontology"@en ;
-                                                       <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/health-assessment/latest> ;
+                                                       <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest> ;
                                                        <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.ttl> .
 
 
@@ -915,8 +909,35 @@
                                                                  "This is the distribution in RDF/XML of health assessments ontology"@en ;
                                                     rdfs:label "Distribuzione RDF/XML ontologia Accertamenti Sanitari"@it ,
                                                                "RDF/XML distribution of Health Assessment Ontology"@en ;
-                                                    <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/health-assessment/latest> ;
+                                                    <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/health-assessment/latest> ;
                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/health-assessment/latest/health-assessment.rdf> .
+
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
+                                                             <http://purl.org/dc/terms/identifier> "00944701002" ;
+                                                             <http://xmlns.com/foaf/0.1/name> "Associazione Italiana Allevatori"@it ,
+                                                                                              "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
+                                                             <http://purl.org/dc/terms/identifier> "06695411006" ;
+                                                             <http://xmlns.com/foaf/0.1/name> "Bluarancio"@en ,
+                                                                                              "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/italia/onto/ADMS/Project> ;
+                                        rdfs:label "LEO - Livestock Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestock Environment Open Data"@it .
+
 
 
 ###  https://w3id.org/leo/onto/health-assessment
