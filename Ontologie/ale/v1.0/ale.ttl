@@ -12,7 +12,7 @@
                                              <https://w3id.org/italia/onto/l0> ;
                                  <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/AleModule.png> ;
                                  <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                 <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                  <http://purl.org/dc/terms/description> "Questa è l'ontologia degli eventi della vita degli animali di allevamento, L'ontologia rappresenta pertanto momenti importanti della vita degli animali come per esempio il parto, la nascita, l'aborto, la fecondazione, i vari spostamenti in entrata e uscita dalle aziende di allevamento, il macello, ecc. Per ogni evento, l'ontologia rappresenta elementi principali che caratterizzano ciascun evento."@it ,
                                                                         "The ontology thus represents important moments in the life of animals, such as birth, abortion, fertilisation, the various movements on and off farms, slaughter, etc. For each event, the ontology represents the main elements that characterise it."@en ;
                                  <http://purl.org/dc/terms/identifier> "onto-BA-3" ;
@@ -20,7 +20,7 @@
                                  <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                      <http://publications.europa.eu/resource/authority/language/ITA> ;
                                  <http://purl.org/dc/terms/modified> "2023-06-20" ;
-                                 <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                  <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                  <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/100254> ;
                                  <http://purl.org/dc/terms/title> "Animal Life Event Ontology"@en ,
@@ -36,12 +36,14 @@
                                  <http://www.w3.org/ns/dcat#keyword> "Animali d'allevamento"@it ,
                                                                      "Bovine"@en ,
                                                                      "Bovini"@it ,
+                                                                     "Asciutta"@it ,
                                                                      "Eventi della vita"@it ,
-                                                                     "Farm Animal"@en ,
+                                                                     "Aborto"@it ,
+                                                                     "Fecondazione"@it ,
+                                                                     "Farm Animals"@en ,
                                                                      "Life events"@en ;
                                  <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
                                  <https://w3id.org/italia/onto/ADMS/acronym> "ALE" ;
-                                 <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                  <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                  <https://w3id.org/italia/onto/ADMS/hasKeyClass> :AnimalLifeEvent ;
                                  <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> ;
@@ -123,11 +125,6 @@
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 <https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
-
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
 <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> rdf:type owl:AnnotationProperty .
@@ -1369,9 +1366,9 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
                                                                ]
                                              ] ;
                              <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/BackFatThicknessMeasurement.png> ;
-                             rdfs:comment """La classe rappresenta l'evento con il quale si indica la misurazione dello spessore del grasso dorsale. Lo spessore del grasso dorsale (SGD) è un parametro di registrazione comune nei suini ed il monitoraggio della sua evoluzione durante il ciclo produttivo viene interpretato come un indice di mobilizzazione e reintegrazione delle riserve corporee. 
+                             rdfs:comment """La classe rappresenta l'evento con il quale si indica la misurazione dello spessore del grasso dorsale. Lo spessore del grasso dorsale (SGD) è un parametro di registrazione comune nei suini ed il monitoraggio della sua evoluzione durante il ciclo produttivo viene interpretato come un indice di mobilizzazione e reintegrazione delle riserve corporee.
 Comunemente, lo SGD viene generalmente misurato almeno allo svezzamento, dopo la diagnosi di gravidanza e all'ingresso delle sale parto."""@it ,
-                                          """The class represents the event by which backfat thickness is measured. Back fat thickness (SGD) is a common recording parameter in pigs and monitoring its development during the production cycle is interpreted as an index of mobilisation and replenishment of body reserves. 
+                                          """The class represents the event by which backfat thickness is measured. Back fat thickness (SGD) is a common recording parameter in pigs and monitoring its development during the production cycle is interpreted as an index of mobilisation and replenishment of body reserves.
 Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at farrowing."""@en ;
                              rdfs:isDefinedBy <https://w3id.org/leo/onto/ale> ;
                              rdfs:label "Back Fat Thickness Measurement"@en ,
@@ -2264,8 +2261,8 @@ Age at weaning and feeding schedule influence performance during growth."""@en ;
                                                                   "This is the distribution in JSON-LD of Animal Life Events ontology"@en ;
                                                      rdfs:label "Distribuzione JSON-LD ontologia ALE"@it ,
                                                                 "JSON-LD distribution of ALE Ontology"@en ;
-                                                     <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/ale/latest> ;
-                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/ale/latest/ale.jsonld> .
+                                                     <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/ale/latest> ;
+                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/ale/latest/ale.jsonld> .
 
 
 ###  https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE
@@ -2281,8 +2278,8 @@ Age at weaning and feeding schedule influence performance during growth."""@en ;
                                                                      "This is the distribution in RDF/Turtle of Animal Life Events ontology"@en ;
                                                         rdfs:label "Distribuzione RDF/Turtle ontologia ALE"@it ,
                                                                    "RDF/Turtle distribution of ALE Ontology"@en ;
-                                                        <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/ale/latest> ;
-                                                        <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/ale/latest/ale.ttl> .
+                                                        <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/ale/latest> ;
+                                                        <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/ale/latest/ale.ttl> .
 
 
 ###  https://w3id.org/leo/data/distribution/ALE-RDF-XML
@@ -2298,8 +2295,8 @@ Age at weaning and feeding schedule influence performance during growth."""@en ;
                                                                   "This is the distribution in RDF/XML of Animal Life Events ontology"@en ;
                                                      rdfs:label "Distribuzione RDF/XML ontologia ALE"@it ,
                                                                 "RDF/XML distribution of ALE Ontology"@en ;
-                                                     <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/ale/latest> ;
-                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://www.leo-project.it/Ontologie/ale/latest/ale.rdf> .
+                                                     <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/ale/latest> ;
+                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/ale/latest/ale.rdf> .
 
 
 ###  https://w3id.org/leo/data/private-organization/00944701002
@@ -2325,9 +2322,9 @@ Age at weaning and feeding schedule influence performance during growth."""@en ;
                                                  <https://w3id.org/italia/onto/ADMS/Project> ;
                                         rdfs:comment "Il progetto LEO dove viene usata l'ontologia"@it ,
                                                      "LEO project where the ontology is used"@en ;
-                                        rdfs:label "LEO - Livestok Environment Open Data"@en ,
-                                                   "LEO - Livestok Environment Open Data"@it ;
-                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestok Environment Open Data"@it .
+                                        rdfs:label "LEO - Livestock Environment Open Data"@en ,
+                                                   "LEO - Livestock Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestock Environment Open Data"@it .
 
 
 ###  https://w3id.org/leo/onto/ale

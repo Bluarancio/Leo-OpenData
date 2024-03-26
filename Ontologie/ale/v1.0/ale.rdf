@@ -21,6 +21,7 @@
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/AleModule.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia degli eventi della vita degli animali di allevamento, L&apos;ontologia rappresenta pertanto momenti importanti della vita degli animali come per esempio il parto, la nascita, l&apos;aborto, la fecondazione, i vari spostamenti in entrata e uscita dalle aziende di allevamento, il macello, ecc. Per ogni evento, l&apos;ontologia rappresenta elementi principali che caratterizzano ciascun evento.</terms:description>
         <terms:description xml:lang="en">The ontology thus represents important moments in the life of animals, such as birth, abortion, fertilisation, the various movements on and off farms, slaughter, etc. For each event, the ontology represents the main elements that characterise it.</terms:description>
         <terms:identifier>onto-BA-3</terms:identifier>
@@ -28,7 +29,7 @@
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified>2023-06-20</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <terms:title xml:lang="en">Animal Life Event Ontology</terms:title>
@@ -47,9 +48,11 @@
         <dcat:keyword xml:lang="it">Eventi della vita</dcat:keyword>
         <dcat:keyword xml:lang="en">Farm Animal</dcat:keyword>
         <dcat:keyword xml:lang="en">Life events</dcat:keyword>
+        <dcat:keyword xml:lang="it">Asciutta</dcat:keyword>
+        <dcat:keyword xml:lang="it">Aborto</dcat:keyword>
+        <dcat:keyword xml:lang="it">Fecondazione</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <ADMS:acronym>ALE</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/ale/AnimalLifeEvent"/>
         <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
@@ -69,10 +72,10 @@
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -80,184 +83,177 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/name -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -265,7 +261,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/appliesToSpecies -->
@@ -290,7 +286,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/carriedOutBy -->
@@ -306,7 +302,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/carriedOutBySlaughterhouse -->
@@ -323,7 +319,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/happensIn -->
@@ -339,7 +335,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAbortionType -->
@@ -355,7 +351,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalBirthCompany -->
@@ -372,7 +368,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo>stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalBirthWeight -->
@@ -389,7 +385,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalDestinationCompany -->
@@ -406,7 +402,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalLifeEvent -->
@@ -423,7 +419,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalLiveWeight -->
@@ -440,7 +436,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalOwnerCompany -->
@@ -464,7 +460,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalProvenanceCompany -->
@@ -488,7 +484,7 @@
         <owl:versionInfo xml:lang="it">stabile  - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAnimalProvenanceCountry -->
@@ -504,7 +500,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasArtificialBreastFeedingDuration -->
@@ -521,7 +517,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasAvgMilkConductivity -->
@@ -537,7 +533,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasBackFatThicknessValue -->
@@ -546,7 +542,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/leo/onto/ale/BackFatThicknessMeasurement"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasBreastFeedingType -->
@@ -562,7 +558,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasBreastFeedingWithNurseDuration -->
@@ -579,7 +575,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasBreederBreed -->
@@ -602,7 +598,7 @@
         <owl:versionInfo xml:lang="it">stabile - cambiato nome nella versione 0.4 in ha razza riproduttore</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - changed the name in hasBreederBreed in version 0.4</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasCarcassCategory -->
@@ -618,7 +614,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable  - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasCarcassClassification -->
@@ -634,7 +630,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable  - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasCarcassWeight -->
@@ -651,7 +647,7 @@
         <owl:versionInfo xml:lang="it">stabile  - introdotta nella version 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasConstituent -->
@@ -674,7 +670,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasDisposalReason -->
@@ -691,7 +687,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasEaseOfParturition -->
@@ -708,7 +704,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasEntryInFarmReason -->
@@ -724,7 +720,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasExitFromFarmReason -->
@@ -740,7 +736,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasFertilizationType -->
@@ -757,7 +753,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasMilkYield -->
@@ -773,7 +769,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasPregnancyResult -->
@@ -789,7 +785,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/hasWeight -->
@@ -805,7 +801,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/involvesCompany -->
@@ -822,7 +818,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/involvesFarmAnimal -->
@@ -838,7 +834,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/isCarcassOf -->
@@ -854,7 +850,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/isInvolvedInEvent -->
@@ -870,7 +866,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/measuredForFarmAnimal -->
@@ -886,7 +882,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/producesCarcass -->
@@ -902,7 +898,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nelal versione 0.3 dell&apos;ontologia.</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/withinMilkingSession -->
@@ -919,28 +915,28 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasAnimalDestination -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasAnimalDestination"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasBreed -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasBreed"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasProductionTarget -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/animal/hasProductionTarget"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -948,13 +944,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/identifier -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/abortionDate -->
@@ -978,7 +974,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/animalArrivedDeadAtSlaughterhouse -->
@@ -995,7 +991,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/bftMeasurementDate -->
@@ -1019,7 +1015,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/breastFeedingTerminationDate -->
@@ -1043,7 +1039,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/deadReason -->
@@ -1059,7 +1055,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia. Da sostituire in caso di disponibilità di un vocabolario controllato</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology. To be replaced in case of the availability of a controlled vocabulary</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/destinationType -->
@@ -1075,7 +1071,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia. Da sostituire in caso di disponibilità di un vocabolario controllato</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology. To be replaced in case of the availability of a controlled vocabulary</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/detectionDate -->
@@ -1099,7 +1095,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/diagnosisDate -->
@@ -1123,7 +1119,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/disposalDate -->
@@ -1154,7 +1150,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/dryDate -->
@@ -1178,7 +1174,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/embryoResorptionDate -->
@@ -1202,7 +1198,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/entryInFarmDate -->
@@ -1226,7 +1222,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/exitFromFarmDate -->
@@ -1250,7 +1246,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/fertilizationDate -->
@@ -1274,7 +1270,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/identificationDate -->
@@ -1305,7 +1301,7 @@
         <owl:versionInfo xml:lang="it">stabile - revisionata nella versione 0.5 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - revised in version 0.5 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/implantationDate -->
@@ -1329,7 +1325,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/isCarcassForConsumption -->
@@ -1346,7 +1342,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/milkConductivityDetectionDate -->
@@ -1370,7 +1366,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/milkingSessionDate -->
@@ -1394,7 +1390,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/numberOfBorn -->
@@ -1410,7 +1406,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/numberOfBornAliveFemales -->
@@ -1426,7 +1422,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/numberOfBornAliveMales -->
@@ -1442,7 +1438,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/numberOfBornDeadFemales -->
@@ -1465,7 +1461,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/numberOfBornDeadMales -->
@@ -1488,7 +1484,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/numberOfTeats -->
@@ -1504,7 +1500,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/parturitionDate -->
@@ -1528,7 +1524,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/provenanceType -->
@@ -1544,7 +1540,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.4 dell&apos;ontologia. Da sostituire in caso di disponibilità di un vocabolario controllato</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology. To be replaced in case of the availability of a controlled vocabulary</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/slaughterDate -->
@@ -1568,7 +1564,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/weaningDate -->
@@ -1592,7 +1588,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/weighingDate -->
@@ -1616,16 +1612,16 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/uniqueAnimalNumber -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/animal/uniqueAnimalNumber"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1633,31 +1629,31 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Concept -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Object -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Object"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Topic -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Topic"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Abortion -->
@@ -1712,7 +1708,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/AbortionType -->
@@ -1735,7 +1731,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 0.3</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/AnimalLifeEvent -->
@@ -1782,7 +1778,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/BackFatThicknessMeasurement -->
@@ -1816,9 +1812,9 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/BackFatThicknessMeasurement.png"/>
-        <rdfs:comment xml:lang="it">La classe rappresenta l&apos;evento con il quale si indica la misurazione dello spessore del grasso dorsale. Lo spessore del grasso dorsale (SGD) è un parametro di registrazione comune nei suini ed il monitoraggio della sua evoluzione durante il ciclo produttivo viene interpretato come un indice di mobilizzazione e reintegrazione delle riserve corporee. 
+        <rdfs:comment xml:lang="it">La classe rappresenta l&apos;evento con il quale si indica la misurazione dello spessore del grasso dorsale. Lo spessore del grasso dorsale (SGD) è un parametro di registrazione comune nei suini ed il monitoraggio della sua evoluzione durante il ciclo produttivo viene interpretato come un indice di mobilizzazione e reintegrazione delle riserve corporee.
 Comunemente, lo SGD viene generalmente misurato almeno allo svezzamento, dopo la diagnosi di gravidanza e all&apos;ingresso delle sale parto.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The class represents the event by which backfat thickness is measured. Back fat thickness (SGD) is a common recording parameter in pigs and monitoring its development during the production cycle is interpreted as an index of mobilisation and replenishment of body reserves. 
+        <rdfs:comment xml:lang="en">The class represents the event by which backfat thickness is measured. Back fat thickness (SGD) is a common recording parameter in pigs and monitoring its development during the production cycle is interpreted as an index of mobilisation and replenishment of body reserves.
 Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at farrowing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/leo/onto/ale"/>
         <rdfs:label xml:lang="en">Back Fat Thickness Measurement</rdfs:label>
@@ -1826,7 +1822,7 @@ Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at 
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Birth -->
@@ -1870,7 +1866,7 @@ Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at 
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/BreastFeedingTermination -->
@@ -1900,7 +1896,7 @@ Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at 
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/BreastFeedingType -->
@@ -1915,7 +1911,7 @@ Commonly, SGD is measured at least at weaning, after pregnancy diagnosis and at 
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/CarcassCategory -->
@@ -1935,7 +1931,7 @@ The categories into which carcasses are divided are defined in a controlled voca
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/CarcassClassification -->
@@ -1961,7 +1957,7 @@ Le classi per la classificazione delle carcasse sono definite in un apposito voc
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/CarcassConformation -->
@@ -1981,7 +1977,7 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Diagnosis -->
@@ -2011,7 +2007,7 @@ Le classi di conformazione per le carcasse sono definite in un apposito vocabola
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Disposal -->
@@ -2052,7 +2048,7 @@ Possibili Applicazioni: Manageriale. Calcolo della lunghezza della carriera prod
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/DisposalReason -->
@@ -2081,7 +2077,7 @@ Possibili Applicazioni: Manageriale. Calcolo della lunghezza della carriera prod
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Dry -->
@@ -2115,7 +2111,7 @@ Possible applications: Reproduction. Calculation of the animal&apos;s reproducti
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/EaseOfParturition -->
@@ -2141,7 +2137,7 @@ Possible applications: Reproduction. Calculation of the animal&apos;s reproducti
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/EmbryoResorption -->
@@ -2175,7 +2171,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/EntryInFarmReason -->
@@ -2191,7 +2187,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="en">stable - introduced in versione 0.4 of the ontology</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/ExitFromFarmReason -->
@@ -2207,7 +2203,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.4 of the ontology</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/FarmAnimalCarcass -->
@@ -2222,7 +2218,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile - introdotta della versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/FatCover -->
@@ -2242,7 +2238,7 @@ Le classi di stato di ingrassamento per le carcasse sono definite in un apposito
         <owl:versionInfo xml:lang="en">stable - introduced in the version 0.3 of the ontology</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Fertilization -->
@@ -2292,7 +2288,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/FertilizationType -->
@@ -2316,7 +2312,7 @@ Possible applications: Reproduction and Welfare. Calculation of the reproductive
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Identification -->
@@ -2356,7 +2352,7 @@ Possible applications: Identification. Unique identification of the subject, key
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Implantation -->
@@ -2393,7 +2389,7 @@ Possible applications: Identification. Unique identification of the subject, key
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/InboundMovement -->
@@ -2453,7 +2449,7 @@ Possible applications: Managerial. Correct identification of movements (sale/pur
         <owl:versionInfo xml:lang="it">stabile -cambiato URI nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - renamed the URI with InboundMovement in version 0.4 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/MilkConductivityMeasurement -->
@@ -2495,7 +2491,7 @@ Possible applications: Managerial. Correct identification of movements (sale/pur
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/MilkingSession -->
@@ -2539,7 +2535,7 @@ Possible applications: Managerial. Correct identification of movements (sale/pur
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/OutboundMovement -->
@@ -2585,7 +2581,7 @@ Possible Applications: Managerial. Correct identification of movements (sale/pur
         <owl:versionInfo xml:lang="it">stabile - cambiato l&apos;URI nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - renamed the URI with &apos;OutboundMovement&apos; in version 0.4 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Parturition -->
@@ -2661,7 +2657,7 @@ Possibili Applicazioni: Riproduzione. calcolo dello stato riproduttivo dell&apos
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/PregnancyDiagnosis -->
@@ -2687,7 +2683,7 @@ Possibili applicazioni: Riproduzione e Benessere. Calcolo dello stato riprodutti
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/PregnancyResult -->
@@ -2711,7 +2707,7 @@ Possibili applicazioni: Riproduzione e Benessere. Calcolo dello stato riprodutti
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Slaughter -->
@@ -2807,7 +2803,7 @@ Possibili Applicazioni: Manageriale. Informazioni registrate in macellazione (es
         <owl:versionInfo xml:lang="it">stabile - Introdotto nella versione 0.3 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.3 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Weaning -->
@@ -2866,7 +2862,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Weighing -->
@@ -2908,64 +2904,64 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Breed -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Breed"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimalDestination -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimalDestination"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/LivestockSpecies -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/ProductionType -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/ProductionType"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/LivestockCompany -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockCompany"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/LivestockFarm -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarm"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/Site -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/Site"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/Slaughterhouse -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/Slaughterhouse"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -2973,7 +2969,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
@@ -2987,7 +2983,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <ns:fn>Sistemi informativi</ns:fn>
         <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/ALE-JSON-LD -->
@@ -3004,10 +3000,10 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Animal Life Events ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia ALE</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of ALE Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest/ale.jsonld"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/ale/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/ale/latest/ale.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/ALE-RDF-TURTLE -->
@@ -3024,10 +3020,10 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Animal Life Events ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia ALE</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of ALE Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest/ale.ttl"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/ale/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/ale/latest/ale.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/ALE-RDF-XML -->
@@ -3044,10 +3040,10 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Animal Life Events ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia ALE</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of ALE Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/ale/latest/ale.rdf"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/ale/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/ale/latest/ale.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
@@ -3059,7 +3055,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
         <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
@@ -3071,7 +3067,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <foaf:name xml:lang="en">Bluarancio</foaf:name>
         <foaf:name xml:lang="it">Bluarancio</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/project/LEO -->
@@ -3080,11 +3076,11 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
         <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
         <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
-        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:label xml:lang="en">LEO - Livestock Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale -->
@@ -3092,7 +3088,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Artificial -->
@@ -3100,7 +3096,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Artificial">
         <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Assistant -->
@@ -3113,7 +3109,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/CaesareanSection -->
@@ -3126,7 +3122,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/DeathPasture -->
@@ -3139,7 +3135,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/DeathStable -->
@@ -3152,7 +3148,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Difficult -->
@@ -3165,7 +3161,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Easy -->
@@ -3178,7 +3174,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Embryotomy -->
@@ -3191,7 +3187,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nelal seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/FEA -->
@@ -3204,7 +3200,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile - cambiato codice nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - changed the code in the version 0.4 of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/FEG -->
@@ -3217,7 +3213,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile - cambiato codice nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - chenaged the code in version 0.4 of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/FEN -->
@@ -3230,7 +3226,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile - cambiato codice nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - changed code in version 0.4 of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Lost -->
@@ -3243,7 +3239,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">Inserito nella versione 0.4 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">Introduced in version 0.4 of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Mixed -->
@@ -3251,7 +3247,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Mixed">
         <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Natural -->
@@ -3259,7 +3255,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/ale/Natural">
         <rdf:type rdf:resource="https://w3id.org/leo/onto/ale/BreastFeedingType"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Negative -->
@@ -3272,7 +3268,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/P -->
@@ -3285,7 +3281,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Positive -->
@@ -3298,7 +3294,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Revisable -->
@@ -3311,7 +3307,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/SelfConsumptionSlaughtering -->
@@ -3324,7 +3320,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/SlaughterHealth -->
@@ -3337,7 +3333,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/SlaughterWellness -->
@@ -3350,7 +3346,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Slaughterhouse -->
@@ -3363,7 +3359,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">provvisorio - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable - added in the second version of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/T -->
@@ -3376,7 +3372,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Theft -->
@@ -3389,7 +3385,7 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
         <owl:versionInfo xml:lang="en">stabile - introdotto nella versione 0.5 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 0.5 of the ontology</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/UrgentSlaughterStable -->
@@ -3407,4 +3403,3 @@ Age at weaning and feeding schedule influence performance during growth.</rdfs:c
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
