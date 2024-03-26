@@ -31,7 +31,7 @@
         <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
-        <terms:title xml:lang="en">Livestock Farm Description Ontologia</terms:title>
+        <terms:title xml:lang="en">Livestock Farm Description Ontology</terms:title>
         <terms:title xml:lang="it">Ontologia sulla Descrizione dell&apos;Azienda d&apos;Allevamento</terms:title>
         <rdfs:comment xml:lang="it">Questa è l&apos;ontologia che consente di descrivere un&apos;azienda d&apos;allevamento sotto diverse dimensioni: management, sanità, nutrizione, ambiente. In particolare, l&apos;ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente al loro allevamento. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto &apos;Configuratore allevamento&apos;</rdfs:comment>
         <rdfs:comment xml:lang="en">This is the ontology that allows one to describe an Italian livestock farm under different perspectives: management, nutrition, health, environment. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the farm. In the context of the livestock domain, these data is referred to as the so-called &apos;livestock farm site configurator&apos;.</rdfs:comment>
