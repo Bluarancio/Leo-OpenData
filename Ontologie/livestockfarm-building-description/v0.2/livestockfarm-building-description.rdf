@@ -20,12 +20,13 @@
         <dc:description rdf:resource="https://www.dropbox.com/s/g2vlla0g3n65m2k/LivestockFarmBuildingDescription.png?raw=1"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia che consente di descrivere una serie di caratteristiche degli edifici (o insediamenti) delle aziende di allevamento italiane. In particolare, l&apos;ontologia consente di modellare tutti i dati relativi a un questionario che le aziende compilano nel sistema si@llEvA relativamente alle caratteristiche fisiche degli insediamenti. Nel contesto del dominio zootecnico questi dati si riferiscono al cosiddetto &apos;Configuratore insediamento&apos;</terms:description>
         <terms:description xml:lang="en">This is the ontology that allows one to describe a series of characteristics of the buildings of Italian livestock farms. In particular, the ontology allows one to model all the data related to a questionnaire that the farms fill in in the Si@llEvA system concerning the physical characteristics of the buildings. In the context of the livestock domain, these data is referred to as the so-called &apos;building configurator&apos;.</terms:description>
         <terms:identifier>onto-BA-8</terms:identifier>
         <terms:issued xml:lang="en">2022-04-15</terms:issued>
         <terms:modified xml:lang="en">2022-04-22</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <terms:title xml:lang="en">Livestock Farm Building Description Ontology</terms:title>
@@ -43,7 +44,6 @@
         <dcat:keyword xml:lang="it">Ricovero Animali</dcat:keyword>
         <dcat:keyword xml:lang="it">Tipologia Edificio</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
@@ -61,10 +61,10 @@
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -72,28 +72,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -101,16 +101,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#gYear -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -118,19 +118,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/MU/hasValue -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/MU/hasValue"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/atTime -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/hasAnimalHousingCharacteristic -->
@@ -146,7 +146,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/hasBuildingConfiguration -->
@@ -163,7 +163,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesAnimalHousingDescription -->
@@ -179,7 +179,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingStructure -->
@@ -195,7 +195,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesBuildingTypology -->
@@ -211,7 +211,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/includesWaterProvenance -->
@@ -227,10 +227,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -238,7 +238,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/animalHousingBuildingYear -->
@@ -255,14 +255,14 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/livestockfarm-building-description/buildingCode">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">Il codice associato a ciascun edificio (insediamento) di un&apos;azienda d&apos;allevamento. Ad esempio se ci sono 2 edifici, questo codice può assumere i valori 1 e 2 per ciascun di essi.</rdfs:comment>
         <rdfs:comment xml:lang="en">The code associated with each building of a livestock farm site. For example if there are 2 buildings, this code can take the values 1 and 2 for each of them.</rdfs:comment>
@@ -272,10 +272,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -283,25 +283,25 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/MU/Value -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/MU/Value"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/LivestockFarmSite -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarmSite"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingCharacteristic -->
@@ -322,7 +322,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/AnimalHousingDescription -->
@@ -357,7 +357,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/BuildingConfiguration -->
@@ -409,7 +409,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/BuildingStructure -->
@@ -431,7 +431,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/BuildingTypology -->
@@ -452,7 +452,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description/WaterProvenanceStructure -->
@@ -473,10 +473,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -484,7 +484,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
@@ -498,7 +498,7 @@
         <ns:fn>Sistemi informativi</ns:fn>
         <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LFBD-JSON-LD -->
@@ -515,10 +515,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Livestock Farm Building Description ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Descrizione Edifici Aziende d&apos;Allevamento</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of Livestock Farm Building Description Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.jsonld"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestockfarm-building-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LFBD-RDF-TURTLE -->
@@ -535,10 +535,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Livestock Farm Building Description ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Descrizione Edifici Aziende d&apos;Allevamento</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of Livestock Farm Building Description Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.ttl"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestockfarm-building-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LFBD-RDF-XML -->
@@ -555,10 +555,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Livestock Farm Building Description ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Descrizione Edifici Aziende d&apos;Allevamento</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of Livestock Farm Building Description Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.rdf"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestockfarm-building-description/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestockfarm-building-description/latest/livestockfarm-building-description.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
@@ -570,7 +570,7 @@
         <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
         <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
@@ -582,20 +582,20 @@
         <foaf:name xml:lang="en">Bluarancio</foaf:name>
         <foaf:name xml:lang="it">Bluarancio</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/project/LEO -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
         <rdfs:comment xml:lang="it">Il progetto LEO dove viene usata l&apos;ontologia</rdfs:comment>
         <rdfs:comment xml:lang="en">LEO project where the ontology is used</rdfs:comment>
-        <rdfs:label xml:lang="en">LEO - Livestok Environment Open Data</rdfs:label>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="en">LEO - Livestock Environment Open Data</rdfs:label>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestockfarm-building-description -->
@@ -608,4 +608,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

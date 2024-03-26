@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/leo/onto/livestock-assessment#"
-     xml:base="https://w3id.org/leo/onto/livestock-assessment"
+<rdf:RDF xmlns="https://w3id.org/leo/onto/livestock-assessment/"
+     xml:base="https://w3id.org/leo/onto/livestock-assessment/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -21,6 +21,7 @@
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/livestock-assessment.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa ontologia implementa un pattern generale per modellare controlli in ambito zootecnico. Questa sarà specializzata in diversi tipi di controlli: gli accertamenti zootecnici, i controlli funzionali sul latte, i controlli sull&apos;efficienza della mungitura.</terms:description>
         <terms:description xml:lang="en">This ontology implements a general pattern for modelling zootechnical controls. It will specialise in different types of controls: livestock checks, functional milk controls, milking efficiency controls.</terms:description>
         <terms:identifier xml:lang="it">onto-BA-11</terms:identifier>
@@ -28,7 +29,7 @@
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-10</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6271"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/6272"/>
@@ -47,7 +48,6 @@
         <dcat:keyword xml:lang="it">Controlli zootecnici</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <ADMS:acronym>LA</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestock-assessment/AssessmentResult"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment"/>
@@ -68,10 +68,10 @@
         <ADMS:target xml:lang="it">Specialisti del settore zootecnico</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -79,202 +79,195 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#contactPoint -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -282,16 +275,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -299,13 +292,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/hasUnitOfMeasure -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/leo/onto/analysis/hasUnitOfMeasure"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/applies -->
@@ -321,7 +314,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/hasAssessedSinglePropertyValue -->
@@ -337,7 +330,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/hasAssessmentResult -->
@@ -353,7 +346,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/hasMeasureProperty -->
@@ -369,7 +362,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/hasPerformer -->
@@ -385,7 +378,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/hasSubject -->
@@ -401,7 +394,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/isAssessmentOf -->
@@ -417,7 +410,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/uses -->
@@ -433,10 +426,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -444,19 +437,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/MU/value -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/MU/value"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/date -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/date"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/assessmentId -->
@@ -473,10 +466,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -484,49 +477,49 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Agent -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Agent"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Characteristic -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Characteristic"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Entity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Entity"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/EventOrSituation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/EventOrSituation"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/analysis/UnitOfMeasure -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/analysis/UnitOfMeasure"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/AssessedSinglePropertyValue -->
@@ -560,7 +553,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/AssessmentResult -->
@@ -575,7 +568,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/Device -->
@@ -590,7 +583,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment -->
@@ -676,7 +669,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/MeasureProperty -->
@@ -709,7 +702,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment/Method -->
@@ -724,10 +717,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -735,7 +728,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LA-JSON-LD -->
@@ -752,10 +745,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of livestock assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Accertamenti Zootecnici</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of Livestock Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestock-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-assessment/latest/livestock-assessment.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LA-RDF-TURTLE -->
@@ -772,10 +765,10 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of livestock assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Accertamenti Zootecnici</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of Livestock Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestock-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-assessment/latest/livestock-assessment.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LA-RDF-XML -->
@@ -792,10 +785,44 @@
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of livestock assessments ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Accertamenti Zootecnici</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of Livestock Assessment Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/livestock-assessment/latest"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-assessment/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-assessment/latest/livestock-assessment.rdf"/>
     </owl:NamedIndividual>
-    
+
+
+
+  <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+  <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+      <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      <dct:identifier>00944701002</dct:identifier>
+      <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+      <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+  </owl:NamedIndividual>
+
+
+
+  <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+  <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+      <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      <dct:identifier>06695411006</dct:identifier>
+      <foaf:name xml:lang="en">Bluarancio</foaf:name>
+      <foaf:name xml:lang="it">Bluarancio</foaf:name>
+  </owl:NamedIndividual>
+
+
+
+  <!-- https://w3id.org/leo/data/project/LEO -->
+
+  <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
+      <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
+      <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+      <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
+  </owl:NamedIndividual>
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-assessment -->
@@ -808,4 +835,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

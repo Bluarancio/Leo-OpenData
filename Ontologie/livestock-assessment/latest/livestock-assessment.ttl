@@ -1,9 +1,13 @@
-@prefix : <https://w3id.org/leo/onto/livestock-assessment#> .
+@prefix : <https://w3id.org/leo/onto/livestock-assessment/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
 @base <https://w3id.org/leo/onto/livestock-assessment> .
 
 <https://w3id.org/leo/onto/livestock-assessment> rdf:type owl:Ontology ;
@@ -13,7 +17,7 @@
                                                               <https://w3id.org/italia/onto/l0> ;
                                                   <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/livestock-assessment.png> ;
                                                   <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                                  <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                  <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                   <http://purl.org/dc/terms/description> "Questa ontologia implementa un pattern generale per modellare controlli in ambito zootecnico. Questa sarà specializzata in diversi tipi di controlli: gli accertamenti zootecnici, i controlli funzionali sul latte, i controlli sull'efficienza della mungitura."@it ,
                                                                                          "This ontology implements a general pattern for modelling zootechnical controls. It will specialise in different types of controls: livestock checks, functional milk controls, milking efficiency controls."@en ;
                                                   <http://purl.org/dc/terms/identifier> "onto-BA-11"@it ;
@@ -21,7 +25,7 @@
                                                   <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                                       <http://publications.europa.eu/resource/authority/language/ITA> ;
                                                   <http://purl.org/dc/terms/modified> "2023-03-10"^^xsd:date ;
-                                                  <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                  <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                   <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                   <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/6271> ,
                                                                                      <http://eurovoc.europa.eu/6272> ;
@@ -40,7 +44,6 @@
                                                                                       "Controlli zootecnici"@it ;
                                                   <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
                                                   <https://w3id.org/italia/onto/ADMS/acronym> "LA" ;
-                                                  <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                   <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                                   <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/leo/onto/livestock-assessment/AssessmentResult> ,
                                                                                                   <https://w3id.org/leo/onto/livestock-assessment/LivestockAssessment> ;
@@ -143,10 +146,6 @@
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 <https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
@@ -533,7 +532,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  "This is the distribution in JSON-LD of livestock assessments ontology"@en ;
                                                     rdfs:label "Distribuzione JSON-LD ontologia Accertamenti Zootecnici"@it ,
                                                                "JSON-LD distribution of Livestock Assessment Ontology"@en ;
-                                                    <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/livestock-assessment/latest> ;
+                                                    <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-assessment/latest> ;
                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-assessment/latest/livestock-assessment.jsonld> .
 
 
@@ -550,7 +549,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                                     "This is the distribution in RDF/Turtle of livestock assessments ontology"@en ;
                                                        rdfs:label "Distribuzione RDF/Turtle ontologia Accertamenti Zootecnici"@it ,
                                                                   "RDF/Turtle distribution of Livestock Assessment Ontology"@en ;
-                                                       <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/livestock-assessment/latest> ;
+                                                       <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-assessment/latest> ;
                                                        <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-assessment/latest/livestock-assessment.ttl> .
 
 
@@ -567,8 +566,36 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  "This is the distribution in RDF/XML of livestock assessments ontology"@en ;
                                                     rdfs:label "Distribuzione RDF/XML ontologia Accertamenti Zootecnici"@it ,
                                                                "RDF/XML distribution of Livestock Assessment Ontology"@en ;
-                                                    <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/livestock-assessment/latest> ;
+                                                    <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-assessment/latest> ;
                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-assessment/latest/livestock-assessment.rdf> .
+
+
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "00944701002" ;
+                                                             foaf:name "Associazione Italiana Allevatori"@it ,
+                                                                       "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      foaf:Agent ;
+                                                             dct:identifier "06695411006" ;
+                                                             foaf:name "Bluarancio"@en ,
+                                                                       "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 admsapit:Project ;
+                                        rdfs:label "LEO - Livestock Environment Open Data"@it ;
+                                        l0:name "LEO - Livestock Environment Open Data"@it .
+
 
 
 ###  https://w3id.org/leo/onto/livestock-assessment

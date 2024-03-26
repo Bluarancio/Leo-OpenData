@@ -22,13 +22,14 @@
         <dc:description rdf:resource="https://www.dropbox.com/s/kb61f2wcx7sqz0q/livestock-indicator.png?raw=1"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia degli indicatori usati nel dominio zootecnico.</terms:description>
         <terms:description xml:lang="en">This is the ontology of indicators used in the livestock environment</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-18</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11-16</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <terms:title xml:lang="en">Livestock Indicator Ontology</terms:title>
@@ -39,14 +40,13 @@
         <rdfs:label xml:lang="en">Livestock Indicator Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia degli Indicatori del dominio Zootecnico</rdfs:label>
         <owl:versionInfo xml:lang="en">Version 0.4 - 2022 - Introduction of the concept of collection of livestock indicator collection, with related properties. Renamed some properties.</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 0.2 - 2022 - Introdotto il concetto di collezione di calcoli di indicatori zootecnici con relative proprietà. Rivisti i nomi di alcune proprietà.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.4 - 2022 - Introdotto il concetto di collezione di calcoli di indicatori zootecnici con relative proprietà. Rivisti i nomi di alcune proprietà.</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/leo/data/contact-point/onto-aia"/>
         <dcat:keyword xml:lang="it">Indicatore Genetico</dcat:keyword>
         <dcat:keyword xml:lang="it">Indicatore Zootecnico</dcat:keyword>
         <dcat:keyword xml:lang="it">Indicatore di Benessere</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
-        <ADMS:acronym>LEO</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+        <ADMS:acronym>LI</ADMS:acronym>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestock-indicator/AnimalBasedIndicatorCalculation"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/livestock-indicator/CompanyBasedIndicatorCalculation"/>
@@ -69,10 +69,10 @@
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -80,226 +80,220 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#contactPoint -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
 
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/name -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -307,7 +301,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/doneForIndicatorType -->
@@ -323,7 +317,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/associatedWithBreed -->
@@ -339,7 +333,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/associatedWithCompany -->
@@ -362,7 +356,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/associatedWithIndicator -->
@@ -378,7 +372,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/associatedWithProductionTarget -->
@@ -401,7 +395,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/associatedWithSpecies -->
@@ -424,7 +418,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/basedOnCalculation -->
@@ -440,7 +434,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/computedForFarmAnimal -->
@@ -457,7 +451,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/forLivestockIndicator -->
@@ -474,7 +468,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/hasCalculationAccuracy -->
@@ -490,7 +484,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/hasComplementaryInfo -->
@@ -513,7 +507,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/hasComplementaryInformationDesc -->
@@ -564,7 +558,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/hasCountryOfInfluence -->
@@ -580,7 +574,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/hasOriginType -->
@@ -596,7 +590,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/hasYearOfReference -->
@@ -620,10 +614,10 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -631,7 +625,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/computationDate -->
@@ -655,10 +649,10 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -666,43 +660,43 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Breed -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/Breed"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/FarmAnimal"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/LivestockSpecies -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/LivestockSpecies"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/ProductionType -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/animal/ProductionType"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/co/LivestockFarm -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/co/LivestockFarm"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/AnimalBasedIndicatorCalculation -->
@@ -729,7 +723,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/CompanyBasedIndicatorCalculation -->
@@ -769,7 +763,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/ComplementaryInfo -->
@@ -796,7 +790,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/ComplementaryInfoDescription -->
@@ -824,7 +818,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/LivestockIndicator -->
@@ -839,7 +833,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/LivestockIndicatorCalcCollection -->
@@ -893,7 +887,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/LivestockIndicatorCalculation -->
@@ -957,7 +951,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/livestock-indicator/LivestockIndicatorOriginType -->
@@ -984,10 +978,10 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -995,7 +989,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
@@ -1008,7 +1002,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <ns:fn xml:lang="it">Sistemi informativi</ns:fn>
         <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/IND-JSON-LD -->
@@ -1025,10 +1019,10 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <rdfs:comment xml:lang="en">This is the distribution in JSON-LD of Livestock Indicator ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione JSON-LD ontologia Indicatori</rdfs:label>
         <rdfs:label xml:lang="en">JSON-LD distribution of Indicator Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/indicator/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/indicator/latest/indicator.jsonld"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-indicator/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-indicator/latest/livestock-indicator.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/IND-RDF-TURTLE -->
@@ -1045,10 +1039,10 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <rdfs:comment xml:lang="en">This is the distribution in RDF/Turtle of Livestock Indicator ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/Turtle ontologia Indicatori</rdfs:label>
         <rdfs:label xml:lang="en">RDF/Turtle distribution of Indicator Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/indicator/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/indicator/latest/indicator.ttl"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-indicator/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-indicator/latest/livestock-indicator.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/IND-RDF-XML -->
@@ -1065,10 +1059,10 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <rdfs:comment xml:lang="en">This is the distribution in RDF/XML of Livestock Indicator ontology</rdfs:comment>
         <rdfs:label xml:lang="it">Distribuzione RDF/XML ontologia Indicatori</rdfs:label>
         <rdfs:label xml:lang="en">RDF/XML distribution of Indicator Ontology</rdfs:label>
-        <dcat:accessURL rdf:resource="https://www.leo-project.it/Ontologie/indicator/latest"/>
-        <dcat:downloadURL rdf:resource="https://www.leo-project.it/Ontologie/indicator/latest/indicator.rdf"/>
+        <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/livestock-indicator/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/livestock-indicator/latest/livestock-indicator.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
@@ -1080,7 +1074,7 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
         <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
@@ -1092,17 +1086,17 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
         <foaf:name xml:lang="en">Bluarancio</foaf:name>
         <foaf:name xml:lang="it">Bluarancio</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/project/LEO -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/indicator -->
@@ -1115,4 +1109,3 @@ l0:name &quot;Number of daughters&quot;@en , &quot;Numero figlie&quot;@it.</rdfs
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
