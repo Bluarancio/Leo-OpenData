@@ -27,7 +27,7 @@
 <https://w3id.org/leo/controlled-vocabulary/measurement-unit> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:description "Questo è il vocabolario controllato delle unità di misura utilizzate nel contesto del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the measurement units used in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/measurement-unit";
@@ -35,7 +35,7 @@
   ndc:keyConcept "measurement-unit" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-09-15"^^xsd:date;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006> ;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the measurement unit of LEO project"@en, "Vocabolario controllato delle unità di misura del progetto LEO"@it;
   dct:type <http://purl.org/adms/assettype/CodeList>;
@@ -552,3 +552,15 @@
     "This is the RDF XML distribution of the controlled vocabulary on the measurement units"@en;
   dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/measurement-unit>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/measurement-unit/measurement-unit.rdf> .
+
+
+<https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+dct:identifier "00944701002" ;
+foaf:name "Associazione Italiana Allevatori"@it ,
+           "Italian Breeders' Association"@en .
+
+
+<https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+dct:identifier "06695411006" ;
+foaf:name "Bluarancio"@en ,
+          "Bluarancio"@it .
