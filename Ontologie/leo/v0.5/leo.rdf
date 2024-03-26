@@ -35,6 +35,7 @@
         <owl:imports rdf:resource="https://w3id.org/leo/onto/weather"/>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <dct:description xml:lang="it">Questa è l&apos;ontologia principale, punto di accesso alla rete di ontologie dell&apos;ambiente zootecnico italiano sviluppata nel contesto del progetto LEO.</dct:description>
         <dct:description xml:lang="en">This is the main ontology, the unique acess point to all the network of ontologies developed in the context of LEO project.</dct:description>
         <dct:identifier>onto-BA-7</dct:identifier>
@@ -42,7 +43,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-31</dct:modified>
-        <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <dct:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <dct:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <dct:title xml:lang="en">Access point Ontology to all the network of Ontologies for LEO project</dct:title>
@@ -62,9 +63,10 @@
         <dcat:keyword xml:lang="it">Eventi della vita degli animali</dcat:keyword>
         <dcat:keyword xml:lang="en">Farm Animal</dcat:keyword>
         <dcat:keyword xml:lang="it">Indicatori</dcat:keyword>
+        <dcat:keyword xml:lang="it">Accertamenti sanitari</dcat:keyword>
+        <dcat:keyword xml:lang="it">Lattazione</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <admsapit:acronym>LEO</admsapit:acronym>
-        <admsapit:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
         <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/leo/data/distribution/LEO-JSON-LD"/>
@@ -81,10 +83,10 @@
         <admsapit:target>Pubbliche Amministrazioni</admsapit:target>
         <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -92,226 +94,220 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#contactPoint -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
 
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/name -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -319,64 +315,64 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://dati.gov.it/onto/dcatapit#Agent -->
 
     <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
-    
+
 
 
     <!-- http://dati.gov.it/onto/dcatapit#Organization -->
 
     <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Kind -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Organization -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/Project -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Concept -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -384,7 +380,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
@@ -397,7 +393,7 @@
         <vcard:fn xml:lang="it">Sistemi informativi</vcard:fn>
         <vcard:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LEO-JSON-LD -->
@@ -417,7 +413,7 @@
         <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/leo/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/leo/latest/leo.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LEO-RDF-TURTLE -->
@@ -437,7 +433,7 @@
         <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/leo/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/leo/latest/leo.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/LEO-RDF-XML -->
@@ -457,7 +453,7 @@
         <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/leo/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/leo/latest/leo.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
@@ -469,7 +465,7 @@
         <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
         <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
@@ -481,17 +477,17 @@
         <foaf:name xml:lang="en">Bluarancio</foaf:name>
         <foaf:name xml:lang="it">Bluarancio</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/project/LEO -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/leo -->
@@ -504,4 +500,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
-

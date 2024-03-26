@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/leo/onto/lactation-assessment#> .
+@prefix : <https://w3id.org/leo/onto/lactation-assessment/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,7 +11,7 @@
                                                   owl:imports <https://w3id.org/leo/onto/livestock-assessment> ;
                                                   <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/lactation-assessment.png> ;
                                                   <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                                  <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                  <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                   <http://purl.org/dc/terms/description> "Questa è l'ontologia usata per modellare i dati relativi ai controlli sulla lattazione svolti nell'ambito zootecnico. I dati sono raccolti nel contesto del progetto LEO - Livestock Environment Open Data. In particolare, il sistema SIALL a fronte dell’acquisizione di dati di Controllo funzionale, nel momento in cui vengono rilevati gli eventi parto e aborto tardivo, raccoglie informazioni sulla lattazione sia per i soggetti da latte che per i soggetti da carne. Tra queste informazioni vi è anche l'ordine di parto attraverso cui sono categorizzati a livello zootecnico le primipare e le pluripare.  Per i soggetti allevati da latte si tracciano informazioni inerenti alla stima della produzione effettiva (latte, grasso e proteine) e la stima del latte convenzionale cioè il latte prodotto ad una lunghezza standard di lattazione; se il calcolo della produzione effettiva e della convenzionale è anomalo rispetto allo standard AIA la lattazione presenta delle note"@it ,
                                                                                          "This is the ontology used to model data on lactation controls carried out in the livestock environment. The data is collected in the context of the LEO project - Livestock Environment Open Data. In particular, the SIALL system, when acquiring Functional Testing data, at the time when parturition and late abortion events are detected, collects information on lactation for both dairy and beef animals. Among this information is also the parturition order through which primiparae and pluriparae are categorised on a zootechnical level.  For dairy animals, information on estimated actual production (milk, fat and protein) and estimated conventional milk, i.e. the milk produced at a standard lactation length, is tracked; if the calculation of actual and conventional production is abnormal compared to the AIA standard, the lactation has some note."@en ;
                                                   <http://purl.org/dc/terms/identifier> "onto-BA-13"@it ;
@@ -19,7 +19,7 @@
                                                   <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                                       <http://publications.europa.eu/resource/authority/language/ITA> ;
                                                   <http://purl.org/dc/terms/modified> "2023-03-17"^^xsd:date ;
-                                                  <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                                  <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                   <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                                   <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/6271> ,
                                                                                      <http://eurovoc.europa.eu/6272> ;
@@ -33,13 +33,12 @@
                                                   owl:versionInfo "Version 0.1 - 2023 - Creation of the ontology"@en ,
                                                                   "Versione 0.1 - 2023 - Creazione dell'ontologia"@it ;
                                                   <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/leo/data/contact-point/onto-aia> ;
-                                                  <http://www.w3.org/ns/dcat#keyword> "controllo"@it ,
-                                                                                      "lattazione"@it ,
-                                                                                      "latte"@it ,
-                                                                                      "ordine di parto"@it ;
+                                                  <http://www.w3.org/ns/dcat#keyword> "Controllo"@it ,
+                                                                                      "Lattazione"@it ,
+                                                                                      "Latte"@it ,
+                                                                                      "Ordine di parto"@it ;
                                                   <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
                                                   <https://w3id.org/italia/onto/ADMS/acronym> "LACT" ;
-                                                  <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                                   <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                                   <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/leo/onto/lactation-assessment/LactationAssessment> ,
                                                                                                   <https://w3id.org/leo/onto/lactation-assessment/LactationStatus> ,
@@ -54,7 +53,7 @@
                                                   <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/leo/onto/lactation-assessment"^^xsd:anyURI ;
                                                   <https://w3id.org/italia/onto/ADMS/prefix> "lact" ;
                                                   <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/leo/data/project/LEO> ;
-                                                  <https://w3id.org/italia/onto/ADMS/status> "initial draft" ;
+                                                  <https://w3id.org/italia/onto/ADMS/status> "draft" ;
                                                   <https://w3id.org/italia/onto/ADMS/target> "Comunità Open Data"@it ,
                                                                                              "Imprese" ,
                                                                                              "Pubbliche Amministrazioni" ,
@@ -139,11 +138,6 @@
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 <https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
-
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
 <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> rdf:type owl:AnnotationProperty .
@@ -476,7 +470,7 @@
                                                                    "This is the distribution in JSON-LD of lactation assessment ontology"@en ;
                                                       rdfs:label "Distribuzione JSON-LD ontologia Lattazione"@it ,
                                                                  "JSON-LD distribution of Lactation Assessment Ontology"@en ;
-                                                      <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/lactation-assessment/latest> ;
+                                                      <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/lactation-assessment/latest> ;
                                                       <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.jsonld> .
 
 
@@ -493,7 +487,7 @@
                                                                       "This is the distribution in RDF/Turtle of lactation assessment ontology"@en ;
                                                          rdfs:label "Distribuzione RDF/Turtle ontologia Lattazione"@it ,
                                                                     "RDF/Turtle distribution of Lactation Assessment Ontology"@en ;
-                                                         <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/lactation-assessment/latest> ;
+                                                         <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/lactation-assessment/latest> ;
                                                          <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.ttl> .
 
 
@@ -510,8 +504,35 @@
                                                                    "This is the distribution in RDF/XML of lactation assessment ontology"@en ;
                                                       rdfs:label "Distribuzione RDF/XML ontologia Lattazione"@it ,
                                                                  "RDF/XML distribution of Lactation Assessment Ontology"@en ;
-                                                      <http://www.w3.org/ns/dcat#accessURL> <https://www.leo-project.it/Ontologie/lactation-assessment/latest> ;
+                                                      <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/lactation-assessment/latest> ;
                                                       <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/lactation-assessment/latest/lactation-assessment.rdf> .
+
+
+
+###  https://w3id.org/leo/data/private-organization/00944701002
+<https://w3id.org/leo/data/private-organization/00944701002> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
+                                                             <http://purl.org/dc/terms/identifier> "00944701002" ;
+                                                             <http://xmlns.com/foaf/0.1/name> "Associazione Italiana Allevatori"@it ,
+                                                                                              "Italian Breeders' Association"@en .
+
+
+###  https://w3id.org/leo/data/private-organization/06695411006
+<https://w3id.org/leo/data/private-organization/06695411006> rdf:type owl:NamedIndividual ,
+                                                                      <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                      <http://xmlns.com/foaf/0.1/Agent> ;
+                                                             <http://purl.org/dc/terms/identifier> "06695411006" ;
+                                                             <http://xmlns.com/foaf/0.1/name> "Bluarancio"@en ,
+                                                                                              "Bluarancio"@it .
+
+
+###  https://w3id.org/leo/data/project/LEO
+<https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/italia/onto/ADMS/Project> ;
+                                        rdfs:label "LEO - Livestock Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestock Environment Open Data"@it .
+
 
 
 ###  https://w3id.org/leo/onto/lactation-assessment

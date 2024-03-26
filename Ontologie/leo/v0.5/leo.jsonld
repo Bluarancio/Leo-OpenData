@@ -139,10 +139,6 @@
       "@type": "owl:AnnotationProperty"
     },
     {
-      "@id": "admsapit:hasContributor",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
       "@id": "admsapit:hasFormalityLevel",
       "@type": "owl:AnnotationProperty"
     },
@@ -441,11 +437,11 @@
       ],
       "rdfs:label": {
         "@language": "it",
-        "@value": "LEO - Livestok Environment Open Data"
+        "@value": "LEO - Livestock Environment Open Data"
       },
       "l0:name": {
         "@language": "it",
-        "@value": "LEO - Livestok Environment Open Data"
+        "@value": "LEO - Livestock Environment Open Data"
       }
     },
     {
@@ -458,9 +454,14 @@
       "dcterms:accrualPeriodicity": {
         "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
       },
-      "dcterms:creator": {
-        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
-      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
       "dcterms:description": [
         {
           "@language": "it",
@@ -489,7 +490,7 @@
         "@value": "2023-10-31"
       },
       "dcterms:publisher": {
-        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
       },
       "dcterms:rightsHolder": {
         "@id": "https://w3id.org/leo/data/private-organization/00944701002"
@@ -618,15 +619,20 @@
         {
           "@language": "it",
           "@value": "Indicatori"
+        },
+        {
+          "@language": "it",
+          "@value": "Accertamenti sanitari"
+        },
+        {
+          "@language": "it",
+          "@value": "Lattazione"
         }
       ],
       "dcat:theme": {
         "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
       },
       "admsapit:acronym": "LEO",
-      "admsapit:hasContributor": {
-        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
-      },
       "admsapit:hasFormalityLevel": {
         "@id": "admsapit:Formal"
       },

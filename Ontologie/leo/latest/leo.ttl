@@ -33,7 +33,7 @@
                                              <https://w3id.org/leo/onto/lactation-assessment> ,
                                              <https://w3id.org/leo/onto/livestock-assessment> ;
                                  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                 dct:creator <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:creator <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                  dct:description "Questa è l'ontologia principale, punto di accesso alla rete di ontologie dell'ambiente zootecnico italiano sviluppata nel contesto del progetto LEO."@it ,
                                                  "This is the main ontology, the unique acess point to all the network of ontologies developed in the context of LEO project."@en ;
                                  dct:identifier "onto-BA-7" ;
@@ -41,7 +41,7 @@
                                  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                               <http://publications.europa.eu/resource/authority/language/ITA> ;
                                  dct:modified "2023-10-31"^^xsd:date ;
-                                 dct:publisher <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                 dct:publisher <https://w3id.org/leo/data/private-organization/06695411006> ;
                                  dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002> ;
                                  dct:subject <http://eurovoc.europa.eu/100254> ;
                                  dct:title "Access point Ontology to all the network of Ontologies for LEO project"@en ,
@@ -60,10 +60,11 @@
                                               "Bovini"@it ,
                                               "Eventi della vita degli animali"@it ,
                                               "Farm Animal"@en ,
-                                              "Indicatori"@it ;
+                                              "Indicatori"@it ,
+                                              "Accertamenti sanitari"@it ,
+                                              "Lattazione"@it ;
                                  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
                                  admsapit:acronym "LEO" ;
-                                 admsapit:hasContributor <https://w3id.org/leo/data/private-organization/06695411006> ;
                                  admsapit:hasFormalityLevel admsapit:Formal ;
                                  admsapit:hasOntologyLanguage admsapit:OWL ;
                                  admsapit:hasSemanticAssetDistribution <https://w3id.org/leo/data/distribution/LEO-JSON-LD> ,
@@ -170,10 +171,6 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 admsapit:acronym rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-admsapit:hasContributor rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
@@ -354,8 +351,8 @@ l0:Concept rdf:type owl:Class .
 ###  https://w3id.org/leo/data/project/LEO
 <https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
                                                  admsapit:Project ;
-                                        rdfs:label "LEO - Livestok Environment Open Data"@it ;
-                                        l0:name "LEO - Livestok Environment Open Data"@it .
+                                        rdfs:label "LEO - Livestock Environment Open Data"@it ;
+                                        l0:name "LEO - Livestock Environment Open Data"@it .
 
 
 ###  https://w3id.org/leo/onto/leo
