@@ -7,6 +7,7 @@
 @prefix fno: <https://w3id.org/function/ontology#> .
 @prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
 @prefix idlab-fn: <http://example.com/idlab/function/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
@@ -23,7 +24,7 @@
 <https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:description "Questo è il vocabolario controllato per la categorizzazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di categorizzazione di riferimento, che definisce le categorie in cui sono ripartite le carcasse bovine, è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013."@it,
     "This is the controlled vocabulary for the categorization of carcasses of bovine animals, used in the context of project LEO - Livestock Environment Open Data. The reference categories for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013."@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category";
@@ -31,7 +32,7 @@
   ndc:keyConcept "bovine-carcass-category" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2021-10-01"^^xsd:date;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary for the categorization of carcasses of bovine animals of the LEO project"@en,
     "Vocabolario controllato per la categorizzazione delle carcasse dei bovini del progetto LEO"@it;
@@ -50,7 +51,7 @@
   dcat:contactPoint <https://w3id.org/leo/data/contact-point/onto-aia>;
   dcat:distribution <https://w3id.org/leo/data/distribution/bovine-carcass-category-JSON-LD>,
     <https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-TURTLE>, <https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-XML>;
-  dcat:keyword "categorization of carcasses of bovine animals"@en, "categorizzazione delle carcasse dei bovini"@it;
+  dcat:keyword "categorization of carcasses of bovine animals"@en, "categorizzazione delle carcasse dei bovini"@it , "carcassa"@it , "bovini"@it , "bovine"@en ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> .
 
 <https://w3id.org/leo/controlled-vocabulary/bovine-carcass-category/0> a skos:Concept,
@@ -159,3 +160,14 @@
     "This is the RDF XML distribution of the controlled vocabulary on the categorization of carcasses of bovine animals"@en;
   dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.rdf> .
+
+  <https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "00944701002" ;
+  foaf:name "Associazione Italiana Allevatori"@it ,
+             "Italian Breeders' Association"@en .
+
+
+  <https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "06695411006" ;
+  foaf:name "Bluarancio"@en ,
+            "Bluarancio"@it .

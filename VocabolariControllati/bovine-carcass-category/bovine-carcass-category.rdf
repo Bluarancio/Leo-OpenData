@@ -18,6 +18,7 @@
 	xmlns:grel="http://users.ugent.be/~bjdmeest/function/grel.ttl#"
 	xmlns:idlab-fn="http://example.com/idlab/function/"
 	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:ql="http://semweb.mmlab.be/ns/ql#"
 	xmlns:rml="http://semweb.mmlab.be/ns/rml#"
 	xmlns:ndc="https://w3id.org/italia/onto/NDC/">
@@ -28,6 +29,7 @@
 		<rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
 		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
 		<dcterms:description xml:lang="it">Questo è il vocabolario controllato per la categorizzazione delle carcasse dei bovini, utilizzato nel contesto del progetto LEO - Livestock Environment Open Data. Il sistema di categorizzazione di riferimento, che definisce le categorie in cui sono ripartite le carcasse bovine, è definito nel regolamento (UE) n. 1308/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013.</dcterms:description>
 		<dcterms:description xml:lang="en">This is the controlled vocabulary for the categorization of carcasses of bovine animals, used in the context of project LEO - Livestock Environment Open Data. The reference categories for bovine carcasses are defined in Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013.</dcterms:description>
@@ -36,7 +38,7 @@
 		<ndc:keyConcept>bovine-carcass-category</ndc:keyConcept>
 		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-01</dcterms:modified>
-		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
 		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
 		<dcterms:title xml:lang="en">Controlled Vocabulary for the categorization of carcasses of bovine animals of the LEO project</dcterms:title>
 		<dcterms:title xml:lang="it">Vocabolario controllato per la categorizzazione delle carcasse dei bovini del progetto LEO</dcterms:title>
@@ -61,6 +63,9 @@
 		<dcat:distribution rdf:resource="https://w3id.org/leo/data/distribution/bovine-carcass-category-RDF-XML"/>
 		<dcat:keyword xml:lang="en">categorization of carcasses of bovine animals</dcat:keyword>
 		<dcat:keyword xml:lang="it">categorizzazione delle carcasse dei bovini</dcat:keyword>
+		<dcat:keyword xml:lang="it">carcassa</dcat:keyword>
+		<dcat:keyword xml:lang="it">bovini</dcat:keyword>
+		<dcat:keyword xml:lang="en">bovine</dcat:keyword>
 		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
 	</rdf:Description>
 
@@ -191,5 +196,27 @@
 		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the categorization of carcasses of bovine animals</dcterms:title>
 		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/bovine-carcass-category"/>
 		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/bovine-carcass-category/bovine-carcass-category.rdf"/>
+	</rdf:Description>
+
+	<!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dcterms:identifier>00944701002</dcterms:identifier>
+			<foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+			<foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+	</rdf:Description>
+
+
+
+	<!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dcterms:identifier>06695411006</dcterms:identifier>
+			<foaf:name xml:lang="en">Bluarancio</foaf:name>
+			<foaf:name xml:lang="it">Bluarancio</foaf:name>
 	</rdf:Description>
 </rdf:RDF>
