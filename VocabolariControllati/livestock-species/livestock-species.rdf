@@ -37,6 +37,7 @@
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
 		<dcterms:description xml:lang="it">Questo è il vocabolario controllato specie zootecniche prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data</dcterms:description>
 		<dcterms:description xml:lang="en">This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data</dcterms:description>
 		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/livestock-species</dcterms:identifier>
@@ -44,7 +45,7 @@
 		<ndc:keyConcept>livestock-species</ndc:keyConcept>
 		<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-22</dcterms:modified>
-		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+		<dcterms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
 		<dcterms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
 		<dcterms:title xml:lang="en">Controlled Vocabulary on Livestock Species</dcterms:title>
 		<dcterms:title xml:lang="it">Vocabolario controllato delle specie zootecniche</dcterms:title>
@@ -245,4 +246,28 @@
 		<cov:taxCode>80111810588</cov:taxCode>
 		<l0:description xml:lang="it">L’Istituto nazionale di statistica, ente di ricerca pubblico, è il principale produttore di statistica ufficiale a supporto dei cittadini e dei decisori pubblici. Opera in piena autonomia e in continua interazione con il mondo accademico e scientifico.</l0:description>
 	</rdf:Description>
+
+	<!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>00944701002</dct:identifier>
+			<foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+			<foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+	</rdf:Description>
+
+
+
+	<!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>06695411006</dct:identifier>
+			<foaf:name xml:lang="en">Bluarancio</foaf:name>
+			<foaf:name xml:lang="it">Bluarancio</foaf:name>
+	</rdf:Description>
+
+
 </rdf:RDF>

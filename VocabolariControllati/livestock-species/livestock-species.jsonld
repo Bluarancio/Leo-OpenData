@@ -42,9 +42,14 @@
       "dcterms:accrualPeriodicity": {
         "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
       },
-      "dcterms:creator": {
-        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
-      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
       "dcterms:description": [
         {
           "@language": "it",
@@ -68,7 +73,7 @@
         "@value": "2022-04-22"
       },
       "dcterms:publisher": {
-        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
       },
       "dcterms:rightsHolder": {
         "@id": "https://w3id.org/leo/data/private-organization/00944701002"
@@ -168,12 +173,22 @@
         "skos:Concept",
         "animal:LivestockSpecies"
       ],
-      "owl:sameAs": {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
-      },
-      "skos:exactMatch": {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
-      },
+      "owl:sameAs": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_25410"
+        }
+      ],
       "skos:inScheme": {
         "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
       },
@@ -197,12 +212,22 @@
         "skos:Concept",
         "animal:LivestockSpecies"
       ],
-      "owl:sameAs": {
-        "@id": "http://eurovoc.europa.eu/842"
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/842"
-      },
+      "owl:sameAs": [
+        {
+          "@id": "http://eurovoc.europa.eu/842"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/842"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://eurovoc.europa.eu/842"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/842"
+        }
+      ],
       "skos:inScheme": {
         "@id": "https://w3id.org/leo/controlled-vocabulary/livestock-species"
       },
@@ -232,9 +257,21 @@
         },
         {
           "@id": "http://eurovoc.europa.eu/5034"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_1391"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5034"
         }
       ],
       "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_1391"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5034"
+        },
         {
           "@id": "http://aims.fao.org/aos/agrovoc/c_1391"
         },
@@ -271,9 +308,21 @@
         },
         {
           "@id": "http://eurovoc.europa.eu/2211"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7030"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2211"
         }
       ],
       "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7030"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2211"
+        },
         {
           "@id": "http://aims.fao.org/aos/agrovoc/c_7030"
         },
@@ -310,9 +359,21 @@
         },
         {
           "@id": "http://eurovoc.europa.eu/5252"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_3324"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5252"
         }
       ],
       "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_3324"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/5252"
+        },
         {
           "@id": "http://aims.fao.org/aos/agrovoc/c_3324"
         },
@@ -349,9 +410,21 @@
         },
         {
           "@id": "http://eurovoc.europa.eu/2560"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7555"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2560"
         }
       ],
       "skos:exactMatch": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_7555"
+        },
+        {
+          "@id": "http://eurovoc.europa.eu/2560"
+        },
         {
           "@id": "http://aims.fao.org/aos/agrovoc/c_7555"
         },
@@ -546,6 +619,42 @@
       "animal:assignedBy": {
         "@id": "https://w3id.org/leo/data/public-organization/ISTAT"
       }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "dcatapit:Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "dcatapit:Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
     },
     {
       "@id": "https://w3id.org/leo/data/public-organization/ISTAT",

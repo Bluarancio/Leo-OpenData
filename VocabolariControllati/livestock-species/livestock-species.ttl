@@ -31,7 +31,7 @@
 <https://w3id.org/leo/controlled-vocabulary/livestock-species> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
   dct:description "Questo è il vocabolario controllato specie zootecniche prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the on Livestock Species produced in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/livestock-species";
@@ -39,7 +39,7 @@
   ndc:keyConcept "livestock-species" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-04-22"^^xsd:date;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher   <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on Livestock Species"@en, "Vocabolario controllato delle specie zootecniche"@it;
   dct:type <http://purl.org/adms/assettype/CodeList>;
@@ -197,3 +197,15 @@
   cov:legalName "Istituto Nazionale di Statistica - ISTAT"@it;
   cov:taxCode "80111810588";
   l0:description "L’Istituto nazionale di statistica, ente di ricerca pubblico, è il principale produttore di statistica ufficiale a supporto dei cittadini e dei decisori pubblici. Opera in piena autonomia e in continua interazione con il mondo accademico e scientifico."@it .
+
+
+  <https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "00944701002" ;
+  foaf:name "Associazione Italiana Allevatori"@it ,
+             "Italian Breeders' Association"@en .
+
+
+  <https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "06695411006" ;
+  foaf:name "Bluarancio"@en ,
+            "Bluarancio"@it .
