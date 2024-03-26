@@ -3547,7 +3547,7 @@
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedVV"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedB0"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedM3"/>
-    <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+    <dct:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedA5"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedE4"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedL8"/>
@@ -3782,6 +3782,7 @@
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedE1"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedF0"/>
     <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+    <dct:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breed84"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breedHS"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/leo/controlled-vocabulary/breed/breed10"/>
@@ -4731,4 +4732,27 @@
     <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q16800658"/>
     <animal:AIABreedCode>O7</animal:AIABreedCode>
   </rdf:Description>
+
+  <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>00944701002</dct:identifier>
+			<foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+			<foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+	</rdf:Description>
+
+
+
+	<!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>06695411006</dct:identifier>
+			<foaf:name xml:lang="en">Bluarancio</foaf:name>
+			<foaf:name xml:lang="it">Bluarancio</foaf:name>
+	</rdf:Description>
+  
 </rdf:RDF>
