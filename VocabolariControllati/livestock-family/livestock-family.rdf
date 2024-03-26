@@ -21,6 +21,7 @@
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
 		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
+		<dcterms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
 		<dcterms:description xml:lang="it">Questo è il vocabolario controllato delle famiglie zootecniche prodotto nel constesto dell&apos;apertura dei dati del progetto LEO - Livestock Environment Open Data</dcterms:description>
 		<dcterms:description xml:lang="en">This is the controlled Vocabulary on the on Livestock Families produced in the context of project LEO - Livestock Environment Open Data</dcterms:description>
 		<dcterms:identifier>https://w3id.org/leo/controlled-vocabulary/livestock-family</dcterms:identifier>
@@ -154,5 +155,27 @@
 		<dcterms:title xml:lang="en">This is the RDF XML distribution of the controlled vocabulary on the livestock families</dcterms:title>
 		<dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/livestock-family"/>
 		<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.rdf"/>
+	</rdf:Description>
+
+	<!-- https://w3id.org/leo/data/private-organization/00944701002 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>00944701002</dct:identifier>
+			<foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
+			<foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
+	</rdf:Description>
+
+
+
+	<!-- https://w3id.org/leo/data/private-organization/06695411006 -->
+
+	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
+			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+			<dct:identifier>06695411006</dct:identifier>
+			<foaf:name xml:lang="en">Bluarancio</foaf:name>
+			<foaf:name xml:lang="it">Bluarancio</foaf:name>
 	</rdf:Description>
 </rdf:RDF>

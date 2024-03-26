@@ -7,6 +7,7 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
     "dcterms": "http://purl.org/dc/terms/",
     "adms": "http://www.w3.org/ns/adms#",
     "animal": "https://w3id.org/leo/onto/animal/",
@@ -29,9 +30,14 @@
       "dcterms:conformsTo": {
         "@id": "https://w3id.org/italia/data/standard/SKOS"
       },
-      "dcterms:creator": {
-        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
-      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
       "dcterms:description": [
         {
           "@language": "it",
@@ -443,6 +449,42 @@
       "dcat:downloadURL": {
         "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/livestock-family/livestock-family.rdf"
       }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "dcatapit:Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "dcatapit:Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
     }
   ]
 }
