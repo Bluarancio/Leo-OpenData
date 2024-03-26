@@ -11,7 +11,7 @@
                                     owl:imports <https://w3id.org/italia/onto/l0> ;
                                     <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/Apiary.png> ;
                                     <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                    <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                    <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                     <http://purl.org/dc/terms/description> "Questa è l'ontologia degli apiari delle aziende zootecniche proprietarie."@it ,
                                                                            "The ontology represents the apiaries of the livestock farms."@en ;
                                     <http://purl.org/dc/terms/identifier> "onto-BA-15" ;
@@ -19,7 +19,7 @@
                                     <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
                                     <http://purl.org/dc/terms/modified> "2023-10-31" ;
-                                    <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                    <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                     <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                     <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/100254> ;
                                     <http://purl.org/dc/terms/title> "Apiary Ontology"@en ,
@@ -37,7 +37,6 @@
                                                                         "Aziende d'allevamento"@it ,
                                                                         "Sciami"@it ;
                                     <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
-                                    <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                     <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                     <https://w3id.org/italia/onto/ADMS/hasKeyClass> :Apiary ;
                                     <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> ;
@@ -115,10 +114,6 @@
 
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
@@ -356,9 +351,9 @@
                                                  <https://w3id.org/italia/onto/ADMS/Project> ;
                                         rdfs:comment "Il progetto LEO dove viene usata l'ontologia"@it ,
                                                      "LEO project where the ontology is used"@en ;
-                                        rdfs:label "LEO - Livestok Environment Open Data"@en ,
-                                                   "LEO - Livestok Environment Open Data"@it ;
-                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestok Environment Open Data"@it .
+                                        rdfs:label "LEO - Livestock Environment Open Data"@en ,
+                                                   "LEO - Livestock Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestock Environment Open Data"@it .
 
 
 ###  https://w3id.org/leo/onto/apiary

@@ -11,14 +11,14 @@
                                     owl:imports <https://w3id.org/italia/onto/l0> ;
                                     <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/FarmAnimal.png> ;
                                     <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                    <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                    <http://purl.org/dc/terms/creator> <https://w3id.org/leo/data/private-organization/00944701002> , <https://w3id.org/leo/data/private-organization/06695411006> ;
                                     <http://purl.org/dc/terms/description> "Questa è l'ontologia degli animali di allevamento del progetto LEO. In particolare include tutti i dati che rappresentano l'anagrafica degli animali d'allevamento. Nell'ontologia alcune proprietà derivano non solo dai sistemi di AIA (Associazione Italiana Allevatori) ma anche, attraverso la cooperazione applicativa, dalla BDN - Banca Dati Nazionale dell'anagrafica degli animali d'allevamento. Nell'ambito del progetto LEO i dati rappresentati nell'ambito di questa ontologia sono detti FieldData."@it ,
                                                                            "This is the ontology of farm animals developed in the context of the LEO project. In particular, it includes all the data representing the master data of farm animals. In the ontology, some properties are derived not only from the AIA (Italian Livestock Breeders' Association) systems but also from the BDN - National Database of Farm Animal Registry through application cooperation. Within the LEO project, the data represented within this ontology are called FieldData."@en ;
                                     <http://purl.org/dc/terms/issued> "2018-06-18"^^xsd:date ;
                                     <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
                                     <http://purl.org/dc/terms/modified> "2023-06-20"@en ;
-                                    <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/00944701002> ;
+                                    <http://purl.org/dc/terms/publisher> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                     <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/leo/data/private-organization/00944701002> ;
                                     <http://purl.org/dc/terms/subject> <http://eurovoc.europa.eu/100254> ;
                                     <http://purl.org/dc/terms/title> "Farm Animals Ontology"@en ,
@@ -37,7 +37,6 @@
                                                                         "Farm Animal"@en ;
                                     <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/AGRI> ;
                                     <https://w3id.org/italia/onto/ADMS/acronym> "FA" ;
-                                    <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/leo/data/private-organization/06695411006> ;
                                     <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
                                     <https://w3id.org/italia/onto/ADMS/hasKeyClass> :Breed ,
                                                                                     :FarmAnimal ,
@@ -147,10 +146,6 @@
 
 ###  https://w3id.org/italia/onto/ADMS/acronym
 <https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/italia/onto/ADMS/hasContributor
-<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
@@ -1330,8 +1325,8 @@ xsd:dateTime rdf:type rdfs:Datatype .
 ###  https://w3id.org/leo/data/project/LEO
 <https://w3id.org/leo/data/project/LEO> rdf:type owl:NamedIndividual ,
                                                  <https://w3id.org/italia/onto/ADMS/Project> ;
-                                        rdfs:label "LEO - Livestok Environment Open Data"@it ;
-                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestok Environment Open Data"@it .
+                                        rdfs:label "LEO - Livestock Environment Open Data"@it ;
+                                        <https://w3id.org/italia/onto/l0/name> "LEO - Livestock Environment Open Data"@it .
 
 
 ###  https://w3id.org/leo/onto/animal

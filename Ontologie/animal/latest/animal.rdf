@@ -20,13 +20,14 @@
         <dc:description rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/RappresentazioneGraficaOntologie/PNG/FarmAnimal.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:creator rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:description xml:lang="it">Questa è l&apos;ontologia degli animali di allevamento del progetto LEO. In particolare include tutti i dati che rappresentano l&apos;anagrafica degli animali d&apos;allevamento. Nell&apos;ontologia alcune proprietà derivano non solo dai sistemi di AIA (Associazione Italiana Allevatori) ma anche, attraverso la cooperazione applicativa, dalla BDN - Banca Dati Nazionale dell&apos;anagrafica degli animali d&apos;allevamento. Nell&apos;ambito del progetto LEO i dati rappresentati nell&apos;ambito di questa ontologia sono detti FieldData.</terms:description>
         <terms:description xml:lang="en">This is the ontology of farm animals developed in the context of the LEO project. In particular, it includes all the data representing the master data of farm animals. In the ontology, some properties are derived not only from the AIA (Italian Livestock Breeders&apos; Association) systems but also from the BDN - National Database of Farm Animal Registry through application cooperation. Within the LEO project, the data represented within this ontology are called FieldData.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-18</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <terms:modified xml:lang="en">2023-06-20</terms:modified>
-        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
+        <terms:publisher rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/leo/data/private-organization/00944701002"/>
         <terms:subject rdf:resource="http://eurovoc.europa.eu/100254"/>
         <terms:title xml:lang="en">Farm Animals Ontology</terms:title>
@@ -45,7 +46,6 @@
         <dcat:keyword xml:lang="en">Farm Animal</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
         <ADMS:acronym>FA</ADMS:acronym>
-        <ADMS:hasContributor rdf:resource="https://w3id.org/leo/data/private-organization/06695411006"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/animal/Breed"/>
         <ADMS:hasKeyClass rdf:resource="https://w3id.org/leo/onto/animal/FarmAnimal"/>
@@ -65,10 +65,10 @@
         <ADMS:target>Pubbliche Amministrazioni</ADMS:target>
         <ADMS:type rdf:resource="https://w3id.org/italia/onto/ADMS/CoreOntology"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -76,226 +76,220 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#fn -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#contactPoint -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#downloadURL -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/acronym -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-    
 
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-    
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/prefix -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/status -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/target -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/type -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/name -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -303,22 +297,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
+
 
 
     <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -326,7 +320,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/assignedBy -->
@@ -342,7 +336,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - included in the second version of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/belongsTo -->
@@ -358,7 +352,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasAlternativeIdentifier -->
@@ -374,7 +368,7 @@
         <owl:versionInfo xml:lang="it">stabile - revisionato il dominio della proprietà per essere aperto a tante cose nel dominio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - revised the domain of the property to be open to many things in the domain</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasAnimalDestination -->
@@ -398,7 +392,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasAspect -->
@@ -414,7 +408,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasAspectDescriptionCollection -->
@@ -437,7 +431,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasBreed -->
@@ -454,7 +448,7 @@
         <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasFarmAnimalStatus -->
@@ -470,7 +464,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.0 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="it">stable - introduced in version 1.0 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasFather -->
@@ -486,7 +480,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasFatherBreed -->
@@ -502,7 +496,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella terza versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version three of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasGeneticMother -->
@@ -518,7 +512,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasGeneticMotherBreed -->
@@ -534,7 +528,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella terza versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version three of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasHybridGeneticType -->
@@ -550,7 +544,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasProductionTarget -->
@@ -575,7 +569,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasProductiveAttitude -->
@@ -592,7 +586,7 @@
         <owl:versionInfo xml:lang="it">stabile - rivista nella versione 0.5 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - revised in version 0.5 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasSex -->
@@ -610,7 +604,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasSingleAspectDescription -->
@@ -627,7 +621,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/hasUniqueAnimalNumberInTime -->
@@ -643,7 +637,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isAnimalDestinationOf -->
@@ -666,7 +660,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isBreedOfFarmAnimal -->
@@ -682,7 +676,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isOfLivestockFamily -->
@@ -698,7 +692,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isOfSpecies -->
@@ -715,7 +709,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isProductionTargetOf -->
@@ -739,7 +733,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isProductiveAttitudeOf -->
@@ -755,7 +749,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isSexOf -->
@@ -771,7 +765,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isSpeciesOf -->
@@ -787,7 +781,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isWithin -->
@@ -803,7 +797,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/prevUniqueAnimalNumber -->
@@ -819,10 +813,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -830,31 +824,31 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/date -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/TI/date"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/identifier -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/disposalDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/disposalDate"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/identificationDate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/leo/onto/ale/identificationDate"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/AIABreedCode -->
@@ -872,7 +866,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/AIAPTCode -->
@@ -890,7 +884,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/AIASpeciesCode -->
@@ -908,7 +902,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiunto nella seconda versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - added in the second version of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/birthDate -->
@@ -932,7 +926,7 @@
         <owl:versionInfo xml:lang="it">stabile - spostata da ale ad animal nella versione 1.0 dell&apos;ontologia animal</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - moved from ale to animal in the version 1.0 of animal ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/descriptionValue -->
@@ -948,7 +942,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/isBornThroughEmbryoTransfer -->
@@ -965,7 +959,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.0 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.0 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/originType -->
@@ -981,7 +975,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 1.0 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.0 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/taggingDate -->
@@ -1006,7 +1000,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 1.0 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.0 of the ontology</owl:versionInfo>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/uniqueAnimalNumber -->
@@ -1032,10 +1026,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1043,91 +1037,91 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://dati.gov.it/onto/dcatapit#Agent -->
 
     <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
-    
+
 
 
     <!-- http://dati.gov.it/onto/dcatapit#Organization -->
 
     <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Kind -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
-    
+
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Organization -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/Project -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/COV/Organization -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/TI/TimeIndexedEvent -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeIndexedEvent"/>
-    
+
 
 
     <!-- https://w3id.org/italia/onto/l0/Concept -->
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Birth -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Birth"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/Identification -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/ale/Identification"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/ale/InboudMovement -->
 
     <owl:Class rdf:about="https://w3id.org/leo/onto/ale/InboudMovement"/>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Aspect -->
@@ -1155,7 +1149,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/AspectDescription -->
@@ -1188,7 +1182,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/AspectDescriptionCollection -->
@@ -1229,7 +1223,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Breed -->
@@ -1262,7 +1256,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimal -->
@@ -1431,7 +1425,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimalDestination -->
@@ -1452,7 +1446,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/FarmAnimalStatus -->
@@ -1467,7 +1461,7 @@
         <owl:versionInfo xml:lang="it">stabile - inserita in versione 1.0 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.0 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Herd -->
@@ -1495,7 +1489,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta in versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/HybridGeneticType -->
@@ -1510,7 +1504,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Identifier -->
@@ -1538,7 +1532,7 @@
         <owl:versionInfo xml:lang="it">stabile - rifattorizzato il nome nella terza versione dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - name of the class has been refactored in thrid version of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/LivestockFamily -->
@@ -1553,7 +1547,7 @@
         <owl:versionInfo xml:lang="it">stabile - introdotta nella versione 1.1 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - introduced in version 1.1 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/LivestockSpecies -->
@@ -1599,7 +1593,7 @@
         <owl:versionInfo xml:lang="it">stabile - aggiornata nella seconda versione da Specie a Specie Zootecnica</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - update from Species to Livestock Species</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/ProductionType -->
@@ -1633,7 +1627,7 @@
         <owl:versionInfo xml:lang="it">stabile - rivisto nella versione 0.5 dell&apos;ontologia</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable - revised in version 0.5 of the ontology</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Sex -->
@@ -1654,7 +1648,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/UniqueAnimalNumberInTime -->
@@ -1682,10 +1676,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1693,7 +1687,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/leo/data/contact-point/onto-aia -->
@@ -1706,7 +1700,7 @@
         <ns:fn xml:lang="it">Sistemi informativi</ns:fn>
         <ns:hasEmail rdf:resource="mailto:affarigenerali@pec.aia.it"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/animal-JSON-LD -->
@@ -1726,7 +1720,7 @@
         <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/animal/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/animal/latest/animal.jsonld"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/animal-RDF-TURTLE -->
@@ -1746,7 +1740,7 @@
         <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/animal/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/animal/latest/animal.ttl"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/distribution/animal-RDF-XML -->
@@ -1766,7 +1760,7 @@
         <dcat:accessURL rdf:resource="https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/animal/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/animal/latest/animal.rdf"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/00944701002 -->
@@ -1778,7 +1772,7 @@
         <foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
         <foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/private-organization/06695411006 -->
@@ -1790,17 +1784,17 @@
         <foaf:name xml:lang="en">Bluarancio</foaf:name>
         <foaf:name xml:lang="it">Bluarancio</foaf:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/data/project/LEO -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/data/project/LEO">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <rdfs:label xml:lang="it">LEO - Livestok Environment Open Data</rdfs:label>
-        <l0:name xml:lang="it">LEO - Livestok Environment Open Data</l0:name>
+        <rdfs:label xml:lang="it">LEO - Livestock Environment Open Data</rdfs:label>
+        <l0:name xml:lang="it">LEO - Livestock Environment Open Data</l0:name>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal -->
@@ -1808,7 +1802,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/leo/onto/animal">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/F -->
@@ -1818,7 +1812,7 @@
         <rdfs:label xml:lang="en">Female</rdfs:label>
         <rdfs:label xml:lang="it">Femmina</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Life -->
@@ -1828,7 +1822,7 @@
         <rdfs:label xml:lang="en">Life</rdfs:label>
         <rdfs:label xml:lang="it">Vita</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/M -->
@@ -1838,7 +1832,7 @@
         <rdfs:label xml:lang="en">Male</rdfs:label>
         <rdfs:label xml:lang="it">Maschio</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/leo/onto/animal/Slaughterhouse -->
@@ -1853,4 +1847,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
