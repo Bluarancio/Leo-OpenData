@@ -31,9 +31,14 @@
       "dcterms:accrualPeriodicity": {
         "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
       },
-      "dcterms:creator": {
-        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
-      },
+      "dcterms:creator": [
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        },
+        {
+          "@id": "https://w3id.org/leo/data/private-organization/06695411006"
+        }
+      ],
       "dcterms:description": [
         {
           "@language": "it",
@@ -57,7 +62,7 @@
         "@value": "2022-01-11"
       },
       "dcterms:publisher": {
-        "@id": "https://w3id.org/leo/data/private-organization/00944701002"
+        "@id": "https://w3id.org/leo/data/private-organization/06695411006"
       },
       "dcterms:rightsHolder": {
         "@id": "https://w3id.org/leo/data/private-organization/00944701002"
@@ -840,6 +845,42 @@
       "dcat:downloadURL": {
         "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/exit-from-farm-reason/exit-from-farm-reason.rdf"
       }
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/00944701002",
+      "@type": [
+        "dcatapit:Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "00944701002",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Associazione Italiana Allevatori"
+        },
+        {
+          "@language": "en",
+          "@value": "Italian Breeders' Association"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/leo/data/private-organization/06695411006",
+      "@type": [
+        "dcatapit:Agent",
+        "foaf:Agent"
+      ],
+      "dcterms:identifier": "06695411006",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Bluarancio"
+        },
+        {
+          "@language": "it",
+          "@value": "Bluarancio"
+        }
+      ]
     }
   ]
 }
