@@ -20,14 +20,14 @@
 <https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies> a
     dcatapit:Dataset, skos:ConceptScheme, adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>, <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:description "Questo è il vocabolario controllato delle frequenze del controllo funzionale del latte prodotto nel constesto dell'apertura dei dati del progetto LEO - Livestock Environment Open Data. In particolare, il vocabolario presenta le frequenze intese come numero di settimane che intercorre fra due controlli consecutivi (in genere, per i controlli latte, 4,5,6)"@it,
     "This is the controlled vocabulary of milk functional control frequencies produced in the context of the LEO - Livestock Environment Open Data project. In particular, the vocabulary presents the frequencies expressed as the number of weeks between two consecutive controls (generally, for milk controls, 4,5,6)"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/milk-functional-testing-frequencies";
   dct:issued "2022-10-10"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2023-06-17"^^xsd:date;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary of the milk functional testing frequencies"@en, "Vocabolario controllato delle frequenze del controllo funzionale del latte"@it;
   dct:type <http://purl.org/adms/assettype/CodeList>;
@@ -139,3 +139,14 @@
     "This is the RDF XML distribution of the controlled vocabulary on the milk functional testing frequencies"@en;
   dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/milk-functional-testing-frequencies>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/milk-functional-testing-frequencies/milk-functional-testing-frequencies.rdf> .
+
+  <https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "00944701002" ;
+  foaf:name "Associazione Italiana Allevatori"@it ,
+             "Italian Breeders' Association"@en .
+
+
+  <https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "06695411006" ;
+  foaf:name "Bluarancio"@en ,
+            "Bluarancio"@it .
