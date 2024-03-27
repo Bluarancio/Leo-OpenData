@@ -251,7 +251,7 @@
 	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/00944701002">
 			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
 			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-			<dct:identifier>00944701002</dct:identifier>
+			<dcterms:identifier>00944701002</dcterms:identifier>
 			<foaf:name xml:lang="it">Associazione Italiana Allevatori</foaf:name>
 			<foaf:name xml:lang="en">Italian Breeders&apos; Association</foaf:name>
 	</rdf:Description>
@@ -263,7 +263,7 @@
 	<rdf:Description rdf:about="https://w3id.org/leo/data/private-organization/06695411006">
 			<rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
 			<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-			<dct:identifier>06695411006</dct:identifier>
+			<dcterms:identifier>06695411006</dcterms:identifier>
 			<foaf:name xml:lang="en">Bluarancio</foaf:name>
 			<foaf:name xml:lang="it">Bluarancio</foaf:name>
 	</rdf:Description>
