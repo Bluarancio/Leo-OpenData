@@ -744,7 +744,7 @@ legge, degli animali"""@it ;
                                                                     "This is the distribution in RDF/Turtle of Companies of the Farm Animals ontology"@en ;
                                                        rdfs:label "Distribuzione RDF/Turtle ontologia CO (Company)"@it ,
                                                                   "RDF/Turtle distribution of CO (Company) Ontology"@en ;
-                                                       <http://www.w3.org/ns/dcat#accessURL> <hhttps://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest> ;
+                                                       <http://www.w3.org/ns/dcat#accessURL> <https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest> ;
                                                        <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/co/latest/co.ttl> .
 
 

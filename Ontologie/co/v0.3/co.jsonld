@@ -461,7 +461,7 @@
         }
       ],
       "dcat:accessURL": {
-        "@id": "hhttps://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest"
+        "@id": "https://github.com/Bluarancio/Leo-OpenData/tree/master/Ontologie/co/latest"
       },
       "dcat:downloadURL": {
         "@id": "https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/Ontologie/co/latest/co.ttl"
