@@ -20,7 +20,7 @@
 <https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason> a dcatapit:Dataset,
     skos:ConceptScheme, adms:Asset, dcat:Dataset;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:creator <https://w3id.org/leo/data/private-organization/00944701002>, <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:description "Questo è il vocabolario controllato dei motivi di ingresso degli animali in allevamento utilizzati nel contesto del progetto LEO - Livestock Environment Open Data"@it,
     "This is the controlled Vocabulary on the reasons for animals for entering a farm, used in the context of project LEO - Livestock Environment Open Data"@en;
   dct:identifier "https://w3id.org/leo/controlled-vocabulary/entry-in-farm-reason";
@@ -28,7 +28,7 @@
   ndc:keyConcept "entry-in-farm-reason" ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>;
   dct:modified "2022-01-11"^^xsd:date;
-  dct:publisher <https://w3id.org/leo/data/private-organization/00944701002>;
+  dct:publisher <https://w3id.org/leo/data/private-organization/06695411006>;
   dct:rightsHolder <https://w3id.org/leo/data/private-organization/00944701002>;
   dct:title "Controlled Vocabulary on the reasons for animals for entering a farm, in the context of the LEO project"@en,
     "Vocabolario controllato dei motivi di ingresso degli animali in allevamento nel contesto del progetto LEO"@it;
@@ -262,3 +262,15 @@
     "This is the RDF XML distribution of the controlled vocabulary on the reasons for animals for entering a farm"@en;
   dcat:accessURL <https://github.com/Bluarancio/Leo-OpenData/tree/master/VocabolariControllati/entry-in-farm-reason>;
   dcat:downloadURL <https://raw.githubusercontent.com/Bluarancio/Leo-OpenData/master/VocabolariControllati/entry-in-farm-reason/entry-in-farm-reason.rdf> .
+
+
+  <https://w3id.org/leo/data/private-organization/00944701002> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "00944701002" ;
+  foaf:name "Associazione Italiana Allevatori"@it ,
+             "Italian Breeders' Association"@en .
+
+
+  <https://w3id.org/leo/data/private-organization/06695411006> a dcatapit:Agent , foaf:Agent ;
+  dct:identifier "06695411006" ;
+  foaf:name "Bluarancio"@en ,
+            "Bluarancio"@it .
